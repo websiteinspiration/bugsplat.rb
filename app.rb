@@ -71,7 +71,7 @@ class App < Sinatra::Base
             e.links << Atom::Link.new(:href => "http://bugsplat.info#{ p.html_path }")
             e.id = p['id']
             e.updated = p.date.to_time
-            e.content = p.render
+            e.content = Atom::Content::Html.new(p.render)
           end
         end
       end
