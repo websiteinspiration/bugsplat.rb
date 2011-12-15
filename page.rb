@@ -89,6 +89,10 @@ class Page
     end
   end
 
+  def natural_date
+    date.strftime("%A, %e %B around %l o'clock %P")
+  end
+
   def html_path
     "/#{@name}.html"
   end
