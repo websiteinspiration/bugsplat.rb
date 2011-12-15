@@ -31,7 +31,7 @@ The new version is called [bugsplat.rb][]. It's 200 lines of ruby, which is actu
 
 The production site is hosted on [Heroku][] and uses a [unicorn][] extremely similar to [FivePad's setup][concurrency] without the background worker stuff.
 
-#### Why not <any other blog engine>?
+#### Why not some other blog engine?
 
 A while ago I tried porting to [Jekyll][] but without heavy modification I wouldn't have been able to keep the URLs I've built up over the last year and a half. Also for some reason I couldn't wrap my head around liquid templates.
 
