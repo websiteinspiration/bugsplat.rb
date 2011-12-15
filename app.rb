@@ -1,14 +1,14 @@
 #!/usr/bin/env ruby
 require 'rubygems'
-require 'sinatra'
+require 'sinatra/base'
 require 'page'
 require 'atom/pub'
 
-RENDERER = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
-PAGES = Page.parse_all(RENDERER)
-PAGE_CACHE = {}
+class App < Sinatra::Base
 
-class App < Sinatra::Application
+  RENDERER = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+  PAGES = Page.parse_all(RENDERER)
+  PAGE_CACHE = {}
 
   def cached(name)
     if not PAGE_CACHE.has_key? name
