@@ -38,7 +38,7 @@ class Page
   def parse_headers(header_text)
     @headers = {}
     header_text.split("\n").each do |header|
-      name, value = header.split(/:\s+/)
+      name, value = header.split(/:\s+/, 2)
       @headers[name.downcase] = value
     end
   end
