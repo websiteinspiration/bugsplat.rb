@@ -8,7 +8,7 @@ task :next do
   title = $stdin.gets.chomp
 
   now = Time.now
-  slug_name = title.gsub(/\s+/, '-').gsub("'", '').gsub(/[()]/, '').downcase
+  slug_name = title.gsub(/\s+/, '-').gsub("'", '').gsub(/[()]/, '').gsub(':', '').downcase
   slug = "#{now.strftime('%Y-%m-%d')}-#{slug_name}"
   id = Digest::SHA1.hexdigest(slug)[0,5]
 
