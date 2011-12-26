@@ -1,6 +1,8 @@
 <div class="entry">
   <h2><a href="<%= @page.html_path %>"><%= @page['title'] %></a></h2>
+  <% if @page.date %>
   <p class="date"><%= @page.natural_date %></p>
+  <% end %>
   <%= @page.render %>
 </div>
 <% if @page.is_blog_post? %>
