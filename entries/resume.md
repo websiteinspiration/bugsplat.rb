@@ -86,9 +86,10 @@ HouseValues.Com, Kirkland, Washington
 
 ### Side Projects
 
-* [ProcLaunch](http://github.com/peterkeen/proclaunch), a pure perl user-space process manager.
-* [bugsplat.info](http://bugsplat.info), my personal programming and tech related blog.
+* [ProcLaunch](http://github.com/peterkeen/proclaunch), a pure perl user-space process manager
+* [bugsplat.info](http://bugsplat.info), my personal programming and tech related blog
 * [remindlyo](http://www.remindlyo.com), a phone call follow up and reminder service
+* [FivePad](https://www.fivepad.me), the easiest way to keep track of your apartment search
 
 
 ### Education
