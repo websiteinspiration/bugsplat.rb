@@ -21,7 +21,9 @@ class App < Sinatra::Base
   helpers do
     def title
       if @page
-        return @page['title']
+        return "#{@page['title']} | bugsplat"
+      else
+        return "bugsplat"
       end
     end
 
