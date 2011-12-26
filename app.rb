@@ -38,10 +38,6 @@ class App < Sinatra::Base
     @pages = PAGES
   end
 
-  before do
-    
-  end
-
   get '/' do
     cached('index') do
       @index_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse[0,5]
