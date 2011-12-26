@@ -2,12 +2,14 @@ Title: Static HTML Blog
 Id: static-html-blog
 Order: 2
 
-This blog uses a custom [static html blog](http://bugsplat.info/2010-03-28-yet-another-static-html-generator) engine that I wrote for a few different reasons:
+This blog uses a custom [static html blog](http://bugsplat.info/2011-12-14-yet-another-not-very-static-blog-generator.html) engine that I wrote for a few different reasons:
 
  * No external dependencies
  * Maximum flexibility in hosting locations
  * Fast and easy to modify
- * Ability to keep my blog in [version control](https://github.com/peterkeen/bugsplat.info) using [git](http://git-scm.com/)
+ * Ability to keep my blog in [version control](https://github.com/peterkeen/bugsplat.rb) using [git](http://git-scm.com/)
+ 
+This is actually the second version of the engine. The [first version](https://github.com/peterkeen/bugsplat.info) was written in Perl and had quite a few quirky things. This new version is written in Ruby and is very straightforward.
 
 If you want to use my engine, be warned that it's rather specific to my needs on [bugsplat](http://bugsplat.info). However, there are a few more general, more flexible options out there now:
 
