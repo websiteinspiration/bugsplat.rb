@@ -4,6 +4,8 @@ Id:    4b79e
 
 *Note: you can find much more information about ledger on [ledger-cli.org](http://ledger-cli.org), including links to official documentation and other implementations*
 
+*Another note: I've written a new version of this that is much more dynamic and flexible named [Ledger Web](/2012-01-01-a-robust-reporting-system-for-ledger.html).*
+
 Last year I wrote what ended up being the most popular article on this blog ever, [Program Your Finances: Command-line Accounting](http://bugsplat.info/2010-05-23-keeping-finances-with-ledger.html). That post went over how I track and report on my finances using a program called [Ledger](http://www.ledger-cli.org) along with a few helper scripts. Recently I expanded that toolset quite a bit and wanted to show how keeping meticulous track of your finances can give you superpowers. Read on for the gory details.
 
 --fold--
