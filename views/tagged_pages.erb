@@ -1,8 +1,9 @@
-<% @index_pages.each do |page| %>
+<h3>Posts tagged with '<%= @tag_name %>'</h3>
+<% @tagged_pages.each do |page| %>
 <div class="entry">
   <h2><a href="<%= page.html_path %>"><%= page['title'] %></a></h2>
   <p class="date"><%= page.natural_date %></p>
-  <%= page.render_before_fold %> 
+  <%= page.render_before_fold %>  
   <% if page.tags.length > 0 %>
   <p class="date">Tagged: <% page.tags.each do |tag| %>
   <a href="/tag/<%= tag %>"><%= tag %></a>&nbsp;
@@ -13,4 +14,3 @@
   <hr class="separator">
 </div>
 <% end %>
-<a href="archive.html">Older Entries</a>

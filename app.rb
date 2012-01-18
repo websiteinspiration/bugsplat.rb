@@ -85,6 +85,27 @@ class App < Sinatra::Base
     end
   end
 
+  get '/tags.html' do
+    cached 'tags' do
+      tags = {}
+      @pages.each do |page|
+        page.tags.each do |tag|
+          tags[tag] = true
+        end
+      end
+      @tags = tags.keys.sort
+      erb :tags
+    end
+  end
+
+  get '/tag/:tag' do
+    cached "tags:#{params[:tag]}" do
+      @tagged_pages = @pages.find_all { |p| p.has_tag params[:tag] }.sort_by{ |p| p.date }.reverse
+      @tag_name = params[:tag]
+      erb :tagged_pages
+    end
+  end
+
   get '/:page_name' do
     @page = @pages.detect { |p| p.matches_path(params[:page_name]) }
     unless @page

@@ -4,6 +4,12 @@
   <p class="date"><%= @page.natural_date %></p>
   <% end %>
   <%= @page.render %>
+  <% if @page.tags.length > 0 %>
+  <p class="date">Tagged: <% @page.tags.each do |tag| %>
+  <a href="/tag/<%= tag %>"><%= tag %></a>&nbsp;
+  <% end %>
+  </p>
+  <% end %>
 </div>
 <% if @page.is_blog_post? %>
 <div id="disqus_thread"></div>

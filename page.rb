@@ -83,6 +83,18 @@ class Page
     return @headers[key]
   end
 
+  def tags
+    if @headers.has_key?('tags')
+      return @headers['tags'].split(/,\s+/)
+    else
+      return []
+    end
+  end
+
+  def has_tag(tag)
+    tags.detect { |t| t == tag }
+  end
+
   def date
     if is_blog_post?
       Time.strptime(@headers['date'], DATE_FORMAT)

@@ -27,3 +27,7 @@ HERE
   Kernel.exec(ENV['EDITOR'], '-n', '+5', filename)
   
 end
+
+task :server do
+  sh "bundle exec shotgun -I."
+end
