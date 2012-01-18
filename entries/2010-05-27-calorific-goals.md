@@ -1,5 +1,6 @@
 Title: Everyone Needs Goals
 Date:  2010-05-27 20:37:00
+Tags:  Programming
 Id:    8
 
 Creating [actionable information][1] out of raw data is sometimes pretty simple, requiring only small changes. Of the few feature requests that I've received for [Calorific][], most (all) of them have been for goals. Always listen to the audience, that's my motto! With the latest version you can set up goals like this:

@@ -1,5 +1,6 @@
 Title: Using the Transmission RPC Interface to Organize Torrents
 Date:  2010-11-27 18:53:04
+Tags:  Programming, Ruby, BitTorrent
 Id:    fb907
 
 I've been using my Mac mini as a torrent downloader and media server for a few years now using [Transmission][]. Tonight I got fed up with my torrents being in one unsorted mass so I learned the [HTTP RPC api][tr-api] and wrote a simple blocking client that organizes them.

@@ -1,5 +1,6 @@
 Title: Quadrotor Motors Are Alive!
 Date:  2011-04-24 14:48:36
+Tags:  Quadrotor
 Id:    38b56
 
 I found some time today to work on my quadrotor project some more. A few weeks ago I got one motor mounted and spinning, just using the RC receiver and trasmitter. Today, I mounted the motors and set up a little test program on the arduino to make them spin. Check it out:

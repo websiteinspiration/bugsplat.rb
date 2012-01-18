@@ -1,5 +1,6 @@
 Title: Program your Finances: Reporting for Fun and Profit
 Date:  2011-07-09 08:14:55
+Tags:  Personal Finance, Ledger
 Id:    4b79e
 
 *Note: you can find much more information about ledger on [ledger-cli.org](http://ledger-cli.org), including links to official documentation and other implementations*

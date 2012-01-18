@@ -1,6 +1,7 @@
 Title: Perl with a Lisp
 Date:  2010-08-22 14:22:36
 Id:    7497d
+Tags:  Perl, Programming
 Hold:  1
 
 Browsing around on [hacker news][hn] one day, I came across a [link][hn-micromanual] to a paper entitled "[A micro-manual for Lisp - Not the whole truth][micromanual]" by John McCarthy, the self-styled discoverer of Lisp. One commentor stated that they have been using this paper for awhile as a *code kata*, implementing it several times, each in a different language, in order to better learn that language. The other day I was pretty bored and decided that maybe doing that too would be a good way to learn something and aleviate said boredom. My first implementation is in perl, mostly because I don't want to have to learn a new language *and* lisp at the same time. The basic start is after the jump.

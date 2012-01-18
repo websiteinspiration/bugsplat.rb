@@ -1,5 +1,6 @@
 Title: Yet Another (not very) Static Blog Generator
 Date:  2011-12-14 18:30:26
+Tags:  Meta
 Id:    7e074
 
 The [very first post on this blog][firstpost] was about how I wanted a completely static blog and how it'll be great and wonderful and boy howdy was it ever. Over 500 lines of rather dense perl plus almost 20 separate template files because the kind-of-[mustache][] that I decided to implement can't handle inlined templates for loops so I have to do everything as partials. 

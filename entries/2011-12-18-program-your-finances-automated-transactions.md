@@ -1,5 +1,6 @@
 Title: Program Your Finances: Automated Transactions
 Date:  2011-12-18 18:32:27
+Tags:  Personal Finance, Ledger
 Id:    ea00f
 
 *Note: you can find much more information about ledger on [ledger-cli.org](http://www.ledger-cli.org), including links to official documentation and other implementations*

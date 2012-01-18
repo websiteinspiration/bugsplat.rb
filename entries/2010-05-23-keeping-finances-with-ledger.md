@@ -1,5 +1,6 @@
 Title: Program your Finances: Command-line Accounting
 Date:  2010-05-23 15:15:00
+Tags:  Personal Finance, Ledger
 Id:    7
 
 *Note: you can find much more information about ledger on [ledger-cli.org](http://ledger-cli.org), including links to official documentation and other implementations*
@@ -7,6 +8,12 @@ Id:    7
 About three years ago I was in some serious financial straits. I had just started my first job out of college that I had moved across the country for and had to bootstrap almost my whole life. This meant buying furniture, buying a car, outfitting a kitchen, etc. Every two weeks I would get a salary deposit, and within two weeks it would be almost completely gone from my checking account. I actually bounced a rent check or two in there. After the second time that happened I vowed it wouldn't happen again and started keeping track of every penny that I spent using a program called [ledger][]. This was, in hindsight, exactly what I needed to get myself back on track. Actually seeing money moving in and out of my accounts forced me to modify my behavior. At the time, [Mint](http://www.mint.com/) wasn't around, but I don't think it would have helped nearly as much. Forcing myself to actually type out the transactions was the key to changing behavior.
 
 Ledger is almost the most boring, austere accounting program you could think of. There's no pretty graphs, no online interaction, no GUI of any sort. It's basically a command-line driven calculator with a lot of specializations that make it ideal for tracking finances, which is what makes it so ideal for someone who spends a lot of time inside a text editor. It's very easy to script around and it has a very rich query language that lets you get at the data that you want with a minimum of fuss. It's very much the inspiration for [Calorific][].
+
+[ledger]:    http://wiki.github.com/jwiegley/ledger/
+[manual]:    http://github.com/downloads/jwiegley/ledger/ledger.pdf
+[Calorific]: http://github.com/peterkeen/calorific
+
+--fold--
 
 The basic idea is that you write down all of your financial transactions in a text file with an easy-to-master syntax and then run the `ledger` command on them to generate reports. Here's a simplified extract from my ledger file:
 
@@ -127,6 +134,3 @@ With more data, this lets you easily compare month-to-month where you are spendi
 
 If you want to pull your financial life together but don't want to spend money on something like Quicken or trust Mint with your account credentials, I highly encourage you to try out ledger in addition to the other open source solutions like gnucash.  All of these examples assume you're using version 2.6.2 of ledger, which you can download from the "Downloads" tab in github. Version 3.0 is just around the corner and it adds all kinds of neat things, including better automated transactions and a much more robust query language.
 
-[ledger]:    http://wiki.github.com/jwiegley/ledger/
-[manual]:    http://github.com/downloads/jwiegley/ledger/ledger.pdf
-[Calorific]: http://github.com/peterkeen/calorific

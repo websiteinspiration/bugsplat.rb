@@ -1,5 +1,6 @@
 Title: Remindlyo is a Go
 Date:  2011-10-08 17:24:56
+Tags:  Remindlyo
 Id:    93cd7
 
 Eight weeks ago I embarked, almost by accident, on one of the most interesting challenges that I've ever set up for myself. I've created something new, something that I don't think the world has had before, and that makes me feel good. So, if you're reading this, go check out [Remindlyo](https://www.remindlyo.com), because it's as done as it's going to get for now.

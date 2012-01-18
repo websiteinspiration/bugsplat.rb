@@ -1,5 +1,6 @@
 Title: Program Your Finances: Vacation Tracking
 Date:  2011-08-04 16:47:48
+Tags:  Personal Finance, Ledger
 Id:    7e479
 
 *Note: you can find much more information about ledger on [ledger-cli.org](http://ledger-cli.org), including links to official documentation and other implementations*

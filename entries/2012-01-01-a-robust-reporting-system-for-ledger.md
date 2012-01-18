@@ -1,5 +1,6 @@
 Title: A Robust Reporting System for Ledger
 Date:  2012-01-01 10:01:14
+Tags:  Personal Finance, Ledger, Projects, Ruby
 Id:    3a32a
 
 *Note: you can find much more information about ledger on [ledger-cli.org](http://ledger-cli.org), including links to official documentation and other implementations*

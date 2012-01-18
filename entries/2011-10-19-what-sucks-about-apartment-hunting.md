@@ -1,5 +1,6 @@
 Title: What sucks about apartment hunting?
 Date:  2011-10-19 06:31:23
+Tags:  Projects, FivePad
 Id:    5e62c
 
 I want to brainstorm everything that sucks about searching for an apartment. Why is it always so painful? Does it have to suck so much? I have some ideas but I haven't done this in almost a year so the pain, it is not so fresh.

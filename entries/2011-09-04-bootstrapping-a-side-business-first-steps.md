@@ -1,5 +1,6 @@
 Title: Bootstrapping a Side Business - First Steps
 Date:  2011-09-04 08:38:05
+Tags:  Remindlyo, Projects
 Id:    5ff61
 
 For the past few weeks I've been working on a little product that I'm calling [remindlyo][], which I'm hoping to turn into a secondary income stream. The basic idea is that you put events about the important people in your life, like birthdays, anniversaries, or what have you, into remindlyo. On the day of the event, remindlyo calls you to remind you and connects you to them, all on the same phone call. You can read more about it on the [main remindlyo site][remindlyo]. In this post I want to talk more about the **why** instead of the **what**.
