@@ -17,3 +17,6 @@ Describes a system that I hacked together in an afternoon before a recent vacati
 
 #### [Program your Finances: Automated Transactions](/2011-12-18-program-your-finances-automated-transactions.html)
 Gives a simple introduction to ledger's automated transactions and virtual accounts, two features that are great by themselves but let you do really interesting things when combined.
+
+#### [A Robust Reporting System for Ledger](/2012-01-01-a-robust-reporting-system-for-ledger.html)
+Walks through a simple but very capable and extensible reporting system for ledger written in Ruby. Reports are simple ERB pages with embedded SQL and javascript.
