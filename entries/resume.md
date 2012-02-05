@@ -8,12 +8,19 @@ Id:    resume
 
 [Emma](http://www.myemma.com), Portland, OR
 
-* Ported the main application to a web-service-style backend using
-  Python, WebOB, PostgreSQL, and redis.
+* Ported the audience management system of Emma, including mailing list
+  management, audience searches, administration, and sending mail
+  into a REST/JSON service in Python, running on PostgreSQL and Redis.
+  This service has 90% test coverage.
 
-* Built a search module that consumes a json-based search description,
+* Built a search engine that consumes a JSON search description,
   builds an equivalent SQL query, and executes the query on a sharded
-  PostgreSQL database system.
+  PostgreSQL database system. This is used for filtering all requests
+  that come into the audience REST service.
+  
+* Wrote an experimental internal Platform as a Service to be used for all
+  new systems at Emma. Heavily inspired by Heroku, it enables a git-based
+  deployment system backed by redis. It is currently in the evaluation stage.
 
 #### Software Developer, January 2007 - April 2011 ###
 
