@@ -97,6 +97,11 @@ div.entry
   margin-bottom: 2em;
 }
 
+div.email
+{
+  margin-bottom: 2em;
+}
+
 hr.separator
 {
   margin-bottom: 3em;
