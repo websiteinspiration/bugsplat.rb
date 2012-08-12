@@ -1,0 +1,18 @@
+Title: Task-oriented Dotfiles
+Date:  2012-08-11 20:38:36
+Id:    144c7
+Tags:  Programming
+
+Recently I sat down and reorganized [my dotfiles][dotfiles] around the tasks that I do day-to-day. For example, I have bits of configuration related to [ledger][] and some other bits related to Ruby development. In my previous dotfile setup, this stuff was all mixed together in the same files. I had started to use site-specific profiles (i.e. home vs work), but that led to a lot of copied config splattered all over. I wanted my dotfiles more organized and modifiable than that.
+
+[dotfiles]: https://github.com/peterkeen/dotfiles/
+
+--fold--
+
+I borrowed the basic ideas from [defunkt][], who borrowed them from [some other guy][]. In fact, I stole their Rakefile and only made a few minor additions. Essentially, each *module*", where a module is a unit of config related to a single task, has it's own directory in my [dotfiles repository][dotfiles]. This directory can contain any number of files with names like `foo.symlink`. This will get symlinked to `~/.foo`. In addition, each module can contain a `init.sh` and `init.el` file. These get loaded by `bash` and `emacs`, respecively, at runtime. The [emacs initialization code][] contains a bunch of clever things that allow me to require external emacs packages using [el-get][], as well as run code before and after `el-get` packages get initialized. The [bash initilization code][] contains no such cleverness (yet). Each module can also contain a `bin` directory, which will get added to `$PATH`.
+
+So, this is great, but what if I don't want to load my `ledger` configuration on my work computer? Or what if I have some work-specific module that I don't want to be loaded at home? That's where the `~/.modules` file comes in. This file lists the modules that `bash` and `emacs` will load, in order. This file is not checked in, because it can and will be different between machines.
+
+One other interesting thing I've done is set up an auto-update system. I have `cron` set to run a `git fetch` every minute or so, and then I have my `bash` prompt set to inform me if there are updates available or if the dotfiles repo is dirty. I don't have a one-button command to apply the updates yet, but it's something I'm considering.
+
+I owe [defunkt][] a lot of credit here, but I think I've improved upon the initial design, at least for my needs, with the explicit modules list and the `$PATH` manipulation.
