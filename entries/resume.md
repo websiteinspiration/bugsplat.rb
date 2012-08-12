@@ -119,10 +119,3 @@ Graduated December 2006
 * Linux, Mac OS X
 * PostgreSQL, MySQL
 
-### Achievements and Service
-
-#### Eagle Scout
-
-Boy Scouts of America Troop 417, Milton, Wisconsin  
-Awarded Summer 2002  
-Planned and led a project to build and install benches in an area park.
