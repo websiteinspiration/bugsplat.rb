@@ -4,7 +4,13 @@ Id:    resume
 
 ### Experience ##
 
-#### Platform Developer, April 2011 - Current ###
+#### Software Developer, June 2012 - Current ####
+
+[Kongregate](http://www.kongregate.com), Portland, OR
+
+* Maintain one of the largest and oldest Ruby on Rails apps out there.
+
+#### Platform Developer, April 2011 - June 2012 ###
 
 [Emma](http://www.myemma.com), Portland, OR
 
