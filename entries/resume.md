@@ -4,13 +4,13 @@ Id:    resume
 
 ### Experience ##
 
-#### Software Developer, June 2012 - Current ####
+#### Software Developer, 2012 - Current ####
 
 [Kongregate](http://www.kongregate.com), Portland, OR
 
 * Maintain one of the largest and oldest Ruby on Rails apps out there.
 
-#### Platform Developer, April 2011 - June 2012 ###
+#### Platform Developer, 2011 - 2012 ###
 
 [Emma](http://www.myemma.com), Portland, OR
 
@@ -28,7 +28,7 @@ Id:    resume
   new systems at Emma. Heavily inspired by Heroku, it enables a git-based
   deployment system backed by redis. It is currently in the evaluation stage.
 
-#### Software Developer, January 2007 - April 2011 ###
+#### Software Developer, 2007 - 2011 ###
 
 [Rentrak Corporation](http://www.rentrak.com), Portland, OR
 
@@ -66,7 +66,7 @@ Id:    resume
   [Hadoop](http://hadoop.apache.org/) and HDFS that was used to test some
   performance hypotheses.
 
-#### Software Development Intern, Sept 2006 - Dec 2006
+#### Software Development Intern, 2006
 
 Quad Graphics and University of Wisconsin-Whitewater Management and Computer Systems
 
