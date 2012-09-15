@@ -46,7 +46,7 @@ I've implemented these buckets using ledger's _virtual transaction_ feature. Bas
 Then, we insert this transaction:
 
     2011/12/01 * Establish Emergency Fund
-        [Funds:Emergency]                  $1,000.00
+        [Funds:Emergency]                    $500.00
         [Assets:Checking]
         
 and run some more reports
