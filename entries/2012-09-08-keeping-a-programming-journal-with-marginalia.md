@@ -1,7 +1,7 @@
 Title: Keeping a Programming Journal with Marginalia
 Date:  2012-09-08 08:06:51
 Id:    0a99d
-Tags:  marginalia, programming
+Tags:  Marginalia, Programming
 
 In addition to writing on this blog, I've been keeping notes for various
 things on [Marginalia](https://www.marginalia.io), my web-based note taking
