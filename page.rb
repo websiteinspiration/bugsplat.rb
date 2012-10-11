@@ -49,7 +49,7 @@ class Page
   end
 
   def self.normalize_name(page)
-    return page.downcase.strip.sub(/\.(html|md)$/,'')
+    return page.downcase.strip.sub(/\.(html|md|pdf)$/,'')
   end
 
   def is_blog_post?

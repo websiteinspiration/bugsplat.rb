@@ -11,7 +11,7 @@
   </p>
   <% end %>
 </div>
-<% if @page.is_blog_post? %>
+<% if @page.is_blog_post? && !@hide_discussion %>
 <div class="email">Like this post? <a href="http://feedburner.google.com/fb/a/mailverify?uri=bugsplat/Nreg&amp;loc=en_US">Sign up to receive posts by email.</a></div>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
