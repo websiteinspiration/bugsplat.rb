@@ -7,7 +7,7 @@ require 'rest_client'
 
 class App < Sinatra::Base
 
-  RENDERER = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+  RENDERER = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :fenced_code_blocks => true)
   PAGES = Page.parse_all(RENDERER)
   PAGE_CACHE = {}
 
