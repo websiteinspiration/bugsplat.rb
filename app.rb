@@ -108,31 +108,35 @@ class App < Sinatra::Base
   end
 
   get '/:page_name.pdf' do
-    @hide_discussion = true
-    @page = @pages.detect { |p| p.matches_path(params[:page_name]) }
-    unless @page
-      raise Sinatra::NotFound
+    cached "pdf:#{params[:tag]}" do
+      @hide_discussion = true
+      @page = @pages.detect { |p| p.matches_path(params[:page_name]) }
+      unless @page
+        raise Sinatra::NotFound
+      end
+
+      temp = Tempfile.new('markdown')
+      temp.write(@page.docverter_markdown)
+      temp.flush
+
+      public_path = File.expand_path(File.join(__FILE__, "..", "public"))
+
+      res = RestClient.post(
+        ENV['DOCVERTER_API'],
+        :from => 'markdown',
+        :to => 'pdf',
+        :template => 'pdf_template.html',
+        'input_files' => [File.open(temp.path, "rb")],
+        'other_files' => [
+          File.open(File.join(public_path, "droid_sans.ttf"), "rb"),
+          File.open(File.join(public_path, "droid_serif.ttf"), "rb"),
+          File.open(File.join(public_path, "..", "pdf_template.html"), "rb")
+        ]
+      )
+
+      content_type "application/pdf"
+      res.body
     end
-
-    temp = Tempfile.new('html')
-    temp.write(erb :entry_page, :layout => :pdf)
-    temp.flush
-
-    public_path = File.expand_path(File.join(__FILE__, "..", "public"))
-
-    res = RestClient.post(
-      ENV['DOCVERTER_API'],
-      :from => 'html',
-      :to => 'pdf',
-      'input_files' => [File.open(temp.path, "rb")],
-      'other_files' => [
-        File.open(File.join(public_path, "droid_sans.ttf"), "rb"),
-        File.open(File.join(public_path, "droid_serif.ttf"), "rb")
-      ]
-    )
-
-    content_type "application/pdf"
-    res.body
   end
 
   get '/:page_name' do

@@ -102,10 +102,23 @@ class Page
   end
 
   def natural_date
-    date.strftime("%A, %e %B around %l o'clock %P")
+    date ? date.strftime("%A, %e %B around %l o'clock %P") : ''
   end
 
   def html_path
     "/#{@name}.html"
+  end
+
+  def pdf_path
+    "/#{@name}.pdf"
+  end
+
+  def docverter_markdown
+"""% #{@headers['title']}
+%
+% #{natural_date}
+
+#{@body}
+"""
   end
 end

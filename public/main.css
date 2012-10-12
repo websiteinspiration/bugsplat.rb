@@ -5,6 +5,8 @@ body
 
 h4.print-only { display: none; }
 
+.pull-right { float: right; }
+
 a:link { 
 	color: #5555AA;
 	text-decoration: none;
@@ -117,6 +119,6 @@ hr.separator:after {
   letter-spacing: 2em;
 }
 
-p.date {
+.date {
   font-size: 75%;
 }
