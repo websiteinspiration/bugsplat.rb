@@ -8,7 +8,7 @@ gem 'rake'
 gem 'redcarpet'
 gem 'ratom'
 gem 'rack-force_domain'
-gem 'rest-client'
+gem 'docverter'
 
 group :development do
   gem 'shotgun'

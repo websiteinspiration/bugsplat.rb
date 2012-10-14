@@ -3,13 +3,15 @@ require 'rubygems'
 require 'sinatra/base'
 require 'page'
 require 'atom/pub'
-require 'rest_client'
+require 'docverter'
 
 class App < Sinatra::Base
 
   RENDERER = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :fenced_code_blocks => true)
   PAGES = Page.parse_all(RENDERER)
   PAGE_CACHE = {}
+
+  Docverter.api_key = ENV['DOCVERTER_API_KEY']
 
   def cached(name)
     if not PAGE_CACHE.has_key? name
@@ -114,26 +116,20 @@ class App < Sinatra::Base
       raise Sinatra::NotFound
     end
 
-    temp = Tempfile.new('markdown')
-    temp.write(@page.docverter_markdown)
-    temp.flush
-
     public_path = File.expand_path(File.join(__FILE__, "..", "public"))
-    res = RestClient.post(
-      ENV['DOCVERTER_API'],
-      :from => 'markdown',
-      :to => 'pdf',
-      :template => 'pdf_template.html',
-      'input_files' => [File.open(temp.path, "rb")],
-      'other_files' => [
-        File.open(File.join(public_path, "droid_sans.ttf"), "rb"),
-        File.open(File.join(public_path, "droid_serif.ttf"), "rb"),
-        File.open(File.join(public_path, "..", "pdf_template.html"), "rb")
-      ]
-    )
+    res = Docverter::Conversion.run do |c|
+      c.from     = 'markdown'
+      c.to       = 'pdf'
+      c.template = 'pdf_template.html'
+      c.content  = @page.docverter_markdown
+
+      c.add_other_file File.join(public_path, "droid_sans.ttf")
+      c.add_other_file File.join(public_path, "droid_serif.ttf")
+      c.add_other_file File.join(public_path, "..", "pdf_template.html")
+    end
 
     content_type "application/pdf"
-    res.body
+    res
   end
 
   get '/:page_name' do
