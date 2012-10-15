@@ -99,11 +99,11 @@ HouseValues.Com, Kirkland, Washington
 
 ### Side Projects
 
-* [ProcLaunch](http://github.com/peterkeen/proclaunch), a pure perl user-space process manager
-* [bugsplat.info](http://bugsplat.info), my personal programming and tech related blog. Recently ported to a Ruby Sinatra app.
+* [Docverter](http://www.docverter.com), a plain text document rendering service. Convert documents from one of a number of plain text formats to PDF, Docx, Mobi, or ePub.
+* [Twitter Fiction Reader](http://twitter-fiction-reader.herokuapp.com), a curated archive of fictional twitter accounts. Simple Sinatra application.
+* [bugsplat.info](http://bugsplat.info), my personal programming and tech related blog. Recently converted to a simple Sinatra application.
 * [remindlyo](http://www.remindlyo.com), a phone call follow up and reminder service. Rails app using the Twilio API.
 * [FivePad](https://www.fivepad.me), the easiest way to keep track of your apartment search. Rails app hosted on Heroku.
-* [Twitter Fiction Reader](http://twitter-fiction-reader.herokuapp.com), a curated archive of fictional twitter accounts. Simple Sinatra application.
 
 
 ### Education
