@@ -1,5 +1,5 @@
 Title: Static HTML Blog
-Id: static-html-blog
+Id: static-html-blog-123
 Order: 2
 
 This blog uses a custom [static html blog](http://bugsplat.info/2011-12-14-yet-another-not-very-static-blog-generator.html) engine that I wrote for a few different reasons:

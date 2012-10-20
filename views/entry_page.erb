@@ -4,7 +4,11 @@
   <p class="date"><%= @page.natural_date %></p>
   <% end %>
   <%= @page.render %>
-  <div class="date pull-right"><a href="<%= @page.pdf_path %>">Download PDF</a></div>  
+  <div class="date pull-right">
+    <a href="<%= @page.pdf_path %>"><img alt="Download PDF" src="/pdf.png"></img></a>
+    <a href="<%= @page.docx_path %>"><img alt="Download Word Doc" src="/doc.png"></img></a>
+    <a href="<%= @page.markdown_path %>"><img alt="Download Raw Markdown" src="/markdown.png"></img></a>
+  </div>  
   <% if @page.tags.length > 0 %>
   <p class="date">Tagged: <% @page.tags.each do |tag| %>
   <a href="/tag/<%= tag %>"><%= tag %></a>&nbsp;

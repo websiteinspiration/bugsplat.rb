@@ -1,5 +1,5 @@
 Title: Ledger
-Id: ledger
+Id: ledger-123
 Order: 3
 
 Over the past few years I've written a number of posts about [Ledger](http://www.ledger-cli.org), a command-line accounting system. In a nutshell, when using Ledger you keep your financial records in a plain text file and then run reports using the `ledger` command line program.

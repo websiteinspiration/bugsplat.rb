@@ -1,5 +1,5 @@
 Title: Colophon
-Id: colophon
+Id: colophon-123
 
 Fonts are [Droid Sans][] from the [Google Web Fonts][] for the headers and Georgia or whatever serif font you have laying around for the body text. Comments are by [Disqus][]. The little bug image is by [Gentleface.com][].
 

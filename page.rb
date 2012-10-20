@@ -9,7 +9,7 @@ class Page
   DATE_REGEX = /\d{4}-\d{2}-\d{2}/
   DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 
-  attr_reader :name
+  attr_reader :name, :body
 
   def self.parse_all(renderer)
     find_all.map do |page|
@@ -111,6 +111,14 @@ class Page
 
   def pdf_path
     "/#{@name}.pdf"
+  end
+
+  def docx_path
+    "/#{@name}.docx"
+  end
+
+  def markdown_path
+    "/#{@name}.md"
   end
 
   def docverter_markdown

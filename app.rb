@@ -109,32 +109,21 @@ class App < Sinatra::Base
     end
   end
 
-  get '/:page_name.pdf' do
+  get '/:page_name.:format' do
     @hide_discussion = true
     @page = @pages.detect { |p| p.matches_path(params[:page_name]) }
     unless @page
       raise Sinatra::NotFound
     end
 
-    public_path = File.expand_path(File.join(__FILE__, "..", "public"))
-    res = Docverter::Conversion.run do |c|
-      c.from     = 'markdown'
-      c.to       = 'pdf'
-      c.template = 'pdf_template.html'
-      c.content  = @page.docverter_markdown
+    formats = {
+      'pdf' => ['pdf_template.html', 'application/pdf'],
+      'docx' => [nil, 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'],
+      'html' => [],
+      'md' => [],
+    }
 
-      c.add_other_file File.join(public_path, "droid_sans.ttf")
-      c.add_other_file File.join(public_path, "droid_serif.ttf")
-      c.add_other_file File.join(public_path, "..", "pdf_template.html")
-    end
-
-    content_type "application/pdf"
-    res
-  end
-
-  get '/:page_name' do
-    @page = @pages.detect { |p| p.matches_path(params[:page_name]) }
-    unless @page
+    unless formats.include?(params[:format])
       raise Sinatra::NotFound
     end
 
@@ -142,11 +131,34 @@ class App < Sinatra::Base
       redirect @page.html_path
     end
 
-    cached params[:page_name] do
-      erb :entry_page
+    if params[:format] == 'html'
+      cached params[:page_name] do
+        return erb :entry_page
+      end
     end
-  end
 
+    if params[:format] == 'md'
+      content_type "text/plain"
+      return @page.contents
+    end
+
+    public_path = File.expand_path(File.join(__FILE__, "..", "public"))
+    res = Docverter::Conversion.run do |c|
+      c.from     = 'markdown'
+      c.to       = params[:format]
+      if formats[params[:format]][0]
+        c.template = formats[params[:format]][0]
+      end
+      c.content  = @page.docverter_markdown
+
+      c.add_other_file File.join(public_path, "droid_sans.ttf")
+      c.add_other_file File.join(public_path, "droid_serif.ttf")
+      c.add_other_file File.join(public_path, "..", "pdf_template.html")
+    end
+
+    content_type formats[params[:format]][1]
+    res
+  end
 
   post '/ping' do
     'pong'
