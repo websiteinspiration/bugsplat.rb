@@ -4,6 +4,14 @@ Id:    resume
 
 ### Experience ##
 
+#### Founder of Docverter, 2012 - Current ####
+
+* Converts Markdown, reStructuredText, Textile and various other
+  plaintext formats to HTML, PDF, Docx, ePub and Mobi documents
+* Built Rails app hosted on Heroku that integrates several pieces
+  of open source software, including [pandoc](http://johnmacfarlane.net/pandoc/)
+  and [calibre](http://calibre-ebook.com/).
+
 #### Software Developer, 2012 - Current ####
 
 [Kongregate](http://www.kongregate.com), Portland, OR
@@ -86,24 +94,12 @@ Aurora Health Care and University of Wisconsin - Whitewater Management Computer 
   primary keys and contained similar but not identical profile information, so the 
   system guided a user through a three step selection and matching process.
   
-#### Helpdesk Intern, Summer 2006
-
-HouseValues.Com, Kirkland, Washington
-
-* Replaced an existing computer imaging system based on usb harddrives with a network-based
-  system using BartPE and Ghost.
-* Maintained a comprehensive inventory of 550 desktops and 50 servers.
-* Wrote and maintained system administration scripts in Python and Javascript using
-  Windows Scripting Host
-* Assisted in day-to-day helpdesk activies
-
 ### Side Projects
 
-* [Docverter](http://www.docverter.com), a plain text document rendering service. Convert documents from one of a number of plain text formats to PDF, Docx, Mobi, or ePub.
 * [Twitter Fiction Reader](http://twitter-fiction-reader.herokuapp.com), a curated archive of fictional twitter accounts. Simple Sinatra application.
-* [bugsplat.info](http://bugsplat.info), my personal programming and tech related blog. Recently converted to a simple Sinatra application.
-* [remindlyo](http://www.remindlyo.com), a phone call follow up and reminder service. Rails app using the Twilio API.
 * [FivePad](https://www.fivepad.me), the easiest way to keep track of your apartment search. Rails app hosted on Heroku.
+* [bugsplat.info](http://bugsplat.info), my personal programming and tech related blog. Recently converted to a simple Sinatra application.
+* [remindlyo](http://www.remindlyo.com), a phone call follow up and reminder service. Rails app using the Twilio API. Now deactivated.
 
 
 ### Education
