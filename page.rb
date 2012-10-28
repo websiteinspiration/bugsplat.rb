@@ -102,7 +102,7 @@ class Page
   end
 
   def natural_date
-    date ? date.strftime("%A, %e %B around %l o'clock %P") : ''
+    date ? date.strftime("%A, %e %B %Y") : ''
   end
 
   def html_path
