@@ -1,9 +1,12 @@
 body
 {
+    background-color: #EEE;
     font-family: georgia, times, serif;
 }
 
 h4.print-only { display: none; }
+
+h1,h2,h3,h4,p,li,ul,ol { color: #4E4848 }
 
 .pull-right { float: right; }
 
@@ -28,12 +31,12 @@ a:active {
 {
 	margin: 0 auto;
 	width: 900px;
-	background: #fff;
+	background: #eee;
 }
 
 #header
 {
-	background: #fff;
+	background: #eee;
 	padding: 20px 0;
     margin: 0 0 0 28px;
 }
@@ -44,7 +47,7 @@ a:active {
 {
 	float: left;
 	width: 900px;
-	background: #fff;
+	background: #eee;
 }
 
 #content
