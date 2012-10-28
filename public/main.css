@@ -3,7 +3,7 @@ body
     background-color: #EEE;
     font-family: georgia, times, serif;
     font-size: 1.25em;
-    line-height: 190%;
+    line-height: 180%;
 }
 
 h4.print-only { display: none; }
