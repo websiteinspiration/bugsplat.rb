@@ -2,6 +2,8 @@ body
 {
     background-color: #EEE;
     font-family: georgia, times, serif;
+    font-size: 1.25em;
+    line-height: 200%;
 }
 
 h4.print-only { display: none; }
@@ -74,7 +76,11 @@ a:active {
     background-image: url("bugsplat-2.png");
     background-repeat: no-repeat;
     background-position: left bottom;
+    line-height: 100%;
 }
+
+pre { line-height: 130%; }
+pre code { background: #eee !important; }
 
 h2 { font-family: 'Droid Sans', helvetica, arial, sans-serif; margin: 0; padding-bottom: 5px; }
 h3 { font-family: 'Droid Sans', helvetica, arial, sans-serif; margin: 1em 0; padding-bottom: 5px; }
