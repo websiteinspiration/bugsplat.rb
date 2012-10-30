@@ -13,14 +13,6 @@ class App < Sinatra::Base
 
   Docverter.api_key = ENV['DOCVERTER_API_KEY']
 
-  def cached(name)
-    if not PAGE_CACHE.has_key? name
-      puts "cache miss for #{name}"
-      PAGE_CACHE[name] = yield
-    end
-    PAGE_CACHE[name]
-  end
-
   helpers do
     def title
       if @page
@@ -44,69 +36,62 @@ class App < Sinatra::Base
   end
 
   get '/' do
-    cached('index') do
+    path = File.expand_path(File.join(__FILE__, "..", "public", "index.html"))
+    if settings.environment == :production && File.exists?(path)
+      send_file path
+    else
       @index_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse[0,5]
       erb :index
     end
   end
 
   get '/index.html' do
-    cached('index') do
-      @index_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse[0,5]
-      erb :index
-    end
+    @index_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse[0,5]
+    erb :index
   end
 
   get '/index.xml' do
-    cached 'index.xml' do
-      @archive_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse
-      feed = Atom::Feed.new do |f|
-        f.title = 'Bugsplat'
-        f.links << Atom::Link.new(:href => 'http://bugsplat.info')
-        f.updated = @archive_pages[0].date.to_time
-        f.authors << Atom::Person.new(:name => 'Pete Keen', :email => 'pete@bugsplat.info')
+    @archive_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse
+    feed = Atom::Feed.new do |f|
+      f.title = 'Bugsplat'
+      f.links << Atom::Link.new(:href => 'http://bugsplat.info')
+      f.updated = @archive_pages[0].date.to_time
+      f.authors << Atom::Person.new(:name => 'Pete Keen', :email => 'pete@bugsplat.info')
   
-        @archive_pages.each do |p|
-          f.entries << Atom::Entry.new do |e|
-            e.title = p['title']
-            e.links << Atom::Link.new(:href => "http://bugsplat.info#{ p.html_path }")
-            e.id = p['id']
-            e.updated = p.date.to_time
-            e.content = Atom::Content::Html.new(p.render)
-          end
+      @archive_pages.each do |p|
+        f.entries << Atom::Entry.new do |e|
+          e.title = p['title']
+          e.links << Atom::Link.new(:href => "http://bugsplat.info#{ p.html_path }")
+          e.id = p['id']
+          e.updated = p.date.to_time
+          e.content = Atom::Content::Html.new(p.render)
         end
       end
-  
-      feed.to_xml
     end
+  
+    feed.to_xml
   end
 
   get '/archive.html' do
-    cached 'archive' do
-      @archive_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse
-      erb :archive
-    end
+    @archive_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse
+    erb :archive
   end
 
   get '/tags.html' do
-    cached 'tags' do
-      tags = {}
-      @pages.each do |page|
-        page.tags.each do |tag|
-          tags[tag] = true
-        end
+    tags = {}
+    @pages.each do |page|
+      page.tags.each do |tag|
+        tags[tag] = true
       end
-      @tags = tags.keys.sort
-      erb :tags
     end
+    @tags = tags.keys.sort
+    erb :tags
   end
 
-  get '/tag/:tag' do
-    cached "tags:#{params[:tag]}" do
-      @tagged_pages = @pages.find_all { |p| p.has_tag params[:tag] }.sort_by{ |p| p.date }.reverse
-      @tag_name = params[:tag]
-      erb :tagged_pages
-    end
+  get '/tag/:tag.html' do
+    @tagged_pages = @pages.find_all { |p| p.has_tag params[:tag] }.sort_by{ |p| p.date }.reverse
+    @tag_name = params[:tag]
+    erb :tagged_pages
   end
 
   get '/:page_name.:format' do
@@ -132,9 +117,7 @@ class App < Sinatra::Base
     end
 
     if params[:format] == 'html'
-      cached params[:page_name] do
-        return erb :entry_page
-      end
+      return erb :entry_page
     end
 
     if params[:format] == 'md'

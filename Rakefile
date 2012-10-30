@@ -4,6 +4,9 @@ require 'rake'
 require 'digest/sha1'
 require 'set'
 
+$:.unshift(File.dirname(__FILE__))
+require 'app'
+
 task :next do
   print "Title: "
   title = $stdin.gets.chomp
@@ -51,5 +54,47 @@ task :tags do
   end
 
   tags.sort.each { |t| puts t }
+end
 
+namespace :assets do
+  task :precompile do
+
+    puts "Compiling pages"
+    app = App.new
+    request = Rack::MockRequest.new(app)
+
+    dirname = File.dirname(__FILE__)
+
+    tags = {}
+
+
+    App::PAGES.each do |page|
+      page.tags.each do |tag|
+        tags[tag] = true
+      end
+
+      write_page("#{page.name}.html", request)
+    end
+
+    ['index.xml', 'index.html', 'tags.html'].each do |page|
+      write_page(page, request)
+    end
+
+    tags.keys.each do |tag|
+      write_page("/tag/#{tag}.html", request)
+    end
+    
+  end
+end
+
+def write_page(path, request)
+  puts path
+  filename = File.join(File.dirname(__FILE__), "public", path)
+  FileUtils.mkdir_p(File.dirname(filename))
+
+  contents = request.get(URI.escape(path)).body.force_encoding('utf-8')
+
+  File.open(filename, "w+") do |f|
+    f.write(contents)
+  end
 end
