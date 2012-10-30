@@ -44,10 +44,11 @@ class App < Sinatra::Base
       end.join("\n")
     end
 
-    def relative_javascript(bundle)
+    def relative_javascript(bundle, async=false)
       settings.assets.paths_for("#{bundle}.js").map do |file|
         file = "/#{file}" unless file[0] == '/'
-        "<script src=\"#{file}\"></script>"
+        async_val = async ? "async" : ""
+        "<script src=\"#{file}\" #{async_val}></script>"
       end.join("\n")
     end
 
