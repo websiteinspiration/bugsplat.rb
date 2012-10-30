@@ -4,6 +4,7 @@ require 'sinatra/base'
 require 'page'
 require 'atom/pub'
 require 'docverter'
+require 'sinatra/simple_assets'
 
 class App < Sinatra::Base
 
@@ -13,7 +14,43 @@ class App < Sinatra::Base
 
   Docverter.api_key = ENV['DOCVERTER_API_KEY']
 
+  register Sinatra::SimpleAssets
+  assets do
+    css :application, [
+      '/main.css',
+      '/page.css',
+      '/table.css',
+      '/github.css'
+    ]
+
+    css :print, [
+      '/print.css'
+    ]
+
+    js :application, [
+      '/jquery.js',
+      '/jquery.dataTables.js',
+      '/jquery.relatize_date.js',
+      '/highlight.pack.js'
+    ]
+  end
+
   helpers do
+
+    def relative_stylesheet(bundle, media="screen")
+      settings.assets.paths_for("#{bundle}.css").map do |file|
+        file = "/#{file}" unless file[0] == '/'
+        "<link media=\"#{media}\" rel=\"stylesheet\" href=\"#{file}\">"
+      end.join("\n")
+    end
+
+    def relative_javascript(bundle)
+      settings.assets.paths_for("#{bundle}.js").map do |file|
+        file = "/#{file}" unless file[0] == '/'
+        "<script src=\"#{file}\"></script>"
+      end.join("\n")
+    end
+
     def title
       if @page
         return "#{@page['title']} | bugsplat"

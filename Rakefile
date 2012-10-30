@@ -64,9 +64,10 @@ namespace :assets do
     request = Rack::MockRequest.new(app)
 
     dirname = File.dirname(__FILE__)
+    FileUtils.mkdir_p(File.join(dirname, "public", "stylesheets"))
+    FileUtils.mkdir_p(File.join(dirname, "public", "javascripts"))
 
     tags = {}
-
 
     App::PAGES.each do |page|
       page.tags.each do |tag|
@@ -83,6 +84,8 @@ namespace :assets do
     tags.keys.each do |tag|
       write_page("/tag/#{tag}.html", request)
     end
+
+    App.assets.precompile
     
   end
 end
