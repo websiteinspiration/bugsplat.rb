@@ -13,7 +13,9 @@ Hanging out in the [#heroku][irc] irc channel, I sometimes see some confusion ab
 
 --fold--
 
-Before we tackle the specifics of a buildpack, let's talk about how Heroku works in more general terms. When you push your application to Heroku it turns your code into an executable *slug*, which includes your application code and all of it's dependencies. For a Ruby on Rails application, this would include every gem listed in your `Gemfile` along with the specific version of Ruby that you want. For a Python app it includes all of the dependencies listed in `requirements.txt`. Heroku also generates or adds to a file named `Procfile` which lists all of the executable processes that your application uses. For example, most Ruby web applications will have an entry in their `Procfile` that looks like this:
+Before we tackle the specifics of a buildpack, let's talk about how Heroku works in more general terms. When you push your application to Heroku it turns your code into an executable *slug*, which includes your application code and all of it's dependencies. For a Ruby on Rails application, this would include every gem listed in your `Gemfile` along with the specific version of Ruby that you want. For a Python app it includes all of the dependencies listed in `requirements.txt`.
+
+Heroku also generates or adds to a file named `Procfile` which lists all of the executable processes that your application uses. For example, most Ruby web applications will have an entry in their `Procfile` that looks like this:
 
 ```
 web: bundle exec rackup -p $PORT
