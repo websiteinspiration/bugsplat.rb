@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    builder (3.1.4)
     cssmin (1.0.2)
     docverter (0.0.3)
       rest-client (~> 1.6.7)
@@ -47,6 +48,8 @@ GEM
       kgio (~> 2.4)
       rack
       raindrops (~> 0.6)
+    xml-sitemap (1.2.2)
+      builder (>= 2.0)
 
 PLATFORMS
   ruby
@@ -63,3 +66,4 @@ DEPENDENCIES
   sinatra-simple-assets
   therubyracer
   unicorn
+  xml-sitemap

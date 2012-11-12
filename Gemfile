@@ -11,6 +11,7 @@ gem 'rack-force_domain'
 gem 'docverter'
 gem 'sinatra-simple-assets', :require => false
 gem 'therubyracer'
+gem 'xml-sitemap'
 
 group :development do
   gem 'shotgun'

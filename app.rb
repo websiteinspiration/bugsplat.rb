@@ -5,6 +5,7 @@ require 'page'
 require 'atom/pub'
 require 'docverter'
 require 'sinatra/simple_assets'
+require 'xml-sitemap'
 
 class App < Sinatra::Base
 
@@ -81,6 +82,15 @@ class App < Sinatra::Base
       @index_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse[0,5]
       erb :index
     end
+  end
+
+  get '/sitemap.xml' do
+    map = XmlSitemap::Map.new('bugsplat.info') do |m|
+      @pages.each do |page|
+        m.add page.html_path, :period => :daily
+      end
+    end
+    map.render
   end
 
   get '/index.html' do

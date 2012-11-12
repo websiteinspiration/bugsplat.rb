@@ -77,7 +77,7 @@ namespace :assets do
       write_page("#{page.name}.html", request)
     end
 
-    ['index.xml', 'index.html', 'tags.html', 'archive.html'].each do |page|
+    ['sitemap.xml', 'index.xml', 'index.html', 'tags.html', 'archive.html'].each do |page|
       write_page(page, request)
     end
 
