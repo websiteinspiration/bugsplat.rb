@@ -127,6 +127,19 @@ hr.separator:after {
   content: "....";
   letter-spacing: 2em;
 }
+hr.mini-separator
+{
+  margin-bottom: 0.1em;
+  margin-top: 0.1em;
+  display: block;
+  color: #999;
+  border: 0;
+}
+
+hr.mini-separator:after {
+  content: "⁓";
+  letter-spacing: 0.5em;
+}
 
 .date {
   font-size: 75%;
