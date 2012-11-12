@@ -56,6 +56,8 @@ class App < Sinatra::Base
     def title
       if @page
         return "#{@page['title']} | bugsplat"
+      elsif @page_title
+        return "#{@page_title} | bugsplat"
       else
         return "bugsplat"
       end
@@ -122,6 +124,7 @@ class App < Sinatra::Base
 
   get '/archive.html' do
     @archive_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse
+    @page_title = "Archive"
     erb :archive
   end
 
@@ -133,12 +136,13 @@ class App < Sinatra::Base
       end
     end
     @tags = tags.keys.sort
+    @page_title = "All Tags"
     erb :tags
   end
 
   get '/tag/:tag.html' do
     @tagged_pages = @pages.find_all { |p| p.has_tag params[:tag] }.sort_by{ |p| p.date }.reverse
-    @tag_name = params[:tag]
+    @page_title = @tag_name = params[:tag]
     erb :tagged_pages
   end
 
