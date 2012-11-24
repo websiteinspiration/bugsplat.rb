@@ -11,7 +11,7 @@
   </div>  
   <% if @page.tags.length > 0 %>
   <p class="date">Tagged: <% @page.tags.each do |tag| %>
-  <a href="/tag/<%= tag %>"><%= tag %></a>&nbsp;
+  <a href="/tag/<%= tag %>.html"><%= tag %></a>&nbsp;
   <% end %>
   </p>
   <% end %>
