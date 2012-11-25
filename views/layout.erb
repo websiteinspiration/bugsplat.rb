@@ -5,6 +5,10 @@
     <title><%= title %></title>
     <%= relative_stylesheet :application %>
     <%= relative_stylesheet :print, 'print' %>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <%= relative_stylesheet(:ie7) %>
+    <![endif]-->
     <link rel=alternate type=application/atom+xml href="index.xml"> 
     <link rel=”shortcut icon” href=”favicon.ico” mce_href=”/favicon.ico”/>
     <link rel="apple-touch-icon" href="bugsplat-2.png">
@@ -40,7 +44,10 @@
           <%= yield %>
 		</div>
 		<div id="footer">
-			&copy; <a href="http://www.petekeen.com/">Pete Keen</a> | <a href="colophon.html">Colophon</a>
+			&copy; <a href="http://www.petekeen.com/">Pete Keen</a> | <a href="colophon.html">Colophon</a> |     <a href="https://github.com/peterkeen" data-original-title="Github" class="tip"><span class="icon">&#xf09b;</span></a> 
+    <a href="http://www.linkedin.com/in/peterkeen" data-original-title="LinkedIn" class="tip"><span class="icon">&#xf318;</span></a> 
+    <a href="http://twitter.com/zrail" data-original-title="Twitter" class="tip"><span class="icon">&#xf309;</a>  
+    <a href="mailto:pete@petekeen.com" data-original-title="Email" class="tip"><span class="icon">&#x2709;</a>
 		</div>
 	</div>
   </div>
