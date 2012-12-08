@@ -13,7 +13,7 @@ class App < Sinatra::Base
   PAGES = Page.parse_all(RENDERER)
   PAGE_CACHE = {}
 
-  Docverter.api_key = ENV['DOCVERTER_API_KEY']
+  Docverter.base_url = 'http://c.docverter.com'
 
   register Sinatra::SimpleAssets
   assets do
