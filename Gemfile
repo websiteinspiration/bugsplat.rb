@@ -12,6 +12,7 @@ gem 'docverter', '>= 0.0.7'
 gem 'sinatra-simple-assets', :require => false
 gem 'therubyracer'
 gem 'xml-sitemap'
+gem 'capistrano-buildpack'
 
 group :development do
   gem 'shotgun'
