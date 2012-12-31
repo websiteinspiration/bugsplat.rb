@@ -2,7 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     builder (3.1.4)
-    capistrano-buildpack (0.0.1)
+    capistrano-buildpack (0.0.2)
     cssmin (1.0.2)
     docverter (0.0.7)
       rest-client (~> 1.6.7)
