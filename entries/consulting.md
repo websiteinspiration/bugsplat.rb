@@ -9,4 +9,8 @@ I am available for consulting to help jumpstart your project in a few different 
 * [Twilio](http://twilio.com) API integration
 * Rails tutoring
 
-If you're interested don't hesitate to [email me](mailto:pete@bugsplat.info).
+[Email me](mailto:pete@bugsplat.info) if you're interested in setting up a free initial consult.
+
+*Pete's help was instrumental in getting Docverter up and running to auto-generate PDF gift certificates.  We were able to smoothly sell and instantly deliver via email over $100,000 in GCs during our holiday season. ROCK ON.*
+
+--Noah Lehmann-Haupt, [Gotham Dream Cars](http://www.gothamdreamcars.com)
