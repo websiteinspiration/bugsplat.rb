@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'capistrano-buildpack'
 
 set :application, "bugsplatdotinfo"
 set :repository, "git@git.bugsplat.info:peter/bugsplat.git"
@@ -15,6 +16,6 @@ set :concurrency, "web=1"
 read_env 'prod'
 
 load 'deploy'
-require 'capistrano-buildpack'
+
 
 
