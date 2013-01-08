@@ -1,5 +1,8 @@
+@charset "UTF-8";
+
 
 .icon-mail:before { content: '\2709'; } /* '✉' */
-.icon-github:before { content: '\f09b'; } /* '' */
-.icon-twitter:before { content: '\f309'; } /* '' */
-.icon-linkedin:before { content: '\f318'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */
+.icon-github:before { content: '\f113'; } /* '' */
+.icon-phone:before { content: '📞'; } /* '\1f4de' */
