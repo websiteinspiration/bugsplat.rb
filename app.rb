@@ -203,5 +203,15 @@ class App < Sinatra::Base
   post '/ping' do
     'pong'
   end
+
+  not_found do
+    @page_title = "Page Not Found"
+    erb :error_404
+  end
+
+  error do
+    @page_title = "Error"
+    erb :error_500
+  end
 end
 
