@@ -146,7 +146,7 @@ class App < Sinatra::Base
   end
 
   get '/tag/:tag.html' do
-    @tagged_pages = @pages.search(params[:tag], "tags").reverse
+    @tagged_pages = @pages.search(params[:tag].downcase, "tags").reverse
     @page_title = @tag_name = params[:tag]
     erb :tagged_pages
   end
