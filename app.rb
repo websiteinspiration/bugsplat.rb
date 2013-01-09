@@ -135,7 +135,7 @@ class App < Sinatra::Base
 
   get '/tags.html' do
     tags = {}
-    @pages.all do |page|
+    @pages.pages.each do |page|
       page.tags.each do |tag|
         tags[tag] = true
       end

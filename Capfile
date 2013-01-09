@@ -4,7 +4,7 @@ require 'capistrano-buildpack'
 set :application, "bugsplatdotinfo"
 set :repository, "git@git.bugsplat.info:peter/bugsplat.git"
 set :scm, :git
-set :additional_domains, ['bugsplat.info', 'www.bugsplat.info']
+set :additional_domains, ['bugsplat.info']
 
 role :web, "empoknor.bugsplat.info"
 set :buildpack_url, "git@git.bugsplat.info:peter/bugsplat-buildpack-ruby-simple"
