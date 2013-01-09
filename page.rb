@@ -3,6 +3,77 @@ Encoding.default_internal, Encoding.default_external = ['utf-8'] * 2
 require 'rubygems'
 require 'redcarpet'
 require 'date'
+require 'whistlepig'
+require 'redcarpet'
+
+class Pages
+
+  attr_reader :pages_by_docid, :pages
+  
+  def initialize
+    setup_renderers
+    parse_all
+  end
+
+  def setup_renderers
+    @normal_renderer = Redcarpet::Markdown.new(
+      Redcarpet::Render::HTML, :fenced_code_blocks => true)
+    @strip_renderer = Redcarpet::Markdown.new(
+      StripRenderer, :fenced_code_blocks => true)
+    @index = Whistlepig::Index.new("index")
+  end
+
+  def parse_all
+    @pages = find_all_files.map do |page|
+      Page.new(Page.normalize_name(page), @normal_renderer)
+    end
+
+    @pages_by_docid = {}
+
+    @pages.each do |page|
+      entry = Whistlepig::Entry.new
+
+      entry.add_string "body", page.render(@strip_renderer)
+      entry.add_string "name", page.name
+      entry.add_string "title", page.title.downcase
+      entry.add_string "tags", page.tags.join(" ").downcase
+      entry.add_string "page_id", page.page_id
+      entry.add_string "blog_post", page.is_blog_post? ? "yes" : "no"
+      docid = @index.add_entry(entry)
+
+      @pages_by_docid[docid] = page
+    end
+  end
+
+  def find_all_files
+    Dir.glob(File.join(File.dirname(__FILE__), "entries", "*.md")).map do |fullpath|
+      File.basename(fullpath)
+    end
+  end
+
+  def search(query_text, part="body", sort=:date)
+
+    query = Whistlepig::Query.new(part, query_text)
+
+    docids = @index.search(query)
+
+    results = docids.compact.map do |docid|
+      @pages_by_docid[docid]
+    end
+
+    results.compact.sort_by { |p| p.send(sort) }
+  end
+
+  def blog_posts(sort_by=:date)
+    search("yes", "blog_post")
+  end
+
+  def each
+    @pages.each do |page|
+      yield page
+    end
+  end
+end
 
 class Page
 
@@ -10,18 +81,6 @@ class Page
   DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 
   attr_reader :name, :body
-
-  def self.parse_all(renderer)
-    find_all.map do |page|
-      self.new(normalize_name(page), renderer)
-    end
-  end
-
-  def self.find_all
-    Dir.glob(File.join(File.dirname(__FILE__), "entries", "*.md")).map do |fullpath|
-      File.basename(fullpath)
-    end
-  end
 
   def initialize(page, renderer)
     @name = page
@@ -56,8 +115,8 @@ class Page
     return @name =~ DATE_REGEX
   end
 
-  def render
-    @renderer.render(@body)
+  def render(renderer=nil)
+    (renderer || @renderer).render(@body)
   end
 
   def render_before_fold
@@ -93,6 +152,14 @@ class Page
 
   def has_tag(tag)
     tags.detect { |t| t == tag }
+  end
+
+  def title
+    @headers['title']
+  end
+
+  def page_id
+    @headers['id']
   end
 
   def date

@@ -13,6 +13,7 @@ gem 'sinatra-simple-assets', :require => false
 gem 'therubyracer'
 gem 'xml-sitemap'
 gem 'capistrano-buildpack'
+gem 'whistlepig'
 
 group :development do
   gem 'shotgun'

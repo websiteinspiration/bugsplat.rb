@@ -49,6 +49,7 @@ GEM
       kgio (~> 2.4)
       rack
       raindrops (~> 0.6)
+    whistlepig (0.12)
     xml-sitemap (1.2.2)
       builder (>= 2.0)
 
@@ -68,4 +69,5 @@ DEPENDENCIES
   sinatra-simple-assets
   therubyracer
   unicorn
+  whistlepig
   xml-sitemap

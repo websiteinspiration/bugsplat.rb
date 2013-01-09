@@ -2,6 +2,7 @@
 require 'rubygems'
 require 'sinatra/base'
 require 'page'
+require 'strip_renderer'
 require 'atom/pub'
 require 'docverter'
 require 'sinatra/simple_assets'
@@ -9,8 +10,7 @@ require 'xml-sitemap'
 
 class App < Sinatra::Base
 
-  RENDERER = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :fenced_code_blocks => true)
-  PAGES = Page.parse_all(RENDERER)
+  PAGES = Pages.new
   PAGE_CACHE = {}
 
   Docverter.base_url = 'http://c.docverter.com'
@@ -69,7 +69,7 @@ class App < Sinatra::Base
     end
 
     def link_list
-      linked_pages = @pages.find_all { |p| p['order'] != nil }
+      linked_pages = @pages.pages.find_all { |p| p['order'] != nil }
       links = linked_pages.sort_by { |p| p['order'].to_i }.map do |p|
         "<li><a href=\"/#{p.name}.html\">#{p['title']}</a></li>"
       end
@@ -86,14 +86,14 @@ class App < Sinatra::Base
     if settings.environment == :production && File.exists?(path)
       send_file path
     else
-      @index_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse[0,5]
+      @index_pages = @pages.blog_posts.reverse[0,5]
       erb :index
     end
   end
 
   get '/sitemap.xml' do
     map = XmlSitemap::Map.new('bugsplat.info') do |m|
-      @pages.each do |page|
+      @pages.all do |page|
         m.add page.html_path, :period => :daily
       end
     end
@@ -101,12 +101,12 @@ class App < Sinatra::Base
   end
 
   get '/index.html' do
-    @index_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse[0,5]
+    @index_pages = @pages.blog_posts.reverse[0,5]
     erb :index
   end
 
   get '/index.xml' do
-    @archive_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse
+    @archive_pages = @pages.blog_posts.reverse
     feed = Atom::Feed.new do |f|
       f.title = 'Bugsplat'
       f.links << Atom::Link.new(:href => 'http://bugsplat.info')
@@ -128,14 +128,14 @@ class App < Sinatra::Base
   end
 
   get '/archive.html' do
-    @archive_pages = @pages.find_all { |p| p.is_blog_post? }.sort_by { |p| p.date }.reverse
+    @archive_pages = @pages.blog_posts.reverse
     @page_title = "Archive"
     erb :archive
   end
 
   get '/tags.html' do
     tags = {}
-    @pages.each do |page|
+    @pages.all do |page|
       page.tags.each do |tag|
         tags[tag] = true
       end
@@ -146,28 +146,21 @@ class App < Sinatra::Base
   end
 
   get '/tag/:tag.html' do
-    @tagged_pages = @pages.find_all { |p| p.has_tag params[:tag] }.sort_by{ |p| p.date }.reverse
+    @tagged_pages = @pages.search(params[:tag], "tags").reverse
     @page_title = @tag_name = params[:tag]
     erb :tagged_pages
   end
 
   get '/search' do
     @query = params[:q]
-    if (@query || "").strip == ""
-      @results = []
-    else
-      param_regex = /\b#{@query}\b/i
-
-      @results = @pages.select { |p| p.is_blog_post? && p.body.match(param_regex) }.sort_by { |p| p.date.to_i }.reverse
-    end
-
+    @results = @pages.search(@query + " blog_post:yes").reverse
     @page_title = "Search"
     erb :search
   end
 
   get '/:page_name.:format' do
     @hide_discussion = true
-    @page = @pages.detect { |p| p.matches_path(params[:page_name]) }
+    @page = @pages.search(params[:page_name], "name")[0] || @pages.search(params[:page_name], "id")[0]
     unless @page
       raise Sinatra::NotFound
     end
