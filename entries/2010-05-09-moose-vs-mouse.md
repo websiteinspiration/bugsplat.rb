@@ -5,6 +5,8 @@ Id:    4
 
 After using [Calorific][] for a month two things have become very clear. First, I need to eat less. Holy crap do I need to eat less. I went on to [SparkPeople][] just to get an idea of what I *should* be eating, and it told me between 2300 and 2680 kcal. I haven't implemented averaging yet, but a little grep/awk magic tells me I'm averaging 2793 kcal per day. This is *too much*. So. One thing to work on.
 
+--fold--
+
 Second, in the morning after I come back from lifting and sit down to enter my breakfast, I just add three lines to my calories file:
 <pre>
 - 2010-05-07 breakfast:

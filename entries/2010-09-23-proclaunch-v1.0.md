@@ -5,6 +5,8 @@ Id:    0d5b3
 
 I kind of started [ProcLaunch][] as a lark. Can I actually do better than the existing user space process managers? It turns out that at least a few people think so. I've gotten a ton of great feedback from [thijsterlouw](http://github.com/thijsterlouw), who actually filed bug reports and helped me work through a bunch of issues. ProcLaunch even has some tests now!
 
+--fold--
+
 As of today, I'm releasing ProcLaunch v1.0, which you can download from the [github downloads page][]. Interesting changes from the initial version:
 
 * Moved to an explicit state machine

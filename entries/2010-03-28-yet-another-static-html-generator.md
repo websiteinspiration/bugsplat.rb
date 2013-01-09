@@ -7,6 +7,8 @@ I'm a strict believer in learning by doing. It's how I learn best. In the spirit
 
 Right away I decided that there's no point in having a database to back this thing. The only useful thing that a database brings to the table is comments, and those are way more hassle than they're worth. Better to leave the comments at [reddit](http://reddit.com) or [hacker news](http://news.ycombinator.com), where they already know how to deal with spam. Not having to worry about a database freed me up to worry about more important things, like how to put text on the screen. I'm most familiar with [perl](http://www.perl.org) at the moment so I decided that the best way to build it would be a client-side script that generates some static html.
 
+--fold--
+
 Current features:
 
 * Absolutely no database

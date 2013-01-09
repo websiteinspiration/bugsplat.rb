@@ -7,6 +7,8 @@ Literally ten minutes after hitting the publish button on my [last post](/2011-1
 
 That doesn't stop me from doing fun things, though, so this morning I cooked up a tiny webapp using [Sinatra][], [DataMapper][], and [Bootstrap][] that will help me keep track of when I take painkillers. It's called [Painkiller Jane][] after the comic book character.
 
+--fold--
+
 <img src="https://github.com/peterkeen/painkillerjane/raw/master/public/screenshot.png">
 
 There's not much interesting going on here to be honest. Basically it's just one database table and an in-app configuration hash that lays out what pills are available, their dosage, and their cooldown period. I can click the buttons when the cooldown is over, but when it's not they tell me what time I can take the next dose.

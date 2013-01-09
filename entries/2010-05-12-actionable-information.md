@@ -4,6 +4,8 @@ Id:    5
 
 Let's pretend, just for a second, that you want to make some money on the stock market. Sounds easy, right? Buy low, sell high, yadda yadda blah blah blah. Except, how do you know when to buy and when to sell? Not so easy. Being a nerd, you want to teach your computer how to do this for you. But where to start? I discovered a few months ago that there are [services][1] [out][2] [there][3] that will sell you a data feed that literally blasts every single anonymous transaction that happens on any market in the US in real time. They'll also sell you access to a historical feed that provides the same tick-level information going back for several years.
 
+--fold--
+
 So, ok, you've got a whole lot of raw data. All kinds of fun problems come from having a huge glug of raw data, especially when you're getting blasted more of it every day. Where to store it, how to store it, how to index it so you can get at certain segments quickly, etc. Let's pretend that you've solved all of those and it's time to get to the meat of this exercise: figuring out when to buy. You write a little program that searches through your historical data looking for signs of business cycles in various sized companies and gives you the top five that you should buy and how long you should probably hold onto them. That list is *actionable information* that you created out of raw data that you can use to make some money. Maybe. Hopefully. If the world doesn't end. Again.
 
 Ok, that's a pretty small example. Let's do something bigger. Let's pretend that you're Google. You have truck loads of cash just laying around waiting for you to do something with it. Hey, data centers are cool, why not build some new ones! But where?
