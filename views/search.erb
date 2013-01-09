@@ -1,0 +1,21 @@
+<% if @results.length > 0 %>
+<h3>Search results for &ldquo;<%= @query %>&rdquo;</h3>
+
+<% @results.each do |page| %>
+<div class="entry">
+  <h2><a href="<%= page.html_path %>"><%= page['title'] %></a></h2>
+  <p class="date"><%= page.natural_date %></p>
+  <%= page.render_before_fold %>  
+  <% if page.tags.length > 0 %>
+  <p class="date">Tagged: <% page.tags.each do |tag| %>
+  <a href="/tag/<%= tag %>.html"><%= tag %></a>&nbsp;
+  <% end %>
+  </p>
+  <% end %>
+  <a href="<%= page.html_path %>">Read More</a>
+  <hr class="separator">
+</div>
+<% end %>
+<% else %>
+<h3>No posts found</h3>
+<% end %>

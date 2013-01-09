@@ -151,6 +151,20 @@ class App < Sinatra::Base
     erb :tagged_pages
   end
 
+  get '/search' do
+    @query = params[:q]
+    if (@query || "").strip == ""
+      @results = []
+    else
+      param_regex = /\b#{@query}\b/i
+
+      @results = @pages.select { |p| p.is_blog_post? && p.body.match(param_regex) }.sort_by { |p| p.date.to_i }.reverse
+    end
+
+    @page_title = "Search"
+    erb :search
+  end
+
   get '/:page_name.:format' do
     @hide_discussion = true
     @page = @pages.detect { |p| p.matches_path(params[:page_name]) }
