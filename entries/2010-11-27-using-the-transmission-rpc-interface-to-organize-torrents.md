@@ -5,6 +5,8 @@ Id:    fb907
 
 I've been using my Mac mini as a torrent downloader and media server for a few years now using [Transmission][]. Tonight I got fed up with my torrents being in one unsorted mass so I learned the [HTTP RPC api][tr-api] and wrote a simple blocking client that organizes them.
 
+--fold--
+
 I tried out an [existing client][transmission-client] that I found on GitHub, but it was sort of difficult to use, involving EventMachine and evented techniques. If this was part of a long-running processes I would spend the time to learn how to do this stuff, but this is just a simple script so a blocking technique is just fine.
 
 Here's the client class:
