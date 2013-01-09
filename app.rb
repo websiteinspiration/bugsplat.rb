@@ -156,7 +156,7 @@ class App < Sinatra::Base
     if @query == ""
       @results = []
     else
-      @results = @pages.search(@query + " blog_post:yes").reverse
+      @results = @pages.search(@query.downcase + " blog_post:yes").reverse
     end
     @page_title = "Search"
     erb :search
