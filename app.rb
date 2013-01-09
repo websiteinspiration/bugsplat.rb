@@ -152,7 +152,7 @@ class App < Sinatra::Base
   end
 
   get '/search' do
-    @query = params[:q].strip
+    @query = (params[:q] || "").strip
     if @query == ""
       @results = []
     else
