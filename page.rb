@@ -53,7 +53,11 @@ class Pages
 
   def search(query_text, part="body", sort=:date)
 
-    query = Whistlepig::Query.new(part, query_text)
+    begin
+      query = Whistlepig::Query.new(part, query_text)
+    rescue Whistlepig::ParseError
+      return []
+    end
 
     docids = @index.search(query)
 
