@@ -1,4 +1,4 @@
-Title: Full Text Indexing with Whistlepig
+Title: Full Text Search with Whistlepig
 Date:  2013-01-09 07:51:11
 Id:    6d23b
 Tags:  Programming, Meta
