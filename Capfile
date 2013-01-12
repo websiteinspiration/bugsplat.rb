@@ -17,5 +17,6 @@ read_env 'prod'
 
 load 'deploy'
 
-
-
+after "deploy" do
+  remote "bundle exec rake email:send"
+end

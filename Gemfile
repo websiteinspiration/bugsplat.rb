@@ -13,6 +13,7 @@ gem 'therubyracer'
 gem 'xml-sitemap'
 gem 'capistrano-buildpack'
 gem 'whistlepig'
+gem 'gibbon'
 
 group :development do
   gem 'shotgun'
