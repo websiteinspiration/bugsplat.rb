@@ -18,5 +18,5 @@ read_env 'prod'
 load 'deploy'
 
 after "deploy" do
-  remote "bundle exec rake email:send"
+  run "cd #{current_path}; foreman run bundle exec rake email:send"
 end
