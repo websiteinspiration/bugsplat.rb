@@ -7,7 +7,7 @@ Someone at work today demanded that I add an RSS feed, so here you go: [atom][1]
 
 Another thing to notice: [File::Slurp][5] instead of my own `read_file_contents` and `write_file_contents`. It works just as well as mine, except it's more sensitive to list vs scalar context.
 
-[1]: index.xml
+[1]: /index.xml
 [2]: http://search.cpan.org/dist/DateTime-Format-Natural
 [3]: http://search.cpan.org/dist/DateTime-Format-W3CDTF
 [4]: http://search.cpan.org/dist/XML-Atom-SimpleFeed

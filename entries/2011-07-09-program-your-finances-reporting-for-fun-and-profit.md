@@ -131,7 +131,7 @@ With this setup, I'm able to keep my financial data in a simple, easy to use for
 [ledger-tools-load]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/load_ledger.sh
 [ledger-tools-schema]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/ledger-schema.sql
 [python-random-triangular]: http://docs.python.org/library/random.html#random.triangular
-[report-example]: static/stan-demo-report.html
+[report-example]: /stan-demo-report.html
 [PostgreSQL]: http://www.postgresql.org/
 [Python]: http://www.python.org/
 [jquery.datatables]: http://www.datatables.net/
