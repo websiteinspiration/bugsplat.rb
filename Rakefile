@@ -4,6 +4,7 @@ require 'rake'
 require 'digest/sha1'
 require 'set'
 require 'gibbon'
+require 'anemone'
 
 $:.unshift(File.dirname(__FILE__))
 require 'app'
@@ -36,6 +37,15 @@ end
 
 task :server do
   sh "bundle exec shotgun -I."
+end
+
+task :spider do
+  Anemone.crawl("http://bugsplat.info") do |a|
+    a.skip_links_like(/(pdf|docx)/)
+    a.on_every_page do |p|
+      puts p.url if p.code == 404
+    end
+  end
 end
 
 task :tags do

@@ -14,6 +14,7 @@ gem 'xml-sitemap'
 gem 'capistrano-buildpack'
 gem 'whistlepig'
 gem 'gibbon'
+gem 'anemone'
 
 group :development do
   gem 'shotgun'
