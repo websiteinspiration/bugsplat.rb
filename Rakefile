@@ -48,6 +48,12 @@ task :spider do
   end
 end
 
+task :deploy do
+  sh "git push origin master"
+  sh "cap deploy"
+  Rake::Task["spider"].invoke
+end
+
 task :tags do
   tags = Set.new
   Dir.glob(File.join(File.dirname(__FILE__), "entries", "*.md")).map do |fullpath|
