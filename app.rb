@@ -165,7 +165,7 @@ class App < Sinatra::Base
 
   get '/:page_name.:format' do
     @hide_discussion = true
-    @page = @pages.search(params[:page_name], "name")[0] || @pages.search(params[:page_name], "id")[0]
+    @page = @pages.search(params[:page_name], "name")[0] || @pages.search(params[:page_name], "page_id")[0] || @pages.blog_posts.detect { |p| p.name == params[:page_name] || p.page_id == params[:page_name] }
     unless @page
       raise Sinatra::NotFound
     end

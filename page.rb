@@ -41,6 +41,7 @@ class Pages
       entry.add_string "blog_post", page.is_blog_post? ? "yes" : "no"
       docid = @index.add_entry(entry)
 
+      page.docid = docid
       @pages_by_docid[docid] = page
     end
   end
@@ -55,7 +56,8 @@ class Pages
 
     begin
       query = Whistlepig::Query.new(part, query_text)
-    rescue Whistlepig::ParseError
+    rescue Whistlepig::ParseError => e
+      puts "error: #{e}"
       return []
     end
 
@@ -84,6 +86,7 @@ class Page
   DATE_REGEX = /\d{4}-\d{2}-\d{2}/
   DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 
+  attr_accessor :docid
   attr_reader :name, :body
 
   def initialize(page, renderer)
