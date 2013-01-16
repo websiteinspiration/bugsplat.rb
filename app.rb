@@ -165,7 +165,9 @@ class App < Sinatra::Base
 
   get '/:page_name.:format' do
     @hide_discussion = true
-    @page = @pages.search(params[:page_name], "name")[0] || @pages.pages.detect { |p| p.name == params[:page_name] }
+    @page = @pages.search(params[:page_name], "name")[0] || \
+            @pages.pages.detect { |p| p.name == params[:page_name] }
+
     unless @page
       raise Sinatra::NotFound
     end
@@ -209,7 +211,8 @@ class App < Sinatra::Base
   end
 
   get '/:page_id' do
-    @page = @pages.search(params[:page_id], "page_id")[0] || @pages.pages.detect { |p| p.page_id == params[:page_id] }
+    @page = @pages.search(params[:page_id], "page_id")[0] || \
+            @pages.pages.detect { |p| p.page_id == params[:page_id] }
 
     unless @page
       raise Sinatra::NotFound
