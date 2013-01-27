@@ -7,6 +7,7 @@ Order: 4
 I have developed various bits of open source software and released them on Github. Here are a few of more more interesting projects:
 
 * [Dokuen](https://github.com/peterkeen/dokuen), a personal PaaS for Mac and Linux
+* [Capistrano::Buildpack](https://github.com/peterkeen/capistrano-buildpack), a Capistrano extension for deploying with [Heroku-style buildpacks](https://devcenter.heroku.com/articles/buildpacks)
 * [Ledger Web](https://github.com/peterkeen/ledger-web), a web-based reporting system for the [Ledger](/ledger.html) command line accounting tool.
 
 #### [Marginalia](http://www.marginalia.io)
