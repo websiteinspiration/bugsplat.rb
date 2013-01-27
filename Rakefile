@@ -73,6 +73,14 @@ task :tags do
   tags.sort.each { |t| puts t }
 end
 
+task :tagless do
+  App::PAGES.each do |page|
+    next unless page.is_blog_post?
+    next if page.tags.length > 0
+    puts "entries/#{page.name}.md"
+  end
+end
+
 namespace :assets do
   task :precompile do
 
