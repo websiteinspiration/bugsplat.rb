@@ -1,6 +1,7 @@
 Title: Blog Generator Updates
 Date:  2010-08-06 23:04:47
 Id:    13
+Tags:  Programming, Meta
 
 I've made some small changes to the way bugsplat.info is generated. First, I refactored `publish.pl` quite extensively. Instead of being a huge mess of spaghetti-perl, it's nicely factored out into functions, each one doing as little as possible. It got a little longer, but I think it's worth the tradeoff in readability.
 

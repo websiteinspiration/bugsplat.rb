@@ -1,6 +1,7 @@
 Title: Actionable Information
 Date:  2010-05-12 08:53:00
 Id:    5
+Tags:  Programming
 
 Let's pretend, just for a second, that you want to make some money on the stock market. Sounds easy, right? Buy low, sell high, yadda yadda blah blah blah. Except, how do you know when to buy and when to sell? Not so easy. Being a nerd, you want to teach your computer how to do this for you. But where to start? I discovered a few months ago that there are [services][1] [out][2] [there][3] that will sell you a data feed that literally blasts every single anonymous transaction that happens on any market in the US in real time. They'll also sell you access to a historical feed that provides the same tick-level information going back for several years.
 
