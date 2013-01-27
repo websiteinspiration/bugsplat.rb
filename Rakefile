@@ -40,7 +40,7 @@ task :server do
 end
 
 task :spider do
-  Anemone.crawl("http://bugsplat.info") do |a|
+  Anemone.crawl("https://bugsplat.info") do |a|
     a.skip_links_like(/(pdf|docx)/)
     a.on_every_page do |p|
       puts p.url if p.code == 404
@@ -145,8 +145,8 @@ namespace :email do
       campaign_id = gibbon.campaign_create(
         :type => :regular,
         :content => {
-          :html_std_content00 => "<h1><a href=\"http://bugsplat.info/#{post.html_path}\">#{post.title}</a></h1>" + post.render,
-          :text => "##{post.title}\n\n" + post.body + "\n\nhttp://bugsplat.info/#{post.html_path}",
+          :html_std_content00 => "<h1><a href=\"https://bugsplat.info/#{post.html_path}\">#{post.title}</a></h1>" + post.render,
+          :text => "##{post.title}\n\n" + post.body + "\n\nhttps://bugsplat.info/#{post.html_path}",
         },
         :options => {
           :list_id     => list_id,

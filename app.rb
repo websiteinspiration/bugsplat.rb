@@ -109,14 +109,14 @@ class App < Sinatra::Base
     @archive_pages = @pages.blog_posts.reverse
     feed = Atom::Feed.new do |f|
       f.title = 'Bugsplat'
-      f.links << Atom::Link.new(:href => 'http://bugsplat.info')
+      f.links << Atom::Link.new(:href => 'https://bugsplat.info')
       f.updated = @archive_pages[0].date.to_time
       f.authors << Atom::Person.new(:name => 'Pete Keen', :email => 'pete@bugsplat.info')
   
       @archive_pages.each do |p|
         f.entries << Atom::Entry.new do |e|
           e.title = p['title']
-          e.links << Atom::Link.new(:href => "http://bugsplat.info#{ p.html_path }")
+          e.links << Atom::Link.new(:href => "https://bugsplat.info#{ p.html_path }")
           e.id = p['id']
           e.updated = p.date.to_time
           e.content = Atom::Content::Html.new(p.render)
