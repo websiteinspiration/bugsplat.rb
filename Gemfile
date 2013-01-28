@@ -15,7 +15,6 @@ gem 'capistrano-buildpack'
 gem 'whistlepig'
 gem 'gibbon'
 gem 'anemone'
-gem 'rack-ssl'
 
 group :development do
   gem 'shotgun'
