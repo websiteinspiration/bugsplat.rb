@@ -13,6 +13,7 @@ set :user, "peter"
 set :base_port, 6700
 set :concurrency, "web=1"
 set :use_ssl, true
+set :force_ssl, true
 set :ssl_cert_path, '/etc/nginx/certs/bugsplat.info.crt'
 set :ssl_key_path, '/etc/nginx/certs/bugsplat.info.key'
 
