@@ -84,6 +84,7 @@ end
 class Page
 
   DATE_REGEX = /\d{4}-\d{2}-\d{2}/
+  SHORT_DATE_FORMAT = "%Y-%m-%d"
   DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 
   attr_accessor :docid
@@ -171,7 +172,11 @@ class Page
 
   def date
     if is_blog_post?
-      Time.strptime(@headers['date'], DATE_FORMAT)
+      if @headers['date']
+        Time.strptime(@headers['date'], DATE_FORMAT)
+      else
+        Time.strptime(@name, SHORT_DATE_FORMAT)
+      end
     end
   end
 
