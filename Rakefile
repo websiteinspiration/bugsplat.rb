@@ -21,7 +21,6 @@ task :next do
   filename = "entries/#{slug}.md"
   contents = <<HERE
 Title: #{title}
-Date:  #{now.strftime('%Y-%m-%d %H:%M:%S')}
 Id:    #{id}
 Tags:  
 
