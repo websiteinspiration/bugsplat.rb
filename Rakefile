@@ -174,3 +174,4 @@ namespace :email do
     end while campaigns.length > 0
   end
 end
+
