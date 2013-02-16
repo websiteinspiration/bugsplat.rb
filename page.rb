@@ -79,6 +79,42 @@ class Pages
       yield page
     end
   end
+
+  def tag_frequencies
+    tags = Hash.new(0)
+    @pages.each do |page|
+      page.tags.each do |tag|
+        tags[tag] += 1
+      end
+    end
+    tags
+  end
+
+  def related_posts(target)
+    freqs = tag_frequencies
+    
+    highest_freq = freqs.values.max
+    related_scores = Hash.new(0)
+
+    blog_posts.each do |post|
+      post.tags.each do |tag|
+        if target.tags.include?(tag) && target != post
+          tag_freq = freqs[tag]
+          related_scores[post] += (1 + highest_freq - tag_freq)
+        end
+      end
+    end
+
+    related_scores.sort do |a,b|
+     if a[1] < b[1]
+          1
+        elsif a[1] > b[1]
+          -1
+        else
+          b[0].date <=> a[0].date
+        end
+    end.select{|post,freq| freq > 1}.collect {|post,freq| post}
+  end
 end
 
 class Page

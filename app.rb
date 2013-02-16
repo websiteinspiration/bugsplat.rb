@@ -75,6 +75,14 @@ class App < Sinatra::Base
       end
       links.join("\n")
     end
+
+    def has_related_posts(page)
+      related_posts(page).length > 0
+    end
+
+    def related_posts(page)
+      PAGES.related_posts(page)[0..2].compact
+    end
   end
 
   before do
