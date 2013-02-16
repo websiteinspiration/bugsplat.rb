@@ -4,14 +4,6 @@ Id:    resume-123
 
 ### Experience ##
 
-#### Founder of Docverter, 2012 - Current ####
-
-* Converts Markdown, reStructuredText, Textile and various other
-  plaintext formats to HTML, PDF, Docx, ePub and Mobi documents
-* Built Rails app hosted on Heroku that integrates several pieces
-  of open source software, including [pandoc](http://johnmacfarlane.net/pandoc/)
-  and [calibre](http://calibre-ebook.com/).
-
 #### Software Developer, 2012 - Current ####
 
 [Kongregate](http://www.kongregate.com), Portland, OR
