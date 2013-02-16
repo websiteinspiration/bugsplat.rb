@@ -21,7 +21,7 @@ As of today, I'm releasing ProcLaunch v1.0, which you can download from the [git
 
     Log lines have a static format: `<Timestamp> <Log Level> <Tag> <Message>`. `<Tag>` is either `ProcLaunch` or the name of the profile. If a message mentiones a pid, it will always be stated as `pid <PID>`. This change should make it easier to grep through the logs and automatically parse them for monitoring through nagios or what-have-you. 
 
-Please check it out and beat it up. If you notice any issues, don't hesitate to [submit an issue][proclaunch issues] or [email me](mailto:pete@bugsplat.info), or just leave a comment below.
+Please check it out and beat it up. If you notice any issues, don't hesitate to [submit an issue][proclaunch issues] or [email me](mailto:pete@bugsplat.info).
 
 [ProcLaunch]: http://github.com/peterkeen/proclaunch
 [github downloads page]: http://github.com/peterkeen/proclaunch/downloads

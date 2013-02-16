@@ -4,7 +4,7 @@ Id:    46c44
 Tags:  Docverter, Programming, Meta
 
 Today I added PDF, Docx, and Markdown download links to the bottom of every post here on Bugsplat.
-Scroll down to just above the comments to see them, the scroll back up here to read how it works.
+Scroll down to the bottom to see them, the scroll back up here to read how it works.
 
 --fold--
 

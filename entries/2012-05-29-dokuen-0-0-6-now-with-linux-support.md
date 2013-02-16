@@ -25,4 +25,4 @@ Because there's no need for a custom LaunchDaemon per app, just one global one t
 
 I've included a rudimentary ubuntu upstart script. All it does is run `dokuen boot`, just like on Mac. If you're not using ubuntu, feel free to write up an init script and submit a pull request on github.
 
-*Questions? Comments? Leave a comment below or [email me](mailto:pete@bugsplat.info). I'm also loitering in `#dokuen` on `freenode` if you feel like chatting.*
+*Questions? Comments? [Email me](mailto:pete@bugsplat.info). I'm also loitering in `#dokuen` on `freenode` if you feel like chatting.*
