@@ -1,6 +1,6 @@
 <h2>Archive</h2>
-<ul>
+<ul class="archive-list">
   <% @archive_pages.each do |page| %>
-  <li><a href="<%= page.html_path %>"><%= page.date.strftime('%Y-%m-%d') %> - <%= page['title'] %></a></li>
+  <li><span class="date fixed-width"><%= page.date.strftime('%Y-%m-%d') %> &raquo;</span> <a href="<%= page.html_path %>"><%= page['title'] %></a></li>
   <% end %>
 </ul>
