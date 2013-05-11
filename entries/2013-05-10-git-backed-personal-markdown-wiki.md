@@ -6,6 +6,8 @@ For as long as I can remember I've been trying to find a good way to keep person
 
 Lately, though, it's been kind of a drag to use a web-based application just to write down some work notes. Having sort of an obsession with Markdown I decided to just start keeping notes in Markdown-formatted files in a directory. Of course, files that aren't backed up are likely to disappear at any moment, so I naturally stuck them in a git repository and pushed to my [personal git server][]. But then, how do I deal with synching my work and home machines? I guess I'll manually merge changes...
 
+--fold--
+
 Yeah, that lasted about 10 minutes. I had a whole setup baked up that tied together a rake script and an OS X LaunchAgent that watched a directory and everything, but the merging is of course the hardest part.
 
 I went hunting for alternatives. I even briefly considered trying out Evernote, but that didn't really meet with my self-hosting ideals. Dropbox was also a non-starter because, again, not self-hosted. Then I came across [SparkleShare][] and my eyes lit up. SparkleShare uses git as it's transport mechanism, can sync with any git repository, and automatically watches a given directory for changes.
