@@ -1,4 +1,4 @@
-Title: Git-backed Wiki with Markdown and Emacs
+Title: Distributed Personal Wiki
 Id:    83656
 Tags:  Programming, Git
 
