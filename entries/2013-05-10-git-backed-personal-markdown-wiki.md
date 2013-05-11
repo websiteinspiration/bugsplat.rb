@@ -6,6 +6,19 @@ For as long as I can remember I've been trying to find a good way to keep person
 
 Lately, though, it's been kind of a drag to use a web-based application just to write down some work notes. Having sort of an obsession with Markdown I decided to just start keeping notes in Markdown-formatted files in a directory. Of course, files that aren't backed up are likely to disappear at any moment, so I naturally stuck them in a git repository and pushed to my [personal git server][]. But then, how do I deal with synching my work and home machines? I guess I'll manually merge changes...
 
+
+[PmWiki]:     http://www.pmwiki.org
+[Docuwiki]:   https://www.dokuwiki.org/dokuwiki
+[TiddlyWiki]: http://tiddlywiki.com
+[Marginalia]: https://www.marginalia.com
+[personal git server]: /2012-10-27-hosting-private-git-repositories-with-gitolite.html
+[SparkleShare]: http://sparkleshare.org
+[markdown-mode]: http://jblevins.org/projects/markdown-mode/
+[my dotfiles]: /2012-08-11-task-oriented-dotfiles.html
+[Gollum]: https://github.com/gollum/gollum
+[Mandrill]: http://mandrill.com
+[Mailgun]: http://www.mailgun.com
+
 --fold--
 
 Yeah, that lasted about 10 minutes. I had a whole setup baked up that tied together a rake script and an OS X LaunchAgent that watched a directory and everything, but the merging is of course the hardest part.
@@ -19,15 +32,3 @@ So, that covers the sync and backup strategy. What about the wiki part? I've bee
 There are two more things that I want to do that would make this system work really well. First, I want to set up [Gollum][] on one of my servers and point it at the git repo that SparkleShare is syncing, so that I can have a web interface and pretty formatting when I want it. The nice thing is that `markdown-mode` and Gollum use the same syntax for wiki links.
 
 Second, I want to replicate the send-an-email-to-create-a-note functionality that Marginalia has. I think I can do this with a tiny CGI script hooked up to [Mandrill][] or [Mailgun][]'s incoming email processing system. All it has to do is drop the message text into the SparkleShare-synced directory with a filename based on the subject.
-
-[PmWiki]:     http://www.pmwiki.org
-[Docuwiki]:   https://www.dokuwiki.org/dokuwiki
-[TiddlyWiki]: http://tiddlywiki.com
-[Marginalia]: https://www.marginalia.com
-[personal git server]: /2012-10-27-hosting-private-git-repositories-with-gitolite.html
-[SparkleShare]: http://sparkleshare.org
-[markdown-mode]: http://jblevins.org/projects/markdown-mode/
-[my dotfiles]: /2012-08-11-task-oriented-dotfiles.html
-[Gollum]: https://github.com/gollum/gollum
-[Mandrill]: http://mandrill.com
-[Mailgun]: http://www.mailgun.com
