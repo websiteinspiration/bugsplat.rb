@@ -27,7 +27,7 @@ I went hunting for alternatives. I even briefly considered trying out Evernote, 
 
 SparkleShare is trivial to set up. Download the package, drag the app to `/Applications`, and run it. It'll create a directory at `~/SparkleShare` and then ask you to add a hosted project. Just create a git repo somewhere (or not, it can sync to any directory that it can talk to via `ssh`), point SparkleShare at it, and you're done. Do this across every machine you want this share on and whenever you add, delete, or modify a file in that directory it'll get synced to all of the other machines automatically.
 
-So, that covers the sync and backup strategy. What about the wiki part? I've been using Emacs [markdown-mode][] for several years to get syntax highlighting when writing blog posts and such, and unbenounced to me in a recent release Jason added Wiki links and keyboard shortcuts to follow them. I upgraded [my dotfiles][] to the latest version of `markdown-mode` and then bam, wiki in a git repo.
+So, that covers the sync and backup strategy. What about the wiki part? I've been using Emacs [markdown-mode][] for several years to get syntax highlighting when writing blog posts and such, and unbeknownst to me in a recent release Jason added Wiki links and keyboard shortcuts to follow them. I upgraded [my dotfiles][] to the latest version of `markdown-mode` and then bam, wiki in a git repo.
 
 There are two more things that I want to do that would make this system work really well. First, I want to set up [Gollum][] on one of my servers and point it at the git repo that SparkleShare is syncing, so that I can have a web interface and pretty formatting when I want it. The nice thing is that `markdown-mode` and Gollum use the same syntax for wiki links.
 
