@@ -1,7 +1,7 @@
 Title: Contact Me
 Id: contact-123
 
-<i class="icon-mail"></i> Email: [pete@bugsplat.info](mailto:pete@bugsplat.info)
+<i class="icon-envelope"></i> Email: [pete@bugsplat.info](mailto:pete@bugsplat.info)
 
 <i class="icon-twitter"></i> Twitter: [@zrail](http://twitter.com/zrail)
 

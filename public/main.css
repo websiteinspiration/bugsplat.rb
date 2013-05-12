@@ -103,6 +103,11 @@ h4 { font-family: 'Droid Sans', helvetica, arial, sans-serif; margin: 1em 0; pad
     font-size: 60%;
 }
 
+#footer .tip
+{
+  margin-right: 0.5em;
+}
+
 div.entry
 {
   margin-bottom: 2em;

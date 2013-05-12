@@ -22,11 +22,11 @@ class App < Sinatra::Base
       '/page.css',
       '/table.css',
       '/github.css',
-      '/fontello.css',
+      '/font-awesome.css',
     ]
 
     css :ie7, [
-      '/fontello-ie7.css',
+      '/font-awesome-ie7.css'
     ]
 
     css :print, [
