@@ -36,3 +36,4 @@ There's two caveats to this otherwise great solution. First, it's not going to w
 
 If you can live with those two things, I suggest you try out this setup, especially if you already have a Magic Trackpad and a Kinesis. It's pretty awesome.
 
+<small><i>Note: this post contains Amazon affiliate links to help me pay for the server. Thanks for your support.</i></small>
