@@ -8,8 +8,14 @@ Id:    resume-123
 
 [Kongregate](http://www.kongregate.com), Portland, OR
 
-* Maintain one of the largest and oldest Ruby on Rails apps out there.
+* Maintain and optimize one of the largest and oldest Ruby on Rails
+  applications in existence. Kongregate receives over 10 million visits
+  per month across more than 60,000 free-to-play single- and
+  multiplayer games.
 
+* Work across the entire stack, from MySQL query optimization to Ruby
+  and Node.JS background jobs to front-end HTML, Javascript and CSS.
+  
 #### Platform Developer, 2011 - 2012 ###
 
 [Emma](http://www.myemma.com), Portland, OR
