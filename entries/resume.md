@@ -16,11 +16,11 @@ Id:    resume-123
 * Work across the entire stack, from MySQL query optimization to Ruby
   and Node.JS background jobs to front-end HTML, Javascript and CSS.
   
-* Daily work on tasks using Pivotal Tracker, GitHub, and the Jenkins
-  continuous integration server.
-  
 * Implemented a lapsed-gamer mailer with customized messages for every
   user which increased retention by ~5%.
+  
+* Daily work on tasks using Pivotal Tracker, GitHub, and the Jenkins
+  continuous integration server.
   
 #### Platform Developer, 2011 - 2012 ###
 
