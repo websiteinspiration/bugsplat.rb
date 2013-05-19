@@ -43,7 +43,7 @@ Docverter is plaintext to formatted document conversion tool with a RESTful API.
 
 <h4 id="twfr"><a href="http://twitter-fiction-reader.bugsplat.info">Twitter Fiction Reader</a></h4>
 
-<a href="http://twitter-fiction-reader.bugsplat.info"><img src="http://files.bugsplat.info/files/7cc528fdf807f157e155/twitter-fiction-reader.png"></a>
+<a href="http://twitter-fiction-reader.bugsplat.info"><img src="https://files.bugsplat.info/files/164e5eed453a75f516fb/twitter-fiction-reader.png"></a>
 
 Twitter Fiction Reader is a curated archive of public Twitter accounts that tell fictional stories 140 characters at a time. The main application is based on Sinatra and PostgreSQL, with a simple cron task for pulling down fresh tweets.
 
