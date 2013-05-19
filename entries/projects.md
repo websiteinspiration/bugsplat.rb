@@ -67,7 +67,7 @@ The easiest way to keep track of your apartment search. I build this to help my 
 
 <hr class="separator">
 
-<h4 id="opensource"><a href="https://github.com/peterkeen">Open Source</a></h4>
+<h3 id="opensource"><a href="https://github.com/peterkeen">Open Source</a></h4>
 
 I have developed various bits of open source software and released them on Github. Here are a few of more more interesting projects:
 
