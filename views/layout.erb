@@ -16,46 +16,39 @@
     <meta name="google-site-verification" content="TrfmxNXy4NvuQkn-ijPJ6suggiCgRHNVYEKfUT3oB7I" />
   </head>
   <body>
-
-  <div id="container">
-	<div id="header">
-		<h1>
-			<a href="/">Bugsplat</a>
+    <div class="container container-narrow">
+      <div class="masthead">
+        <h1>
+		  <a href="/">Bugsplat</a> <small>by <a href="http://www.petekeen.com/">Pete Keen</a></small>
 		</h1>
-		<h4>
-    		by <a href="http://www.petekeen.com/">Pete Keen</a>
-		</h4>
-
-	</div>
-	<div id="navigation">
-	</div>
-	<div id="content-container">
-		<div id="aside">
-            <ul id="links">
-              <form method="get" action="/search"><input type="search" results="5" autosave="bugsplat_search" placeholder="Search" name="q"></input></form>
-              <li><a href="/archive.html">Archive</a></li>
-              <li><a href="/tags.html">All Tags</a></li>
-              <br>
-              <%= link_list %>
-              <br>
-              <li><a href="/contact.html">Contact Me</a></li>
-              <li><a href="/index.xml">Subscribe <i class="icon-rss"></i></a></li>
-            </ul>
-		</div>
-		<div id="content">
-          <%= yield %>
-		</div>
-		<div id="footer">
-			&copy; <a href="http://www.petekeen.com/">Pete Keen</a> | <a href="/colophon.html">Colophon</a> |     <a href="https://github.com/peterkeen" data-original-title="Github" class="tip"><i class="icon-github"></i></a> 
-    <a href="http://www.linkedin.com/in/peterkeen" data-original-title="LinkedIn" class="tip"><i class="icon-linkedin"></i></a> 
-    <a href="http://twitter.com/zrail" data-original-title="Twitter" class="tip"><i class="icon-twitter"></i></a>  
-    <a href="mailto:pete@petekeen.com" data-original-title="Email" class="tip"><i class="icon-envelope"></i></a>
-    <a href="/index.xml" data-original-title="Subscribe to Feed" class="tip"><i class="icon-rss"></i></a>
-		</div>
-	</div>
-  </div>
-  <%= relative_javascript :application %>
-  <script type="text/javascript">
+        <ul class="nav pull-right">
+          <li>
+            <form method="get" action="/search"><input type="search" results="5" autosave="bugsplat_search" placeholder="Search" name="q"></input></form>
+          </li>
+        </ul>
+        <ul class="nav-links">
+          <li><a href="/about">About</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/resume">Resume</a></li>
+          <li><a href="/archive">Archive</a></li>
+        </ul>
+	  </div>
+	  <div id="content">
+        <%= yield %>
+	  </div>
+      <footer>
+        <ul class="nav-links">
+		  <li>&copy; <a href="http://www.petekeen.com/">Pete Keen</a></li>
+          <li><a href="https://github.com/peterkeen" data-original-title="Github" class="tip"><i class="icon-github"></i></a></li>
+          <li><a href="http://www.linkedin.com/in/peterkeen" data-original-title="LinkedIn" class="tip"><i class="icon-linkedin"></i></a></li>
+          <li><a href="http://twitter.com/zrail" data-original-title="Twitter" class="tip"><i class="icon-twitter"></i></a></li>
+          <li><a href="mailto:pete@petekeen.com" data-original-title="Email" class="tip"><i class="icon-envelope"></i></a></li>
+          <li><a href="/index.xml" data-original-title="Subscribe to Feed" class="tip"><i class="icon-rss"></i></a></li>
+        </ul>
+      </footer>
+    </div>
+    <%= relative_javascript :application %>
+    <script type="text/javascript">
   
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-5663087-2']);

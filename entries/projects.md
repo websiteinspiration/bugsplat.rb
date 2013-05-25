@@ -2,22 +2,6 @@ Title: Projects
 Id: projects-123
 Order: 4
 
-<ul>
-  <li>
-    <a href="#startups">Startups / Side Projects</a>
-    <ul>
-      <li><a href="#marginalia">Marginalia</a></li>
-      <li><a href="#docverter">Docverter</a></li>
-      <li><a href="#twfr">Twitter Fiction Reader</a></li>
-      <li><a href="#remindlyo">Remindlyo</a></li>
-      <li><a href="#fivepad">Fivepad</a></li>
-    </ul>
-  </li>
-  <li><a href="#opensource">Open Source</a></li>
-</ul>
-
-<hr class="separator">
-
 <h3 id="startups">Startups / Side Projects</h3>
 
 <h4 id="marginalia"><a href="http://www.marginalia.io">Marginalia</a></h4>

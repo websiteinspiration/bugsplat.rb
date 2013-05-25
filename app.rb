@@ -18,26 +18,25 @@ class App < Sinatra::Base
   register Sinatra::SimpleAssets
   assets do
     css :application, [
-      '/main.css',
-      '/page.css',
-      '/table.css',
-      '/github.css',
-      '/font-awesome.css',
+      '/css/bootstrap.css',
+      '/css/main.css',
+      '/css/github.css',
+      '/css/font-awesome.css',
     ]
 
     css :ie7, [
-      '/font-awesome-ie7.css'
+      '/css/font-awesome-ie7.css'
     ]
 
     css :print, [
-      '/print.css'
+      '/css/print.css'
     ]
 
     js :application, [
-      '/jquery.js',
-      '/jquery.dataTables.js',
-      '/jquery.relatize_date.js',
-      '/highlight.pack.js'
+      '/js/jquery.js',
+      '/js/jquery.relatize_date.js',
+      '/js/bootstrap.js',
+      '/js/highlight.pack.js'
     ]
   end
 
@@ -135,7 +134,7 @@ class App < Sinatra::Base
     feed.to_xml
   end
 
-  get '/archive.html' do
+  get '/archive' do
     @archive_pages = @pages.blog_posts.reverse
     @page_title = "Archive"
     erb :archive
@@ -171,7 +170,9 @@ class App < Sinatra::Base
     erb :search
   end
 
-  get '/:page_name.:format' do
+  get %r{/([\w-]+)(\.)?(\w+)?} do
+    params[:page_name] = params[:captures].first
+    params[:format] = params[:captures].last
     @hide_discussion = true
     @page = @pages.search(params[:page_name], "name")[0] || \
             @pages.pages.detect { |p| p.name == params[:page_name] }
@@ -179,6 +180,8 @@ class App < Sinatra::Base
     unless @page
       raise Sinatra::NotFound
     end
+
+    params[:format] ||= 'html'
 
     formats = {
       'pdf' => ['pdf_template.html', 'application/pdf'],
@@ -209,8 +212,8 @@ class App < Sinatra::Base
       end
       c.content  = @page.docverter_markdown
 
-      c.add_other_file File.join(public_path, "droid_sans.ttf")
-      c.add_other_file File.join(public_path, "droid_serif.ttf")
+      c.add_other_file File.join(public_path, "/fonts/droid_sans.ttf")
+      c.add_other_file File.join(public_path, "/fonts/droid_serif.ttf")
       c.add_other_file File.join(public_path, "..", "pdf_template.html")
     end
 

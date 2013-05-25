@@ -1,0 +1,105 @@
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 1.25em;
+  line-height: 180%;
+  padding-top: 30px;
+}
+
+.container-narrow h1 {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 10px;
+}
+
+.nav-links {
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.nav-links:before,
+.nav-links:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.nav-links:after {
+  clear: both;
+}
+.nav-links > li {
+  display: inline;
+  float: left;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  line-height: 14px;
+}
+.nav-links > li > a {
+  padding-right: 12px;
+  margin-right: 2px;
+  line-height: 14px;
+}
+
+hr.separator
+{
+  margin-bottom: 3em;
+  margin-top: 2em;
+  display: block;
+  color: #999;
+  border: 0;
+  text-align: center;
+}
+
+hr.separator:after {
+  content: "....";
+  letter-spacing: 2em;
+}
+
+.entry {
+  margin-bottom: 3em;
+}
+
+.entry p img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.date {
+  color: #999;
+  font-size: 90%;
+  margin-bottom: 1em;
+}
+
+footer {
+  margin-top: 100px;
+  border-top: 1px solid #CCC;
+  margin-bottom: 40px;
+}
+
+li {
+  line-height: 180%;
+}
+
+.fixed-width {
+  font-family: monospace;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+.masthead {
+  background-image: url("/img/bugsplat-2.png");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: right 10px;
+}
+
+blockquote {
+  font-size: 90%;
+}

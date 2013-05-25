@@ -3,14 +3,9 @@
   <h2><a href="<%= page.html_path %>"><%= page['title'] %></a></h2>
   <p class="date"><%= page.natural_date %></p>
   <%= page.render_before_fold %> 
-  <% if page.tags.length > 0 %>
-  <p class="date">Tagged: <% page.tags.each do |tag| %>
-  <a href="/tag/<%= tag %>.html"><%= tag %></a>&nbsp;
-  <% end %>
-  </p>
-  <% end %>
-  <a href="<%= page.html_path %>">Read More</a>
-  <hr class="separator">
+  <a href="<%= page.html_path %>">Continue Reading <i class="icon-angle-right"></i></a>
 </div>
+<% if page != @index_pages.last %>
+<hr class="separator">
 <% end %>
-<a href="archive.html">Older Entries</a>
+<% end %>
