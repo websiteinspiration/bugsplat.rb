@@ -3,6 +3,13 @@ Date:  2010-05-12 08:53:00
 Id:    5
 Tags:  Programming
 
+[1]:         http://www.activfinancial.com/
+[2]:         http://www.interactivedata-rts.com/index.shtml
+[3]:         http://www.dtniq.com/
+[Calorific]: http://github.com/peterkeen/calorific
+[Sawzall]:   http://labs.google.com/papers/sawzall.html
+[DateTime::Format::Natural]: http://search.cpan.org/~schubiger/DateTime-Format-Natural-0.86/
+
 Let's pretend, just for a second, that you want to make some money on the stock market. Sounds easy, right? Buy low, sell high, yadda yadda blah blah blah. Except, how do you know when to buy and when to sell? Not so easy. Being a nerd, you want to teach your computer how to do this for you. But where to start? I discovered a few months ago that there are [services][1] [out][2] [there][3] that will sell you a data feed that literally blasts every single anonymous transaction that happens on any market in the US in real time. They'll also sell you access to a historical feed that provides the same tick-level information going back for several years.
 
 --fold--
@@ -19,9 +26,3 @@ In my personal life I need to have actionable information once in a while today.
 
 The next features on the docket are *goals*, which will let you set goal ranges for each base nutrient, an option to show you each day total or week average against the goal, and a summary report that shows you how much of each nutrient you've eaten today and how close you are to your goals. Stay tuned!
 
-[1]:         http://www.activfinancial.com/
-[2]:         http://www.interactivedata-rts.com/index.shtml
-[3]:         http://www.dtniq.com/
-[Calorific]: http://github.com/peterkeen/calorific
-[Sawzall]:   http://labs.google.com/papers/sawzall.html
-[DateTime::Format::Natural]: http://search.cpan.org/~schubiger/DateTime-Format-Natural-0.86/

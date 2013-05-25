@@ -3,6 +3,10 @@ Date:  2010-05-27 20:37:00
 Tags:  Programming
 Id:    8
 
+[1]:               2010-05-12-actionable-information.html
+[Calorific]:       http://github.com/peterkeen/calorific
+[Term::ANSIColor]: http://perldoc.perl.org/Term/ANSIColor.html
+
 Creating [actionable information][1] out of raw data is sometimes pretty simple, requiring only small changes. Of the few feature requests that I've received for [Calorific][], most (all) of them have been for goals. Always listen to the audience, that's my motto!
 
 --fold--
@@ -37,6 +41,3 @@ $ calorific
 
 Colors are done using [Term::ANSIColor][], which is included in core perl. Adding them was fairly easy, because of a simple function `colored`, which takes a scalar or an arrayref of scalars and a color argument and returns the scalar wrapped in the correct ANSI codes. Future display options could be displaying how much of each nutrient you have left for the day, maybe in a little progress bar type thing. Feature requests and comments are welcome, as always.
 
-[1]:               2010-05-12-actionable-information.html
-[Calorific]:       http://github.com/peterkeen/calorific
-[Term::ANSIColor]: http://perldoc.perl.org/Term/ANSIColor.html

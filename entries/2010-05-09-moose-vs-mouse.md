@@ -1,7 +1,17 @@
 Title: Moose vs Mouse and OOP in Perl
 Date:  2010-05-09 08:00:00
-Tags:  Perl
+Tags:  Perl, Programming
 Id:    4
+
+[SparkPeople]:          http://www.sparkpeople.com/
+[Calorific]:            http://github.com/peterkeen/calorific
+[Moose]:                http://search.cpan.org/dist/Moose/
+[Class::MethodMaker]:   http://search.cpan.org/dist/Class-MethodMaker/
+[Class::Struct]:        http://search.cpan.org/~jesse/perl-5.12.0/lib/Class/Struct.pm
+[Mouse]:                http://search.cpan.org/dist/Mouse/
+[MouseX::NativeTraits]: http://search.cpan.org/dist/MouseX-NativeTraits/
+[Any::Moose]:           http://search.cpan.org/~sartak/Any-Moose-0.12/lib/Any/Moose.pm
+[Moose::Meta::Attribute::Native::Trait::Array]: http://search.cpan.org/~flora/Moose-1.03/lib/Moose/Meta/Attribute/Native/Trait/Array.pm
 
 After using [Calorific][] for a month two things have become very clear. First, I need to eat less. Holy crap do I need to eat less. I went on to [SparkPeople][] just to get an idea of what I *should* be eating, and it told me between 2300 and 2680 kcal. I haven't implemented averaging yet, but a little grep/awk magic tells me I'm averaging 2793 kcal per day. This is *too much*. So. One thing to work on.
 
@@ -82,12 +92,3 @@ Actually I had to install [MouseX::NativeTraits][] from CPAN before everything w
 
 Anyway, the moral of the story is that Moose is great and makes building classes really easy and all, but if you care about startup speed and not so much about delving into meta classes and such, Mouse should be your go-to class. And in fact, you don't have to make that choice. There's another project called [Any::Moose][], which will load Mouse unless you declare you want Moose, which can be set with an environment variable. Pretty neat.
 
-[SparkPeople]:          http://www.sparkpeople.com/
-[Calorific]:            http://github.com/peterkeen/calorific
-[Moose]:                http://search.cpan.org/dist/Moose/
-[Class::MethodMaker]:   http://search.cpan.org/dist/Class-MethodMaker/
-[Class::Struct]:        http://search.cpan.org/~jesse/perl-5.12.0/lib/Class/Struct.pm
-[Mouse]:                http://search.cpan.org/dist/Mouse/
-[MouseX::NativeTraits]: http://search.cpan.org/dist/MouseX-NativeTraits/
-[Any::Moose]:           http://search.cpan.org/~sartak/Any-Moose-0.12/lib/Any/Moose.pm
-[Moose::Meta::Attribute::Native::Trait::Array]: http://search.cpan.org/~flora/Moose-1.03/lib/Moose/Meta/Attribute/Native/Trait/Array.pm
