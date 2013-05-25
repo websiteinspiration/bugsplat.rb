@@ -2,6 +2,16 @@ Title: Projects
 Id: projects-123
 Order: 4
 
+<h3 id="opensource">Open Source</h3>
+
+I have developed various bits of open source software and <a href="https://github.com/peterkeen">released them on Github</a>. Here are a few of my more interesting projects:
+
+* [Dokuen](https://github.com/peterkeen/dokuen), a personal PaaS for Mac and Linux
+* [Capistrano::Buildpack](https://github.com/peterkeen/capistrano-buildpack), a Capistrano extension for deploying with [Heroku-style buildpacks](https://devcenter.heroku.com/articles/buildpacks)
+* [Ledger Web](https://github.com/peterkeen/ledger-web), a web-based reporting system for the [Ledger](/ledger.html) command line accounting tool.
+
+<hr class="separator">
+
 <h3 id="startups">Startups / Side Projects</h3>
 
 <h4 id="marginalia"><a href="http://www.marginalia.io">Marginalia</a></h4>
@@ -49,12 +59,4 @@ The easiest way to keep track of your apartment search. I build this to help my 
 
 * [Introducing Fivepad](/2011-11-17-introducing-fivepad.html)
 
-<hr class="separator">
 
-<h3 id="opensource"><a href="https://github.com/peterkeen">Open Source</a></h4>
-
-I have developed various bits of open source software and released them on Github. Here are a few of more more interesting projects:
-
-* [Dokuen](https://github.com/peterkeen/dokuen), a personal PaaS for Mac and Linux
-* [Capistrano::Buildpack](https://github.com/peterkeen/capistrano-buildpack), a Capistrano extension for deploying with [Heroku-style buildpacks](https://devcenter.heroku.com/articles/buildpacks)
-* [Ledger Web](https://github.com/peterkeen/ledger-web), a web-based reporting system for the [Ledger](/ledger.html) command line accounting tool.
