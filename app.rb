@@ -134,7 +134,7 @@ class App < Sinatra::Base
     feed.to_xml
   end
 
-  get '/archive' do
+  get '/archive.html' do
     @archive_pages = @pages.blog_posts.reverse
     @page_title = "Archive"
     erb :archive

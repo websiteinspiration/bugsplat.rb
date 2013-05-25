@@ -221,7 +221,7 @@ class Page
   end
 
   def html_path
-    "/#{@name}"
+    "/#{@name}.html"
   end
 
   def pdf_path
