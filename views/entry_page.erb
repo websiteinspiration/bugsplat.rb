@@ -5,7 +5,7 @@
   <% end %>
   <%= @page.render %>
   <div class="well">
-  <div class="date pull-right">
+  <div class="formats pull-right">
     <a rel="nofollow" href="<%= @page.pdf_path %>"><img alt="Download PDF" src="/img/pdf.png"></img></a>
     <a rel="nofollow" href="<%= @page.docx_path %>"><img alt="Download Word Doc" src="/img/doc.png"></img></a>
     <a rel="nofollow" href="<%= @page.markdown_path %>"><img alt="Download Raw Markdown" src="/img/markdown.png"></img></a>
@@ -27,5 +27,4 @@
     </ul>
   </p>
   <% end %>
-
 </div>
