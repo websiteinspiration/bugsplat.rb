@@ -59,11 +59,11 @@ class App < Sinatra::Base
 
     def title
       if @page
-        return "#{@page['title']} | bugsplat"
+        return "#{@page['title']} | Bugsplat by Pete Keen"
       elsif @page_title
-        return "#{@page_title} | bugsplat"
+        return "#{@page_title} | Bugsplat by Pete Keen"
       else
-        return "bugsplat"
+        return "Bugsplat by Pete Keen"
       end
     end
 

@@ -1,6 +1,6 @@
 Title: I Soldered Something!
 Date:  2011-02-15 17:57:31
-Tags:  Quadrotor
+Tags:  Hardware
 Id:    91714
 
 The [Arduino](http://arduino.cc) is a cool little development board, actually a series of them, that make it a snap to get up and running with embedded development. I've wanted to get my hands on one for awhile but I haven't really had an application. That is, I didn't until I saw this:
