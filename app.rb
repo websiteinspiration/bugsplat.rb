@@ -174,11 +174,18 @@ class App < Sinatra::Base
     params[:page_name] = params[:captures].first
     params[:format] = params[:captures].last
     @hide_discussion = true
+
     @page = @pages.search(params[:page_name], "name")[0] || \
-            @pages.pages.detect { |p| p.name == params[:page_name] }
+            @pages.search(params[:page_name], "page_id")[0] || \
+            @pages.pages.detect { |p| p.name == params[:page_name] } || \
+            @pages.pages.detect { |p| p.page_id == params[:page_name] }
 
     unless @page
       raise Sinatra::NotFound
+    end
+
+    if @page.page_id == params[:page_name]
+      redirect @page.html_path
     end
 
     params[:format] ||= 'html'
@@ -219,17 +226,6 @@ class App < Sinatra::Base
 
     content_type formats[params[:format]][1]
     res
-  end
-
-  get '/:page_id' do
-    @page = @pages.search(params[:page_id], "page_id")[0] || \
-            @pages.pages.detect { |p| p.page_id == params[:page_id] }
-
-    unless @page
-      raise Sinatra::NotFound
-    end
-
-    redirect @page.html_path
   end
 
   post '/ping' do

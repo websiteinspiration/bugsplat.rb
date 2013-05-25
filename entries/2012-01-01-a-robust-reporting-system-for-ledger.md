@@ -66,7 +66,7 @@ Next, it uses some basic [Twitter Bootstrap](http://twitter.github.com/bootstrap
 
 Here's a screenshot of what this report looks like (Note: this uses the Stan example ledger that I generated for my previous reporting system):
 
-<a href="/leaky_ship.png"><img src="/leaky_ship_small.png"></a>
+<a href="/img/leaky_ship.png"><img src="/leaky_ship_small.png"></a>
 
 The register report that Leaky Ship links to is pretty trivial in comparison. Here's the source:
 
@@ -92,7 +92,7 @@ The register report that Leaky Ship links to is pretty trivial in comparison. He
 
 The only thing new that this does is use the `expect` helper to ensure that `account` and `year` are query params. If they are not, `expect` throws an exception rather than showing bad data. Here's what this one looks like:
 
-<a href="/register.png"><img src="/register_small.png"></a>
+<a href="/img/register.png"><img src="/register_small.png"></a>
 
 Both of these reports, as well as a few others, can be found in [my Ledger Web configuration](https://github.com/peterkeen/ledger-web-config). My config also shows off some of the more advanced customizations you can do.
 
