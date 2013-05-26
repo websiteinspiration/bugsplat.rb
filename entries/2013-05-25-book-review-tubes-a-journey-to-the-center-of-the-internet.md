@@ -20,7 +20,7 @@ Tags:  Book Reviews
 
 --fold--
 
-<a href="http://www.telegeography.com/telecom-maps/global-internet-map/"><img class="thumbnail" alt="Map of the Internet 2012" src="https://files.bugsplat.info/files/9c18b7f86d697cec3a2f/wallpaper-1024.png"></a>
+<a href="http://www.telegeography.com/telecom-maps/global-internet-map/"><img class="thumbnail" alt="Map of the Internet 2012" src="https://files.bugsplatcdn.com/files/9c18b7f86d697cec3a2f/wallpaper-1024.png"></a>
 
 Blum starts out describing a [map of the internet][map] (note: not this other [map of the internet][xkcd]) made by a company named TeleGeography, which shows an incredibly intricate web of little lines connecting major cities around the globe. These lines are fiber optic cables, running over land and under oceans, hooking up with each other in giant data centers in places like Ashburn, VA and London, UK. Blum goes to these interconnect points and talks with the people who run them, the people who started them back in the early 1990s when the Internet was just getting going. The book concludes with a trip to Prinville, OR to see one of [Facebook's newest data centers][prineville], an example of where all the data that traverses these fiber optic lines ends up.
 
