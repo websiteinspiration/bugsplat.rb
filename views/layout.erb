@@ -48,8 +48,8 @@
       </footer>
     </div>
     <%= relative_javascript :application %>
+    <% if ENV['RACK_ENV'] == 'production' %>
     <script type="text/javascript">
-  
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-5663087-2']);
     _gaq.push(['_trackPageview']);
@@ -61,21 +61,21 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-
-  </script>
-  <script>
-  $(document).ready(function () {
-    hljs.tabReplace = '    ';
-    hljs.initHighlightingOnLoad();
-    $('.bbpTweet .timestamp a[title]').each(function (i, tstamp_node) {
-        var date_parts = $(tstamp_node).attr('title').split(/ /);
-        var new_date_parts = [date_parts[1], date_parts[2] + ",", date_parts[5], date_parts[3], date_parts[4]];
-        var new_date_stamp = new_date_parts.join(' ');
-        var tstamp = new Date(new_date_stamp);
-        $(tstamp_node).text($.relatizeDate.timeAgoInWords(tstamp));
+    </script>
+    <% end %>
+    <script>
+    $(document).ready(function () {
+      hljs.tabReplace = '    ';
+      hljs.initHighlightingOnLoad();
+      $('.bbpTweet .timestamp a[title]').each(function (i, tstamp_node) {
+          var date_parts = $(tstamp_node).attr('title').split(/ /);
+          var new_date_parts = [date_parts[1], date_parts[2] + ",", date_parts[5], date_parts[3], date_parts[4]];
+          var new_date_stamp = new_date_parts.join(' ');
+          var tstamp = new Date(new_date_stamp);
+          $(tstamp_node).text($.relatizeDate.timeAgoInWords(tstamp));
+      });
     });
-  });
-  </script>
+    </script>
 
   </body>
 </html>
