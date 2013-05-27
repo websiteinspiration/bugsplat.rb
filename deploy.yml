@@ -8,6 +8,10 @@ env:
   RACK_ENV:   production
 build:
   - bundle install --deployment --without development:test --binstubs ./bin
+  - bundle exec rake assets:precompile
 vendor:
   - https://s3.amazonaws.com/heroku-buildpack-ruby/ruby-1.9.3.tgz
   - https://s3.amazonaws.com/heroku-buildpack-ruby/bundler-1.2.1.tgz
+cache:
+  - .bundle
+  - vendor/bundle
