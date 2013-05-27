@@ -29,17 +29,15 @@ Id:    resume-123
 * Ported the audience management system of Emma, including mailing list
   management, audience searches, administration, and sending mail
   into a REST/JSON service in Python, running on PostgreSQL and Redis.
-  This service has 90% test coverage.
 
 * Built a search engine that consumes a JSON search description,
   builds an equivalent SQL query, and executes the query on a sharded
   PostgreSQL database system. This is used for filtering all requests
   that come into the audience REST service.
-  
-* Wrote an experimental internal Platform as a Service to be used for all
-  new systems at Emma. Heavily inspired by Heroku, it enables a git-based
-  deployment system backed by redis. It is currently in the evaluation stage.
 
+* Worked with and extended a large Django application that forms the
+  front-end of Emma's email marketing service.
+  
 #### Software Developer, 2007 - 2011 ###
 
 [Rentrak Corporation](http://www.rentrak.com), Portland, OR
