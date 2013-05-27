@@ -40,20 +40,24 @@ class App < Sinatra::Base
     ]
   end
 
+  def url_for_asset(file)
+    filename = file[0] == '/' ? file : "/#{file}"
+    asset_host = ENV['ASSET_HOST']
+    (asset_host.nil? || asset_host == "") ? filename : "http://#{asset_host}#{filename}"
+  end
+
   helpers do
 
     def relative_stylesheet(bundle, media="screen")
       settings.assets.paths_for("#{bundle}.css").map do |file|
-        file = "/#{file}" unless file[0] == '/'
-        "<link media=\"#{media}\" rel=\"stylesheet\" href=\"#{file}\">"
+        "<link media=\"#{media}\" rel=\"stylesheet\" href=\"#{url_for_asset(file)}\">"
       end.join("\n")
     end
 
     def relative_javascript(bundle, async=false)
       settings.assets.paths_for("#{bundle}.js").map do |file|
-        file = "/#{file}" unless file[0] == '/'
         async_val = async ? "async" : ""
-        "<script src=\"#{file}\" #{async_val}></script>"
+        "<script src=\"#{url_for_asset(file)}\" #{async_val}></script>"
       end.join("\n")
     end
 
