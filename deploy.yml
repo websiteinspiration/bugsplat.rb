@@ -1,0 +1,5 @@
+---
+document_root: public
+build:
+  - bundle install --deployment --without development:test --binstubs bin
+  - bundle exec rake assets:precompile
