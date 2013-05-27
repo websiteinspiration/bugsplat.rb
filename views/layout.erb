@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title><%= title %></title>
-    <% if !(ENV['ASSET_HOST'].nil? && ENV['ASSET_HOST'] != "") %>
-    <link rel="dns-prefetch" href="//<%= ENV['ASSET_HOST'] %>" />
+    <% if settings.environment == :production %>
+    <link rel="dns-prefetch" href="//<%= settings.asset_host %>" />
     <% end %>
     <link rel="dns-prefetch" href="http://files.bugsplatcdn.com" />
     <%= relative_stylesheet :application %>

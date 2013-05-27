@@ -15,6 +15,10 @@ class App < Sinatra::Base
 
   Docverter.base_url = 'http://c.docverter.com'
 
+  if settings.environment == :production
+    set :asset_host, 'info.bugsplatcdn.com'
+  end
+
   register Sinatra::SimpleAssets
   assets do
     css :application, [
@@ -42,8 +46,7 @@ class App < Sinatra::Base
 
   def url_for_asset(file)
     filename = file[0] == '/' ? file : "/#{file}"
-    asset_host = ENV['ASSET_HOST']
-    (asset_host.nil? || asset_host == "") ? filename : "http://#{asset_host}#{filename}"
+    settings.environment == :production ? "http://#{settings.asset_host}#{filename}" : filename
   end
 
   helpers do
