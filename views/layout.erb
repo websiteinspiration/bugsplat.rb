@@ -3,9 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title><%= title %></title>
-    <% if settings.environment == :production %>
-    <link rel="dns-prefetch" href="//<%= settings.asset_host %>" />
-    <% end %>
     <link rel="dns-prefetch" href="http://files.bugsplatcdn.com" />
     <%= relative_stylesheet :application %>
     <%= relative_stylesheet :print, 'print' %>
