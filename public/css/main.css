@@ -11,23 +11,6 @@
   padding-bottom: 10px;
 }
 
-.pricing {
-  text-align: center;
-  font-size: 85%;
-  margin-left: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.pricing h4 {
-  text-align: center;
-}
-
-.pricing ul {
-  list-style-type: none;
-  list-style: none;
-}
-
 .price {
   font-size: 1.5em;
   font-style: italic;

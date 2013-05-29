@@ -26,8 +26,6 @@ I want to share what I've learned, so I've started writing an eBook called <stro
   your pocket**
 * How and why you should process payments using a background worker
 
-### Sign up to get updates and 20% off the published price
-
 <table class="table table-striped">
   <thead>
     <tr>
@@ -59,6 +57,8 @@ I want to share what I've learned, so I've started writing an eBook called <stro
     </tr>
   </tbody>
 </table>
+
+### Sign up to get updates and 20% off the published price
 
 <div class="well">
 <p>Just put your email address in below and I'll send you updates on my progress, preview chapters, and a <em><strong>20% off discount code</strong></em> when I publish the book.</p>
