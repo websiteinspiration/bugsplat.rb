@@ -236,6 +236,14 @@ class Page
     "/#{@name}.md"
   end
 
+  def view
+    @headers.has_key?('view') ? @headers['view'].to_sym : nil
+  end
+
+  def layout
+    @headers.has_key?('layout') ? @headers['layout'].to_sym : nil
+  end
+
   def docverter_markdown
 """% #{@headers['title']}
 %

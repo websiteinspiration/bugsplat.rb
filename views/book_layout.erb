@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang=en>
+<html>
   <head>
     <meta charset="utf-8">
     <title><%= title %></title>
@@ -18,36 +18,9 @@
   </head>
   <body>
     <div class="container container-narrow">
-      <div class="masthead">
-        <h1>
-		  <a href="/">Bugsplat</a> <small>by <a href="http://www.petekeen.com/">Pete Keen</a></small>
-		</h1>
-        <ul class="nav pull-right">
-          <li>
-            <form method="get" action="/search"><input type="search" results="5" autosave="bugsplat_search" placeholder="Search" name="q"></input></form>
-          </li>
-        </ul>
-        <ul class="nav-links">
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/resume.html">Resume</a></li>
-          <li><a href="/payment-integration.html">Book</a></li>
-          <li><a href="/archive.html">Archive</a></li>
-        </ul>
-	  </div>
 	  <div id="content">
         <%= yield %>
 	  </div>
-      <footer>
-        <ul class="nav-links">
-		  <li>&copy; <a href="http://www.petekeen.com/">Pete Keen</a></li>
-          <li><a href="https://github.com/peterkeen" data-original-title="Github" class="tip"><i class="icon-github"></i></a></li>
-          <li><a href="http://www.linkedin.com/in/peterkeen" data-original-title="LinkedIn" class="tip"><i class="icon-linkedin"></i></a></li>
-          <li><a href="http://twitter.com/zrail" data-original-title="Twitter" class="tip"><i class="icon-twitter"></i></a></li>
-          <li><a href="mailto:pete@petekeen.com" data-original-title="Email" class="tip"><i class="icon-envelope"></i></a></li>
-          <li><a href="/index.xml" data-original-title="Subscribe to Feed" class="tip"><i class="icon-rss"></i></a></li>
-        </ul>
-      </footer>
     </div>
     <%= relative_javascript :application %>
     <% if ENV['RACK_ENV'] == 'production' %>

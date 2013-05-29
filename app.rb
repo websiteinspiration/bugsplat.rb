@@ -60,13 +60,17 @@ class App < Sinatra::Base
     end
 
     def title
-      if @page
-        return "#{@page['title']} | Bugsplat by Pete Keen"
+      _title = if @page
+        @page['title']
       elsif @page_title
-        return "#{@page_title} | Bugsplat by Pete Keen"
+        @page_title
       else
-        return "Bugsplat by Pete Keen"
+        nil
       end
+      unless @page && @page['skip_title_suffix']
+        _title = [_title, "Bugsplat by Pete Keen"].compact.join(" | ")
+      end
+      _title
     end
 
     def link_list
@@ -204,7 +208,9 @@ class App < Sinatra::Base
     end
 
     if params[:format] == 'html'
-      return erb :entry_page
+      view = @page.view || :entry_page
+      layout = @page.layout || :layout
+      return erb view, layout: layout
     end
 
     if params[:format] == 'md'
