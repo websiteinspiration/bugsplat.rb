@@ -26,7 +26,7 @@ I want to share what I've learned, so I've started writing an eBook called <stro
   your pocket**
 * How and why you should process payments using a background worker
 
-<table class="table table-striped">
+<table class="table table-striped pricing">
   <thead>
     <tr>
       <th style="width: 233px">Deluxe Package</th>
@@ -58,10 +58,10 @@ I want to share what I've learned, so I've started writing an eBook called <stro
   </tbody>
 </table>
 
-### Sign up to get updates and 10% off when the book gets published
+### Sign up to get updates and 10% off
 
 <div class="well">
-<p>Just put your email address in below and I'll send you updates on my progress, preview chapters, and a <em><strong>20% off discount code</strong></em> when I publish the book.</p>
+<p>Just put your email address in below and I'll send you updates on my progress, preview chapters, and a <em><strong>10% off discount code</strong></em> when I publish the book.</p>
 
 <form action="http://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-inline" target="_blank">
     <div class="input-append">
