@@ -28,7 +28,7 @@ I want to share what I've learned, so I've started writing an eBook called <stro
 
 ### Sign up to get updates and 20% off the published price
 
-<table class="table">
+<table class="table table-striped">
   <thead>
     <tr>
       <th style="width: 233px">Deluxe Package</th>
