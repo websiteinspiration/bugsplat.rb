@@ -58,7 +58,7 @@ I want to share what I've learned, so I've started writing an eBook called <stro
   </tbody>
 </table>
 
-### Sign up to get updates and 20% off the published price
+### Sign up to get updates and 10% off when the book gets published
 
 <div class="well">
 <p>Just put your email address in below and I'll send you updates on my progress, preview chapters, and a <em><strong>20% off discount code</strong></em> when I publish the book.</p>
