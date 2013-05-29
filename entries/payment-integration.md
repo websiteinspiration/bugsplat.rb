@@ -28,34 +28,37 @@ I want to share what I've learned, so I've started writing an eBook called <stro
 
 ### Sign up to get updates and 20% off the published price
 
-<div class="pricing">
-  <div class="row">
-    <div class="span2">
-      <h4>Deluxe Package</h4>
-      <ul>
-        <li><span class="price">$399</span></li>
-        <li>75 page ebook in PDF, ePub, and mobi format</li>
-        <li>Access to a full example Rails/Stripe application implementing every one of these best practices</li>
-        <li>One hour of consulting time with me to work out any problems with your integration</li>
-      </ul>
-    </div>
-    <div class="span2">
-      <h4>Mini Package</h4>
-      <ul>
-        <li><span class="price">$89</span></li>
-        <li>75 page ebook in PDF, ePub, and mobi format</li>
-        <li>Access to a full example Rails/Stripe application implementing every one of these best practices</li>
-      </ul>
-    </div>
-    <div class="span2">
-      <h4>Just the Book</h4>
-      <ul>
-        <li><span class="price">$29</span></li>
-        <li>75 page ebook in PDF, ePub, and mobi format</li>
-      </ul>
-    </div>
-  </div>
-</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th style="width: 233px">Deluxe Package</th>
+      <th style="width: 233px">Mini Package</th>
+      <th style="width: 233px">Just the Book</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="price">$399</span></li>
+      <td><span class="price">$89</span></li>
+      <td><span class="price">$29</span></li>
+    </tr>
+    <tr>
+      <td>75 page ebook in PDF, ePub, and mobi format</td>
+      <td>75 page ebook in PDF, ePub, and mobi format</td>
+      <td>75 page ebook in PDF, ePub, and mobi format</td>
+    </tr>
+    <tr>
+      <td>Access to a full example Rails/Stripe application implementing every one of these best practices</td>
+      <td>Access to a full example Rails/Stripe application implementing every one of these best practices</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>One hour of consulting time with me to work out any problems with your integration</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="well">
 <p>Just put your email address in below and I'll send you updates on my progress, preview chapters, and a <em><strong>20% off discount code</strong></em> when I publish the book.</p>
