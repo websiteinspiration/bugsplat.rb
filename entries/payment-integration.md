@@ -29,6 +29,13 @@ My new eBook <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
   your pocket**
 * How and why you should process payments using a background worker
 
+<div class="well">
+<h3>About the Author</h3>
+<p>
+I'm <a href="http://www.petekeen.com">Pete Keen</a>. I've been a professional software developer for seven years and over that time have developed <a href="/projects.html">four different SaaS applications</a>, all using Stripe to power their payment processing.
+</p>
+</div>
+
 <table class="table table-striped pricing">
   <thead>
     <tr>
