@@ -17,7 +17,7 @@ Thousands of small businesses are using <a href="https://www.stripe.com">Stripe<
 
 <p class="jumbo">You don't have to suffer through those problems</p>
 
-My new eBook <strong><em>Mastering Modern Payments: Using Stripe with Rails</em></strong> will teach you:
+My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em></strong> will teach you:
 
 * Why a simple, 10 minute integration **isn't enough**
 * How to build **maintainable** payment forms that **convert**
@@ -40,29 +40,20 @@ I'm <a href="http://www.petekeen.com">Pete Keen</a>. I've been a professional so
   <thead>
     <tr>
       <th style="width: 233px">Deluxe Package</th>
-      <th style="width: 233px">Mini Package</th>
-      <th style="width: 233px">Just the Book</th>
+      <th style="width: 233px">Just the Guide</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><span class="price">$399</span></li>
       <td><span class="price">$89</span></li>
-      <td><span class="price">$29</span></li>
+      <td><span class="price">$39</span></li>
     </tr>
     <tr>
-      <td>75 page ebook in PDF, ePub, and mobi format</td>
-      <td>75 page ebook in PDF, ePub, and mobi format</td>
-      <td>75 page ebook in PDF, ePub, and mobi format</td>
+      <td>The guide in webpage, PDF, ePub, and mobi format</td>
+      <td>The guide in webpage, PDF, ePub, and mobi format</td>
     </tr>
     <tr>
       <td>Access to a full example Rails/Stripe application implementing every one of these best practices</td>
-      <td>Access to a full example Rails/Stripe application implementing every one of these best practices</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>One hour of consulting time with me to work out any problems with your integration</td>
-      <td></td>
       <td></td>
     </tr>
   </tbody>
@@ -71,7 +62,7 @@ I'm <a href="http://www.petekeen.com">Pete Keen</a>. I've been a professional so
 ### Sign up to get updates and 10% off
 
 <div class="well">
-<p>Just put your email address in below and you'll get progress updates, preview chapters, and a <em><strong>10% off discount code</strong></em> when the book is published, currently scheduled for August 2013.</p>
+<p>Just put your email address in below and you'll get progress updates, preview sections, and a <em><strong>10% off discount code</strong></em> when the guide is published, currently scheduled for August 2013.</p>
 
 <form action="http://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-big form-inline" target="_blank">
     <div class="input-append">
