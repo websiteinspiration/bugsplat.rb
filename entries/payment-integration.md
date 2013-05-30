@@ -8,15 +8,19 @@ Skip_title_suffix: true
 
 <p>
 <img style="float: right; margin-left: 20px;" src="http://files.bugsplatcdn.com/files/e1aa9b6c8960a1012ce2/stripe_rails.png">
-Over the past two years I've written <a href="/projects.html">four web applications from scratch</a> using <a href="http://rubyonrails.org">Ruby on Rails</a>. Every single one of these applications uses <a href="https://www.stripe.com">Stripe</a> to process recurring or one-time payments. With each new implmentation I learned new things that earned money and saw old mistakes that cost dearly.
+Thousands of small businesses are using <a href="https://www.stripe.com">Stripe</a> to process recurring or one-time payments for their <a href="http://rubyonrails.org">Ruby on Rails</a> SaaS offerings. Most of them, probably including yours, are using a simple integration copied from a "Stripe in 10 minutes" tutorial, but what these tutorials don't cover could cost you customer good will and  <strong>thousands of dollars</strong> in lost payments and lost opportunities. 
 </p>
 
-**You don't have to suffer through those same mistakes.**
+* Expired credit cards
+* Lost transactions due to timeouts and bugs
+* Lost time digging through Stripe's dashboard or the Rails console to see your quarterly revenue or to find a specific customer's transaction
+
+<p class="jumbo">You don't have to suffer through those problems</p>
 
 My new eBook <strong><em>Mastering Modern Payments: Using Stripe with Rails</em></strong> will teach you:
 
 * Why a simple, 10 minute integration **isn't enough**
-* How to build **maintainable** payment forms that convert
+* How to build **maintainable** payment forms that **convert**
 * How, where, and why to use Stripe's `stripe.js` and `checkout.js`
 * Why you should always structure payments as state machines
 * Why and how you should write an admin interface from the start
@@ -62,7 +66,7 @@ My new eBook <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 <div class="well">
 <p>Just put your email address in below and you'll get progress updates, preview chapters, and a <em><strong>10% off discount code</strong></em> when the book is published, currently scheduled for August 2013.</p>
 
-<form action="http://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-inline" target="_blank">
+<form action="http://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-big form-inline" target="_blank">
     <div class="input-append">
 	<input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address">
 	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
