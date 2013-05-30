@@ -2,6 +2,7 @@ Title: Run Anything on Heroku with Custom Buildpacks
 Date:  2012-11-05 18:13:41
 Id:    9a2f7
 Tags:  Programming, Heroku
+Show_upsell: true
 
 [Heroku][] is a Platform as a Service running on top of Amazon Web Services where you can run web applications written using various frameworks and languages. One of the most distinguishing features of Heroku is the concept of [Buildpacks][buildpack-devcenter], which are little bits of logic that let you influence Heroku as it builds your application. Buildpacks give you almost *unlimited flexibility* as to what you can do with Heroku's building blocks. 
 

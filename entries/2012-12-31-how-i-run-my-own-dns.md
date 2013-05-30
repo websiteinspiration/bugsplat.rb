@@ -2,6 +2,7 @@ Title: How I run my  own DNS servers
 Date:  2012-12-31 12:15:00
 Id:    f699a
 Tags:  DNS, Devops, Email
+Show_upsell: true
 
 For the longest time I used [zoneedit][] as my DNS provider of choice. All of my important domains were hosted there, they never really did me wrong. A few months back I decided that I wanted to learn how DNS actually works in the real world, though. Like, what does it actually take to run my own DNS servers?
 

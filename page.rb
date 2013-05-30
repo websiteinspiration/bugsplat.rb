@@ -244,6 +244,10 @@ class Page
     @headers.has_key?('layout') ? @headers['layout'].to_sym : nil
   end
 
+  def show_upsell?
+    @headers.has_key?('show_upsell') && @headers['show_upsell'] == 'true'
+  end
+
   def docverter_markdown
 """% #{@headers['title']}
 %
