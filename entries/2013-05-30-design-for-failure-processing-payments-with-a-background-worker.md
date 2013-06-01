@@ -41,7 +41,7 @@ But what if it doesn't? The internet between your server and Stripe's could be s
 
 ### The Solution
 
-Essentially, the solution is to put the call to `Stripe::Charge.create` in a background job. This example is going to use a very simple background worker system named [Sucker Punch][sucker_punch]. It runs in the same process as your web request but uses [Celluloid][celluloid] to do things in a background thread.
+The solution is to put the call to `Stripe::Charge.create` in a background job. This example is going to use a very simple background worker system named [Sucker Punch][sucker_punch]. It runs in the same process as your web request but uses [Celluloid][celluloid] to do things in a background thread.
 
 First, let's create a job class:
 
@@ -130,7 +130,7 @@ The `create` method creates a new `Transaction` record, setting it's state to `p
         });
     }
     
-Basically, you'll poll `/transactions/<id>` until the transaction ends in either success or failure. You'd probably want to show a spinner or something to the user while this is happening.
+Your page will poll `/transactions/<id>` until the transaction ends in either success or failure. You'd probably want to show a spinner or something to the user while this is happening.
 
 With this setup, you've insulated yourself from problems in your connection to Stripe, your connection to your customer, and everything in between.
 
