@@ -3,6 +3,7 @@ Id: payment-123
 Layout: book_layout
 View: book
 Skip_title_suffix: true
+Hide_from_archive: true
 
 # Want to make sure your Stripe integration is right?
 
