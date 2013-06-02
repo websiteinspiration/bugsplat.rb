@@ -4,7 +4,7 @@ Tags:  Programming
 Show_upsell: true
 
 [stripe]: https://stripe.com/docs/tutorials/checkout
-[guide]: /payment-integration.html
+[guide]: /mastering-modern-payments
 [docs]: https://stripe.com/docs/api
 [sucker_punch]: https://github.com/brandonhilkert/sucker_punch
 [Celluloid]: https://github.com/celluloid/celluloid/

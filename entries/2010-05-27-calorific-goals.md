@@ -3,7 +3,7 @@ Date:  2010-05-27 20:37:00
 Tags:  Programming
 Id:    8
 
-[1]:               2010-05-12-actionable-information.html
+[1]:               /actionable-information
 [Calorific]:       http://github.com/peterkeen/calorific
 [Term::ANSIColor]: http://perldoc.perl.org/Term/ANSIColor.html
 
