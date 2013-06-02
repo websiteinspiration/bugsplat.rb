@@ -3,7 +3,7 @@ Date:  2011-11-30 11:46:50
 Tags:  Projects
 Id:    fefc4
 
-Literally ten minutes after hitting the publish button on my [last post](/2011-11-27-concurrency-on-heroku-cedar.html) I took a little tumble and broke a rather important bone in my back, and now I'm on medical leave from work for awhile.
+Literally ten minutes after hitting the publish button on my [last post](/concurrency-on-heroku-cedar) I took a little tumble and broke a rather important bone in my back, and now I'm on medical leave from work for awhile.
 
 That doesn't stop me from doing fun things, though, so this morning I cooked up a tiny webapp using [Sinatra][], [DataMapper][], and [Bootstrap][] that will help me keep track of when I take painkillers. It's called [Painkiller Jane][] after the comic book character.
 

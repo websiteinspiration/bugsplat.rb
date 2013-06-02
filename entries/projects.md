@@ -20,8 +20,8 @@ I have developed various bits of open source software and <a href="https://githu
 
 Marginalia is an online notebook where entries are written in Markdown and can be created via the web interface or by sending to a special email address. Entries can be grouped into projects and have inline hashtags. Marginalia is a Rails app.
 
-* [Marginalia: A web-based journaling and note taking tool](/2012-09-03-announcing-marginalia.html)
-* [Keeping a Programming Journal with Marginalia](/2012-09-08-keeping-a-programming-journal-with-marginalia.html)
+* [Marginalia: A web-based journaling and note taking tool](/announcing-marginalia)
+* [Keeping a Programming Journal with Marginalia](/keeping-a-programming-journal-with-marginalia)
 
 <hr class="separator">
 
@@ -31,7 +31,7 @@ Marginalia is an online notebook where entries are written in Markdown and can b
 
 Docverter is plaintext to formatted document conversion tool with a RESTful API. Users can submit documents in various formats including Markdown and HTML and request formatting into PDF, Docx, ePub, and Mobi formats. The PDF and Docx links scattered around this site all use Docverter to convert on the fly. Docverter is open source.
 
-* [On the fly Markdown Conversion](/2012-10-20-on-the-fly-markdown-conversion.html)
+* [On the fly Markdown Conversion](/on-the-fly-markdown-conversion)
 
 <hr class="separator">
 
@@ -49,7 +49,7 @@ Twitter Fiction Reader is a curated archive of public Twitter accounts that tell
 
 Remember to call your mother every week. Remindlyo will call your number at a scheduled time and connect you to your contact immediately. Now deactivated.
 
-* [Remindlyo is a Go](/2011-10-08-remindlyo-is-a-go.html)
+* [Remindlyo is a Go](/remindlyo-is-a-go)
 
 <hr class="separator">
 
@@ -57,6 +57,6 @@ Remember to call your mother every week. Remindlyo will call your number at a sc
 
 The easiest way to keep track of your apartment search. I build this to help my girlfriend and I search for apartments in the Portland area, but it's useful anywhere Craigslist has coverage. Using it is pretty simple. You just paste in a Craigslist URL into the Add a Place box and it scrapes the page for useful information and shows it to you on a map, along with all of your other places. Fivepad is a straightforward Rails application which is now shut down.
 
-* [Introducing Fivepad](/2011-11-17-introducing-fivepad.html)
+* [Introducing Fivepad](/introducing-fivepad)
 
 

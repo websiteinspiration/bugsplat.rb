@@ -7,13 +7,13 @@ The [very first post on this blog][firstpost] was about how I wanted a completel
 
 Needless to say, it isn't very fun to work on. It mostly does what I want but adding new things is pretty painful, as is changing any of the templates. Yesterday I decided that I would see what a [Sinatra][] port would look like. Why Sinatra? It's fun, that's why. Ruby and Sinatra make writing new webapps easy and fun.
 
-[firstpost]: /2010-03-28-yet-another-static-html-generator.html
+[firstpost]: /yet-another-static-html-generator
 [mustache]: http://mustache.github.com/
 [Sinatra]: http://www.sinatrarb.com/
 [bugsplat.rb]: http://github.com/peterkeen/bugsplat.rb
 [Heroku]: http://www.heroku.com
 [unicorn]: http://unicorn.bogomips.org/
-[concurrency]: http://bugsplat.info/2011-11-27-concurrency-on-heroku-cedar.html
+[concurrency]: http://bugsplat.info/concurrency-on-heroku-cedar
 [Jekyll]: https://github.com/mojombo/jekyll
 
 --fold--

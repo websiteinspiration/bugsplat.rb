@@ -5,7 +5,7 @@ Tags:  Programming, Heroku
 
 Last month I wrote a [short article][prev] describing a method of deploying a [12-factor application][12-factor] application to your own hardware or VPS, outside of Heroku. Today I'm happy to announce a gem named [capistrano-buildpack][] which packages up and formalizes this deployment method.
 
-[prev]: /2012-11-11-deploying-a-12-factor-app-with-capistrano.html
+[prev]: /deploying-a-12-factor-app-with-capistrano
 [12-factor]: http://www.12factor.net/
 [capistrano-buildpack]: https://github.com/peterkeen/capistrano-buildpack
 

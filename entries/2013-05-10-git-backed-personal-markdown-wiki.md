@@ -12,10 +12,10 @@ Lately, though, it's been kind of a drag to use a web-based application just to 
 [Docuwiki]:   https://www.dokuwiki.org/dokuwiki
 [TiddlyWiki]: http://tiddlywiki.com
 [Marginalia]: https://www.marginalia.com
-[personal git server]: /2012-10-27-hosting-private-git-repositories-with-gitolite.html
+[personal git server]: /hosting-private-git-repositories-with-gitolite
 [SparkleShare]: http://sparkleshare.org
 [markdown-mode]: http://jblevins.org/projects/markdown-mode/
-[my dotfiles]: /2012-08-11-task-oriented-dotfiles.html
+[my dotfiles]: /task-oriented-dotfiles
 [Gollum]: https://github.com/gollum/gollum
 [Mandrill]: http://mandrill.com
 [Mailgun]: http://www.mailgun.com

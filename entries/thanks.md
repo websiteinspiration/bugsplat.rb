@@ -11,8 +11,8 @@ You'll be getting an email shortly. To finish the signup process make sure you c
 
 In the mean time, here are a few interesting things to explore:
 
-* [Design for Failure: Processing Payments with a Background Worker](/2013-05-30-design-for-failure-processing-payments-with-a-background-worker.html)
-* [Distributed Personal Wiki](/2013-05-10-git-backed-personal-markdown-wiki.html)
-* [How I run my own DNS servers](/2012-12-31-how-i-run-my-own-dns.html)
+* [Design for Failure: Processing Payments with a Background Worker](/design-for-failure-processing-payments-with-a-background-worker)
+* [Distributed Personal Wiki](/git-backed-personal-markdown-wiki)
+* [How I run my own DNS servers](/how-i-run-my-own-dns)
 
 --Pete

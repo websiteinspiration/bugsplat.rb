@@ -5,9 +5,9 @@ Id:    76c93
 
 Dokuen (Japanese for "solo performance") is an amalgamation of open source components that I mashed together so I could run [Heroku](http://heroku.com)-style services on my shiny new Mac mini while retaining the paradigm of `git push` deployments and environment variables for configuration. Effectively, I wanted to be able to seamlessly deploy [12 factor applications](http://12factor.net) in my local environment.
 
-*Update: I've rewritten Dokuen and released it as a gem. See [this article](/2012-05-20-dokuen-update.html) for details.*
+*Update: I've rewritten Dokuen and released it as a gem. See [this article](/dokuen-update) for details.*
 
-*Update 2: I've added [linux support](/2012-05-29-dokuen-0-0-6-now-with-linux-support.html).*
+*Update 2: I've added [linux support](/dokuen-0-0-6-now-with-linux-support).*
 
 --fold--
 

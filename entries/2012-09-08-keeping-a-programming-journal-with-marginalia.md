@@ -5,7 +5,7 @@ Tags:  Marginalia, Programming
 
 In addition to writing on this blog, I've been keeping notes for various
 things on [Marginalia](https://www.marginalia.io), my web-based note taking
-and journaling app. In my [previous post](/2012-09-03-announcing-marginalia.html)
+and journaling app. In my [previous post](/announcing-marginalia)
 I talked about the why and how of Marginalia itself. In this post I'd like to talk
 more about what I actually use it for day to day, in particular to keep programming journals.
 
