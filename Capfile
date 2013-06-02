@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'capistrano-buildpack'
 
-set :application, "bugsplatdotinfo"
+set :application, "bugsplatdotinfo-pkdc"
 set :repository, "git@git.bugsplat.info:peter/bugsplat.git"
 set :scm, :git
 set :additional_domains, ['www.petekeen.com']
