@@ -63,7 +63,7 @@ and run some more reports
 
 ### By our powers combined...
 
-On their own, these two features are pretty useful. It's when you combine them that the awesome power of ledger starts appearing. As some of you may remember, I has a [bit of a medical emergency](http://bugsplat.info/another-tiny-webapp) a few weeks ago and being a citizen of these great United States I have private insurance, so of course I'm going to be paying a not-inconsiderable sum out of pocket. How much? Only time will tell. I can't live like that though, I have to put some kind of structure to it or I'll go crazy. So, I looked up my [out of pocket maximum](http://healthinsurance.about.com/od/healthinsurancetermso/g/OOP_maximums_definition.htm) and carved out a portion of my emergency fund into a new medical fund:
+On their own, these two features are pretty useful. It's when you combine them that the awesome power of ledger starts appearing. As some of you may remember, I has a [bit of a medical emergency](/another-tiny-webapp) a few weeks ago and being a citizen of these great United States I have private insurance, so of course I'm going to be paying a not-inconsiderable sum out of pocket. How much? Only time will tell. I can't live like that though, I have to put some kind of structure to it or I'll go crazy. So, I looked up my [out of pocket maximum](http://healthinsurance.about.com/od/healthinsurancetermso/g/OOP_maximums_definition.htm) and carved out a portion of my emergency fund into a new medical fund:
 
     2011/12/18 * Establish Medical Fund
         [Funds:Medical]                    $4,000

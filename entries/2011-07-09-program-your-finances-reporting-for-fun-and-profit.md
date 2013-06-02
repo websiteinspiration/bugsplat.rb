@@ -7,7 +7,7 @@ Id:    4b79e
 
 *Another note: I've written a new version of this that is much more dynamic and flexible named [Ledger Web](/a-robust-reporting-system-for-ledger).*
 
-Last year I wrote what ended up being the most popular article on this blog ever, [Program Your Finances: Command-line Accounting](http://bugsplat.info/keeping-finances-with-ledger). That post went over how I track and report on my finances using a program called [Ledger](http://www.ledger-cli.org) along with a few helper scripts. Recently I expanded that toolset quite a bit and wanted to show how keeping meticulous track of your finances can give you superpowers. Read on for the gory details.
+Last year I wrote what ended up being the most popular article on this blog ever, [Program Your Finances: Command-line Accounting](/keeping-finances-with-ledger). That post went over how I track and report on my finances using a program called [Ledger](http://www.ledger-cli.org) along with a few helper scripts. Recently I expanded that toolset quite a bit and wanted to show how keeping meticulous track of your finances can give you superpowers. Read on for the gory details.
 
 --fold--
 

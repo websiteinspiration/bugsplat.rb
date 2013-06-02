@@ -13,7 +13,7 @@ Needless to say, it isn't very fun to work on. It mostly does what I want but ad
 [bugsplat.rb]: http://github.com/peterkeen/bugsplat.rb
 [Heroku]: http://www.heroku.com
 [unicorn]: http://unicorn.bogomips.org/
-[concurrency]: http://bugsplat.info/concurrency-on-heroku-cedar
+[concurrency]: /concurrency-on-heroku-cedar
 [Jekyll]: https://github.com/mojombo/jekyll
 
 --fold--
