@@ -100,7 +100,7 @@ Aurora Health Care and University of Wisconsin - Whitewater Management Computer 
 
 * [Twitter Fiction Reader](http://twitter-fiction-reader.herokuapp.com), a curated archive of fictional twitter accounts. Simple Sinatra application.
 * [FivePad](https://www.fivepad.me), the easiest way to keep track of your apartment search. Rails app hosted on Heroku.
-* [bugsplat.info](http://bugsplat.info), my personal programming and tech related blog. Recently converted to a simple Sinatra application.
+* [petekeen.com](http://petekeen.com), my personal programming and tech related blog. Recently converted to a simple Sinatra application.
 * [remindlyo](http://www.remindlyo.com), a phone call follow up and reminder service. Rails app using the Twilio API. Now deactivated.
 
 

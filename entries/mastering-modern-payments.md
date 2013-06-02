@@ -33,7 +33,7 @@ My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 <div class="well">
 <h3>About the Author</h3>
 <p>
-I'm <a href="http://www.petekeen.com">Pete Keen</a>. I've been a professional software developer for seven years and over that time have developed <a href="/projects.html">four different SaaS applications</a>, all using Stripe to power their payment processing.
+I'm <a href="http://www.petekeen.com">Pete Keen</a>. I've been a professional software developer for seven years and over that time have developed <a href="/projects">four different SaaS applications</a>, all using Stripe to power their payment processing.
 </p>
 </div>
 

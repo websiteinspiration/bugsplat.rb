@@ -68,7 +68,7 @@ class App < Sinatra::Base
         nil
       end
       unless @page && @page['skip_title_suffix']
-        _title = [_title, "Bugsplat by Pete Keen"].compact.join(" | ")
+        _title = [_title, "Pete Keen"].compact.join(" | ")
       end
       _title
     end
@@ -105,7 +105,7 @@ class App < Sinatra::Base
   end
 
   get '/sitemap.xml' do
-    map = XmlSitemap::Map.new('bugsplat.info') do |m|
+    map = XmlSitemap::Map.new('petekeen.com') do |m|
       @pages.all do |page|
         m.add page.html_path, :period => :daily
       end
@@ -121,15 +121,15 @@ class App < Sinatra::Base
   get '/index.xml' do
     @archive_pages = @pages.blog_posts.reverse
     feed = Atom::Feed.new do |f|
-      f.title = 'Bugsplat'
-      f.links << Atom::Link.new(:href => 'https://bugsplat.info')
+      f.title = 'Pete Keen'
+      f.links << Atom::Link.new(:href => 'http://www.petekeen.com')
       f.updated = @archive_pages[0].date.to_time
-      f.authors << Atom::Person.new(:name => 'Pete Keen', :email => 'pete@bugsplat.info')
+      f.authors << Atom::Person.new(:name => 'Pete Keen', :email => 'pete@petekeen.com')
   
       @archive_pages.each do |p|
         f.entries << Atom::Entry.new do |e|
           e.title = p['title']
-          e.links << Atom::Link.new(:href => "https://bugsplat.info#{ p.html_path }")
+          e.links << Atom::Link.new(:href => "http://www.petekeen.com#{ p.html_path }")
           e.id = p['id']
           e.updated = p.date.to_time
           e.content = Atom::Content::Html.new(p.render)
@@ -140,13 +140,13 @@ class App < Sinatra::Base
     feed.to_xml
   end
 
-  get '/archive.html' do
+  get '/archive' do
     @archive_pages = @pages.blog_posts.reverse
     @page_title = "Archive"
     erb :archive
   end
 
-  get '/tags.html' do
+  get '/tags' do
     tags = {}
     @pages.pages.each do |page|
       page.tags.each do |tag|
@@ -158,7 +158,7 @@ class App < Sinatra::Base
     erb :tags
   end
 
-  get '/tag/:tag.html' do
+  get '/tag/:tag' do
     @tagged_pages = @pages.search(params[:tag].downcase, "tags").reverse
     @page_title = @tag_name = params[:tag]
     erb :tagged_pages

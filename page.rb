@@ -25,7 +25,7 @@ class Pages
 
   def parse_all
     @pages = find_all_files.map do |page|
-      Page.new(Page.normalize_name(page), @normal_renderer)
+      Page.new(page, @normal_renderer)
     end
 
     @pages_by_docid = {}
@@ -126,8 +126,9 @@ class Page
   attr_accessor :docid
   attr_reader :name, :body
 
-  def initialize(page, renderer)
-    @name = page
+  def initialize(filename, renderer)
+    @file = filename
+    @name = self.class.normalize_name(filename)
     @renderer = renderer
     parse_page
   end
@@ -152,11 +153,11 @@ class Page
   end
 
   def self.normalize_name(page)
-    return page.downcase.strip.sub(/\.(html|md|pdf)$/,'')
+    return page.downcase.strip.sub(/\.(html|md|pdf)$/,'').sub(/\d{4}-\d{2}-\d{2}-/, '')
   end
 
   def is_blog_post?
-    return @name =~ DATE_REGEX
+    return filename =~ DATE_REGEX
   end
 
   def render(renderer=nil)
@@ -174,7 +175,7 @@ class Page
   end
 
   def filename
-    File.join(File.dirname(__FILE__), "entries", "#{@name}.md")
+    File.join(File.dirname(__FILE__), "entries", @file)
   end
 
   def matches_path(path)
@@ -211,7 +212,7 @@ class Page
       if @headers['date']
         Time.strptime(@headers['date'], DATE_FORMAT)
       else
-        Time.strptime(@name, SHORT_DATE_FORMAT)
+        Time.strptime(@file, SHORT_DATE_FORMAT)
       end
     end
   end
@@ -221,7 +222,7 @@ class Page
   end
 
   def html_path
-    "/#{@name}.html"
+    "/#{@name}"
   end
 
   def pdf_path

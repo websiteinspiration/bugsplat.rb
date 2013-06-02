@@ -25,7 +25,7 @@ I am available for consulting to help jumpstart your project in a few different 
 ### Contact Me
 
 
-* <i class="icon-envelope"></i> Email: [pete@bugsplat.info](mailto:pete@bugsplat.info)
+* <i class="icon-envelope"></i> Email: [pete@petekeen.com](mailto:pete@petekeen.com)
 * <i class="icon-twitter"></i> Twitter: [@zrail](http://twitter.com/zrail)
 * <i class="icon-github"></i> Github: [peterkeen](https://github.com/peterkeen)
 * <i class="icon-linkedin"></i> LinkedIn: [peterkeen](http://www.linkedin.com/in/peterkeen)
