@@ -140,13 +140,13 @@ class App < Sinatra::Base
     feed.to_xml
   end
 
-  get '/archive' do
+  get %r{/archive(\.html)?} do
     @archive_pages = @pages.blog_posts.reverse
     @page_title = "Archive"
     erb :archive
   end
 
-  get '/tags' do
+  get %r{/tags(\.html)?} do
     tags = {}
     @pages.pages.each do |page|
       page.tags.each do |tag|
