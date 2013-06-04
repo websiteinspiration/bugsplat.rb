@@ -17,7 +17,7 @@ That said, any `@bugsplat.info` email addresses you have will continue to work. 
 
 HTTP has a whole bunch of different status codes. Pretty much everyone knows about `404 Not Found`, of course. Other important codes are `200 Ok`, which is what servers respond to requests they can handle along with the content at that address. `401 Authorization Required` is another interesting one. That's what triggers a browser login box that you might see from time to time.
 
-`301 Moved Permanently` (and it's little brother `302 Moved Temporarily`) are used to tell your browser "hey, the content that you're looking for is over at this other location". Google also uses these redirections when generating search results, which is why they're so important to get right.
+`301 Moved Permanently` (and its little brother `302 Moved Temporarily`) are used to tell your browser "hey, the content that you're looking for is over at this other location". Google also uses these redirections when generating search results, which is why they're so important to get right.
 
 Along with changing the domain of this I wanted to change the URL format of blog posts. I'm pretty tired of having the date in the URL itself. It's long and redundant and kind of ugly. Some [small changes][github] to the application code took care of generating those URLs, but what to do about the redirects? I installed a new app at `bugsplat.info` running this code:
 
