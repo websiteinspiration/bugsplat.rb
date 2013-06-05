@@ -32,37 +32,13 @@ My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 
 <div class="well">
 <h3>About the Author</h3>
-<p>
 I'm <a href="http://www.petekeen.com">Pete Keen</a>. I've been a professional software developer for seven years and over that time have developed <a href="/projects">four different SaaS applications</a>, all using Stripe to power their payment processing.
-</p>
 </div>
 
-<table class="table table-striped pricing">
-  <thead>
-    <tr>
-      <th style="width: 233px">Deluxe Package</th>
-      <th style="width: 233px">Just the Guide</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><span class="price">$89</span></li>
-      <td><span class="price">$39</span></li>
-    </tr>
-    <tr>
-      <td>The guide in webpage, PDF, ePub, and mobi format</td>
-      <td>The guide in webpage, PDF, ePub, and mobi format</td>
-    </tr>
-    <tr>
-      <td>Access to a full example Rails/Stripe application implementing every one of these best practices</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-### Sign up to get updates and 10% off
 
 <div class="well">
+<h3>Sign up to get updates and 10% off</h3>
+
 <p>Just put your email address in below and you'll get progress updates, preview sections, and a <em><strong>10% off discount code</strong></em> when the guide is published, currently scheduled for August 2013.</p>
 
 <form action="http://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-big form-inline" target="_blank">
