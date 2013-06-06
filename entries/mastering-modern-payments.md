@@ -26,6 +26,7 @@ My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 * Why you should always structure payments as state machines
 * Why and how you should write an admin interface from the start
 * How to handle subscription billing
+* How to create marketplaces with Stripe Connect and Stripe Payouts
 * How and why you should process payments using a background worker
 * When to email your customers, including why you should email them
   before their credit card expires, not after.
