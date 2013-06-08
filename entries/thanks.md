@@ -5,9 +5,9 @@ View: book
 Skip_title_suffix: true
 Hide_from_archive: true
 
-# Thanks for Signing Up!
+# Almost done...
 
-You'll be getting an email shortly. To finish the signup process make sure you click the link in that email.
+Thanks for signing up. Make sure you click the link in the email you're about to get.
 
 In the mean time, here are a few interesting things to explore:
 
