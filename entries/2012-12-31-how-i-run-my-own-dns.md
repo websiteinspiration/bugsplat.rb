@@ -1,4 +1,4 @@
-Title: How I run my  own DNS servers
+Title: How I run my own DNS servers
 Date:  2012-12-31 12:15:00
 Id:    f699a
 Tags:  DNS, Devops, Email
@@ -9,6 +9,8 @@ For the longest time I used [zoneedit][] as my DNS provider of choice. All of my
 [zoneedit]: http://www.zoneedit.com/
 
 --fold--
+
+*Important note: I'm no longer running my own DNS servers. I [wrote a post about why](/how-and-why-im-not-running-my-own-dns).*
 
 ### Step 0: Why would you ever do that?!
 
