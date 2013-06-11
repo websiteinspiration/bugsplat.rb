@@ -36,19 +36,28 @@ My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 </div>
 
 <p>
-
-Thousands of small businesses are using <a href="https://www.stripe.com">Stripe</a> to process recurring or one-time payments for their <a href="http://rubyonrails.org">Ruby on Rails</a> SaaS offerings. Most of them, probably including yours, are using a simple integration copied from a "Stripe in 10 minutes" tutorial, but what these tutorials don't cover could cost you customer good will and  <strong>thousands of dollars</strong> in lost payments and lost opportunities. 
-</p>
+Thousands of small businesses are using <a href="https://www.stripe.com">Stripe</a> to process recurring or one-time payments for their <a href="http://rubyonrails.org">Ruby on Rails</a> SaaS offerings. Most of them, probably including yours, are using a simple integration copied from a "Stripe in 10 minutes" tutorial, but what these tutorials don't cover could cost you customer good will and  <strong>thousands of dollars</strong> in lost payments and lost opportunities.</p>
 
 * Expired credit cards
 * Lost transactions due to timeouts and bugs
 * Lost time digging through Stripe's dashboard or the Rails console to see your quarterly revenue or to find a specific customer's transaction
 
 <div style="margin-top: 2em; margin-bottom: 2em">
-<h3>About the Author</h3>
-I'm <a href="http://www.petekeen.com">Pete Keen</a>. I've been a professional software developer for seven years and over that time have developed <a href="/projects">four different SaaS applications</a>, all using Stripe to power their payment processing.
+<h2>Chapter List <small>may change before publication</small></h2>
+<ol>
+<li>Introduction
+<li>Initial Example Application
+<li>The Simplest Stripe Integration
+<li>Security and PCI Compliance
+<li>Custom Payment Forms
+<li>State and History
+<li>Handling Webhooks
+<li>Subscriptions
+<li>Processing Payments with Background Workers
+<li>Admin Site
+<li>Marketplaces
+</ol>
 </div>
-
 
 <div class="well" style="text-align: center">
 <p>Sign up and you'll get progress updates, preview chapters, and a <br><em><strong>10% off discount code</strong></em> when the guide is published <br>currently scheduled for August 2013.</p>
@@ -60,3 +69,13 @@ I'm <a href="http://www.petekeen.com">Pete Keen</a>. I've been a professional so
     </div>
 </form>
 </div>
+
+<div style="margin-top: 2em; margin-bottom: 2em">
+<h2>About the Author</h2>
+<p>
+<img class="thumbnail" src="http://files.bugsplatcdn.com/files/afe3b485fe17d72e13bd/me.png" style="float:left; margin-right: 20px; height:100px;">
+I'm <a href="http://www.petekeen.com">Pete Keen</a>. I've been a professional software developer for seven years and live in Portland, Oregon. I write a blog at <a href="http://www.petekeen.com">petekeen.com</a> with articles on topics ranging from Ruby and Rails to Perl and robotics and scattered book reviews.
+</p>
+</div>
+
+
