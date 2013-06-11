@@ -13,7 +13,7 @@ My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 <img style="float: right; margin-left: 20px; height: 150px" src="http://files.bugsplatcdn.com/files/c3c6aeec229a91f3dc47/Book-icon.png">
 
 <ul>
-<li>Why a simple, 10 minute integration <strong>isn't enough</strong>
+<li>Why a simple 10 minute integration <strong>isn't enough</strong>
 <li>Dealing with security including PCI-DSS
 <li>How and why to use Stripe's <code>stripe.js</code> and <code>checkout.js</code>
 <li>How to build custom payment forms
