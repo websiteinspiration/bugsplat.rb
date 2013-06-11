@@ -10,10 +10,10 @@ Hide_from_archive: true
 My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em></strong> will teach you:
 
 <div>
-<img style="float: right; margin-left: 20px; height: 150px" src="http://files.bugsplatcdn.com/files/c3c6aeec229a91f3dc47/Book-icon.png">
+<img style="float: right; margin-left: 20px;" src="http://files.bugsplatcdn.com/files/e1aa9b6c8960a1012ce2/stripe_rails.png">
 
 <ul>
-<li>Why a simple 10 minute integration <strong>isn't enough</strong>
+<li>Why a simple 10-minute integration <strong>isn't enough</strong>
 <li>Dealing with security including PCI-DSS
 <li>How and why to use Stripe's <code>stripe.js</code> and <code>checkout.js</code>
 <li>How to build custom payment forms
@@ -36,7 +36,7 @@ My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 </div>
 
 <p>
-<img style="float: right; margin-left: 20px;" src="http://files.bugsplatcdn.com/files/e1aa9b6c8960a1012ce2/stripe_rails.png">
+
 Thousands of small businesses are using <a href="https://www.stripe.com">Stripe</a> to process recurring or one-time payments for their <a href="http://rubyonrails.org">Ruby on Rails</a> SaaS offerings. Most of them, probably including yours, are using a simple integration copied from a "Stripe in 10 minutes" tutorial, but what these tutorials don't cover could cost you customer good will and  <strong>thousands of dollars</strong> in lost payments and lost opportunities. 
 </p>
 
