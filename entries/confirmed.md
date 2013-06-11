@@ -9,5 +9,5 @@ Hide_from_archive: true
 
 Thanks for confirming your email address. Here's your free chapter of <a href="/mastering-modern-payments">Mastering Modern Payments: Using Stripe with Rails</a>
 
-<a href="/design-for-failure-processing-payments-with-a-background-worker.pdf" class="btn btn-large btn-primary">Get your Free Chapter</a>
+<a href="http://files.bugsplatcdn.com/files/0994a2bd36177383beaa/state_and_history.pdf" class="btn btn-large btn-primary">Get your Free Chapter</a>
 
