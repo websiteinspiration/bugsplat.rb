@@ -14,6 +14,7 @@ My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 
 <ul>
 <li>Why a simple, 10 minute integration <strong>isn't enough</strong>
+<li>Dealing with security including PCI-DSS
 <li>How and why to use Stripe's <code>stripe.js</code> and <code>checkout.js</code>
 <li>How to build custom payment forms
 <li>Why you should keep a payment audit trail
