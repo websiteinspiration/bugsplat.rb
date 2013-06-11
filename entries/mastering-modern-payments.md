@@ -25,11 +25,11 @@ My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 </ul>
 
 <div class="well" style="margin-top: 2em; margin-bottom: 2em; text-align: center;">
-<h3>Get updates and 10% off</h3>
+<h3>Get a free chapter and 10% off</h3>
 <form action="http://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-big form-inline" target="_blank">
     <div class="input-append">
 	<input type="email" class='text input-xlarge' value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address">
-	<input type="submit" value="Get Updates" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-large">
+	<input type="submit" value="Get Your Chapter" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-large">
     </div>
 </form>
 </div>
@@ -55,7 +55,7 @@ I'm <a href="http://www.petekeen.com">Pete Keen</a>. I've been a professional so
 <form action="http://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-big form-inline" target="_blank">
     <div class="input-append">
 	<input type="email" class='text input-xlarge' value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address">
-	<input type="submit" value="Get Updates" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-large">
+	<input type="submit" value="Get Free Chapter" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-large">
     </div>
 </form>
 </div>

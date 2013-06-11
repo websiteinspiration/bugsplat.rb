@@ -134,6 +134,10 @@ blockquote {
   font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
 
+.btn {
+  font-family: 'Droid Sans', helvetica, arial, sans-serif;
+}
+
 .form-big input.text {
   height: 34px;
 }

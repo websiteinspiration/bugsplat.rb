@@ -15,4 +15,3 @@ In the mean time, here are a few interesting things to explore:
 * [Distributed Personal Wiki](/git-backed-personal-markdown-wiki)
 * [How I run my own DNS servers](/how-i-run-my-own-dns)
 
---Pete
