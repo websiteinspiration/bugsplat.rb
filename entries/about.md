@@ -1,6 +1,8 @@
 Title: About Pete
 Id: about-123
 
+<img src="http://files.bugsplatcdn.com/files/afe3b485fe17d72e13bd/me.png" class="thumbnail" style="float: right; height: 150px">
+
 My name is Pete Keen and I write (and write about) software and software development practices, as well as various other topics.
 
 <hr class="separator">
