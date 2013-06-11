@@ -129,3 +129,11 @@ blockquote {
   text-rendering: optimizelegibility;
 }
 
+.form-big input {
+  font-size: 20px;
+  font-family: 'Droid Sans', helvetica, arial, sans-serif;
+}
+
+.form-big input.text {
+  height: 34px;
+}
