@@ -175,3 +175,47 @@ namespace :email do
   end
 end
 
+task :count do
+  code_count = 0
+  word_count = 0
+  
+  Dir.glob('entries/*.md').sort.each do |file|
+
+    file_code_count = 0
+    file_word_count = 0
+
+    in_backtick_code_block = false
+    in_space_code_block = false
+    File.open(file).each do |line|
+
+      next if line =~ /^\w+:/
+      next if line =~ /\[[\w\s _]+\]:/
+      
+      if line =~ /^```/
+        in_backtick_code_block = !in_backtick_code_block
+        next
+      end
+
+      if line =~ /^    /
+        in_space_code_block = true
+      end
+
+      if line !~ /^    / && in_space_code_block
+        in_space_code_block = false
+      end
+
+      if in_backtick_code_block || in_space_code_block
+        file_code_count += 1 unless line =~ /^\s+$/
+      else
+        file_word_count += line.split(/\s+/).compact.size
+      end
+    end
+
+    code_count += file_code_count
+    word_count += file_word_count
+
+    puts "#{file}: #{file_word_count} #{file_code_count}"
+  end
+
+  puts "overall: #{word_count} #{code_count}"
+end
