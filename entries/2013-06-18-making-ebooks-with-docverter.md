@@ -15,7 +15,7 @@ Show_upsell: true
 
 I've been writing [my guide to integrating Stripe with Rails][mmp] using markdown, as with most textual projects that I work on. Every chapter is a markdown-formatted file living in a git repo, sycned-on-save to [my git server][git] and S3 [using SparkleShare][wiki]. When I want to peek at the rendered version I use little previewer app running on a VM on my Mac mini that I [talked about previously][page_viewer].
 
-A good eBook needs a PDF version, of course. Awhile back I wrote a service named [Docverter][docverter] that can render XHTML to PDF using a library named [Flying Saucer][fs]. All you have to do is pipe in the HTML and other related files and you get back a rendered, self-contained PDF file. There are a few non-trivial aspects to this, of course, because HTML is not primarily intended for printable output. The W3C has worked up a [whole CSS module for page-related styles][css paged media] but it's not the most readable document. There's a few simple-ish things that you can do to your document to make it look nice, though.
+A good eBook needs a PDF version, of course. Awhile back I wrote an open-source service named [Docverter][docverter] that can render XHTML to PDF using a library named [Flying Saucer][fs], among other things. All you have to do is pipe in the HTML and other related files and you get back a rendered, self-contained PDF file. There are a few non-trivial aspects to this, of course, because HTML is not primarily intended for printable output. The W3C has worked up a [whole CSS module for page-related styles][css paged media] but it's not the most readable document. There's a few simple-ish things that you can do to your document to make it look nice, though.
 
 --fold--
 
@@ -178,4 +178,4 @@ This says to avoid inserting page breaks inside a code block. The `orphans` opti
 
 <hr>
 
-Making nice-looking PDFs with HTML source is not trivial. It would probably end up being easier to just drop the raw text inside Apple's iBooks Creator and style it that way, but I like a challenge. It's already looking pretty nice, and with a little more work I think I can have professional-grade PDF output. Now, to actually finish writing the book.
+Making nice-looking PDFs with HTML source is not trivial. It would probably end up being easier to just drop the raw text inside Apple's iBooks Creator and style it that way, but I like a challenge. It's already looking pretty nice, and with a little more work I think I can have professional-grade PDF output. Docverter also knows how to do Markdown to ePub and Mobi so I should be set for book production. Now to finish writing.
