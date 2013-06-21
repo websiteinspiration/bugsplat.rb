@@ -6,6 +6,9 @@
     <link rel="dns-prefetch" href="http://files.bugsplatcdn.com" />
     <%= relative_stylesheet :application %>
     <%= relative_stylesheet :print, 'print' %>
+    <style type="text/css">
+      <%= Pygments.css %>
+    </style>
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <%= relative_stylesheet(:ie7) %>

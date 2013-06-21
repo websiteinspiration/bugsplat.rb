@@ -1,0 +1,123 @@
+<!doctype html>
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset="utf-8">
+<title><%= @page.title %></title>
+<style type="text/css">
+  div.page_footer {
+    display: block;
+    text-align: center;
+    font-size: 80%;
+    color: #333;
+    font-family: 'Lora';
+    position: running(footer);
+  }
+  div.page_footer .page_number:after {
+    content: counter(page);
+  }
+  @page {
+    size: 8.5in 11in;
+    margin: 1in;
+
+    @bottom-right {
+      content: element(footer);
+    }
+
+    @bottom-left {
+      content: "<%= @page.title %> | petekeen.com";
+    }
+  } 
+
+  body {
+    font-family: 'Lora';
+  }
+
+  code,pre {
+    font-family: 'Inconsolata';
+  }
+
+  code {
+    padding: 2px 4px;
+    background-color: #f7f7f9;
+  }
+
+  pre {
+    page-break-inside:avoid;
+    orphans: 0;
+    widows: 0;
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+
+  <%= Pygments.css %>
+
+  h1,h2,h3,h4 {
+    font-family: 'Droid Sans';
+  }
+
+  hr
+  {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: block;
+    color: #999;
+    border: 0;
+    text-align: center;
+  }
+  
+  hr:after {
+    content: ".    .    .";
+    letter-spacing: 2em;
+  }
+
+  @font-face {
+    font-family: 'Droid Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('droid_sans.ttf');
+    -fs-pdf-font-embed: embed;
+    -fs-pdf-font-encoding: Identity-H;
+  }
+  @font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    src: url('Lora-Regular.ttf');
+    -fs-pdf-font-embed: embed;
+    -fs-pdf-font-encoding: Identity-H;
+  }
+  @font-face {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    src: url('Inconsolata-Regular.ttf');
+    -fs-pdf-font-embed: embed;
+    -fs-pdf-font-encoding: Identity-H;
+  }
+</style>
+</head>
+<body>
+<div class="page_footer"><span class="page_number"></span></div>
+<div id="container">
+  <div id="content-container">
+    <div id="content">
+      <h1><%= @page.title %></h1>
+      <h2>by Pete Keen</h2>
+      <%= @page.render %>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -5,6 +5,17 @@ require 'redcarpet'
 require 'date'
 require 'whistlepig'
 require 'redcarpet'
+require 'pygments'
+
+class HTMLwithPygments < Redcarpet::Render::HTML
+  def block_code(code, language)
+    Pygments.highlight(code, :lexer => language)
+  end
+
+  def postprocess(document)
+    document.gsub('&#39;', "'")
+  end
+end
 
 class Pages
 
@@ -17,7 +28,7 @@ class Pages
 
   def setup_renderers
     @normal_renderer = Redcarpet::Markdown.new(
-      Redcarpet::Render::HTML, :fenced_code_blocks => true)
+      HTMLwithPygments, :fenced_code_blocks => true)
     @strip_renderer = Redcarpet::Markdown.new(
       StripRenderer, :fenced_code_blocks => true)
     @index = Whistlepig::Index.new("index")
@@ -227,10 +238,6 @@ class Page
 
   def pdf_path
     "/#{@name}.pdf"
-  end
-
-  def docx_path
-    "/#{@name}.docx"
   end
 
   def markdown_path

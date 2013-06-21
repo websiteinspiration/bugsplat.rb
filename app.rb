@@ -196,21 +196,10 @@ class App < Sinatra::Base
 
     params[:format] ||= 'html'
 
-    formats = {
-      'pdf' => ['pdf_template.html', 'application/pdf'],
-      'docx' => [nil, 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'],
-      'html' => [],
-      'md' => [],
-    }
+    formats = ['html', 'pdf', 'md']
 
     unless formats.include?(params[:format])
       raise Sinatra::NotFound
-    end
-
-    if params[:format] == 'html'
-      view = @page.view || :entry_page
-      layout = @page.layout || :layout
-      return erb view, layout: layout
     end
 
     if params[:format] == 'md'
@@ -218,21 +207,25 @@ class App < Sinatra::Base
       return @page.contents
     end
 
-    public_path = File.expand_path(File.join(__FILE__, "..", "public"))
-    res = Docverter::Conversion.run do |c|
-      c.from     = 'markdown'
-      c.to       = params[:format]
-      if formats[params[:format]][0]
-        c.template = formats[params[:format]][0]
-      end
-      c.content  = @page.docverter_markdown
+    view = @page.view || :entry_page
+    layout = @page.layout || :layout
 
-      c.add_other_file File.join(public_path, "/fonts/droid_sans.ttf")
-      c.add_other_file File.join(public_path, "/fonts/droid_serif.ttf")
-      c.add_other_file File.join(public_path, "..", "pdf_template.html")
+    if params[:format] == 'html'
+     return erb view, layout: layout
     end
 
-    content_type formats[params[:format]][1]
+    public_path = File.expand_path(File.join(__FILE__, "..", "public"))
+    res = Docverter::Conversion.run do |c|
+      c.from     = 'html'
+      c.to       = 'pdf'
+      c.content  = erb(:pdf, layout: false).gsub('&#39;', "'")
+
+      Dir.glob(File.join(public_path, "fonts", "*.ttf")).each do |font|
+        c.add_other_file font
+      end
+    end
+
+    content_type 'application/pdf'
     res
   end
 

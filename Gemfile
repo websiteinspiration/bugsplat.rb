@@ -15,6 +15,7 @@ gem 'capistrano-buildpack'
 gem 'whistlepig'
 gem 'gibbon'
 gem 'anemone'
+gem 'pygments.rb'
 gem 'rack', '>= 1.3.10'
 
 group :development do

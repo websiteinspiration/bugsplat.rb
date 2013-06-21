@@ -15,7 +15,6 @@
   <div class="well">
   <div class="formats pull-right">
     <a rel="nofollow" href="<%= @page.pdf_path %>"><img alt="Download PDF" src="<%= url_for_asset('/img/pdf.png') %>"></img></a>
-    <a rel="nofollow" href="<%= @page.docx_path %>"><img alt="Download Word Doc" src="<%= url_for_asset('/img/doc.png') %>"></img></a>
     <a rel="nofollow" href="<%= @page.markdown_path %>"><img alt="Download Raw Markdown" src="<%= url_for_asset('/img/markdown.png') %>"></img></a>
   </div>
   <% if @page.tags.length > 0 %>
