@@ -10,7 +10,7 @@ Hide_from_archive: true
 My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em></strong> will teach you:
 
 <div>
-<img style="float: right; margin-left: 20px;" src="http://files.bugsplatcdn.com/files/e1aa9b6c8960a1012ce2/stripe_rails.png">
+<img style="float: right; margin-left: 20px;" src="http://files.bugsplatcdn.com/files/a8dab64c9e6402ee7b16/stripe_rails.png">
 
 <ul>
 <li>Why a simple 10-minute integration <strong>isn't enough</strong>
@@ -36,7 +36,7 @@ My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 </div>
 
 <p>
-Thousands of small businesses are using <a href="https://www.stripe.com">Stripe</a> to process recurring or one-time payments for their <a href="http://rubyonrails.org">Ruby on Rails</a> SaaS offerings. Most of them, probably including yours, are using a simple integration copied from a "Stripe in 10 minutes" tutorial, but what these tutorials don't cover could cost you customer good will and  <strong>thousands of dollars</strong> in lost payments and lost opportunities.</p>
+Thousands of small businesses are using Stripe to process recurring or one-time payments for their Ruby on Rails SaaS offerings. Most of them, probably including yours, are using a simple integration copied from a "Stripe in 10 minutes" tutorial, but what these tutorials don't cover could cost you customer good will and  <strong>thousands of dollars</strong> in lost payments and lost opportunities.</p>
 
 * Expired credit cards
 * Lost transactions due to timeouts and bugs
@@ -74,7 +74,7 @@ Thousands of small businesses are using <a href="https://www.stripe.com">Stripe<
 <h2>About the Author</h2>
 <p>
 <img class="thumbnail" src="http://files.bugsplatcdn.com/files/afe3b485fe17d72e13bd/me.png" style="float:left; margin-right: 20px; height:100px;">
-I'm <a href="http://www.petekeen.com">Pete Keen</a>. I've been a professional software developer for seven years and live in Portland, Oregon. I write a blog at <a href="http://www.petekeen.com">petekeen.com</a> with articles on topics ranging from Ruby and Rails to Perl and robotics and scattered book reviews.
+I'm Pete Keen. I've been a professional software developer for seven years and live in Portland, Oregon. I write a blog at petekeen.com with articles on topics ranging from Ruby and Rails to Perl and robotics and scattered book reviews.
 </p>
 </div>
 
