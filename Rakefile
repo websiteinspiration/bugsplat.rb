@@ -83,7 +83,7 @@ end
 namespace :assets do
   task :precompile do
 
-    if File.exists('.asset_host')
+    if File.exists?('.asset_host')
       ENV['ASSET_HOST'] = File.read('.asset_host')
     end
 
