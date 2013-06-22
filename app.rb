@@ -39,7 +39,8 @@ class App < Sinatra::Base
   end
 
   def url_for_asset(file)
-    file[0] == '/' ? file : "/#{file}"
+    url = file[0] == '/' ? file : "/#{file}"
+    ENV['ASSET_HOST'] ? "#{ENV['ASSET_HOST']}#{url}" : url
   end
 
   helpers do
