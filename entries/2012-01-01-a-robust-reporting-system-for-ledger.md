@@ -70,7 +70,7 @@ Next, it uses some basic [Twitter Bootstrap](http://twitter.github.com/bootstrap
 
 Here's a screenshot of what this report looks like (Note: this uses the Stan example ledger that I generated for my previous reporting system):
 
-<a class="thumbnail" href="http://files.bugsplatcdn.com/files/5f017c22b146e19d6c1a/leaky_ship.png"><img src="http://files.bugsplatcdn.com/files/1ec86c1079d7aef07aff/leaky_ship_small.png"></a>
+<a href="http://files.bugsplatcdn.com/files/5f017c22b146e19d6c1a/leaky_ship.png"><img class="thumbnail" src="http://files.bugsplatcdn.com/files/1ec86c1079d7aef07aff/leaky_ship_small.png"></a>
 
 The register report that Leaky Ship links to is pretty trivial in comparison. Here's the source:
 
@@ -98,7 +98,7 @@ The register report that Leaky Ship links to is pretty trivial in comparison. He
 
 The only thing new that this does is use the `expect` helper to ensure that `account` and `year` are query params. If they are not, `expect` throws an exception rather than showing bad data. Here's what this one looks like:
 
-<a class="thumbnail" href="http://files.bugsplatcdn.com/files/f8ca9831fc1be3388c09/register.png"><img src="http://files.bugsplatcdn.com/files/c33219c7fa541dda453e/register_small.png"></a>
+<a href="http://files.bugsplatcdn.com/files/f8ca9831fc1be3388c09/register.png"><img class="thumbnail" src="http://files.bugsplatcdn.com/files/c33219c7fa541dda453e/register_small.png"></a>
 
 Both of these reports, as well as a few others, can be found in [my Ledger Web configuration](https://github.com/peterkeen/ledger-web-config). My config also shows off some of the more advanced customizations you can do.
 
