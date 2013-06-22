@@ -9,7 +9,7 @@ Show_upsell: true
 
 For various projects including [Mastering Modern Payments][mmp] I've found it really useful to be able to view the Markdown source rendered as HTML but I don't really care about editing it online. I put together a little gem named [page_viewer][] which renders Markdown files like this:
 
-<img src="http://files.bugsplatcdn.com/files/72f39f695899c2b2b5f9/Screen%20Shot%202013-06-15%20at%2011.04.48%20PM.png"/>
+<img src="http://files.bugsplatcdn.com/files/bc0c9ca20f9b12269192/Screen%20Shot%202013-06-15%20at%2011.04.48%20PM.opti.png"/>
 
 --fold--
 
