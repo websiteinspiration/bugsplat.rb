@@ -65,19 +65,5 @@
     })();
     </script>
     <% end %>
-    <script>
-    $(document).ready(function () {
-      hljs.tabReplace = '    ';
-      hljs.initHighlightingOnLoad();
-      $('.bbpTweet .timestamp a[title]').each(function (i, tstamp_node) {
-          var date_parts = $(tstamp_node).attr('title').split(/ /);
-          var new_date_parts = [date_parts[1], date_parts[2] + ",", date_parts[5], date_parts[3], date_parts[4]];
-          var new_date_stamp = new_date_parts.join(' ');
-          var tstamp = new Date(new_date_stamp);
-          $(tstamp_node).text($.relatizeDate.timeAgoInWords(tstamp));
-      });
-    });
-    </script>
-
   </body>
 </html>

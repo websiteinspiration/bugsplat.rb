@@ -34,9 +34,7 @@ class App < Sinatra::Base
 
     js :application, [
       '/js/jquery.js',
-      '/js/jquery.relatize_date.js',
       '/js/bootstrap.js',
-      '/js/highlight.pack.js'
     ]
   end
 
