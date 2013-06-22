@@ -135,7 +135,7 @@ Graduated December 2006
 ### Skills
 
 * Ruby, Rails, Python, HTML/CSS, Javascript, Perl, Java, Shell scripting
-* Agile / Test-driven Development, Pair Programming
+* Agile / Test-driven Development, Pair Programming, RSpec, Jasmine
 * Git, SVN, CVS
 * Linux, Mac OS X
 * PostgreSQL, MySQL
