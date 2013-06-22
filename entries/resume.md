@@ -2,6 +2,11 @@ Title: Resume
 Order: 1
 Id:    resume-123
 
+<div class="formats pull-right">
+  <a rel="nofollow" href="/resume.pdf"><img alt="Download PDF" src="http://files.bugsplatcdn.com/files/7d44797a6ac52e7fb898/pdf.png"></img></a>
+  <a rel="nofollow" href="/resume.md"><img alt="Download Plaintext" src="http://files.bugsplatcdn.com/files/4fb4d0b0a7a0bb33a2e0/markdown.png"></img></a>
+</div>
+
 ### Experience
 
 #### Software Developer, 2012 - Current ####
