@@ -83,6 +83,13 @@ end
 namespace :assets do
   task :precompile do
 
+    if File.exists?('.env')
+      File.open(".env").each do |env|
+        k,v = env.split('=', 2)
+        ENV[k] = v
+      end
+    end
+
     puts "Compiling pages"
     app = App.new
     request = Rack::MockRequest.new(app)
