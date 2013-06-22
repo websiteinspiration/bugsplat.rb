@@ -26,7 +26,7 @@ set :ssl_key_path, '/etc/nginx/certs/bugsplat.info.key'
 
 `:use_ssl` enables listening on port 443 with SSL and the two `path` options just tell nginx where to find the keys on the server, which are deployed separately with Puppet. `:force_ssl` adds this small snippet to the exported nginx config file which redirects plain requests to SSL:
 
-```
+```nginx
 if ($ssl_protocol = "") {
    rewrite ^https://$server_name$request_uri? permanent;
 }

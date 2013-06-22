@@ -4,6 +4,17 @@ Id:    9a2f7
 Tags:  Programming, Heroku
 Show_upsell: true
 
+[Docverter]: http://www.docverter.com
+[defaults]: https://devcenter.heroku.com/articles/buildpacks#default-buildpacks
+[heroku-buildpack-multi]: https://github.com/ddollar/heroku-buildpack-multi
+[heroku-buildpack-hello]: https://github.com/heroku/heroku-buildpack-helo
+[heroku-buildpack-ruby-jekyll]: https://github.com/mattmanning/heroku-buildpack-ruby-jekyll
+[Jekyll]: https://github.com/mojombo/jekyll
+[heroku-buildpack-static]: https://github.com/craigkerstiens/heroku-buildpack-static
+[heroku-buildpack-testrunner]: https://github.com/ryanbrainard/heroku-buildpack-testrunner
+[heroku-buildpack-vendorbinaries]: https://github.com/peterkeen/heroku-buildpack-vendorbinaries.git
+[third-party]: https://devcenter.heroku.com/articles/third-party-buildpacks
+
 [Heroku][] is a Platform as a Service running on top of Amazon Web Services where you can run web applications written using various frameworks and languages. One of the most distinguishing features of Heroku is the concept of [Buildpacks][buildpack-devcenter], which are little bits of logic that let you influence Heroku as it builds your application. Buildpacks give you almost *unlimited flexibility* as to what you can do with Heroku's building blocks. 
 
 Hanging out in the [#heroku][irc] irc channel, I sometimes see some confusion about what buildpacks are and how they work, and this article is my attempt to explain how they work and why they're cool.
@@ -18,7 +29,7 @@ Before we tackle the specifics of a buildpack, let's talk about how Heroku works
 
 Heroku also generates or adds to a file named `Procfile` which lists all of the executable processes that your application uses. For example, most Ruby web applications will have an entry in their `Procfile` that looks like this:
 
-```
+```yaml
 web: bundle exec rackup -p $PORT
 ```
 
@@ -32,15 +43,15 @@ Heroku turns your application code into a slug using a Buildpack which consists 
 
 The very first thing the slug compiler does is download your custom buildpack if you have one. You can set a custom buildpack at app creation time like this:
 
-```
-heroku create --buildpack=http://github.com/you/your-buildpack.git
+```bash
+$ heroku create --buildpack=http://github.com/you/your-buildpack.git
 ```
 
 After application creation you can set a custom buildpack or switch
 to a different one by setting the `BUILDPACK_URL` configuration value:
 
-```
-heroku config:add BUILDPACK_URL=http://github.com/you/some-other-buildpack.git
+```bash
+$ heroku config:add BUILDPACK_URL=http://github.com/you/some-other-buildpack.git
 ```
 
 If you haven't set a custom buildpack, Heroku uses their standard set
@@ -51,7 +62,7 @@ and frameworks.
 
 Heroku runs `bin/detect` from each candidate buildpack, passing in the path to a temporary directory containing your application code. The first one that returns successfully (i.e. `exit 0` in bash) determines the buildpack to use in the next few stages. Here's `heroku-buildpack-hello`'s `detect`:
 
-```
+```bash
 #!/bin/sh
 
 # this pack is valid for apps with a hello.txt in the root
@@ -67,7 +78,7 @@ The `if` statement looks for a specific file named `hello.txt` in the root direc
 
 Whatever `bin/detect` prints to `STDOUT` is used as the runtime label in the slug compiler output. In this case, `detect` prints `HelloFramework` which will result in this output:
 
-```
+```text
 -----> HelloFramework app detected
 ```
 
@@ -75,7 +86,7 @@ Whatever `bin/detect` prints to `STDOUT` is used as the runtime label in the slu
 
 The slug compiler next runs `bin/compile` passing in the path to your application code as well as a path to a directory the compiler can use as a build cache. Here's `heroku-buildpack-hello`'s `compile` script:
 
-```
+```bash
 #!/bin/sh
 
 indent() {
@@ -100,7 +111,7 @@ Here we find a simple `indent()` function that indents output by eight spaces as
 
 After the compilation step is done Heroku runs a script named `bin/release`. This takes the path to your application code as an argument and prints YAML to `STDOUT` describing default values for config variables and default `Procfile` entries. `release` can also specify default addons that your application should receive. For example, most release scripts will specify that the application will get a database instance by default. Here's `heroku-buildpack-hello`'s `release`:
 
-```
+```bash
 #!/bin/sh
 
 cat << EOF
@@ -133,7 +144,7 @@ For [Docverter][] I've needed to include some 3rd party software that isn't pack
 
 First, the `detect` script:
 
-```
+```bash
 #!/bin/bash
 
 if [ -f $1/.vendor_urls ]; then
@@ -146,7 +157,7 @@ fi
 
 This script just looks for `.vendor_urls` in your app's root directory. Now, the compile script:
 
-```
+```bash
 #!/bin/bash
 
 
@@ -174,34 +185,24 @@ From the top, this has the same `indent()` function as the `compile` from `herok
 
 Finally, the `release` script is very simple, just returning an empty YAML hash:
 
-```
+```bash
 #!/bin/sh
 echo "--- {}"
 ```
 
 In my project's root directory I've created two files, `.buildpacks` which contains the list of buildpacks:
 
-```
+```text
 https://github.com/peterkeen/heroku-buildpack-vendorbinaries.git
 https://github.com/heroku/heroku-buildpack-ruby.git
 ```
 
 and a `.vendor_urls` file containing the list of binaries to vendor:
 
-```
+```text
 https://s3.amazonaws.com/my-bucket/pandoc.tar.gz
 https://s3.amazonaws.com/my-bucket/calibre.tar.gz
 ```
 
 I've created this buildpack and [put it on Github][heroku-buildpack-vendorbinaries] for you to use. This is just one example of the infinite variety of things you can do, so go forth and experiment!
 
-[Docverter]: http://www.docverter.com
-[defaults]: https://devcenter.heroku.com/articles/buildpacks#default-buildpacks
-[heroku-buildpack-multi]: https://github.com/ddollar/heroku-buildpack-multi
-[heroku-buildpack-hello]: https://github.com/heroku/heroku-buildpack-helo
-[heroku-buildpack-ruby-jekyll]: https://github.com/mattmanning/heroku-buildpack-ruby-jekyll
-[Jekyll]: https://github.com/mojombo/jekyll
-[heroku-buildpack-static]: https://github.com/craigkerstiens/heroku-buildpack-static
-[heroku-buildpack-testrunner]: https://github.com/ryanbrainard/heroku-buildpack-testrunner
-[heroku-buildpack-vendorbinaries]: https://github.com/peterkeen/heroku-buildpack-vendorbinaries.git
-[third-party]: https://devcenter.heroku.com/articles/third-party-buildpacks

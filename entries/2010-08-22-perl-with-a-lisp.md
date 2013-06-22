@@ -4,11 +4,16 @@ Id:    7497d
 Tags:  Perl, Programming
 Hold:  1
 
-Browsing around on [hacker news][hn] one day, I came across a [link][hn-micromanual] to a paper entitled "[A micro-manual for Lisp - Not the whole truth][micromanual]" by John McCarthy, the self-styled discoverer of Lisp. One commentor stated that they have been using this paper for awhile as a *code kata*, implementing it several times, each in a different language, in order to better learn that language. The other day I was pretty bored and decided that maybe doing that too would be a good way to learn something and aleviate said boredom. My first implementation is in perl, mostly because I don't want to have to learn a new language *and* lisp at the same time. The basic start is after the jump.
-
 [hn]: http://news.ycombinator.com
 [hn-micromanual]: http://news.ycombinator.com/item?id=1591112
 [micromanual]: http://www.ee.ryerson.ca/~elf/pub/misc/micromanualLISP.pdf
+[Functions]: http://github.com/peterkeen/kata/blob/master/perl/lib/Functions.pm
+[Cell]: http://github.com/peterkeen/kata/blob/master/perl/lib/Cell.pm
+[Read.pm]: http://github.com/peterkeen/kata/blob/master/perl/lib/Read.pm
+[01_list_manipulation.t]: http://github.com/peterkeen/kata/blob/master/perl/t/01_list_manipulation.t
+[02_read.t]: http://github.com/peterkeen/kata/blob/master/perl/t/02_read.t
+
+Browsing around on [hacker news][hn] one day, I came across a [link][hn-micromanual] to a paper entitled "[A micro-manual for Lisp - Not the whole truth][micromanual]" by John McCarthy, the self-styled discoverer of Lisp. One commentor stated that they have been using this paper for awhile as a *code kata*, implementing it several times, each in a different language, in order to better learn that language. The other day I was pretty bored and decided that maybe doing that too would be a good way to learn something and aleviate said boredom. My first implementation is in perl, mostly because I don't want to have to learn a new language *and* lisp at the same time. The basic start is after the jump.
 
 --fold--
 
@@ -20,20 +25,22 @@ I've chosen to write this first implementation in perl. I know perl pretty well 
 
 Lisp represents most things fundamentally in terms of what's known as a *cons cell*. This is some sort of object that has two slots for other objects, be they primitives or other cons cells. Being a good little modern perl programmer, I've chosen to implement this as a small Moose-based [class][Cell]:
 
-    package Cell;
-    
-    use Moose;
+```perl
+package Cell;
 
-    use overload
-        'bool' => sub { return !shift->is_nil() },
-        'fallback' => 1
-    ;
-    
-    has 'car'    => (is => 'rw');
-    has 'cdr'    => (is => 'rw');
-    has 'is_nil' => (is => 'ro', default => 0);
-    
-    1;
+use Moose;
+
+use overload
+    'bool' => sub { return !shift->is_nil() },
+    'fallback' => 1
+;
+
+has 'car'    => (is => 'rw');
+has 'cdr'    => (is => 'rw');
+has 'is_nil' => (is => 'ro', default => 0);
+
+1;
+```
 
 Using Moose, we define an object with two read-write slots named `car` and `cdr`. This is due entirely to historical precident: `car` is the first element in the pair, `cdr` is the second. `is_nil` is there to allow us to define a fixed `nil` value later on. The `overload` allows us to use a `Cell` in a boolean context. Anything that doesn't have `is_nil` set is `true`;
 
@@ -41,56 +48,59 @@ Using Moose, we define an object with two read-write slots named `car` and `cdr`
 
 Now that we've got the data structure done, let's define a few [fundamental functions][Functions] to work with it.
 
-    our $NIL = Cell->new(is_nil => 1);
-    sub nil
-    {
-        return $NIL;
-    }
-    
-    our $T = "t";
-    sub t
-    {
-        return $T;
-    }
-    
-    sub equal
-    {
-        my ($a, $b) = @_;
-        return t if $a eq $b;
-        return nil;
-    }
-    
+```perl
+our $NIL = Cell->new(is_nil => 1);
+sub nil
+{
+    return $NIL;
+}
+
+our $T = "t";
+sub t
+{
+    return $T;
+}
+
+sub equal
+{
+    my ($a, $b) = @_;
+    return t if $a eq $b;
+    return nil;
+}
+```
 
 Notice how `$NIL` is just hanging out there. It's the only Cell that will ever have `_is_nil` set. We return the reference to the singleton from the `nil` function. `t` is the opposite. We just return the atom `t`. `equal` exploits perl's built-in comparison operator `eq` to compare two things.
 
 Now, the good stuff. List manipulation:
 
-    sub cons
-    {
-        my ($thing, $list) = @_;
-        return Cell->new(car => $thing, cdr => $list);
-    }
-    
-    sub list
-    {
-        reduce { cons($b, $a) } (nil, reverse @_);
-    }
-    
-    sub car
-    {
-        my $thing = shift;
-        confess "Argument to car must be a list"
-            unless ref($thing) && ref($thing) eq 'Cell';
-        return defined($thing->car()) ? $thing->car() : nil;
-    }
-    
-    sub cdr
-    {
-        my $thing = shift;
-        confess "Argument to cdr must be a list"
-            unless ref($thing) && ref($thing) eq 'Cell';
-        return defined($thing->cdr()) ? $thing->cdr() : nil;
-    }
+```perl
+sub cons
+{
+    my ($thing, $list) = @_;
+    return Cell->new(car => $thing, cdr => $list);
+}
+
+sub list
+{
+    reduce { cons($b, $a) } (nil, reverse @_);
+}
+
+sub car
+{
+    my $thing = shift;
+    confess "Argument to car must be a list"
+        unless ref($thing) && ref($thing) eq 'Cell';
+    return defined($thing->car()) ? $thing->car() : nil;
+}
+
+sub cdr
+{
+    my $thing = shift;
+    confess "Argument to cdr must be a list"
+        unless ref($thing) && ref($thing) eq 'Cell';
+    return defined($thing->cdr()) ? $thing->cdr() : nil;
+}
+```
 
 `cons` creates new `Cell`s, setting their `car` and `cdr` as appropriate. The `list` function is a pure convenience thing to make setting up singly-linked lists easy. `car` and `cdr` do a small amount of error checking and call out to the given `Cell`'s `car()` and `cdr()` methods.
 
@@ -112,10 +122,4 @@ This most basic of readers is only 113 lines of perl, but it can parse a string 
 
 Well, that's all for now. It's a good start, but doesn't really deal with any of the interesting bits yet. Next up: `(eval)`.
 
-*What's your personal code kata? Have you written a lisp before? Have any tips for me?*
 
-[Functions]: http://github.com/peterkeen/kata/blob/master/perl/lib/Functions.pm
-[Cell]: http://github.com/peterkeen/kata/blob/master/perl/lib/Cell.pm
-[Read.pm]: http://github.com/peterkeen/kata/blob/master/perl/lib/Read.pm
-[01_list_manipulation.t]: http://github.com/peterkeen/kata/blob/master/perl/t/01_list_manipulation.t
-[02_read.t]: http://github.com/peterkeen/kata/blob/master/perl/t/02_read.t

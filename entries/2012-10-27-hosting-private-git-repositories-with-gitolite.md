@@ -32,14 +32,18 @@ Gitolite installation is pretty straightforward:
 5. Ensure `~/bin` is in your `PATH`
 5. Run these commands in the `git` user's home directory:
 
-         $ git clone git://github.com/sitaramc/gitolite
-         $ mkdir -p $HOME/bin
-         $ gitolite/install -to $HOME/bin
-         $ gitolite setup -pk YourName.pub
+     ```bash
+     $ git clone git://github.com/sitaramc/gitolite
+     $ mkdir -p $HOME/bin
+     $ gitolite/install -to $HOME/bin
+     $ gitolite setup -pk YourName.pub
+     ```
 
 6. Move to your workstation and run this command:
 
-         $ git clone git@your_server:gitolite-admin
+     ```bash
+     $ git clone git@your_server:gitolite-admin
+     ```
      
 If everything has gone well you'll be able to clone that repo without being asked for a password.
 There are a *ton* of things you can do with Gitolite and I don't have room to get into it here. Check
@@ -80,8 +84,10 @@ So those are my hooks. If you want to use them, clone the [repo][git-hooks] onto
 You'll also need to modify your `$GITUSER_HOME/.gitolite.rc` file slightly. Add these lines somewhere
 toward the top of the `%RC` hash:
 
-    GIT_CONFIG   => '.*',
-    AUTH_OPTIONS => 'no-port-forwarding,no-X11-forwarding,no-pty',
+```perl
+GIT_CONFIG   => '.*',
+AUTH_OPTIONS => 'no-port-forwarding,no-X11-forwarding,no-pty',
+```
 
 The first line allows the config file to contain any git config options you want. The second removes
 the agent forwarding restriction. The default includes `no-agent-forwarding`.
@@ -89,8 +95,10 @@ the agent forwarding restriction. The default includes `no-agent-forwarding`.
 If you want to push to S3 buckets, you'll need to create a file named `.jgit` in the `git` user's
 home directory with these contents:
 
-    accesskey: YOUR-AWS-ACCESS-KEY
-    secretkey: YOUR-AWS-SECRET-KEY
+```yaml
+accesskey: YOUR-AWS-ACCESS-KEY
+secretkey: YOUR-AWS-SECRET-KEY
+```
 
 S3 mirror URLs follow the format `amazon-s3://<filename>@<s3-bucket-name>/<repo_name>.git`. See below
 for an example.
@@ -99,34 +107,36 @@ for an example.
 
 Here's my gitolite config after installing my hooks:
 
-    repo @all
-        config mirrors.s3 = "amazon-s3://.jgit@my-s3-bucket/REPO_NAME"
-    
-    repo gitolite-admin
-        RW+     =   peter
-    
-    repo CREATOR/[a-zA-Z0-9].*
-        C = @all
-        RW+ = CREATOR
-        RW = WRITERS
-        R = READERS gitweb
-    
-    repo apps/[a-zA-Z0-9].*
-        C                   = @all
-        RW+                 = CREATOR
-        config hooks.pre    = '/usr/local/var/dokuen/bin/dokuen-deploy'
-    
-    repo financials-master
-        RW+ = peter
-        config hooks.clone.path = "/usr/local/var/repos/financials"
-        config hooks.post = "sudo -u peter /usr/local/var/dokuen/bin/dokuen run_command rake load --application=ledger"
-    
-    repo peter/git-hooks
-        config mirrors.github = "git@github.com:peterkeen/git-hooks.git"
-    
-    repo peter/bugsplat
-        config mirrors.github = "git@github.com:peterkeen/bugsplat.rb"
-        config mirrors.heroku = "git@heroku.com:bugsplat.git"
+```text
+repo @all
+    config mirrors.s3 = "amazon-s3://.jgit@my-s3-bucket/REPO_NAME"
+
+repo gitolite-admin
+    RW+     =   peter
+
+repo CREATOR/[a-zA-Z0-9].*
+    C = @all
+    RW+ = CREATOR
+    RW = WRITERS
+    R = READERS gitweb
+
+repo apps/[a-zA-Z0-9].*
+    C                   = @all
+    RW+                 = CREATOR
+    config hooks.pre    = '/usr/local/var/dokuen/bin/dokuen-deploy'
+
+repo financials-master
+    RW+ = peter
+    config hooks.clone.path = "/usr/local/var/repos/financials"
+    config hooks.post = "sudo -u peter /usr/local/var/dokuen/bin/dokuen run_command rake load --application=ledger"
+
+repo peter/git-hooks
+    config mirrors.github = "git@github.com:peterkeen/git-hooks.git"
+
+repo peter/bugsplat
+    config mirrors.github = "git@github.com:peterkeen/bugsplat.rb"
+    config mirrors.heroku = "git@heroku.com:bugsplat.git"
+```
 
 At the top, every repo gets transparently mirrored to my S3 bucket. `REPO_NAME` gets
 replaced with the actual path of the repo. After some boilerplate about the `gitolite-admin`

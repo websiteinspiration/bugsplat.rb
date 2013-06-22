@@ -13,44 +13,46 @@ Test program and more info after the fold.
 
 Among other things, this entailed soldering the speed controllers to the motors, mounting the motors, putting more headers on the arduino, and figuring out the basic wiring. Here's the test program:
 
-    #include <Servo.h>
-    
-    #define ARMING_SPEED 900
-    #define ZERO_SPEED 1300
-    #define MAX_SPEED 1850
-    
-    Servo front;
-    Servo right;
-    Servo back;
-    Servo left;
-    
-    void write_speed(int in_speed) {
-      front.writeMicroseconds(in_speed);
-      right.writeMicroseconds(in_speed);
-      back.writeMicroseconds(in_speed);
-      left.writeMicroseconds(in_speed);
-    }
-    
-    void setup() {
-      front.attach(10);
-      right.attach(11);
-      back.attach(12);
-      left.attach(13);
-      write_speed(ARMING_SPEED);
-      delay(10000);
-    }
-      
-    int speed = 0;
-    void loop() {
-      for(speed = ZERO_SPEED; speed < MAX_SPEED; speed++) {
-        write_speed(speed);
-        delay(20);
-      }
-      for(speed = MAX_SPEED; speed > ZERO_SPEED; speed--) {
-        write_speed(speed);
-        delay(20);
-      }
-    }
+```c++
+#include <Servo.h>
+
+#define ARMING_SPEED 900
+#define ZERO_SPEED 1300
+#define MAX_SPEED 1850
+
+Servo front;
+Servo right;
+Servo back;
+Servo left;
+
+void write_speed(int in_speed) {
+  front.writeMicroseconds(in_speed);
+  right.writeMicroseconds(in_speed);
+  back.writeMicroseconds(in_speed);
+  left.writeMicroseconds(in_speed);
+}
+
+void setup() {
+  front.attach(10);
+  right.attach(11);
+  back.attach(12);
+  left.attach(13);
+  write_speed(ARMING_SPEED);
+  delay(10000);
+}
+  
+int speed = 0;
+void loop() {
+  for(speed = ZERO_SPEED; speed < MAX_SPEED; speed++) {
+    write_speed(speed);
+    delay(20);
+  }
+  for(speed = MAX_SPEED; speed > ZERO_SPEED; speed--) {
+    write_speed(speed);
+    delay(20);
+  }
+}
+```
 
 All this does is setup four instances of the built-in Servo object on four different pins. After attaching the servo objects to pins, it sets them all to `ARMING_SPEED`, which is really just a speed that the speed controllers recognize as the throttle being completely off. Then, it waits for 10 seconds and then starts sweeping from `ZERO_SPEED` (idle but running) to `MAX_SPEED` (could be up to 2000 but the propellers have a tendency to fall off at that speed). 
 

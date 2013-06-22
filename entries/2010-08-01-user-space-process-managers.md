@@ -3,11 +3,19 @@ Date:  2010-08-01 18:09:00
 Tags:  Programming, Perl, Proclaunch
 Id:    12
 
+[God]:             http://god.rubyforge.org/
+[bluepill]:        http://github.com/arya/bluepill
+[monit]:           http://mmonit.com/monit/
+[supervisord]:     http://supervisord.org/
+[procer]:          http://mongrel2.org/doc/tip/docs/manual/book.wiki#x1-380004.1.1
+[runit]:           http://smarden.org/runit/
+[proclaunch]:      http://github.com/peterkeen/proclaunch
+[Mongrel2 manual]: http://mongrel2.org/doc/tip/docs/manual/book.wiki
+
 Modern web applications are complicated beasts. They've got database processes, web serving processes, and various tiers of actual application services. The first two generally take care of themselves. PostgreSQL, MySQL, Apache, Nginx, lighttpd, they all have well-understood ways of starting and keeping themselves up and running.
 
 But what do you do if you have a bunch of processes that you need to keep running that *aren't* well understood? What if they're well-understood to crash once in a while and you don't want to have to babysit them? You need a *user space process manager*. Zed Shaw seems to have coined this term specifically for the [Mongrel2 manual][], and it describes pretty accurately what you'd want: some user-space program running above init that can launch your processes and start them again if they stop. Dropping privilages would be nice. Oh, and it'd be cool if it were sysadmin-friendly. Oh, and if it could automatically detect code changes and restart that'd be nifty too.
 
-[Mongrel2 manual]: http://mongrel2.org/doc/tip/docs/manual/book.wiki
 
 --fold--
 
@@ -41,12 +49,4 @@ Of all of these, procer seems like the easiest to understand and get going with.
 
 That being said, I started rolling my own user space process manager yesterday. It's called [proclaunch][], and it's heavily inspired by procer. Right now it's mainly just a toy. It can launch and restart processes and maintain pid files, but it has no idea how to drop privilages or restart when something changes. Written in core perl with no external dependencies, it should eventually be suitable at least for my specific use cases, and hopefully it will be for yours too.
 
-*Have I missed a process manager? Did I misrepresent one of them? Leave a comment and let me know.*
 
-[God]:             http://god.rubyforge.org/
-[bluepill]:        http://github.com/arya/bluepill
-[monit]:           http://mmonit.com/monit/
-[supervisord]:     http://supervisord.org/
-[procer]:          http://mongrel2.org/doc/tip/docs/manual/book.wiki#x1-380004.1.1
-[runit]:           http://smarden.org/runit/
-[proclaunch]:      http://github.com/peterkeen/proclaunch

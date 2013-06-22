@@ -17,7 +17,7 @@ Ledger is almost the most boring, austere accounting program you could think of.
 
 The basic idea is that you write down all of your financial transactions in a text file with an easy-to-master syntax and then run the `ledger` command on them to generate reports. Here's a simplified extract from my ledger file:
 
-```
+```text
 2010/05/20 * Opening Balances
   Assets:Checking                          $500.00
   Liabilities:Amex                         $-10.00
@@ -59,7 +59,7 @@ The basic idea is that you write down all of your financial transactions in a te
 
 This is actually a complete ledger file (you can download it [here](ledger.sample.txt)) that illustrates a few key points. First, ledger is a double-entry accounting system. Every entry has at least one *from* and at least one *to*. Generally, the first line of the entry is where the money goes *to*, and it's a positive amount, with the second line being where the money comes *from*. If you leave off the amount of one of the lines ledger will automatically fill it in and make the entry balance. If you have an accounting background you can think of *from* and *to* in terms of debits and credits, but ledger doesn't force that. Second, accounts have a hierarchical namespace, which we can see like this:
 
-```
+```bash
 $ ledger -f ledger.sample.txt -s bal
      $721.58  Assets:Checking
     $-490.00  Equity
@@ -86,7 +86,7 @@ This arrangement of accounts helps to maintain some sanity when dealing with lot
 
 Again using the example file, we can run some more detailed reports. For example, here's our checkbook register:
 
-```
+```bash
 $ ledger -f ~/Documents/blog/static/ledger.sample.txt -r reg checking
 2010/05/20 Opening Balances     Liabilities:Amex             $10.00       $10.00
                                 Equity                      $490.00      $500.00
@@ -107,14 +107,14 @@ Ledger will abbreviate account names as necessary when printing to make it fit i
 
 The power of ledger really comes into focus when you have more data available. One of the most interesting reports that I run gives me an idea of how I'm doing month-to-month by showing how much my assets have changed (negative numbers are better, in this case): `ledger -MAn reg income expenses liabilities`. The `-M` option groups transactions by month, `-A` will show the running average in the second column. By default it will show the running total. `-n` will group all transactions together, instead of showing one subtotal for each account. It's sort of boring with the sample file, though:
 
-```
+```bash
 $ ledger -f ~/Documents/blog/static/ledger.sample.txt -MAn reg income expenses
-2010/05/01 - 2010/05/23         &lt;Total&gt;                    $-161.58     $-161.58
+2010/05/01 - 2010/05/23        <Total>;                    $-161.58     $-161.58
 ```
 
 In any of these examples you can change the output format to suit your needs. There are a lot of options here that are detailed in the [manual][] (pdf), but here's one example. I have a little program in my bin directory called `transpose`, which takes three-column pipe-separated data and turns it into tab-separated values ready to be inserted into a spreadsheet. The first column is the row, the second column is the column, the third is the value to put in that cell. We can tell ledger to output, for example, a basic expense report formatted for transpose like this:
 
-```
+```bash
 $ ledger -f ~/Documents/blog/static/ledger.sample.txt -F '%A|%D|%t\n' -M reg income expenses
 Expenses:Cable|2010/05/01|$60.00
 Expenses:Cell Phone|2010/05/01|$88.46

@@ -21,7 +21,7 @@ I use an instance `page_viewer` to view my [personal wiki](/git-backed-personal-
 
 Installation is pretty simple. Create a new project and include the `page_viewer` gem in the Gemfile:
 
-```
+```ruby
 source :rubygems
 
 gem 'page_viewer'
@@ -29,7 +29,7 @@ gem 'page_viewer'
 
 Configure and run `PageViewer::App` inside `config.ru`:
 
-```
+```ruby
 require 'page_viewer'
 
 PageViewer::App.set :page_root, '/path/to/some/markdown/files'

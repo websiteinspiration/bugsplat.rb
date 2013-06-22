@@ -17,9 +17,11 @@ Thus, I present [Ledger Web](https://github.com/peterkeen/ledger-web). In Ledger
 
 Ledger Web installation is pretty simple. First make sure you have PostgreSQL version 9.0 or greater installed on your machine. Then, run these commands:
 
-    $ gem install ledger_web
-    $ createdb ledger
-    $ ledger_web
+```bash
+$ gem install ledger_web
+$ createdb ledger
+$ ledger_web
+```
 
 Then, open your web browser to [http://localhost:9090/](http://localhost:9090/) where you'll see some simple example reports. 
 
@@ -27,36 +29,38 @@ Then, open your web browser to [http://localhost:9090/](http://localhost:9090/) 
 
 Let's walk through a simple pair of reports that shows off most of Ledger Web's features. Yesterday I ran across this [blog post](http://earlyretirementextreme.com/your-budget-is-like-sinking-ship.html) which draws a comparison between a typical person's budget and a wooden ship, always springing leaks and at risk of sinking to the bottom. I decided to write a report that shows my expenses both summed by year and broken out into individual lines. First, the Leaky Ship report itself:
 
-    <% @query = query({:pivot => "Year"}) do %>
-    select
-        account as "Account",
-        xtn_year as "Year",
-        coalesce(sum(amount), 0) as "Amount"
-    from
-        accounts_years
-        left outer join (
-            select
-                xtn_year,
-                account,
-                amount
-            from
-                ledger
-        ) x using (account, xtn_year)
-    where
-        account ~ '(Income|Expenses)'
-        and xtn_year <= date_trunc('year', cast(:to as date))
-    group by
-        account,
-        xtn_year
-    order by
-        account,
-        xtn_year
-    <% end %>
-    <div class="page-header">
-      <h1>Leaky Ship</h1>
-    </div>
-    <%= table(@query, :links => {/\d{4}-\d{2}-\d{2}/ =>
-        '/reports/register?account=:0&year=:title'}) %>
+```erb
+<% @query = query({:pivot => "Year"}) do %>
+select
+    account as "Account",
+    xtn_year as "Year",
+    coalesce(sum(amount), 0) as "Amount"
+from
+    accounts_years
+    left outer join (
+        select
+            xtn_year,
+            account,
+            amount
+        from
+            ledger
+    ) x using (account, xtn_year)
+where
+    account ~ '(Income|Expenses)'
+    and xtn_year <= date_trunc('year', cast(:to as date))
+group by
+    account,
+    xtn_year
+order by
+    account,
+    xtn_year
+<% end %>
+<div class="page-header">
+  <h1>Leaky Ship</h1>
+</div>
+<%= table(@query, :links => {/\d{4}-\d{2}-\d{2}/ =>
+    '/reports/register?account=:0&year=:title'}) %>
+```
 
 It starts off with a database query, defined using a helper named `query`. It uses a table named `ledger`, which is where your ledger data will be dumped, as well as a view named `accounts_years`, which is the cross product of every account by every year. This makes sure that rows show up properly even if there's no data for that particular year. Also, it uses `:pivot => "Year"`, which will *pivot* the report such that each `xtn_year` will become it's own column.
 
@@ -70,25 +74,27 @@ Here's a screenshot of what this report looks like (Note: this uses the Stan exa
 
 The register report that Leaky Ship links to is pretty trivial in comparison. Here's the source:
 
-    <% expect ['account', 'year'] %>
-    <% @query = query do %>
-       select
-           xtn_date as "Date",
-           account as "Account",
-           note as "Payee",
-           amount as "Amount"
-       from
-           ledger
-       where
-           xtn_year = :year
-           and account = :account
-       order by
-           xtn_date
-    <% end %>
-    <div class="page-header">
-      <h1>Register</h1>
-    </div>
-    <%= table @query %>
+```erb
+<% expect ['account', 'year'] %>
+<% @query = query do %>
+   select
+       xtn_date as "Date",
+       account as "Account",
+       note as "Payee",
+       amount as "Amount"
+   from
+       ledger
+   where
+       xtn_year = :year
+       and account = :account
+   order by
+       xtn_date
+<% end %>
+<div class="page-header">
+  <h1>Register</h1>
+</div>
+<%= table @query %>
+```
 
 The only thing new that this does is use the `expect` helper to ensure that `account` and `year` are query params. If they are not, `expect` throws an exception rather than showing bad data. Here's what this one looks like:
 

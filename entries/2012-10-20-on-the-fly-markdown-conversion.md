@@ -13,7 +13,7 @@ plain text to rich text formatting in a variety of formats with a simple HTTP AP
 on this blog in Markdown, which makes it a natural candidate for these types of conversions. Simplified,
 the code boils down to this:
 
-```
+```ruby
 Docverter.api_key = "<API-KEY>"
 
 result = Docverter::Conversion.run do |c|

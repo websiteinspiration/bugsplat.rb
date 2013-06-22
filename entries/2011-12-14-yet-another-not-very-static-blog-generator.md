@@ -3,10 +3,6 @@ Date:  2011-12-14 18:30:26
 Tags:  Meta
 Id:    7e074
 
-The [very first post on this blog][firstpost] was about how I wanted a completely static blog and how it'll be great and wonderful and boy howdy was it ever. Over 500 lines of rather dense perl plus almost 20 separate template files because the kind-of-[mustache][] that I decided to implement can't handle inlined templates for loops so I have to do everything as partials. 
-
-Needless to say, it isn't very fun to work on. It mostly does what I want but adding new things is pretty painful, as is changing any of the templates. Yesterday I decided that I would see what a [Sinatra][] port would look like. Why Sinatra? It's fun, that's why. Ruby and Sinatra make writing new webapps easy and fun.
-
 [firstpost]: /yet-another-static-html-generator
 [mustache]: http://mustache.github.com/
 [Sinatra]: http://www.sinatrarb.com/
@@ -15,6 +11,10 @@ Needless to say, it isn't very fun to work on. It mostly does what I want but ad
 [unicorn]: http://unicorn.bogomips.org/
 [concurrency]: /concurrency-on-heroku-cedar
 [Jekyll]: https://github.com/mojombo/jekyll
+
+The [very first post on this blog][firstpost] was about how I wanted a completely static blog and how it'll be great and wonderful and boy howdy was it ever. Over 500 lines of rather dense perl plus almost 20 separate template files because the kind-of-[mustache][] that I decided to implement can't handle inlined templates for loops so I have to do everything as partials. 
+
+Needless to say, it isn't very fun to work on. It mostly does what I want but adding new things is pretty painful, as is changing any of the templates. Yesterday I decided that I would see what a [Sinatra][] port would look like. Why Sinatra? It's fun, that's why. Ruby and Sinatra make writing new webapps easy and fun.
 
 --fold--
 

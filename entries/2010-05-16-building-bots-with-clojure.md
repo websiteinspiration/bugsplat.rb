@@ -13,33 +13,33 @@ The RealTimeBattle system is conceptually pretty simple. Your robot is a little 
 
 When the game starts, the system will start up your bot in a child process and attach to stdin and stdout, so from the bot's point of view it's just talking a [simple text protocol][bot_construction]. In perl, talking this protocol would be a trivial combination of `while(<>){ }` and `print`, but in clojure it seems to be a might bit more complicated:
 
-<pre>
+```clojure
 (loop []
   (let [in (read-line)]
     (if (not (nil? in))
       (do
         (println in)
         (recur)))))
-</pre>
+```
 
 Just writing that bit took me down about a dozen false starts, but I learned a whole lot about clojure in the process so I'm pretty sure it was worth it.
 
 Ok, so now this little bot can listen, let's make it talk. RealTimeBattle has a command that your bot can send to the server to make it print out something in the message log. We can wrap that in a function like so:
 
-<pre>
+```clojure
 (defn message [m & rest]
   (println (str "Print " m rest)))
-</pre>
+```
 
 and call that like this:
 
-<pre>
+```clojure
 (message "Hi there my name is Botty McBotterson!")
-</pre>
+```
 
 The two other basic commands that I've implmented so far are `Initialize`, which will get sent when the system is ready to find out what name your bot has, and `GameOption`, which tells you all kinds of information about the environment that the bot lives in. Here's the whole program as it stands:
 
-<pre>
+```clojure
 (def game-option-types [
   :robot_max_rotate
   :robot_cannon_max_rotate
@@ -92,7 +92,7 @@ The two other basic commands that I've implmented so far are `Initialize`, which
       (do
         (process-input in)
         (recur)))))
-</pre>
+```
 
 This is pretty trivial at the moment. My basic design is to have the main thread deal with all of the I/O and updating a global state object, while another thread deals with analyzing this state and figuring out what to do. I haven't decided on any concrete strategies yet but for the first contest it'll probably be pretty stupid. 
 

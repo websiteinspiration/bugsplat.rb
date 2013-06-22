@@ -3,6 +3,23 @@ Date:  2011-07-09 08:14:55
 Tags:  Personal Finance, Ledger
 Id:    4b79e
 
+[Ledger]: http://ledger-cli.org
+[getrichslowly]: http://www.getrichslowly.org
+[consumerismcommentary]: http://www.consumerismcommentary.com/category/monthly-update/
+[ledger-tools]: https://github.com/peterkeen/Ledger-Tools-Demo/
+[ledger-tools-generate]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/generate.py
+[ledger-tools-stan-json]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/stan.json
+[ledger-tools-stan]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/stan.txt
+[ledger-tools-run-report]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/run_reports.py
+[ledger-tools-load]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/load_ledger.sh
+[ledger-tools-schema]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/ledger-schema.sql
+[python-random-triangular]: http://docs.python.org/library/random.html#random.triangular
+[report-example]: /stan-demo-report.html
+[PostgreSQL]: http://www.postgresql.org/
+[Python]: http://www.python.org/
+[jquery.datatables]: http://www.datatables.net/
+[jqplot]: http://www.jqplot.com/
+
 *Note: you can find much more information about ledger on [ledger-cli.org](http://ledger-cli.org), including links to official documentation and other implementations*
 
 *Another note: I've written a new version of this that is much more dynamic and flexible named [Ledger Web](/a-robust-reporting-system-for-ledger).*
@@ -15,16 +32,18 @@ Last year I wrote what ended up being the most popular article on this blog ever
 
 Talking about personal finances is kind of a tricky thing. If you want to give anything more than a cursory treatment of the subject you have to have some data but the closest source of data to hand is always your own. [Some][getrichslowly] [people][consumerismcommentary] have decided to talk publicly about their data but I'm not quite ready to to that. Instead, I've written a [little python tool][ledger-tools-generate] to generate a plausible but random history when given a simple json config file. Here's a super simple example: 
 
-    [
-        {
-            "payee": "Kettleman Bagels",
-            "dow": 3,
-            "postings": [
-                ["Expenses:Food:Breakfast", [7.20, 7.80]],
-                ["Assets:Checking"]
-            ]
-        }
-    ]
+```json
+[
+    {
+        "payee": "Kettleman Bagels",
+        "dow": 3,
+        "postings": [
+            ["Expenses:Food:Breakfast", [7.20, 7.80]],
+            ["Assets:Checking"]
+        ]
+    }
+]
+```
 
 This says, "Every day on Thursday, buy breakfast at Kettleman Bagel Company. It should cost between $7.20 and $7.80." The `dow` key is the day number, where 0 is Monday and 6 is Sunday. The `postings` array gives a list of Ledger postings that should be inserted for this entry. The first element is the account name, the second is one of: a single float representing the amount in dollars; empty, meaning that this entry should be the balance of all the other entries; or an array of arguments to pass to Python's [random.triangular][python-random-triangular] function. There are a bunch more options that I won't get into here but you can see in the github repo.
 
@@ -63,50 +82,56 @@ Honestly, with a lot of work these reports could have been expressed using strai
 
 Here's a query that ledger would not have been able to do as far as I know, however:
 
-    select
-        xtn_month,
-        sum(case when pay_period = 1 then amount else 0 end) as pp1,
-        sum(case when pay_period = 2 then amount else 0 end) as pp2
-    from
-        aggregated_accounts
-    where
-        account ~ 'Expenses'
-        and account !~ 'Taxes'
-        and account !~ 'Interest'
-    group by
-        xtn_month
-    where
-        xtn_month >= '2011-01-01'
-    order by
-        xtn_month;
+```sql
+select
+    xtn_month,
+    sum(case when pay_period = 1 then amount else 0 end) as pp1,
+    sum(case when pay_period = 2 then amount else 0 end) as pp2
+from
+    aggregated_accounts
+where
+    account ~ 'Expenses'
+    and account !~ 'Taxes'
+    and account !~ 'Interest'
+group by
+    xtn_month
+where
+    xtn_month >= '2011-01-01'
+order by
+    xtn_month;
+```
 
 
-     xtn_month  |   pp1   |   pp2   
-    ------------+---------+---------
-     2011-01-01 |  418.79 | 1249.39
-     2011-02-01 |  477.18 | 1146.11
-     2011-03-01 |  432.92 | 1316.65
-     2011-04-01 |  439.95 | 1274.56
-     2011-05-01 |  385.60 | 1417.73
-     2011-06-01 |  547.77 | 1193.86
-     2011-07-01 |  189.75 |       0        
+```text
+ xtn_month  |   pp1   |   pp2   
+------------+---------+---------
+ 2011-01-01 |  418.79 | 1249.39
+ 2011-02-01 |  477.18 | 1146.11
+ 2011-03-01 |  432.92 | 1316.65
+ 2011-04-01 |  439.95 | 1274.56
+ 2011-05-01 |  385.60 | 1417.73
+ 2011-06-01 |  547.77 | 1193.86
+ 2011-07-01 |  189.75 |       0
+```
     
 Being able to group by completely arbitrary things in ledger has been a pain point for me since I started using it. In this case, I'm grouping by `pay_period`, a column that has this definition in aggregated_accounts:
 
-    CASE
-        WHEN (
-            xtn_date >= '2010-12-05'
-            and extract('day' from xtn_date) between 1 and 14
-         ) THEN 1
-        WHEN (
-            xtn_date < '2010-12-05'
-            and (
-                extract('day' from xtn_date) between 1 and 6
-                or extract('day' from xtn_date) between 22 and 31
-            )
-        ) THEN 1
-        ELSE 2
-    END as pay_period
+```sql
+CASE
+    WHEN (
+        xtn_date >= '2010-12-05'
+        and extract('day' from xtn_date) between 1 and 14
+     ) THEN 1
+    WHEN (
+        xtn_date < '2010-12-05'
+        and (
+            extract('day' from xtn_date) between 1 and 6
+            or extract('day' from xtn_date) between 22 and 31
+        )
+    ) THEN 1
+    ELSE 2
+END as pay_period
+```
     
 The "Burn" calculations are another example. Before I had the data in postgres I had an extremely messy shell script that invoked `ledger`, `date`, and `dc` to calculate it, and if anything broke it all fell down with a weird error.
 
@@ -118,21 +143,4 @@ The only drawback right now is that the postgres/python setup can't handle diffe
 
 With this setup, I'm able to keep my financial data in a simple, easy to use format and retain the ability to do quick checks on it using `ledger`. In addition, I can do compilcated queries that would get extremely nasty in straight ledger. It's really the best of both worlds. I've put the tools on [GitHub][ledger-tools] if you want to check them out and maybe install them and try them out.
 
-*Whew! Did you stick it out? Questions? Comments? Post'em below.*
 
-[Ledger]: http://ledger-cli.org
-[getrichslowly]: http://www.getrichslowly.org
-[consumerismcommentary]: http://www.consumerismcommentary.com/category/monthly-update/
-[ledger-tools]: https://github.com/peterkeen/Ledger-Tools-Demo/
-[ledger-tools-generate]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/generate.py
-[ledger-tools-stan-json]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/stan.json
-[ledger-tools-stan]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/stan.txt
-[ledger-tools-run-report]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/run_reports.py
-[ledger-tools-load]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/load_ledger.sh
-[ledger-tools-schema]: https://github.com/peterkeen/Ledger-Tools-Demo/blob/master/ledger-schema.sql
-[python-random-triangular]: http://docs.python.org/library/random.html#random.triangular
-[report-example]: /stan-demo-report.html
-[PostgreSQL]: http://www.postgresql.org/
-[Python]: http://www.python.org/
-[jquery.datatables]: http://www.datatables.net/
-[jqplot]: http://www.jqplot.com/

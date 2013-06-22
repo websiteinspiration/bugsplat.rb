@@ -24,13 +24,13 @@ along with a read-only mirror of our code on Github. Commits referencing stories
 
 To get around this, I write down little snippets of what I'm working on in Marginalia using the "append" feature. Appending to a note or journal is a single API call to `POST /notes/:id/append`. Of course, I don't want to be driving Marginalia with `curl` all the time, so I put together a little Ruby API and example command line program and pushed it to rubygems as [marginalia-io](https://rubygems.org/gems/marginalia-io) ([github](https://github.com/peterkeen/marginalia-io)). Appending with it is really simple. I can either say something like this:
 
-```
+```bash
 $ marginalia append 139 I did something just now
 ```
 
 which would append a timestamp and the text "I did something just now" to note 139. I could also do this:
 
-```
+```bash
 $ marginalia append 139
 ```
 

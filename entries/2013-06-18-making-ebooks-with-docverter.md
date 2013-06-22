@@ -21,7 +21,7 @@ A good eBook needs a PDF version, of course. Awhile back I wrote an open-source 
 
 Here's the simplest HTML to PDF renderer:
 
-```
+```ruby
 require 'docverter'
 
 Docverter.base_url = 'http://c.docverter.com'
@@ -53,7 +53,7 @@ The HTML document is very simple, as is the conversion. `Docverter::Conversion.r
 
 The first non-trivial thing that one would want to do is customize fonts. Flying Saucer knows quite a bit of CSS, including `@font-face`. All you have to do to customize fonts is to download the font as a `ttf` and modify the above program to look like this:
 
-```
+```ruby
 require 'docverter'
 
 Docverter.base_url = 'http://c.docverter.com'

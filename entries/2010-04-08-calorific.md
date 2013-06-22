@@ -11,7 +11,7 @@ Now, I could use one of the [many](http://www.sparkpeople.com/), [many](http://c
 
 I've been using this program called [ledger][] for more than three years now to keep track of my finances. The idea is that you maintain a text file that contains all of your transactions in a really simple format, and then you can run basically arbitrary reports on it. I always have [emacs][] open, so maintaining that file is a snap. I'd like to maintain my calorie history in the same way, using a lightly formatted text file. I actually tried to use ledger for this purpose but the syntax just wasn't right. What I really wanted was a way to build up foods from simpler foods, and have those be built from other, simpler foods, all the way down to calories. Something like this:
 
-<pre>
+```text
 1 cup milk             = 100 kcal
 1 scoop protein powder = 65 kcal
 1 protein shake =
@@ -20,11 +20,11 @@ I've been using this program called [ledger][] for more than three years now to 
     
 2010-04-08 breakfast
     1 protein shake
-</pre>
+```
 
 I danced around this format for quite awhile, trying to parse it line-wise and trying to parse it with [Parse::RecDescent][prd] and [treetop][], and nothing ever really fit. Then, I punted. What's a lightweight, human readable format that already has a parser built? Why, [YAML] of course! Here's the same thing as a YAML snippet:
 
-<pre>
+```yaml
 - 1 cup milk: 100 kcal
 - 1 scoop protein powder: 65 kcal
 - 1 protein shake:
@@ -33,7 +33,7 @@ I danced around this format for quite awhile, trying to parse it line-wise and t
     
 - 2010-04-08 breakfast:
     - 1 protein shake
-</pre>
+```
 
 The basic idea revolves around the concept of a _recipe_. Essentially, a recipe is a count, a label, and a bunch of components that can also be recipes. "100 kcal" is actually a recipe all by itself. Entries are just recipes that have a date instead of a count. At run-time, we resolve all the labels into recipes and then recursively get the values. Ideally everyhing will resolve down to a handful of base units, like "kcal" or "g protein", but if something doesn't resolve it'll get included right into the output.
 

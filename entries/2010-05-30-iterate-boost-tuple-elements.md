@@ -13,71 +13,81 @@ In my day job I use a mix of perl and C++, along with awk, sed, and various litt
 
 It's easy to get at individual elements when you know how many there are and what their types are:
 
-    typedef tuple<int, string, bool> delicious_tuple;
-    delicious_tuple foo(1, "hi", false);
-    
-    // get<N>(tuple_type) gives you a reference to the Nth element
-    cout << get<0>(foo) << endl
-         << get<1>(foo) << endl
-         << get<2>(foo) << endl;
+```c++
+typedef tuple<int, string, bool> delicious_tuple;
+delicious_tuple foo(1, "hi", false);
+
+// get<N>(tuple_type) gives you a reference to the Nth element
+cout << get<0>(foo) << endl
+     << get<1>(foo) << endl
+     << get<2>(foo) << endl;
+```
 
 But what if you don't know those things? A really common situation where this comes up is serialization, where you have a diverse set of tuples and you don't want to write a whole bunch of glue code. `tuple` overrides `operator<<` and `operator>>` for `ostream`s and `istreams`, which by default read and write strings:
 
-    delicious_tuple foo(2, "there", true);
-    cout << foo << endl; // prints "(2 another one true)"
+```c++
+delicious_tuple foo(2, "there", true);
+cout << foo << endl; // prints "(2 another one true)"
+```
 
 Sometimes that just doesn't cut it, though. If you want to serialize to JSON or XML or something, you have to be able to generically get at each element. You could write a macro using the boost preprocessor or just by itself, but that's kinda lame. You could dig into the guts of `tuple`, which is actually just a compile-time set of `cons` cells, but that gets complex. Let's break out a little template metaprogramming and see where we get:
 
-    template<typename tuple_type, typename F, int Index, int Max>
-    struct foreach_tuple_impl {
-        void operator()(tuple_type & t, F f) {
-            f(boost::get<Index>(t), Index);
-            foreach_tuple_impl<tuple_type, F, Index + 1, Max>()(t, f);
-        }
-    };
-    
-    template<typename tuple_type, typename F>
-    void foreach_tuple_element(tuple_type & t, F f)
-    {
-        foreach_tuple_impl<
-            tuple_type,
-            F,
-            0,
-            boost::tuples::length<tuple_type>::value - 1
-        >()(t, f);
+```c++
+template<typename tuple_type, typename F, int Index, int Max>
+struct foreach_tuple_impl {
+    void operator()(tuple_type & t, F f) {
+        f(boost::get<Index>(t), Index);
+        foreach_tuple_impl<tuple_type, F, Index + 1, Max>()(t, f);
     }
+};
+
+template<typename tuple_type, typename F>
+void foreach_tuple_element(tuple_type & t, F f)
+{
+    foreach_tuple_impl<
+        tuple_type,
+        F,
+        0,
+        boost::tuples::length<tuple_type>::value - 1
+    >()(t, f);
+}
+```
     
 Simple, right? Let's start at the bottom. `foreach_tuple_element` takes any old tuple and any old function as arguments. It then instantiates a `foreach_tuple_impl` with those arguments, as well as two additional template arguments. First, a `0`, which is the index to start iterating at. Second, the length of the tuple minus one, which we'll get to in a second. `foreach_tuple_impl` calls `f` with the value at index `Index` using `boost::get<Index>(t)` and then recursively calls itself with `Index + 1`. Great! Done! Time for a beer and a bratwurst and a happy Memorial Day!
 
 Compile that, though, and you'll notice a little problem. Namely that the compiler will never actually finish. It'll spin faster and faster, spewing an infinite stream of error messages to `stderr`. In order to actually stop the recursion you'll need to add one more functor:
 
-    template<typename tuple_type, typename F, int Max>
-    struct foreach_tuple_impl<tuple_type, F, Max, Max> {
-        void operator()(tuple_type & t, F f) {
-            f(boost::get<Max>(t), Max);
-        }
-    };
+```c++
+template<typename tuple_type, typename F, int Max>
+struct foreach_tuple_impl<tuple_type, F, Max, Max> {
+    void operator()(tuple_type & t, F f) {
+        f(boost::get<Max>(t), Max);
+    }
+};
+```
 
 This gets called when `Index` and `Max` are the same number and does not recurse. Now you can use `foreach_tuple_element` like so:
 
-    struct print_element
+```c++
+struct print_element
+{
+    template<typename T>
+    void operator()(const T & t, const int index)
     {
-        template<typename T>
-        void operator()(const T & t, const int index)
-        {
-            cout << index << ": " << t << endl;
-        }
-    };
+        cout << index << ": " << t << endl;
+    }
+};
 
-    ...
+...
 
-    delicious_tuple strawberry(10, "chocolate", true);
-    foreach_tuple_element( strawberry, print_element() );
+delicious_tuple strawberry(10, "chocolate", true);
+foreach_tuple_element( strawberry, print_element() );
 
-    // prints this:
-    //    1: 10
-    //    2: chocolate
-    //    3: true
+// prints this:
+//    1: 10
+//    2: chocolate
+//    3: true
+```
     
 The fact that it's a recursive solution involving templates might scare some people off, but because tuples are guarateed to only have 10 elements it's pretty safe to say you're not going to blow the stack. Is there a better way to do this? Probably. This was a fun diversion to go with my Sunday morning bagel and coffee, though.
 

@@ -3,10 +3,6 @@ Date:  2011-11-27 18:52:36
 Tags:  Heroku, FivePad, Projects
 Id:    50b7f
 
-I started a small product a few weeks ago called [FivePad][], a simple easy way to organize your apartment search. It's basically the big apartment search spreadsheet that you and me and everyone we know has made at least three times, except FivePad is way smarter.
-
-The initial versions of FivePad did everything in the web request cycle, including sending email and pulling down web pages. The other day I was about to add my third in-cycle process when I threw up my arms in disgust. The time had come to integrate [resque][], a great little [redis][] based job queueing system. Except if I ran it the way Heroku makes things easy my costs would get a little bit out of control for a project that isn't making much money yet.
-
 [FivePad]: https://www.fivepad.me
 [redis]: http://redis.io
 [resque]: https://github.com/defunkt/resque
@@ -17,15 +13,21 @@ The initial versions of FivePad did everything in the web request cycle, includi
 [auto-scale]: http://verboselogging.com/2010/07/30/auto-scale-your-resque-workers-on-heroku
 [remindlyo]: https://www.remindlyo.com
 
+I started a small product a few weeks ago called [FivePad][], a simple easy way to organize your apartment search. It's basically the big apartment search spreadsheet that you and me and everyone we know has made at least three times, except FivePad is way smarter.
+
+The initial versions of FivePad did everything in the web request cycle, including sending email and pulling down web pages. The other day I was about to add my third in-cycle process when I threw up my arms in disgust. The time had come to integrate [resque][], a great little [redis][] based job queueing system. Except if I ran it the way Heroku makes things easy my costs would get a little bit out of control for a project that isn't making much money yet.
+
 --fold--
 
 ### Backstory
 
 First, a little backstory. Earlier in 2011 [Heroku][] announced their new cedar stack, which is a much more general platform for running webapps than their previous platforms. Cedar lets you describe the processes you want to run using a Procfile. Your processes can use one of a large selection of languages, but FivePad is all ruby. Here's what a Procfile can look like:
 
-    web: bundle exec rails server
-    worker: bundle exec rake resque:work QUEUE=*
-    scheduler: bundle exec ruby ./config/clock.rb
+```yaml
+web: bundle exec rails server
+worker: bundle exec rake resque:work QUEUE=*
+scheduler: bundle exec ruby ./config/clock.rb
+```
     
 This creates three different types of processes, `web`, `worker`, and `scheduler`. Heroku intends that you run one of each of these on three different dynos which all charge by the hour, but you get 750 hours free every month.
 
@@ -33,7 +35,9 @@ This creates three different types of processes, `web`, `worker`, and `scheduler
 
 The official way to do this, of course, is to just spin up multiple dynos. Heroku makes this extremely easy:
 
-    $ heroku scale web=2 worker=3
+```bash
+$ heroku scale web=2 worker=3
+```
     
 Bam. Done. Two web dynos and three worker dynos all running your code and talking to the same database. Gets to be a bit expensive for hobby/tiny projects, though.
 
@@ -45,19 +49,23 @@ Yet another option is to [auto-scale your workers][auto-scale]. The basic idea h
 
 The system that I've devised for FivePad was inspired by [this post][heroku-unicorn] by Michael van Rooijen. There, he describes how best to run your rails app on [Unicorn][], a simple pre-forking rack server. Here's my `Procfile`:
 
-    web: unicorn -p $PORT -c ./config/unicorn.rb
+```yaml
+web: unicorn -p $PORT -c ./config/unicorn.rb
+```
     
 Not much to it. Here's what that `config/unicorn.rb` file looks like:
 
-    worker_processes 3
-    timeout 30
-    
-    @resque_pid = nil
-    
-    before_fork do |server, worker|
-      @resque_pid ||= spawn("bundle exec rake " + \
-      "resque:work QUEUES=scrape,geocode,distance,mailer")
-    end
+```ruby
+worker_processes 3
+timeout 30
+
+@resque_pid = nil
+
+before_fork do |server, worker|
+  @resque_pid ||= spawn("bundle exec rake " + \
+  "resque:work QUEUES=scrape,geocode,distance,mailer")
+end
+```
     
 This starts out pretty simply. Three worker processes and a 30 second request timeout. But then there's that `before_fork` hook. This simply runs a specified `rake` task if and only if it hasn't been run before, immediately prior to forking off the next web worker. In this case, it runs the `resque:work` task, which is how `resque` processes jobs.
 

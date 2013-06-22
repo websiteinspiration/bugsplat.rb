@@ -24,7 +24,7 @@ Before I decided to go the route of self-hosting I had investigated a few differ
 
 At some point after moving my most important domains and turning the DNS service off for good on my VPSs I came up with this little script:
 
-```
+```python
 #!/usr/bin/python
 
 ZONE_ID = "ZXXXXXXXX"
@@ -60,7 +60,7 @@ This runs every minute on a VM running on the Mac mini in my living room. It use
 
 Here's the code for the webservice:
 
-```
+```ruby
 run lambda do |env|
     [200, {"Content-Type" => "text/plain"}, [Rack::Request.new(env).ip]]
 end

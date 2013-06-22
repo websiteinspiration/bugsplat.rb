@@ -3,19 +3,19 @@ Date:  2012-11-11 13:52:53
 Id:    c575a
 Tags:  Programming, Heroku
 
-Deploying Heroku-style [12 factor applications][12-factor] outside of Heroku has been an issue for lots of people. I've written several different systems that scratch this particular itch, and in this post I'll be describing a version that deploys one particular app using a Heroku-style [buildpack][], [Foreman][], and launchd on Mac OS X via [Capistrano][].
-
 [12-factor]: http://www.12factor.net/
 [Foreman]: http://ddollar.github.com/foreman/
 [Capistrano]: https://github.com/capistrano/capistrano
 [buildpack]: https://devcenter.heroku.com/articles/buildpacks
+[ledger-web]: https://github.com/peterkeen/ledger-web
+[dokuen]: https://github.com/peterkeen/dokuen
+[homebrew]: https://github.com/mxcl/homebrew
+
+Deploying Heroku-style [12 factor applications][12-factor] outside of Heroku has been an issue for lots of people. I've written several different systems that scratch this particular itch, and in this post I'll be describing a version that deploys one particular app using a Heroku-style [buildpack][], [Foreman][], and launchd on Mac OS X via [Capistrano][].
 
 --fold--
 
 I've been deploying a customized version of [ledger-web][] on my Mac mini using [dokuen][] for almost six months. A few nights ago, however, I tried to deploy a version and discovered my Dokuen install was completely busted. Instead of doing the correct thing and fixing my Dokuen install I wrote a completely new deployment system using Capistrano.
-
-[ledger-web]: https://github.com/peterkeen/ledger-web
-[dokuen]: https://github.com/peterkeen/dokuen
 
 Essentially, this deployment uses the standard `:checkout` deploy strategy with hooks that clone and run a buildpack, build a `.env` file, and run [Foreman][] to create launch scripts.
 
@@ -27,13 +27,12 @@ This config depends on the following on the deployment target:
 * Ruby 1.9.3 (installed from [homebrew][])
 * the Foreman gem
 
-[homebrew]: https://github.com/mxcl/homebrew
 
 ### Configuration
 
 There's a bunch of config that happens at the top of file. First, the standard config settings:
 
-```
+```ruby
 set :application, "ledger"
 set :repository,  "git@git.mydomain.com:peter/ledger-app.git"
 set :deploy_to, "/Users/peter/apps/ledger"
@@ -47,7 +46,7 @@ set :user, "peter"
 
 These define my app, the repository, and a few other standard things. It also sets my Mac mini, named `lionel` to be the deployment target.
 
-```
+```ruby
 default_run_options[:pty] = true
 default_run_options[:shell] = '/bin/bash'
 ```
@@ -56,7 +55,7 @@ default_run_options[:shell] = '/bin/bash'
 
 Next are settings that are used by my custom hooks:
 
-```
+```ruby
 set :base_port, 6500
 set :buildpack_url, "https://github.com/peterkeen/heroku-buildpack-ruby"
 set :buildpack_hash, Digest::SHA1.hexdigest(buildpack_url)
@@ -67,7 +66,7 @@ set :launchd_conf_path, "/Users/peter/Library/LaunchAgents"
 
 These set up my buildpack, more deployment paths, etc. Of particular note are `:concurrency`, which controls what Foreman exports, and `:base_port` which is what Foreman will set as the first port for the `web` procfile entries.
 
-```
+```ruby
 set :deploy_env, {
   'DATABASE_URL' => 'postgres://user@dbhost/database',
   'LEDGER_FILE' => '/path/to/ledger.txt',
@@ -86,7 +85,7 @@ set :deploy_env, {
 
 So now that the setup is done, deploy happens as normal with just a few hooks. First, a `before deploy` hook that sets up the buildpack and build cache:
 
-```
+```ruby
 before "deploy" do
   run("[[ ! -e #{buildpack_path} ]] && git clone #{buildpack_url} #{buildpack_path}; exit 0")
   run("cd #{buildpack_path} && git fetch origin && git reset --hard origin/master")
@@ -96,7 +95,7 @@ end
 
 Next, after the normal deploy happens but before the symlink is switched, we hook in and run the buildpack:
 
-```
+```ruby
 before "deploy:finalize_update" do
   run("cd #{buildpack_path} && bin/compile #{release_path} #{shared_path}/build_cache")
 
@@ -114,7 +113,7 @@ This hook also writes out the environment variables we defined earlier in a way 
 
 Finally, we redefine the `deploy:restart` task to run Foreman and restart the generated LaunchAgent:
 
-```
+```ruby
 namespace :deploy do
   task :restart do
     sudo "launchctl unload -wF #{launchd_conf_path}/ledger-web-1.plist; true"
@@ -130,7 +129,7 @@ This hardcodes the `plist` name that Foreman generates because it was late and I
 
 Dokuen was also managing my nginx configuration for each app. I added a simple proxy definition for `ledger` instead:
 
-```
+```nginx
 server {
   server_name ledger.mydomain.com;
   listen 443;
