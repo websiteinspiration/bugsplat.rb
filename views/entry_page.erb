@@ -14,8 +14,8 @@
   <% end %>
   <div class="well">
   <div class="formats pull-right">
-    <a rel="nofollow" href="<%= @page.pdf_path %>"><img alt="Download PDF" src="<%= url_for_asset('/img/pdf.png') %>"></img></a>
-    <a rel="nofollow" href="<%= @page.markdown_path %>"><img alt="Download Raw Markdown" src="<%= url_for_asset('/img/markdown.png') %>"></img></a>
+    <a rel="nofollow" href="<%= @page.pdf_path %>"><img alt="Download PDF" src="http://files.bugsplatcdn.com/files/d1dc34089c3e56ff3521/pdf.png"></img></a>
+    <a rel="nofollow" href="<%= @page.markdown_path %>"><img alt="Download Raw Markdown" src="http://files.bugsplatcdn.com/files/5885ffe504d3cb3798f3/markdown.png"></img></a>
   </div>
   <% if @page.tags.length > 0 %>
   <p class="date">Tagged: <% @page.tags.each do |tag| %>
