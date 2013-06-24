@@ -24,6 +24,8 @@ Id:    resume-123
   
 * Implemented a lapsed-gamer mailer with customized messages for every
   user which increased retention by ~5%.
+
+* Some sysadmin/devops using Puppet, Xen, VirtualBox, and Vagrant.
   
 * Daily work on tasks using Pivotal Tracker, GitHub, and the Jenkins
   continuous integration server.
