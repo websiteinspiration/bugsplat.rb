@@ -1,14 +1,18 @@
 .container-narrow {
   margin: 0 auto;
   max-width: 700px;
-  font-size: 1.25em;
-  line-height: 180%;
+  font-size: 1.4em;
+  line-height: 190%;
   padding-top: 30px;
 }
 
 .container-narrow h1 {
   border-bottom: 1px solid #CCC;
   padding-bottom: 10px;
+}
+
+blockquote p {
+  line-height: 180%;
 }
 
 .price {
@@ -101,7 +105,7 @@ li {
 }
 
 p {
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 .masthead {
@@ -141,3 +145,32 @@ blockquote {
 .form-big input.text {
   height: 34px;
 }
+
+body {
+  font-family: 'Lora', georgia, times, serif;
+}
+
+footer, .masthead {
+  font-family: 'Lato', helvetica, arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-weight: bold;
+  line-height: 50px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+
+code,pre {
+  font-family: 'Inconsolata', Monaco, Menlo, Consolas, "Courier New", monospace;
+  margin-bottom: 2em;
+}
+
