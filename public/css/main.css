@@ -172,5 +172,6 @@ h6 {
 code,pre {
   font-family: 'Inconsolata', Monaco, Menlo, Consolas, "Courier New", monospace;
   margin-bottom: 2em;
+  font-size: 0.9em;
 }
 
