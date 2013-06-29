@@ -4,6 +4,8 @@ Id:    f699a
 Tags:  DNS, Devops, Email
 Show_upsell: true
 
+*This article was featured in [Hacker Monthly Issue 35](http://hackermonthly.com/issue-35.html).*
+
 For the longest time I used [zoneedit][] as my DNS provider of choice. All of my important domains were hosted there, they never really did me wrong. A few months back I decided that I wanted to learn how DNS actually works in the real world, though. Like, what does it actually take to run my own DNS servers?
 
 [zoneedit]: http://www.zoneedit.com/
