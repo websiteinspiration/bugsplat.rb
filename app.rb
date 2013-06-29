@@ -98,7 +98,7 @@ class App < Sinatra::Base
     if settings.environment == :production && File.exists?(path)
       send_file path
     else
-      @index_pages = @pages.blog_posts.reverse[0,5]
+      @index_pages = @pages.blog_posts.reverse[0,4]
       erb :index
     end
   end

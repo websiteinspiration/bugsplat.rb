@@ -188,3 +188,19 @@ span.about-header {
   font-weight: bold;
   margin-bottom: 0.5em;
 }
+
+div.about {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+div.about .thumbnail {
+  float: right;
+  margin-left: 20px;
+  height: 180px;
+}
+
+ul.archive-list {
+  list-style: none;
+  margin-left: 0;  
+}
