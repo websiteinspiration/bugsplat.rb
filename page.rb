@@ -232,6 +232,10 @@ class Page
     date ? date.strftime("%A, %e %B %Y") : ''
   end
 
+  def short_date
+    date ? date.strftime("%e %B %Y") : ''
+  end
+
   def html_path
     "/#{@name}"
   end

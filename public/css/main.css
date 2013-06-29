@@ -1,7 +1,7 @@
 .container-narrow {
   margin: 0 auto;
   max-width: 700px;
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 190%;
   padding-top: 30px;
 }
@@ -176,3 +176,15 @@ code,pre {
   line-height: 140%;
 }
 
+ul.article-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+span.about-header {
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}

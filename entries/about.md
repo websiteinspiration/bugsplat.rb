@@ -1,12 +1,15 @@
 Title: About Pete
 Id: about-123
 
-<img src="http://files.bugsplatcdn.com/files/afe3b485fe17d72e13bd/me.png" class="thumbnail" style="float: right; height: 150px">
+### Contact Me
 
-My name is Pete Keen and I write (and write about) software and software development practices, as well as various other topics.
+* <i class="icon-envelope"></i> Email: [pete@petekeen.com](mailto:pete@petekeen.com)
+* <i class="icon-twitter"></i> Twitter: [@zrail](http://twitter.com/zrail)
+* <i class="icon-github"></i> Github: [peterkeen](https://github.com/peterkeen)
+* <i class="icon-linkedin"></i> LinkedIn: [peterkeen](http://www.linkedin.com/in/peterkeen)
+* <i class="icon-phone"></i> Phone: (503) 766-5711
 
 <hr class="separator">
-
 
 ### Consulting
 
@@ -24,26 +27,17 @@ I am available for consulting to help jumpstart your project in a few different 
 
 <hr class="separator">
 
-### Contact Me
-
-
-* <i class="icon-envelope"></i> Email: [pete@petekeen.com](mailto:pete@petekeen.com)
-* <i class="icon-twitter"></i> Twitter: [@zrail](http://twitter.com/zrail)
-* <i class="icon-github"></i> Github: [peterkeen](https://github.com/peterkeen)
-* <i class="icon-linkedin"></i> LinkedIn: [peterkeen](http://www.linkedin.com/in/peterkeen)
-* <i class="icon-phone"></i> Phone: (503) 766-5711
-
-<hr class="separator">
-
 ### About This Blog
 
-Fonts are [Droid Sans][] from the [Google Web Fonts][] for the headers and Georgia or whatever serif font you have laying around for the body text. The little bug image is by [Gentleface.com][]. The icons in the footer and sidebar are provided by [Font Awesome][].
+Fonts are [Lato][] for headers, [Lora][] for body text, and [Inconsolata][] for code, all from the [Google Web Fonts][]The little bug image is by [Gentleface.com][]. The icons in the footer and sidebar are provided by [Font Awesome][].
 
 The site itself is mostly static content built by my [static html blog][] engine creatively named [bugsplat.rb][] and served up by [nginx][]. Deployment happens using [Capistrano][] and [Capistrano::Buildpack][].
 
-Hosting is provided by [RamNode][]. It's a rather powerful, very speedy SSD-backed VPS hosted in Atlanta, GA.
+Hosting is provided by [RamNode][]. It's a powerful, very speedy SSD-backed VPS hosted in Atlanta, GA.
 
-[Droid Sans]: http://www.google.com/webfonts/family?family=Droid+Sans&subset=latin
+[Inconsolata]: http://www.google.com/fonts/specimen/Inconsolata
+[Lora]: http://www.google.com/fonts/specimen/Lora
+[Lato]: http://www.google.com/fonts/specimen/Lato
 [Google Web Fonts]: http://www.google.com/webfonts
 [Gentleface.com]: http://www.gentleface.com/
 [bugsplat.rb]: https://github.com/peterkeen/bugsplat.rb

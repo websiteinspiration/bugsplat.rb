@@ -1,11 +1,25 @@
-<% @index_pages.each do |page| %>
-<div class="entry">
-  <h2><a href="<%= page.html_path %>"><%= page['title'] %></a></h2>
-  <p class="date"><%= page.natural_date %></p>
-  <%= page.render_before_fold %> 
-  <a href="<%= page.html_path %>">Continue Reading <i class="icon-angle-right"></i></a>
+<div class="well">
+<p>
+  <img class="thumbnail" src="http://files.bugsplatcdn.com/files/afe3b485fe17d72e13bd/me.png" style="float:right; margin-left: 20px; height: 200px;">
+  <span class="about-header">Hi, I'm Pete</span>
+  I've been interested in computers since I was old enough to type and I've been getting paid to play with them for over seven years. I write about things that interest me: <a href="/tag/Programming">programming</a>, <a href="/tag/Personal%20Finance">personal finance</a>, <a href="/tag/Book%20Reviews">book reviews</a>, and <a href="/archive">more</a>.
+</p>
+<p style="margin-bottom: 0">
+  I'm writing a book: <a href="/mastering-modern-payments">Mastering Modern Payments: Using Stripe with Rails</a>
+</p>
 </div>
-<% if page != @index_pages.last %>
-<hr class="separator">
+<h2>Recent Articles</h2>
+<ul class="article-list">
+<% @index_pages.each do |page| %>
+  <li><a href="<%= page.html_path %>"><%= page['title'] %></a> <small><%= page.short_date %></small></li>
 <% end %>
-<% end %>
+</ul>
+
+<h2>Featured Articles</h2>
+<ul class="article-list">
+  <li><a href="/keeping-finances-with-ledger">Program your Finances: Command Line Accounting</a> <small>23 May 2010</small></li>
+  <li><a href="/how-i-run-my-own-dns">How I run my own DNS servers</a> (<a href="/how-and-why-im-not-running-my-own-dns">Updated</a>) <small>31 December 2012</small></li>
+  <li><a href="/introduction-to-heroku-buildpacks">Run Anything on Heroku with Custom Buildpacks</a> <small>5 November 2012</small></li>
+  <li><a href="/git-backed-personal-markdown-wiki">Distributed Personal Wiki</a> <small>10 May 2013</small></li>
+  <li><a href="/hosting-private-git-repositories-with-gitolite">Hosting Private Git Repositories with Gitolite</a> <small>27 October 2012</small></li>
+</ul>
