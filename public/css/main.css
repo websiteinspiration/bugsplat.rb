@@ -6,11 +6,6 @@
   padding-top: 30px;
 }
 
-.container-narrow h1 {
-  border-bottom: 1px solid #CCC;
-  padding-bottom: 10px;
-}
-
 blockquote p {
   line-height: 180%;
 }
@@ -203,4 +198,27 @@ div.about .thumbnail {
 ul.archive-list {
   list-style: none;
   margin-left: 0;  
+}
+
+span.header {
+  font-size: 2.1em;
+  font-weight: bold;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  width: 100%;
+  display: block;
+}
+
+.container-narrow h1 {
+  font-size: 1.75em;
+}
+
+.container-narrow h1.book {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
