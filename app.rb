@@ -105,7 +105,7 @@ class App < Sinatra::Base
 
   get '/sitemap.xml' do
     map = XmlSitemap::Map.new('www.petekeen.com') do |m|
-      @pages.all do |page|
+      @pages.pages.each do |page|
         m.add page.html_path, :period => :daily
       end
     end
