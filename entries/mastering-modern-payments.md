@@ -17,8 +17,8 @@ My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 <li>Dealing with security including PCI-DSS
 <li>How and why to use Stripe's <code>stripe.js</code> and <code>checkout.js</code>
 <li>How to build custom payment forms
-<li>Why you should keep a payment audit trail
-<li>Why and how you should write an admin interface
+<li>How to set up Rails to keep an audit trail for you automatically
+<li>How to watch money roll in with a custom admin interface
 <li>How to handle subscription billing
 <li>How to create marketplaces with Stripe Connect and Stripe Payouts
 <li>How and why you should process payments using a background worker
