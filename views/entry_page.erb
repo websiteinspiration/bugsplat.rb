@@ -10,7 +10,7 @@
     <a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.petekeen.com<%= @page.html_path %>"><i class="icon-google-plus"></i></a>&nbsp;
     <a href="https://facebook.com/sharer.php?u=http://www.petekeen.com<%= @page.html_path %>"><i class="icon-facebook"></i></a>&nbsp;
     <a href="https://twitter.com/intent/tweet?url=http://www.petekeen.com<%= @page.html_path %>&text=<%= @page['title'] %>&via=zrail"><i class="icon-twitter"></i></a>&nbsp;
-    <a style="font-family: 'Lato', helvetica, arial, sans-serif;" href="https://news.ycombinator.com/submitlink?u=http%3A%2F%2Fwww.petekeen.com<%= @page.html_path %>">Y</a>&nbsp;
+    <a style="font-family: 'Lato', helvetica, arial, sans-serif;" href="https://news.ycombinator.com/submitlink?u=http%3A%2F%2Fwww.petekeen.com<%= @page.html_path %>&t=<%= @page['title'] %>">Y</a>&nbsp;
   </p>
   <% end %>
   <% if @page.show_upsell? %>
