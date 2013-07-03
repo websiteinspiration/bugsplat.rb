@@ -123,7 +123,7 @@ class App < Sinatra::Base
       f.title = 'Pete Keen'
       f.links << Atom::Link.new(:href => 'http://www.petekeen.net')
       f.updated = @archive_pages[0].date.to_time
-      f.authors << Atom::Person.new(:name => 'Pete Keen', :email => 'pete@petekeen.net')
+      f.authors << Atom::Person.new(:name => 'Pete Keen', :email => 'pete@bugsplat.info')
   
       @archive_pages.each do |p|
         f.entries << Atom::Entry.new do |e|
