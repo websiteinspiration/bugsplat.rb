@@ -104,7 +104,7 @@ class App < Sinatra::Base
   end
 
   get '/sitemap.xml' do
-    map = XmlSitemap::Map.new('www.petekeen.com') do |m|
+    map = XmlSitemap::Map.new('www.petekeen.net') do |m|
       @pages.pages.each do |page|
         m.add page.html_path, :period => :daily
       end
@@ -121,14 +121,14 @@ class App < Sinatra::Base
     @archive_pages = @pages.blog_posts.reverse
     feed = Atom::Feed.new do |f|
       f.title = 'Pete Keen'
-      f.links << Atom::Link.new(:href => 'http://www.petekeen.com')
+      f.links << Atom::Link.new(:href => 'http://www.petekeen.net')
       f.updated = @archive_pages[0].date.to_time
-      f.authors << Atom::Person.new(:name => 'Pete Keen', :email => 'pete@petekeen.com')
+      f.authors << Atom::Person.new(:name => 'Pete Keen', :email => 'pete@petekeen.net')
   
       @archive_pages.each do |p|
         f.entries << Atom::Entry.new do |e|
           e.title = p['title']
-          e.links << Atom::Link.new(:href => "http://www.petekeen.com#{ p.html_path }")
+          e.links << Atom::Link.new(:href => "http://www.petekeen.net#{ p.html_path }")
           e.id = p['id']
           e.updated = p.date.to_time
           e.content = Atom::Content::Html.new(p.render)

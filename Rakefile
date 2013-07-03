@@ -39,7 +39,7 @@ task :server do
 end
 
 task :spider do
-  Anemone.crawl("http://www.petekeen.com") do |a|
+  Anemone.crawl("http://www.petekeen.net") do |a|
     a.skip_links_like(/(pdf|docx)/)
     a.on_every_page do |p|
       puts p.url if p.code == 404
