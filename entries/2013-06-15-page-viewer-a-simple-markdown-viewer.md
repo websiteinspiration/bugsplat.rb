@@ -17,7 +17,7 @@ For various projects including [Mastering Modern Payments][mmp] I've found it re
 
 It's also easy to subclass to do what you want. For example, the site where I'm developing my guide subclasses `PageViewer::App` to add some routes that render the whole guide as one page with a table of contents, and another one that renders the whole thing as a PDF.
 
-I use an instance `page_viewer` to view my [personal wiki](/git-backed-personal-wiki) nicely rendered on a web page. My wiki repo is hosted on [my private gitolite instance](/hosting-private-git-repositories-with-gitolite) with a local clone. Each time I push changes, which happens pretty frequently with Sparkleshare, gitolite clones the repo to a directory somewhere else on the machine. This happens to be the same directory that `page_viewer` is pointing at.
+I use an instance `page_viewer` to view my [personal wiki](/git-backed-personal-markdown-wiki) nicely rendered on a web page. My wiki repo is hosted on [my private gitolite instance](/hosting-private-git-repositories-with-gitolite) with a local clone. Each time I push changes, which happens pretty frequently with Sparkleshare, gitolite clones the repo to a directory somewhere else on the machine. This happens to be the same directory that `page_viewer` is pointing at.
 
 Installation is pretty simple. Create a new project and include the `page_viewer` gem in the Gemfile:
 
