@@ -25,7 +25,7 @@ from_address = EasyPost::Address.create(
   state:   'OR',
   zip:     '97211',
   country: 'US',
-  email:   'pete@petekeen.com'
+  email:   'pete@petekeen.net'
 )
 
 to_address = EasyPost::Address.create(

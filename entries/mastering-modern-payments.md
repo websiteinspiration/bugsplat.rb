@@ -74,7 +74,7 @@ Thousands of small businesses are using Stripe to process recurring or one-time 
 <h2>About the Author</h2>
 <p>
 <img class="thumbnail" src="http://files.bugsplatcdn.com/files/54919f94183b56488a1e/me-small.png" style="float:left; margin-right: 20px; height:100px;">
-I'm Pete Keen. I've been a professional software developer for seven years and live in Portland, Oregon. I write a blog at petekeen.com with articles on topics ranging from Ruby and Rails to Perl and robotics and scattered book reviews.
+I'm Pete Keen. I've been a professional software developer for seven years and live in Portland, Oregon. I write a blog at petekeen.net with articles on topics ranging from Ruby and Rails to Perl and robotics and scattered book reviews.
 </p>
 </div>
 

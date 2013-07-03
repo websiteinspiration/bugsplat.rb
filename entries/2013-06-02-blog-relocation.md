@@ -25,14 +25,14 @@ Along with changing the domain of this I wanted to change the URL format of blog
 require 'rack/rewrite'
 
 use Rack::Rewrite do
-  r301 %r{^/payment-integration.html}, "http://www.petekeen.com/mastering-modern-payments"
-  r301 %r{^/\d{4}-\d{2}-\d{2}-(.*)$}, "http://www.petekeen.com/$1"
-  r301 %r{^(.*).html$}, "http://www.petekeen.com$1"
-  r301 %r{^(.*)$}, "http://www.petekeen.com$1"
+  r301 %r{^/payment-integration.html}, "http://www.petekeen.net/mastering-modern-payments"
+  r301 %r{^/\d{4}-\d{2}-\d{2}-(.*)$}, "http://www.petekeen.net/$1"
+  r301 %r{^(.*).html$}, "http://www.petekeen.net$1"
+  r301 %r{^(.*)$}, "http://www.petekeen.net$1"
 end
 run lambda { |env| [200, {"Content-Type" => "text/plain"}, ["Hello. The time is #{Time.now}"]] }
 ```
 
 This app uses [rack-rewrite][], a small Rack middleware that emulates Apache's `mod_rewrite` but using a Ruby DSL. There's four specific rewrite instructions here. The first one rewrites the URL for my upcoming [guide to using Stripe with Rails](/mastering-modern-payments) to a URL matching it's actual title, which should help for SEO purposes. The next one sends old blog posts with the date and with `.html` at the end to the new site, sans date and suffix. The last two rules are generic catch-alls. Oh, and that little lambda thing is just there so the middleware has something to attach to, it's never actually called.
 
-I think I caught all of the links on the site itself, but if you notice any weirdness with this new setup, please [let me know](mailto:pete@petekeen.com).
+I think I caught all of the links on the site itself, but if you notice any weirdness with this new setup, please [let me know](mailto:pete@petekeen.net).

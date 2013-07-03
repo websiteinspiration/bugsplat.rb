@@ -3,7 +3,7 @@ Id: about-123
 
 ### Contact Me
 
-* <i class="icon-envelope"></i> Email: [pete@petekeen.com](mailto:pete@petekeen.com)
+* <i class="icon-envelope"></i> Email: [pete@petekeen.net](mailto:pete@petekeen.net)
 * <i class="icon-twitter"></i> Twitter: [@zrail](http://twitter.com/zrail)
 * <i class="icon-github"></i> Github: [peterkeen](https://github.com/peterkeen)
 * <i class="icon-linkedin"></i> LinkedIn: [peterkeen](http://www.linkedin.com/in/peterkeen)
