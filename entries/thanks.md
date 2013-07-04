@@ -12,6 +12,6 @@ Thanks for signing up. Make sure you click the link in the email you're about to
 In the mean time, here are a few interesting things to explore:
 
 * [Design for Failure: Processing Payments with a Background Worker](/design-for-failure-processing-payments-with-a-background-worker)
-* [Distributed Personal Wiki](/git-backed-personal-markdown-wiki)
+* [Shipping with Stripe and EasyPost](/shipping-with-stripe-and-easypost)
 * [How I run my own DNS servers](/how-i-run-my-own-dns)
 
