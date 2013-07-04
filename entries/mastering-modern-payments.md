@@ -10,7 +10,7 @@ Hide_from_archive: true
 My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em></strong> will teach you:
 
 <div>
-<img style="float: right; margin-left: 20px;" src="http://files.bugsplatcdn.com/files/a8dab64c9e6402ee7b16/stripe_rails.png">
+<img style="float: right; height: 200px; padding-top: 20px;" src="http://files.bugsplatcdn.com/files/3b437de8dd3500b8d649/book_stack-1.png" />
 
 <ul>
 <li>Why a simple 10-minute integration <strong>isn't enough</strong>
@@ -18,7 +18,6 @@ My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 <li>How and why to use Stripe's <code>stripe.js</code> and <code>checkout.js</code>
 <li>How to build custom payment forms
 <li>How to set up Rails to keep an audit trail for you automatically
-<li>How to watch money roll in with a custom admin interface
 <li>How to handle subscription billing
 <li>How to create marketplaces with Stripe Connect and Stripe Payouts
 <li>How and why you should process payments using a background worker
@@ -43,6 +42,7 @@ Thousands of small businesses are using Stripe to process recurring or one-time 
 * Lost time digging through Stripe's dashboard or the Rails console to see your quarterly revenue or to find a specific customer's transaction
 
 <div style="margin-top: 2em; margin-bottom: 2em">
+<img style="float: right; margin-left: 20px; padding-top: 100px;" src="http://files.bugsplatcdn.com/files/a8dab64c9e6402ee7b16/stripe_rails.png">
 <h2>Chapter List <small>may change before publication</small></h2>
 <ol>
 <li>Introduction
@@ -52,10 +52,10 @@ Thousands of small businesses are using Stripe to process recurring or one-time 
 <li>Custom Payment Forms
 <li>State and History
 <li>Handling Webhooks
-<li>Subscriptions
 <li>Processing Payments with Background Workers
-<li>Admin Site
+<li>Subscriptions
 <li>Marketplaces
+<li>Additional Resources
 </ol>
 </div>
 
