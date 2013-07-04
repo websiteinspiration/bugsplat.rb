@@ -6,7 +6,7 @@ Tags:  Programming
 Recently I sat down and reorganized [my dotfiles][dotfiles] around the tasks that I do day-to-day. For example, I have bits of configuration related to [ledger][] and some other bits related to Ruby development. In my previous dotfile setup, this stuff was all mixed together in the same files. I had started to use site-specific profiles (i.e. home vs work), but that led to a lot of copied config splattered all over. I wanted my dotfiles more organized and modifiable than that.
 
 [dotfiles]: https://github.com/peterkeen/dotfiles/
-[ledger]: /ledger.html
+[ledger]: /ledger
 [Zach Holman]: http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/
 [Ryan Bates]: https://github.com/ryanb/dotfiles
 [emacs]: https://github.com/peterkeen/dotfiles/blob/master/core/emacs.symlink
