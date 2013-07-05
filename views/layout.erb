@@ -15,6 +15,9 @@
     <link rel=”shortcut icon” href=”favicon.ico” mce_href=”<%= url_for_asset('/favicon.ico') %>”/>
     <link rel="apple-touch-icon" href="http://files.bugsplatcdn.com/files/ded624de7816989fa2fc/bugsplat-2.png">
     <meta name="google-site-verification" content="4zpO6f2ykzho2VOviksAtUvJJ7_Q6wTWPHUTy7YRHag" />
+    <% if @description %>
+    <meta name="description" content="<%= @description %>" />
+    <% end %>
   </head>
   <body>
     <div class="container container-narrow">

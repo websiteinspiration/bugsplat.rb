@@ -1,9 +1,23 @@
+body.book {
+  background-color: #eee;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+}
+
 .container-narrow {
   margin: 0 auto;
   max-width: 700px;
   font-size: 1.3em;
   line-height: 190%;
   padding-top: 30px;
+}
+
+.book .container-narrow {
+  border: 1px solid #ccc;
+  background-color: #fcfcfc;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-bottom: 3em;
+  margin-top: 1em;
 }
 
 blockquote p {
@@ -221,4 +235,12 @@ span.header {
   padding-bottom: 0.5em;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
+  font-weight: normal;
+}
+
+div.question {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 1.5em;
+  font-weight: bold;
 }

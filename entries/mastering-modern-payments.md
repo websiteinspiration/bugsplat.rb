@@ -5,7 +5,9 @@ View: book
 Skip_title_suffix: true
 Hide_from_archive: true
 
-<h1 class="book">Want to make sure your Stripe integration is right?</h1>
+<h1 class="book">Mastering Modern Payments <small>Using Stripe with Rails</small></h1>
+
+<div class="question">Want to make sure your Stripe integration is right?</div>
 
 My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em></strong> will teach you:
 

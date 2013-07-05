@@ -94,13 +94,9 @@ class App < Sinatra::Base
   end
 
   get '/' do
-    path = File.expand_path(File.join(__FILE__, "..", "public", "index.html"))
-    if settings.environment == :production && File.exists?(path)
-      send_file path
-    else
-      @index_pages = @pages.blog_posts.reverse[0,4]
-      erb :index
-    end
+    @index_pages = @pages.blog_posts.reverse[0,4]
+    @description = "My name is Pete Keen. I'm a Ruby developer and in my spare time I write books."
+    erb :index
   end
 
   get '/sitemap.xml' do
@@ -114,6 +110,7 @@ class App < Sinatra::Base
 
   get '/index.html' do
     @index_pages = @pages.blog_posts.reverse[0,5]
+    @description = "My name is Pete Keen. I'm a Ruby developer and in my spare time I write books."
     erb :index
   end
 
@@ -200,6 +197,10 @@ class App < Sinatra::Base
 
     unless formats.include?(params[:format])
       raise Sinatra::NotFound
+    end
+
+    if @page['description']
+      @description = @page['description']
     end
 
     if params[:format] == 'md'
