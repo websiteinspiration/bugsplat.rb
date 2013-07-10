@@ -1,5 +1,5 @@
 Title: Mastering Modern Payments: Using Stripe with Rails by Pete Keen
-Id: sales-123
+Id: mmpb
 Layout: book_layout
 View: book
 Skip_title_suffix: true
