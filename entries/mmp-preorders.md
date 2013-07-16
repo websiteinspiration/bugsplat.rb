@@ -103,6 +103,17 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 <a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments">Buy Now for <del>$29</del> $20</a></a>
 </div>
 
+<div class="well" style="margin-top: 2em; margin-bottom: 2em; text-align: center;">
+  <h3><small>Just want to know when the guide is released?</small><br><br>Sign up to get a free chapter and 10% off</h3>
+  <form action="http://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-big form-inline" target="_blank">
+      <div class="input-append">
+  	<input type="email" class='text input-xlarge' value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address">
+  	<input type="submit" value="Get Free Chapter" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-large">
+      </div>
+  </form>
+</div>
+
+
 ## Questions
 
 ### Which package should I buy?
