@@ -134,7 +134,7 @@ If you're not happy I'm not happy. Just reply to your receipt email within 30 da
 
 ### I have another question!
 
-Email me at <a href="mailto:pete@bugsplat.info">pete@bugsplat.info</a> and I'll do my best to help you out.
+Email me at <a href="mailto:pete@petekeen.net">pete@petekeen.net</a> and I'll do my best to help you out.
 
 ## Choose a Package
 
