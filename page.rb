@@ -260,6 +260,11 @@ class Page
     @headers.has_key?('show_upsell') && @headers['show_upsell'] == 'true'
   end
 
+  def show_upsell_form?
+    @headers.has_key?('show_upsell_form') && @headers['show_upsell_form'] == 'true'
+  end
+
+
   def docverter_markdown
 """% #{@headers['title']}
 %

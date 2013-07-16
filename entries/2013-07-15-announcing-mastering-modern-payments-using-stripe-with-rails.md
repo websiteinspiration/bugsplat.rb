@@ -1,7 +1,7 @@
 Title: Announcing: Mastering Modern Payments: Using Stripe with Rails
 Id:    e7f6c
 Tags:  Programming, Books
-Show_upsell: true
+Show_upsell_form: true
 
 Over the past few years I've put together a [number of projects](/projects) that use [Stripe](https://stripe.com) and their [Ruby API](https://stripe.com/docs/api/ruby) to collect payments and manage subscriptions. I've learned quite a bit about how to effectively use the things that Stripe provides to my best advantage. Two months ago I decided that I would like to share that knowledge and so I started working on a guide to integrating Stripe with Rails and today I'd like to announce that <a href="/mastering-modern-payments"><em>Mastering Modern Payments: Using Stripe with Rails</em></a> will be available on <strong>August 15th, 2013</strong>.
 
