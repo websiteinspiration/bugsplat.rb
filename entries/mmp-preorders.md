@@ -70,7 +70,7 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 <div class="well">
 <h3>Guide + Code + Team License</h3>
 <ul class="archive-list">
-<li><span class="mmp-icon"><i class="icon-edit"></i></span> 105 page PDF with more than 100 code samples
+<li><span class="mmp-icon"><i class="icon-edit"></i></span> 112 page PDF with more than 100 code samples
 <li><span class="mmp-icon"><i class="icon-download-alt"></i></span> ePub for Nook and Mobi for Kindle reading
 <li><span class="mmp-icon"><i class="icon-html5"></i></span> Single-page HTML format for easy reference and searching
 <li><span class="mmp-icon"><i class="icon-code"></i></span> The full source code for the Rails application I use to sell the guide
@@ -83,7 +83,7 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 <div class="well highlight">
 <h3>Guide + Code</h3>
 <ul class="archive-list">
-<li><span class="mmp-icon"><i class="icon-edit"></i></span> 105 page PDF with more than 100 code samples
+<li><span class="mmp-icon"><i class="icon-edit"></i></span> 112 page PDF with more than 100 code samples
 <li><span class="mmp-icon"><i class="icon-download-alt"></i></span> ePub for Nook and Mobi for Kindle reading
 <li><span class="mmp-icon"><i class="icon-html5"></i></span> Single-page HTML format for easy reference and searching
 <li><span class="mmp-icon"><i class="icon-code"></i></span> The full source code for the Rails application I use to sell the guide
@@ -95,7 +95,7 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 <div class="well">
 <h3>Just the Guide</h3>
 <ul class="archive-list">
-<li><span class="mmp-icon"><i class="icon-edit"></i></span> 105 page PDF with more than 100 code samples
+<li><span class="mmp-icon"><i class="icon-edit"></i></span> 112 page PDF with more than 100 code samples
 <li><span class="mmp-icon"><i class="icon-download-alt"></i></span> ePub for Nook and Mobi for Kindle reading
 <li><span class="mmp-icon"><i class="icon-html5"></i></span> Single-page HTML format for easy reference and searching
 <li><span class="mmp-icon"><i class="icon-bell"></i></span> Periodic updates both before and after launch day
@@ -137,9 +137,9 @@ Email me at <a href="mailto:pete@petekeen.net">pete@petekeen.net</a> and I'll do
   </thead>
   <tbody>
     <tr>
-      <td>105 Page PDF</td>
-      <td class="highlight">105 Page PDF</td>
-      <td>105 Page PDF</td>
+      <td>112 Page PDF</td>
+      <td class="highlight">112 Page PDF</td>
+      <td>112 Page PDF</td>
     </tr>
     <tr>
       <td>100+ Code Samples</td>
