@@ -1,11 +1,13 @@
 Title: Mastering Modern Payments: Using Stripe with Rails by Pete Keen
-Id: mmpb
+Id: mmppo
 Layout: book_layout
 View: book
 Skip_title_suffix: true
 Hide_from_archive: true
 
 <h1 class="book">Mastering Modern Payments <small>Using Stripe with Rails</small></h1>
+
+<h2 class="preorder">Preorder Today for 30% Off!<br><small>Official Launch Day is August 15th, 2013</small></h2>
 
 <div class="question">
 Want to make sure your Stripe integration is right?
@@ -73,8 +75,9 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 <li><span class="mmp-icon"><i class="icon-html5"></i></span> Single-page HTML format for easy reference and searching
 <li><span class="mmp-icon"><i class="icon-code"></i></span> The full source code for the Rails application I use to sell the guide
 <li><span class="mmp-icon"><i class="icon-group"></i></span> License to share with up to 50 members of your team
+<li><span class="mmp-icon"><i class="icon-bell"></i></span> Periodic updates both before and after launch day
 </ul>
-<a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments-team">Buy Now for $299</a>
+<a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments-team">Buy Now for <del>$299</del> $209</a>
 </div>
 
 <div class="well highlight">
@@ -84,8 +87,9 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 <li><span class="mmp-icon"><i class="icon-download-alt"></i></span> ePub for Nook and Mobi for Kindle reading
 <li><span class="mmp-icon"><i class="icon-html5"></i></span> Single-page HTML format for easy reference and searching
 <li><span class="mmp-icon"><i class="icon-code"></i></span> The full source code for the Rails application I use to sell the guide
+<li><span class="mmp-icon"><i class="icon-bell"></i></span> Periodic updates both before and after launch day
 </ul>
-<a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments-deluxe">Buy Now for $59</a>
+<a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments-deluxe">Buy Now for <del>$59</del> $41</a>
 </div>
 
 <div class="well">
@@ -94,8 +98,9 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 <li><span class="mmp-icon"><i class="icon-edit"></i></span> 105 page PDF with more than 100 code samples
 <li><span class="mmp-icon"><i class="icon-download-alt"></i></span> ePub for Nook and Mobi for Kindle reading
 <li><span class="mmp-icon"><i class="icon-html5"></i></span> Single-page HTML format for easy reference and searching
+<li><span class="mmp-icon"><i class="icon-bell"></i></span> Periodic updates both before and after launch day
 </ul>
-<a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments">Buy Now for $29</a>
+<a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments">Buy Now for <del>$29</del> $20</a></a>
 </div>
 
 ## Questions
@@ -103,6 +108,10 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 ### Which package should I buy?
 
 That depends on your budget. The guide by itself is still 100+ pages packed with code samples and tips that will get you on the right path, right away.
+
+### Will I get updates?
+
+Yes! You'll get updates to the guide and associated materials both before and after launch day via email notifications.
 
 ### How do I find out more about you?
 
@@ -153,9 +162,9 @@ Email me at <a href="mailto:pete@petekeen.net">pete@petekeen.net</a> and I'll do
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments-team">$299</a></td>
-      <td class="highlight"><a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments-deluxe">$59</a></td>
-      <td><a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments">$29</a></td>
+      <td><a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments-team"><del>$299</del> $209</a></td>
+      <td class="highlight"><a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments-deluxe"><del>$59</del> $41</a></td>
+      <td><a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments"><del>$29</del> $20</a></td>
     </tr>
   </tbody>
 </table>
