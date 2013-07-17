@@ -77,6 +77,7 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 <li><span class="mmp-icon"><i class="icon-group"></i></span> License to share with up to 50 members of your team
 <li><span class="mmp-icon"><i class="icon-bell"></i></span> Periodic updates both before and after launch day
 </ul>
+<span class="pull-right date">More below <i class="icon-arrow-down"></i></span>
 <a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments-team">Buy Now for <del>$299</del> $209</a>
 </div>
 
