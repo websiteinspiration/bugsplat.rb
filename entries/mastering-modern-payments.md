@@ -60,6 +60,16 @@ Thousands of small businesses are using Stripe to process recurring or one-time 
 </ol>
 </div>
 
+<div style="margin-top: 2em; margin-bottom: 2em">
+<h2>What others are saying</h2>
+<blockquote>
+<img class="thumbnail pull-right" src="http://files.bugsplatcdn.com/files/2a34b4be575a85bdf517/matt_vanderpol.jpg" style="margin-left: 1em;">
+Mastering Modern Payments is a fantastic resource for integrating Stripe billing with your Rails app. Pete does a great job of pulling together existing resources and blending them with his own experience to provide a clear, valuable guide for billing with Stripe.
+<br><br>
+Matt Vanderpol - founder QAtab
+</blockquote>
+</div>
+
 <div class="well" style="text-align: center">
 <p>Sign up and you'll get progress updates, preview chapters, and a <br><em><strong>10% off discount code</strong></em> when the guide is published <br>currently scheduled for August 2013.</p>
 
