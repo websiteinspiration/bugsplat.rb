@@ -67,6 +67,16 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 </p>
 </div>
 
+<div style="margin-top: 2em; margin-bottom: 2em">
+<h2>What others are saying</h2>
+<blockquote>
+<img class="thumbnail pull-right" src="http://files.bugsplatcdn.com/files/2a34b4be575a85bdf517/matt_vanderpol.jpg" style="margin-left: 1em;">
+Mastering Modern Payments is a fantastic resource for integrating Stripe billing with your Rails app. Pete does a great job of pulling together existing resources and blending them with his own experience to provide a clear, valuable guide for billing with Stripe.
+<br><br>
+Matt Vanderpol - founder QAtab
+</blockquote>
+</div>
+
 <div class="well">
 <h3>Guide + Code + Team License</h3>
 <ul class="archive-list">
