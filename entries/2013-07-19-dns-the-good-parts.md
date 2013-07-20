@@ -170,6 +170,16 @@ The first thing to notice is that we get back two answers. The first says that `
 
 `CNAME`s are incredibly useful, but they have one very important gotcha: if there a `CNAME` exists for a particular name, that is the *only* record allowed for that name. No `MX`, no `A`, no `NS`, no nothing. This is because the DNS substitutes the `CNAME`'s target for it's own value, so every record valid for the target is also valid for the `CNAME`. This is why you can't have a `CNAME` on a root domain like `petekeen.net`, because you generally have to have other records for that domain like `MX`.
 
+### Querying Other Servers
+
+Let's say for sake of argument that you messed up a DNS configuration. You think you've fixed the problem, but you don't want to wait for the cache to expire to see. With `dig` you can actually query one of a number of public DNS servers instead of your default server like this:
+
+```bash
+$ dig www.petekeen.net @8.8.8.8
+```
+
+The `@` symbol followed by an IP address or hostname tells `dig` to query that server on the default DNS port. I use this a lot to query [Google's public DNS servers](https://developers.google.com/speed/public-dns/) or [Level 3's sort-of-public servers](http://www.tummy.com/articles/famous-dns-server/) at `4.2.2.2`.
+
 ## Common Situations
 
 In this last section we'll talk about some common situations that web developers find themselves in. 
