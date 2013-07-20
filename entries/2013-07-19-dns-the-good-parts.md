@@ -245,4 +245,9 @@ empoknor.bugsplat.info.	15	IN	A	192.30.32.165
 
 ## Wrap Up
 
-Hopefully this gives you a good beginning understanding of what DNS is and how to about exploring and verifying your configuration. Just remember that you can always ask the DNS questions and generally get back answers.
+Hopefully this gives you a good beginning understanding of what DNS is and how to about exploring and verifying your configuration. Just remember that you can always ask the DNS questions and generally get back answers. The Internet standards (RFCs) that define DNS are:
+
+* [RFC 1034: Domain Names - Concepts and Facilities](http://www.ietf.org/rfc/rfc1034.txt)
+* [RFC 1035: Domain Names - Implementation and Specification](http://www.ietf.org/rfc/rfc1035.txt)
+
+There are a few more interesting RFCs as well, including [4034](http://www.ietf.org/rfc/rfc4034.txt) about a standard named `DNSSEC` and [5321](http://www.ietf.org/rfc/rfc5321.txt) which talks about DNS as it relates to email. These are all fascinating reads if you want more background information
