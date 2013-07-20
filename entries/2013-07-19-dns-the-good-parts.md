@@ -45,7 +45,7 @@ There's only one interesting thing in here. We asked for one record and got exac
 empoknor.bugsplat.info.	300	IN	A	192.30.32.165
 ```
 
-This says the host `empoknor.bugsplat.info.` is `IN` (belongs to) exactly one `A` address: `192.30.32.165`. The `300` is called the `TTL` value, or *time to live*. It's the number of seconds that this record can be cached before it needs to be checked again.
+This says the host `empoknor.bugsplat.info.` has exactly one `A` address: `192.30.32.165`. The `300` is called the `TTL` value, or *time to live*. It's the number of seconds that this record can be cached before it needs to be checked again. The `IN` component stands for `Internet` and is meant to disambiguate between the various types of networks that the DNS historically was responsible for. You can read about those in [IANA's DNS Parameters document](https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#dns-parameters-2) (thanks for the correction, [mcmatterson](https://news.ycombinator.com/item?id=6075525)!)
 
 The rest of the response tells you things about the response itself:
 
@@ -108,7 +108,7 @@ The DNS is arranged in a hierarchy. Remember how `dig` inserted a single `.` aft
 
 So, at the top of the trace we see the root servers, each represented by an `NS` record. An `NS` record maps a domain name, in this case the root, to a DNS server. When you register a domain name with a registrar like Namecheap or Godaddy they create `NS` records for you.
 
-`dig` randomly picked one of the root server responses, in this case `f.root-servers.net.`, and asked it for the next part of the domain name in question, `info`. The `info` section of the hierarchy is run by a company that operates their own set of servers. `dig` asks one of these servers for the NS records for `bugsplat.info` and then finally asks one of *those* servers for the `A` record for `empoknor.bugsplat.info.`.
+`dig` randomly picked one of the root server responses, in this case `f.root-servers.net.`, and asked it what the `A` record for `empoknor.bugsplat.info` is and the root server responded with another set of `NS` servers, this time the ones responsible for the `info` top level domain . `dig` asks one of these servers for the `A` record for `empoknor.bugsplat.info`, gets back another set of `NS` servers, and then asks one of *those* servers for the `A` record for `empoknor.bugsplat.info.` and finally receives an actual answer. (thanks for the corrections, [colmmacc](https://news.ycombinator.com/item?id=6075556)!)
 
 Whew! That would be a heck of a lot of traffic, except that almost all of these entries are cached for a long time by every server in the chain. Your computer caches too, as does your browser. Most of the time DNS resolution will never touch the root servers because their IP addresses hardly ever change. The top level domains `com`, `net`, `org`, etc, are also generally heavily cached.
 
