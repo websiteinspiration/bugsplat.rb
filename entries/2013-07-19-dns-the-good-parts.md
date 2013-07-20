@@ -209,7 +209,7 @@ Location: http://www.iskettlemanstillopen.com/
 
 Notice in the screenshot above that there's a second row defining a `CNAME`. In this case `www.iskettlemanstillopen.com` maps to an application running on Heroku. You'll have to set up Heroku with a similar domain mapping, of course:
 
-```
+```bash
 $ heroku domains
 === warm-journey-3906 Domain Names
 warm-journey-3906.herokuapp.com
@@ -223,7 +223,7 @@ Github is similar, except that the mapping lives in a file called `CNAME` at the
 Most DNS servers allow you to set up DNS wildcards. For example, I have a wildcard `CNAME` set up for `*.empoknor.bugsplat.info` that maps to `empoknor.bugsplat.info`. That way I can host arbitrary things on `empoknor` and not have to create new DNS entries for them every time:
 
 ```bash
-dig randomapp.empoknor.bugsplat.info
+$ dig randomapp.empoknor.bugsplat.info
 
 ;; QUESTION SECTION:
 ;randomapp.empoknor.bugsplat.info. IN	A
