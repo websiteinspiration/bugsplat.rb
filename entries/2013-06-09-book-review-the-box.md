@@ -3,18 +3,17 @@ Id:    91dd2
 Tags:  Book Reviews
 
 [falcon]: http://en.wikipedia.org/wiki/Millennium_Falcon
-[box]: http://www.amazon.com/gp/product/B003U2TR5O/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B003U2TR5O&linkCode=as2&tag=bugsplat04-20
-[box-non-affiliate]: http://www.amazon.com/gp/product/B003U2TR5O
+[box]: http://www.amazon.com/gp/product/B003U2TR5O/
 [ebba maersk]: http://en.wikipedia.org/wiki/Ebba_Mærsk
 [mclean]: http://en.wikipedia.org/wiki/Malcom_McLean
 [intermodal]: http://en.wikipedia.org/wiki/Intermodal_container
 [twistlock]: http://en.wikipedia.org/wiki/Twistlock
 
 <p>
-<a href="http://www.amazon.com/gp/product/B003U2TR5O/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=B003U2TR5O&linkCode=as2&tag=bugsplat04-20" class="thumbnail" style="float:right;"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&ASIN=B003U2TR5O&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=bugsplat04-20" ></a>
+<a href="http://www.amazon.com/gp/product/B003U2TR5O/" class="thumbnail" style="float:right;"><img border="0" src="http://ecx.images-amazon.com/images/I/51%2BcvYn2lwL._SL160_.jpg" ></a>
 As a kid something about the <a href="http://en.wikipedia.org/wiki/millennium_falcon">Millenium Falcon</a> always bothered me. See, everybody knows that cargo travels around the world, and presumably around the galaxy, in containers. You know, the big steel boxes that you see on TV where murders and drug deals are always happening. If Han Solo's ship is supposedly some awesome super duper fast freighter, where do the containers go? I guess on some level the fact that Solo was a smuggler sort of registered, but still you'd think that the tea and stuff (that's what smugglers move according to the school history books) would just be hidden in the containers.
 
-After reading *[The Box][box]* ([non-affiliate-link][box-non-affiliate]) by Marc Levinson I'm relatively certain the Falcon would be considered a *breakbulk tramp freighter*. "Breakbulk" meaning traditional non-containerized freight, "tramp" for the fact that Han and Chewie are tramps. Well, and they travel around without a fixed schedule or ports of call, picking up freight wherever and whenever they can. But mostly because they're tramps.
+After reading [The Box][box]) by Marc Levinson I'm relatively certain the Falcon would be considered a *breakbulk tramp freighter*. "Breakbulk" meaning traditional non-containerized freight, "tramp" for the fact that Han and Chewie are tramps. Well, and they travel around without a fixed schedule or ports of call, picking up freight wherever and whenever they can. But mostly because they're tramps.
 
 --fold--
 
@@ -36,4 +35,3 @@ The road to the standard [intermodal container][intermodal] took quote a few twi
 
 One thing I was astounded by was just how fast the container changed the shipping industry. Over the course of fifty years, containerization eliminated thousands of jobs worldwide, eliminated entire ports while creating new ones where there was just a tiny dock. It opened up entire countries to new forms of trade and ruined the economies of others. *[The Box][box]* tells this whole compelling story, really a story of unintended consequenses. Kind of like how Han Solo went from being a tramp to a general in a galaxy-spanning republic.
 
-<small><i>Note: this post contains Amazon affiliate links. Thanks for your support.</i></small>

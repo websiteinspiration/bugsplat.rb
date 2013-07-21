@@ -2,7 +2,7 @@ Title: Book Review: Tubes: a Journey to the Center of the Internet
 Id:    03321
 Tags:  Book Reviews
 
-[tubes]: http://www.amazon.com/gp/product/B006FOHWDI/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B006FOHWDI&linkCode=as2&tag=bugsplat04-20
+[tubes]: http://www.amazon.com/gp/product/B006FOHWDI/
 [blum]:  http://andrewblum.net
 [map]:   http://www.telegeography.com/telecom-maps/global-internet-map/
 [xkcd]:  http://xkcd.com/802/
@@ -11,12 +11,12 @@ Tags:  Book Reviews
 [stephenson]: http://www.nealstephenson.com
 [flag]: http://en.wikipedia.org/wiki/Fiber-Optic_Link_Around_the_Globe
 [ixp]: http://en.wikipedia.org/wiki/Internet_exchange_point
-[anathem]: http://www.amazon.com/gp/product/B0015DPXKI/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0015DPXKI&linkCode=as2&tag=bugsplat-20
-[crytonomicon]: http://www.amazon.com/gp/product/B000FC11A6/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000FC11A6&linkCode=as2&tag=bugsplat-20
-[snow crash]: http://www.amazon.com/gp/product/B000FBJCJE/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000FBJCJE&linkCode=as2&tag=bugsplat-20
-[diamond age]: http://www.amazon.com/gp/product/B000FBJCKI/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000FBJCKI&linkCode=as2&tag=bugsplat-20
+[anathem]: http://www.amazon.com/gp/product/B0015DPXKI/
+[crytonomicon]: http://www.amazon.com/gp/product/B000FC11A6/
+[snow crash]: http://www.amazon.com/gp/product/B000FBJCJE/
+[diamond age]: http://www.amazon.com/gp/product/B000FBJCKI/
 
-<p><a style="float: right" class="thumbnail" href="http://www.amazon.com/gp/product/B006FOHWDI/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=B006FOHWDI&linkCode=as2&tag=bugsplat04-20"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&ASIN=B006FOHWDI&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=bugsplat04-20" ></a><img src="http://www.assoc-amazon.com/e/ir?t=bugsplat04-20&l=as2&o=1&a=B006FOHWDI" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /><a href="http://andrewblum.net">Andrew Blum</a> took his Internet service completely for granted until one day a squirrel chewed through a cable in his neighborhood, cutting off his access and sending him around the world, attempting to answer the question: What exactly is the Internet? What is it made of? <em>Where</em> is it, really? He documents his travels in the book <em><a href="http://www.amazon.com/gp/product/B006FOHWDI/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=B006FOHWDI&linkCode=as2&tag=bugsplat04-20">Tubes: a Journey to the Center of the Internet</a></em>.</p>
+<p><a style="float: right" class="thumbnail" href="http://www.amazon.com/gp/product/B006FOHWDI/"><img border="0" src="http://ecx.images-amazon.com/images/I/51AbQPCYSyL._SL160_.jpg" ></a><a href="http://andrewblum.net">Andrew Blum</a> took his Internet service completely for granted until one day a squirrel chewed through a cable in his neighborhood, cutting off his access and sending him around the world, attempting to answer the question: What exactly is the Internet? What is it made of? <em>Where</em> is it, really? He documents his travels in the book <em><a href="http://www.amazon.com/gp/product/B006FOHWDI/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=B006FOHWDI&linkCode=as2&tag=bugsplat04-20">Tubes: a Journey to the Center of the Internet</a></em>.</p>
 
 --fold--
 
@@ -28,4 +28,3 @@ Prior to reading *Tubes* I had a pretty good understanding of some of these topi
 
 Overall I think Blum does a good job communicating that the Internet really isn't a *thing* so much as an *idea*, very much made up of the people who design and build out the fiber optic links and the things they link together. The fiber is almost an afterthought, a means to an end. If you're at all interested in how the Internet came to penetrate our lives over the last two decades, you should check out *[Tubes][tubes]*.
 
-<small><i>Note: this post contains Amazon affiliate links to help me pay for the server. Thanks for your support.</i></small>

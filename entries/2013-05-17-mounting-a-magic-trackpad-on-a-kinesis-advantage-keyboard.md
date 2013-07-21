@@ -2,8 +2,8 @@ Title: Mounting a Magic Trackpad on a Kinesis Advantage Keyboard
 Id:    8b211
 Tags:  Hardware
 
-[dashgrip]: http://www.amazon.com/gp/product/B003A8D6YG/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B003A8D6YG&linkCode=as2&tag=bugsplat04-20
-[kinesis]: http://www.amazon.com/gp/product/B000LVJ9W8/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000LVJ9W8&linkCode=as2&tag=bugsplat04-20
+[dashgrip]: http://www.amazon.com/gp/product/B003A8D6YG/
+[kinesis]: http://www.amazon.com/gp/product/B000LVJ9W8/
 [trackpad]: http://www.amazon.com/gp/product/B003XIJ3MW
 
 Way back in early 2009 my wrists started acting up. As a professional software developer only two years into my young career, this was super concerning. I asked around at the office and my coworkers told me I should get a [Kinesis Advantage Pro][kinesis] keyboard, which aside from being super goofy looking, seems to have cured a lot of people of their RSI symptoms. I looked into it and eventually broke down and bought one, and then another one because the first developed some sticky keys but I didn't want to part with it to send it back for service.
@@ -36,4 +36,3 @@ There's two caveats to this otherwise great solution. First, it's not going to w
 
 If you can live with those two things, I suggest you try out this setup, especially if you already have a Magic Trackpad and a Kinesis. It's pretty awesome.
 
-<small><i>Note: this post contains Amazon affiliate links to help me pay for the server. Thanks for your support.</i></small>
