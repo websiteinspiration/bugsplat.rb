@@ -33,6 +33,7 @@ My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 	<input type="submit" value="Get Free Chapter" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-large">
     </div>
 </form>
+<div><small>Register to get 10% off on launch day, August 15th 2013</small></div>
 </div>
 
 <p>
@@ -71,7 +72,7 @@ Matt Vanderpol - founder QAtab
 </div>
 
 <div class="well" style="text-align: center">
-<p>Sign up and you'll get progress updates, preview chapters, and a <br><em><strong>10% off discount code</strong></em> when the guide is published <br>currently scheduled for August 2013.</p>
+<p>Sign up and you'll get progress updates, preview chapters, and a <br><em><strong>10% off discount code</strong></em> when the guide is published <br>currently scheduled for August 15th 2013.</p>
 
 <form action="http://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-big form-inline" target="_blank">
     <div class="input-append">
