@@ -1,3 +1,12 @@
+User-agent: NetShelter ContentScan
+Disallow: /
+
+User-agent: NetShelter
+Disallow: /
+
+User-agent: ^NetShelter
+Disallow: /
+
 User-agent: *
 Allow: /
 Sitemap: http://www.petekeen.net/sitemap.xml
