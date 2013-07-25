@@ -131,6 +131,10 @@ Matt Vanderpol - founder QAtab
 
 That depends on your budget. The guide by itself is still 100+ pages packed with code samples and tips that will get you on the right path, right away.
 
+### Can I upgrade later on?
+
+Absolutely! Just reply to your confirmation email that you'd like to upgrade and I'll set it up for you.
+
 ### Will I get updates?
 
 Yes! You'll get updates to the guide and associated materials both before and after launch day via email notifications.

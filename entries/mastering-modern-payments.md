@@ -119,6 +119,10 @@ Matt Vanderpol - founder QAtab
 
 That depends on your budget. The guide by itself is still 100+ pages packed with code samples and tips that will get you on the right path, right away.
 
+### Can I upgrade later on?
+
+Absolutely! Just reply to your confirmation email that you'd like to upgrade and I'll set it up for you.
+
 ### How do I find out more about you?
 
 I've been writing about software development and lots of other topics on my blog <a href="http://www.petekeen.net">petekeen.net</a> since 2009 and I tweet at <a href="https://twitter.com/zrail">@zrail</a>.</p>
