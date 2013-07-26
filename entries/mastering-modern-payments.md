@@ -23,6 +23,7 @@ My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em>
 <li>How to create marketplaces with Stripe Connect and Stripe Payouts
 <li>How and why you should process payments using a background worker
 <li>How to email your customers effectively
+<li>How to test your Stripe integration
 </ul>
 
 <div class="well" style="margin-top: 2em; margin-bottom: 2em; text-align: center;">

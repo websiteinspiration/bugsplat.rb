@@ -30,6 +30,7 @@ Want to make sure your Stripe integration is right?
 <li>How to create marketplaces with Stripe Connect and Stripe Payouts
 <li>How and why you should process payments using a background worker
 <li>How to email your customers effectively
+<li>How to test your Stripe integration
 </ul>
 
 <p style="margin-top: 2em">
