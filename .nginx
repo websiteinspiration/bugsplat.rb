@@ -2,6 +2,6 @@ location ~* \.html$ {
     rewrite ^(.+)\.html$ $scheme://$host$1 permanent;
 }
 
-if ($http_user_agent ~* (NetShelter)) {
+if ($http_user_agent ~* NetShelter) {
     return 403;
 }
