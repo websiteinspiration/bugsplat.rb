@@ -11,7 +11,7 @@ Skip_title_suffix: true
 My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em></strong> will teach you:
 
 <div>
-<img style="float: right; height: 200px; padding-top: 20px;" src="http://files.bugsplatcdn.com/files/3b437de8dd3500b8d649/book_stack-1.png" />
+<img style="float: right; height: 200px; padding-top: 20px;" src="http://files.bugsplatcdn.com/files/c8d07c7429a014d29fda/book_stack_small.png" />
 
 <ul>
 <li>Why a simple 10-minute integration <strong>isn't enough</strong>

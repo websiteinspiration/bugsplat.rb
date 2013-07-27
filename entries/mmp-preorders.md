@@ -18,8 +18,7 @@ Want to make sure your Stripe integration is right?
 </p>
 
 <div>
-<img style="float: right; height: 200px; padding-top: 20px;" src="http://files.bugsplatcdn.com/files/3b437de8dd3500b8d649/book_stack-1.png" />
-
+<img style="float: right; height: 200px; padding-top: 20px;" src="http://files.bugsplatcdn.com/files/c8d07c7429a014d29fda/book_stack_small.png" />
 <ul>
 <li>Why a simple 10-minute integration <strong>isn't enough</strong>
 <li>Dealing with security including PCI-DSS
