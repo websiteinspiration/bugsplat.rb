@@ -5,6 +5,13 @@ View: book
 Skip_title_suffix: true
 Hide_from_archive: true
 
+<div id="paymentModal" class="modal hide fade" role="dialog">
+  <div class="modal-body">
+    <iframe src="" style="zoom:0.6" width="99.6%" height="550" frameborder="0"></iframe>
+  </div>
+</div>
+
+
 <h1 class="book">Mastering Modern Payments <small>Using Stripe with Rails</small></h1>
 
 <h2 class="preorder">Preorder Today for 30% Off!<br><small>Official Launch Day is August 15th, 2013</small></h2>
@@ -88,7 +95,7 @@ Matt Vanderpol - founder QAtab
 <li><span class="mmp-icon"><i class="icon-bell"></i></span> Periodic updates both before and after launch day
 </ul>
 <span class="pull-right date">More below <i class="icon-arrow-down"></i></span>
-<a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments-team">Buy Now for <del>$299</del> $209</a>
+<a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments-team" href="https://sales.petekeen.net/buy/mastering-modern-payments-team">Buy Now for <del>$299</del> $209</a>
 </div>
 
 <div class="well highlight">
@@ -100,7 +107,7 @@ Matt Vanderpol - founder QAtab
 <li><span class="mmp-icon"><i class="icon-code"></i></span> The full source code for the Rails application I use to sell the guide
 <li><span class="mmp-icon"><i class="icon-bell"></i></span> Periodic updates both before and after launch day
 </ul>
-<a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments-deluxe">Buy Now for <del>$59</del> $41</a>
+<a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments-deluxe" href="https://sales.petekeen.net/buy/mastering-modern-payments-deluxe">Buy Now for <del>$59</del> $41</a>
 </div>
 
 <div class="well">
@@ -111,7 +118,7 @@ Matt Vanderpol - founder QAtab
 <li><span class="mmp-icon"><i class="icon-html5"></i></span> Single-page HTML format for easy reference and searching
 <li><span class="mmp-icon"><i class="icon-bell"></i></span> Periodic updates both before and after launch day
 </ul>
-<a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments">Buy Now for <del>$29</del> $20</a></a>
+<a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments" href="https://sales.petekeen.net/buy/mastering-modern-payments">Buy Now for <del>$29</del> $20</a></a>
 </div>
 
 <div class="well" style="margin-top: 2em; margin-bottom: 2em; text-align: center;">
@@ -188,9 +195,10 @@ Email me at <a href="mailto:pete@petekeen.net">pete@petekeen.net</a> and I'll do
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments-team"><del>$299</del> $209</a></td>
-      <td class="highlight"><a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments-deluxe"><del>$59</del> $41</a></td>
-      <td><a class="btn btn-large btn-success" href="https://sales.petekeen.net/buy/mastering-modern-payments"><del>$29</del> $20</a></td>
+      <td><a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments-team" href="https://sales.petekeen.net/buy/mastering-modern-payments-team"><del>$299</del> $209</a></td>
+      <td class="highlight"><a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments-deluxe" href="https://sales.petekeen.net/buy/mastering-modern-payments-deluxe"><del>$59</del> $41</a></td>
+      <td><a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments" href="https://sales.petekeen.net/buy/mastering-modern-payments"><del>$29</del> $20</a></td>
     </tr>
   </tbody>
 </table>
+
