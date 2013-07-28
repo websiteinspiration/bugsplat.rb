@@ -122,7 +122,7 @@ Matt Vanderpol - founder QAtab
 </div>
 
 <div class="well" style="margin-top: 2em; margin-bottom: 2em; text-align: center;">
-  <h3><small>Just want to know when the guide is released?</small><br><br>Sign up to get a free chapter and 10% off</h3>
+  <h3><small>Just want to know when the guide is released?</small><br><br>Sign up to get a free chapter</h3>
   <form action="http://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-big form-inline" target="_blank">
       <div class="input-append">
   	<input type="email" class='text input-xlarge' value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address">
