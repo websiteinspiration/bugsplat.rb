@@ -21,21 +21,21 @@
 */
 #cboxOverlay{background:#fcfcfc;}
 #colorbox{outline:0;}
-    #cboxTopLeft{width:25px; height:25px; background:url(/img/border1.png) no-repeat 0 0;}
-    #cboxTopCenter{height:25px; background:url(/img/border1.png) repeat-x 0 -50px;}
-    #cboxTopRight{width:25px; height:25px; background:url(/img/border1.png) no-repeat -25px 0;}
-    #cboxBottomLeft{width:25px; height:25px; background:url(/img/border1.png) no-repeat 0 -25px;}
-    #cboxBottomCenter{height:25px; background:url(/img/border1.png) repeat-x 0 -75px;}
-    #cboxBottomRight{width:25px; height:25px; background:url(/img/border1.png) no-repeat -25px -25px;}
-    #cboxMiddleLeft{width:25px; background:url(/img/border2.png) repeat-y 0 0;}
-    #cboxMiddleRight{width:25px; background:url(/img/border2.png) repeat-y -25px 0;}
+    #cboxTopLeft{width:25px; height:25px; background:url(http://files.bugsplatcdn.com/files/ab9747b8c9257fea6e49/border1.png) no-repeat 0 0;}
+    #cboxTopCenter{height:25px; background:url(http://files.bugsplatcdn.com/files/ab9747b8c9257fea6e49/border1.png) repeat-x 0 -50px;}
+    #cboxTopRight{width:25px; height:25px; background:url(http://files.bugsplatcdn.com/files/ab9747b8c9257fea6e49/border1.png) no-repeat -25px 0;}
+    #cboxBottomLeft{width:25px; height:25px; background:url(http://files.bugsplatcdn.com/files/ab9747b8c9257fea6e49/border1.png) no-repeat 0 -25px;}
+    #cboxBottomCenter{height:25px; background:url(http://files.bugsplatcdn.com/files/ab9747b8c9257fea6e49/border1.png) repeat-x 0 -75px;}
+    #cboxBottomRight{width:25px; height:25px; background:url(http://files.bugsplatcdn.com/files/ab9747b8c9257fea6e49/border1.png) no-repeat -25px -25px;}
+    #cboxMiddleLeft{width:25px; background:url(http://files.bugsplatcdn.com/files/a30c9627640c32d1a373/border2.png) repeat-y 0 0;}
+    #cboxMiddleRight{width:25px; background:url(http://files.bugsplatcdn.com/files/a30c9627640c32d1a373/border2.png) repeat-y -25px 0;}
     #cboxContent{background:#fcfcfc; overflow:hidden;}
         .cboxIframe{background:#fcfcfc;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{margin-bottom:20px;}
         #cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#999;}
         #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;}
-        #cboxLoadingOverlay{background:#fcfcfc url(/img/loading.gif) no-repeat 5px 5px;}
+        #cboxLoadingOverlay{background:#fcfcfc url(http://files.bugsplatcdn.com/files/5075c0e6fcdfd6fa3e16/loading.gif) no-repeat 5px 5px;}
 
         /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
         #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
