@@ -22,6 +22,7 @@ class App < Sinatra::Base
       '/css/main.css',
       '/css/github.css',
       '/css/font-awesome.css',
+      '/css/colorbox.css'
     ]
 
     css :ie7, [
@@ -35,6 +36,8 @@ class App < Sinatra::Base
     js :application, [
       '/js/jquery.js',
       '/js/bootstrap.js',
+      '/js/jquery.colorbox.js',
+      '/js/book.js'
     ]
   end
 
