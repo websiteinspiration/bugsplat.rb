@@ -3,8 +3,8 @@ Order: 1
 Id:    resume-123
 
 <div class="formats pull-right">
-  <a rel="nofollow" href="/resume.pdf"><img alt="Download PDF" src="http://files.bugsplatcdn.com/files/7d44797a6ac52e7fb898/pdf.png"></img></a>
-  <a rel="nofollow" href="/resume.md"><img alt="Download Plaintext" src="http://files.bugsplatcdn.com/files/4fb4d0b0a7a0bb33a2e0/markdown.png"></img></a>
+  <a rel="nofollow" href="/resume.pdf"><img alt="Download PDF" src="https://d2s7foagexgnc2.cloudfront.net/files/7d44797a6ac52e7fb898/pdf.png"></img></a>
+  <a rel="nofollow" href="/resume.md"><img alt="Download Plaintext" src="https://d2s7foagexgnc2.cloudfront.net/files/4fb4d0b0a7a0bb33a2e0/markdown.png"></img></a>
 </div>
 
 ### Experience
@@ -55,7 +55,7 @@ Id:    resume-123
 #### Software Developer, 2007 - 2011 ###
 
 <p>
-<a href="http://www.rentrak.com"><img src="http://files.bugsplatcdn.com/files/9bf6c310b2d627e85828/Rentrak_Logo-02-LowRes.jpg" style="float:right; clear:both;"></a>
+<a href="http://www.rentrak.com"><img src="https://d2s7foagexgnc2.cloudfront.net/files/9bf6c310b2d627e85828/Rentrak_Logo-02-LowRes.jpg" style="float:right; clear:both;"></a>
 <a href="http://www.rentrak.com">Rentrak Corporation</a>, Portland, OR
 </p>
 
@@ -95,7 +95,7 @@ Id:    resume-123
 
 #### Software Development Intern, 2006
 <p>
-<a href="http://www.qg.com"><img src="http://files.bugsplatcdn.com/files/c063dd2c64a30ef4c3ac/quad_graphics.png" style="float:right;clear:both;"></a>
+<a href="http://www.qg.com"><img src="https://d2s7foagexgnc2.cloudfront.net/files/c063dd2c64a30ef4c3ac/quad_graphics.png" style="float:right;clear:both;"></a>
 Quad Graphics
 </p>
 
@@ -108,7 +108,7 @@ Quad Graphics
 
 #### Research Assistant, Fall 2005 - Spring 2006
 <p>
-<a href="http://www.aurorahealthcare.org"><img src="http://files.bugsplatcdn.com/files/edc7d57b036b82ac6634/aurora_healthcare-1.png" style="float:right;clear:both;"></a>
+<a href="http://www.aurorahealthcare.org"><img src="https://d2s7foagexgnc2.cloudfront.net/files/edc7d57b036b82ac6634/aurora_healthcare-1.png" style="float:right;clear:both;"></a>
 Aurora Health Care
 </p>
 
@@ -132,7 +132,7 @@ Aurora Health Care
 
 #### Bachelor of Science in Management Computer Systems
 <p>
-<a href="http://www.uww.edu"><img src="http://files.bugsplatcdn.com/files/059b04fcc24ba55dedee/uww_logo.jpg" style="float:right;clear:both"></a>
+<a href="http://www.uww.edu"><img src="https://d2s7foagexgnc2.cloudfront.net/files/059b04fcc24ba55dedee/uww_logo.jpg" style="float:right;clear:both"></a>
 Computer Science Minor<br>
 University of Wisconsin - Whitewater<br>
 Graduated December 2006

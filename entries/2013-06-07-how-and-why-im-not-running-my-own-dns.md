@@ -14,7 +14,7 @@ A few months ago I posted about [how I run my own DNS servers](/how-i-run-my-own
 
 Second, and really more importantly, this happened:
 
-<img class="thumbnail" src="http://files.bugsplatcdn.com/files/35633efcdeb80dd81714/Screen%20Shot%202013-06-07%20at%204.41.49%20PM.png" alt="Papertrail has a lot of logs">
+<img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/35633efcdeb80dd81714/Screen%20Shot%202013-06-07%20at%204.41.49%20PM.png" alt="Papertrail has a lot of logs">
 
 At some point last week I started seeing a very large number of queries for various domains coming into one of my servers. There were thousands of them a minute, supposedly coming from just a handful of machines. I couldn't figure this out, and the only solution I could reasonably come up with was to turn off logging. That's totally unacceptable, and if I couldn't figure this out I probably shouldn't be running DNS for myself after all. After consulting with a few very helpful people from the Internet we determined that my server was being used as part of a reflection attack originating at a known bad actor used for various command and control botnet nastiness. It was time to switch as soon as possible. Thankfully I had the TTL for my NS records set very low, otherwise this would have been a much more painful process.
 

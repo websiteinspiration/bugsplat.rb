@@ -188,7 +188,7 @@ In this last section we'll talk about some common situations that web developers
 
 Almost always you'll want to redirect a bare domain like `iskettlemanstillopen.com` to `www.iskettlemanstillopen.com`. Registrars like Namecheap and DNSimple call this a *URL Redirect*. In Namecheap you would set up a URL Redirect like this:
 
-<img src="http://files.bugsplatcdn.com/files/3abc3ac12462e5a92ae7/Screen%20Shot%202013-07-19%20at%208.48.36%20PM.png" alt="Namecheap URL redirect setup" class="thumbnail">
+<img src="https://d2s7foagexgnc2.cloudfront.net/files/3abc3ac12462e5a92ae7/Screen%20Shot%202013-07-19%20at%208.48.36%20PM.png" alt="Namecheap URL redirect setup" class="thumbnail">
 
 The `@` stands for the root domain `iskettlemanstillopen.com`. Let's look at the `A` record for that domain:
 

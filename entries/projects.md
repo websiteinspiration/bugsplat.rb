@@ -16,7 +16,7 @@ I have developed various bits of open source software and <a href="https://githu
 
 <h4 id="marginalia"><a href="http://www.marginalia.io">Marginalia</a></h4>
 
-<a href="http://www.marginalia.io"><img src="http://files.bugsplatcdn.com/files/fc5980c06f4c5bd32596/marginalia.png"></a>
+<a href="http://www.marginalia.io"><img src="https://d2s7foagexgnc2.cloudfront.net/files/fc5980c06f4c5bd32596/marginalia.png"></a>
 
 Marginalia is an online notebook where entries are written in Markdown and can be created via the web interface or by sending to a special email address. Entries can be grouped into projects and have inline hashtags. Marginalia is a Rails app.
 
@@ -27,7 +27,7 @@ Marginalia is an online notebook where entries are written in Markdown and can b
 
 <h4 id="docverter"><a href="http://www.docverter.com">Docverter</a></h4>
 
-<a href="http://www.docverter.com"><img src="http://files.bugsplatcdn.com/files/34356aeca33619d11aa7/docverter.png"></a>
+<a href="http://www.docverter.com"><img src="https://d2s7foagexgnc2.cloudfront.net/files/34356aeca33619d11aa7/docverter.png"></a>
 
 Docverter is plaintext to formatted document conversion tool with a RESTful API. Users can submit documents in various formats including Markdown and HTML and request formatting into PDF, Docx, ePub, and Mobi formats. The PDF and Docx links scattered around this site all use Docverter to convert on the fly. Docverter is open source.
 
@@ -37,7 +37,7 @@ Docverter is plaintext to formatted document conversion tool with a RESTful API.
 
 <h4 id="twfr"><a href="http://twitter-fiction-reader.bugsplat.info">Twitter Fiction Reader</a></h4>
 
-<a href="http://twitter-fiction-reader.bugsplat.info"><img src="http://files.bugsplatcdn.com/files/164e5eed453a75f516fb/twitter-fiction-reader.png"></a>
+<a href="http://twitter-fiction-reader.bugsplat.info"><img src="https://d2s7foagexgnc2.cloudfront.net/files/164e5eed453a75f516fb/twitter-fiction-reader.png"></a>
 
 Twitter Fiction Reader is a curated archive of public Twitter accounts that tell fictional stories 140 characters at a time. The main application is based on Sinatra and PostgreSQL, with a simple cron task for pulling down fresh tweets.
 
@@ -45,7 +45,7 @@ Twitter Fiction Reader is a curated archive of public Twitter accounts that tell
 
 <h4 id="remindlyo"><a href="http://www.remindlyo.com">Remindlyo</a></h4>
 
-<a href="http://www.remindlyo.com"><img src="http://files.bugsplatcdn.com/files/e6a8510ba8c00f3a2380/remindlyo.png"></a>
+<a href="http://www.remindlyo.com"><img src="https://d2s7foagexgnc2.cloudfront.net/files/e6a8510ba8c00f3a2380/remindlyo.png"></a>
 
 Remember to call your mother every week. Remindlyo will call your number at a scheduled time and connect you to your contact immediately. Now deactivated.
 

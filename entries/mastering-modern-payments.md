@@ -11,7 +11,7 @@ Skip_title_suffix: true
 My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em></strong> will teach you:
 
 <div>
-<img style="float: right; height: 200px; padding-top: 20px;" src="http://files.bugsplatcdn.com/files/c8d07c7429a014d29fda/book_stack_small.png" />
+<img style="float: right; height: 200px; padding-top: 20px;" src="https://d2s7foagexgnc2.cloudfront.net/files/c8d07c7429a014d29fda/book_stack_small.png" />
 
 <ul>
 <li>Why a simple 10-minute integration <strong>isn't enough</strong>
@@ -45,7 +45,7 @@ Thousands of small businesses are using Stripe to process recurring or one-time 
 * Lost time digging through Stripe's dashboard or the Rails console to see your quarterly revenue or to find a specific customer's transaction
 
 <div style="margin-top: 2em; margin-bottom: 2em">
-<img style="float: right; margin-left: 20px; padding-top: 100px;" src="http://files.bugsplatcdn.com/files/a8dab64c9e6402ee7b16/stripe_rails.png">
+<img style="float: right; margin-left: 20px; padding-top: 100px;" src="https://d2s7foagexgnc2.cloudfront.net/files/a8dab64c9e6402ee7b16/stripe_rails.png">
 <h2>Table of Contents</h2>
 <ol>
 <li>Introduction
@@ -65,7 +65,7 @@ Thousands of small businesses are using Stripe to process recurring or one-time 
 <div style="margin-top: 2em; margin-bottom: 2em">
 <h2>About the Author</h2>
 <p>
-<img class="thumbnail" src="http://files.bugsplatcdn.com/files/54919f94183b56488a1e/me-small.png" style="float:left; margin-right: 20px; height:100px;">
+<img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/54919f94183b56488a1e/me-small.png" style="float:left; margin-right: 20px; height:100px;">
 I'm Pete Keen. I've been a professional software developer for seven years and live in Portland, Oregon. I write a blog at petekeen.net with articles on topics ranging from Ruby and Rails to Perl and robotics and scattered book reviews.
 </p>
 </div>
@@ -73,7 +73,7 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 <div style="margin-top: 2em; margin-bottom: 2em">
 <h2>What others are saying</h2>
 <blockquote>
-<img class="thumbnail pull-right" src="http://files.bugsplatcdn.com/files/2a34b4be575a85bdf517/matt_vanderpol.jpg" style="margin-left: 1em;">
+<img class="thumbnail pull-right" src="https://d2s7foagexgnc2.cloudfront.net/files/2a34b4be575a85bdf517/matt_vanderpol.jpg" style="margin-left: 1em;">
 Mastering Modern Payments is a fantastic resource for integrating Stripe billing with your Rails app. Pete does a great job of pulling together existing resources and blending them with his own experience to provide a clear, valuable guide for billing with Stripe.
 <br><br>
 Matt Vanderpol - founder QAtab

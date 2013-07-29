@@ -2429,7 +2429,7 @@ input[type="submit"].btn.btn-mini {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("http://files.bugsplatcdn.com/files/f80c883cffd02d59d0d5/glyphicons-halflings.png");
+  background-image: url("https://d2s7foagexgnc2.cloudfront.net/files/f80c883cffd02d59d0d5/glyphicons-halflings.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2452,7 +2452,7 @@ input[type="submit"].btn.btn-mini {
 .dropdown-submenu:focus > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"],
 .dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url("http://files.bugsplatcdn.com/files/5f84923491cbb08d7fa1/glyphicons-halflings-white.png");
+  background-image: url("https://d2s7foagexgnc2.cloudfront.net/files/5f84923491cbb08d7fa1/glyphicons-halflings-white.png");
 }
 .icon-glass {
   background-position: 0      0;
