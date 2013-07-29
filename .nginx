@@ -6,8 +6,3 @@ if ($http_user_agent ~* NetShelter) {
     return 403;
 }
 
-location ~ ^/(mmp-preorders|mastering-modern-payments)$ {
-    if ($scheme  = "http") {
-        rewrite ^/(.*)$  https://$host/$1 permanent;
-    }
-}
