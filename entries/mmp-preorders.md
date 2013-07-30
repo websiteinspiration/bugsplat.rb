@@ -200,4 +200,4 @@ Email me at <a href="mailto:pete@petekeen.net">pete@petekeen.net</a> and I'll do
     </tr>
   </tbody>
 </table>
-
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
