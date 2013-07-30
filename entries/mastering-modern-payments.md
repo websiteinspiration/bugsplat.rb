@@ -49,7 +49,6 @@ Thousands of small businesses are using Stripe to process recurring or one-time 
 <h2>Table of Contents</h2>
 <ol>
 <li>Introduction
-<li>Initial Example Application
 <li>The Simplest Stripe Integration
 <li>Security and PCI Compliance
 <li>Custom Payment Forms
@@ -83,7 +82,7 @@ Matt Vanderpol - founder QAtab
 <div class="well">
 <h3>Guide + Code + Team License</h3>
 <ul class="archive-list">
-<li><span class="mmp-icon"><i class="icon-edit"></i></span> 112 page PDF with more than 100 code samples
+<li><span class="mmp-icon"><i class="icon-edit"></i></span> 116 page PDF with more than 100 code samples
 <li><span class="mmp-icon"><i class="icon-download-alt"></i></span> ePub for Nook and Mobi for Kindle reading
 <li><span class="mmp-icon"><i class="icon-html5"></i></span> Single-page HTML format for easy reference and searching
 <li><span class="mmp-icon"><i class="icon-code"></i></span> The full source code for the Rails application I use to sell the guide
@@ -96,7 +95,7 @@ Matt Vanderpol - founder QAtab
 <div class="well highlight">
 <h3>Guide + Code</h3>
 <ul class="archive-list">
-<li><span class="mmp-icon"><i class="icon-edit"></i></span> 112 page PDF with more than 100 code samples
+<li><span class="mmp-icon"><i class="icon-edit"></i></span> 116 page PDF with more than 100 code samples
 <li><span class="mmp-icon"><i class="icon-download-alt"></i></span> ePub for Nook and Mobi for Kindle reading
 <li><span class="mmp-icon"><i class="icon-html5"></i></span> Single-page HTML format for easy reference and searching
 <li><span class="mmp-icon"><i class="icon-code"></i></span> The full source code for the Rails application I use to sell the guide
@@ -107,7 +106,7 @@ Matt Vanderpol - founder QAtab
 <div class="well">
 <h3>Just the Guide</h3>
 <ul class="archive-list">
-<li><span class="mmp-icon"><i class="icon-edit"></i></span> 112 page PDF with more than 100 code samples
+<li><span class="mmp-icon"><i class="icon-edit"></i></span> 116 page PDF with more than 100 code samples
 <li><span class="mmp-icon"><i class="icon-download-alt"></i></span> ePub for Nook and Mobi for Kindle reading
 <li><span class="mmp-icon"><i class="icon-html5"></i></span> Single-page HTML format for easy reference and searching
 </ul>
