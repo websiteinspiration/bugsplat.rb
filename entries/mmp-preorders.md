@@ -120,17 +120,6 @@ Matt Vanderpol - founder QAtab
 <a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments" href="https://sales.petekeen.net/buy/mastering-modern-payments">Buy Now for <del>$29</del> $20</a></a>
 </div>
 
-<div class="well" style="margin-top: 2em; margin-bottom: 2em; text-align: center;">
-  <h3><small>Just want to know when the guide is released?</small><br><br>Sign up to get a free chapter</h3>
-  <form action="http://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-big form-inline" target="_blank">
-      <div class="input-append">
-  	<input type="email" class='text input-xlarge' value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address">
-  	<input type="submit" value="Get Free Chapter" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-large">
-      </div>
-  </form>
-</div>
-
-
 ## Questions
 
 ### Which package should I buy?
@@ -147,7 +136,7 @@ Yes! You'll get updates to the guide and associated materials both before and af
 
 ### How do I find out more about you?
 
-I've been writing about software development and lots of other topics on my blog <a href="http://www.petekeen.net">petekeen.net</a> since 2009 and I tweet at <a href="https://twitter.com/zrail">@zrail</a>.</p>
+I've been writing about software development and lots of other topics on my blog <a href="https://www.petekeen.net">petekeen.net</a> since 2009 and I tweet at <a href="https://twitter.com/zrail">@zrail</a>.</p>
 
 ### What if I hate the guide?
 
@@ -200,4 +189,15 @@ Email me at <a href="mailto:pete@petekeen.net">pete@petekeen.net</a> and I'll do
     </tr>
   </tbody>
 </table>
+
+<div class="well" style="margin-top: 2em; margin-bottom: 2em; text-align: center;">
+  <h3><small>Just want to know when the guide is released?</small><br><br>Sign up to get a free chapter</h3>
+  <form action="https://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-big form-inline" target="_blank">
+      <div class="input-append">
+  	<input type="email" class='text input-xlarge' value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address">
+  	<input type="submit" value="Get Free Chapter" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-large">
+      </div>
+  </form>
+</div>
+
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
