@@ -192,12 +192,7 @@ Email me at <a href="mailto:pete@petekeen.net">pete@petekeen.net</a> and I'll do
 
 <div class="well" style="margin-top: 2em; margin-bottom: 2em; text-align: center;">
   <h3><small>Just want to know when the guide is released?</small><br><br>Sign up to get a free chapter</h3>
-  <form action="https://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-big form-inline" target="_blank">
-      <div class="input-append">
-  	<input type="email" class='text input-xlarge' value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address">
-  	<input type="submit" value="Get Free Chapter" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-large">
-      </div>
-  </form>
+  <a class="btn btn-primary btn-large" href="http://eepurl.com/ANT25">Get Free Chapter</a>
 </div>
 
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
