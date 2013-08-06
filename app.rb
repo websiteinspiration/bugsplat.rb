@@ -175,6 +175,16 @@ class App < Sinatra::Base
     @page_title = 'Mastering Modern Payments: Using Stripe with Rails by Pete Keen'
     erb :mmp_preorders, layout: :book_layout
   end
+
+  get '/payment/:permalink' do
+    finished(:payment)
+    redirect "https://sales.petekeen.net/iframe/#{params[:permalink]}"
+  end
+
+  get '/signup' do
+    finished(:signup)
+    redirect "http://eepurl.com/ANT25"
+  end
   
   get '/tag/:tag' do
     tag = params[:tag].gsub('.html', '').downcase

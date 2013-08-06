@@ -8,7 +8,7 @@ $(".payment-button").click(function(event) {
   if (typeof(permalink) === "undefined" || mobilecheck()) {
       return true;
   }
-  var frameSrc = "https://sales.petekeen.net/iframe/" + permalink;
+  var frameSrc = "/payment/" + permalink;
   $.colorbox({href: frameSrc, iframe: true, width: '800px', height: '400px'});
   return false;
 });
