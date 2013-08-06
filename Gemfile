@@ -17,6 +17,7 @@ gem 'gibbon'
 gem 'anemone'
 gem 'pygments.rb'
 gem 'rack', '>= 1.3.10'
+gem 'split'
 
 group :development do
   gem 'shotgun'

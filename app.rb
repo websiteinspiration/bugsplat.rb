@@ -7,11 +7,11 @@ require 'atom/pub'
 require 'docverter'
 require 'sinatra/simple_assets'
 require 'xml-sitemap'
+require 'split'
 
 class App < Sinatra::Base
 
   PAGES = Pages.new
-  PAGE_CACHE = {}
 
   Docverter.base_url = 'http://c.docverter.com'
 
@@ -46,6 +46,7 @@ class App < Sinatra::Base
     ENV['ASSET_HOST'] ? "#{ENV['ASSET_HOST']}#{url}" : url
   end
 
+  helpers Split::Helper
   helpers do
 
     def relative_stylesheet(bundle, media="screen")
@@ -157,6 +158,24 @@ class App < Sinatra::Base
     erb :tags
   end
 
+  get '/mmp' do
+    redirect '/mastering-modern-payments'
+  end
+
+  get '/mmppo' do
+    redirect '/mmp-preorders'
+  end
+
+  get '/mastering-modern-payments' do
+    @page_title = 'Mastering Modern Payments: Using Stripe with Rails by Pete Keen'
+    erb :mastering_modern_payments, layout: :book_layout
+  end
+
+  get '/mmp-preorders' do
+    @page_title = 'Mastering Modern Payments: Using Stripe with Rails by Pete Keen'
+    erb :mmp_preorders, layout: :book_layout
+  end
+  
   get '/tag/:tag' do
     tag = params[:tag].gsub('.html', '').downcase
     @tagged_pages = @pages.search(tag, "tags").reverse
