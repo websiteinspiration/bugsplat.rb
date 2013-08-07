@@ -8,8 +8,30 @@ require 'docverter'
 require 'sinatra/simple_assets'
 require 'xml-sitemap'
 require 'split'
+require 'sinatra/cookies'
+require './cookie_adapter'
 
 class App < Sinatra::Base
+
+  Split.configure do |config|
+    config.persistence = CookieAdapter
+    config.experiments = {
+      "headline_message" => {
+        :alternatives => [
+          "Want to make sure your Stripe integration is right?",
+          "What Every Rails Developer Needs to Know About Stripe"
+        ],
+        :metric => :signup
+      },
+      "headline_message_preorder" => {
+        :alternatives => [
+          "Want to make sure your Stripe integration is right?",
+          "What Every Rails Developer Needs to Know About Stripe"
+        ],
+        :metric => :payment
+      }
+    }
+  end
 
   PAGES = Pages.new
 
@@ -46,6 +68,7 @@ class App < Sinatra::Base
     ENV['ASSET_HOST'] ? "#{ENV['ASSET_HOST']}#{url}" : url
   end
 
+  helpers Sinatra::Cookies
   helpers Split::Helper
   helpers do
 

@@ -8,9 +8,9 @@
 
 <h2 class="preorder">Preorder Today for 30% Off!<br><small>Official Launch Day is August 15th, 2013</small></h2>
 
-<div class="question">
-Want to make sure your Stripe integration is right?
-</div>
+<% ab_test("headline_message_preorder") do |message| %>
+<div class="question"><%= message %></div>
+<% end %>
 
 <p>
     My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em></strong> will teach you:
