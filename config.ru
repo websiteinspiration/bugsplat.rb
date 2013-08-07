@@ -1,4 +1,11 @@
 require 'app'
+require 'split/dashboard'
+
+Split::Dashboard.use Rack::Auth::Basic do |username, password|
+  username == ENV['USERNAME'] && password == ENV['PASSWORD']
+end
 
 use Rack::ShowExceptions
-run App.new
+run Rack::URLMap.new \
+  '/'      => App.new,
+  '/split' => Split::Dashboard.new
