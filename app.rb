@@ -186,7 +186,7 @@ class App < Sinatra::Base
   end
 
   get '/mmppo' do
-    redirect '/mmp-preorders'
+    redirect '/mastering-modern-payments'
   end
 
   get '/mastering-modern-payments' do
@@ -195,8 +195,7 @@ class App < Sinatra::Base
   end
 
   get '/mmp-preorders' do
-    @page_title = 'Mastering Modern Payments: Using Stripe with Rails by Pete Keen'
-    erb :mmp_preorders, layout: :book_layout
+    redirect '/mastering-modern-payments'
   end
 
   get '/payment/:permalink' do

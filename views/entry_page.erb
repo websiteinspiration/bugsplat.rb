@@ -4,17 +4,6 @@
   <p class="date"><%= @page.natural_date %></p>
   <% end %>
   <%= @page.render %>
-  <% if @page.show_upsell_form? %>
-  <div class="well" style="margin-top: 2em; margin-bottom: 2em; text-align: center;">
-    <h3>Get a free chapter and 10% off</h3>
-    <form action="https://bugsplat.us6.list-manage.com/subscribe/post?u=4d4742d4ee66f8c62af747acb&amp;id=1920a1a25a" method="post" class="form form-big form-inline" target="_blank">
-        <div class="input-append">
-    	<input type="email" class='text input-xlarge' value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address">
-    	<input type="submit" value="Get Free Chapter" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-large">
-        </div>
-    </form>
-  </div>
-  <% end %>
   <% if @page.is_blog_post? %>
   <% @post_url = "http%3A%2F%2Fpkn.me/#{@page['id']}" %>
   <p class="date" style="margin-top: 1em; margin-bottom: 1em;">
@@ -29,8 +18,8 @@
   <div class="well">
     <img style="float: right; margin-left: 20px;" src="https://d2s7foagexgnc2.cloudfront.net/files/a8dab64c9e6402ee7b16/stripe_rails.png">
     <h4><a href="/mastering-modern-payments">Mastering Modern Payments: Using Stripe with Rails</a></h4>
-    <p>I'm writing a guide about how to properly integrate Stripe with Ruby on Rails, covering background processing, audit trails, admin pages and more. Launching August 15th.</p>
-    <a href="/mastering-modern-payments" class="btn btn-primary btn-large">Find out more and get a Free Chapter</a>
+    <p>I'm wrote a guide about how to properly integrate Stripe with Ruby on Rails, covering background processing, audit trails, admin pages and more.</p>
+    <a href="/mastering-modern-payments" class="btn btn-primary btn-large">Find out more</a>
   </div>
   <% end %>
   <div class="well" id="tags-and-formats">
