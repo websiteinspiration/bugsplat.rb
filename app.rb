@@ -114,6 +114,19 @@ class App < Sinatra::Base
     def related_posts(page)
       PAGES.related_posts(page)[0..2].compact
     end
+
+    def price(amount)
+      new_amount = amount * 0.9
+      if params['cc']
+        sprintf("<strike>$%d</strike> $%d", amount, new_amount)
+      else
+        sprintf("$%d", amount)
+      end
+    end
+  end
+
+  def coupon_param
+    params['cc'] ? "?coupon_code=#{params['cc']}" : ""
   end
 
   before do
@@ -198,9 +211,14 @@ class App < Sinatra::Base
     redirect '/mastering-modern-payments'
   end
 
-  get '/payment/:permalink' do
+  get '/iframe/:permalink' do
     finished(:payment)
-    redirect "https://sales.petekeen.net/iframe/#{params[:permalink]}"
+    redirect "#{ENV['SALES_HOST']}/iframe/#{params[:permalink]}#{coupon_param}"
+  end
+
+  get '/buy/:permalink' do
+    finished(:payment)
+    redirect "#{ENV['SALES_HOST']}/buy/#{params[:permalink]}#{coupon_param}"
   end
 
   get '/signup' do

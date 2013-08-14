@@ -84,7 +84,7 @@ Matt Vanderpol - founder QAtab
 <li><span class="mmp-icon"><i class="icon-bell"></i></span> Periodic updates both before and after launch day
 </ul>
 <span class="pull-right date">More below <i class="icon-arrow-down"></i></span>
-<a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments-team" href="https://sales.petekeen.net/buy/mastering-modern-payments-team">Buy Now for $299</a>
+<a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments-team" href="/buy/mastering-modern-payments-team<%= coupon_param %>">Buy Now for <%= price(299) %></a>
 </div>
 
 <div class="well highlight">
@@ -96,7 +96,7 @@ Matt Vanderpol - founder QAtab
 <li><span class="mmp-icon"><i class="icon-code"></i></span> The full source code for the Rails application I use to sell the guide
 <li><span class="mmp-icon"><i class="icon-bell"></i></span> Periodic updates both before and after launch day
 </ul>
-<a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments-deluxe" href="https://sales.petekeen.net/buy/mastering-modern-payments-deluxe">Buy Now for $59</a>
+<a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments-deluxe" href="/buy/mastering-modern-payments-deluxe<%= coupon_param %>">Buy Now for <%= price(59) %></a>
 </div>
 
 <div class="well">
@@ -107,7 +107,7 @@ Matt Vanderpol - founder QAtab
 <li><span class="mmp-icon"><i class="icon-html5"></i></span> Single-page HTML format for easy reference and searching
 <li><span class="mmp-icon"><i class="icon-bell"></i></span> Periodic updates both before and after launch day
 </ul>
-<a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments" href="https://sales.petekeen.net/buy/mastering-modern-payments">Buy Now for $29</a></a>
+<a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments" href="/buy/mastering-modern-payments<%= coupon_param %>">Buy Now for <%= price(29) %></a></a>
 </div>
 
 <h2>Questions</h2>
@@ -173,9 +173,9 @@ Matt Vanderpol - founder QAtab
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments-team" href="https://sales.petekeen.net/buy/mastering-modern-payments-team">$299</a></td>
-      <td class="highlight"><a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments-deluxe" href="https://sales.petekeen.net/buy/mastering-modern-payments-deluxe">$59</a></td>
-      <td><a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments" href="https://sales.petekeen.net/buy/mastering-modern-payments">$29</a></td>
+      <td><a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments-team" href="/buy/mastering-modern-payments-team<%= coupon_param %>"><%= price(299) %></a></td>
+      <td class="highlight"><a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments-deluxe" href="/buy/mastering-modern-payments-deluxe<%= coupon_param %>"><%= price(59) %></a></td>
+      <td><a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments" href="/buy/mastering-modern-payments<%= coupon_param %>"><%= price(29) %></a></td>
     </tr>
   </tbody>
 </table>
