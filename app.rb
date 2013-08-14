@@ -186,7 +186,11 @@ class App < Sinatra::Base
   end
 
   get '/mmppo' do
-    redirect '/mmp-preorders'
+    redirect '/mastering-modern-payments'
+  end
+
+  get '/mmp-preorders' do
+    redirect '/mastering-modern-payments'
   end
 
   get '/mastering-modern-payments' do
