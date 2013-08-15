@@ -21,15 +21,8 @@ class App < Sinatra::Base
           "Want to make sure your Stripe integration is right?",
           "What Every Rails Developer Needs to Know About Stripe"
         ],
-        :metric => :signup
-      },
-      "headline_message_preorder" => {
-        :alternatives => [
-          "Want to make sure your Stripe integration is right?",
-          "What Every Rails Developer Needs to Know About Stripe"
-        ],
         :metric => :payment
-      }
+      },
     }
   end
 
