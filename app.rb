@@ -111,7 +111,7 @@ class App < Sinatra::Base
     def price(amount)
       new_amount = amount * 0.9
       if params['cc']
-        sprintf("<strike>$%d</strike> $%d", amount, new_amount)
+        sprintf("<strike>$%d</strike> $%0.2f", amount, new_amount)
       else
         sprintf("$%d", amount)
       end
@@ -119,7 +119,8 @@ class App < Sinatra::Base
   end
 
   def coupon_param
-    params['cc'] ? "?coupon_code=#{params['cc']}" : ""
+    coupon = params['cc'] || params['coupon_code']
+    coupon ? "?coupon_code=#{coupon}" : ""
   end
 
   before do
