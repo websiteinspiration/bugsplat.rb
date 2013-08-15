@@ -21,15 +21,8 @@ class App < Sinatra::Base
           "Want to make sure your Stripe integration is right?",
           "What Every Rails Developer Needs to Know About Stripe"
         ],
-        :metric => :signup
-      },
-      "headline_message_preorder" => {
-        :alternatives => [
-          "Want to make sure your Stripe integration is right?",
-          "What Every Rails Developer Needs to Know About Stripe"
-        ],
         :metric => :payment
-      }
+      },
     }
   end
 
@@ -114,6 +107,19 @@ class App < Sinatra::Base
     def related_posts(page)
       PAGES.related_posts(page)[0..2].compact
     end
+
+    def price(amount)
+      new_amount = amount * 0.9
+      if params['cc']
+        sprintf("<strike>$%d</strike> $%d", amount, new_amount)
+      else
+        sprintf("$%d", amount)
+      end
+    end
+  end
+
+  def coupon_param
+    params['cc'] ? "?coupon_code=#{params['cc']}" : ""
   end
 
   before do
@@ -189,23 +195,23 @@ class App < Sinatra::Base
     redirect '/mastering-modern-payments'
   end
 
-  get '/mmp-preorders' do
-    redirect '/mastering-modern-payments'
-  end
-
   get '/mastering-modern-payments' do
     @page_title = 'Mastering Modern Payments: Using Stripe with Rails by Pete Keen'
     erb :mastering_modern_payments, layout: :book_layout
   end
 
   get '/mmp-preorders' do
-    @page_title = 'Mastering Modern Payments: Using Stripe with Rails by Pete Keen'
-    erb :mmp_preorders, layout: :book_layout
+    redirect '/mastering-modern-payments'
   end
 
-  get '/payment/:permalink' do
+  get '/iframe/:permalink' do
     finished(:payment)
-    redirect "https://sales.petekeen.net/iframe/#{params[:permalink]}"
+    redirect "#{ENV['SALES_HOST']}/iframe/#{params[:permalink]}#{coupon_param}"
+  end
+
+  get '/buy/:permalink' do
+    finished(:payment)
+    redirect "#{ENV['SALES_HOST']}/buy/#{params[:permalink]}#{coupon_param}"
   end
 
   get '/signup' do
