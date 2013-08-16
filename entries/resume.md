@@ -121,9 +121,10 @@ Aurora Health Care
   
 ### Side Projects
 
+* [Mastering Modern Payments](https://www.petekeen.net/mastering-modern-payments), a book about integrating Stripe payments with Rails.
 * [Twitter Fiction Reader](http://twitter-fiction-reader.herokuapp.com), a curated archive of fictional twitter accounts. Simple Sinatra application.
 * [FivePad](https://www.fivepad.me), the easiest way to keep track of your apartment search. Rails app hosted on Heroku.
-* [petekeen.net](http://petekeen.net), my personal programming and tech related blog. Recently converted to a simple Sinatra application.
+* [petekeen.net](https://www.petekeen.net), my personal programming and tech related blog. Recently converted to a simple Sinatra application.
 * [remindlyo](http://www.remindlyo.com), a phone call follow up and reminder service. Rails app using the Twilio API. Now deactivated.
 
 <hr class="separator">
