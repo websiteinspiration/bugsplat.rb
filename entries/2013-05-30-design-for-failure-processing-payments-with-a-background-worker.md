@@ -146,4 +146,4 @@ Your page will poll `/transactions/<id>` until the transaction ends in either su
 
 With this setup, you've insulated yourself from problems in your connection to Stripe, your connection to your customer, and everything in between.
 
-*This is an excerpt from my upcoming guide [Mastering Modern Payments: Using Stripe with Rails][guide].*
+*This is an excerpt from my guide [Mastering Modern Payments: Using Stripe with Rails][guide].*
