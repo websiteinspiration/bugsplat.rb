@@ -58,7 +58,7 @@ The first thing I did after actually deciding to write MMP was to put up a landi
 
 I kept a simple journal throughout the main writing period and adding up all of that I wrote for about 70 hours. The total hours spent on the whole project is probably double that because I didn't count much of the development of the companion Rails application, editing the guide, writing emails to customers, nor of all of the other little tasks that go into a project like this.
 
-As of today, the guide has grossed **$8,603** (this includes preorders):
+As of yesterday, the guide has grossed **$8,603** (this includes preorders):
 
 * **99** copies of Just the Guide for $2,485
 * **108** copies of Guide + Code for $5,341
