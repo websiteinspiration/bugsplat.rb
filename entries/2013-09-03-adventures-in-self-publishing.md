@@ -23,6 +23,7 @@ Show_upsell: true
 [stripe]: https://stripe.com
 [rails]: http://rubyonrails.org
 [culver]: http://www.andrewculver.net/
+[buckbee]: http://www.buzzwordcompliant.net/
  
 
 Three months ago I decided to write my [first technical book][mmp] and it's earned me over $5,000 in the two weeks since launch day, so I thought I decided to share what I've learned.
@@ -110,7 +111,7 @@ Since launch day the landing page has gotten 6,084 unique page views driving 136
 
 ## Conclusion
 
-I'd like to take the opportunity to thank my wife, who has put up with not only this project but all of my projects over the last two years. She's the most amazing, understanding person that I've ever met. I'd also like to thank Michael Buckbee, [Andrew Culver][culver], and a whole host of other people who kept me motivated and on track, right to the end.
+I'd like to take the opportunity to thank my wife, who has put up with not only this project but all of my projects over the last two years. She's the most amazing, understanding person that I've ever met. I'd also like to thank [Michael Buckbee][buckbee], [Andrew Culver][culver], and a whole host of other people who kept me motivated and on track, right to the end.
 
 This project has been an amazing experience. I've learned so much about how to build a product, how to build an audience, and how to make a success, and it's not even over. I'll be releasing periodic updates with corrections and new information since both Stripe and Rails are both active, changing products.
 
