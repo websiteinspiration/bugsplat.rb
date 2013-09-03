@@ -22,10 +22,12 @@ Show_upsell: true
 [ruby-weekly]: http://rubyweekly.com/archive/159.html
 [stripe]: https://stripe.com
 [rails]: http://rubyonrails.org
+[culver]: http://www.andrewculver.net/
+ 
 
 Three months ago I decided to write my [first technical book][mmp] and it's earned me over $5,000 in the two weeks since launch day, so I thought I decided to share what I've learned.
 
-I had been reading [Nathan Barry][nathan]'s excellent book [Authority][authority] and something about it inspired me. I started throwing around ideas, things that I knew well and that weren't well covered already, and I turned up [Stripe][stripe]. I know Stripe very well having used it a bunch of projects in the past few years. I also know [Rails][rails], using it in most of those projects plus at my day job. I knew for sure that there were things about payment processing that weren't really talked about much in the 10 minute Stripe tutorials. Thus began my five month journey of writing and self-publishing [Mastering Modern Payments: Using Stripe with Rails][mmp].
+I had been reading [Nathan Barry][nathan]'s excellent book [Authority][authority] and something about it inspired me. I started throwing around ideas, things that I knew well and that weren't well covered already, and I turned up [Stripe][stripe]. I know Stripe very well having used it for a bunch of projects in the past few years. I also know [Rails][rails], using it in most of those projects plus at my day job. I knew for sure that there were things about payment processing that weren't really talked about much in the 10 minute Stripe tutorials. Thus began my five month journey of writing and self-publishing [Mastering Modern Payments: Using Stripe with Rails][mmp].
 
 --fold--
 
@@ -108,9 +110,9 @@ Since launch day the landing page has gotten 6,084 unique page views driving 136
 
 ## Conclusion
 
-I'd like to take the opportunity to thank my wife, who has put up with not only this project but all of my projects over the last two years. She's the most amazing, understanding person that I've ever met. I'd also like to thank Michael Buckbee, Andrew Culver, and a whole host of other people who kept me motivated and on track, right to the end.
+I'd like to take the opportunity to thank my wife, who has put up with not only this project but all of my projects over the last two years. She's the most amazing, understanding person that I've ever met. I'd also like to thank Michael Buckbee, [Andrew Culver][culver], and a whole host of other people who kept me motivated and on track, right to the end.
 
-This project has been an amazing experience. I've learned so much about how to build a product, how to build an audience, and how to make a success, and it's not even over. I'll be releasing periodic updates with corrections and new information ss both Stripe and Rails change since both are active, changing products.
+This project has been an amazing experience. I've learned so much about how to build a product, how to build an audience, and how to make a success, and it's not even over. I'll be releasing periodic updates with corrections and new information since both Stripe and Rails are both active, changing products.
 
 <div class="well" style="margin-top: 2em; margin-bottom: 2em; text-align: center;">
   <h3><small>Sign up to get Rails and Stripe tips as well as guide update notifications (at most once per week)</small></h3>
