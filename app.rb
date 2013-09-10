@@ -170,13 +170,13 @@ class App < Sinatra::Base
     feed.to_xml
   end
 
-  get %r{/archive(\.html)?} do
+  get %r{^/archive(\.html)?$} do
     @archive_pages = @pages.blog_posts.reverse
     @page_title = "Archive"
     erb :archive
   end
 
-  get %r{/tags(\.html)?} do
+  get %r{^/tags(\.html)?$} do
     tags = {}
     @pages.pages.each do |page|
       page.tags.each do |tag|
@@ -223,7 +223,8 @@ class App < Sinatra::Base
   get '/tag/:tag' do
     tag = params[:tag].gsub('.html', '').downcase
     @tagged_pages = @pages.search(tag, "tags").reverse
-    @page_title = @tag_name = params[:tag].gsub('.html', '')
+    @tag_name = params[:tag].gsub('.html', '')
+    @page_title = "Tagged " + @tag_name
     erb :tagged_pages
   end
 
@@ -239,7 +240,7 @@ class App < Sinatra::Base
     erb :search
   end
 
-  get %r{/([\w-]+)(\.)?(\w+)?} do
+  get %r{^/([\w-]+)(\.)?(\w+)?$} do
     params[:page_name] = params[:captures].first
     params[:format] = params[:captures].last
     @hide_discussion = true
