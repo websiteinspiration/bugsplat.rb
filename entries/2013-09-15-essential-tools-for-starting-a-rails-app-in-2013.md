@@ -12,6 +12,8 @@ Over the past few years I've written a number of Rails applications. It's become
 [simple_form]: https://github.com/plataformatec/simple_form
 [sidekiq]: http://sidekiq.org
 
+*Edit: The discussion on [Hacker News](https://news.ycombinator.com/item?id=6393242) has some great gems that you should consider using as well.*
+
 --fold--
 
 ### [Dotenv][dotenv]
@@ -36,4 +38,5 @@ Much of what we do as Rails developers boils down to making simple CRUD forms to
 
 ### [Sidekiq][sidekiq]
 
-At some point every Rails application is going to need to do some background processing, especially if you're making server-side calls to other web services. These should *always* be done outside of a web request because Rule Number 1 is [The network is unreliable](http://en.wikipedia.org/wiki/Fallacies_of_Distributed_Computing) (the PDF in the sources block is a great explanation of the problems of distributed computing, btw). I've explored a number of different background processing systems for Rails and the best that I've found is named [Sidekiq][sidekiq]. It uses less resources per worker than any of the rest and it is super easy to manage. 
+At some point every Rails application is going to need to do some background processing, especially if you're making server-side calls to other web services. These should *always* be done outside of a web request because Rule Number 1 is [The network is unreliable](http://en.wikipedia.org/wiki/Fallacies_of_Distributed_Computing) (the PDF in the sources block is a great explanation of the problems of distributed computing, btw). I've explored a number of different background processing systems for Rails and the best that I've found is named [Sidekiq][sidekiq]. It uses less resources per worker than any of the rest and it is super easy to manage.
+
