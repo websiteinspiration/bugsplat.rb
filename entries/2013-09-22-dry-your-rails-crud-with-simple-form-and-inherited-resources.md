@@ -8,7 +8,7 @@ Show_upsell: true
 [rails_admin]: https://github.com/sferik/rails_admin
 [active_admin]: https://github.com/gregbell/active_admin
 
-When you're writing a Rails application you usually end up with a lot of CRUD-only controllers and views just for managing models as an admin. Your user-facing views and controllers should of course have a lot of thought and care put into their design, but for admin stuff you just want to put data in the database as simply as possible. Rails of course gives you scaffolds, but that's quite a bit of duplicated code. Instead, you could use the one-two-three combination of [Simple Form][simple_form],  [Inherited Resources][inherited_resources], and Rails' built-in template inheritance to DRY up most of the scaffolding while still preserving your ability to customize where appropriate.
+When you're writing a Rails application you usually end up with a lot of CRUD-only controllers and views just for managing models as an admin. Your user-facing views and controllers should of course have a lot of thought and care put into their design, but for admin stuff you just want to put data in the database as simply as possible. Rails of course gives you scaffolds, but that's quite a bit of duplicated code. Instead, you could use the one-two-three combination of [Simple Form][simple_form],  [Inherited Resources][inherited_resources], and Rails' built-in template inheritance to DRY up most of the scaffolding while still preserving your ability to customize where appropriate. This lets you build your admin interface without having to resort to something heavy like [Rails Admin][rails_admin] or [ActiveAdmin][active_admin] while also not having to build from scratch every time.
 
 --fold--
 
@@ -168,4 +168,4 @@ end
 
 ---
 
-There's a lot more you can do with Inherited Resources and Simple Form, like build controllers that deal with multiple nested resources and forms that have automatically populated select dropdowns. With view inheritance, you can use any of those things without having to start from scratch every time, which makes it super convenient to build your admin-facing interface without resorting to an off the shelf engine like [Rails Admin][rails_admin] or [ActiveAdmin][active_admin], both of which I've found to be too heavy for what I've wanted to accomplish.
+There's a lot more you can do with Inherited Resources and Simple Form, like build controllers that deal with multiple nested resources and forms that have automatically populated select dropdowns. You should check them out.
