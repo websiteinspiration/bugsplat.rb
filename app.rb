@@ -108,10 +108,14 @@ class App < Sinatra::Base
       PAGES.related_posts(page)[0..2].compact
     end
 
-    def price(amount)
+    def price(amount, include_strike=true)
       new_amount = amount * 0.9
       if params['cc']
-        sprintf("<strike>$%d</strike> $%0.2f", amount, new_amount)
+        if include_strike
+          sprintf("<strike>$%d</strike> $%0.2f", amount, new_amount)
+        else
+          sprintf("$%0.2f", new_amount)
+        end
       else
         sprintf("$%d", amount)
       end
