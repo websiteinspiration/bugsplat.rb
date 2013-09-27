@@ -110,7 +110,9 @@ class App < Sinatra::Base
 
     def price(amount, include_strike=true)
       new_amount = amount * 0.9
-      if params['cc']
+      if @coupon
+        coupon_amount = Integer(@coupon[-2,2]) rescue 10
+        new_amount = amount * (1 - (coupon_amount / 100.0))
         if include_strike
           sprintf("<strike>$%d</strike> $%0.2f", amount, new_amount)
         else
