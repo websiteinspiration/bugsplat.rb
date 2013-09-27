@@ -122,13 +122,27 @@ class App < Sinatra::Base
     end
   end
 
-  def coupon_param
-    coupon = params['cc'] || params['coupon_code']
-    coupon ? "?coupon_code=#{coupon}" : ""
+  def get_coupon_and_affiliate
+    @coupon = cookies['cc'] || params['cc'] || params['coupon_code']
+    store_in_cookie('cc', @coupon) if @coupon
+    @affiliate = cookies['aff'] || params['aff']
+    store_in_cookie('aff', @affiliate) if @affiliate
+  end
+
+  def store_in_cookie(key, value)
+    @response.set_cookie key, {
+      value: value,
+      expires: Time.now + 60*24*60*60,
+      path: '/',
+      domain: @request.host == 'localhost' ? false : 'petekeen.net',
+      httponly: true
+    }
   end
 
   before do
     @pages = PAGES
+
+    get_coupon_and_affiliate
   end
 
   get '/' do
@@ -211,12 +225,12 @@ class App < Sinatra::Base
 
   get '/iframe/:permalink' do
     finished(:payment)
-    redirect "#{ENV['SALES_HOST']}/iframe/#{params[:permalink]}#{coupon_param}"
+    redirect "#{ENV['SALES_HOST']}/iframe/#{params[:permalink]}"
   end
 
   get '/buy/:permalink' do
     finished(:payment)
-    redirect "#{ENV['SALES_HOST']}/buy/#{params[:permalink]}#{coupon_param}"
+    redirect "#{ENV['SALES_HOST']}/buy/#{params[:permalink]}"
   end
 
   get '/signup' do
