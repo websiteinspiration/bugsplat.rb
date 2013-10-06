@@ -2,7 +2,14 @@ if ($http_user_agent ~* NetShelter) {
     return 403;
 }
 
+<% pages.each do |page| %>
+rewrite ^/<%= page.page_id %> https://www.petekeen.net<%= page.html_path %> permanent;
+<% end %>
+
 rewrite ^/payment-integration.html https://www.petekeen.net/mastering-modern-payments permanent;
+rewrite ^/mmp https://www.petekeen.net/mastering-modern-payments permanent;
+rewrite ^/mmppo https://www.petekeen.net/mastering-modern-payments permanent;
+rewrite ^/mmp-preorders https://www.petekeen.net/mastering-modern-payments permanent;
 rewrite ^/static-html-blog https://www.petekeen.net/static-html-blog permanent;
 rewrite ^/static/stan-demo-report.html https://www.petekeen.net/stan-demo-report.html permanent;
 rewrite ^/\d\d\d\d-\d\d-\d\d-(.*).html https://www.petekeen.net/$1 permanent;

@@ -81,7 +81,7 @@ task :tagless do
 end
 
 namespace :assets do
-  task :precompile do
+  task :precompile => :write_nginx_file do
 
     if File.exists?('.asset_host')
       ENV['ASSET_HOST'] = File.read('.asset_host')
@@ -116,6 +116,14 @@ namespace :assets do
     App.assets.precompile
   end
 end
+
+task :write_nginx_file do
+  File.open(".nginx", "w+") do |f|
+    pages = App::PAGES
+    f.write ERB.new(File.read('.nginx.erb')).result(binding)
+  end
+end
+
 
 def write_page(path, request)
   puts path
