@@ -7,7 +7,7 @@ rewrite ^/<%= page.page_id %> https://www.petekeen.net<%= page.html_path %> perm
 <% end %>
 
 rewrite ^/payment-integration.html https://www.petekeen.net/mastering-modern-payments permanent;
-rewrite ^/mmp https://www.petekeen.net/mastering-modern-payments permanent;
+rewrite ^/mmp?(.*)? https://www.petekeen.net/mastering-modern-payments?$1 permanent;
 rewrite ^/mmppo https://www.petekeen.net/mastering-modern-payments permanent;
 rewrite ^/mmp-preorders https://www.petekeen.net/mastering-modern-payments permanent;
 rewrite ^/static-html-blog https://www.petekeen.net/static-html-blog permanent;
