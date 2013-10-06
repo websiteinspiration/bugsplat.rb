@@ -8,3 +8,8 @@ rewrite ^/static/stan-demo-report.html https://www.petekeen.net/stan-demo-report
 rewrite ^/\d\d\d\d-\d\d-\d\d-(.*).html https://www.petekeen.net/$1 permanent;
 rewrite ^/\d\d\d\d-\d\d-\d\d-(.*) https://www.petekeen.net/$1 permanent;
 rewrite ^/(.*).html https://www.petekeen.net/$1 permanent;
+
+if ( $host != 'www.petekeen.net' ) {
+  rewrite ^(.*)$ https://www.petekeen.net$request_uri? permanent;
+}
+  

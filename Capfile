@@ -28,8 +28,6 @@ set :use_ssl, true
 set :ssl_cert_path, '/etc/nginx/certs/www.petekeen.net.crt'
 set :ssl_key_path, '/etc/nginx/certs/www.petekeen.net.key'
 
-set :force_domain, 'www.petekeen.net'
-
 read_env 'prod'
 
 load 'deploy'
