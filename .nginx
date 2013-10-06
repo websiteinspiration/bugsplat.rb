@@ -1,8 +1,10 @@
-location ~* \.html$ {
-    rewrite ^(.+)\.html$ $scheme://$host$1 permanent;
-}
-
 if ($http_user_agent ~* NetShelter) {
     return 403;
 }
 
+rewrite ^/payment-integration.html https://www.petekeen.net/mastering-modern-payments permanent;
+rewrite ^/static-html-blog https://www.petekeen.net/static-html-blog permanent;
+rewrite ^/static/stan-demo-report.html https://www.petekeen.net/stan-demo-report.html permanent;
+rewrite ^/\d\d\d\d-\d\d-\d\d-(.*).html https://www.petekeen.net/$1 permanent;
+rewrite ^/\d\d\d\d-\d\d-\d\d-(.*) https://www.petekeen.net/$1 permanent;
+rewrite ^/(.*).html https://www.petekeen.net/$1 permanent;

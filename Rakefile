@@ -114,7 +114,6 @@ namespace :assets do
     end
 
     App.assets.precompile
-    
   end
 end
 
