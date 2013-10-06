@@ -3,7 +3,7 @@ if ($http_user_agent ~* NetShelter) {
 }
 
 <% pages.each do |page| %>
-rewrite ^/<%= page.page_id %> https://www.petekeen.net<%= page.html_path %> permanent;
+rewrite ^/<%= page.page_id %>$ https://www.petekeen.net<%= page.html_path %> permanent;
 <% end %>
 
 rewrite ^/payment-integration.html https://www.petekeen.net/mastering-modern-payments permanent;
