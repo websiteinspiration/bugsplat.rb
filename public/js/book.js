@@ -10,6 +10,7 @@ $(".payment-button").click(function(event) {
   }
   var frameSrc = "/iframe/" + permalink;
   $.colorbox({href: frameSrc, iframe: true, width: '800px', height: '400px'});
+  mixpanel.track("Clicked Payment Button", { "permalink": permalink });
   return false;
 });
 

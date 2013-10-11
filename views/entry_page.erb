@@ -21,6 +21,13 @@
     <p>Check out my guide on how to properly integrate Stripe with Ruby on Rails, covering background processing, audit trails, admin pages and more.</p>
     <a href="/mastering-modern-payments" class="btn btn-primary btn-large">Learn More and Buy Now</a>
   </div>
+  <% if production? %>
+  <script type="text/javascript">
+    $(function() {
+      mixpanel.track("Saw Upsell", { "page": "<%= @page.html_path %>" });
+    });
+  </script>
+  <% end %>
   <% end %>
   <div class="well" id="tags-and-formats">
   <div class="formats pull-right">

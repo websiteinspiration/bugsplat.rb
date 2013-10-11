@@ -214,3 +214,11 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<% if production? %>
+<script type="text/javascript">
+  $(function() {
+    mixpanel.track("Viewed MMP", { "coupon": "<%= @coupon %>", "affiliate": "<%= @affiliate %>" });
+  });
+</script>
+<% end %>

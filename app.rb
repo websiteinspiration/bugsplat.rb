@@ -122,6 +122,10 @@ class App < Sinatra::Base
         sprintf("$%d", amount)
       end
     end
+
+    def production?
+      ENV['RACK_ENV'] == 'production'
+    end
   end
 
   def get_coupon_and_affiliate
