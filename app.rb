@@ -126,6 +126,10 @@ class App < Sinatra::Base
     def production?
       ENV['RACK_ENV'] == 'production'
     end
+
+    def showing_mmp?
+      @mmp
+    end
   end
 
   def get_coupon_and_affiliate
@@ -221,6 +225,7 @@ class App < Sinatra::Base
   end
 
   get '/mastering-modern-payments' do
+    @mmp = true
     @page_title = 'Mastering Modern Payments: Using Stripe with Rails by Pete Keen'
     erb :mastering_modern_payments, layout: :book_layout
   end
