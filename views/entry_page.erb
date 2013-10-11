@@ -23,9 +23,7 @@
   </div>
   <% if production? %>
   <script type="text/javascript">
-    $(function() {
-      mixpanel.track("Saw Upsell", { "page": "<%= @page.html_path %>" });
-    });
+    mixpanel.track("Saw Upsell", { "page": "<%= @page.html_path %>" });
   </script>
   <% end %>
   <% end %>
