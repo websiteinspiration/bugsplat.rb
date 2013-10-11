@@ -38,12 +38,14 @@ mixpanel.init("e9f4d8ff804462ecc432e221befc36a2");</script><!-- end Mixpanel -->
 	  </div>
     </div>
     <%= relative_javascript :application %>
-    <% if production? && showing_mmp? %>
-    <script type="text/javascript">
-      $(function() {
-        mixpanel.track("Viewed MMP", { "coupon": "<%= @coupon %>", "affiliate": "<%= @affiliate %>" });
-      });
-    </script>
+    <% if production? %>
+      <% if showing_mmp? %>
+        <script type="text/javascript">
+          $(function() {
+          mixpanel.track("Viewed MMP", { "coupon": "<%= @coupon %>", "affiliate": "<%= @affiliate %>" });
+          });
+        </script>
+      <% end %>
     <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-5663087-2']);

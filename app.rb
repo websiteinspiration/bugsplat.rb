@@ -15,15 +15,6 @@ class App < Sinatra::Base
 
   Split.configure do |config|
     config.persistence = CookieAdapter
-    config.experiments = {
-      "headline_message" => {
-        :alternatives => [
-          "Want to make sure your Stripe integration is right?",
-          "What Every Rails Developer Needs to Know About Stripe"
-        ],
-        :metric => :payment
-      },
-    }
   end
 
   PAGES = Pages.new
