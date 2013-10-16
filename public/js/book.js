@@ -9,8 +9,8 @@ $(".payment-button").click(function(event) {
       return true;
   }
   var frameSrc = "/iframe/" + permalink;
-  $.colorbox({href: frameSrc, iframe: true, width: '800px', height: '400px'});
-  mixpanel.track("Clicked Payment Button", { "permalink": permalink });
+  $.colorbox({href: frameSrc, iframe: true, width: '430px', height: '500px'});
+  //mixpanel.track("Clicked Payment Button", { "permalink": permalink });
   return false;
 });
 

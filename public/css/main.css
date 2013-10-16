@@ -304,3 +304,8 @@ a del {
        -moz-border-radius: 8px;
             border-radius: 8px;
     }
+
+
+#cboxClose {
+  display: none !important;
+}
