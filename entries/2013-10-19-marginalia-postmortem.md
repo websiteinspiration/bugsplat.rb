@@ -15,11 +15,11 @@ I used this simple app called "Ideas" for seven months and loved it to pieces. I
 
 ## Lessons Learned
 
+**People want their privacy.** I originally tried pitching Marginalia as a way to keep a programming journal, which ended up being a losing proposition. First of all, software developers don't want to spend money on tools when their free or already-paid-for editor is just as good. Second, keeping journals of any kind at an external service is something that most developers are not at all into because of the privacy implications.
+
 **Itched scratches frequently bleed money.** Every month Heroku charged me $29 for SSL and a non-development-level database. Every month for more than a year, with zero income. It's not a lot of money but it's money from my web hosting budget that could have been going toward something more productive. I also spent an *awful* lot of money on paid advertising trying to get an audience with zero return.
 
 **Launching without an audience means nobody shows up.** Building a product without an excited, engaged audience is one of those things that software developers tend to do, often and with gusto. It's so easy to build up this idea in your head and in your editor and just expect people to show up after you're done. It's something that I've done three times and it's something I will hopefully never repeat. For my [latest product](/mastering-modern-payments) I started with a simple landing page with a Mailchimp signup form. Only after actually determining interest did I move forward with the plan.
-
-**People want their privacy.** I originally tried pitching Marginalia as a way to keep a programming journal, which ended up being a losing proposition. First of all, software developers don't want to spend money on tools when their free or already-paid-for editor is just as good. Second, keeping journals of any kind at an external service is something that most developers are not at all into because of the privacy implications.
 
 ## Conclusion
 
