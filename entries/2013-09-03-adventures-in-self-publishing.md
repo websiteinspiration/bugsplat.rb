@@ -114,8 +114,3 @@ Since launch day the landing page has gotten 6,084 unique page views driving 136
 I'd like to take the opportunity to thank my wife, who has put up with not only this project but all of my projects over the last two years. She's the most amazing, understanding person that I've ever met. I'd also like to thank [Michael Buckbee][buckbee], [Andrew Culver][culver], and a whole host of other people who kept me motivated and on track, right to the end.
 
 This project has been an amazing experience. I've learned so much about how to build a product, how to build an audience, and how to make a success, and it's not even over. I'll be releasing periodic updates with corrections and new information since both Stripe and Rails are both active, changing products.
-
-<div class="well" style="margin-top: 2em; margin-bottom: 2em; text-align: center;">
-  <h3><small>Sign up to get Rails and Stripe tips as well as guide update notifications (at most once per week)</small></h3>
-  <a class="btn btn-primary btn-large" href="/signup">Sign Up for Updates</a>
-</div>
