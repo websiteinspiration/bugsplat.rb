@@ -3,7 +3,9 @@ Date:  2012-09-03 17:12:47
 Id:    d33f3
 Tags:  Heroku, Programming, Marginalia
 
-I'd like to present my new webapp, [Marginalia](https://www.marginalia.io), a web based journaling and note taking tool. Notes are written in [Markdown](https://www.marginalia.io/markdown), and there are some simple shortcuts for appending timestamped entries at the end of a note, as well as a few email-based tools for creating and appending to notes. You should check it out. Look below the fold for technical details and the origin story.
+I'd like to present my new webapp, [Marginalia](http://www.marginalia.io), a web based journaling and note taking tool. Notes are written in [Markdown](http://www.marginalia.io/markdown), and there are some simple shortcuts for appending timestamped entries at the end of a note, as well as a few email-based tools for creating and appending to notes. You should check it out. Look below the fold for technical details and the origin story.
+
+*Update 2013-10-19: Marginalia is shut down and open source [on GitHub](https://github.com/peterkeen/marginalia)*
 
 --fold--
 
@@ -25,5 +27,5 @@ Marginalia is a Ruby on Rails app running on [Heroku](http://www.heroku.com) and
  * [Stripe](http://www.stripe.com) for credit card processing
  * [Mailgun](http://www.mailgun.net) for email processing
 
-I've been living in Marginalia for the last eight months and it's been a *huge* boon to my creativity and memory. I can flesh out ideas using whatever method I want and actually find it later on. If you want to try it out, just go to [the home page](https://www.marginalia.io) and click the "Try for Free" button.
+I've been living in Marginalia for the last eight months and it's been a *huge* boon to my creativity and memory. I can flesh out ideas using whatever method I want and actually find it later on. If you want to try it out, just go to [the home page](http://www.marginalia.io) and click the "Try for Free" button.
 

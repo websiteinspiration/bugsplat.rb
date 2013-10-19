@@ -4,10 +4,12 @@ Id:    0a99d
 Tags:  Marginalia, Programming
 
 In addition to writing on this blog, I've been keeping notes for various
-things on [Marginalia](https://www.marginalia.io), my web-based note taking
+things on [Marginalia](http://www.marginalia.io), my web-based note taking
 and journaling app. In my [previous post](/announcing-marginalia)
 I talked about the why and how of Marginalia itself. In this post I'd like to talk
 more about what I actually use it for day to day, in particular to keep programming journals.
+
+*Update 2013-10-19: Marginalia is shut down and open source [on GitHub](https://github.com/peterkeen/marginalia)*
 
 --fold--
 
@@ -46,4 +48,4 @@ My work and home programming journals are one big use of Marginalia. The other t
 
 ## Conclusion
 
-To check out Marginalia, just go to <https://www.marginalia.io> and click the "Try for Free" button. If you register your email address and a password with the free trial you can use the API and command line tool as well. Give it a shot, I think you'll like it.
+To check out Marginalia, just go to <http://www.marginalia.io> and click the "Try for Free" button. If you register your email address and a password with the free trial you can use the API and command line tool as well. Give it a shot, I think you'll like it.
