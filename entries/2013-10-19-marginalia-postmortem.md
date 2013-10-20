@@ -1,4 +1,4 @@
-Title: Marginalia: Post-mortem of a Dead-on-Arrival SaaS Product
+Title: Post-mortem of a Dead-on-Arrival SaaS Product
 Id: doa
 Tags: Marginalia, Programming
 Show_upsell: true
