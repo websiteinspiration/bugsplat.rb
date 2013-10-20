@@ -3,11 +3,13 @@ Id: doa
 Tags: Marginalia, Programming
 Show_upsell: true
 
-A little over a year ago I [announced the launch](/announcing-marginalia) of my latest (at the time) product named Marginalia. The idea was to be a sort of online journal. A cheaper, more programmer friendly alternative to Evernote. It never took off, despite my best intensions, and so a few months ago I told the only active user that I was going to shut it down, and today I finally took that sad action. This post is a short history of the project and a few lessons learned.
+A little over a year ago I [announced the launch](/announcing-marginalia) of my latest (at the time) product named Marginalia. The idea was to be a sort of online journal. A cheaper, more programmer friendly alternative to Evernote. It never took off, despite my best intentions, and so a few months ago I told the only active user that I was going to shut it down, and today I finally took that sad action. This post is a short history of the project and a few lessons learned.
 
 --fold--
 
 ## A Brief History
+
+<img src="https://d2s7foagexgnc2.cloudfront.net/files/e36d73e5075e0eb8456f/create_note.png">
 
 Marginalia actually started out pretty humbly. See, for a very long time I've been emailing ideas to myself and then forgetting that I did that and thus those ideas were just completely lost. I needed a better way to capture all of this so I could get it out of my head and into something more permanent. In late January 2012 I finally put together a simple Rails application that used a [Mailgun](http://www.mailgun.com) incoming account to parse emails sent to a special address and add the Markdown-formatted body content to a new page. The app would reply to that email with the `From:` address set to a unique address. Anything emailed to that address would get appended to the note with a timestamp.
 
