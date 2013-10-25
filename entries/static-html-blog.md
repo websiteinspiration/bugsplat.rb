@@ -1,5 +1,5 @@
 Title: Static HTML Blog
-Id: static-html-blog-123
+Id: static
 Order: 2
 
 This blog uses a custom [static html blog](/yet-another-not-very-static-blog-generator) engine that I wrote for a few different reasons:
