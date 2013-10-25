@@ -31,7 +31,7 @@ I am available for consulting to help jumpstart your project in a few different 
 
 Fonts are [Lato][] for headers, [Lora][] for body text, and [Inconsolata][] for code, all from the [Google Web Fonts][]The little bug image is by [Gentleface.com][]. The icons in the footer and sidebar are provided by [Font Awesome][].
 
-The site itself is mostly static content built by my [static html blog][] engine creatively named [bugsplat.rb][] and served up by [nginx][]. Deployment happens using [Capistrano][] and [Capistrano::Buildpack][].
+The site itself is mostly static content built by my static html blog engine creatively named [bugsplat.rb][] and served up by [nginx][]. Deployment happens using [Capistrano][] and [Capistrano::Buildpack][].
 
 Hosting is provided by [RamNode][]. It's a powerful, very speedy SSD-backed VPS hosted in Atlanta, GA.
 
@@ -41,7 +41,6 @@ Hosting is provided by [RamNode][]. It's a powerful, very speedy SSD-backed VPS 
 [Google Web Fonts]: http://www.google.com/webfonts
 [Gentleface.com]: http://www.gentleface.com/
 [bugsplat.rb]: https://github.com/peterkeen/bugsplat.rb
-[static html blog]: /static-html-blog
 [nginx]: http://wiki.nginx.org/Main
 [Capistrano]: https://github.com/capistrano/capistrano
 [Capistrano::Buildpack]: https://github.com/peterkeen/capistrano-buildpack
