@@ -105,6 +105,13 @@ footer {
   margin-bottom: 40px;
 }
 
+.book .container footer {
+  border-top: 0;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 80%;
+}
+
 li {
   line-height: 180%;
 }
