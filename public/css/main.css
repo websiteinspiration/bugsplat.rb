@@ -16,7 +16,7 @@ body.book {
   background-color: #fcfcfc;
   padding-left: 3em;
   padding-right: 3em;
-  margin-bottom: 3em;
+  margin-bottom: 10px;
   margin-top: 1em;
 }
 
@@ -105,11 +105,12 @@ footer {
   margin-bottom: 40px;
 }
 
-.book .container footer {
+.book footer {
   border-top: 0;
-  margin-top: 0;
-  margin-bottom: 1em;
-  font-size: 80%;
+  padding-top: -100px;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  max-width: 800px;
 }
 
 li {
