@@ -4,13 +4,58 @@ var check = false;
 return check; }
 
 $(".payment-button").click(function(event) {
-  var permalink = $(this).data()["permalink"];
-  if (typeof(permalink) === "undefined" || mobilecheck()) {
-      return true;
+  if (mobilecheck()) {
+    return true;
   }
-  var frameSrc = "/iframe/" + permalink;
+
+  var href = $(this).attr("href");
+  var frameSrc = href.replace("buy", "iframe");
   $.colorbox({href: frameSrc, iframe: true, width: '430px', height: '500px'});
-  mixpanel.track("Clicked Payment Button", { "permalink": permalink });
+  var mixpanel = mixpanel || false;
+  if (mixpanel) {
+    mixpanel.track("Clicked Payment Button", { "permalink": permalink });
+  }
   return false;
 });
 
+$(function() {
+  var url = $.url();
+  var coupon = $.cookie('cc') || url.param('cc') || url.param('coupon_code');
+  if (coupon) {
+    $.cookie('cc', coupon, { expires: 60, path: '/', domain: 'petekeen.net' });
+  }
+
+  var affiliate = $.cookie('aff') || url.param('a') || url.param('aff');
+  if (affiliate) {
+    $.cookie('aff', affiliate, { expires: 60, path: '/', domain: 'petekeen.net' });
+  }
+
+  function formatPrice(amount, decimalPlaces) {
+    if (decimalPlaces == undefined) {
+      decimalPlaces = 2;
+    }
+    return "$" + amount.toFixed(decimalPlaces);
+  }
+
+  $('.payment-button').each(function(i, btn) {
+    var button = $(btn);
+    var rawPrice = button.data('price');
+
+    if (!rawPrice) {
+      return
+    }
+
+    var price = parseInt(rawPrice);
+    var coupon = $.cookie('cc');
+
+    if (coupon) {
+      var couponAmount = parseInt(coupon.slice(-2));
+      var newPrice = price * (1 - couponAmount / 100.0);
+      button.find('.pricetag').html(formatPrice(newPrice));
+      if (button.find('.striketag')) {
+        button.find('.striketag').html(formatPrice(price, 0));
+        button.find('.striketag').after('&nbsp;');
+      }
+    }
+  });
+});

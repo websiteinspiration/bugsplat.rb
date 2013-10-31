@@ -87,6 +87,10 @@ namespace :assets do
       ENV['ASSET_HOST'] = File.read('.asset_host')
     end
 
+    if File.exists?('.sales_host')
+      ENV['SALES_HOST'] = File.read('.sales_host')
+    end
+
     puts "Compiling pages"
     app = App.new
     request = Rack::MockRequest.new(app)

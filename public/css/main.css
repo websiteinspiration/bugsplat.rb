@@ -317,3 +317,7 @@ a del {
 #cboxClose {
   display: none !important;
 }
+
+.striketag {
+  text-decoration: line-through;
+}

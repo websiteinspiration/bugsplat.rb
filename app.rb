@@ -41,7 +41,9 @@ class App < Sinatra::Base
 
     js :application, [
       '/js/jquery.js',
+      '/js/purl.js',
       '/js/bootstrap.js',
+      '/js/jquery.cookie.js',
       '/js/jquery.colorbox.js',
       '/js/book.js'
     ]
@@ -99,19 +101,8 @@ class App < Sinatra::Base
       PAGES.related_posts(page)[0..2].compact
     end
 
-    def price(amount, include_strike=true)
-      new_amount = amount * 0.9
-      if @coupon
-        coupon_amount = Integer(@coupon[-2,2]) rescue 10
-        new_amount = amount * (1 - (coupon_amount / 100.0))
-        if include_strike
-          sprintf("<strike>$%d</strike> $%0.2f", amount, new_amount)
-        else
-          sprintf("$%0.2f", new_amount)
-        end
-      else
-        sprintf("$%d", amount)
-      end
+    def sales_host
+      ENV['SALES_HOST']
     end
 
     def production?
@@ -123,27 +114,8 @@ class App < Sinatra::Base
     end
   end
 
-  def get_coupon_and_affiliate
-    @coupon = cookies['cc'] || params['cc'] || params['coupon_code']
-    store_in_cookie('cc', @coupon) if @coupon
-    @affiliate = cookies['aff'] || params['aff']
-    store_in_cookie('aff', @affiliate) if @affiliate
-  end
-
-  def store_in_cookie(key, value)
-    @response.set_cookie key, {
-      value: value,
-      expires: Time.now + 60*24*60*60,
-      path: '/',
-      domain: @request.host == 'localhost' ? false : 'petekeen.net',
-      httponly: true
-    }
-  end
-
   before do
     @pages = PAGES
-
-    get_coupon_and_affiliate
   end
 
   get '/' do
@@ -225,21 +197,6 @@ class App < Sinatra::Base
     redirect '/mastering-modern-payments'
   end
 
-  get '/iframe/:permalink' do
-    finished(:payment)
-    redirect "#{ENV['SALES_HOST']}/iframe/#{params[:permalink]}"
-  end
-
-  get '/buy/:permalink' do
-    finished(:payment)
-    redirect "#{ENV['SALES_HOST']}/buy/#{params[:permalink]}"
-  end
-
-  get '/signup' do
-    finished(:signup)
-    redirect "http://eepurl.com/ANT25"
-  end
-  
   get '/tag/:tag' do
     tag = params[:tag].gsub('.html', '').downcase
     @tagged_pages = @pages.search(tag, "tags").reverse
