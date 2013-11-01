@@ -109,7 +109,7 @@ namespace :assets do
       write_page("#{page.name}.html", request)
     end
 
-    ['sitemap.xml', 'index.xml', 'index.html', 'tags.html', 'archive.html'].each do |page|
+    ['sitemap.xml', 'index.xml', 'index.html', 'tags.html', 'archive.html', 'mastering-modern-payments.html'].each do |page|
       write_page(page, request)
     end
 

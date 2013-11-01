@@ -187,7 +187,7 @@ class App < Sinatra::Base
     redirect '/mastering-modern-payments'
   end
 
-  get '/mastering-modern-payments' do
+  get %r{^/mastering-modern-payments(\.html)?$} do
     @mmp = true
     @page_title = 'Mastering Modern Payments: Using Stripe with Rails by Pete Keen'
     erb :mastering_modern_payments, layout: :book_layout
