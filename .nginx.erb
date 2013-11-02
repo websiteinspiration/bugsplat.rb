@@ -2,6 +2,10 @@ if ($http_user_agent ~* NetShelter) {
     return 403;
 }
 
+location /mastering-modern-payments {
+  rewrite ^ https://www.petekeen.net$request_uri? permanent;
+}
+
 <% pages.each do |page| %>
 rewrite ^/<%= page.page_id %>$ https://www.petekeen.net<%= page.html_path %> permanent;
 <% end %>
