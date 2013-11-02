@@ -3,7 +3,9 @@ if ($http_user_agent ~* NetShelter) {
 }
 
 location /mastering-modern-payments {
-  rewrite ^ https://www.petekeen.net$request_uri? permanent;
+  if ( $scheme != 'https' ) {
+    rewrite ^ https://www.petekeen.net$request_uri? permanent;
+  }
 }
 
 <% pages.each do |page| %>
