@@ -3,6 +3,8 @@ Id:    dns
 Tags:  DNS
 Show_upsell: true
 
+*This article is featured in [Hacker Monthly issue 42](http://hackermonthly.com/issue-42.html).*
+
 Frequently I come across confusion with domain names. *Why doesn't my website work? Why is this stupid thing broken, everything I try fails, I just want it to work!!* Invariably the question asker either doesn't know what DNS is or doesn't understand how something fundamental works. More generally, people think that DNS is scary or complicated. This article is an attempt at quelling that fear. *DNS is easy* once you understand a few basic concepts.
 
 ## What is DNS
