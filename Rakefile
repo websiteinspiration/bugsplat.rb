@@ -107,6 +107,7 @@ namespace :assets do
       end
 
       write_page("#{page.name}.html", request)
+      write_page("#{page.name}.pdf", request)
     end
 
     ['sitemap.xml', 'index.xml', 'index.html', 'tags.html', 'archive.html', 'mastering-modern-payments.html'].each do |page|
@@ -138,55 +139,6 @@ def write_page(path, request)
 
   File.open(filename, "w+") do |f|
     f.write(contents)
-  end
-end
-
-
-namespace :email do
-  task :send do
-    gibbon = Gibbon.new
-    list_id = gibbon.lists(:filters => {:list_name => 'Bugsplat Blog Posts'})['data'][0]['id']
-    template_id = gibbon.templates['user'][0]['id']
-    campaigns = gibbon.campaigns(:limit => 1000)['data']
-    campaign_titles = campaigns.map { |c| c['title'] }
-
-    App::PAGES.blog_posts.each do |post|
-      title = "bugsplat-#{post['id']}"
-      next if campaign_titles.include? title
-
-      puts "Creating campaign for '#{post.title}'"
-
-      campaign_id = gibbon.campaign_create(
-        :type => :regular,
-        :content => {
-          :html_std_content00 => "<h1><a href=\"https://bugsplat.info/#{post.html_path}\">#{post.title}</a></h1>" + post.render,
-          :text => "##{post.title}\n\n" + post.body + "\n\nhttps://bugsplat.info/#{post.html_path}",
-        },
-        :options => {
-          :list_id     => list_id,
-          :subject     => "New blog post on bugsplat.info: #{post.title}",
-          :from_email  => 'pete@bugsplat.info',
-          :from_name   => 'Pete Keen',
-          :template_id => template_id,
-          :title       => title,
-        }
-      )
-
-      gibbon.campaign_send_now(:cid => campaign_id)
-    end
-  end
-
-  task :delete_all do
-    gibbon = Gibbon.new
-
-    campaigns = []
-    begin
-      campaigns = gibbon.campaigns(:limit => 1000)['data']
-      campaigns.each do |c|
-        puts "deleting #{c['title']}"
-        gibbon.campaign_delete :cid => c['id']
-      end
-    end while campaigns.length > 0
   end
 end
 
