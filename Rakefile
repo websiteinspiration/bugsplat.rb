@@ -91,7 +91,7 @@ namespace :assets do
       ENV['SALES_HOST'] = File.read('.sales_host')
     end
 
-    puts "Compiling pages"
+    STDERR.puts "Compiling pages"
     app = App.new
     request = Rack::MockRequest.new(app)
 
@@ -131,7 +131,7 @@ end
 
 
 def write_page(path, request)
-  puts path
+  STDERR.puts path
   filename = File.join(File.dirname(__FILE__), "public", path)
   FileUtils.mkdir_p(File.dirname(filename))
 
