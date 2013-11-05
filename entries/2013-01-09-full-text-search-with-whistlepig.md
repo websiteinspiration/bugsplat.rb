@@ -10,6 +10,8 @@ Tags:  Programming, Meta
 
 Yesterday I suddenly developed the intense need to add search to this site. Among the problems with this is that the site is kind of a weird hybrid between static and dynamic, and it has no database backend. If posts were stored in Postgres this would be a trivial matter, but they're just markdown files on disk. After flailing around for awhile I came across a library named [Whistlepig][] which purported to do in-memory full text indexing with a full query language.
 
+*November 5, 2013: I've removed search because nobody used it and this way the site can be 100% static.*
+
 --fold--
 
 ### First pass: Regular expressions

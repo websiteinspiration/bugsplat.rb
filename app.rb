@@ -205,18 +205,6 @@ class App < Sinatra::Base
     erb :tagged_pages
   end
 
-  get '/search' do
-    @query = (params[:q] || "").strip
-    if @query == ""
-      @results = []
-    else
-      query = @query.downcase.gsub(" or ", " OR ")
-      @results = @pages.search("(#{query}) blog_post:yes").reverse
-    end
-    @page_title = "Search"
-    erb :search
-  end
-
   get %r{^/([\w-]+)(\.)?(\w+)?$} do
     params[:page_name] = params[:captures].first
     params[:format] = params[:captures].last
