@@ -86,7 +86,7 @@ class App < Sinatra::Base
     end
 
     def page_url
-      request.url
+      "https://www.petekeen.net" + request.fullpath
     end
 
     def link_list
