@@ -85,6 +85,10 @@ class App < Sinatra::Base
       _title
     end
 
+    def page_url
+      request.url
+    end
+
     def link_list
       linked_pages = @pages.pages.find_all { |p| p['order'] != nil }
       links = linked_pages.sort_by { |p| p['order'].to_i }.map do |p|
