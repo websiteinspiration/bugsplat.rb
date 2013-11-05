@@ -88,7 +88,7 @@ class App < Sinatra::Base
     def page_url
       path = request.fullpath.
         gsub("index.html", '').
-        gsub!(".html", '')
+        gsub(".html", '')
       "https://www.petekeen.net" + path
     end
 
