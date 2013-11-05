@@ -3,7 +3,6 @@
 require 'rake'
 require 'digest/sha1'
 require 'set'
-require 'gibbon'
 require 'anemone'
 
 $:.unshift(File.dirname(__FILE__))
