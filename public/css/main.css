@@ -44,6 +44,10 @@ blockquote p {
   padding-bottom: 1.5em;
 }
 
+footer .nav-links {
+  padding-top: 1em;
+}
+
 .nav-links:before,
 .nav-links:after {
   display: table;
