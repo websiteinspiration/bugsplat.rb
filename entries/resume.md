@@ -45,6 +45,7 @@ pdf_template: resume_pdf
 
 * [Mastering Modern Payments](https://www.petekeen.net/mastering-modern-payments), a book about integrating Stripe payments with Rails.
 * [Twitter Fiction Reader](http://twitter-fiction-reader.herokuapp.com), a curated archive of fictional twitter accounts. Simple Sinatra application.
+* [Docverter](http://www.docverter.com), an open source document conversion web service.
 * [petekeen.net](https://www.petekeen.net), my personal programming and tech related blog. Recently converted to a simple Sinatra application.
 
 ### Education
