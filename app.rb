@@ -244,7 +244,7 @@ class App < Sinatra::Base
 
     if params[:format] == 'md'
       content_type "text/plain"
-      return @page.contents
+      return "# #{@page.title}\n\n#{@page.body}"
     end
 
     view = @page.view || :entry_page
@@ -258,7 +258,7 @@ class App < Sinatra::Base
     res = Docverter::Conversion.run do |c|
       c.from     = 'html'
       c.to       = 'pdf'
-      c.content  = erb(:pdf, layout: false).gsub('&#39;', "'")
+      c.content  = erb(@page.pdf_template, layout: false).gsub('&#39;', "'")
 
       Dir.glob(File.join(public_path, "fonts", "*.ttf")).each do |font|
         c.add_other_file font

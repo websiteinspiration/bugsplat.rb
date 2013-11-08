@@ -17,23 +17,16 @@
   }
   @page {
     size: 8.5in 11in;
-    margin: 1in;
+    margin: 0.8in;
 
     @bottom-right {
       content: element(footer);
-    }
-
-    @bottom-left {
-      content: "<%= @page.title %> | petekeen.net";
     }
   } 
 
   body {
     font-family: 'Lora';
-  }
-
-  h1,h2,h3,h4 {
-    font-family: 'Lato', helvetica, arial, sans-serif;
+    font-size: 1em;
   }
 
   code,pre {
@@ -64,6 +57,10 @@
     border-radius: 4px;
   }
 
+  h1,h2,h3,h4 {
+    font-family: 'Lato', helvetica, arial, sans-serif;
+  }
+
   hr
   {
     margin-bottom: 1em;
@@ -77,6 +74,15 @@
   hr:after {
     content: ".    .    .";
     letter-spacing: 2em;
+  }
+
+  @font-face {
+    font-family: 'Droid Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('droid_sans.ttf');
+    -fs-pdf-font-embed: embed;
+    -fs-pdf-font-encoding: Identity-H;
   }
   @font-face {
     font-family: 'Lora';
@@ -94,6 +100,7 @@
     -fs-pdf-font-embed: embed;
     -fs-pdf-font-encoding: Identity-H;
   }
+
   @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -102,6 +109,7 @@
     -fs-pdf-font-embed: embed;
     -fs-pdf-font-encoding: Identity-H;
   }
+
   @font-face {
     font-family: 'Lato';
     font-style: bold;
@@ -189,8 +197,7 @@
   <div id="content-container">
     <div id="content">
       <img src="https://d2s7foagexgnc2.cloudfront.net/files/ded624de7816989fa2fc/bugsplat-2.png" style="float:right;clear:both">
-      <h1><%= @page.title %></h1>
-      <h2>by Pete Keen</h2>
+      <h1>Pete Keen</h1>
       <%= @page.render %>
     </div>
   </div>

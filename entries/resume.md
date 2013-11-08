@@ -2,6 +2,7 @@ Title: Resume
 Order: 1
 Id:    r
 View:  resume_view
+pdf_template: resume_pdf
 
 ### Experience
 
@@ -62,4 +63,12 @@ Graduated December 2006
 * Git, SVN, CVS
 * Linux, Mac OS X
 * PostgreSQL, MySQL, Redis
+
+### Contact
+
+* Email: [pete@petekeen.net](mailto:pete@petekeen.net)
+* Twitter: [@zrail](http://twitter.com/zrail)
+* Github: [peterkeen](https://github.com/peterkeen)
+* LinkedIn: [peterkeen](http://www.linkedin.com/in/peterkeen)
+* Phone: (503) 766-5711
 

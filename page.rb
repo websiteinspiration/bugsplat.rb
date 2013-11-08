@@ -264,6 +264,9 @@ class Page
     @headers.has_key?('show_upsell_form') && @headers['show_upsell_form'] == 'true'
   end
 
+  def pdf_template
+    @headers.has_key?('pdf_template') ? @headers['pdf_template'].to_sym : :pdf
+  end
 
   def docverter_markdown
 """% #{@headers['title']}
