@@ -107,6 +107,7 @@ namespace :assets do
 
       write_page("#{page.name}.html", request)
       write_page("#{page.name}.pdf", request)
+      write_page("#{page.name}.md", request)
     end
 
     ['sitemap.xml', 'index.xml', 'index.html', 'tags.html', 'archive.html', 'mastering-modern-payments.html'].each do |page|
