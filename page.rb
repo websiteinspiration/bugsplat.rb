@@ -276,4 +276,16 @@ class Page
 #{@body}
 """
   end
+
+  def markdown_content
+"""# #{title}
+
+#{natural_date}
+
+#{body}
+
+URL: http://pkn.me/#{page_id}
+"""
+  end
+
 end

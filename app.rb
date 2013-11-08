@@ -244,7 +244,7 @@ class App < Sinatra::Base
 
     if params[:format] == 'md'
       content_type "text/plain"
-      return "# #{@page.title}\n\n#{@page.body}"
+      return @page.markdown_content
     end
 
     view = @page.view || :entry_page
