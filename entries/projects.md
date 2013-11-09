@@ -1,5 +1,5 @@
 Title: Projects
-Id: projects-123
+Id: p
 Order: 4
 
 <h3 id="opensource">Open Source</h3>
@@ -10,7 +10,7 @@ I have developed various bits of open source software and <a href="https://githu
 * [Capistrano::Buildpack](https://github.com/peterkeen/capistrano-buildpack), a Capistrano extension for deploying with [Heroku-style buildpacks](https://devcenter.heroku.com/articles/buildpacks)
 * [Ledger Web](https://github.com/peterkeen/ledger-web), a web-based reporting system for the [Ledger](/ledger.html) command line accounting tool.
 
-<hr class="separator">
+* * * *
 
 <h3 id="startups">Startups / Side Projects</h3>
 
@@ -23,7 +23,7 @@ Marginalia is an online notebook where entries are written in Markdown and can b
 * [Marginalia: A web-based journaling and note taking tool](/announcing-marginalia)
 * [Keeping a Programming Journal with Marginalia](/keeping-a-programming-journal-with-marginalia)
 
-<hr class="separator">
+* * * *
 
 <h4 id="docverter"><a href="http://www.docverter.com">Docverter</a></h4>
 
@@ -33,7 +33,7 @@ Docverter is plaintext to formatted document conversion tool with a RESTful API.
 
 * [On the fly Markdown Conversion](/on-the-fly-markdown-conversion)
 
-<hr class="separator">
+* * * *
 
 <h4 id="twfr"><a href="http://twitter-fiction-reader.bugsplat.info">Twitter Fiction Reader</a></h4>
 
@@ -41,7 +41,7 @@ Docverter is plaintext to formatted document conversion tool with a RESTful API.
 
 Twitter Fiction Reader is a curated archive of public Twitter accounts that tell fictional stories 140 characters at a time. The main application is based on Sinatra and PostgreSQL, with a simple cron task for pulling down fresh tweets.
 
-<hr class="separator">
+* * * *
 
 <h4 id="remindlyo"><a href="http://www.remindlyo.com">Remindlyo</a></h4>
 
@@ -51,12 +51,10 @@ Remember to call your mother every week. Remindlyo will call your number at a sc
 
 * [Remindlyo is a Go](/remindlyo-is-a-go)
 
-<hr class="separator">
+* * * *
 
 <h4 id="fivepad"><a href="http://www.fivepad.me">Fivepad</a></h4>
 
 The easiest way to keep track of your apartment search. I build this to help my girlfriend and I search for apartments in the Portland area, but it's useful anywhere Craigslist has coverage. Using it is pretty simple. You just paste in a Craigslist URL into the Add a Place box and it scrapes the page for useful information and shows it to you on a map, along with all of your other places. Fivepad is a straightforward Rails application which is now shut down.
 
 * [Introducing Fivepad](/introducing-fivepad)
-
-
