@@ -81,7 +81,7 @@ div.entry
   margin-bottom: 2em;
 }
 
-hr.separator
+hr
 {
   margin-bottom: 3em;
   margin-top: 2em;
@@ -91,7 +91,7 @@ hr.separator
   text-align: center;
 }
 
-hr.separator:after {
+hr:after {
   content: "....";
   letter-spacing: 2em;
 }
