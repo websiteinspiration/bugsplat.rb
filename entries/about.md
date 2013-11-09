@@ -29,7 +29,7 @@ I am available for consulting to help jumpstart your project in a few different 
 
 ### Colophon
 
-All of the content on this site is written in Markdown and styled using a simple Twitter Bootstrap-derived theme. Fonts are [Lato][] for headers, [Lora][] for body text, and [Inconsolata][] for code, all from the [Google Web Fonts][]The little bug image is by [Gentleface.com][]. The icons in the footer and sidebar are provided by [Font Awesome][].
+All of the content on this site is written in Markdown and styled using a simple Twitter Bootstrap-derived theme. Fonts are [Lato][] for headers, [Lora][] for body text, and [Inconsolata][] for code, all from the [Google Web Fonts][]. The little bug image is from [Iconmonstr]. The icons in the footer and sidebar are provided by [Font Awesome][].
 
 Over the life of this site I've evolved a static site generator named [bugsplat.rb][] (this site used to be hosted on `bugsplat.info`) that compiles HTML, PDF, and Markdown extracts which are served up by [nginx][]. Deployment happens using [Capistrano][] and [Capistrano::Buildpack][]. I'm currently hosting everything on a [Digital Ocean][] VPS instance.
 
@@ -37,7 +37,7 @@ Over the life of this site I've evolved a static site generator named [bugsplat.
 [Lora]: http://www.google.com/fonts/specimen/Lora
 [Lato]: http://www.google.com/fonts/specimen/Lato
 [Google Web Fonts]: http://www.google.com/webfonts
-[Gentleface.com]: http://www.gentleface.com/
+[Iconmonstr]: http://iconmonstr.com/bug-3-icon/
 [bugsplat.rb]: https://github.com/peterkeen/bugsplat.rb
 [nginx]: http://wiki.nginx.org/Main
 [Capistrano]: https://github.com/capistrano/capistrano
