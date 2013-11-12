@@ -1,4 +1,4 @@
-Title: Little Data
+Title: Little Data: How do we query all of our personal data?
 Id:    little
 Tags:  Programming
 
