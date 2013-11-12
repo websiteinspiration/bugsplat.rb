@@ -1,5 +1,5 @@
 Title: Little Data
-Id:    433c7
+Id:    little
 Tags:  Programming
 
 My wife and I recently moved from Portland, OR to Ann Arbor, MI. Amongst the cacophany of change that is involved with a move like that, we of course changed to the local utility company. Browsing around in their billing application one day I came across a page that showed a daily graph of our energy usage, supposedly valid through yesterday for both gas and electric. And it has a button that spits out a CSV file of the date, which means if I actually wanted to I could build my own tool to analyze our usage.
