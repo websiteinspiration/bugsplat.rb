@@ -19,7 +19,7 @@ Some of the things in that list have easily accessed APIs, like RunKeeper and Wi
 
 None of this is Big Data. This is all Little Data. It's reminiscent of the [Quantified Self](http://quantifiedself.com/) movement, but it's more about combining existing data sets into a unified whole than synthesizing new data.
 
-I've gone so far as to build isolated silos for some of these data sets. For example, I track my finances using [ledger](http://www.ledger-cli.org) and a [variety of home-grown tools](/tags/Ledger). My email gets backed up hourly and that's provided some useful data occasionally. Even so, all of it is still in individual silos. Ideally I would be able to dump all of this into some kind of personal "data soup" that I could query with a unified interface and build analytics tools on top of.
+I've gone so far as to build isolated silos for some of these data sets. For example, I track my finances using [ledger](http://www.ledger-cli.org) and a [variety of home-grown tools](/tag/Ledger). My email gets backed up hourly and that's provided some useful data occasionally. Even so, all of it is still in individual silos. Ideally I would be able to dump all of this into some kind of personal "data soup" that I could query with a unified interface and build analytics tools on top of.
 
 At this point I have a bunch of questions and no answers. What shape does the data soup take? How does data get in, how would it get queried? What questions could I realistically answer? I'm going to keep thinking about this and hopefully you will too.
 
