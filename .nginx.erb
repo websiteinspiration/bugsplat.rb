@@ -13,13 +13,13 @@ location /mastering-modern-payments {
 rewrite ^/<%= page.page_id %>$ https://www.petekeen.net<%= page.html_path %> permanent;
 <% end %>
 
-rewrite ^/payment-integration.html https://www.petekeen.net/mastering-modern-payments permanent;
+rewrite ^/payment-integration\.html https://www.petekeen.net/mastering-modern-payments permanent;
 rewrite ^/mmp(\?.*)? https://www.petekeen.net/mastering-modern-payments$1 permanent;
 rewrite ^/mmppo https://www.petekeen.net/mastering-modern-payments permanent;
 rewrite ^/mmp-preorders https://www.petekeen.net/mastering-modern-payments permanent;
-rewrite ^/\d\d\d\d-\d\d-\d\d-(.*).html https://www.petekeen.net/$1 permanent;
+rewrite ^/\d\d\d\d-\d\d-\d\d-(.*)\.html https://www.petekeen.net/$1 permanent;
 rewrite ^/\d\d\d\d-\d\d-\d\d-(.*) https://www.petekeen.net/$1 permanent;
-rewrite ^/(.*).html https://www.petekeen.net/$1 permanent;
+rewrite ^/(.*)\.html https://www.petekeen.net/$1 permanent;
 
 if ( $host != 'www.petekeen.net' ) {
   rewrite ^(.*)$ https://www.petekeen.net$request_uri? permanent;
