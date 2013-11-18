@@ -1,4 +1,4 @@
-Title: Resume
+Title: Résumé
 Order: 1
 Id:    r
 View:  resume_view
