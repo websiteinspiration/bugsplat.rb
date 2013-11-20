@@ -20,6 +20,9 @@ gem 'sinatra-contrib'
 gem 'sinatra-asset-pipeline'
 gem 'uglifier'
 gem 'yui-compressor'
+gem 'asset_sync', '~> 1.0.0'
+gem 'activemodel', '~> 3.2.15'
+gem 'dotenv'
 
 group :development do
   gem 'shotgun'

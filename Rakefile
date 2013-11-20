@@ -5,6 +5,8 @@ require 'digest/sha1'
 require 'set'
 require 'anemone'
 require 'sinatra/asset_pipeline/task.rb'
+require 'asset_sync'
+require 'dotenv/tasks'
 
 $:.unshift(File.dirname(__FILE__))
 require 'app'
@@ -83,15 +85,7 @@ task :tagless do
 end
 
 namespace :assets do
-  task :precompile => :write_nginx_file do
-
-    if File.exists?('.asset_host')
-      ENV['ASSET_HOST'] = File.read('.asset_host')
-    end
-
-    if File.exists?('.sales_host')
-      ENV['SALES_HOST'] = File.read('.sales_host')
-    end
+  task :precompile => [:dotenv, :write_nginx_file] do
 
     STDERR.puts "Compiling pages"
     app = App.new
@@ -120,6 +114,18 @@ namespace :assets do
     tags.keys.each do |tag|
       write_page("/tag/#{tag}.html", request)
     end
+
+    AssetSync.configure do |config|
+      config.fog_provider = 'AWS'
+      config.fog_directory = ENV['FOG_DIRECTORY']
+      config.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
+      config.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
+      config.prefix = 'assets'
+      config.public_path = Pathname('./public')
+      config.log_silently = false
+    end
+
+    AssetSync.sync
   end
 end
 
