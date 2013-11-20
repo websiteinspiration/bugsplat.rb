@@ -103,7 +103,7 @@ namespace :assets do
       end
 
       write_page("#{page.name}.html", request)
-#      write_page("#{page.name}.pdf", request)
+      write_page("#{page.name}.pdf", request)
       write_page("#{page.name}.md", request)
     end
 
