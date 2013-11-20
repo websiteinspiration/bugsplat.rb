@@ -87,6 +87,8 @@ end
 namespace :assets do
   task :precompile => [:dotenv, :write_nginx_file] do
 
+    Dotenv.load("#{ENV['HOME']}/.pkdc")
+
     STDERR.puts "Compiling pages"
     app = App.new
     request = Rack::MockRequest.new(app)
