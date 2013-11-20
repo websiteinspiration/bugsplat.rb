@@ -22,8 +22,9 @@ class App < Sinatra::Base
   Docverter.base_url = 'http://c.docverter.com'
 
   set :assets_precompile, %w(application.js application.css print.css ie7.css *.png *.jpg *.svg *.eot *.ttf *.woff *.ico)
-  set :assets_css_compressor, :sass
+  set :assets_css_compressor, :yui
   set :assets_js_compressor, :uglifier
+
   register Sinatra::AssetPipeline
 
   helpers Sinatra::Cookies

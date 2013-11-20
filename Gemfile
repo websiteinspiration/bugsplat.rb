@@ -19,7 +19,7 @@ gem 'split', '>= 0.6.3'
 gem 'sinatra-contrib'
 gem 'sinatra-asset-pipeline'
 gem 'uglifier'
-gem 'sass'
+gem 'yui-compressor'
 
 group :development do
   gem 'shotgun'
