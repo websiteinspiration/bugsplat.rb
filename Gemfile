@@ -8,7 +8,6 @@ gem 'rake'
 gem 'redcarpet'
 gem 'ratom'
 gem 'docverter', '>= 0.0.7'
-gem 'sinatra-simple-assets', :require => false
 gem 'therubyracer'
 gem 'xml-sitemap'
 gem 'capistrano-buildpack'
@@ -18,6 +17,9 @@ gem 'pygments.rb'
 gem 'rack', '>= 1.3.10'
 gem 'split', '>= 0.6.3'
 gem 'sinatra-contrib'
+gem 'sinatra-asset-pipeline'
+gem 'uglifier'
+gem 'sass'
 
 group :development do
   gem 'shotgun'

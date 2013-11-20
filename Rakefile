@@ -4,9 +4,12 @@ require 'rake'
 require 'digest/sha1'
 require 'set'
 require 'anemone'
+require 'sinatra/asset_pipeline/task.rb'
 
 $:.unshift(File.dirname(__FILE__))
 require 'app'
+
+Sinatra::AssetPipeline::Task.define! App
 
 task :next do
   print "Title: "
@@ -106,7 +109,7 @@ namespace :assets do
       end
 
       write_page("#{page.name}.html", request)
-      write_page("#{page.name}.pdf", request)
+#      write_page("#{page.name}.pdf", request)
       write_page("#{page.name}.md", request)
     end
 
@@ -117,8 +120,6 @@ namespace :assets do
     tags.keys.each do |tag|
       write_page("/tag/#{tag}.html", request)
     end
-
-    App.assets.precompile
   end
 end
 

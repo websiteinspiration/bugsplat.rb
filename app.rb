@@ -5,7 +5,7 @@ require 'page'
 require 'strip_renderer'
 require 'atom/pub'
 require 'docverter'
-require 'sinatra/simple_assets'
+require 'sinatra/asset_pipeline'
 require 'xml-sitemap'
 require 'split'
 require 'sinatra/cookies'
@@ -21,55 +21,14 @@ class App < Sinatra::Base
 
   Docverter.base_url = 'http://c.docverter.com'
 
-  register Sinatra::SimpleAssets
-  assets do
-    css :application, [
-      '/css/bootstrap.css',
-      '/css/main.css',
-      '/css/github.css',
-      '/css/font-awesome.css',
-      '/css/colorbox.css'
-    ]
-
-    css :ie7, [
-      '/css/font-awesome-ie7.css'
-    ]
-
-    css :print, [
-      '/css/print.css'
-    ]
-
-    js :application, [
-      '/js/jquery.js',
-      '/js/purl.js',
-      '/js/bootstrap.js',
-      '/js/jquery.cookie.js',
-      '/js/jquery.colorbox.js',
-      '/js/book.js'
-    ]
-  end
-
-  def url_for_asset(file)
-    url = file[0] == '/' ? file : "/#{file}"
-    ENV['ASSET_HOST'] ? "#{ENV['ASSET_HOST']}#{url}" : url
-  end
+  set :assets_precompile, %w(application.js application.css print.css ie7.css *.png *.jpg *.svg *.eot *.ttf *.woff *.ico)
+  set :assets_css_compressor, :sass
+  set :assets_js_compressor, :uglifier
+  register Sinatra::AssetPipeline
 
   helpers Sinatra::Cookies
   helpers Split::Helper
   helpers do
-
-    def relative_stylesheet(bundle, media="screen")
-      settings.assets.paths_for("#{bundle}.css").map do |file|
-        "<link media=\"#{media}\" rel=\"stylesheet\" href=\"#{url_for_asset(file)}\">"
-      end.join("\n")
-    end
-
-    def relative_javascript(bundle, async=false)
-      settings.assets.paths_for("#{bundle}.js").map do |file|
-        async_val = async ? "async" : ""
-        "<script src=\"#{url_for_asset(file)}\" #{async_val}></script>"
-      end.join("\n")
-    end
 
     def title
       _title = if @page
