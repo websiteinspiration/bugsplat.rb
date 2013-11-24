@@ -4,7 +4,7 @@ Tags:  Programming, Data
 
 My wife and I recently moved from Portland, OR to Ann Arbor, MI. Among the cacophony of change that is involved with a move like that, we of course changed to the local utility company. Browsing around in their billing application one day I came across a page that showed a daily graph of our energy usage, supposedly valid through yesterday for both gas and electric. And it has a button that spits out a CSV file of the date, which means if I actually wanted to I could build my own tool to analyze our usage.
 
-<img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/a166dda3df87f6378032/dte_usage.png" alt="Energy Usage Graphs">
+<img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/ca6e7d1b07db4cdc94a7/dte_usage.png" alt="Energy Usage Graphs">
 
 This got me thinking about all of the little databases out there that have data about me that I might actually consider useful. Useful, in this case, means that by looking some combination of the data I could draw some useful conclusions and take some sort of action. Here's a list of the ones that immediately came to mind:
 
