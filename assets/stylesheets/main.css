@@ -130,7 +130,7 @@ p {
 }
 
 .masthead {
-  background-image: url("/assets/bugsplat-48.png");
+  background-image: url("bugsplat-48.png");
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: right 10px;
