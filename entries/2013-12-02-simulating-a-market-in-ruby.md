@@ -12,7 +12,7 @@ Trading markets of all kinds are in the news pretty much continuously. The flavo
 
 A market exists to enable people to trade something, whether that be shares of stock or pork futures contracts or cryptocurrency tokens. In modern markets the fundamental core is called the **order book**. This is an open listing of offers to buy and sell a given commodity at some price. For example:
 
-* Pete has 10 shares of TLSA and is willing to sell them at $10 per share
+* Pete has 10 shares of TSLA and is willing to sell them at $10 per share
 * Andrew would like to buy 10 shares of TSLA and is willing to pay $9.99 per share
 
 The order book looks like this:
