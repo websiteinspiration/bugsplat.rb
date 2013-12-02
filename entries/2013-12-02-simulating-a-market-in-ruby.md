@@ -13,7 +13,7 @@ Trading markets of all kinds are in the news pretty much continuously. The flavo
 A market exists to enable people to trade something, whether that be shares of stock or pork futures contracts or cryptocurrency tokens. In modern markets the fundamental core is called the **order book**. This is an open listing of offers to buy and sell a given commodity at some price. For example:
 
 * Pete has 10 shares of TLSA and is willing to sell them at $10 per share
-* Andrew would like to buy 10 shares of TSLA and is willing to pay $9.95 per share
+* Andrew would like to buy 10 shares of TSLA and is willing to pay $9.99 per share
 
 The order book looks like this:
 
@@ -59,9 +59,9 @@ Trades only happen at the top of the order book. Because there's a match at the 
 
 This is how the notional price of an equity or contract is determined by the market. Each time a trade happens that price gets broadcast to the world as *the* price.
 
-These orders are called *limit orders* because they say "buy TSLA for $9.99 but *no more*" or "sell TSLA for $10 but *no less*." In our example, if Fred didn't look at the book and decides to put in a buy for $10.05, he'll get his 10 shares at $10.05 and Pete would make out like a bandit and the price would briefly shoot up to $10.05.
+These orders are called *limit orders* because they say "buy TSLA for $9.99 but *no more*" or "sell TSLA for $10 but *no less*." In our example, if Fred didn't look at the book and decides to put in a buy for $10.05, he'll get his 10 shares at $10.00 from Pete.
 
-Limit orders are the fundemental building block of a market. There are other order types but they're always built using one or more limit orders.
+Limit orders are the fundemental building block of a market. There are other order types but they're almost always built using one or more limit orders. One notable exception is a *market* order which orders a specific quantity at whatever the current market price is. (thanks for the corrections, [minimax](https://news.ycombinator.com/item?id=6834599)!)
 
 ## Building a Simulation
 
