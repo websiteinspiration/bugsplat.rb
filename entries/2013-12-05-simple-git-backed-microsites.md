@@ -1,6 +1,7 @@
 Title: Simple Git-backed Microsites
 Id:    sites
 Tags:  Programming
+Show_upsell: true
 
 A few days ago I built a new tool I'm calling [Sites](https://github.com/peterkeen/sites). It builds on top of git-backed wikis powered by GitHub's [Gollum](https://github.com/gollum/gollum) system and lets me build and deploy microsites in the amount of time it takes me to create a CNAME.
 
