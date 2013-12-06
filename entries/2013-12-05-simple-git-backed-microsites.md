@@ -35,7 +35,7 @@ If you click on one of those links, you'll get the familiar Gollum interface:
 
 <img src="https://d2s7foagexgnc2.cloudfront.net/files/210052500230dac13a38/gollum.png">
 
-To create a new site, just append it's name to `sites.bugsplat.info`:
+To create a new site, just append its name to `sites.bugsplat.info`:
 
 <img src="https://d2s7foagexgnc2.cloudfront.net/files/03f53229df6da8920ab3/create.png">
 
@@ -48,6 +48,3 @@ If you want to see how the demo site is put together, it's running [here](http:/
 ### Installation
 
 I built Sites to fit my infrastructure which is a delightful bastardization of [12 Factor](http://12factor.net/) so I haven't tried installing it elsewhere. I know it won't run properly on Heroku because it needs to be able to put the git repos in a persistent place, but it might work well as a Docker image. If you get it running somewhere please let me know and I'll link it here.
-
-
-
