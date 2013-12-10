@@ -1,17 +1,18 @@
 <div class="entry">
   <h1><a href="<%= @page.html_path %>"><%= @page['title'] %></a></h1>
-  <% if @page.date %>
-  <p class="date"><%= @page.natural_date %></p>
+  <% if @page.is_blog_post? %>
+  <div class="top-metadata">
+    <p class="date pull-right">
+      <%= render :erb, :share_links, layout: false %>
+    </p>
+    <p class="date"><%= @page.reading_time %> min read</p>
+  </div>
   <% end %>
   <%= @page.render %>
   <% if @page.is_blog_post? %>
-  <% @post_url = "http%3A%2F%2Fpkn.me/#{@page['id']}" %>
   <p class="date" style="margin-top: 1em; margin-bottom: 1em;">
     Share:&nbsp;
-    <a href="https://plus.google.com/share?url=<%= @post_url %>"><i class="icon-google-plus"></i></a>&nbsp;
-    <a href="https://facebook.com/sharer.php?u=<%= @post_url %>"><i class="icon-facebook"></i></a>&nbsp;
-    <a href="https://twitter.com/intent/tweet?url=<%= @post_url %>&text=<%= @page['title'] %>&via=zrail"><i class="icon-twitter"></i></a>&nbsp;
-    <a style="font-family: 'Lato', helvetica, arial, sans-serif;" href="https://news.ycombinator.com/submitlink?u=http%3A%2F%2Fwww.petekeen.net<%= @page.html_path %>&t=<%= @page['title'] %>">Y</a>&nbsp;
+    <%= render :erb, :share_links, layout: false %>
   </p>
   <% end %>
   <% if @page.show_upsell? %>
@@ -31,21 +32,23 @@
     <a rel="nofollow" href="<%= @page.pdf_path %>"><img alt="Download PDF" src="https://d2s7foagexgnc2.cloudfront.net/files/7d44797a6ac52e7fb898/pdf.png"></img></a>
     <a rel="nofollow" href="<%= @page.markdown_path %>"><img alt="Download Raw Markdown" src="https://d2s7foagexgnc2.cloudfront.net/files/4fb4d0b0a7a0bb33a2e0/markdown.png"></img></a>
   </div>
-  <% if @page.tags.length > 0 %>
-  <p class="date">Tagged: <% @page.tags.each do |tag| %>
-  <a href="/tag/<%= tag %>"><%= tag %></a>&nbsp;
-  <% end %>
+  <p class="date">
+    <% if @page.date %>
+      <%= @page.short_date %>&nbsp;&nbsp;
+    <% end %>
+    <% if @page.tags.length > 0 %>
+      Tagged:
+      <% @page.tags.each do |tag| %>
+        <a href="/tag/<%= tag %>"><%= tag %></a>&nbsp;
+      <% end %>
+    <% end %>
   </p>
-  <% end %>
-
   <% if @page.is_blog_post? && has_related_posts(@page) %>
-  <p>
     <h4>Related Posts</h4>
     <ul class="archive-list">
       <% related_posts(@page).each do |page| %>
         <li><span class="date fixed-width"><%= page.date.strftime('%Y-%m-%d') %> &raquo;</span> <a href="<%= page.html_path %>"><%= page['title'] %></a></li>      
       <% end %>
     </ul>
-  </p>
   <% end %>
 </div>

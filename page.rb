@@ -228,12 +228,16 @@ class Page
     end
   end
 
+  def reading_time
+    ([body.split(/\s+/).length / 180.0, 1].max).to_i
+  end
+
   def natural_date
-    date ? date.strftime("%A, %e %B %Y") : ''
+    date ? date.strftime("%e %B %Y") : ''
   end
 
   def short_date
-    date ? date.strftime("%e %B %Y") : ''
+    date ? date.strftime("%e %b %Y") : ''
   end
 
   def html_path
