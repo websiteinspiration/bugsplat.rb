@@ -1,6 +1,7 @@
 Title: A Practical Exercise in Web Scraping
 Id:    scrape
 Tags:  Programming
+Show_upsell: true
 
 Yesterday a friend of mine linked me to a fictional web serial that he was reading and enjoying, but could be enjoying more if it was available as a Kindle book. The author, as of yet, hasn't made one available and has asked that fan-made versions not be linked publicly. 
 That said, it's a very long story and would be much easier to read using a dedicated reading app, so I built my own Kindle version to enjoy. This post is the story of how I built it.
