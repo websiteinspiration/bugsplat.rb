@@ -25,6 +25,16 @@
       covering audit trails, background workers and more.</p>
     <a href="/mastering-modern-payments" class="btn btn-primary btn-large">Learn more and Download Free Sample Chapters</a>
   </div>
+    <% if production? %>
+      <script type="text/javascript">
+        (function() {
+          window._pa = window._pa || {};
+          var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+          pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/52b08162fa50df42040000b9.js";
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+        })();
+      </script>
+    <% end %>
   <% end %>
   <div class="well" id="tags-and-formats">
   <div class="formats pull-right">
