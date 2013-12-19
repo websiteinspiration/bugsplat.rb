@@ -13,8 +13,36 @@
     <link rel="dns-prefetch" href="//sales.petekeen.net" />
     <title><%= title %></title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-    <%= stylesheet_tag 'application' %>
-    <%= stylesheet_tag 'print', media: 'print' %>
+    <script type="text/javascript" src="<%= javascript_path 'gz_test' %>.gz"></script>
+    <script type="text/javascript">
+      function downloadCSS(path, media) {
+        var element = document.createElement("link");
+        element.rel = "stylesheet";
+        element.type = "text/css";
+        element.media = media;
+        var elementPath = path;
+        if (window.gzEnabled)
+          elementPath = elementPath + ".gz";
+        element.href = elementPath;
+        document.head.appendChild(element);
+      }
+      downloadCSS("<%= stylesheet_path 'application' %>", "screen");
+      downloadCSS("<%= stylesheet_path 'print' %>", "print");
+
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        var elementPath = "<%= javascript_path 'application' %>"
+        if (window.gzEnabled)
+          elementPath = elementPath + ".gz";
+        element.src = elementPath;
+        document.body.appendChild(element);
+      }
+      if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+      else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+      else window.onload = downloadJSAtOnload;
+    </script>    
     <!--[if lt IE 9]>
       <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <%= stylesheet_tag('ie7') %>
@@ -69,7 +97,6 @@ mixpanel.init("e9f4d8ff804462ecc432e221befc36a2");</script><!-- end Mixpanel -->
         </ul>
       </footer>
     </div>
-    <%= javascript_tag 'application' %>
     <% if production? %>
     <script type="text/javascript">
     var _gaq = _gaq || [];
