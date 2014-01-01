@@ -20,7 +20,7 @@ $(".payment-button").click(function(event) {
 
 $(function() {
   var url = $.url();
-  var coupon = url.param('cc') || $.cookie('cc') || url.param('coupon_code');
+  var coupon = url.param('cc') || url.param('coupon_code') || $.cookie('cc');
   if (coupon) {
     $.cookie('cc', coupon, { expires: 60, path: '/', domain: 'petekeen.net' });
   }
