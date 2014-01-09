@@ -9,9 +9,11 @@ require 'sinatra/asset_pipeline'
 require 'xml-sitemap'
 require 'split'
 require 'sinatra/cookies'
+require 'gibbon'
 require './cookie_adapter'
 
 class App < Sinatra::Base
+
 
   Split.configure do |config|
     config.persistence = CookieAdapter
@@ -28,6 +30,7 @@ class App < Sinatra::Base
   set :assets_protocol, :https
 
   register Sinatra::AssetPipeline
+
 
   helpers Sinatra::Cookies
   helpers Split::Helper
@@ -229,6 +232,21 @@ class App < Sinatra::Base
 
     content_type 'application/pdf'
     res
+  end
+
+  post '/subscribe' do
+    email = params[:email]
+    gb = Gibbon::API.new
+    begin
+      gb.lists.subscribe({
+        id:           ENV['MAILCHIMP_LIST_ID'],
+        email:        {:email => email},
+        double_optin: false
+      })
+    rescue StandardError => e
+      return e.message
+    end
+    redirect params[:next]
   end
 
   post '/ping' do
