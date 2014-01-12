@@ -3,11 +3,11 @@ Id: a
 
 ### Contact Me
 
-* <i class="icon-envelope"></i> Email: [pete@petekeen.net](mailto:pete@petekeen.net)
-* <i class="icon-twitter"></i> Twitter: [@zrail](http://twitter.com/zrail)
-* <i class="icon-github"></i> Github: [peterkeen](https://github.com/peterkeen)
-* <i class="icon-linkedin"></i> LinkedIn: [peterkeen](http://www.linkedin.com/in/peterkeen)
-* <i class="icon-phone"></i> Phone: (503) 766-5711
+* <i class="fa fa-envelope"></i> Email: [pete@petekeen.net](mailto:pete@petekeen.net)
+* <i class="fa fa-twitter"></i> Twitter: [@zrail](http://twitter.com/zrail)
+* <i class="fa fa-github"></i> Github: [peterkeen](https://github.com/peterkeen)
+* <i class="fa fa-linkedin"></i> LinkedIn: [peterkeen](http://www.linkedin.com/in/peterkeen)
+* <i class="fa fa-phone"></i> Phone: (503) 766-5711
 
 * * * *
 

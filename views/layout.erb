@@ -13,6 +13,7 @@
     <link rel="dns-prefetch" href="//sales.petekeen.net" />
     <title><%= title %></title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" type="text/css" />
     <script type="text/javascript" src="<%= javascript_path 'gz_test' %>.gz"></script>
     <script type="text/javascript">
       function downloadCSS(path, media) {
@@ -45,7 +46,7 @@
     </script>    
     <!--[if lt IE 9]>
       <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <%= stylesheet_tag('ie7') %>
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome-ie7.min.css" type="text/css" />
     <![endif]-->
     <link rel="alternate" type="application/atom+xml" href="/index.xml"> 
     <link rel="icon" href="<%= image_path('favicon.ico') %>"/>
@@ -88,12 +89,12 @@ mixpanel.init("e9f4d8ff804462ecc432e221befc36a2");</script><!-- end Mixpanel -->
       <footer>
         <ul class="nav-links">
 		  <li>&copy; <a href="/">Pete Keen</a></li>
-          <li><a href="https://github.com/peterkeen" data-original-title="Github" class="tip"><i class="icon-github"></i></a></li>
-          <li><a href="http://www.linkedin.com/in/peterkeen" data-original-title="LinkedIn" class="tip"><i class="icon-linkedin"></i></a></li>
-          <li><a href="http://twitter.com/zrail" data-original-title="Twitter" class="tip"><i class="icon-twitter"></i></a></li>
-          <li><a href="https://plus.google.com/+PeteKeen?rel=author" data-original-title="Google+" class="tip"><i class="icon-google-plus"></i></a></li>
-          <li><a href="mailto:pete@bugsplat.info" data-original-title="Email" class="tip"><i class="icon-envelope"></i></a></li>
-          <li><a href="/index.xml" data-original-title="Subscribe to Feed" class="tip"><i class="icon-rss"></i></a></li>
+          <li><a href="https://github.com/peterkeen" data-original-title="Github" class="tip"><i class="fa fa-github"></i></a></li>
+          <li><a href="http://www.linkedin.com/in/peterkeen" data-original-title="LinkedIn" class="tip"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="http://twitter.com/zrail" data-original-title="Twitter" class="tip"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://plus.google.com/+PeteKeen?rel=author" data-original-title="Google+" class="tip"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="mailto:pete@bugsplat.info" data-original-title="Email" class="tip"><i class="fa fa-envelope-o"></i></a></li>
+          <li><a href="/index.xml" data-original-title="Subscribe to Feed" class="tip"><i class="fa fa-rss"></i></a></li>
         </ul>
       </footer>
     </div>
