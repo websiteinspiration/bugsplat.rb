@@ -36,7 +36,7 @@ class App < Sinatra::Base
   helpers Split::Helper
   helpers do
 
-    def title
+    def title(with_suffix=true)
       _title = if @page
         @page['title']
       elsif @page_title
@@ -44,7 +44,8 @@ class App < Sinatra::Base
       else
         nil
       end
-      unless @page && @page['skip_title_suffix']
+
+      if with_suffix && (@page.nil? || @page['skip_title_suffix'].nil?)
         _title = [_title, "Pete Keen"].compact.join(" | ")
       end
       _title
@@ -202,6 +203,10 @@ class App < Sinatra::Base
 
     if @page['description']
       @description = @page['description']
+    end
+
+    if @page['thumbnail']
+      @thumbnail = @page['thumbnail']
     end
 
     if params[:format] == 'md'
