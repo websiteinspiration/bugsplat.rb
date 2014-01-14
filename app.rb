@@ -91,7 +91,7 @@ class App < Sinatra::Base
   end
 
   get '/' do
-    @index_pages = @pages.blog_posts.reverse[0,4]
+    @index_pages = @pages.blog_posts.sort_by(&:date).reverse[0,4]
     @description = "My name is Pete Keen. I'm a Ruby developer and in my spare time I write books."
     erb :index
   end
@@ -112,7 +112,7 @@ class App < Sinatra::Base
   end
 
   get '/index.xml' do
-    @archive_pages = @pages.blog_posts.reverse
+    @archive_pages = @pages.blog_posts.sort_by(&:date).reverse
     feed = Atom::Feed.new do |f|
       f.title = 'Pete Keen'
       f.links << Atom::Link.new(:href => 'http://www.petekeen.net')
@@ -171,7 +171,7 @@ class App < Sinatra::Base
 
   get '/tag/:tag' do
     tag = params[:tag].gsub('.html', '').downcase
-    @tagged_pages = @pages.search(tag, "tags").reverse
+    @tagged_pages = @pages.tagged(tag).sort_by(&:date).reverse
     @tag_name = params[:tag].gsub('.html', '')
     @page_title = "Tagged " + @tag_name
     erb :tagged_pages
@@ -182,10 +182,7 @@ class App < Sinatra::Base
     params[:format] = params[:captures].last
     @hide_discussion = true
 
-    @page = @pages.search(params[:page_name], "name")[0] || \
-            @pages.search(params[:page_name], "page_id")[0] || \
-            @pages.pages.detect { |p| p.name == params[:page_name] } || \
-            @pages.pages.detect { |p| p.page_id == params[:page_name] }
+    @page = @pages.find(params[:page_name])
 
     unless @page
       raise Sinatra::NotFound

@@ -1,7 +1,7 @@
 <h2>Archive</h2>
 <h3>Pages</h3>
 <ul class="archive-list">
-  <% @pages.search("no", "blog_post").each do |page| %>
+  <% @pages.non_blog_posts.sort_by(&:name).each do |page| %>
     <% next if page['hide_from_archive'] %>
     <li><a href="<%= page.html_path %>"><%= page['title'] %></a></li>
   <% end %>

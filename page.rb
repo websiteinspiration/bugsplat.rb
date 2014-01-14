@@ -3,7 +3,6 @@ Encoding.default_internal, Encoding.default_external = ['utf-8'] * 2
 require 'rubygems'
 require 'redcarpet'
 require 'date'
-require 'whistlepig'
 require 'redcarpet'
 require 'pygments'
 
@@ -19,70 +18,59 @@ end
 
 class Pages
 
-  attr_reader :pages_by_docid, :pages
+  attr_reader :pages, :blog_posts, :non_blog_posts
   
   def initialize
-    setup_renderers
+    @pages_by_page_name = {}
+    @pages_by_page_id = {}
+    @pages_by_tag = {}
+    @blog_posts = []
+    @non_blog_posts = []
+
+    setup_renderer
     parse_all
   end
 
-  def setup_renderers
-    @normal_renderer = Redcarpet::Markdown.new(
+  def setup_renderer
+    @renderer = Redcarpet::Markdown.new(
       HTMLwithPygments, :fenced_code_blocks => true)
-    @strip_renderer = Redcarpet::Markdown.new(
-      StripRenderer, :fenced_code_blocks => true)
-    @index = Whistlepig::Index.new("index")
   end
 
   def parse_all
     @pages = find_all_files.map do |page|
-      Page.new(page, @normal_renderer)
+      Page.new(page, @renderer)
     end
-
-    @pages_by_docid = {}
 
     @pages.each do |page|
-      entry = Whistlepig::Entry.new
+      @pages_by_page_name[page.name] = page
+      @pages_by_page_id[page.page_id] = page
 
-      entry.add_string "body", page.render(@strip_renderer)
-      entry.add_string "name", page.name
-      entry.add_string "title", page.title.downcase
-      entry.add_string "tags", page.tags.join(" ").downcase
-      entry.add_string "page_id", page.page_id
-      entry.add_string "blog_post", page.is_blog_post? ? "yes" : "no"
-      docid = @index.add_entry(entry)
+      page.tags.each do |tag|
+        @pages_by_tag[tag] ||= []
+        @pages_by_tag[tag] << page
+      end
 
-      page.docid = docid
-      @pages_by_docid[docid] = page
+      if page.is_blog_post?
+        @blog_posts << page
+      else
+        @non_blog_posts << page
+      end
     end
+
+  end
+
+  def find(thing)
+    @pages_by_page_id[thing] || @pages_by_page_name[thing]
+  end
+
+  def tagged(tag)
+    (@pages_by_tag[tag] || [])
   end
 
   def find_all_files
     Dir.glob(File.join(File.dirname(__FILE__), "entries", "*.md")).map do |fullpath|
       File.basename(fullpath)
     end
-  end
-
-  def search(query_text, part="body", sort=:date)
-
-    begin
-      query = Whistlepig::Query.new(part, query_text)
-    rescue Whistlepig::ParseError => e
-      puts "error: #{e}"
-      return []
-    end
-
-    docids = @index.search(query)
-
-    results = docids.compact.map do |docid|
-      @pages_by_docid[docid]
-    end
-
-    results.compact.sort_by { |p| p.send(sort) }
-  end
-
-  def blog_posts(sort_by=:date)
-    search("yes", "blog_post")
   end
 
   def each
