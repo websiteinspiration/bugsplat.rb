@@ -1,8 +1,10 @@
-Title: Making eBooks with Docverter
-Date:  2013-06-18 12:00:00
-Id:    9b84f
-Tags:  Docverter
-Show_upsell: true
+---
+title: Making eBooks with Docverter
+date: '2013-06-18 12:00:00'
+id: 9b84f
+tags: Docverter
+show_upsell: 'true'
+---
 
 [mmp]: /mastering-modern-payments
 [git]: /hosting-private-git-repositories-with-gitolite

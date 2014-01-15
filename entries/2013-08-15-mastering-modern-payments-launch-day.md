@@ -1,6 +1,8 @@
-Title: Mastering Modern Payments Is Out Today!
-Id:    mmplaunch
-Tags:  Programming, Books
+---
+title: Mastering Modern Payments Is Out Today!
+id: mmplaunch
+tags: Programming, Books
+---
 
 <p>
 <img style="float: right; margin-left: 20px;" src="https://d2s7foagexgnc2.cloudfront.net/files/a8dab64c9e6402ee7b16/stripe_rails.png">

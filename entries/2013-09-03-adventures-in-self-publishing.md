@@ -1,7 +1,9 @@
-Title: Adventures in Self Publishing
-Id:    pub
-Tags:  Books
-Show_upsell: true
+---
+title: Adventures in Self Publishing
+id: pub
+tags: Books
+show_upsell: 'true'
+---
 
 [mmp]: https://www.petekeen.net/mastering-modern-payments
 [leanpub]: https://leanpub.com

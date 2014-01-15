@@ -1,7 +1,9 @@
-Title: ProcLaunch v1.2
-Date:  2011-04-15 12:58:59
-Id:    061e1
-Tags:  Programming, Proclaunch
+---
+title: ProcLaunch v1.2
+date: '2011-04-15 12:58:59'
+id: 061e1
+tags: Programming, Proclaunch
+---
 
 Just a few bug fixes this time:
 

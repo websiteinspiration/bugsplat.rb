@@ -1,7 +1,9 @@
-Title: Daemons are Our Picky, Temperamental Friends
-Date:  2010-08-01 18:09:00
-Tags:  Programming, Perl, Proclaunch
-Id:    12
+---
+title: Daemons are Our Picky, Temperamental Friends
+date: '2010-08-01 18:09:00'
+tags: Programming, Perl, Proclaunch
+id: '12'
+---
 
 [God]:             http://god.rubyforge.org/
 [bluepill]:        http://github.com/arya/bluepill

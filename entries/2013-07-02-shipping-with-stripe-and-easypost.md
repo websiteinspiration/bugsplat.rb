@@ -1,7 +1,9 @@
-Title: Shipping with Stripe and EasyPost
-Id:    0e350
-Tags:  Programming
-Show_upsell: true
+---
+title: Shipping with Stripe and EasyPost
+id: 0e350
+tags: Programming
+show_upsell: 'true'
+---
 
 [stripe]: https://stripe.com
 [easypost]: https://www.easypost.com

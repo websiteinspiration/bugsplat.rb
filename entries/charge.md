@@ -1,5 +1,7 @@
-Title: Why is there a charge on my card?
-Id:    c
+---
+title: Why is there a charge on my card?
+id: c
+---
 
 ### It's a charge for my consulting services or book
 

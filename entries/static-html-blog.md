@@ -1,6 +1,8 @@
-Title: Static HTML Blog
-Id: static
-Order: 2
+---
+title: Static HTML Blog
+id: static
+order: '2'
+---
 
 This blog uses a custom [static html blog](/yet-another-not-very-static-blog-generator) engine that I wrote for a few different reasons:
 

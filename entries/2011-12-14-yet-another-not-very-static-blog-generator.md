@@ -1,7 +1,9 @@
-Title: Yet Another (not very) Static Blog Generator
-Date:  2011-12-14 18:30:26
-Tags:  Meta
-Id:    7e074
+---
+title: Yet Another (not very) Static Blog Generator
+date: '2011-12-14 18:30:26'
+tags: Meta
+id: 7e074
+---
 
 [firstpost]: /yet-another-static-html-generator
 [mustache]: http://mustache.github.com/

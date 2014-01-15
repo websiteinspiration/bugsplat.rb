@@ -1,7 +1,9 @@
-Title: Blog Relocation
-Id:    79934
-Tags:  Meta
-Show_upsell: true
+---
+title: Blog Relocation
+id: '79934'
+tags: Meta
+show_upsell: 'true'
+---
 
 [lol]: https://support.leagueoflegends.com/entries/20739888-Bug-Splat-and-Game-Crashes
 [lush]: https://www.lush.co.uk/product/6328/Bugsplat

@@ -1,7 +1,9 @@
-Title: Deploy 12-Factor Apps with Capistrano::Buildpack
-Date:  2012-12-30 12:04:31
-Id:    90b36
-Tags:  Programming, Heroku
+---
+title: Deploy 12-Factor Apps with Capistrano::Buildpack
+date: '2012-12-30 12:04:31'
+id: 90b36
+tags: Programming, Heroku
+---
 
 [prev]: /deploying-a-12-factor-app-with-capistrano
 [12-factor]: http://www.12factor.net/

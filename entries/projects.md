@@ -1,6 +1,8 @@
-Title: Projects
-Id: p
-Order: 4
+---
+title: Projects
+id: p
+order: '4'
+---
 
 <h3 id="opensource">Open Source</h3>
 

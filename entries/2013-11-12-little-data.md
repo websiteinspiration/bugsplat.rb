@@ -1,6 +1,8 @@
-Title: Little Data: How do we query personal data?
-Id:    little
-Tags:  Programming, Data
+---
+title: ! 'Little Data: How do we query personal data?'
+id: little
+tags: Programming, Data
+---
 
 My wife and I recently moved from Portland, OR to Ann Arbor, MI. Among the cacophony of change that is involved with a move like that, we of course changed to the local utility company. Browsing around in their billing application one day I came across a page that showed a daily graph of our energy usage, supposedly valid through yesterday for both gas and electric. And it has a button that spits out a CSV file of the date, which means if I actually wanted to I could build my own tool to analyze our usage.
 

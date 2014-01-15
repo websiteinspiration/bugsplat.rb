@@ -1,8 +1,10 @@
-Title: Résumé
-Order: 1
-Id:    r
-View:  resume_view
+---
+title: Résumé
+order: '1'
+id: r
+view: resume_view
 pdf_template: resume_pdf
+---
 
 ### Experience
 

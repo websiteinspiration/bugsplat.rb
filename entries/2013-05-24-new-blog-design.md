@@ -1,6 +1,8 @@
-Title: New Blog Design
-Id:    9ddae
-Tags:  Meta
+---
+title: New Blog Design
+id: 9ddae
+tags: Meta
+---
 
 For the past three years this blog has has featured the same basic design. Header, sidebar, content, footer. Simple, classic, kind of ... homely. Today I decided to give a new design a whirl, and if you're reading this on the website you can see what's changed.
 

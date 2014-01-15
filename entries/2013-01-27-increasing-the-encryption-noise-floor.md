@@ -1,7 +1,9 @@
-Title: Increasing the Encryption Noise Floor
-Date:  2013-01-27 18:06:32
-Id:    d9b85
-Tags:  Programming, Meta
+---
+title: Increasing the Encryption Noise Floor
+date: '2013-01-27 18:06:32'
+id: d9b85
+tags: Programming, Meta
+---
 
 Inspired by Tim Bray's [recent post about encrypting his website][tbray], I decided to enable and force HTTPS for bugsplat.info. The process was straightforward and, turns out, completely free. Read on to find out how and why.
 

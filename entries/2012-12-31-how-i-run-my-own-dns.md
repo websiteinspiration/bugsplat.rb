@@ -1,8 +1,10 @@
-Title: How I run my own DNS servers
-Date:  2012-12-31 12:15:00
-Id:    f699a
-Tags:  DNS, Devops, Email
-Show_upsell: true
+---
+title: How I run my own DNS servers
+date: '2012-12-31 12:15:00'
+id: f699a
+tags: DNS, Devops, Email
+show_upsell: 'true'
+---
 
 *This article was featured in [Hacker Monthly Issue 35](http://hackermonthly.com/issue-35.html).*
 

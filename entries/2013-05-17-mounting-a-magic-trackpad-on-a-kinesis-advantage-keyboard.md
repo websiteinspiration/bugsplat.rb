@@ -1,6 +1,8 @@
-Title: Mounting a Magic Trackpad on a Kinesis Advantage Keyboard
-Id:    8b211
-Tags:  Hardware
+---
+title: Mounting a Magic Trackpad on a Kinesis Advantage Keyboard
+id: 8b211
+tags: Hardware
+---
 
 [dashgrip]: http://www.amazon.com/gp/product/B003A8D6YG/
 [kinesis]: http://www.amazon.com/gp/product/B000LVJ9W8/

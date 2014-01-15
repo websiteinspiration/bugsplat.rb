@@ -1,7 +1,9 @@
-Title: How and why I'm not running my own DNS
-Id:    df11a
-Tags:  DNS, Devops
-Show_upsell: true
+---
+title: How and why I'm not running my own DNS
+id: df11a
+tags: DNS, Devops
+show_upsell: 'true'
+---
 
 [route53]: http://aws.amazon.com/route53/
 [how-i-run-my-own-dns]: /how-i-run-my-own-dns

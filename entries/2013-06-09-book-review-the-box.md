@@ -1,7 +1,10 @@
-Title: Book Review: The Box
-Id:    91dd2
-Tags:  Book Reviews
-Description: After reading The Box by Marc Levinson I'm relatively certain the Millenium Falcon would be considered a breakbulk tramp freighter.
+---
+title: ! 'Book Review: The Box'
+id: 91dd2
+tags: Book Reviews
+description: After reading The Box by Marc Levinson I'm relatively certain the Millenium
+  Falcon would be considered a breakbulk tramp freighter.
+---
 
 [falcon]: http://en.wikipedia.org/wiki/Millennium_Falcon
 [box]: http://www.amazon.com/gp/product/B003U2TR5O/

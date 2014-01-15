@@ -1,7 +1,9 @@
-Title: Everyone Needs Goals
-Date:  2010-05-27 20:37:00
-Tags:  Programming
-Id:    8
+---
+title: Everyone Needs Goals
+date: '2010-05-27 20:37:00'
+tags: Programming
+id: '8'
+---
 
 [1]:               /actionable-information
 [Calorific]:       http://github.com/peterkeen/calorific

@@ -123,30 +123,25 @@ class Page
   DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 
   attr_accessor :docid
-  attr_reader :name, :body
+  attr_reader :name, :body, :original_filename, :original_body, :headers
 
   def initialize(filename, renderer)
     @file = filename
+    @original_filename = filename
     @name = self.class.normalize_name(filename)
     @renderer = renderer
     parse_page
   end
 
   def parse_page
-    headers, body = contents.split(/\n\n/, 2)
-    parse_headers(headers)
-    parse_body(body)
-  end
-
-  def parse_headers(header_text)
-    @headers = {}
-    header_text.split("\n").each do |header|
-      name, value = header.split(/:\s+/, 2)
-      @headers[name.downcase] = value
+    if contents =~ /\A(---\s*\n.*?\n?)^(---\s*$\n?)(.*)/m
+      @headers = YAML.load($1)
+      parse_body($3)
     end
   end
 
   def parse_body(body_text)
+    @original_body = body_text
     @before_fold, after_fold = body_text.split("--fold--")
     @body = body_text.sub("--fold--", '')
   end

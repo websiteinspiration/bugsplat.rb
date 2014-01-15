@@ -1,7 +1,9 @@
-Title: On-the-fly Markdown Conversion to PDF and Docx
-Date:  2012-10-20 12:21:33
-Id:    46c44
-Tags:  Docverter, Programming, Meta
+---
+title: On-the-fly Markdown Conversion to PDF and Docx
+date: '2012-10-20 12:21:33'
+id: 46c44
+tags: Docverter, Programming, Meta
+---
 
 Today I added PDF, Docx, and Markdown download links to the bottom of every post here on Bugsplat.
 Scroll down to the bottom to see them, the scroll back up here to read how it works.

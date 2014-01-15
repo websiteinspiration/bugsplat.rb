@@ -1,7 +1,9 @@
-Title: Program your Finances: Command-line Accounting
-Date:  2010-05-23 15:15:00
-Tags:  Personal Finance, Ledger
-Id:    7
+---
+title: ! 'Program your Finances: Command-line Accounting'
+date: '2010-05-23 15:15:00'
+tags: Personal Finance, Ledger
+id: '7'
+---
 
 *Note: you can find much more information about ledger on [ledger-cli.org](http://ledger-cli.org), including links to official documentation and other implementations*
 

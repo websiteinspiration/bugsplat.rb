@@ -1,7 +1,9 @@
-Title: Concurrency on Heroku Cedar
-Date:  2011-11-27 18:52:36
-Tags:  Heroku, FivePad, Projects
-Id:    50b7f
+---
+title: Concurrency on Heroku Cedar
+date: '2011-11-27 18:52:36'
+tags: Heroku, FivePad, Projects
+id: 50b7f
+---
 
 [FivePad]: https://www.fivepad.me
 [redis]: http://redis.io

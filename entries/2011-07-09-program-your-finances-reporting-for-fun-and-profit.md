@@ -1,7 +1,9 @@
-Title: Program your Finances: Reporting for Fun and Profit
-Date:  2011-07-09 08:14:55
-Tags:  Personal Finance, Ledger
-Id:    4b79e
+---
+title: ! 'Program your Finances: Reporting for Fun and Profit'
+date: '2011-07-09 08:14:55'
+tags: Personal Finance, Ledger
+id: 4b79e
+---
 
 [Ledger]: http://ledger-cli.org
 [getrichslowly]: http://www.getrichslowly.org

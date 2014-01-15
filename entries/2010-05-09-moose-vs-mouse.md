@@ -1,7 +1,9 @@
-Title: Moose vs Mouse and OOP in Perl
-Date:  2010-05-09 08:00:00
-Tags:  Perl, Programming
-Id:    4
+---
+title: Moose vs Mouse and OOP in Perl
+date: '2010-05-09 08:00:00'
+tags: Perl, Programming
+id: '4'
+---
 
 [SparkPeople]:          http://www.sparkpeople.com/
 [Calorific]:            http://github.com/peterkeen/calorific

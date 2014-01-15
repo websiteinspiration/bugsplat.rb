@@ -1,5 +1,7 @@
-Title: About Pete
-Id: a
+---
+title: About Pete
+id: a
+---
 
 ### Contact Me
 

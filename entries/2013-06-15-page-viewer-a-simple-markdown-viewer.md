@@ -1,7 +1,9 @@
-Title: Page Viewer, a Simple Markdown Viewer
-Id:    faeaa
-Tags:  Programming
-Show_upsell: true
+---
+title: Page Viewer, a Simple Markdown Viewer
+id: faeaa
+tags: Programming
+show_upsell: 'true'
+---
 
 [mmp]: /mastering-modern-payments
 [page_viewer]: https://github.com/peterkeen/page_viewer

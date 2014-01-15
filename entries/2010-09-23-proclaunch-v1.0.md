@@ -1,7 +1,9 @@
-Title: ProcLaunch v1.0
-Date:  2010-09-23 19:39:47
-Tags:  Programming, Proclaunch
-Id:    0d5b3
+---
+title: ProcLaunch v1.0
+date: '2010-09-23 19:39:47'
+tags: Programming, Proclaunch
+id: 0d5b3
+---
 
 I kind of started [ProcLaunch][] as a lark. Can I actually do better than the existing user space process managers? It turns out that at least a few people think so. I've gotten a ton of great feedback from [thijsterlouw](http://github.com/thijsterlouw), who actually filed bug reports and helped me work through a bunch of issues. ProcLaunch even has some tests now!
 

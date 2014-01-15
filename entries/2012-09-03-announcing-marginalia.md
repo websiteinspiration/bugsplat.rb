@@ -1,7 +1,9 @@
-Title: Marginalia: A web-based journaling and note taking tool
-Date:  2012-09-03 17:12:47
-Id:    d33f3
-Tags:  Heroku, Programming, Marginalia
+---
+title: ! 'Marginalia: A web-based journaling and note taking tool'
+date: '2012-09-03 17:12:47'
+id: d33f3
+tags: Heroku, Programming, Marginalia
+---
 
 I'd like to present my new webapp, [Marginalia](http://www.marginalia.io), a web based journaling and note taking tool. Notes are written in [Markdown](http://www.marginalia.io/markdown), and there are some simple shortcuts for appending timestamped entries at the end of a note, as well as a few email-based tools for creating and appending to notes. You should check it out. Look below the fold for technical details and the origin story.
 

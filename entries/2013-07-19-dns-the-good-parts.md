@@ -1,7 +1,9 @@
-Title: DNS: The Good Parts
-Id:    dns
-Tags:  DNS
-Show_upsell: true
+---
+title: ! 'DNS: The Good Parts'
+id: dns
+tags: DNS
+show_upsell: 'true'
+---
 
 *This article is featured in [Hacker Monthly issue 42](http://hackermonthly.com/issue-42.html).*
 

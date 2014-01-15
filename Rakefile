@@ -24,9 +24,11 @@ task :next do
 
   filename = "entries/#{slug}.md"
   contents = <<HERE
-Title: #{title}
-Id:    #{id}
-Tags:  
+---
+title: #{title}
+id:    #{id}
+tags:  
+---
 
 HERE
 
@@ -194,4 +196,17 @@ task :count do
   end
 
   puts "overall: #{word_count} #{code_count}"
+end
+
+task :convert_to_yaml do
+  pages = App::PAGES
+  pages.each do |page|
+    headers = YAML.dump(page.headers)
+
+    File.open("entries/" + page.original_filename, 'w+') do |file|
+      file.write(headers)
+      file.write("---\n\n")
+      file.write(page.original_body)
+    end
+  end
 end

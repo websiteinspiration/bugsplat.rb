@@ -1,6 +1,8 @@
-Title: Book Review: Tubes: a Journey to the Center of the Internet
-Id:    03321
-Tags:  Book Reviews
+---
+title: ! 'Book Review: Tubes: a Journey to the Center of the Internet'
+id: '03321'
+tags: Book Reviews
+---
 
 [tubes]: http://www.amazon.com/gp/product/B006FOHWDI/
 [blum]:  http://andrewblum.net

@@ -1,9 +1,11 @@
-Title: Sign Up Confirmed
-Id: confirmed-123
-Layout: book_layout
-View: book
-Skip_title_suffix: true
-Hide_from_archive: true
+---
+title: Sign Up Confirmed
+id: confirmed-123
+layout: book_layout
+view: book
+skip_title_suffix: 'true'
+hide_from_archive: 'true'
+---
 
 # You're all set!
 

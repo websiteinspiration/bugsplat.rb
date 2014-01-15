@@ -1,9 +1,11 @@
-Title: Thanks for Signing Up
-Id: thanks-123
-Layout: book_layout
-View: book
-Skip_title_suffix: true
-Hide_from_archive: true
+---
+title: Thanks for Signing Up
+id: thanks-123
+layout: book_layout
+view: book
+skip_title_suffix: 'true'
+hide_from_archive: 'true'
+---
 
 # Thanks!
 

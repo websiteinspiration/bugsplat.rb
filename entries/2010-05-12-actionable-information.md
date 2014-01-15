@@ -1,7 +1,9 @@
-Title: Actionable Information
-Date:  2010-05-12 08:53:00
-Id:    5
-Tags:  Programming
+---
+title: Actionable Information
+date: '2010-05-12 08:53:00'
+id: '5'
+tags: Programming
+---
 
 [1]:         http://www.activfinancial.com/
 [2]:         http://www.interactivedata-rts.com/index.shtml

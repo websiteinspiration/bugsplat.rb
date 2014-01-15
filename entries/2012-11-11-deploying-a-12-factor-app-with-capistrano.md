@@ -1,7 +1,9 @@
-Title: Deploying a 12-Factor App with Capistrano
-Date:  2012-11-11 13:52:53
-Id:    c575a
-Tags:  Programming, Heroku
+---
+title: Deploying a 12-Factor App with Capistrano
+date: '2012-11-11 13:52:53'
+id: c575a
+tags: Programming, Heroku
+---
 
 [12-factor]: http://www.12factor.net/
 [Foreman]: http://ddollar.github.com/foreman/

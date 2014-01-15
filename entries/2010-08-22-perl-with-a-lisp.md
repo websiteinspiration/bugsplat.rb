@@ -1,8 +1,10 @@
-Title: Perl with a Lisp
-Date:  2010-08-22 14:22:36
-Id:    7497d
-Tags:  Perl, Programming
-Hold:  1
+---
+title: Perl with a Lisp
+date: '2010-08-22 14:22:36'
+id: 7497d
+tags: Perl, Programming
+hold: '1'
+---
 
 [hn]: http://news.ycombinator.com
 [hn-micromanual]: http://news.ycombinator.com/item?id=1591112

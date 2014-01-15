@@ -1,7 +1,9 @@
-Title: Distributed Personal Wiki
-Id:    83656
-Tags:  Programming, Git
-Show_upsell: true
+---
+title: Distributed Personal Wiki
+id: '83656'
+tags: Programming, Git
+show_upsell: 'true'
+---
 
 For as long as I can remember I've been trying to find a good way to keep personal text notes. Recipes, notes, ideas, that kind of thing. Things that aren't really suited to blogging. Along the way I've used (and stuck with) [PmWiki][], [DocuWiki][], [TiddlyWiki][], and most recently I built my own sort-of-pseudo-wiki [Marginalia][].
 

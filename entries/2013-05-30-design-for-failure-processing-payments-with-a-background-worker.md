@@ -1,7 +1,9 @@
-Title: Design for Failure: Processing Payments with a Background Worker
-Id:    7dc8b
-Tags:  Programming
-Show_upsell: true
+---
+title: ! 'Design for Failure: Processing Payments with a Background Worker'
+id: 7dc8b
+tags: Programming
+show_upsell: 'true'
+---
 
 [stripe]: https://stripe.com/docs/tutorials/checkout
 [guide]: /mastering-modern-payments

@@ -1,7 +1,9 @@
-Title: Managing Your Processes with ProcLaunch.
-Date:  2010-08-08 12:30:37
-Id:    c385f
-Tags:  Programming, Proclaunch
+---
+title: Managing Your Processes with ProcLaunch.
+date: '2010-08-08 12:30:37'
+id: c385f
+tags: Programming, Proclaunch
+---
 
 [proclaunch]:      http://github.com/peterkeen/proclaunch
 [Mongrel2 manual]: http://mongrel2.org/doc/tip/docs/manual/book.wiki

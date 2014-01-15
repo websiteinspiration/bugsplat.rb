@@ -1,5 +1,7 @@
-Title: Press Kit
-Id: press
+---
+title: Press Kit
+id: press
+---
 
 ### Biography
 

@@ -1,8 +1,10 @@
-Title:  Private Git Repositories with Gitolite and S3
-Date:  2012-10-27 15:59:41
-Id:    aa310
-Tags:  Git, Programming
-Show_upsell: true
+---
+title: Private Git Repositories with Gitolite and S3
+date: '2012-10-27 15:59:41'
+id: aa310
+tags: Git, Programming
+show_upsell: 'true'
+---
 
 Earlier this year I bought a new Mac mini for various reasons. One of the big ones was so I would
 have a place to stash private git repositories that I didn't want to host on 3rd party services

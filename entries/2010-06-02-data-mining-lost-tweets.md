@@ -1,7 +1,9 @@
-Title: Data Mining "Lost" Tweets Part 1
-Date:  2010-06-02 17:45:00
-Tags:  Programming, Perl
-Id:    10
+---
+title: Data Mining "Lost" Tweets Part 1
+date: '2010-06-02 17:45:00'
+tags: Programming, Perl
+id: '10'
+---
 
 [twmine]:  http://gist.github.com/423346
 [file]:    http://dl.dropbox.com/u/5193213/lost-finale-tweets.txt.gz

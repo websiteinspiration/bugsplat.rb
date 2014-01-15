@@ -1,7 +1,9 @@
-Title: Full Text Search with Whistlepig
-Date:  2013-01-09 07:51:11
-Id:    6d23b
-Tags:  Programming, Meta
+---
+title: Full Text Search with Whistlepig
+date: '2013-01-09 07:51:11'
+id: 6d23b
+tags: Programming, Meta
+---
 
 [Whistlepig]: http://masanjin.net/whistlepig/
 [indexing code]: https://github.com/peterkeen/bugsplat.rb/blob/master/page.rb#L33
