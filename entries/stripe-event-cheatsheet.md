@@ -4,6 +4,7 @@ id: cheat
 layout: book_layout
 view: book
 skip_title_suffix: 'true'
+hide_from_archive: 'true'
 ---
 
 <h1 class="book big center">The Stripe Webhook Event Cheatsheet</h1>
