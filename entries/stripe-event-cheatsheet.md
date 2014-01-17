@@ -9,9 +9,8 @@ skip_title_suffix: 'true'
 <h1 class="book big center">The Stripe Webhook Event Cheatsheet</h1>
 
 [Stripe](https://stripe.com) has an amazing set of webhooks for your
-application to hook into. Every event that happens to your Stripe
-account (or an account your application is connected to) has a
-corresponding webhook.
+application to listen for. Every event that happens on your Stripe
+account (or an account your application is connected to) blasts events to your webhook receiver.
 
 <p>"But", you ask, "what events fire when?" Below you'll find some
 common scenarios and the events that Stripe will fire at your webhook
