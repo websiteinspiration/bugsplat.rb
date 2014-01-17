@@ -4,3 +4,4 @@
 //= require jquery.cookie.js
 //= require jquery.colorbox.js
 //= require book.js
+//= require cheatsheet.js

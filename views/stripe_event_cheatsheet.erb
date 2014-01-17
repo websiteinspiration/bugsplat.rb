@@ -1,0 +1,137 @@
+<h1 class="book big center">The Stripe Webhook Event Cheatsheet</h1>
+
+<p>
+  <%= external_link_tag "Stripe", "https://stripe.com" %> has an amazing set of webhooks for your application to listen for.
+  Every event that happens on your Stripe account (or an account your application is connected to) blasts events to your webhook receiver.
+</p>
+<p>
+  "But", you ask, "what events fire when?"
+  Below you'll find some common scenarios and the events that Stripe will fire at your webhook receiver in response.
+  Clicking on any event name will show a full example webhook.
+  You can find full descriptions for these events in <%= external_link_tag "Stripe's awesome documentation", "http://stripe.com/docs/api#event_types" %>.
+</p>
+
+<hr>
+
+<h2>Simple One-off Purchases with Charges</h2>
+
+<h4>1. Customer successfully purchases a single one-off item</h4>
+<p>The simplest possible starting point. A single one-off purchase.</p>
+<ul>
+  <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'simple_charge' %></li>
+</ul>
+
+<h4>2. Customer's card is declined</h4>
+<p>This event also describes other failure modes, like an invalid expiration date or a failed CVC check if you have the option turned on to decline on a failed check.</p>
+<ul>
+  <li><%= partial :stripe_event, event_name: 'charge.failed', describes: 'Charge', example: 'simple_charge_declined' %></li>
+</ul>
+
+<h4>3. Customer successfully purchases and then requests a refund</h4>
+<p>Typically you'll hit the refund button in Stripe's management interface to generate a refunded event.</p>
+<ul>
+  <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'simple_charge' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.refunded', describes: 'Charge', example: 'simple_charge_refunded' %></li>
+</ul>
+
+<h4>4. Create a charge without capturing it, capture later</h4>
+<p>
+  Normally charges are <em>authorized</em> (check with the bank for available funds) and
+  <em>captured</em> (actually request a fund transfer) at the same time. Stripe allows you to
+  separate the two events. For example, if you're shipping goods that have a few days of lead
+  time you'd want to authorize the charge up front but only capture it when you actually ship.
+</p>
+<ul>
+  <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'authorization' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.captured', describes: 'Charge', example: 'captured' %></li>
+</ul>
+
+<h4>5. Charge then modify description</h4>
+<p>
+  After making a charge you can update the `description` and `metadata` fields to add or alter application-specific information.
+</p>
+<ul>
+  <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'charge_before_modification' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.updated', describes: 'Charge', example: 'charge_after_modification' %></li>
+</ul>
+
+<h2>Disputes</h2>
+
+<h4>6. Customer disputes a charge, you upload evidence</h4>
+<p></p>
+<ul>
+  <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'simple_charge' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.dispute.created', describes: 'Dispute', example: 'dispute' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.dispute.updated', describes: 'Dispute', example: 'dispute' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.dispute.closed', describes: 'Dispute', example: 'dispute' %></li>
+</ul>
+
+<h2>Customers</h2>
+
+<h4>7. Create customer and charge them immediately</h4>
+<p></p>
+<ul>
+</ul>
+
+<h4>8. Create customer and later sign them up for a plan</h4>
+<p></p>
+<ul>
+</ul>
+
+<h4>9. Create a customer with a plan without a trial</h4>
+<p></p>
+<ul>
+</ul>
+
+<h4>10. Create a customer with a plan with a trial</h4>
+<p></p>
+<ul>
+</ul>
+
+<h4>11. Create a customer with a plan with a discount, no trial</h4>
+<p></p>
+<ul>
+</ul>
+
+<h4>12. Exisiting customer, new invoice with invoice items</h4>
+<p></p>
+<ul>
+</ul>
+
+<h4>13. Customer modifies existing card</h4>
+<p></p>
+<ul>
+</ul>
+
+<h4>14. Customer changes to a different card</h4>
+<p></p>
+<ul>
+</ul>
+
+<hr>
+
+<h2 class="center">If you liked this you should see what's in the book</h2>
+
+<div class="row">
+  <div class="span3">
+    <div style="float: right; height: 200px; padding-top: 1em; padding-bottom: 2em; text-align: center; margin-left: 1.5em;">
+      <a href="/mastering-modern-payments"><img src="https://d2s7foagexgnc2.cloudfront.net/files/9e8485ea8977967c7fe7/paperbacklandscape-1.png" alt="Mastering Modern Payments Cover" /></a>
+    </div>
+  </div>
+  <div class="span4" style="margin-left: 3em">
+    <p>
+      Stop wasting time searching for answers on old blog posts and Q&A sites. Build a fast, reliable payment integration.
+    </p>
+    <p>Get a free chapter on how to make your app remember everything that happens to with your payments.</p>
+  </div>
+</div>
+
+<div class="center" style="margin-bottom: 3em">
+  <form action="/subscribe" method="POST" class="form form-inline" style="margin-top: 1em;">
+    <input type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 20em; line-height: 22px;" name="email" placeholder="you@example.com"></input>
+    <input type="hidden" name="next" value="/confirmed"></input>
+    <input class="btn btn-primary btn-large" type="submit" value="Get Your Free Chapter" />
+  </form>
+  <small>We won't send you spam. Unsubscribe at any time.</small>
+</div>
+

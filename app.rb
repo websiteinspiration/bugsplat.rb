@@ -85,6 +85,14 @@ class App < Sinatra::Base
     def showing_mmp?
       @mmp
     end
+
+    def external_link_tag(text, url)
+      "<a href=\"#{url}\" target=\"_blank\">#{text} <i class=\"small fa fa-external-link\"></i></a>"
+    end
+
+    def partial(name, locals={})
+      render :erb, name, layout: false, locals: locals
+    end
   end
 
   before do
@@ -168,6 +176,15 @@ class App < Sinatra::Base
 
   get '/mmp-preorders' do
     redirect '/mastering-modern-payments'
+  end
+
+  get '/cheat' do
+    redirect '/stripe-event-cheatsheet'
+  end
+
+  get %r{^/stripe-event-cheatsheet-with-examples(\.html)?$} do
+    @page_title = 'The Stripe Webhook Event Cheatsheet'
+    erb :stripe_event_cheatsheet, layout: :book_layout
   end
 
   get '/tag/:tag' do

@@ -1,0 +1,19 @@
+<%
+  describe_links = {
+    'Charge' => 'https://stripe.com/docs/api#charges'
+    'Dispute' => 'https://stripe.com/docs/api#disputes
+  }
+  describe_link = external_link_tag(describes, describe_links[describes])
+
+  example_code = nil
+  example_filename = "#{ENV['PWD']}/views/cheatsheet_examples/#{example}.json"
+  if File.exist?(example_filename)
+    example_code = File.read(example_filename)
+  end
+%>
+<div class="toggle-example">
+  <code><%= event_name %></code> (<%= describe_link %>)
+  <% if example_code %>
+    <pre><%= example_code %></pre>
+  <% end %>
+</div>

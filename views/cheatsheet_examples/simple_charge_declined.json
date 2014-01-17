@@ -1,0 +1,53 @@
+{
+  "id": "evt_103KIF2kbIgHtIBFKvLdvlwX",
+  "created": 1389969100,
+  "livemode": false,
+  "type": "charge.failed",
+  "data": {
+    "object": {
+      "id": "ch_103KIF2kbIgHtIBFD3LEh1qZ",
+      "object": "charge",
+      "created": 1389969100,
+      "livemode": false,
+      "paid": false,
+      "amount": 100,
+      "currency": "usd",
+      "refunded": false,
+      "card": {
+        "id": "card_103KIF2kbIgHtIBFziu6OQpT",
+        "object": "card",
+        "last4": "0002",
+        "type": "Visa",
+        "exp_month": 1,
+        "exp_year": 2055,
+        "fingerprint": "M2QBulD7ZB26QJfV",
+        "customer": null,
+        "country": "US",
+        "name": null,
+        "address_line1": null,
+        "address_line2": null,
+        "address_city": null,
+        "address_state": null,
+        "address_zip": null,
+        "address_country": null,
+        "cvc_check": "pass",
+        "address_line1_check": null,
+        "address_zip_check": null
+      },
+      "captured": false,
+      "refunds": [],
+      "balance_transaction": null,
+      "failure_message": "Your card was declined.",
+      "failure_code": "card_declined",
+      "amount_refunded": 0,
+      "customer": null,
+      "invoice": null,
+      "description": null,
+      "dispute": null,
+      "metadata": {}
+    }
+  },
+  "object": "event",
+  "pending_webhooks": 1,
+  "request": "iar_3KIFtanHmhRoYL"
+}
