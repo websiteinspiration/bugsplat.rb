@@ -94,9 +94,9 @@ mixpanel.init("e9f4d8ff804462ecc432e221befc36a2");</script><!-- end Mixpanel -->
     <% if production? %>
       <% if showing_mmp? %>
         <script type="text/javascript">
-          $(function() {
-          mixpanel.track("Viewed MMP");
-          })();
+          setTimeout(function() {
+            mixpanel.track("Viewed MMP");
+          }, 1000);
         </script>
         <script type="text/javascript">
           (function() {
