@@ -95,7 +95,7 @@ mixpanel.init("e9f4d8ff804462ecc432e221befc36a2");</script><!-- end Mixpanel -->
       <% if showing_mmp? %>
         <script type="text/javascript">
           $(function() {
-          mixpanel.track("Viewed MMP", { "coupon": "<%= @coupon %>", "affiliate": "<%= @affiliate %>" });
+          mixpanel.track("Viewed MMP");
           })();
         </script>
         <script type="text/javascript">
