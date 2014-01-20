@@ -16,15 +16,28 @@
   </p>
   <% end %>
   <% if @page.show_upsell? %>
-  <div class="well">
-    <a href="/mastering-modern-payments"><img style="float: right; height: 100px; margin-top: 20px; margin-left: 20px; margin-right: 5px; padding-bottom: 20px; padding-top: 60px;" src="https://d2s7foagexgnc2.cloudfront.net/files/9e8485ea8977967c7fe7/paperbacklandscape-1.png" /></a>
-    <h4><a href="/mastering-modern-payments">Are you using Stripe with your Rails app?</a></h4>
-    <p>
-      Check out <strong>Mastering Modern Payments: Using Stripe with Rails</strong>,
-      a concise ebook packed with helpful tips and juicy best practices for integrating Stripe into your Rails apps,
-      covering audit trails, background workers and more.</p>
-    <a href="/mastering-modern-payments" class="btn btn-primary btn-large">Learn more and Download Free Sample Chapters</a>
-  </div>
+    <h2>If you liked this you should see what's in the book</h2>
+    <div class="row">
+      <div class="span3">
+        <div style="float: right; height: 200px; padding-top: 1em; padding-bottom: 2em; text-align: center; margin-left: 1.5em;">
+          <a href="/mastering-modern-payments"><img src="https://d2s7foagexgnc2.cloudfront.net/files/9e8485ea8977967c7fe7/paperbacklandscape-1.png" alt="Mastering Modern Payments Cover" /></a>
+        </div>
+      </div>
+      <div class="span4" style="margin-left: 3em">
+        <p>
+          Stop wasting time searching for answers on old blog posts and Q&A sites. Build a fast, reliable payment integration.
+        </p>
+        <p>Get a free chapter on how to make your app remember everything that happens to with your payments.</p>
+      </div>
+    </div>
+    <div class="center" style="margin-bottom: 3em">
+      <form action="/subscribe" method="POST" class="form form-inline" style="margin-top: 1em;">
+        <input type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 20em; line-height: 22px;" name="email" placeholder="you@example.com"></input>
+        <input type="hidden" name="next" value="/confirmed"></input>
+        <input class="btn btn-primary btn-large" type="submit" value="Get Your Free Chapter" />
+      </form>
+      <small>We won't send you spam. Unsubscribe at any time.</small>
+    </div>
     <% if production? %>
       <script type="text/javascript">
         (function() {
