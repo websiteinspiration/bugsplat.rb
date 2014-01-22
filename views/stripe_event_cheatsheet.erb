@@ -61,16 +61,18 @@
 <p></p>
 <ul>
   <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'simple_charge' %></li>
-  <li><%= partial :stripe_event, event_name: 'charge.dispute.created', describes: 'Dispute', example: 'dispute' %></li>
-  <li><%= partial :stripe_event, event_name: 'charge.dispute.updated', describes: 'Dispute', example: 'dispute' %></li>
-  <li><%= partial :stripe_event, event_name: 'charge.dispute.closed', describes: 'Dispute', example: 'dispute' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.dispute.created', describes: 'Dispute', example: 'dispute_created' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.dispute.updated', describes: 'Dispute', example: 'dispute_updated' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.dispute.closed', describes: 'Dispute', example: 'dispute_closed' %></li>
 </ul>
 
 <h2>Customers</h2>
 
 <h4>7. Create customer and charge them immediately</h4>
-<p></p>
+<p>This is the same flow as a simple charge with the added benefit of being able to charge the customer again later.</p>
 <ul>
+  <li><%= partial :stripe_event, event_name: 'customer.created', describes: 'Customer', example: 'create_customer' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'customer_charge' %></li>
 </ul>
 
 <h4>8. Create customer and later sign them up for a plan</h4>

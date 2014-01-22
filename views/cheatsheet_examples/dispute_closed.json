@@ -1,0 +1,27 @@
+{
+  "id": "evt_asdf1237413491343477",
+  "created": 1389926070,
+  "livemode": false,
+  "type": "charge.dispute.closed",
+  "data": {
+    "object": {
+        "charge": "ch_2r95InMhWRjng7",
+        "amount": 5900
+        "created": 1384558511
+        "status": "lost",
+        "livemode": false,
+        "currency": "usd",
+        "object": "dispute",
+        "reason": "fraudulent",
+        "balance_transaction": "txn_2wpmY4flWi72GD",
+        "evidence_due_by": 1385942399,
+        "evidence": "Some Evidence",
+    },
+    "previous_attributes": {
+      "status": "needs_response"
+    }
+  },
+  "object": "dispute",
+  "pending_webhooks": 0,
+  "request": "iar_3K6gNaMYoGwquc"
+}
