@@ -1,0 +1,32 @@
+{
+  "id": "evt_103MA42kbIgHtIBFPGPrwuTo",
+  "created": 1390399952,
+  "livemode": false,
+  "type": "customer.card.created",
+  "data": {
+    "object": {
+      "id": "card_103MA42kbIgHtIBFXmAeXLfH",
+      "object": "card",
+      "last4": "4242",
+      "type": "Visa",
+      "exp_month": 1,
+      "exp_year": 2045,
+      "fingerprint": "8cik4g5Z0PUM9One",
+      "customer": "cus_3MA4V5jOkJblJk",
+      "country": "US",
+      "name": null,
+      "address_line1": null,
+      "address_line2": null,
+      "address_city": null,
+      "address_state": null,
+      "address_zip": null,
+      "address_country": null,
+      "cvc_check": "pass",
+      "address_line1_check": null,
+      "address_zip_check": null
+    }
+  },
+  "object": "event",
+  "pending_webhooks": 1,
+  "request": "iar_3MA4rCB5Uk3LO7"
+}

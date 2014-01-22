@@ -9,6 +9,7 @@
   Below you'll find some common scenarios and the events that Stripe will fire at your webhook receiver in response.
   Clicking on any event name will show a full example webhook.
   You can find full descriptions for these events in <%= external_link_tag "Stripe's awesome documentation", "http://stripe.com/docs/api#event_types" %>.
+  For more background information on how Stripe processes a charge check out my blog post <%= external_link_tag "The Life of a Stripe Charge", "https://www.petekeen.net/life-of-a-stripe-charge" %>.
 </p>
 
 <hr>
@@ -75,17 +76,18 @@
   <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'customer_charge' %></li>
 </ul>
 
-<h4>8. Create customer and later sign them up for a plan</h4>
-<p></p>
+<h4>8. Create a customer with a plan without a trial</h4>
+<p>Customer and subscriptions are where Stripe's webhook system really starts to shine. All of these events happen more or less simultaneously when you create a customer object and include the `plan_id` and `card` attributes.</p>
 <ul>
+  <li><%= partial :stripe_event, event_name: 'customer.created', describes: 'Customer', example: 'test1_create' %></li>
+  <li><%= partial :stripe_event, event_name: 'customer.card.created', describes: 'Card', example: 'test1_add_card' %></li>
+  <li><%= partial :stripe_event, event_name: 'customer.subscription.created', describes: 'Subscription', example: 'test1_add_subscription' %></li>
+  <li><%= partial :stripe_event, event_name: 'invoice.created', describes: 'Invoice', example: 'test1_invoice' %></li>
+  <li><%= partial :stripe_event, event_name: 'invoice.payment_succeeded', describes: 'Invoice', example: 'test1_invoice_paid' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'test1_charge' %></li>
 </ul>
 
-<h4>9. Create a customer with a plan without a trial</h4>
-<p></p>
-<ul>
-</ul>
-
-<h4>10. Create a customer with a plan with a trial</h4>
+<h4>9. Create a customer with a plan with a trial</h4>
 <p></p>
 <ul>
 </ul>
@@ -95,17 +97,22 @@
 <ul>
 </ul>
 
-<h4>12. Exisiting customer, new invoice with invoice items</h4>
+<h4>12. Invoice charge attempt fails</h4>
+<p></p>
+<ul>
+</ul>
+  
+<h4>13. Exisiting customer, new invoice with invoice items</h4>
 <p></p>
 <ul>
 </ul>
 
-<h4>13. Customer modifies existing card</h4>
+<h4>14. Customer modifies existing card</h4>
 <p></p>
 <ul>
 </ul>
 
-<h4>14. Customer changes to a different card</h4>
+<h4>15. Customer changes to a different card</h4>
 <p></p>
 <ul>
 </ul>

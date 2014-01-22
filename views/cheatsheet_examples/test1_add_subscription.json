@@ -1,0 +1,39 @@
+{
+  "id": "evt_103MA42kbIgHtIBF2PCuBPlo",
+  "created": 1390399952,
+  "livemode": false,
+  "type": "customer.subscription.created",
+  "data": {
+    "object": {
+      "id": "sub_3MA4MoMI0rIxoy",
+      "plan": {
+        "interval": "week",
+        "name": "Test $10 Plan",
+        "amount": 1000,
+        "currency": "usd",
+        "id": "test_10",
+        "object": "plan",
+        "livemode": false,
+        "interval_count": 1,
+        "trial_period_days": null,
+        "metadata": {}
+      },
+      "object": "subscription",
+      "start": 1390399952,
+      "status": "active",
+      "customer": "cus_3MA4V5jOkJblJk",
+      "cancel_at_period_end": false,
+      "current_period_start": 1390399952,
+      "current_period_end": 1391004752,
+      "ended_at": null,
+      "trial_start": null,
+      "trial_end": null,
+      "canceled_at": null,
+      "quantity": 1,
+      "application_fee_percent": null
+    }
+  },
+  "object": "event",
+  "pending_webhooks": 1,
+  "request": "iar_3MA4rCB5Uk3LO7"
+}

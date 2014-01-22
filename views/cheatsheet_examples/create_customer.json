@@ -1,0 +1,54 @@
+{
+  "id": "evt_103K6j2kbIgHtIBFQRJ5eVHs",
+  "created": 1389926251,
+  "livemode": false,
+  "type": "customer.created",
+  "data": {
+    "object": {
+      "object": "customer",
+      "created": 1389926251,
+      "id": "cus_3K6jB6rsauA1G4",
+      "livemode": false,
+      "description": null,
+      "email": "foo@bar.com",
+      "delinquent": false,
+      "metadata": {},
+      "subscription": null,
+      "discount": null,
+      "account_balance": 0,
+      "currency": null,
+      "cards": {
+        "object": "list",
+        "count": 1,
+        "url": "/v1/customers/cus_3K6jB6rsauA1G4/cards",
+        "data": [
+          {
+            "id": "card_103K6j2kbIgHtIBF4jRRWxCK",
+            "object": "card",
+            "last4": "4242",
+            "type": "Visa",
+            "exp_month": 1,
+            "exp_year": 2045,
+            "fingerprint": "8cik4g5Z0PUM9One",
+            "customer": "cus_3K6jB6rsauA1G4",
+            "country": "US",
+            "name": null,
+            "address_line1": null,
+            "address_line2": null,
+            "address_city": null,
+            "address_state": null,
+            "address_zip": null,
+            "address_country": null,
+            "cvc_check": "pass",
+            "address_line1_check": null,
+            "address_zip_check": null
+          }
+        ]
+      },
+      "default_card": "card_103K6j2kbIgHtIBF4jRRWxCK"
+    }
+  },
+  "object": "event",
+  "pending_webhooks": 1,
+  "request": "iar_3K6jSfgT246ZZl"
+}
