@@ -59,9 +59,11 @@
 <h2>Disputes</h2>
 
 <h4>6. Customer disputes a charge, you upload evidence</h4>
-<p></p>
+<p>
+  Disputes happen. It's just a fact when you're charging people money. Stripe will of course send your application a series
+  of webhooks as the dispute process plays out.
+</p>
 <ul>
-  <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'simple_charge' %></li>
   <li><%= partial :stripe_event, event_name: 'charge.dispute.created', describes: 'Dispute', example: 'dispute_created' %></li>
   <li><%= partial :stripe_event, event_name: 'charge.dispute.updated', describes: 'Dispute', example: 'dispute_updated' %></li>
   <li><%= partial :stripe_event, event_name: 'charge.dispute.closed', describes: 'Dispute', example: 'dispute_closed' %></li>
@@ -93,13 +95,20 @@
 </ul>
 
 <h4>11. Create a customer with a plan with a discount, no trial</h4>
-<p></p>
+<p>Discounted subscriptions are essentially the same as a normal subscription with one more event, `customer.discount.created`.</p>
 <ul>
+  <li><%= partial :stripe_event, event_name: 'customer.created', describes: 'Customer', example: 'test3_create' %></li>
+  <li><%= partial :stripe_event, event_name: 'customer.card.created', describes: 'Card', example: 'test3_card' %></li>
+  <li><%= partial :stripe_event, event_name: 'customer.subscription.created', describes: 'Subscription', example: 'test3_subscribed' %></li>
+  <li><%= partial :stripe_event, event_name: 'customer.discount.created', describes: 'Discount', example: 'test3_discount' %></li>
+  <li><%= partial :stripe_event, event_name: 'invoice.created', describes: 'Invoice', example: 'test3_invoice' %></li>
+  <li><%= partial :stripe_event, event_name: 'invoice.payment_succeeded', describes: 'Invoice', example: 'test3_invoice_paid' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'test3_charge' %></li>
 </ul>
 
 <h4>12. Invoice charge attempt fails</h4>
 <p></p>
-<ul>
+
 </ul>
   
 <h4>13. Exisiting customer, new invoice with invoice items</h4>
@@ -108,13 +117,24 @@
 </ul>
 
 <h4>14. Customer modifies existing card</h4>
-<p></p>
+<p>
+  Stripe's Card API lets you update some details about a card without fully adding a new one.
+  For example, a customer's address changes or they get a new expiration date.
+</p>
 <ul>
+  <li><%= partial :stripe_event, event_name: 'customer.card.updated', describes: 'Card', example: 'modify_card' %></li>
 </ul>
 
 <h4>15. Customer changes to a different card</h4>
-<p></p>
+<p>
+  Of course if a customer wants to change their card entirely they have that option. This is the set of events that happens
+  when you assign to the customer's `card` attribute. The sequence of events is essentially the same if you add a card and
+  change their default card manually, just without the delete event.
+</p>
 <ul>
+  <li><%= partial :stripe_event, event_name: 'customer.card.created', describes: 'Card', example: 'add_new_card' %></li>
+  <li><%= partial :stripe_event, event_name: 'customer.updated', describes: 'Customer', example: 'change_default_card' %></li>
+  <li><%= partial :stripe_event, event_name: 'customer.card.deleted', describes: 'Card', example: 'delete_card' %></li>
 </ul>
 
 <hr>

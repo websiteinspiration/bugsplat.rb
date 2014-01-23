@@ -1,0 +1,32 @@
+{
+  "id": "evt_103MXP2kbIgHtIBF6864da2G",
+  "created": 1390486769,
+  "livemode": false,
+  "type": "customer.discount.created",
+  "data": {
+    "object": {
+      "coupon": {
+        "id": "COUPON",
+        "created": 1390486733,
+        "percent_off": 10,
+        "amount_off": null,
+        "currency": null,
+        "object": "coupon",
+        "livemode": false,
+        "duration": "forever",
+        "redeem_by": null,
+        "max_redemptions": null,
+        "times_redeemed": 1,
+        "duration_in_months": null,
+        "valid": true
+      },
+      "start": 1390486769,
+      "object": "discount",
+      "customer": "cus_3MXPY5pvYMWTBf",
+      "end": null
+    }
+  },
+  "object": "event",
+  "pending_webhooks": 1,
+  "request": "iar_3MXPlBDPK90rso"
+}
