@@ -11,7 +11,7 @@ hide_from_archive: 'true'
 
 Thanks for signing up.<br> Here's your free chapter of ***Mastering Modern Payments: Using Stripe with Rails:***
 
-<a href="https://d2s7foagexgnc2.cloudfront.net/files/d9ed6537b33af1b9b867/mastering-modern-payments-sample-chapter.pdf" class="btn btn-large btn-primary">Get your Free Chapter</a>
+<a href="http://d2s7foagexgnc2.cloudfront.net/files/9152e9c8f274a498a3b2/mmp_sample_chapter.pdf" class="btn btn-large btn-primary">Get your Free Chapter</a>
 
 <a href="/mastering-modern-payments">Take me back</a>
 
