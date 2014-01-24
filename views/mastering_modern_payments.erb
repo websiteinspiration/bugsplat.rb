@@ -4,11 +4,13 @@
   </div>
 </div>
 
-<div class="center question">&ldquo;I tried setting up credit cards on my Rails app, but I've struggled getting it just right for weeks.&rdquo;</div>
+<h1 class="book">Mastering Modern Payments <small>Using Stripe with Rails</small></h1>
+
+<div class="question">Want to make sure your Stripe integration is right?</div>
 
 <p style="margin-bottom: 2em">
 <p>
-    <strong><em>Mastering Modern Payments: Using Stripe with Rails</em></strong> will teach you:
+    My new guide <strong><em>Mastering Modern Payments: Using Stripe with Rails</em></strong> will teach you:
 </p>
 
   <div style="float: right; height: 200px; padding-top: 1em; padding-bottom: 4em; text-align: center; margin-left: 1.5em;">
@@ -31,8 +33,8 @@
 </div>
 
 <p style="margin-top: 2em">
-  You probably got started with your Stripe integration using one of the "Stripe in 10 minutes" tutorials that are scattered around the web. They're great for getting started but they don't cover everything everything you need to make a robust, secure, production-quality payment system. Don't risk your business with an insecure, unreliable Stripe implementation. <strong><em>Mastering Modern Payments</em></strong> gathers together all of the material you need in one compact, easy to read guide.
-</P>
+Businesses around the world are using Stripe to process recurring or one-time payments for their Ruby on Rails SaaS offerings. Most of them are probably using a simple integration copied from a "Stripe in 10 minutes" tutorial, but those tutorials don't cover everything you need to make a robust, production-quality payment system. You could be silently losing thousands of dollars and frustrating customers.
+</p>
 
 <div style="margin-bottom: 2em; margin-top: 2em;">
   <blockquote>
@@ -53,14 +55,6 @@
 </div>
 
 <div style="margin-top: 2em; margin-bottom: 2em">
-<h2>About the Author</h2>
-<p>
-<img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/54919f94183b56488a1e/me-small.png" style="float:left; margin-right: 20px; height:100px;" alt="Pete Keen Portrait">
-I'm Pete Keen. I've been a professional software developer for seven years and live in Ann Arbor, Michigan. I write a blog at petekeen.net with articles on topics ranging from Ruby and Rails to Perl and robotics and scattered book reviews.
-</p>
-</div>
-
-<div style="margin-top: 2em; margin-bottom: 2em">
 <img style="float: right; margin-left: 20px; padding-top: 100px;" src="https://d2s7foagexgnc2.cloudfront.net/files/a8dab64c9e6402ee7b16/stripe_rails.png" alt="Stripe + Rails">
 <h2>Table of Contents</h2>
 <ol>
@@ -77,9 +71,27 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 </ol>
 </div>
 
+<div class="well" style="margin-top: 2em; margin-bottom: 2em; text-align: center;">
+  <h3>Get a free sample chapter</h3>
+  <form action="/subscribe" method="POST" class="form form-inline">
+    <input type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 20em; line-height: 22px;" name="email" placeholder="you@example.com"></input>
+    <input type="hidden" name="next" value="/confirmed"></input>
+    <input class="btn btn-primary btn-large" type="submit" value="Get Chapter" />
+  </form>
+  <small>We won't send you spam. Unsubscribe at any time.</small>
+</div>
+
+<div style="margin-top: 2em; margin-bottom: 2em">
+<h2>About the Author</h2>
+<p>
+<img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/54919f94183b56488a1e/me-small.png" style="float:left; margin-right: 20px; height:100px;" alt="Pete Keen Portrait">
+I'm Pete Keen. I've been a professional software developer for seven years and live in Ann Arbor, Michigan. I write a blog at petekeen.net with articles on topics ranging from Ruby and Rails to Perl and robotics and scattered book reviews.
+</p>
+</div>
+
 <h2 id="packages">The Packages</h2>
 
-<div class="well" style="margin-top: 2em">
+<div class="well">
 <h3>Guide + Code + Team License</h3>
 <ul class="archive-list">
 <li><span class="mmp-icon"><i class="fa fa-edit"></i></span> 116 page PDF with more than 100 code samples
@@ -93,7 +105,7 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 <a class="btn btn-large btn-success payment-button" data-price="299" data-permalink="mastering-modern-payments-team" href="<%= sales_host %>/buy/mastering-modern-payments-team">Buy Now for <span class="striketag"></span><span class="pricetag">$299</span></a>
 </div>
 
-<div class="well highlight" style="margin-top: 2em">
+<div class="well highlight">
 <h3>Guide + Code</h3>
 <ul class="archive-list">
 <li><span class="mmp-icon"><i class="fa fa-edit"></i></span> 116 page PDF with more than 100 code samples
@@ -105,7 +117,7 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 <a class="btn btn-large btn-success payment-button" data-price="59" data-permalink="mastering-modern-payments-deluxe" href="<%= sales_host %>/buy/mastering-modern-payments-deluxe">Buy Now for <span class="striketag"></span><span class="pricetag">$59</span></a>
 </div>
 
-<div class="well" style="margin-top: 2em">
+<div class="well">
 <h3>Just the Guide</h3>
 <ul class="archive-list">
 <li><span class="mmp-icon"><i class="fa fa-edit"></i></span> 116 page PDF with more than 100 code samples
@@ -114,16 +126,6 @@ I'm Pete Keen. I've been a professional software developer for seven years and l
 <li><span class="mmp-icon"><i class="fa fa-bell"></i></span> Periodic updates to the guide
 </ul>
 <a class="btn btn-large btn-success payment-button" data-price="29" data-permalink="mastering-modern-payments" href="<%= sales_host %>/buy/mastering-modern-payments">Buy Now for <span class="striketag"></span><span class="pricetag">$29</span></a>
-</div>
-
-<div class="well" style="margin-top: 2em; margin-bottom: 2em; text-align: center;">
-  <h3>Get a free sample chapter</h3>
-  <form action="/subscribe" method="POST" class="form form-inline">
-    <input type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 20em; line-height: 22px;" name="email" placeholder="you@example.com"></input>
-    <input type="hidden" name="next" value="/confirmed"></input>
-    <input class="btn btn-primary btn-large" type="submit" value="Get Chapter" />
-  </form>
-  <small>We won't send you spam. Unsubscribe at any time.</small>
 </div>
 
 <h2>Questions</h2>
