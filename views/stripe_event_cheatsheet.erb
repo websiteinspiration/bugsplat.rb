@@ -79,7 +79,7 @@
 </ul>
 
 <h4>8. Create a customer with a plan without a trial</h4>
-<p>Customer and subscriptions are where Stripe's webhook system really starts to shine. All of these events happen more or less simultaneously when you create a customer object and include the `plan_id` and `card` attributes.</p>
+<p>Customer and subscriptions are where Stripe's webhook system really starts to shine. All of these events happen more or less simultaneously when you create a customer object and include the <code>plan_id</code> and <code>card</code> attributes.</p>
 <ul>
   <li><%= partial :stripe_event, event_name: 'customer.created', describes: 'Customer', example: 'test1_create' %></li>
   <li><%= partial :stripe_event, event_name: 'customer.card.created', describes: 'Card', example: 'test1_add_card' %></li>
@@ -90,8 +90,21 @@
 </ul>
 
 <h4>9. Create a customer with a plan with a trial</h4>
-<p></p>
+<p>
+  Trials let you give a customer a taste of your application before charging them. Stripe will create a $0 invoice and "pay" it when you
+  create the subscription, and then later will send you a <code>customer.subscription.trial_will_end</code> three days before creating the
+  first real invoice.
+</p>
 <ul>
+  <li><%= partial :stripe_event, event_name: 'customer.created', describes: 'Customer', example: 'test1_create' %></li>
+  <li><%= partial :stripe_event, event_name: 'customer.card.created', describes: 'Card', example: 'test1_add_card' %></li>
+  <li><%= partial :stripe_event, event_name: 'customer.subscription.created', describes: 'Subscription', example: 'test1_add_subscription_with_trial' %></li>
+  <li><%= partial :stripe_event, event_name: 'invoice.created', describes: 'Invoice', example: 'test1_invoice_0' %></li>
+  <li><%= partial :stripe_event, event_name: 'invoice.payment_succeeded', describes: 'Invoice', example: 'test1_invoice_0_paid' %></li>
+  <li><%= partial :stripe_event, event_name: 'customer.subscription.trial_will_end', describes: 'Subscription', example: 'test1_trial_will_end' %></li>
+  <li><%= partial :stripe_event, event_name: 'invoice.created', describes: 'Invoice', example: 'test1_invoice' %></li>
+  <li><%= partial :stripe_event, event_name: 'invoice.payment_succeeded', describes: 'Invoice', example: 'test1_invoice_paid' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'test1_charge' %></li>
 </ul>
 
 <h4>11. Create a customer with a plan with a discount, no trial</h4>
@@ -111,9 +124,10 @@
 
 </ul>
   
-<h4>13. Exisiting customer, new invoice with invoice items</h4>
-<p></p>
+<h4>13. Exisiting customer, adding invoice items</h4>
+<p>Adding invoice items for a customer without specifying an invoice will automatically add them to the next month's invoice. Pretty handy for doing usage billing, since you can just roll up the customer's daily usage and build an invoice item for every day.</p>
 <ul>
+  <li><%= partial :stripe_event, event_name: 'invoiceitem.created', describes: 'Invoice Item', example: 'invoice_item' %></li>
 </ul>
 
 <h4>14. Customer modifies existing card</h4>

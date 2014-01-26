@@ -1,0 +1,70 @@
+{
+  "id": "evt_103MA42kbIgHtIBFXWsjnxL6",
+  "created": 1390399952,
+  "livemode": false,
+  "type": "invoice.payment_succeeded",
+  "data": {
+    "object": {
+      "date": 1390399952,
+      "id": "in_103MA42kbIgHtIBFjaFiJ2Yk",
+      "period_start": 1390399952,
+      "period_end": 1390399952,
+      "lines": {
+        "object": "list",
+        "count": 1,
+        "url": "/v1/invoices/in_103MA42kbIgHtIBFjaFiJ2Yk/lines",
+        "data": [
+          {
+            "id": "sub_3MA4MoMI0rIxoy",
+            "object": "line_item",
+            "type": "subscription",
+            "livemode": false,
+            "amount": 0,
+            "currency": "usd",
+            "proration": false,
+            "period": {
+              "start": 1390399952,
+              "end": 1391004752
+            },
+            "quantity": 1,
+            "plan": {
+              "interval": "week",
+              "name": "Test $10 Plan",
+              "amount": 1000,
+              "currency": "usd",
+              "id": "test_10",
+              "object": "plan",
+              "livemode": false,
+              "interval_count": 1,
+              "trial_period_days": null,
+              "metadata": {}
+            },
+            "description": null,
+            "metadata": null
+          }
+        ]
+      },
+      "subtotal": 0,
+      "total": 0,
+      "customer": "cus_3MA4V5jOkJblJk",
+      "object": "invoice",
+      "attempted": true,
+      "closed": true,
+      "paid": true,
+      "livemode": false,
+      "attempt_count": 0,
+      "amount_due": 0,
+      "currency": "usd",
+      "starting_balance": 0,
+      "ending_balance": 0,
+      "next_payment_attempt": null,
+      "charge": null,
+      "discount": null,
+      "application_fee": null,
+      "subscription": "sub_3MA4MoMI0rIxoy"
+    }
+  },
+  "object": "event",
+  "pending_webhooks": 1,
+  "request": "iar_3MA4rCB5Uk3LO7"
+}

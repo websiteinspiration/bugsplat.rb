@@ -1,0 +1,24 @@
+{
+  "id": "evt_103NK62kbIgHtIBFeUUsOiy2",
+  "created": 1390667939,
+  "livemode": false,
+  "type": "invoiceitem.created",
+  "data": {
+    "object": {
+      "object": "invoiceitem",
+      "id": "ii_103NK62kbIgHtIBF49HaxEOj",
+      "date": 1390667939,
+      "amount": 1000,
+      "livemode": false,
+      "proration": false,
+      "currency": "usd",
+      "customer": "cus_3K6jB6rsauA1G4",
+      "description": "test invoice item",
+      "metadata": {},
+      "invoice": null
+    }
+  },
+  "object": "event",
+  "pending_webhooks": 1,
+  "request": "iar_3NK6JZYO1As1TW"
+}
