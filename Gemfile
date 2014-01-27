@@ -1,6 +1,6 @@
 #-*-ruby-*-
 
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'puma'
 gem 'sinatra'
