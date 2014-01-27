@@ -120,8 +120,17 @@
 </ul>
 
 <h4>12. Invoice charge attempt fails</h4>
-<p></p>
-
+<p>
+  When you run a subscription service eventually you'll have customers who cancel their card without telling you.
+  When that happens Stripe will send you a series of events. The key event is <code>invoice.payment_failed</code>, the rest just update
+  various attributes on the corresponding Subscription and Customer. Stripe will attempt payment three times. After the third failed attempt
+  the <code>customer.subscription.updated</code> event will be replaced with a <code>customer.subscription.deleted</code> event.
+</p>
+<ul>
+  <li><%= partial :stripe_event, event_name: 'invoice.payment_failed', describes: 'Invoice', example: 'test1_invoice_10_failed' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.failed', describes: 'Charge', example: 'test1_charge_10_failed' %></li>
+  <li><%= partial :stripe_event, event_name: 'customer.subscription.updated', describes: 'Subscription', example: 'test1_subscription_past_due' %></li>
+  <li><%= partial :stripe_event, event_name: 'customer.updated', describes: 'Customer', example: 'test1_invoice_10_customer_updated' %></li>
 </ul>
   
 <h4>13. Exisiting customer, adding invoice items</h4>

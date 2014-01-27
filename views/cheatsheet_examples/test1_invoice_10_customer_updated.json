@@ -1,0 +1,85 @@
+{
+  "id": "evt_103Nig2kbIgHtIBFLD8LbpVS",
+  "created": 1390759349,
+  "livemode": false,
+  "type": "customer.updated",
+  "data": {
+    "object": {
+      "object": "customer",
+      "created": 1390668762,
+      "id": "cus_3NKKw56fDUraeA",
+      "livemode": false,
+      "description": null,
+      "email": "test_fail@example.com",
+      "delinquent": true,
+      "metadata": {},
+      "subscription": {
+        "id": "sub_3NKLRPGIoiUnxe",
+        "plan": {
+          "interval": "week",
+          "name": "Test $10 Plan",
+          "amount": 1000,
+          "currency": "usd",
+          "id": "test_10",
+          "object": "plan",
+          "livemode": false,
+          "interval_count": 1,
+          "trial_period_days": null,
+          "metadata": {}
+        },
+        "object": "subscription",
+        "start": 1390669124,
+        "status": "past_due",
+        "customer": "cus_3NKKw56fDUraeA",
+        "cancel_at_period_end": false,
+        "current_period_start": 1390755521,
+        "current_period_end": 1391360321,
+        "ended_at": null,
+        "trial_start": 1390668828,
+        "trial_end": 1390755521,
+        "canceled_at": null,
+        "quantity": 1,
+        "application_fee_percent": null,
+        "discount": null
+      },
+      "discount": null,
+      "account_balance": 0,
+      "currency": "usd",
+      "cards": {
+        "object": "list",
+        "count": 1,
+        "url": "/v1/customers/cus_3NKKw56fDUraeA/cards",
+        "data": [
+          {
+            "id": "card_103NKK2kbIgHtIBFLjylwb3z",
+            "object": "card",
+            "last4": "0341",
+            "type": "Visa",
+            "exp_month": 2,
+            "exp_year": 2054,
+            "fingerprint": "h3aJojvRImGxtuqN",
+            "customer": "cus_3NKKw56fDUraeA",
+            "country": "US",
+            "name": null,
+            "address_line1": null,
+            "address_line2": null,
+            "address_city": null,
+            "address_state": null,
+            "address_zip": null,
+            "address_country": null,
+            "cvc_check": "pass",
+            "address_line1_check": null,
+            "address_zip_check": null
+          }
+        ]
+      },
+      "default_card": "card_103NKK2kbIgHtIBFLjylwb3z"
+    },
+    "previous_attributes": {
+      "delinquent": false
+    }
+  },
+  "object": "event",
+  "pending_webhooks": 1,
+  "request": null
+}
