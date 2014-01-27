@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: http://gems.subspace.bugsplat.info/
   specs:
     activemodel (3.2.15)
       activesupport (= 3.2.15)

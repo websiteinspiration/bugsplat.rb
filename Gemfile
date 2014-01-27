@@ -1,6 +1,7 @@
 #-*-ruby-*-
 
 source 'https://rubygems.org'
+source 'http://gems.subspace.bugsplat.info' # comment this out if you're not me
 
 gem 'puma'
 gem 'sinatra'
