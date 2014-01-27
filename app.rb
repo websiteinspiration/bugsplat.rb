@@ -179,12 +179,15 @@ class App < Sinatra::Base
   end
 
   get '/cheat' do
-    redirect '/stripe-event-cheatsheet'
+    redirect '/stripe-webhook-event-cheatsheet'
   end
 
-  get %r{^/stripe-event-cheatsheet-with-examples(\.html)?$} do
+  get %r{^/stripe-webhook-event-cheatsheet(\.html)?$} do
     @page_title = 'The Stripe Webhook Event Cheatsheet'
-    erb :stripe_event_cheatsheet, layout: :book_layout
+    @description = "Stripe's webhooks are amazing. This is fourteen common scenarios and what hooks fire"
+    @skip_masthead = true
+    @body_class = "book"
+    erb :stripe_event_cheatsheet
   end
 
   get '/tag/:tag' do

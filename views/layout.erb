@@ -76,8 +76,9 @@ b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
 mixpanel.init("e9f4d8ff804462ecc432e221befc36a2");</script><!-- end Mixpanel -->
     <% end %>
   </head>
-  <body>
+  <body class="<%= @body_class %>">
     <div class="container container-narrow">
+      <% unless @skip_masthead %>
       <div class="masthead">
         <span class="header">
 		  <a href="/">Pete Keen</a>
@@ -91,6 +92,7 @@ mixpanel.init("e9f4d8ff804462ecc432e221befc36a2");</script><!-- end Mixpanel -->
           <li><a href="http://bits.petekeen.net">Bits</a></li>
         </ul>
 	  </div>
+      <% end %>
 	  <div id="content">
         <%= yield %>
 	  </div>

@@ -107,7 +107,7 @@
   <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'test1_charge' %></li>
 </ul>
 
-<h4>11. Create a customer with a plan with a discount, no trial</h4>
+<h4>10. Create a customer with a plan with a discount, no trial</h4>
 <p>Discounted subscriptions are essentially the same as a normal subscription with one more event, `customer.discount.created`.</p>
 <ul>
   <li><%= partial :stripe_event, event_name: 'customer.created', describes: 'Customer', example: 'test3_create' %></li>
@@ -119,7 +119,7 @@
   <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'test3_charge' %></li>
 </ul>
 
-<h4>12. Invoice charge attempt fails</h4>
+<h4>11. Invoice charge attempt fails</h4>
 <p>
   When you run a subscription service eventually you'll have customers who cancel their card without telling you.
   When that happens Stripe will send you a series of events. The key event is <code>invoice.payment_failed</code>, the rest just update
@@ -133,13 +133,13 @@
   <li><%= partial :stripe_event, event_name: 'customer.updated', describes: 'Customer', example: 'test1_invoice_10_customer_updated' %></li>
 </ul>
   
-<h4>13. Exisiting customer, adding invoice items</h4>
+<h4>12. Exisiting customer, adding invoice items</h4>
 <p>Adding invoice items for a customer without specifying an invoice will automatically add them to the next month's invoice. Pretty handy for doing usage billing, since you can just roll up the customer's daily usage and build an invoice item for every day.</p>
 <ul>
   <li><%= partial :stripe_event, event_name: 'invoiceitem.created', describes: 'Invoice Item', example: 'invoice_item' %></li>
 </ul>
 
-<h4>14. Customer modifies existing card</h4>
+<h4>13. Customer modifies existing card</h4>
 <p>
   Stripe's Card API lets you update some details about a card without fully adding a new one.
   For example, a customer's address changes or they get a new expiration date.
@@ -148,7 +148,7 @@
   <li><%= partial :stripe_event, event_name: 'customer.card.updated', describes: 'Card', example: 'modify_card' %></li>
 </ul>
 
-<h4>15. Customer changes to a different card</h4>
+<h4>14. Customer changes to a different card</h4>
 <p>
   Of course if a customer wants to change their card entirely they have that option. This is the set of events that happens
   when you assign to the customer's `card` attribute. The sequence of events is essentially the same if you add a card and
