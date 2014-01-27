@@ -3,7 +3,6 @@
 require 'rake'
 require 'digest/sha1'
 require 'set'
-require 'anemone'
 require 'sinatra/asset_pipeline/task.rb'
 require 'asset_sync'
 require 'dotenv/tasks'
@@ -42,15 +41,6 @@ end
 
 task :server do
   sh "bundle exec shotgun -I."
-end
-
-task :spider do
-  Anemone.crawl("http://www.petekeen.net") do |a|
-    a.skip_links_like(/(pdf|docx)/)
-    a.on_every_page do |p|
-      puts p.url if p.code == 404
-    end
-  end
 end
 
 task :deploy do
