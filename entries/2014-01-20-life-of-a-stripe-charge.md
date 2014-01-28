@@ -135,3 +135,5 @@ Stripe::Charge.create(
 ## Wrap Up
 
 Stripe makes credit card processing simple by wrapping up a bunch of formerly independent pieces, letting you concentrate on your application. That said, knowing the basics of those pieces will help you understand what's going on under the hood and more importantly help you ask the right questions when things don't go quite right.
+
+You should also check out my [Stripe Webhook Event Cheatsheet](/stripe-webhook-event-cheatsheet).
