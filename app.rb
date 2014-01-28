@@ -183,10 +183,12 @@ class App < Sinatra::Base
   end
 
   get %r{^/stripe-webhook-event-cheatsheet(\.html)?$} do
-    @page_title = 'The Stripe Webhook Event Cheatsheet'
+    @title = @page_title = 'The Stripe Webhook Event Cheatsheet'
+    @full_path = '/stripe-webhook-event-cheatsheet'
     @description = "Fourteen common scenarios and the hooks that Stripe fires for them, including full JSON samples."
     @skip_masthead = true
     @body_class = "book"
+    @post_url = 'http://pkn.me/cheat'
     erb :stripe_event_cheatsheet
   end
 
