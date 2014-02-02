@@ -18,7 +18,7 @@ end
 
 class Pages
 
-  attr_reader :pages, :blog_posts, :non_blog_posts
+  attr_reader :pages, :non_blog_posts
   
   def initialize
     @pages_by_page_name = {}
@@ -113,6 +113,10 @@ class Pages
           b[0].date <=> a[0].date
         end
     end.select{|post,freq| freq > 1}.collect {|post,freq| post}
+  end
+
+  def blog_posts
+    @blog_posts.sort { |a, b| a.date <=> b.date }
   end
 end
 
