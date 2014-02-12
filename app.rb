@@ -275,7 +275,7 @@ class App < Sinatra::Base
     gb = Gibbon::API.new
     begin
       gb.lists.subscribe({
-        id:           ENV['MAILCHIMP_LIST_ID'],
+        id:           params[:list_id] || ENV['MAILCHIMP_LIST_ID'],
         email:        {:email => email},
         double_optin: false
       })

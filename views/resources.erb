@@ -1,13 +1,16 @@
 <h1>The Big List of Stripe Resources</h1>
 
 <div class="well">
-<p style="margin-bottom: 0.5em">Want more? Follow <a href="https://twitter.com/petelinks">@petelinks</a> or subscribe to the newsletter.</p>
-  <form action="/subscribe" method="POST" class="form form-inline" style="margin-top: 0em; margin-bottom: 0.5em">
+  <p style="margin-bottom: 0.5em">Want more? Follow <a href="https://twitter.com/petelinks">@petelinks</a> or subscribe to the newsletter.</p>
+  <form action="/subscribe" method="POST" class="form form-inline" style="margin-top: 0em; margin-bottom: 0.5em; display: inline">
     <input type="email" class="sans" name="email" placeholder="you@example.com"></input>
     <input type="hidden" name="next" value="/biglist-confirmed"></input>
-    <input type="hidden" name="listid" value=""></input>
-    <input class="btn btn-primary" type="submit" value="Send Me Links" />
+    <input type="hidden" name="list_id" value="333cc1d162"></input>
+    <input class="btn btn-primary" type="submit" value="Send Me Links"></input>
   </form>
+  <p class="date pull-right" style="display: inline">
+    Share: <%= partial :share_links %>
+  </p>
 </div>
 
 <h2>Code</h2>
@@ -37,6 +40,12 @@
   <dt><a href="http://www.shopify.com/blog/6335014-32-free-credit-card-icons#axzz2i4nAS6FV">Shopify Card Icons</a></dt>
   <dd>A great set of 32 credit card icons in various sizes of PNG</dd>
 
+  <dt><a href="https://github.com/vandrijevik/stripe_auto_paginate">Stripe Auto Paginate</a></dt>
+  <dd>Automatic pagination for fetching records using Stripe's Ruby API</dd>
+
+  <dt><a href="https://github.com/vandrijevik/sw-node-express-mongoose">sw-node-express-mongoose</a></dt>
+  <dd>A fast, Heroku-ready endpoint to record webhooks and ease visualizing the sequence of events, the exact payload, etc. Built on Node and MongoDB.</dd>
+
 </dl>
 
 <h2>Learning</h2>
@@ -65,6 +74,9 @@
 
   <dt><a href="https://support.stripe.com/questions/whats-new-with-multiple-subscriptions-per-customer-january-2014">Multiple Subscriptions</a></dt>
   <dd>Stripe just recently enabled support for adding multiple subscriptions.</dd>
+
+  <dt><a href="http://blog.8thcolor.com/2013/11/rubies-gems-and-dollars-a-journey-in-the-payments-world-part-1-the-backpack/">A Journey in Payment World</a></dt>
+  <dd>A five part blog post series about using Stripe from a European perspective. Part 1 is above, <a href="http://blog.8thcolor.com/2013/12/a-journey-in-payment-world-part-2-the-only-part-you-need/">Part 2</a> <a href="http://blog.8thcolor.com/2013/12/a-journey-in-payment-world-part-3-what-is-happening-here/">Part 3</a> <a href="http://blog.8thcolor.com/2014/01/a-journey-in-payment-world-part-4-we-have-a-plan/">Part 4</a>, Part 5 to be published soon.</dd>
 
 </dl>
 
