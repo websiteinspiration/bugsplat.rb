@@ -83,3 +83,14 @@
 <div class="well">
   <h4>Did I miss something you love? Email me: <a href="mailto:pete@petekeen.net">pete@petekeen.net</a></h4>
 </div>
+
+<% if production? %>
+  <script type="text/javascript">
+    (function() {
+      window._pa = window._pa || {};
+      var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+      pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/52b08162fa50df42040000b9.js";
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+    })();
+  </script>
+<% end %>
