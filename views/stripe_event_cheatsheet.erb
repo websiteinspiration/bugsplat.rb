@@ -21,28 +21,28 @@
 
 <hr>
 
-<h2>Simple One-off Purchases with Charges</h2>
+<h2 id="charges">Simple One-off Purchases with Charges <%= partial :event_anchor, anchor: 'charges' %></h2>
 
-<h4>1. Customer successfully purchases a single one-off item</h4>
+<h4 id="1">1. Customer successfully purchases a single one-off item <%= partial :event_anchor, anchor: '1' %></h4>
 <p>The simplest possible starting point. A single one-off purchase.</p>
 <ul>
   <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'simple_charge' %></li>
 </ul>
 
-<h4>2. Customer's card is declined</h4>
+<h4 id="2">2. Customer's card is declined <%= partial :event_anchor, anchor: '2' %></h4>
 <p>This event also describes other failure modes, like an invalid expiration date or a failed CVC check if you have the option turned on to decline on a failed check.</p>
 <ul>
   <li><%= partial :stripe_event, event_name: 'charge.failed', describes: 'Charge', example: 'simple_charge_declined' %></li>
 </ul>
 
-<h4>3. Customer successfully purchases and then requests a refund</h4>
+<h4 id="3">3. Customer successfully purchases and then requests a refund <%= partial :event_anchor, anchor: '3' %></h4>
 <p>Typically you'll hit the refund button in Stripe's management interface to generate a refunded event.</p>
 <ul>
   <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'simple_charge' %></li>
   <li><%= partial :stripe_event, event_name: 'charge.refunded', describes: 'Charge', example: 'simple_charge_refunded' %></li>
 </ul>
 
-<h4>4. Create a charge without capturing it, capture later</h4>
+<h4 id="4">4. Create a charge without capturing it, capture later  <%= partial :event_anchor, anchor: '4' %></h4>
 <p>
   Normally charges are <em>authorized</em> (check with the bank for available funds) and
   <em>captured</em> (actually request a fund transfer) at the same time. Stripe allows you to
@@ -54,7 +54,7 @@
   <li><%= partial :stripe_event, event_name: 'charge.captured', describes: 'Charge', example: 'captured' %></li>
 </ul>
 
-<h4>5. Charge then modify description</h4>
+<h4 id="5">5. Charge then modify description <%= partial :event_anchor, anchor: '5' %></h4>
 <p>
   After making a charge you can update the `description` and `metadata` fields to add or alter application-specific information.
 </p>
@@ -63,9 +63,9 @@
   <li><%= partial :stripe_event, event_name: 'charge.updated', describes: 'Charge', example: 'charge_after_modification' %></li>
 </ul>
 
-<h2>Disputes</h2>
+<h2 id="disputes">Disputes  <%= partial :event_anchor, anchor: 'disputes' %></h2>
 
-<h4>6. Customer disputes a charge, you upload evidence</h4>
+<h4 id="6">6. Customer disputes a charge, you upload evidence <%= partial :event_anchor, anchor: '6' %></h4>
 <p>
   Disputes happen. It's just a fact when you're charging people money. Stripe will of course send your application a series
   of webhooks as the dispute process plays out.
@@ -76,16 +76,16 @@
   <li><%= partial :stripe_event, event_name: 'charge.dispute.closed', describes: 'Dispute', example: 'dispute_closed' %></li>
 </ul>
 
-<h2>Customers</h2>
+<h2 id="customers">Customers <%= partial :event_anchor, anchor: 'customers' %></h2>
 
-<h4>7. Create customer and charge them immediately</h4>
+<h4 id="7">7. Create customer and charge them immediately  <%= partial :event_anchor, anchor: '7' %></h4>
 <p>This is the same flow as a simple charge with the added benefit of being able to charge the customer again later.</p>
 <ul>
   <li><%= partial :stripe_event, event_name: 'customer.created', describes: 'Customer', example: 'create_customer' %></li>
   <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'customer_charge' %></li>
 </ul>
 
-<h4>8. Create a customer with a plan without a trial</h4>
+<h4 id="8">8. Create a customer with a plan without a trial <%= partial :event_anchor, anchor: '8' %></h4>
 <p>Customer and subscriptions are where Stripe's webhook system really starts to shine. All of these events happen more or less simultaneously when you create a customer object and include the <code>plan_id</code> and <code>card</code> attributes.</p>
 <ul>
   <li><%= partial :stripe_event, event_name: 'customer.created', describes: 'Customer', example: 'test1_create' %></li>
@@ -96,7 +96,7 @@
   <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'test1_charge' %></li>
 </ul>
 
-<h4>9. Create a customer with a plan with a trial</h4>
+<h4 id="9">9. Create a customer with a plan with a trial <%= partial :event_anchor, anchor: '9' %></h4>
 <p>
   Trials let you give a customer a taste of your application before charging them. Stripe will create a $0 invoice and "pay" it when you
   create the subscription, and then later will send you a <code>customer.subscription.trial_will_end</code> three days before creating the
@@ -114,7 +114,7 @@
   <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'test1_charge' %></li>
 </ul>
 
-<h4>10. Create a customer with a plan with a discount, no trial</h4>
+<h4 id="10">10. Create a customer with a plan with a discount, no trial <%= partial :event_anchor, anchor: '10' %></h4>
 <p>Discounted subscriptions are essentially the same as a normal subscription with one more event, `customer.discount.created`.</p>
 <ul>
   <li><%= partial :stripe_event, event_name: 'customer.created', describes: 'Customer', example: 'test3_create' %></li>
@@ -126,7 +126,7 @@
   <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'test3_charge' %></li>
 </ul>
 
-<h4>11. Invoice charge attempt fails</h4>
+<h4 id="11">11. Invoice charge attempt fails <%= partial :event_anchor, anchor: '11' %></h4>
 <p>
   When you run a subscription service eventually you'll have customers who cancel their card without telling you.
   When that happens Stripe will send you a series of events. The key event is <code>invoice.payment_failed</code>, the rest just update
@@ -140,13 +140,13 @@
   <li><%= partial :stripe_event, event_name: 'customer.updated', describes: 'Customer', example: 'test1_invoice_10_customer_updated' %></li>
 </ul>
   
-<h4>12. Exisiting customer, adding invoice items</h4>
+<h4 id="12">12. Exisiting customer, adding invoice items <%= partial :event_anchor, anchor: '12' %></h4>
 <p>Adding invoice items for a customer without specifying an invoice will automatically add them to the next month's invoice. Pretty handy for doing usage billing, since you can just roll up the customer's daily usage and build an invoice item for every day.</p>
 <ul>
   <li><%= partial :stripe_event, event_name: 'invoiceitem.created', describes: 'Invoice Item', example: 'invoice_item' %></li>
 </ul>
 
-<h4>13. Customer modifies existing card</h4>
+<h4 id="13">13. Customer modifies existing card <%= partial :event_anchor, anchor: '13' %></h4>
 <p>
   Stripe's Card API lets you update some details about a card without fully adding a new one.
   For example, a customer's address changes or they get a new expiration date.
@@ -155,7 +155,7 @@
   <li><%= partial :stripe_event, event_name: 'customer.card.updated', describes: 'Card', example: 'modify_card' %></li>
 </ul>
 
-<h4>14. Customer changes to a different card</h4>
+<h4 id="14">14. Customer changes to a different card <%= partial :event_anchor, anchor: '14' %></h4>
 <p>
   Of course if a customer wants to change their card entirely they have that option. This is the set of events that happens
   when you assign to the customer's `card` attribute. The sequence of events is essentially the same if you add a card and
