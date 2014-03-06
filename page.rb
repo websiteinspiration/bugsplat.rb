@@ -248,7 +248,7 @@ class Page
   end
 
   def show_upsell?
-    @headers.has_key?('show_upsell') && @headers['show_upsell'] == 'true'
+    @headers.has_key?('show_upsell') && @headers['show_upsell'].to_s == 'true'
   end
 
   def show_upsell_form?
