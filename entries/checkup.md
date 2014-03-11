@@ -12,11 +12,13 @@ hide_from_archive: true
 
 What happens when you finish the payment integration in your application? You *make sure it keeps working*. Introducing **Stripe Checkup**, a monthly service that watches your Rails payment integration so you never have to worry about it.
 
+## Payment failures are expensive; Regular maintence is cheap
+
 Keeping your Stripe system up to date with the latest API changes can be a daunting task. Stripe moves fast and sometimes a new feature comes along that would benefit your business, but you never have the time to get it installed. Sometimes the Rails security team releases an urgent patch, but you're in Tahiti and can't apply it right away. Once a year your SSL certificates need to be rolled over. Are you on top of that?
 
 Small, regular, cheap updates to your application will keep it humming along without the huge expense of big-bang upgrades every few years. Stripe Checkup is designed with that in mind.
 
-**There are only five Stripe Checkup slots avaiable**, so if this sounds interesting keep reading. There's an application form toward the bottom.
+**There are only five Stripe Checkup slots available**, so if this sounds interesting keep reading. There's a link to the application form toward the bottom.
 
 ## Who this is for
 
@@ -30,9 +32,10 @@ Stripe Checkup is not for every business, but you might want to [apply](/checkup
 
 * A free (up to $249/month retail) account at [Baremetrics](https://www.baremetrics.io/) for your Stripe-based SaaS application
 * A yearly SSL certificate renewal and installation
-* Periodic application of Rails security updates
-* A monthly security scan of your application's source, looking for common security vulnerabilities.
-* A monthly report with the latest set of Stripe changes and how they can improve your business, as well as patches that you optionally apply to implement them.
+* Patches to apply for Rails security updates
+* A monthly security scan of your application's source, looking for common security vulnerabilities
+* A monthly black-box security scan of your production application, looking for XSS and sql injection vulnerabilities
+* A monthly report with the latest set of Stripe changes and how they can improve your business, as well as patches that you optionally apply to implement them
 
 ## Who are you?
 
