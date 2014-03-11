@@ -286,7 +286,7 @@ class App < Sinatra::Base
     redirect params[:next]
   end
 
-  post '/checkup-apply' do
+  post '/checkup-apply-form' do
     text = params.map do |key, val|
       "#{key}:\n\n#{val}\n\n"
     end.join("\n")

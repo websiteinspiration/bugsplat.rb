@@ -13,7 +13,7 @@ Thanks for your interest in Stripe Checkup. Fill out the form below and I'll get
 
 <div class="well">
 
-<form action="/checkup-apply" method="post">
+<form action="/checkup-apply-form" method="post">
   <fieldset>
     <label for="name">Your Name</label>
     <input type="text" name="name">
