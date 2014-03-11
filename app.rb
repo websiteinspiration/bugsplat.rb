@@ -252,7 +252,7 @@ class App < Sinatra::Base
     layout = @page.layout || :layout
 
     if params[:format] == 'html'
-     return erb view, layout: layout
+      return erb view, layout: layout
     end
 
     public_path = File.expand_path(File.join(__FILE__, "..", "public"))
