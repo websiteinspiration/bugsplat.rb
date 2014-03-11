@@ -40,9 +40,9 @@ I'm [Pete Keen](https://www.petekeen.net), a software developer and Stripe enthu
 
 ## How much is this?
 
-Glad you asked! Stripe Checkup costs **$750 per month or $7,500 per year (a 17% discount)**. In order to be most effective, a minimum of three months is required for any project. If you decide to pay monthly, you'll pay for the first three months up front, and then per-month after.
+Glad you asked! Stripe Checkup costs **$1,500 per month or $15,000 per year (a 17% discount)**. In order to be most effective, a minimum of three months is required for any project. If you decide to pay monthly, you'll pay for the first three months up front, and then per-month after.
 
-I'll spend a day every month analyizing your Baremetrics reports and getting to know your application and how Stripe's ever-evolving API can continue to help your business grow, as well as meeting with you to talk through any questions and implement any application-level changes required. I'll also keep on top of Rails security updates and apply them to your application as needed. 
+I'll spend a day every month analyizing your Baremetrics reports and getting to know your application and how Stripe's ever-evolving API can continue to help your business grow, as well as meeting with you to talk through any questions and implement any application-level changes required. I'll also keep your application up to date with Rails security updates and run two forms of vulnerability detection: a source code level scan as well as a black box scan. Once a year I'll roll your SSL certificate for you as well.
 
 If your application is hit with a security exploit, you could lose tens of thousands of dollars, your ability to charge credit cards, or even your entire business. You'll be spending far less for Stripe Checkup.
 
@@ -51,8 +51,6 @@ If you're ever unhappy with Stripe Checkup **I'll provide a full refund**. I sta
 ## Apply today
 
 **There are only 5 slots available for Stripe Checkup.** If this sounds interesting, [apply here](https://www.petekeen.net/checkup-apply). I'll follow up with a few questions about your application and then we can get started.
-
-You can also check out [Stripe Checkup's terms and conditions](https://www.petekeen.net/checkup-terms). I've tried to make them as readable as possible.
 
 Have more questions? Great! [I would love to hear from you](mailto:pete@petekeen.net). I'll get back to you as soon as I can.
 
