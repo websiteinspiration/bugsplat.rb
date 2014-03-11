@@ -14,7 +14,7 @@ What happens when you finish the payment integration in your application? You *m
 
 Keeping your Stripe system up to date with the latest API changes can be a daunting task. Stripe moves fast and sometimes a new feature comes along that would benefit your business, but you never have the time to get it installed. Sometimes the Rails security team releases an urgent patch, but you're in Tahiti and can't apply it right away. Once a year your SSL certificates need to be rolled over. Are you on top of that?
 
-Small, regular, cheap updates to your application will keep it humming along without the dauting expense of big-bang upgrades every few years.
+Small, regular, cheap updates to your application will keep it humming along without the huge expense of big-bang upgrades every few years.
 
 ## Who this is for
 
