@@ -11,6 +11,7 @@ require 'split'
 require 'sinatra/cookies'
 require 'gibbon'
 require './cookie_adapter'
+require 'pony'
 
 class App < Sinatra::Base
 
@@ -285,6 +286,19 @@ class App < Sinatra::Base
     redirect params[:next]
   end
 
+  post '/checkup-apply' do
+    text = params.map do |key, val|
+      "#{key}:\n\n#{val}\n\n"
+    end.join("\n")
+    sendmail(
+      to: 'pete@petekeen.net',
+      from: params[:email],
+      subject: "Stripe Checkup application",
+      body: text
+    )
+    redirect '/checkup-apply-done'
+  end
+
   post '/ping' do
     'pong'
   end
@@ -297,6 +311,22 @@ class App < Sinatra::Base
   error do
     @page_title = "Error"
     erb :error_500
+  end
+
+  def sendmail(options)
+    options.merge!(
+      via: :smtp,
+      via_options: {
+        address:   ENV['SMTP_SERVER_ADDRESS'],
+        port:      ENV['SMTP_SERVER_PORT'],
+        user_name: ENV['SMTP_SERVER_USERNAME'],
+        password:  ENV['SMTP_SERVER_PASSWORD'],
+        domain:    ENV['SMTP_SERVER_DOMAIN'],
+        enable_starttls_auto: true,
+        authenticaton: :login
+      }
+    )
+    Pony.mail(options)
   end
 end
 

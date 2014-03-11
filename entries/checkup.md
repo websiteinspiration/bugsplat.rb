@@ -14,11 +14,13 @@ What happens when you finish the payment integration in your application? You *m
 
 Keeping your Stripe system up to date with the latest API changes can be a daunting task. Stripe moves fast and sometimes a new feature comes along that would benefit your business, but you never have the time to get it installed. Sometimes the Rails security team releases an urgent patch, but you're in Tahiti and can't apply it right away. Once a year your SSL certificates need to be rolled over. Are you on top of that?
 
-Small, regular, cheap updates to your application will keep it humming along without the huge expense of big-bang upgrades every few years.
+Small, regular, cheap updates to your application will keep it humming along without the huge expense of big-bang upgrades every few years. Stripe Checkup is designed with that in mind.
+
+**There are only five Stripe Checkup slots avaiable**, so if this sounds interesting keep reading. There's an application form toward the bottom.
 
 ## Who this is for
 
-Stripe Checkup is not for every business, but you might want to apply if any of these things sound like you:
+Stripe Checkup is not for every business, but you might want to [apply](/checkup-apply) if any of these things sound like you:
 
 * You're a small to mid-sized business that uses Stripe and Rails
 * You have subscription customers bringing in revenue but don't have an in-house staff to keep up with security updates and Stripe's API changes.
@@ -28,7 +30,7 @@ Stripe Checkup is not for every business, but you might want to apply if any of 
 
 * A free (up to $249/month retail) account at [Baremetrics](https://www.baremetrics.io/) for your Stripe-based SaaS application
 * A yearly SSL certificate renewal and installation
-* Application of Rails security updates within 48 hours of release
+* Periodic application of Rails security updates
 * A monthly security scan of your application's source, looking for common security vulnerabilities.
 * A monthly report with the latest set of Stripe changes and how they can improve your business, as well as patches that you optionally apply to implement them.
 
@@ -40,9 +42,7 @@ I'm [Pete Keen](https://www.petekeen.net), a software developer and Stripe enthu
 
 Glad you asked! Stripe Checkup costs **$750 per month or $7,500 per year (a 17% discount)**. In order to be most effective, a minimum of three months is required for any project. If you decide to pay monthly, you'll pay for the first three months up front, and then per-month after.
 
-I'll spend a day every month analyizing your Baremetrics reports and getting to know your application and how Stripe's ever-evolving API can continue to help your business grow, as well as meeting with you to talk through any questions and implement any application-level changes required.
-
-I'll also keep on top of Rails security updates and apply them to your application within 48 hours of the Rails security team's vulnerability notice.
+I'll spend a day every month analyizing your Baremetrics reports and getting to know your application and how Stripe's ever-evolving API can continue to help your business grow, as well as meeting with you to talk through any questions and implement any application-level changes required. I'll also keep on top of Rails security updates and apply them to your application as needed. 
 
 If your application is hit with a security exploit, you could lose tens of thousands of dollars, your ability to charge credit cards, or even your entire business. You'll be spending far less for Stripe Checkup.
 
@@ -50,7 +50,7 @@ If you're ever unhappy with Stripe Checkup **I'll provide a full refund**. I sta
 
 ## Apply today
 
-**There are only 10 slots available for Stripe Checkup.** If this sounds interesting, [apply here](https://www.petekeen.net/checkup-apply). I'll follow up with a few questions about your application and then we can get started.
+**There are only 5 slots available for Stripe Checkup.** If this sounds interesting, [apply here](https://www.petekeen.net/checkup-apply). I'll follow up with a few questions about your application and then we can get started.
 
 You can also check out [Stripe Checkup's terms and conditions](https://www.petekeen.net/checkup-terms). I've tried to make them as readable as possible.
 
