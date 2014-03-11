@@ -10,6 +10,7 @@ location /mastering-modern-payments {
 }
 
 <% pages.each do |page| %>
+<% next unless page.page_id %>
 rewrite ^/<%= page.page_id %>$ https://www.petekeen.net<%= page.html_path %> permanent;
 <% end %>
 
