@@ -3,6 +3,7 @@ title: Apply for Stripe Checkup
 layout: book_layout
 view: book
 hide_from_archive: true
+id: ch-app
 ---
 
 <h1 class="book big center">Stripe Checkup</h1>
