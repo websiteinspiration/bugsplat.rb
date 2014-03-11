@@ -2,6 +2,7 @@
 title: Apply for Stripe Checkup
 layout: book_layout
 view: book
+id: ch-done
 hide_from_archive: true
 ---
 
