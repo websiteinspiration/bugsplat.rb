@@ -12,7 +12,7 @@ hide_from_archive: true
 
 What happens when you finish the payment integration in your application? You *make sure it keeps working*. Introducing **Stripe Checkup**, a monthly service that watches your Rails payment integration so you never have to worry about it.
 
-## Payment failures are expensive; Regular maintence is cheap
+## Payment failures are expensive; Regular maintenance is cheap
 
 Keeping your Stripe system up to date with the latest API changes can be a daunting task. Stripe moves fast and sometimes a new feature comes along that would benefit your business, but you never have the time to get it installed. Sometimes the Rails security team releases an urgent patch, but you're in Tahiti and can't apply it right away. Once a year your SSL certificates need to be rolled over. Are you on top of that?
 
