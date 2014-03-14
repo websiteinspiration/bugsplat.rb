@@ -1,6 +1,6 @@
 ---
 title: Why is there a charge on my card?
-id: c
+id: chrg
 ---
 
 ### It's a charge for my consulting services or book
