@@ -244,6 +244,18 @@ class App < Sinatra::Base
       @thumbnail = @page['thumbnail']
     end
 
+    if @page['body_class']
+      @body_class = @page['body_class']
+    end
+
+    if @page['post_url']
+      @post_url = @page['post_url']
+    end
+
+    if @page['skip_masthead']
+      @skip_masthead = @page['skip_masthead']
+    end
+
     if params[:format] == 'md'
       content_type "text/plain"
       return @page.markdown_content
