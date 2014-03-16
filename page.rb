@@ -18,7 +18,7 @@ end
 
 class Pages
 
-  attr_reader :pages, :non_blog_posts
+  attr_reader :pages, :non_blog_posts, :renderer
   
   def initialize
     @pages_by_page_name = {}

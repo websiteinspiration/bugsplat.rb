@@ -2,6 +2,7 @@
 require 'rubygems'
 require 'sinatra/base'
 require 'page'
+require 'project'
 require 'strip_renderer'
 require 'atom/pub'
 require 'docverter'
@@ -159,6 +160,22 @@ class App < Sinatra::Base
     @tags = tags.keys.sort
     @page_title = "All Tags"
     erb :tags
+  end
+
+  get %r{^/projects(\.html)?$} do
+    @projects = Project.all
+    @page_title = "Projects"
+    erb :projects
+  end
+
+  get '/projects/:project_name' do
+    @project = Project.find(params[:project_name])
+    raise Sinatra::NotFound unless @project
+
+    @rendered_readme = PAGES.renderer.render(@project.readme_contents)
+    @page_title = @project.name
+
+    erb :project
   end
 
   get '/mmp' do
