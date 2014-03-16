@@ -5,7 +5,6 @@ class Project
   def initialize(path)
     @path = path
     load_config
-    @config = YAML.load(repo_data(".repo.yml"))
   end
 
   def load_config
