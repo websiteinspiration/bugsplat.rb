@@ -12,11 +12,11 @@ class Project
     @config = data.nil? ? {} : YAML.load(data)
   end
 
-  def description
+  def name
     @config['name'] || base_path.gsub('.git', '')
   end
 
-  def name
+  def description
     @config['description'] || "No description"
   end
 
