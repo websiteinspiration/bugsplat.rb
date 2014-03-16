@@ -3,14 +3,15 @@ require 'grit'
 class Project
   def initialize(path)
     @path = path
+    @config = YAML.load(repo_data(".repo.yml"))
   end
 
   def description
-    File.read(File.join(@path, 'description')) rescue "No Description"
+    @config['name'] || base_path.gsub('.git', '')
   end
 
   def name
-    File.read(File.join(@path, 'name')) rescue base_path.gsub('.git', '')
+    @config['description'] || "No description"
   end
 
   def clone_url
@@ -25,14 +26,18 @@ class Project
     File.basename(@path)
   end
 
-  def readme_contents
+  def repo_data(path)
     repo = Grit::Repo.new(@path)
-    obj = repo.tree / "README.md"
+    obj = repo.tree / path
     if obj
       obj.data.encode('UTF-8')
     else
       ""
     end
+  end
+
+  def readme_contents
+    repo_data("README.md")
   end
 
   def self.all
