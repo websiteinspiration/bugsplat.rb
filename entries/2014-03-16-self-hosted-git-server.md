@@ -118,4 +118,6 @@ There are a lot of little things that this system lacks. Easy code and commit br
 
 * * * *
 
-I realize that it's a little ironic that most of the links in this post point at GitHub. My reasons for moving to this system are pretty simple: I want to control my own destiny, free of even the possibility that someone else will be able to decide how or what I choose to share with the world. For a lot of people, GitHub or Bitbucket or another 3rd party service presents a reasonable compromise for them, and that's fine. 
+I realize that it's a little ironic that most of the links in this post point at GitHub. My reasons for moving to this system are pretty simple: I want to control my own destiny, free of even the possibility that someone else will be able to decide how or what I choose to share with the world.
+
+For a lot of people, GitHub or Bitbucket or another 3rd party service presents a reasonable compromise for them, and that's fine. For myself, today is the last day that I'm pushing new repos to GitHub as well as the last day I'm paying them for my organization account. 
