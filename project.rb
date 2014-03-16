@@ -1,9 +1,16 @@
 require 'grit'
+require 'yaml'
 
 class Project
   def initialize(path)
     @path = path
+    load_config
     @config = YAML.load(repo_data(".repo.yml"))
+  end
+
+  def load_config
+    data = repo_data(".repo.yml")
+    @config = data.nil? ? {} : YAML.load(data)
   end
 
   def description
@@ -32,12 +39,12 @@ class Project
     if obj
       obj.data.encode('UTF-8')
     else
-      ""
+      nil
     end
   end
 
   def readme_contents
-    repo_data("README.md")
+    repo_data("README.md") || ""
   end
 
   def self.all
