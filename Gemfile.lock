@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/schacon/grack.git
+  revision: c0435e17840c7468f3d749821c7f9aa1a5a92f74
+  specs:
+    grack (0.1.0)
+      rack
+
 GEM
   remote: https://rubygems.org/
   remote: http://gems.subspace.bugsplat.info/
@@ -161,6 +168,7 @@ DEPENDENCIES
   dotenv
   foreman
   gibbon (~> 1.1)
+  grack!
   pony (~> 1.8)
   puma
   pygments.rb

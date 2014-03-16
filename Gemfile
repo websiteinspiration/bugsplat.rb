@@ -25,6 +25,7 @@ gem 'activemodel', '~> 3.2.15'
 gem 'dotenv'
 gem 'gibbon', '~> 1.1'
 gem 'pony', '~> 1.8'
+gem 'grack', git: 'https://github.com/schacon/grack.git'
 
 group :development do
   gem 'shotgun'
