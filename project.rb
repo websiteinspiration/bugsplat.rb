@@ -4,6 +4,7 @@ require 'yaml'
 class Project
   def initialize(path)
     @path = path
+    @repo = Grit::Repo.new(@path)
     load_config
   end
 
@@ -33,8 +34,7 @@ class Project
   end
 
   def repo_data(path)
-    repo = Grit::Repo.new(@path)
-    obj = repo.tree / path
+    obj = @repo.tree / path
     if obj
       obj.data.encode('UTF-8')
     else
@@ -44,6 +44,11 @@ class Project
 
   def readme_contents
     repo_data("README.md") || ""
+  end
+
+  def cache_key
+    rev = @repo.head.commit.id
+    "#{@path}-#{rev}"
   end
 
   def self.all

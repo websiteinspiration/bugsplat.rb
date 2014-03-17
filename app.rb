@@ -13,6 +13,7 @@ require 'sinatra/cookies'
 require 'gibbon'
 require './cookie_adapter'
 require 'pony'
+require 'lru_redux'
 
 class App < Sinatra::Base
 
@@ -97,6 +98,11 @@ class App < Sinatra::Base
     end
   end
 
+  def initialize(app = nil)
+    super(app)
+    @cache = LruRedux::ThreadSafeCache.new(1000)
+  end
+
   before do
     @pages = PAGES
   end
@@ -172,10 +178,11 @@ class App < Sinatra::Base
     @project = Project.find(params[:project_name])
     raise Sinatra::NotFound unless @project
 
-    @rendered_readme = PAGES.renderer.render(@project.readme_contents)
-    @page_title = @project.name
-
-    erb :project
+    @cache.getset(@project.cache_key) do
+      @rendered_readme = PAGES.renderer.render(@project.readme_contents)
+      @page_title = @project.name
+      erb :project
+    end
   end
 
   get '/mmp' do

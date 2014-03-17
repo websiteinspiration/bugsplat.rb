@@ -27,6 +27,7 @@ gem 'gibbon', '~> 1.1'
 gem 'pony', '~> 1.8'
 gem 'grack', git: 'https://github.com/schacon/grack.git'
 gem 'grit'
+gem 'lru_redux'
 
 group :development do
   gem 'shotgun'
