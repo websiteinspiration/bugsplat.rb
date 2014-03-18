@@ -1,10 +1,10 @@
-require 'grit'
+require 'rugged'
 require 'yaml'
 
 class Project
   def initialize(path)
     @path = path
-    @repo = Grit::Repo.new(@path)
+    @repo = Rugged::Repository.new(@path)
     load_config
   end
 
@@ -33,10 +33,11 @@ class Project
     File.basename(@path)
   end
 
-  def repo_data(path)
-    obj = @repo.tree / path
-    if obj
-      obj.data.encode('UTF-8')
+  def repo_data(path, refspec='refs/heads/master')
+    ref = @repo.ref(refspec)
+    blob = @repo.blob_at(ref.target, path)
+    if blob
+      blob.read_raw.data.encode('UTF-8')
     else
       nil
     end
