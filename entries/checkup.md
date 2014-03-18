@@ -38,7 +38,7 @@ I'm [Pete Keen](https://www.petekeen.net), a software developer and Stripe enthu
 
 ## How much is this?
 
-Glad you asked! Stripe Checkup costs **$1,500**. I'll spend between half a day and one day examining your code and assembling a report with all of the information you need to be confident in your Stripe system.
+Glad you asked! Stripe Checkup costs **$750**. I'll spend about half a day examining your code and assembling a report with all of the information you need to be confident in your Stripe system.
 
 ## Apply today
 
