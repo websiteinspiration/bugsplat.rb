@@ -16,8 +16,6 @@ grack_config = {
   upload_pack: true
 }
 
-puts grack_config.to_json
-
 use Rack::ShowExceptions
 run Rack::URLMap.new \
   '/'       => App.new,
