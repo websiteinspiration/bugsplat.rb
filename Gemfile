@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 source 'http://gems.subspace.bugsplat.info' # comment this out if you're not me
 
-gem 'puma'
+gem 'puma', '~> 2.8'
 gem 'sinatra'
 gem 'rake'
 gem 'redcarpet'
