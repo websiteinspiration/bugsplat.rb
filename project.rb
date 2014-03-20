@@ -48,7 +48,7 @@ class Project
   end
 
   def cache_key
-    rev = @repo.head.commit.id
+    rev = @repo.head.target
     "#{@path}-#{rev}"
   end
 
