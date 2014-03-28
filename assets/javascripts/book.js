@@ -1,5 +1,6 @@
 var couponExpirations = {
   'expired10': new Date(2012,0,1)
+  'special50': new Date(2014,2,30)
 };
 
 var couponCode = undefined;
