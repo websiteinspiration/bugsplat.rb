@@ -9,6 +9,10 @@ location /mastering-modern-payments {
   try_files $uri/index.html $uri.html $uri @app;
 }
 
+location /bits {
+  proxy_pass http://bits.petekeen.net;
+}
+
 <% pages.each do |page| %>
 <% next unless page.page_id %>
 rewrite ^/<%= page.page_id %>$ https://www.petekeen.net<%= page.html_path %> permanent;
