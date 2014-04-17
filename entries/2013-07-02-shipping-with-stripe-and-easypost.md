@@ -1,7 +1,7 @@
 ---
 title: Shipping with Stripe and EasyPost
 id: 0e350
-tags: Programming
+tags: Programming, Stripe
 show_upsell: 'true'
 ---
 
@@ -11,6 +11,8 @@ show_upsell: 'true'
 
 
 Let's say that instead of running a Software as a Service, you're actually building and shipping physical products. Let's say quadcopter kits. People come to your website, buy a quadcopter kit, and then you build it and ship it to them. It takes you a few days to build the kit, though, and you would rather not charge the customer until you ship. Traditionally [Stripe][stripe] has been focused on paying for online services but recently they added the ability to *authorize* and *capture* payments in two steps. In this post we're going to explore billing with Stripe and shipping with [EasyPost][easypost] with separate charge and capture.
+
+--fold--
 
 * [Stripe API Docs](https://stripe.com/api/ruby)
 * [EasyPost API Docs](https://www.easypost.com/docs/ruby)

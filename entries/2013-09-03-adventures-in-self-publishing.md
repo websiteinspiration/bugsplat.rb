@@ -1,7 +1,7 @@
 ---
 title: Adventures in Self Publishing
 id: pub
-tags: Books
+tags: Books, Stripe
 show_upsell: 'true'
 ---
 

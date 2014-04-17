@@ -1,7 +1,7 @@
 ---
 title: ! 'Design for Failure: Processing Payments with a Background Worker'
 id: 7dc8b
-tags: Programming
+tags: Programming, Stripe
 show_upsell: 'true'
 ---
 
