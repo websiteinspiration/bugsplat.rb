@@ -46,8 +46,8 @@ class Pages
       @pages_by_page_id[page.page_id] = page
 
       page.tags.each do |tag|
-        @pages_by_tag[tag] ||= []
-        @pages_by_tag[tag] << page
+        @pages_by_tag[tag.downcase] ||= []
+        @pages_by_tag[tag.downcase] << page
       end
 
       if page.is_blog_post?
@@ -64,7 +64,7 @@ class Pages
   end
 
   def tagged(tag)
-    (@pages_by_tag[tag] || [])
+    (@pages_by_tag[tag.downcase] || [])
   end
 
   def find_all_files
