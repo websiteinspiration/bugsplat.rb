@@ -6,8 +6,8 @@
   "data": {
     "object": {
         "charge": "ch_2r95InMhWRjng7",
-        "amount": 5900
-        "created": 1384558511
+        "amount": 5900,
+        "created": 1384558511,
         "status": "needs_response",
         "livemode": false,
         "currency": "usd",
