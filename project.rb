@@ -29,6 +29,10 @@ class Project
     "/projects/#{base_path.gsub('.git', '')}"
   end
 
+  def path_name
+    base_path.gsub('.git', '')
+  end
+
   def base_path
     File.basename(@path)
   end
