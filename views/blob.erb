@@ -1,0 +1,6 @@
+<h2><a href="/projects/<%= @project.name %>"><%= @project.name %></a> / <%= @path %></h2>
+<% if @media_type == 'image' %>
+  <img src="/projects/<%= @project.name %>/raw/<%= @path %>">
+<% else %>
+  <div class="small"><pre><%= h @raw_content %></pre></div>
+<% end %>

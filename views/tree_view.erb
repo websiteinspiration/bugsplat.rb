@@ -1,0 +1,12 @@
+<% tree_list = project.tree_list(path) %>
+<table class="table table-condensed table-hover sans small">
+  <% tree_list.each do |entry| %>
+    <% entry_path = path == '' ? entry[1] : File.join(path, entry[1]) %>
+    <% tree_link = entry[0] == 'dir' ? "/projects/#{project.name}/tree/#{entry_path}" : "/projects/#{project.name}/blob/#{entry_path}" %>
+    <tr>
+      <td class="span3"><span class="pull-left"><i class="fa <%= entry[0] == 'dir' ? 'fa-folder-open-o' : 'fa-file-text-o' %>"></i> <a href="<%= tree_link %>"><%= entry[1] %></a></span></td>
+      <td class="span6"><span class="pull-left"><%= entry[2] %></span></td>
+      <td class="span2"><span class="pull-right"><%= TimeLord::Time.new(Time.at(entry[3])).period.to_words %></span></td>
+    </tr>
+  <% end %>
+</table>

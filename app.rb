@@ -14,6 +14,7 @@ require 'gibbon'
 require './cookie_adapter'
 require 'pony'
 require 'lru_redux'
+require 'time-lord'
 
 class App < Sinatra::Base
 
@@ -38,6 +39,10 @@ class App < Sinatra::Base
   helpers Sinatra::Cookies
   helpers Split::Helper
   helpers do
+
+    def h(text)
+      Rack::Utils.escape_html(text)
+    end
 
     def title(with_suffix=true)
       _title = if @page
@@ -182,6 +187,40 @@ class App < Sinatra::Base
       @rendered_readme = PAGES.renderer.render(@project.readme_contents)
       @page_title = @project.name
       erb :project
+    end
+  end
+
+  get '/projects/:project_name/tree/*' do
+    @project = Project.find(params[:project_name])
+    raise Sinatra::NotFound unless @project
+    @path = params[:splat][0]
+    @cache.getset(@project.cache_key + @path) do
+      erb :tree
+    end
+  end
+
+  get '/projects/:project_name/blob/*' do
+    @project = Project.find(params[:project_name])
+    raise Sinatra::NotFound unless @project
+    @path = params[:splat][0]
+    @cache.getset(@project.cache_key + @path) do
+      @mime_type = MIME::Types.type_for(@path)[0]
+      @media_type = @mime_type.nil? ? 'text' : @mime_type.media_type
+      if ['text', 'application'].include?(@media_type)
+        @raw_content = @project.repo_data(@path)
+      end
+      erb :blob
+    end
+  end
+
+  get '/projects/:project_name/raw/*' do
+    @project = Project.find(params[:project_name])
+    raise Sinatra::NotFound unless @project
+    @path = params[:splat][0]
+    @cache.getset(@project.cache_key + @path) do
+      @mime_type = MIME::Types.type_for(@path)[0]
+      content_type @mime_type.to_s rescue 'text/plain'
+      @project.raw_repo_data(@path)
     end
   end
 

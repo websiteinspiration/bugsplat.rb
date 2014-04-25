@@ -1,5 +1,7 @@
 <div class="entry">
   <%= @rendered_readme %>
+  <hr>
+  <%= partial :tree_view, project: @project, path: '' %>
   <div class="well">
     Clone URL: <code><%= @project.clone_url %></code>
   </div>
