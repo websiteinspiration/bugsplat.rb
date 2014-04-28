@@ -9,9 +9,7 @@ hide_from_archive: 'true'
 
 # You're all set!
 
-Thanks for signing up.<br> Here's your free chapter of ***Mastering Modern Payments: Using Stripe with Rails:***
-
-<a href="http://d2s7foagexgnc2.cloudfront.net/files/9152e9c8f274a498a3b2/mmp_sample_chapter.pdf" class="btn btn-large btn-primary">Get your Free Chapter</a>
+Thanks for signing up. The first lesson of the email course should be showing up in your inbox shortly.
 
 <a href="/mastering-modern-payments">Take me back</a>
 

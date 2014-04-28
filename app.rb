@@ -353,7 +353,10 @@ class App < Sinatra::Base
       gb.lists.subscribe({
         id:           params[:list_id] || ENV['MAILCHIMP_LIST_ID'],
         email:        {:email => email},
-        double_optin: false
+        double_optin: false,
+        merge_vars: {
+          COURSE: '1.0'
+        }
       })
     rescue StandardError => e
       return e.message
