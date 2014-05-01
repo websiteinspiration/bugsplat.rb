@@ -1,4 +1,6 @@
-<h2>If you liked this you should see what's in the book</h2>
+<% if show_header %>
+  <h2>If you liked this you should see what's in the book</h2>
+<% end %>
 <div class="row">
   <div class="span3">
     <div style="float: right; height: 200px; padding-top: 1em; padding-bottom: 2em; text-align: center; margin-left: 1.5em;">
@@ -20,3 +22,13 @@
   </form>
   <small>We won't send you spam. Unsubscribe at any time.</small>
 </div>
+<% if production? %>
+  <script type="text/javascript">
+    (function() {
+      window._pa = window._pa || {};
+      var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+      pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/52b08162fa50df42040000b9.js";
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+    })();
+  </script>
+<% end %>

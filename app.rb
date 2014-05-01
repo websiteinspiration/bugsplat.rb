@@ -256,6 +256,19 @@ class App < Sinatra::Base
     erb :stripe_event_cheatsheet
   end
 
+  get '/course' do
+    redirect '/stripe-rails-course'
+  end
+
+  get %r{^/stripe-rails-course(\.html)?$} do
+    @title = @page_title = "Stripe Rails Course"
+    @full_path = "/stripe-rails-course"
+    @description = "A free five day course with tips on integrating Stripe with Rails"
+    @post_url = 'http://pkn.me/course'
+    @body_class = "book"
+    erb :course
+  end
+
   get '/list' do
     redirect '/the-big-list-of-stripe-resources'
   end
