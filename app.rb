@@ -266,6 +266,7 @@ class App < Sinatra::Base
     @description = "A free five day course with tips on integrating Stripe with Rails"
     @post_url = 'http://pkn.me/course'
     @body_class = "book"
+    @skip_masthead = true
     erb :course
   end
 
