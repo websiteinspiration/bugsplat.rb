@@ -15,18 +15,18 @@ Here's how you credit Bob's account:
 
 ```ruby
 bob = Stripe::Customer.retrieve('cus_bobskey')
-bob.account_balance = -100
+bob.account_balance = bob.account_balance - 100
 bob.save
 ```
 
-Bob's card will be charged $9 for his next invoice: $10 from his monthly plan and -$1 from his account balance. After this invoice, his account balance will be set back to 0. Note that you have to set the account balance to a *negative number*. If you set it to a positive number, that amount will be *added* to Bob's next invoice instead of subtracted.
+Bob's card will be charged $9 for his next invoice: $10 from his monthly plan and -$1 from his account balance. After this invoice, his account balance will be set back to 0. Note that you have to set the account balance to a *negative number*. If you set it to a positive number, that amount will be *added* to Bob's next invoice instead of subtracted. It's also a good practice to subtract the amount from their existing balance. Most of the time this will be 0, but if they happen to already have a balance you don't want to stomp on it.
 
 Here's another example. You want to give Cindy two free months for upgrading to your biggest plan, from the $20 Hobby plan to the $100 Super Startup plan. The same idea applies as for Bob:
 
 ```ruby
 cindy = Stripe::Customer.retrieve('cus_cindyskey')
 cindy.plan = 'super_startup_100'
-cindy.account_balance = -20000
+cindy.account_balance = cindy.account_balance - 20000
 cindy.save
 ```
 
