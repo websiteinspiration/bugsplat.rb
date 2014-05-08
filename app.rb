@@ -378,17 +378,17 @@ class App < Sinatra::Base
     redirect params[:next]
   end
 
-  post '/checkup-apply-form' do
+  post '/stripe-audit-apply-form' do
     text = params.map do |key, val|
       "#{key}:\n\n#{val}\n\n"
     end.join("\n")
     sendmail(
       to: 'pete@petekeen.net',
       from: params[:email],
-      subject: "Stripe Checkup application",
+      subject: "Stripe Audit application",
       body: text
     )
-    redirect '/checkup-apply-done'
+    redirect '/stripe-audit-apply-done'
   end
 
   post '/ping' do

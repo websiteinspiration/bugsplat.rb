@@ -1,20 +1,20 @@
 ---
-title: Apply for Stripe Checkup
+title: Apply for Stripe Audit
 layout: book_layout
 view: book
 hide_from_archive: true
-id: ch-app
+id: au-app
 ---
 
-<h1 class="book big center">Stripe Checkup</h1>
+<h1 class="book big center">Stripe Audit</h1>
 
-Thanks for your interest in Stripe Checkup. Fill out the form below and I'll get back to you as soon as I can.
+Thanks for your interest in Stripe Audit. Fill out the form below and I'll get back to you as soon as I can.
 
 --Pete
 
 <div class="well">
 
-<form action="/checkup-apply-form" method="post">
+<form action="/stripe-audit-apply-form" method="post">
   <fieldset>
     <label for="name">Your Name</label>
     <input type="text" name="name">
