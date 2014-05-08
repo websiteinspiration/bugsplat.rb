@@ -14,3 +14,8 @@ Thanks for signing up. The first lesson of the email course should be showing up
 <a href="/mastering-modern-payments">Take me back</a>
 
 <div style="padding-bottom: 2em"></div>
+
+<script type="text/javascript">
+  window._pq = window._pq || [];
+  _pq.push(['track', 'course_signup']);
+</script>
