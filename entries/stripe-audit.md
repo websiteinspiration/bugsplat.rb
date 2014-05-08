@@ -15,7 +15,7 @@ You invested a lot of time and energy into your Stripe integration. It's operati
 
 ## A checkup for the most important part of your business
 
-Stripe Audit is a code, architecure, and security review serivce. When you purchase Audit you'll receive an in-depth archtecture analysis of your Stripe implementation as well as a thorough code review. You'll also receive a report listing XSS, SQL injection, and  any other vulnerabilities that your application may contain.
+Stripe Audit is a code, architecture, and security review serivce. When you purchase Audit you'll receive an in-depth architecture analysis of your Stripe implementation as well as a thorough code review. You'll also receive a report listing XSS, SQL injection, and  any other vulnerabilities that your application may contain.
 
 ## Who this is for
 
