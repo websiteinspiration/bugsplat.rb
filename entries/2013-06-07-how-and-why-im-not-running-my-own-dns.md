@@ -14,6 +14,8 @@ A few months ago I posted about [how I run my own DNS servers](/how-i-run-my-own
 
 --fold--
 
+*You may be interested in my [other articles tagged with DNS](/tag/DNS)*
+
 Second, and really more importantly, this happened:
 
 <img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/35633efcdeb80dd81714/Screen%20Shot%202013-06-07%20at%204.41.49%20PM.png" alt="Papertrail has a lot of logs">

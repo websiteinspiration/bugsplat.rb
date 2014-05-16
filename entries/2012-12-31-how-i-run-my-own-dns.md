@@ -6,15 +6,13 @@ tags: DNS, Devops, Email
 show_upsell: 'true'
 ---
 
-*This article was featured in [Hacker Monthly Issue 35](http://hackermonthly.com/issue-35.html).*
-
 For the longest time I used [zoneedit][] as my DNS provider of choice. All of my important domains were hosted there, they never really did me wrong. A few months back I decided that I wanted to learn how DNS actually works in the real world, though. Like, what does it actually take to run my own DNS servers?
 
 [zoneedit]: http://www.zoneedit.com/
 
 --fold--
 
-*Important note: I'm no longer running my own DNS servers. I [wrote a post about why](/how-and-why-im-not-running-my-own-dns).*
+*You may be interested in my [other articles tagged with DNS](/tag/DNS)*
 
 ### Step 0: Why would you ever do that?!
 
@@ -57,6 +55,8 @@ One of the more interesting aspects of this whole project has been getting a com
 ### Conclusion
 
 So after all of that, what have I learned? Mostly that I'm a very particular person with regards to this stuff. It's fun right now but I can see it getting kind of tedious down the line. We'll find out! It's been an interesting ride thus far and I've learned quite a bit which is the most important thing.
+
+*This article was featured in [Hacker Monthly Issue 35](http://hackermonthly.com/issue-35.html).*
 
 [RamNode]: https://clientarea.ramnode.com/aff.php?aff=142
 [Prgmr]: http://prgmr.com/xen/

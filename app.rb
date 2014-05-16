@@ -369,6 +369,7 @@ class App < Sinatra::Base
         email:        {:email => email},
         double_optin: false,
         merge_vars: {
+          FNAME: params[:name],
           COURSE: '1.0'
         }
       })

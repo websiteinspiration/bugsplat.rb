@@ -5,9 +5,11 @@ tags: DNS
 show_upsell: 'true'
 ---
 
-*This article is featured in [Hacker Monthly issue 42](http://hackermonthly.com/issue-42.html).*
-
 Frequently I come across confusion with domain names. *Why doesn't my website work? Why is this stupid thing broken, everything I try fails, I just want it to work!!* Invariably the question asker either doesn't know what DNS is or doesn't understand how something fundamental works. More generally, people think that DNS is scary or complicated. This article is an attempt at quelling that fear. *DNS is easy* once you understand a few basic concepts.
+
+--fold--
+
+*You may be interested in my [other articles tagged with DNS](/tag/DNS)*
 
 ## What is DNS
 
@@ -274,3 +276,5 @@ Hopefully this gives you a good beginning understanding of what DNS is and how t
 * [RFC 1035: Domain Names - Implementation and Specification](http://www.ietf.org/rfc/rfc1035.txt)
 
 There are a few more interesting RFCs as well, including [4034](http://www.ietf.org/rfc/rfc4034.txt) about a standard named `DNSSEC` and [5321](http://www.ietf.org/rfc/rfc5321.txt) which talks about DNS as it relates to email. These are all fascinating reads if you want more background information
+
+*This article is featured in [Hacker Monthly issue 42](http://hackermonthly.com/issue-42.html).*
