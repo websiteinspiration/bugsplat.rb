@@ -5,3 +5,4 @@
 //= require jquery.colorbox.js
 //= require book.js
 //= require cheatsheet.js
+//= require jquery.scrolldepth.min.js
