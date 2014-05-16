@@ -6,3 +6,4 @@
 //= require book.js
 //= require cheatsheet.js
 //= require jquery.scrolldepth.min.js
+//= require riveted.min.js
