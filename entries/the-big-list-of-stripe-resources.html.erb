@@ -1,4 +1,9 @@
-<h1>The Big List of Stripe Resources</h1>
+---
+title: The Big List of Stripe Resources
+description: "Links to the best Stripe code and learning resources."
+id: list
+skip_metadata: true
+---
 
 <div class="well">
   <p style="margin-bottom: 0.5em">Want more? Follow <a href="https://twitter.com/petelinks">@petelinks</a> or subscribe to the newsletter.</p>
@@ -9,7 +14,7 @@
     <input class="btn btn-primary" type="submit" value="Send Me Links"></input>
   </form>
   <p class="date pull-right" style="display: inline">
-    Share: <%= partial :share_links %>
+    Share: <%= @app.partial :share_links %>
   </p>
 </div>
 
@@ -87,13 +92,9 @@
   <h4>Did I miss something you love? Email me: <a href="mailto:pete@petekeen.net">pete@petekeen.net</a></h4>
 </div>
 
-<% if production? %>
-  <script type="text/javascript">
-    (function() {
-      window._pa = window._pa || {};
-      var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
-      pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/52b08162fa50df42040000b9.js";
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
-    })();
-  </script>
+<% if @app.production? %>
+<script type="text/javascript">
+  window._pq = window._pq || [];
+  _pq.push(['track', 'saw_upsell'])
+</script>
 <% end %>

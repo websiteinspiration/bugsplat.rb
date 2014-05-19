@@ -10,7 +10,7 @@
     <p class="date"><%= @page.reading_time %> min read</p>
   </div>
   <% end %>
-  <%= @page.render %>
+  <%= @page.render(nil, @app) %>
   <% if @page.is_blog_post? %>
   <p class="date" style="margin-top: 1em; margin-bottom: 1em;">
     Share:&nbsp;
@@ -20,7 +20,7 @@
   <% if @page.show_upsell? %>
     <%= partial :upsell, show_header: true %>
   <% end %>
-  <% unless @skip_masthead %>
+  <% unless @skip_masthead || @page.headers['skip_metadata'] %>
   <div class="well" id="tags-and-formats">
   <div class="formats pull-right">
     <span class="date">Other Formats:&nbsp;</span>

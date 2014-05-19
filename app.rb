@@ -110,6 +110,7 @@ class App < Sinatra::Base
 
   before do
     @pages = PAGES
+    @app = self
   end
 
   get '/' do
@@ -270,18 +271,6 @@ class App < Sinatra::Base
     erb :course
   end
 
-  get '/list' do
-    redirect '/the-big-list-of-stripe-resources'
-  end
-
-  get %r{^/the-big-list-of-stripe-resources(\.html)?$} do
-    @title = @page_title = 'The Big List of Stripe Resources'
-    @full_path = '/the-big-list-of-stripe-resources'
-    @description = "Links to the best Stripe code and learning resources."
-    @post_url = 'http://pkn.me/list'
-    erb :resources
-  end
-
   get '/tag/:tag' do
     tag = params[:tag].gsub('.html', '').downcase
     @tagged_pages = @pages.tagged(tag).sort_by(&:date).reverse
@@ -420,6 +409,14 @@ class App < Sinatra::Base
       }
     )
     Pony.mail(options)
+  end
+
+  def find_template(views, name, engine)
+    if File.exists?("./entries/#{name}.#{@preferred_extension}")
+      super('./entries', name, engine)
+    else
+      super(views, name, engine)
+    end
   end
 end
 

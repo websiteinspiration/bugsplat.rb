@@ -38,8 +38,9 @@ class Pages
 
   def parse_all
     @pages = find_all_files.map do |page|
+      next if File.basename(page).start_with?('_')
       Page.new(page, @renderer)
-    end
+    end.compact
 
     @pages.each do |page|
       @pages_by_page_name[page.name] = page
@@ -68,7 +69,7 @@ class Pages
   end
 
   def find_all_files
-    Dir.glob(File.join(File.dirname(__FILE__), "entries", "*.md")).map do |fullpath|
+    Dir.glob(File.join(File.dirname(__FILE__), "entries", "*")).map do |fullpath|
       File.basename(fullpath)
     end
   end
@@ -151,15 +152,34 @@ class Page
   end
 
   def self.normalize_name(page)
-    return page.downcase.strip.sub(/\.(html|md|pdf)$/,'').sub(/\d{4}-\d{2}-\d{2}-/, '')
+    return page.downcase.strip.sub(/\.(html|md|pdf)(\.erb)?$/,'').sub(/\d{4}-\d{2}-\d{2}-/, '')
   end
 
   def is_blog_post?
     return filename =~ DATE_REGEX
   end
 
-  def render(renderer=nil)
-    (renderer || @renderer).render(@body)
+  def render(renderer=nil, app=nil)
+    content = is_erb? ? render_erb(@body, app) : @body
+    if is_html?
+      content
+    else
+      (renderer || @renderer).render(content)
+    end
+  end
+
+  def render_erb(content, app)
+    template = ERB.new(content)
+    @app = app
+    template.result(binding)
+  end
+
+  def is_erb?
+    original_filename.end_with?('.erb')
+  end
+
+  def is_html?
+    original_filename =~ /\.html(\.erb)?$/
   end
 
   def render_before_fold
