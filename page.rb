@@ -77,9 +77,11 @@ class Pages
   end
 
   def find_all_files
-    Dir.glob(File.join(File.dirname(__FILE__), "entries", "*")).map do |fullpath|
-      File.basename(fullpath)
-    end
+    basepath = File.join(File.dirname(__FILE__), "entries")
+    Dir.glob(File.join(basepath, "**/*")).map do |fullpath|
+      next if File.directory?(fullpath)
+      fullpath.gsub(basepath + "/", '')
+    end.compact
   end
 
   def each

@@ -247,7 +247,7 @@ class App < Sinatra::Base
     erb :tagged_pages
   end
 
-  get %r{^/([\w-]+)(\.)?(\w+)?$} do
+  get %r{^/([\w\/-]+)(\.)?(\w+)?$} do
     params[:page_name] = params[:captures].first
     params[:format] = params[:captures].last
     @hide_discussion = true
