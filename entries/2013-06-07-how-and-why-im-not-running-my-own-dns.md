@@ -3,6 +3,8 @@ title: How and why I'm not running my own DNS
 id: df11a
 tags: DNS, Devops
 show_upsell: 'true'
+topic: DNS
+description: Running a DNS server is not without it's drawbacks. Eventually I decided not to do it.
 ---
 
 [route53]: http://aws.amazon.com/route53/

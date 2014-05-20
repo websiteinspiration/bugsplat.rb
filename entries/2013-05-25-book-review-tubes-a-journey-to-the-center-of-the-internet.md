@@ -2,6 +2,8 @@
 title: ! 'Book Review: Tubes: a Journey to the Center of the Internet'
 id: '03321'
 tags: Book Reviews
+topic: Book Reviews
+description: Take a journey through the literal tubes of the Internet, tracing cables to routers to data centers across the world.
 ---
 
 [tubes]: http://www.amazon.com/gp/product/B006FOHWDI/

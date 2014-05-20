@@ -4,6 +4,8 @@ date: '2012-12-31 12:15:00'
 id: f699a
 tags: DNS, Devops, Email
 show_upsell: 'true'
+topic: DNS
+description: Running your own DNS server using Tinydns is cheap and easy and fun.
 ---
 
 For the longest time I used [zoneedit][] as my DNS provider of choice. All of my important domains were hosted there, they never really did me wrong. A few months back I decided that I wanted to learn how DNS actually works in the real world, though. Like, what does it actually take to run my own DNS servers?

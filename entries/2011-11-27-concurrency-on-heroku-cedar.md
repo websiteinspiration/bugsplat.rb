@@ -3,6 +3,8 @@ title: Concurrency on Heroku Cedar
 date: '2011-11-27 18:52:36'
 tags: Heroku, FivePad, Projects
 id: 50b7f
+topic: Software
+description: One way of adding more concurrency to a single Heroku dyno using Unicorn and Resque.
 ---
 
 [FivePad]: https://www.fivepad.me

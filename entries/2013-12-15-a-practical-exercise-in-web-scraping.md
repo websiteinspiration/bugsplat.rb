@@ -3,6 +3,8 @@ title: A Practical Exercise in Web Scraping
 id: scrape
 tags: Programming
 show_upsell: 'true'
+topic: Software
+description: Using Ruby and Docverter to pull down a whole website and convert it to an eBook.
 ---
 
 Yesterday a friend of mine linked me to a fictional web serial that he was reading and enjoying, but could be enjoying more if it was available as a Kindle book. The author, as of yet, hasn't made one available and has asked that fan-made versions not be linked publicly. 

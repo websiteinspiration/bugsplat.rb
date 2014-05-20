@@ -3,6 +3,8 @@ title: Using the Mailchimp API for Sales
 id: mc
 tags: Programming, Marketing
 show_upsell: true
+topic: Software
+description: Auto-adding purchasers to a Mailchimp list makes sending them email much lower effort.
 ---
 
 One of the very first things I did when I started working on the idea that eventually became [Mastering Modern Payments](/mastering-modern-payments) was set up a [Mailchimp](http://mailchimp.com) mailing list. People would land on the teaser page and add themselves to the list so that when the book came out they would get a little note. After the book launch ([with 30% of that initial list eventually buying](https://www.petekeen.net/adventures-in-self-publishing)) I started putting actual purchasers on the list.

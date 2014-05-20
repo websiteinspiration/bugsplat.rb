@@ -3,6 +3,8 @@ title: Deploying a 12-Factor App with Capistrano
 date: '2012-11-11 13:52:53'
 id: c575a
 tags: Programming, Heroku
+topic: Software
+description: Deploying Heroku-style applications to bare metal with the help of Capistrano and Foreman.
 ---
 
 [12-factor]: http://www.12factor.net/

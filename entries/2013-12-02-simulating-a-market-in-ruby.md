@@ -2,6 +2,8 @@
 title: Simulating a Market in Ruby
 id: sim
 tags: Programming
+topic: Software
+description: Public markets are fascinating entities, and at the core of most markets is a data structure called an Order Book.
 ---
 
 Trading markets of all kinds are in the news pretty much continuously. The flavor of the week is of course the Bitcoin markets but equity and bond markets are always in the background. Just today there is an article on Hacker News about [why you shouldn't invest in the stock market](http://edmarkovich.blogspot.com/2013/12/why-i-dont-trade-stocks-and-probably.html). I've participated in markets in one way or another for about a decade now but I haven't really understood how they work at a base level. Yesterday I built a [tiny market simulator](https://github.com/peterkeen/trading) to fix that.

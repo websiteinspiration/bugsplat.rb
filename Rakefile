@@ -209,6 +209,6 @@ task :topicless do
   end
 
   topicless.each do |page|
-    puts page.original_filename
+    puts "entries/" + page.original_filename
   end
 end

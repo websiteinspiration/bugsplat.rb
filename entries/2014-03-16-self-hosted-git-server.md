@@ -3,6 +3,8 @@ title: Self-hosted Git Server
 id: sg
 tags: Programming
 show_upsell: true
+topic: Software
+description: Moving off of Github and onto my own public Git hosting.
 ---
 
 I've had a GitHub account since 2008. June 16th, to be exact. For almost six years I've been hosting my code on someone else's servers. It was sure convenient, and free, and I don't regret it one bit, but the time has come to move that vital service in-house.

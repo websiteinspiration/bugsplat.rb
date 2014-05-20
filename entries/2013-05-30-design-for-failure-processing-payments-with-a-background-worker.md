@@ -3,6 +3,8 @@ title: ! 'Design for Failure: Processing Payments with a Background Worker'
 id: 7dc8b
 tags: Programming, Stripe
 show_upsell: 'true'
+topic: Software
+description: Making requests to external services during a web request cycle is a recipie for pain. Learn how to make them in the background.
 ---
 
 [stripe]: https://stripe.com/docs/tutorials/checkout

@@ -3,6 +3,8 @@ title: Everyone Needs Goals
 date: '2010-05-27 20:37:00'
 tags: Programming
 id: '8'
+topic: Software
+description: Adding goals to the Calorific data format
 ---
 
 [1]:               /actionable-information
