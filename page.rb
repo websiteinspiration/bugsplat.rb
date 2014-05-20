@@ -46,6 +46,10 @@ class Pages
       @pages_by_page_name[page.name] = page
       @pages_by_page_id[page.page_id] = page
 
+      page.alternate_links.each do |link|
+        @pages_by_page_id[link] = page
+      end
+
       page.tags.each do |tag|
         @pages_by_tag[tag.downcase] ||= []
         @pages_by_tag[tag.downcase] << page
@@ -57,7 +61,6 @@ class Pages
         @non_blog_posts << page
       end
     end
-
   end
 
   def find(thing)
@@ -182,6 +185,11 @@ class Page
     original_filename =~ /\.html(\.erb)?$/
   end
 
+  def id_matches?(id)
+    links = alternate_links + [self.page_id]
+    links.include? id
+  end
+
   def render_before_fold
     @renderer.render(@before_fold)
   end
@@ -208,6 +216,14 @@ class Page
   def tags
     if @headers.has_key?('tags')
       return @headers['tags'].split(/,\s+/)
+    else
+      return []
+    end
+  end
+
+  def alternate_links
+    if @headers.has_key?('alternate_links')
+      return @headers['alternate_links'].split(/\s+/)
     else
       return []
     end

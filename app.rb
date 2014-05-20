@@ -225,18 +225,6 @@ class App < Sinatra::Base
     end
   end
 
-  get '/mmp' do
-    redirect '/mastering-modern-payments'
-  end
-
-  get '/mmppo' do
-    redirect '/mastering-modern-payments'
-  end
-
-  get '/mmp-preorders' do
-    redirect '/mastering-modern-payments'
-  end
-
   get '/cheat' do
     redirect '/stripe-webhook-event-cheatsheet'
   end
@@ -270,7 +258,7 @@ class App < Sinatra::Base
       raise Sinatra::NotFound
     end
 
-    if @page.page_id == params[:page_name]
+    if @page.id_matches? params[:page_name]
       redirect @page.html_path
     end
 

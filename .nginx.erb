@@ -16,8 +16,8 @@ location /bits {
 <% pages.each do |page| %>
 <% next unless page.page_id %>
 rewrite ^/<%= page.page_id %>$ https://www.petekeen.net<%= page.html_path %> permanent;
-<% next unless page.headers['alternate_links'] %>
-<% page.headers['alternate_links'].split(/\s+/).each do |link| %>
+<% next unless page.alternate_links.length > 0 %>
+<% page.alternate_links.each do |link| %>
 rewrite ^/<%= link %>$ https://www.petekeen.net<%= page.html_path %> permanent;
 <% end %>
 <% end %>
