@@ -3,6 +3,23 @@ title: About Pete
 id: a
 ---
 
+* [Résumé](/resume)
+* [Press Kit](/press-kit)
+
+### Consulting
+
+I am available for consulting to help jumpstart your project in a few different areas:
+
+* [Stripe](https://stripe.com) payment integration
+* [Docverter](http://www.docverter.com) document conversion integration
+* [Twilio](http://twilio.com) API integration
+* Rails tutoring
+
+<blockquote>Pete's help was instrumental in getting Docverter up and running to auto-generate PDF gift certificates.  We were able to smoothly sell and instantly deliver via email over $100,000 in GCs during our holiday season.
+
+<small>Noah Lehmann-Haupt, <a href="http://www.gothamdreamcars.com/">Gotham Dream Cars</a></small>
+</blockquote>
+
 ### Contact Me
 
 * <i class="fa fa-envelope"></i> Email: [pete@petekeen.net](mailto:pete@petekeen.net)
@@ -10,24 +27,6 @@ id: a
 * <i class="fa fa-github"></i> Github: [peterkeen](https://github.com/peterkeen)
 * <i class="fa fa-linkedin"></i> LinkedIn: [peterkeen](http://www.linkedin.com/in/peterkeen)
 * <i class="fa fa-phone"></i> Phone: (503) 766-5711
-
-* * * *
-
-### Consulting
-
-I am available for consulting to help jumpstart your project in a few different areas:
-
-* [Docverter](http://www.docverter.com) document conversion integration
-* [Stripe](https://stripe.com) payment integration
-* [Twilio](http://twilio.com) API integration
-* Rails tutoring
-
-<blockquote>Pete's help was instrumental in getting Docverter up and running to auto-generate PDF gift certificates.  We were able to smoothly sell and instantly deliver via email over $100,000 in GCs during our holiday season. ROCK ON.
-
-<small>Noah Lehmann-Haupt, <a href="http://www.gothamdreamcars.com/">Gotham Dream Cars</a></small>
-</blockquote>
-
-* * * *
 
 ### Colophon
 

@@ -263,6 +263,8 @@ class Page
       else
         Time.strptime(@file, SHORT_DATE_FORMAT)
       end
+    elsif @headers['date']
+      Time.strptime(@headers['date'], SHORT_DATE_FORMAT)
     end
   end
 
