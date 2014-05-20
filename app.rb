@@ -91,7 +91,7 @@ class App < Sinatra::Base
     end
 
     def showing_mmp?
-      @mmp
+      @mmp || @page.headers['mmp']
     end
 
     def external_link_tag(text, url)
@@ -231,12 +231,6 @@ class App < Sinatra::Base
 
   get '/mmppo' do
     redirect '/mastering-modern-payments'
-  end
-
-  get %r{^/mastering-modern-payments(\.html)?$} do
-    @mmp = true
-    @page_title = 'Mastering Modern Payments: Using Stripe with Rails by Pete Keen'
-    erb :mastering_modern_payments, layout: :book_layout
   end
 
   get '/mmp-preorders' do

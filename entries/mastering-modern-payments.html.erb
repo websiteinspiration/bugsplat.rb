@@ -1,3 +1,10 @@
+---
+title: 'Mastering Modern Payments: Using Stripe with Rails by Pete Keen'
+layout: book_layout
+view: book
+mmp: true
+---
+
 <div id="paymentModal" class="modal hide fade" role="dialog">
   <div class="modal-body">
     <iframe src="about:blank" style="zoom:0.6" width="99.6%" height="450" frameborder="0"></iframe>
@@ -134,7 +141,7 @@ The Audit portion includes an hour of one-on-one coaching with me, Pete Keen, wh
 <li><span class="mmp-icon"><i class="fa fa-bell"></i></span> Periodic updates to the guide and the code
 <li><span class="mmp-icon"><i class="fa fa-code"></i></span> The full source code for the Rails application I use to sell the guide
 </ul>
-<a class="btn btn-large btn-success payment-button" data-price="59" data-permalink="mastering-modern-payments-deluxe" href="<%= sales_host %>/buy/mastering-modern-payments-deluxe">Learn Now for <span class="striketag"></span><span class="pricetag">$59</span></a>
+<a class="btn btn-large btn-success payment-button" data-price="59" data-permalink="mastering-modern-payments-deluxe" href="<%= @app.sales_host %>/buy/mastering-modern-payments-deluxe">Learn Now for <span class="striketag"></span><span class="pricetag">$59</span></a>
 </div>
 
 <div class="well">
@@ -146,7 +153,7 @@ The Audit portion includes an hour of one-on-one coaching with me, Pete Keen, wh
 <li><span class="mmp-icon"><i class="fa fa-html5"></i></span> Single-page HTML format for easy reference and searching
 <li><span class="mmp-icon"><i class="fa fa-bell"></i></span> Periodic updates to the guide
 </ul>
-<a class="btn btn-large btn-success payment-button" data-price="29" data-permalink="mastering-modern-payments" href="<%= sales_host %>/buy/mastering-modern-payments">Learn Now for <span class="striketag"></span><span class="pricetag">$29</span></a>
+<a class="btn btn-large btn-success payment-button" data-price="29" data-permalink="mastering-modern-payments" href="<%= @app.sales_host %>/buy/mastering-modern-payments">Learn Now for <span class="striketag"></span><span class="pricetag">$29</span></a>
 </div>
 
 <h2>Questions</h2>
@@ -231,8 +238,8 @@ The Audit portion includes an hour of one-on-one coaching with me, Pete Keen, wh
     </tr>
     <tr>
       <td><a class="btn btn-large btn-success" href="/stripe-audit">Apply</a></td>
-      <td class="highlight"><a class="btn btn-large btn-success payment-button" data-price="59" data-permalink="mastering-modern-payments-deluxe" href="<%= sales_host %>/buy/mastering-modern-payments-deluxe"><span class="pricetag">$59</span></a></td>
-      <td><a class="btn btn-large btn-success payment-button" data-price="29" data-permalink="mastering-modern-payments" href="<%= sales_host %>/buy/mastering-modern-payments"><span class="pricetag">$29</span></a></td>
+      <td class="highlight"><a class="btn btn-large btn-success payment-button" data-price="59" data-permalink="mastering-modern-payments-deluxe" href="<%= @app.sales_host %>/buy/mastering-modern-payments-deluxe"><span class="pricetag">$59</span></a></td>
+      <td><a class="btn btn-large btn-success payment-button" data-price="29" data-permalink="mastering-modern-payments" href="<%= @app.sales_host %>/buy/mastering-modern-payments"><span class="pricetag">$29</span></a></td>
     </tr>
   </tbody>
 </table>
