@@ -3,6 +3,8 @@ title: Shipping with Stripe and EasyPost
 id: 0e350
 tags: Programming, Stripe
 show_upsell: 'true'
+topic: Stripe
+description: Make a thing, sell it with Stripe, ship it with EasyPost. Cruise control for cool.
 ---
 
 [stripe]: https://stripe.com

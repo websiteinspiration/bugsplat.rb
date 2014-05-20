@@ -3,6 +3,8 @@ title: Yet Another (not very) Static Blog Generator
 date: '2011-12-14 18:30:26'
 tags: Meta
 id: 7e074
+topic: Meta
+description: The second major version of the engine that runs this site is a small Ruby/Sinatra application.
 ---
 
 [firstpost]: /yet-another-static-html-generator

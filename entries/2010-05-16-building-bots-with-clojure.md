@@ -3,6 +3,8 @@ title: Building Battle Bots with Clojure
 date: '2010-05-16 23:00:00'
 tags: Programming
 id: '6'
+topic: Software
+description: Tiny introduction to Clojure via a bot contest system named RealTimeBattle.
 ---
 
 Once in a while at [Rentrak][] we have programming competitions, where anyone who wants to, including sysadmins and DBAs, can submit an entry for whatever the problem is. The previous contest involved writing a poker bot which had to play two-card hold'em, while others have involved problems similar in spirit to the Netflix Prize. This time we chose to build virtual robots that shoot each other with virtual cannons and go virtual boom! We'll be using [RealTimeBattle][], which is a piece of software designed specifically to facilitate contests of this sort. It's kind of like those other robot-battle systems, except instead of requiring you to write your robot in their own arbitrary, broken, horrible language, this lets you write your bot in any language that can talk on stdin and stdout.

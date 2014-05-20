@@ -3,6 +3,8 @@ title: Quadrotor Motors Are Alive!
 date: '2011-04-24 14:48:36'
 tags: Hardware
 id: 38b56
+topic: Hardware
+description: Building up a quadrotor using an Arduino and Wii motion sensors.
 ---
 
 I found some time today to work on my quadrotor project some more. A few weeks ago I got one motor mounted and spinning, just using the RC receiver and trasmitter. Today, I mounted the motors and set up a little test program on the arduino to make them spin. Check it out:

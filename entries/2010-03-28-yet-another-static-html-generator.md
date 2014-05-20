@@ -3,6 +3,8 @@ title: Yet Another Static HTML Blog
 date: '2010-03-28 22:15:00'
 tags: Meta
 id: '1'
+topic: Meta
+description: The very first post on this blog describing a very out-of-date backend engine.
 ---
 
 I'm a strict believer in learning by doing. It's how I learn best. In the spirit of learning, then, here's how I built the engine that powers this blog.

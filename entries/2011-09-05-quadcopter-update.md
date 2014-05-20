@@ -3,6 +3,8 @@ title: Quadrotor Update
 date: '2011-09-05 11:34:33'
 tags: Hardware
 id: 6d01e
+topic: Hardware
+description: Things are not looking so great in the land of Quadrotors.
 ---
 
 After too many days of everything [remindlyo](http://www.remindlyo.com) I decided that today would be the day I finally got off my ass and finished putting together my [quadrotor](/quadrotor-5-is-alive!). There were a bunch of minor dramas that made me drop it for much too long, all detailed below the fold.

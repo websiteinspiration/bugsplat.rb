@@ -200,3 +200,15 @@ task :convert_to_yaml do
     end
   end
 end
+
+task :topicless do
+  pages = App::PAGES
+  topicless = []
+  pages.each do |page|
+    topicless << page if page.topic.nil?
+  end
+
+  topicless.each do |page|
+    puts page.original_filename
+  end
+end

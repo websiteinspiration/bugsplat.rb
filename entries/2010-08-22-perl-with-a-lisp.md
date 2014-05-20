@@ -3,7 +3,8 @@ title: Perl with a Lisp
 date: '2010-08-22 14:22:36'
 id: 7497d
 tags: Perl, Programming
-hold: '1'
+topic: Software
+description: My attempt at writing a Lisp in Perl using just the original Lisp micromanual.
 ---
 
 [hn]: http://news.ycombinator.com

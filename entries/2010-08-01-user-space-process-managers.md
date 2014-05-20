@@ -3,6 +3,8 @@ title: Daemons are Our Picky, Temperamental Friends
 date: '2010-08-01 18:09:00'
 tags: Programming, Perl, Proclaunch
 id: '12'
+topic: Software
+description: A survey of available user-space process managers for running modern web applications.
 ---
 
 [God]:             http://god.rubyforge.org/

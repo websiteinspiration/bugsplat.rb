@@ -1,8 +1,10 @@
 ---
-title: Data Mining "Lost" Tweets Part 1
+title: Data Mining "Lost" Tweets
 date: '2010-06-02 17:45:00'
 tags: Programming, Perl
 id: '10'
+topic: Software
+description: Gauging Twitter's reaction to the LOST finale in real time.
 ---
 
 [twmine]:  http://gist.github.com/423346

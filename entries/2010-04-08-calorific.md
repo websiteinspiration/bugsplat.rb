@@ -3,6 +3,8 @@ title: Calorific, a Simple Calorie Tracker
 date: '2010-04-08 19:00:00'
 tags: Perl, Programming, Ledger
 id: '3'
+topic: Software
+description: A simple system for tracking calorie consuption in a plain text file, inspired by Ledger
 ---
 
 I'm a nerd. I write software for a living. I spend a lot of my day either sitting in a chair in front of a computer, or laying on my couch using my laptop. I'm not what you'd call... athletic. I _did_ start lifting weights about six months ago but that's really just led to gaining more weight, not losing it. A few years back I started counting calories and I lost some weight, and then stopped counting calories and gained it all back. Time to change that.

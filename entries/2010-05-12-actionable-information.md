@@ -3,6 +3,8 @@ title: Actionable Information
 date: '2010-05-12 08:53:00'
 id: '5'
 tags: Programming
+topic: Software
+description: How do you get from data to information? How do you make it useful?
 ---
 
 [1]:         http://www.activfinancial.com/

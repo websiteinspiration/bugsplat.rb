@@ -1,0 +1,14 @@
+---
+title: Essays
+id: e
+skip_metadata: true
+---
+
+<% @app.pages.topics.each do |topic| %>
+  <h2><%= topic %></h2>
+  <dl class="resource-list">
+  <% @app.pages.for_topic(topic).each do |page| %>
+    <dt><a href="<%= page.html_path %>"><%= page.title %></a></dt>
+    <dd><%= page.headers['description'] %></dd>
+  <% end %>
+<% end %>

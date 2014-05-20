@@ -3,6 +3,8 @@ title: Moose vs Mouse and OOP in Perl
 date: '2010-05-09 08:00:00'
 tags: Perl, Programming
 id: '4'
+topic: Software
+description: 'Comparing performance of two Perl class metaprogramming systems: Moose and Mouse'
 ---
 
 [SparkPeople]:          http://www.sparkpeople.com/

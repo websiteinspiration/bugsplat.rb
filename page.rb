@@ -24,6 +24,7 @@ class Pages
     @pages_by_page_name = {}
     @pages_by_page_id = {}
     @pages_by_tag = {}
+    @pages_by_topic = {}
     @blog_posts = []
     @non_blog_posts = []
 
@@ -45,6 +46,10 @@ class Pages
     @pages.each do |page|
       @pages_by_page_name[page.name] = page
       @pages_by_page_id[page.page_id] = page
+      if page.topic
+        @pages_by_topic[page.topic] ||= []
+        @pages_by_topic[page.topic] << page
+      end
 
       page.alternate_links.each do |link|
         @pages_by_page_id[link] = page
@@ -81,6 +86,14 @@ class Pages
     @pages.each do |page|
       yield page
     end
+  end
+
+  def topics
+    @pages_by_topic.keys.sort
+  end
+
+  def for_topic(topic)
+    @pages_by_topic[topic].sort { |a,b| b.date <=> a.date }
   end
 
   def tag_frequencies
@@ -261,6 +274,10 @@ class Page
 
   def short_date
     date ? date.strftime("%e %b %Y") : ''
+  end
+
+  def topic
+    headers['topic']
   end
 
   def html_path

@@ -3,6 +3,8 @@ title: ! 'Program Your Finances: Vacation Tracking'
 date: '2011-08-04 16:47:48'
 tags: Personal Finance, Ledger
 id: 7e479
+topic: Personal Finance
+description: Describes a system that I hacked together in an afternoon before a recent vacation that let me keep track of vacation finances on the fly without a laptop.
 ---
 
 *Note: you can find much more information about ledger on [ledger-cli.org](http://ledger-cli.org), including links to official documentation and other implementations*

@@ -3,6 +3,8 @@ title: Quadrotor Update Part 2
 date: '2011-09-09 19:39:35'
 tags: Hardware
 id: abbee
+topic: Hardware
+description: It moves! It flips itself over!
 ---
 
 The new propellers came today. I ordered a pair of sets of 10x4.5 propellers from Amazon and promptly failed to get them to work with the motors. Turns out they're hard to mount! I ended up making a trip to the hardware store to pick up some O-rings, which are much more stable than the little rubber bands the motors came with. Here's what it looks like:

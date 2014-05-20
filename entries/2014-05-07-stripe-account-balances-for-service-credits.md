@@ -3,6 +3,8 @@ title: Stripe Account Balances for Service Credits
 id:    sab
 tags:  Stripe, Programming
 show_upsell: true
+topic: Stripe
+description: Your customer earned a referral fee. You can pay them with a credit to their Stripe account balance.
 ---
 
 Say you want to give a customer an account credit for some reason. They're an especially good customer, or your service was down for a few minutes and you want to give service credits, or some other reason. You can do this using Stripe's `account_balance` feature.

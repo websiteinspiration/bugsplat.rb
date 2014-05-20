@@ -3,6 +3,8 @@ title: Iterating Elements in boost::tuple, template style
 date: '2010-05-30 18:15:00'
 tags: Programming, C++
 id: '9'
+topic: Software
+description: Building recursive template iterators for serializing boost::tuples
 ---
 
 In my day job I use a mix of perl and C++, along with awk, sed, and various little languages. In our C++ we use a lot of boost, especially simple things like the [date_time][] libraries and `tuple`. [Tuple][] is a neat little thing, sort of like `std::pair` except it lets you have up to 10 elements of arbitrary type instead of just the two. One of the major things that it gives you is a correct `operator<`, which gives you the ability to use it as a key in `std::map`. Very handy. One tricky thing, though, is generically iterating over every element in the `tuple`. What then?

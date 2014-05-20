@@ -3,6 +3,8 @@ title: ! 'Program your Finances: Command-line Accounting'
 date: '2010-05-23 15:15:00'
 tags: Personal Finance, Ledger
 id: '7'
+topic: Personal Finance
+description: All about my financial journey, from debt-ridden towards debt-free. More importantly, this is a very basic introduction to how to use ledger to keep track of your finances. This has been described as the best introduction to ledger out there.
 ---
 
 *Note: you can find much more information about ledger on [ledger-cli.org](http://ledger-cli.org), including links to official documentation and other implementations*

@@ -3,6 +3,8 @@ title: ! 'Program your Finances: Reporting for Fun and Profit'
 date: '2011-07-09 08:14:55'
 tags: Personal Finance, Ledger
 id: 4b79e
+topic: Personal Finance
+description: Outlines a reporting system that I used for awhile to run queries against my ledger data that I couldn't with the native ledger program. Also introduces a small tool for generating realistic sample ledger data.
 ---
 
 [Ledger]: http://ledger-cli.org

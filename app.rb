@@ -386,5 +386,9 @@ class App < Sinatra::Base
       super(views, name, engine)
     end
   end
+
+  def pages
+    @pages
+  end
 end
 
