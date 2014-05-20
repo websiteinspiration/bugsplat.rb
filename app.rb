@@ -257,20 +257,6 @@ class App < Sinatra::Base
     erb :stripe_event_cheatsheet
   end
 
-  get '/course' do
-    redirect '/stripe-rails-course'
-  end
-
-  get %r{^/stripe-rails-course(\.html)?$} do
-    @title = @page_title = "Stripe Rails Course"
-    @full_path = "/stripe-rails-course"
-    @description = "A free five day course with tips on integrating Stripe with Rails"
-    @post_url = 'http://pkn.me/course'
-    @body_class = "book"
-    @skip_masthead = true
-    erb :course
-  end
-
   get '/tag/:tag' do
     tag = params[:tag].gsub('.html', '').downcase
     @tagged_pages = @pages.tagged(tag).sort_by(&:date).reverse
