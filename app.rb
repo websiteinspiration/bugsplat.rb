@@ -30,7 +30,6 @@ class App < Sinatra::Base
   set :assets_precompile, %w(application.js gz_test.js application.css print.css *.png *.jpg *.svg *.eot *.ttf *.woff *.ico)
   set :assets_css_compressor, :yui
   set :assets_js_compressor, :uglifier
-  set :assets_host, 'drgn15pdxue9y.cloudfront.net'
   set :assets_protocol, :https
 
   register Sinatra::AssetPipeline
