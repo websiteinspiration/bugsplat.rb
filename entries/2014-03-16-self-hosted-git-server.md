@@ -2,7 +2,6 @@
 title: Self-hosted Git Server
 id: sg
 tags: Programming
-show_upsell: true
 topic: Software
 description: Moving off of Github and onto my own public Git hosting.
 ---

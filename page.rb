@@ -308,6 +308,10 @@ class Page
     @headers.has_key?('show_upsell') && @headers['show_upsell'].to_s == 'true'
   end
 
+  def show_byline?
+    is_blog_post?
+  end
+
   def show_upsell_form?
     @headers.has_key?('show_upsell_form') && @headers['show_upsell_form'] == 'true'
   end

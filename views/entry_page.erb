@@ -7,7 +7,7 @@
     <p class="date pull-right">
       <%= render :erb, :share_links, layout: false %>
     </p>
-    <p class="date"><%= @page.reading_time %> min read</p>
+    <p class="date"><%= @page.reading_time %> min read &mdash; Get free updates of new posts <a href="/newsletter?topic=<%= @page.topic %>">here</a></p>
   </div>
   <% end %>
   <%= @page.render(nil, @app) %>
@@ -19,6 +19,9 @@
   <% end %>
   <% if @page.show_upsell? %>
     <%= partial :upsell, show_header: true %>
+  <% end %>
+  <% if @page.show_byline? %>
+    <%= partial :byline, topic: @page.topic %>
   <% end %>
   <% unless @skip_masthead || @page.headers['skip_metadata'] %>
   <div class="well" id="tags-and-formats">

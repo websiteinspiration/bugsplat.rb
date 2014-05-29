@@ -58,15 +58,16 @@ mixpanel.init("e9f4d8ff804462ecc432e221befc36a2");</script><!-- end Mixpanel -->
         <ul class="nav-links" id="nav-links">
           <li><a href="/about">About</a></li>
           <li><a href="/projects">Projects</a></li>
-          <li><a href="/best-of">Best Of</a></li>
           <li><a href="/essays">Essays</a></li>
           <li><a href="/mastering-modern-payments">Mastering Modern Payments</a></li>
+          <li><a href="/newsletter">Newsletter</a></li>
         </ul>
 	  </div>
       <% end %>
 	  <div id="content">
         <%= yield %>
 	  </div>
+      <% unless @skip_footer %>
       <footer>
         <ul class="nav-links">
 		  <li>&copy; <a href="/">Pete Keen</a></li>
@@ -78,6 +79,7 @@ mixpanel.init("e9f4d8ff804462ecc432e221befc36a2");</script><!-- end Mixpanel -->
           <li><a href="/index.xml" data-original-title="Subscribe to Feed" class="tip"><i class="fa fa-rss"></i></a></li>
         </ul>
       </footer>
+      <% end %>
     </div>
     <script type="text/javascript" src="<%= javascript_path 'application' %>"></script>
     <% if production? %>

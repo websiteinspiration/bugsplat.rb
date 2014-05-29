@@ -289,6 +289,10 @@ class App < Sinatra::Base
       @skip_masthead = @page['skip_masthead']
     end
 
+    if @page['skip_footer']
+      @skip_footer = @page['skip_footer']
+    end
+
     if params[:format] == 'md'
       content_type "text/plain"
       return @page.markdown_content
@@ -325,8 +329,9 @@ class App < Sinatra::Base
         email:        {:email => email},
         double_optin: false,
         merge_vars: {
-          FNAME: params[:name],
-          COURSE: '1.0'
+          FNAME:  params[:name],
+          COURSE: params[:course],
+          TOPIC:  params[:topic],
         }
       })
     rescue StandardError => e
