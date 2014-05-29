@@ -2,7 +2,6 @@
 title: Distributed Personal Wiki
 id: '83656'
 tags: Programming, Git
-show_upsell: 'true'
 topic: Software
 description: Putting together a personal git-backed wiki using Gollum and SparkleShare.
 ---

@@ -2,7 +2,6 @@
 title: Blog Relocation
 id: '79934'
 tags: Meta
-show_upsell: 'true'
 ---
 
 [lol]: https://support.leagueoflegends.com/entries/20739888-Bug-Splat-and-Game-Crashes

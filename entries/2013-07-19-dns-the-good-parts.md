@@ -2,7 +2,6 @@
 title: ! 'DNS: The Good Parts'
 id: dns
 tags: DNS
-show_upsell: 'true'
 topic: DNS
 description: Dig through the DNS and learn how and why it all works.
 ---

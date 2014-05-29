@@ -2,7 +2,6 @@
 title: Page Viewer, a Simple Markdown Viewer
 id: faeaa
 tags: Programming
-show_upsell: 'true'
 ---
 
 [mmp]: /mastering-modern-payments

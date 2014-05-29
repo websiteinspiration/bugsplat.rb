@@ -3,7 +3,6 @@ title: How I run my own DNS servers
 date: '2012-12-31 12:15:00'
 id: f699a
 tags: DNS, Devops, Email
-show_upsell: 'true'
 topic: DNS
 description: Running your own DNS server using Tinydns is cheap and easy and fun.
 ---

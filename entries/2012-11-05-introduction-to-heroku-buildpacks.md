@@ -3,7 +3,6 @@ title: Run Anything on Heroku with Custom Buildpacks
 date: '2012-11-05 18:13:41'
 id: 9a2f7
 tags: Programming, Heroku
-show_upsell: 'true'
 topic: Software
 description: Heroku is an incredibly flexible platform for running applications. You can compile your application exactly how you want it with custom buildpacks.
 ---

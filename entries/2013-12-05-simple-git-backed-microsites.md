@@ -2,7 +2,6 @@
 title: Simple Git-backed Microsites
 id: sites
 tags: Programming
-show_upsell: 'true'
 topic: Software
 description: Make new websites on the fly with nothing but a git push.
 ---

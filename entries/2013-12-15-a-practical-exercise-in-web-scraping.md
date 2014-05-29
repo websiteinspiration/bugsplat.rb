@@ -2,7 +2,6 @@
 title: A Practical Exercise in Web Scraping
 id: scrape
 tags: Programming
-show_upsell: 'true'
 topic: Software
 description: Using Ruby and Docverter to pull down a whole website and convert it to an eBook.
 ---

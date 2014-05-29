@@ -2,7 +2,6 @@
 title: Post-mortem of a Dead-on-Arrival SaaS Product
 id: doa
 tags: Marginalia, Programming
-show_upsell: 'true'
 ---
 
 A little over a year ago I [announced the launch](/announcing-marginalia) of my latest (at the time) product named Marginalia. The idea was to be a sort of online journal. A cheaper, more programmer friendly alternative to Evernote. It never took off, despite my best intentions, and so a few months ago I told the only active user that I was going to shut it down, and today I finally took that sad action. This post is a short history of the project and a few lessons learned.
