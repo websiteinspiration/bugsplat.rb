@@ -9,7 +9,7 @@ hide_from_archive: 'true'
 
 # You're all set!
 
-Thanks for signing up. You'll start getting weekly updates soon.
+Thanks for signing up. You'll start getting updates soon.
 
 <a href="/essays">Explore Essays</a>
 
