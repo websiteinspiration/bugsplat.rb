@@ -50,9 +50,10 @@ $(function() {
     return "$" + amount.toFixed(decimalPlaces);
   }
 
-  $('.payment-button').each(function(i, btn) {
-    var button = $(btn);
-    var rawPrice = button.data('price');
+  $('.pricetag').each(function(i, obj) {
+    console.log(obj);
+    var object = $(obj);
+    var rawPrice = object.data('price');
 
     if (!rawPrice) {
       return
@@ -63,11 +64,7 @@ $(function() {
     if (couponCode) {
       var couponAmount = parseInt(couponCode.slice(-2));
       var newPrice = price * (1 - couponAmount / 100.0);
-      button.find('.pricetag').html(formatPrice(newPrice));
-      if (button.find('.striketag')) {
-        button.find('.striketag').html(formatPrice(price, 0));
-        button.find('.striketag').after('&nbsp;');
-      }
+      object.html("<strike>" + formatPrice(price, 0) + "</strike>&nbsp;" + formatPrice(newPrice));
     }
   });
 });
