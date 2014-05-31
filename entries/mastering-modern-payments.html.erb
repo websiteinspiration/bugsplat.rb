@@ -14,12 +14,12 @@ description: A concise ebook packed with helpful tips and juicy best practices f
   </div>
 </div>
 
-<h1 class="book">Mastering Modern Payments <small>Using Stripe with Rails</small></h1>
+<h1 class="book">Mastering Modern Payments <span class="visible-xs"><br></span><small>Using Stripe with Rails</small></h1>
 
 <h2>The complete guide to getting paid with Stripe and Rails.</h2>
 
   <div style="float: right; height: 200px; padding-top: 1em; padding-bottom: 4em; text-align: center; margin-left: 1.5em;">
-    <a href="#packages"><img style="padding-bottom: 20px" src="https://d2s7foagexgnc2.cloudfront.net/files/9e8485ea8977967c7fe7/paperbacklandscape-1.png" alt="Mastering Modern Payments Cover" /></a>
+    <a href="#packages"><img class="img-responsive" style="padding-bottom: 20px" src="https://d2s7foagexgnc2.cloudfront.net/files/9e8485ea8977967c7fe7/paperbacklandscape-1.png" alt="Mastering Modern Payments Cover" /></a>
   </div>
 
 <p>
@@ -42,10 +42,10 @@ Over the last two years I've written Stripe integrations in half a dozen Rails a
 
 <div style="margin-bottom: 2em; margin-top: 4em;">
   <blockquote>
-    <img class="thumbnail pull-right" src="http://d2s7foagexgnc2.cloudfront.net/files/65bd410612330853b5d0/christian_genco.png" style="margin-left: 1em;" alt="Christian Genco Portrait">
     Mastering Modern Payments was like a pool of <strong>cool refreshing water</strong> after I'd been traveling in the desert of obscurity for weeks. Unlike the API docs, or most blog posts I found on the topic, Pete thought this through three steps ahead of solving the problems I'd be having a few weeks or months after deployment. This will end up <strong>saving me an immeasurable amount of time and money</strong>.
       <br><br>
-      <a href="http://christian.gen.co/">Christian Genco</a>
+      <img class="img-circle" src="http://d2s7foagexgnc2.cloudfront.net/files/65bd410612330853b5d0/christian_genco.png" style="width: 1em; margin-right: 1em" alt="Christian Genco Portrait">
+      Christian Genco
   </blockquote>
 </div>
 
@@ -55,10 +55,10 @@ After going through this dance over and over, I'v distilled my experiences into 
 
 <div style="margin-bottom: 2em; margin-top: 4em;">
   <blockquote>
-    <img class="thumbnail pull-right" src="https://d2s7foagexgnc2.cloudfront.net/files/44c0588613cc0bdf47cf/joel_hooks.jpg" style="margin-left: 1em;" alt="Joel Hooks Portrait">
       I'm fairly new to Rails and setting up billing had me flustered for weeks. I was stuck, spinning my wheels, not knowing what was the best route to take. Pete's book is a guiding light of common sense and practical application. Now I can setup billing with confidence, and more importantly, <strong>ship my product</strong>.
       <br><br>
-      Joel Hooks - <a href="http://egghead.io">egghead.io</a>
+      <img class="img-circle" src="https://d2s7foagexgnc2.cloudfront.net/files/44c0588613cc0bdf47cf/joel_hooks.jpg" style="width: 1em; margin-right: 1em;" alt="Joel Hooks Portrait">
+      Joel Hooks
   </blockquote>
 </div>
 
@@ -82,10 +82,9 @@ After going through this dance over and over, I'v distilled my experiences into 
 
 <div style="margin-bottom: 2em; margin-top: 4em;">
   <blockquote>
-    <img class="thumbnail pull-right" src="https://d2s7foagexgnc2.cloudfront.net/files/2a34b4be575a85bdf517/matt_vanderpol.jpg" style="margin-left: 1em;" alt="Matt Vanderpol Portrait">
       Mastering Modern Payments is a fantastic resource for integrating Stripe billing with your Rails app. Pete does a great job of pulling together existing resources and blending them with his own experience to provide a <strong>clear, valuable guide</strong> for billing with Stripe.
       <br><br>
-      Matt Vanderpol - founder QAtab
+      <img class="img-circle" src="https://d2s7foagexgnc2.cloudfront.net/files/2a34b4be575a85bdf517/matt_vanderpol.jpg" style="width: 1em; margin-right: 1em;" alt="Matt Vanderpol Portrait">Matt Vanderpol
   </blockquote>
 </div>
 
@@ -98,7 +97,7 @@ After going through this dance over and over, I'v distilled my experiences into 
 <li><span class="mmp-icon"><i class="fa fa-html5"></i></span> Single-page HTML format for easy reference and searching
 </ul>
 <p class="center">
-<a class="btn btn-large btn-success payment-button" data-permalink="mastering-modern-payments" href="<%= @app.sales_host %>/buy/mastering-modern-payments">Purchase the Basic Package &rarr;</a>
+<a class="btn btn-lg btn-success payment-button" data-permalink="mastering-modern-payments" href="<%= @app.sales_host %>/buy/mastering-modern-payments"><span class="visible-xs">Buy &rarr;</span><span class="hidden-xs">Purchase the Basic Package &rarr;</span></a>
 </div>
 
 <div class="well" id="code-guide">
@@ -111,7 +110,7 @@ After going through this dance over and over, I'v distilled my experiences into 
 <li><span class="mmp-icon"><i class="fa fa-code"></i></span> <strong>The full source code for complete production Stripe integration</strong>
 </ul>
 <p class="center">
-<a class="btn btn-large btn-success payment-button" data-price="59" data-permalink="mastering-modern-payments-deluxe" href="<%= @app.sales_host %>/buy/mastering-modern-payments-deluxe">Purchase the Complete Package &rarr;</a>
+<a class="btn btn-lg btn-success payment-button" data-price="59" data-permalink="mastering-modern-payments-deluxe" href="<%= @app.sales_host %>/buy/mastering-modern-payments-deluxe"><span class="visible-xs">Buy &rarr;</span><span class="hidden-xs">Purchase the Complete Package &rarr;</span></a>
 </p>
 </div>
 
@@ -126,7 +125,7 @@ After going through this dance over and over, I'v distilled my experiences into 
 <li><span class="mmp-icon"><i class="fa fa-users"></i></span> Team license for up to 50 people.
 </ul>
 <p class="center">
-<a class="btn btn-large btn-success payment-button" data-price="299" data-permalink="mastering-modern-payments-team" href="<%= @app.sales_host %>/buy/mastering-modern-payments-team">Purchase the Team Package &rarr;</a>
+<a class="btn btn-lg btn-success payment-button" data-price="299" data-permalink="mastering-modern-payments-team" href="<%= @app.sales_host %>/buy/mastering-modern-payments-team"><span class="visible-xs">Buy &rarr;</span><span class="hidden-xs">Purchase the Team Package &rarr;</span></a>
 </p>
 </div>
 
@@ -141,11 +140,11 @@ After going through this dance over and over, I'v distilled my experiences into 
 <div class="well" style="margin-top: 4em; margin-bottom: 2em; text-align: center;" id="upsell">
   <h3>Get the FREE sample chapter</h3>
   <p>Put your email address in for a short email course on how to make your<br> Rails and Stripe integration sing, including a free chapter.</p>
-  <form action="/subscribe" method="POST" class="form form-inline">
-    <input type="text" class="sans" style="font-size: 17.5px; height: 36px; width: 8em; line-height: 22px;" name="name" placeholder="First name"></input>
-    <input type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="email" placeholder="you@example.com"></input>
+  <form action="/subscribe" method="POST" role="form" class="form-inline">
+    <input type="text" class="sans form-control" name="name" placeholder="First name"></input>
+    <input type="email" class="sans form-control" name="email" placeholder="you@example.com"></input>
     <input type="hidden" name="next" value="/confirmed"></input>
-    <input class="btn btn-warning btn-large" type="submit" value="Send Me the Course" />
+    <input class="btn btn-warning" type="submit" value="Send Me the Course" />
   </form>
   <small>No spam. Unsubscribe at any time.</small>
 </div>

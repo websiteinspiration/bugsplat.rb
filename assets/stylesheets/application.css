@@ -1,6 +1,7 @@
 /*
  *= require_self
  *= require bootstrap.css
+ *= require bootstrap-theme.css
  *= require main.css
  *= require github.css
  *= require colorbox.css

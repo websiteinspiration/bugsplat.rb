@@ -1,3 +1,16 @@
+a {
+  color: #5555aa;
+}
+
+a:hover,a:active {
+  color: #3c3c77;
+}
+
+body {
+  color: #4e4848;
+  background-color: #fcfcfc;
+}
+
 body.book {
   background-color: #f5f5f5;
   font-family: 'Lato', helvetica, arial, sans-serif;
@@ -13,13 +26,16 @@ body.book {
   font-size: 1.3em;
   line-height: 190%;
   padding-top: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .book .container-narrow {
+  max-width: 800px;
   border: 1px solid #fff;
   background-color: #fff;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-bottom: 10px;
   margin-top: 1em;
 }
@@ -225,6 +241,7 @@ code,pre {
 ul.article-list {
   list-style: none;
   margin-left: 0;
+  padding-left: 0;
 }
 
 span.about-header {
@@ -248,7 +265,8 @@ div.about .thumbnail {
 
 ul.archive-list {
   list-style: none;
-  margin-left: 0;  
+  margin-left: 0;
+  padding-left: 0;
 }
 
 span.header {
@@ -423,6 +441,20 @@ h4 a.anchor {
 
 h4:hover a.anchor {
   display: inline;
+}
+
+@media(max-width:767px) {
+  .book .archive-list {
+    padding-left: 0px;
+  }
+
+  .book .container-narrow {
+    margin-top: 0;
+  }
+
+  footer {
+    padding-left: 3.5em;
+  }
 }
 
 .book .archive-list li {
