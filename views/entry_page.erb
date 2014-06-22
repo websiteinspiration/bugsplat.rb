@@ -41,6 +41,7 @@
         <a href="/tag/<%= tag %>"><%= tag %></a>&nbsp;
       <% end %>
     <% end %>
+    &nbsp;
   </p>
   <% if @page.is_blog_post? && has_related_posts(@page) %>
     <h4>Related Posts</h4>
