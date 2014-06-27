@@ -15,12 +15,6 @@ require 'lru_redux'
 require 'time-lord'
 
 class App < Sinatra::Base
-
-
-  Split.configure do |config|
-    config.persistence = CookieAdapter
-  end
-
   PAGES = Pages.new
 
   Docverter.base_url = 'http://c.docverter.com'
@@ -34,7 +28,6 @@ class App < Sinatra::Base
 
 
   helpers Sinatra::Cookies
-  helpers Split::Helper
   helpers do
 
     def h(text)
