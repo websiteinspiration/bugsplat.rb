@@ -2,7 +2,7 @@
 require 'rubygems'
 require 'sinatra/base'
 require './page'
-require 'strip_renderer'
+require './strip_renderer'
 require 'atom/pub'
 require 'docverter'
 require 'sinatra/asset_pipeline'
