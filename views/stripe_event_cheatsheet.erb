@@ -140,7 +140,7 @@
   <li><%= partial :stripe_event, event_name: 'customer.updated', describes: 'Customer', example: 'test1_invoice_10_customer_updated' %></li>
 </ul>
   
-<h4 id="12">12. Exisiting customer, adding invoice items <%= partial :event_anchor, anchor: '12' %></h4>
+<h4 id="12">12. Existing customer, adding invoice items <%= partial :event_anchor, anchor: '12' %></h4>
 <p>Adding invoice items for a customer without specifying an invoice will automatically add them to the next month's invoice. Pretty handy for doing usage billing, since you can just roll up the customer's daily usage and build an invoice item for every day.</p>
 <ul>
   <li><%= partial :stripe_event, event_name: 'invoiceitem.created', describes: 'Invoice Item', example: 'invoice_item' %></li>
