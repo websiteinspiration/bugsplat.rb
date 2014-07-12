@@ -141,4 +141,8 @@ If you're building a subscription product you'll likely want the user to set the
 
 Of the two I prefer the second, since you should be confirming the user's email address anyway. That said, you should test with your customers and see what works best for them.
 
+### Now what?
+
+Of course, none of this is worth anything without creating the customers. For that, you'll need to use Stripe's server-side APIs along with your secret key. Stripe has [excellent documentation](https://stripe.com/docs/subscriptions) on how this works.
+
 *Note: this describes Stripe Checkout as of March 30th, 2014. Stripe is continually updating and testing Checkout, so things may change in the future.*
