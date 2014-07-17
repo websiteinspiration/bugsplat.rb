@@ -11,8 +11,12 @@ Looking to jumpstart a new project or clean up an old codebase? I have expert-le
 * Docverter document conversion
 * Twilio telecom
 
-<blockquote>
-Pete is the most hirable Rails developer I know at the moment. So well rounded and brilliant with systems and networking stuff too. Among our bootstrapper collective, I think he is the one who most consistently has the answer for something tricky or technical.
+<blockquote>Pete is a wizard. He is the smartest guy I know. If you ever have Rails, DNS, email, or any other questions about anything, Pete knows the answer.
+
+<small><a href="http://aaronfrancis.com">Aaron Francis</a></small>
+</blockquote>
+
+<blockquote>Pete is the most hirable Rails developer I know at the moment. So well rounded and brilliant with systems and networking stuff too. Among our bootstrapper collective, I think he is the one who most consistently has the answer for something tricky or technical.
 
 <small>Andrew Culver, <a href="https://www.churnbuster.io">Churn Buster</a></small>
 </blockquote>
