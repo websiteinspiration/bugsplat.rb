@@ -3,19 +3,27 @@
 <% end %>
 <div class="row" id="upsell">
   <div class="span3">
-    <div style="float: right; height: 200px; padding-top: 1em; padding-bottom: 2em; text-align: center; margin-left: 1.5em;">
-      <a href="/mastering-modern-payments"><img src="https://d2s7foagexgnc2.cloudfront.net/files/9e8485ea8977967c7fe7/paperbacklandscape-1.png" alt="Mastering Modern Payments Cover" /></a>
+    <div style="float: right; height: 130x; padding-top: 1em; padding-bottom: 2em; text-align: center; margin-left: 1.5em;">
+      <a href="/mastering-modern-payments">
+        <img src="https://d2s7foagexgnc2.cloudfront.net/files/9e8485ea8977967c7fe7/paperbacklandscape-1.png" style="height: 130px" alt="Mastering Modern Payments" />
+      </a>
     </div>
   </div>
-  <div class="span4" style="margin-left: 3em; margin-top: 1em">
+  <div class="span4" style="margin-left: 1em; margin-top: 1em">
     <p>Get a <strong>free</strong> email course on how to make your Rails and Stripe integration sing.</p>
     <p>Includes a free chapter of <a href="/mastering-modern-payments"><strong>Mastering Modern Payments</strong></a>.</p>
   </div>
 </div>
 <div class="center" style="margin-bottom: 3em">
-  <form action="/subscribe" method="POST" class="form form-inline" style="margin-top: 0.5em;">
-    <input type="text" class="sans" style="font-size: 17.5px; height: 36px; width: 8em; line-height: 22px;" name="name" placeholder="First name"></input>
-    <input type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="email" placeholder="you@example.com"></input>
+  <form action="/subscribe" method="POST" role="form" class="form-inline" style="margin-top: 0.5em;">
+    <div class="form-group">
+      <label class="sr-only" for="first-name">First Name</label>
+      <input type="text" id="first-name" class="sans" style="font-size: 17.5px; height: 36px; width: 8em; line-height: 22px;" name="name" placeholder="First name"></input>
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="email-address">Email Address</label>
+      <input id="email-address" type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="email" placeholder="you@example.com"></input>
+    </div>
     <input type="hidden" name="next" value="/confirmed"></input>
     <input type="hidden" name="course" value="1.0"></input>
     <input class="btn btn-warning btn-large" type="submit" value="Send Me the Course" />

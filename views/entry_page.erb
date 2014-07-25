@@ -11,17 +11,17 @@
   </div>
   <% end %>
   <%= @page.render(nil, @app) %>
-  <% if @page.is_blog_post? %>
-  <p class="date" style="margin-top: 1em; margin-bottom: 1em;">
-    Share:&nbsp;
-    <%= render :erb, :share_links, layout: false %>
-  </p>
-  <% end %>
   <% if @page.show_upsell? %>
     <%= partial :upsell, show_header: true %>
   <% end %>
   <% if @page.show_byline? %>
     <%= partial :byline, topic: @page.topic %>
+  <% end %>
+  <% if @page.is_blog_post? %>
+  <p class="date" style="margin-top: 1em; margin-bottom: 1em;">
+    Share:&nbsp;
+    <%= render :erb, :share_links, layout: false %>
+  </p>
   <% end %>
   <% unless @skip_masthead || @page.headers['skip_metadata'] %>
   <div class="well" id="tags-and-formats">
