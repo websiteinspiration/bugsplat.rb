@@ -86,12 +86,12 @@ You'll also need to modify your `$GITUSER_HOME/.gitolite.rc` file slightly. Add 
 toward the top of the `%RC` hash:
 
 ```perl
-GIT_CONFIG   => '.*',
+GIT_CONFIG_KEYS => '.*',
 AUTH_OPTIONS => 'no-port-forwarding,no-X11-forwarding,no-pty',
 ```
 
 The first line allows the config file to contain any git config options you want. The second removes
-the agent forwarding restriction. The default includes `no-agent-forwarding`.
+the default agent forwarding restriction to allow you to push to remote repos using the `mirrors` configuration described below. If you aren't going to be using my script's mirrors you don't need to add that line.
 
 If you want to push to S3 buckets, you'll need to create a file named `.jgit` in the `git` user's
 home directory with these contents:
@@ -110,7 +110,7 @@ Here's my gitolite config after installing my hooks:
 
 ```text
 repo @all
-    config mirrors.s3 = "amazon-s3://.jgit@my-s3-bucket/REPO_NAME"
+    config mirrors.s3 = "amazon-s3://.jgit@my-s3-bucket/%GL_REPO"
 
 repo gitolite-admin
     RW+     =   peter
@@ -139,7 +139,7 @@ repo peter/bugsplat
     config mirrors.heroku = "git@heroku.com:bugsplat.git"
 ```
 
-At the top, every repo gets transparently mirrored to my S3 bucket. `REPO_NAME` gets
+At the top, every repo gets transparently mirrored to my S3 bucket. `%GL_REPO` gets
 replaced with the actual path of the repo. After some boilerplate about the `gitolite-admin`
 repo comes the meat of the config. I use a gitolite feature called [Wild Repos][gitolite-wild-repos] which will
 automatically create a repo matching the pattern (in this case `CREATOR/[a-zA-Z0-9].*`) the
