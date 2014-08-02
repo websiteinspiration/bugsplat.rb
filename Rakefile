@@ -79,49 +79,49 @@ end
 namespace :assets do
   task :precompile => [:dotenv, :write_nginx_file] do
 
-    Dotenv.load("#{ENV['HOME']}/.pkdc")
-    Dotenv.load('.env')
+  #   Dotenv.load("#{ENV['HOME']}/.pkdc")
+  #   Dotenv.load('.env')
 
-    STDERR.puts "Compiling pages"
-    app = App.new
-    request = Rack::MockRequest.new(app)
+  #   STDERR.puts "Compiling pages"
+  #   app = App.new
+  #   request = Rack::MockRequest.new(app)
 
-    dirname = File.dirname(__FILE__)
-    FileUtils.mkdir_p(File.join(dirname, "public", "stylesheets"))
-    FileUtils.mkdir_p(File.join(dirname, "public", "javascripts"))
+  #   dirname = File.dirname(__FILE__)
+  #   FileUtils.mkdir_p(File.join(dirname, "public", "stylesheets"))
+  #   FileUtils.mkdir_p(File.join(dirname, "public", "javascripts"))
 
-    tags = {}
+  #   tags = {}
 
-    App::PAGES.each do |page|
-      page.tags.each do |tag|
-        tags[tag] = true
-      end
+  #   App::PAGES.each do |page|
+  #     page.tags.each do |tag|
+  #       tags[tag] = true
+  #     end
 
-      write_page("#{page.name}.html", request)
-      write_page("#{page.name}.pdf", request)
-      write_page("#{page.name}.md", request)
-    end
+  #     write_page("#{page.name}.html", request)
+  #     write_page("#{page.name}.pdf", request)
+  #     write_page("#{page.name}.md", request)
+  #   end
 
-    ['sitemap.xml', 'index.xml', 'index.html', 'tags.html', 'archive.html', 'mastering-modern-payments.html', 'stripe-webhook-event-cheatsheet.html', 'the-big-list-of-stripe-resources.html'].each do |page|
-      write_page(page, request)
-    end
+  #   ['sitemap.xml', 'index.xml', 'index.html', 'tags.html', 'archive.html', 'mastering-modern-payments.html', 'stripe-webhook-event-cheatsheet.html', 'the-big-list-of-stripe-resources.html'].each do |page|
+  #     write_page(page, request)
+  #   end
 
-    tags.keys.each do |tag|
-      write_page("/tag/#{tag}.html", request)
-    end
+  #   tags.keys.each do |tag|
+  #     write_page("/tag/#{tag}.html", request)
+  #   end
 
-    AssetSync.configure do |config|
-      config.fog_provider = 'AWS'
-      config.fog_directory = ENV['FOG_DIRECTORY']
-      config.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
-      config.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
-      config.prefix = 'assets'
-      config.public_path = Pathname('./public')
-      config.log_silently = false
-    end
+  #   AssetSync.configure do |config|
+  #     config.fog_provider = 'AWS'
+  #     config.fog_directory = ENV['FOG_DIRECTORY']
+  #     config.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
+  #     config.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
+  #     config.prefix = 'assets'
+  #     config.public_path = Pathname('./public')
+  #     config.log_silently = false
+  #   end
 
-    AssetSync.sync
-  end
+  #   AssetSync.sync
+  # end
 end
 
 task :write_nginx_file do
