@@ -5,5 +5,5 @@ require './app'
 require "rack/funky-cache"
 
 use Rack::ShowExceptions
-use Rack::FunkyCache
+use Rack::FunkyCache if ENV['RACK_ENV'] == 'production'
 run App.new
