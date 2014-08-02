@@ -1,4 +1,5 @@
 .DS_Store
 .bundle
 .env.prod
+.env.stage
 .env

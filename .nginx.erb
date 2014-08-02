@@ -4,7 +4,7 @@ if ($http_user_agent ~* NetShelter) {
 
 location /mastering-modern-payments {
   if ( $scheme != 'https' ) {
-    rewrite ^ https://www.petekeen.net$request_uri? permanent;
+    rewrite ^ <%= ENV['PRIMARY_DOMAIN'] %>$request_uri? permanent;
   }
   try_files $uri/index.html $uri.html $uri @app;
 }
@@ -15,25 +15,24 @@ location /bits {
 
 <% pages.each do |page| %>
 <% next unless page.page_id %>
-rewrite ^/<%= page.page_id %>$ https://www.petekeen.net<%= page.html_path %> permanent;
+rewrite ^/<%= page.page_id %>$ <%= ENV['PRIMARY_DOMAIN'] %><%= page.html_path %> permanent;
 <% next unless page.alternate_links.length > 0 %>
 <% page.alternate_links.each do |link| %>
-rewrite ^/<%= link %>$ https://www.petekeen.net<%= page.html_path %> permanent;
+rewrite ^/<%= link %>$ <%= ENV['PRIMARY_DOMAIN'] %><%= page.html_path %> permanent;
 <% end %>
 <% end %>
 
-rewrite ^/payment-integration\.html https://www.petekeen.net/mastering-modern-payments permanent;
-rewrite ^/mmp(\?.*)? https://www.petekeen.net/mastering-modern-payments$1 permanent;
-rewrite ^/mmppo https://www.petekeen.net/mastering-modern-payments permanent;
-rewrite ^/mmp-preorders https://www.petekeen.net/mastering-modern-payments permanent;
-rewrite ^/cheat https://www.petekeen.net/stripe-webhook-event-cheatsheet permanent;
-rewrite ^/list https://www.petekeen.net/the-big-list-of-stripe-resources permanent;
-rewrite ^/events https://www.petekeen.net/stripe-webhook-event-cheatsheet permanent;
-rewrite ^/\d\d\d\d-\d\d-\d\d-(.*)\.html https://www.petekeen.net/$1 permanent;
-rewrite ^/\d\d\d\d-\d\d-\d\d-(.*) https://www.petekeen.net/$1 permanent;
-rewrite ^/(.*)\.html https://www.petekeen.net/$1 permanent;
+rewrite ^/payment-integration\.html <%= ENV['PRIMARY_DOMAIN'] %>/mastering-modern-payments permanent;
+rewrite ^/mmp(\?.*)? <%= ENV['PRIMARY_DOMAIN'] %>/mastering-modern-payments$1 permanent;
+rewrite ^/mmppo <%= ENV['PRIMARY_DOMAIN'] %>/mastering-modern-payments permanent;
+rewrite ^/mmp-preorders <%= ENV['PRIMARY_DOMAIN'] %>/mastering-modern-payments permanent;
+rewrite ^/cheat <%= ENV['PRIMARY_DOMAIN'] %>/stripe-webhook-event-cheatsheet permanent;
+rewrite ^/list <%= ENV['PRIMARY_DOMAIN'] %>/the-big-list-of-stripe-resources permanent;
+rewrite ^/events <%= ENV['PRIMARY_DOMAIN'] %>/stripe-webhook-event-cheatsheet permanent;
+rewrite ^/\d\d\d\d-\d\d-\d\d-(.*)\.html <%= ENV['PRIMARY_DOMAIN'] %>/$1 permanent;
+rewrite ^/\d\d\d\d-\d\d-\d\d-(.*) <%= ENV['PRIMARY_DOMAIN'] %>/$1 permanent;
+rewrite ^/(.*)\.html <%= ENV['PRIMARY_DOMAIN'] %>/$1 permanent;
 
 if ( $host != 'www.petekeen.net' ) {
-  rewrite ^(.*)$ https://www.petekeen.net$request_uri? permanent;
+  rewrite ^(.*)$ <%= ENV['PRIMARY_DOMAIN'] %>$request_uri? permanent;
 }
-  
