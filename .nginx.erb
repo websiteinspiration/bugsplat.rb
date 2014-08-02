@@ -33,6 +33,6 @@ rewrite ^/\d\d\d\d-\d\d-\d\d-(.*)\.html <%= ENV['PRIMARY_DOMAIN'] %>/$1 permanen
 rewrite ^/\d\d\d\d-\d\d-\d\d-(.*) <%= ENV['PRIMARY_DOMAIN'] %>/$1 permanent;
 rewrite ^/(.*)\.html <%= ENV['PRIMARY_DOMAIN'] %>/$1 permanent;
 
-if ( $host != 'www.petekeen.net' ) {
+if ( $host != '<%= ENV['PRIMARY_HOST'] %>' ) {
   rewrite ^(.*)$ <%= ENV['PRIMARY_DOMAIN'] %>$request_uri? permanent;
 }
