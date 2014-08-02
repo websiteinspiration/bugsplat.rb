@@ -27,6 +27,7 @@ gem 'pony', '~> 1.8'
 gem 'rugged', '~> 0.19.0'
 gem 'lru_redux'
 gem 'time-lord', '~> 1.0'
+gem 'rack-funky-cache'
 
 group :development do
   gem 'shotgun'
