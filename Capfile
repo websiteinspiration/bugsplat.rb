@@ -21,7 +21,7 @@ task :stage do
   read_env 'stage'
 end
 
-set :prod do
+task :prod do
   role :web, "web01.bugsplat.info"
   set :base_port, 6700
   set :use_ssl, true
