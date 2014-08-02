@@ -122,7 +122,7 @@ namespace :assets do
     end
 
     AssetSync.sync
-  # end
+  end
 end
 
 task :write_nginx_file do
