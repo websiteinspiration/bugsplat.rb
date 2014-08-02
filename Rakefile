@@ -80,6 +80,7 @@ namespace :assets do
   task :precompile => [:dotenv, :write_nginx_file] do
 
     Dotenv.load("#{ENV['HOME']}/.pkdc")
+    Dotenv.load('.env')
 
     STDERR.puts "Compiling pages"
     app = App.new
@@ -124,6 +125,7 @@ namespace :assets do
 end
 
 task :write_nginx_file do
+  Dotenv.load('.env')
   File.open(".nginx", "w+") do |f|
     pages = App::PAGES
     f.write ERB.new(File.read('.nginx.erb')).result(binding)
