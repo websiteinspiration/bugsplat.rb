@@ -79,8 +79,8 @@ end
 namespace :assets do
   task :precompile => [:dotenv, :write_nginx_file] do
 
-  #   Dotenv.load("#{ENV['HOME']}/.pkdc")
-  #   Dotenv.load('.env')
+    Dotenv.load("#{ENV['HOME']}/.pkdc")
+    Dotenv.load('.env')
 
   #   STDERR.puts "Compiling pages"
   #   app = App.new
@@ -110,17 +110,17 @@ namespace :assets do
   #     write_page("/tag/#{tag}.html", request)
   #   end
 
-  #   AssetSync.configure do |config|
-  #     config.fog_provider = 'AWS'
-  #     config.fog_directory = ENV['FOG_DIRECTORY']
-  #     config.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
-  #     config.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
-  #     config.prefix = 'assets'
-  #     config.public_path = Pathname('./public')
-  #     config.log_silently = false
-  #   end
+    AssetSync.configure do |config|
+      config.fog_provider = 'AWS'
+      config.fog_directory = ENV['FOG_DIRECTORY']
+      config.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
+      config.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
+      config.prefix = 'assets'
+      config.public_path = Pathname('./public')
+      config.log_silently = false
+    end
 
-  #   AssetSync.sync
+    AssetSync.sync
   # end
 end
 
