@@ -82,6 +82,7 @@ namespace :assets do
     Dotenv.load("#{ENV['HOME']}/.pkdc")
     Dotenv.load('.env')
 
+    dirname = File.dirname(__FILE__)
     FileUtils.mkdir_p(File.join(dirname, "public", "stylesheets"))
     FileUtils.mkdir_p(File.join(dirname, "public", "javascripts"))
 
@@ -89,7 +90,7 @@ namespace :assets do
   #   app = App.new
   #   request = Rack::MockRequest.new(app)
 
-  #   dirname = File.dirname(__FILE__)
+
 
   #   tags = {}
 
