@@ -82,13 +82,14 @@ namespace :assets do
     Dotenv.load("#{ENV['HOME']}/.pkdc")
     Dotenv.load('.env')
 
+    FileUtils.mkdir_p(File.join(dirname, "public", "stylesheets"))
+    FileUtils.mkdir_p(File.join(dirname, "public", "javascripts"))
+
   #   STDERR.puts "Compiling pages"
   #   app = App.new
   #   request = Rack::MockRequest.new(app)
 
   #   dirname = File.dirname(__FILE__)
-  #   FileUtils.mkdir_p(File.join(dirname, "public", "stylesheets"))
-  #   FileUtils.mkdir_p(File.join(dirname, "public", "javascripts"))
 
   #   tags = {}
 
