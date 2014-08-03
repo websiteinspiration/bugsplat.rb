@@ -115,6 +115,7 @@ class App < Sinatra::Base
         m.add page.html_path, :period => :daily
       end
     end
+    content_type 'application/xml'
     map.render
   end
 
@@ -142,7 +143,7 @@ class App < Sinatra::Base
         end
       end
     end
-  
+    content_type 'application/atom+xml'
     feed.to_xml
   end
 

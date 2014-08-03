@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/peterkeen/rack-funky-cache.git
+  revision: b900331e716ade7148c080471ff30a75bbc6ed7b
+  specs:
+    rack-funky-cache (0.0.6)
+
 GEM
   remote: https://rubygems.org/
   remote: http://gems.subspace.bugsplat.info/
@@ -81,7 +87,6 @@ GEM
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     rack (1.5.2)
-    rack-funky-cache (0.0.6)
     rack-protection (1.1.4)
       rack
     rack-test (0.6.2)
@@ -164,7 +169,7 @@ DEPENDENCIES
   pony (~> 1.8)
   pygments.rb
   rack (>= 1.3.10)
-  rack-funky-cache
+  rack-funky-cache!
   rake
   ratom
   redcarpet
