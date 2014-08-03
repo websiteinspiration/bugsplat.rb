@@ -6,8 +6,8 @@ require "rack/funky-cache"
 
 use Rack::ShowExceptions
 
-#if ENV['RACK_ENV'] == production
+if ENV['RACK_ENV'] == production
   use Rack::FunkyCache, file_types: [%r{text/(html|plain)}, %r{application/(pdf|atom|xml)}]
-#end
+end
 
 run App.new
