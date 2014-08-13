@@ -49,7 +49,7 @@ task :gen_csr => :gen_key do
   csr_filename = "#{domain}.csr"
   key_filename = "#{domain}.key"
 
-  `openssl req -new -key #{key_filename} -out #{csr_filename}`
+  `openssl req -new -utf8 -sha256 -key #{key_filename} -out #{csr_filename}`
   `cat #{csr_filename} | pbcopy`
 end
 
