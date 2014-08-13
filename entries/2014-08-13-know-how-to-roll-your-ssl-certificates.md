@@ -23,10 +23,12 @@ This is easy. Just make a monthly recurring entry in your calendar that says "Ch
 
 The process you use to roll certificates is somewhat dependent on your infrastructure, but the general ideas stay the same:
 
-* Know where your key is
+* Know how to generate a new private key
 * Know how to generate a new CSR from that key
 * Know how to renew your certificate with your provider using that CSR
 * Know how to install your new certificate
+
+Note that you should use a new private key every time because there may have been a private key compromise you don't know about. See [SSL Labs's SSL/TLS Deployment Best Practices](https://www.ssllabs.com/downloads/SSL_TLS_Deployment_Best_Practices_1.3.pdf) (pdf) for more details.
 
 If you use Heroku and all of this seems like too much bother, you should check out the [ExpeditedSSL addon](https://www.expeditedssl.com). They'll automate all of these steps away and make sure you're protected.
 
@@ -37,7 +39,6 @@ desc "Generate a new key"
 task :gen_key do
   domain = get_env(:domain)
   filename = "#{domain}.key"
-  next if File.exists? filename
 
   `openssl genrsa -out #{filename} 2048`
 end
