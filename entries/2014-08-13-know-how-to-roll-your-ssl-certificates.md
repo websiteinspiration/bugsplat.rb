@@ -4,6 +4,7 @@ id: roll
 tags: Devops
 topic: Software
 description: Learn how to keep your SSL certificates up to date and valid.
+show_upsell: true
 ---
 
 A few weeks ago [Stripe's SSL certificate became invalid](https://twitter.com/stripestatus/status/493137783595073537), along with several other major sites. *Their* certificate didn't expire, their certificate authority's root certificate did. This shouldn't happen, but as with most terrible things it crops up at rather inconvenient times.
@@ -26,6 +27,8 @@ The process you use to roll certificates is somewhat dependent on your infrastru
 * Know how to generate a new CSR from that key
 * Know how to renew your certificate with your provider using that CSR
 * Know how to install your new certificate
+
+If you use Heroku and all of this seems like too much bother, you should check out the [ExpeditedSSL addon](https://www.expeditedssl.com). They'll automate all of these steps away and make sure you're protected.
 
 I run all of my sites on VPSs, so I have the privilege of managing everything myself. I put together a `Rakefile` that manages the hard-to-remember steps for me. It lives in private source control along with my keys and certs, but here's what it looks like today:
 
@@ -85,4 +88,5 @@ Installing certificates is where it becomes infrastructure-dependent. Heroku has
 
 **Very Important Note**: Make sure to change the `assemble_cert` task to reflect the order that your certificate needs to get put together. This script generates correct files for Comodo certificates issued by Namecheap, but there's no guarantee that this is the order for any other certificate provider.
 
-If you use Heroku and all of this seems like too much bother, you should check out the [ExpeditedSSL addon](https://www.expeditedssl.com). They'll automate all of these steps away and make sure you're protected.
+Fill out the form below to learn how to build a better Stripe integration, including a complete chapter on PCI security and SSL certificate generation.
+
