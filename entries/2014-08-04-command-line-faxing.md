@@ -2,7 +2,7 @@
 title: Command Line Faxing
 id: clifax
 tags: Programming
-topic: Programming
+topic: Software
 description: The fax machine is an archaic technology. Let's mash it up with another one!
 ---
 
