@@ -12,7 +12,7 @@ There's not much you can do to protect yourself against a service provider's cer
 
 ## Schedule
 
-This is easy. Just make an entry in your calendar for every month that says "Check SSL certificates". When that calendar entry comes up, go to your website and check your certificate by clicking on the lock icon. The things you're checking for:
+This is easy. Just make a monthly recurring entry in your calendar that says "Check SSL certificates". When that calendar entry comes up, go to your website and check your certificate by clicking on the lock icon. The things you're checking for:
 
 1. Is the lock icon still showing up how it should? If you have an EV certificate you should see your company name in the title bar. If you have a normal certificate you'll see either a green lock in Firefox or Chrome or a grey "https" in Safari.
 
@@ -20,16 +20,14 @@ This is easy. Just make an entry in your calendar for every month that says "Che
 
 ## Process
 
-The process you use to roll certificates is somewhat dependent on your infrastructure, but the general ideas are the same:
+The process you use to roll certificates is somewhat dependent on your infrastructure, but the general ideas stay the same:
 
 * Know where your key is
 * Know how to generate a new CSR from that key
 * Know how to renew your certificate with your provider using that CSR
 * Know how to install your new certificate
 
-On Heroku you have the option of using the ExpeditedSSL addon to manage all of this for you. It's definitely worth checking out.
-
-I run all of my sites on VPSs, so I have the privilege of managing everything myself. I put together a `Rakefile` that manages the hard-to-remember steps for me. It lives in private source control, so here it is::
+I run all of my sites on VPSs, so I have the privilege of managing everything myself. I put together a `Rakefile` that manages the hard-to-remember steps for me. It lives in private source control along with my keys and certs, but here's what it looks like today:
 
 ```ruby
 desc "Generate a new key"
