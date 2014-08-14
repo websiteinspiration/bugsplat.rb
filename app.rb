@@ -273,6 +273,7 @@ class App < Sinatra::Base
           FNAME:  params[:name],
           COURSE: params[:course],
           TOPIC:  params[:topic],
+          TWNAME: params[:screenname]
         }
       })
     rescue StandardError => e
