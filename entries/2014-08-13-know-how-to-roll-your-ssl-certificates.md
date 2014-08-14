@@ -19,6 +19,8 @@ This is easy. Just make a monthly recurring entry in your calendar that says "Ch
 
 2. Is the expiration date coming up? You should proactively roll your certificates at least a day before they're due to expire.
 
+This is the bare minimum you should do if you have one SSL certificate. If you have more than one, or you want to me more thorough, there are any number of free and paid SSL monitoring services out there that will check your certs day and night to make sure they're ok.
+
 ## Process
 
 The process you use to roll certificates is somewhat dependent on your infrastructure, but the general ideas stay the same:
