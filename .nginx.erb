@@ -45,7 +45,7 @@ if ( $scheme != '<%= ENV['APPLICATION_PROTO'] %>' ) {
   rewrite ^ <%= application_base_url %>$request_uri? permanent;
 }
 
-if ( $scheme == 'https' ) {
+if ( $scheme = 'https' ) {
   add_header Strict-Transport-Security "max-age=300; includeSubDomains";
 }
 
