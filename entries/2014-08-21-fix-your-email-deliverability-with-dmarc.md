@@ -90,6 +90,7 @@ This step is actually pretty easy. For each provider in the list that you know y
 
 * [MailChimp](http://kb.mailchimp.com/article/authentication-for-mailchimp)
 * [Mandrill](http://help.mandrill.com/entries/22030056-how-do-i-add-dns-records-for-my-sending-domains)
+* [Postmark](http://support.postmarkapp.com/customer/portal/topics/30165-sender-signatures/articles)
 * SendGrid ([SPF](https://support.sendgrid.com/hc/en-us/articles/202517236-SPF-Records-Explained), [DKIM](https://sendgrid.com/docs/User_Guide/whitelabel_wizard.html))
 * [Mailgun](http://documentation.mailgun.com/quickstart-sending.html#verify-your-domain)
 * Amazon AWS SES ([SPF](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/spf.html), [DKIM](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/easy-dkim.html))
