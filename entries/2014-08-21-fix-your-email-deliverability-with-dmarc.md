@@ -4,6 +4,7 @@ id: dmarc
 topic: DNS
 tags: Programming, Devops
 description: Improve your email deliverability using DMARC, SPF, and DKIM.
+show_upsell: true
 ---
 
 If you do anything more advanced with email than hitting "Send" in Gmail then you should care about *deliverability*, which is the likelyhood that your email will end up in your intended recipient's inbox instead of their spam folder.
