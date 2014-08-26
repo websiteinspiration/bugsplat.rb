@@ -8,6 +8,14 @@ pdf_template: resume_pdf
 
 ### Experience
 
+#### Software Consultant, 2014 - Current ####
+
+[Okapi](http://www.okapi.io), Ann Arbor, MI
+
+* Wrote an extensive test suite for a large Stripe / Rails integration
+* Consulted on a Docker deployment project
+* Assisted getting a PHP application up and running on three different PaaS hosts
+
 #### Software Developer, 2012 - Current ####
 
 [Kongregate](http://www.kongregate.com), Portland OR
@@ -17,6 +25,8 @@ pdf_template: resume_pdf
 * Work across the entire stack, from MySQL query optimization to Ruby and Node.js background jobs to front-end HTML, Javascript and CSS.
 
 * Implemented a lapsed-gamer mailer with customized messages for every user which increased retention by ~5%.
+
+* Debugged and fixed some thorny EC2 / SSH bugs
 
 * Daily work on tasks using Pivotal Tracker, GitHub, and the Jenkins continuous integration server.
 
