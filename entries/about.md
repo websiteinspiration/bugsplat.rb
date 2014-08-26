@@ -32,4 +32,4 @@ Over the life of this site I've evolved a [static html blog][] generator named [
 [Capistrano::Buildpack]: https://github.com/peterkeen/capistrano-buildpack
 [RamNode]: https://clientarea.ramnode.com/aff.php?aff=142
 [Font Awesome]: http://fortawesome.github.io/Font-Awesome/
-[Digital Ocean]: http://www.digitalocean.com
+[Digital Ocean]: https://www.digitalocean.com/?refcode=b6183725a65b
