@@ -5,6 +5,7 @@ id: 9a2f7
 tags: Programming, Heroku
 topic: Software
 description: Heroku is an incredibly flexible platform for running applications. You can compile your application exactly how you want it with custom buildpacks.
+show_upsell: true
 ---
 
 [Docverter]: http://www.docverter.com

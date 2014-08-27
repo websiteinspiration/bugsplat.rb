@@ -4,6 +4,7 @@ id: dns
 tags: DNS
 topic: DNS
 description: Dig through the DNS and learn how and why it all works.
+show_upsell: true
 ---
 
 Frequently I come across confusion with domain names. *Why doesn't my website work? Why is this stupid thing broken, everything I try fails, I just want it to work!!* Invariably the question asker either doesn't know what DNS is or doesn't understand how something fundamental works. More generally, people think that DNS is scary or complicated. This article is an attempt at quelling that fear. *DNS is easy* once you understand a few basic concepts.

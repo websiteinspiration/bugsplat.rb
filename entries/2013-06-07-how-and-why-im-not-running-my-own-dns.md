@@ -4,6 +4,7 @@ id: df11a
 tags: DNS, Devops
 topic: DNS
 description: Running a DNS server is not without it's drawbacks. Eventually I decided not to do it.
+show_upsell: true
 ---
 
 [route53]: http://aws.amazon.com/route53/
