@@ -13,7 +13,7 @@ set :concurrency, "web=1"
 load 'deploy'
 
 task :stage do
-  role :web, 'subspace.bugsplat.info'
+  role :web, 'subspace.zrail.net'
   set :base_port, 8300
   set :additional_domains, %w(
     stage.petekeen.net
@@ -22,7 +22,7 @@ task :stage do
 end
 
 task :prod do
-  role :web, "web01.bugsplat.info"
+  role :web, "web01.zrail.net"
   set :base_port, 6700
   set :use_ssl, true
   set :ssl_cert_path, '/etc/nginx/certs/www.petekeen.net.crt'
