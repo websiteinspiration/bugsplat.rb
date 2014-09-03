@@ -4,18 +4,25 @@ id: con
 skip_metadata: true
 ---
 
+Are you looking to **jumpstart a new project** or clean up an old codebase? Have a **thorny devops problem** you need some help with? I have a vast array of skills and experience to **help your business succeed**, on time and on budget. These are some of my recently completed projects:
+
+* Paired with a customer and walked through **Docker** and how it could apply to their projects
+* Built methods for installing a traditional PHP application onto Platform-as-a-Service providers like **Heroku** and **CloudFoundry**
+* Set up an extensive test suite for a customer's **Rails/Stripe integration**
+
+I specialize in:
+
+* Payment systems including Stripe, Balanced, and Braintree
+* Infrastructure and DevOps, including AWS, Heroku, Email, and DNS
+* Ruby and Rails
+
+
+### Praise from some happy customers
+
 <blockquote>Pete is a wizard. He is the smartest guy I know. If you ever have Rails, DNS, email, or any other questions about anything, Pete knows the answer.
 <br><br>
 <img class="img-circle" src="http://d2s7foagexgnc2.cloudfront.net/files/0c8e53e412919ac7f961/aaronfrancis-2.png" style="width: 2em; margin-right: 1em"><a href="http://aaronfrancis.com">Aaron Francis</a>
 </blockquote>
-
-Are you looking to **jumpstart a new project** or clean up an old codebase? Have a **thorny devops problem** you need some help with? I have a vast array of skills and experience to **help your business succeed**. I specialize in:
-
-* Payment systems
-* Ruby and Rails
-* Infrastructure and Devops, including AWS and Heroku
-* Document conversion
-* Twilio telecom
 
 <blockquote>Pete is so well rounded and brilliant with systems and networking stuff. Among our bootstrapper collective, I think he is the one who most consistently has the answer for something tricky or technical.
 <br><br>
@@ -29,7 +36,9 @@ Are you looking to **jumpstart a new project** or clean up an old codebase? Have
 
 <hr>
 
-Ready to get started? Send an email to [hi@petekeen.net](mailto:hi@petekeen.net) or fill out the form below.
+### Ready to get started?
+
+Send an email to [hi@petekeen.net](mailto:hi@petekeen.net) or fill out the form below.
 
 <div class="sans">
 <form role="form" method="post" action="/consulting-form">
