@@ -1,5 +1,5 @@
 ---
-title: Professional Services for Small SaaS Businesses
+title: Professional Services for Small Businesses and Startups
 id: con
 skip_metadata: true
 ---
