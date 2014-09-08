@@ -7,6 +7,7 @@ description: What a simple idle game can teach bootstrappers about their busines
 show_upsell: true
 ---
 
+<img src="http://d2s7foagexgnc2.cloudfront.net/files/7908bdf267c9465db3bd/adcap_screenshot-2.png">
 
 Over the last few weeks I've been playing an idle game called [AdVenture Capitalist](http://www.kongregate.com/games/HyperHippoGames/adventure-capitalist). In this game, you play a businessman, running his various businesses from the comfy environs of your plush green lawn (and eventually your moon base). I realized this morning that, perhaps inadvertently, AdCap teaches a few very important lessons for people bootstrapping or starting up a business.
 
