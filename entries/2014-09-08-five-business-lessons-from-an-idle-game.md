@@ -4,6 +4,7 @@ id: idle
 tags: Business
 topic: Business
 description: What a simple idle game can teach bootstrappers about their businesses.
+show_upsell: true
 ---
 
 
