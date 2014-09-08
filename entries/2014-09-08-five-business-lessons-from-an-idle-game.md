@@ -8,11 +8,11 @@ show_upsell: true
 ---
 
 
-Over the last few weeks I've been playing an idle game called AdVenture Capitalist. In this game, you play a businessman, running his various businesses from the comfy environs of your plush green lawn (and eventually your moon base). I realized this morning that, perhaps inadvertently, AdCap teaches a few very important lessons for people bootstrapping or starting up a business.
+Over the last few weeks I've been playing an idle game called [AdVenture Capitalist](http://www.kongregate.com/games/HyperHippoGames/adventure-capitalist). In this game, you play a businessman, running his various businesses from the comfy environs of your plush green lawn (and eventually your moon base). I realized this morning that, perhaps inadvertently, AdCap teaches a few very important lessons for people bootstrapping or starting up a business.
 
 --fold--
 
-For those of you unfamiliar with the term "idle game", it's a genre where, after getting the ball rolling, you play a sort of managerial role. You usually can close the browser tab and come back minutes, hours, or days later and the game will have progressed in your absence. Kongregate has a whole category of idle games, containing hundreds of different variations on the theme.
+For those of you unfamiliar with the term "idle game", it's a genre where, after getting the ball rolling, you play a sort of managerial role. You usually can close the browser tab and come back minutes, hours, or days later and the game will have progressed in your absence. [Kongregate has a whole category of idle games](http://www.kongregate.com/idle-games), containing hundreds of different variations on the theme.
 
 AdVenture Capitalist begins with a single humble lemonade stand that earns just a few dollars every time you click on it's button. From there, you can hire employees, upgrade your stand, and expand into bigger and more profitable businesses. Among the clicktacular fun, there are a bunch of important lessons.
 
