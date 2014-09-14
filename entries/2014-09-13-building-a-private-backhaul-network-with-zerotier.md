@@ -1,5 +1,5 @@
 ---
-title: Building a Private Backhaul Network for your VPSs with ZeroTier
+title: Building a Private Backplane Network for your VPSs with ZeroTier
 id: zt
 tags: Networking
 topic: Networking
@@ -13,9 +13,9 @@ A few months ago I ran across a product named [ZeroTier](https://www.zerotier.co
 
 --fold--
 
-## What's a Backhaul Network?
+## What's a Backplane Network?
 
-A backhaul network is a separate, private network interface that you can use to send privileged traffic between hosts within your network. Sometimes this is called dual-homing. You can use this backhaul network for anything you don't want to send over the public network. For example, monitoring or log streams, database servers, or internal admin dashboards. I personally use mine for all of the above.
+A backplane network is a separate, private network interface that you can use to send privileged traffic between hosts within your network. Sometimes this is called dual-homing. You can use this backplane network for anything you don't want to send over the public network. For example, monitoring or log streams, database servers, or internal admin dashboards. I personally use mine for all of the above.
 
 Managing this kind of thing if you control your hardware and physical network is easy. You just put everything into appropriate VLANs and DMZs and make sure your router knows what to do. However, if you *don't* control your physical installation because your hosts are spread across providers, cities, or continents, it becomes a lot harder. Basically your options are to set up a VPN or try to send traffic over SSH tunnels.
 
@@ -27,7 +27,7 @@ There are two steps to setting up your network. First, you sign up for a free ac
 
 Once you've signed up and logged in, you'll see a box that says `(network name)` next to a `Create Network` button. Put a name in and hit the button. This name does not have to be unique, it's strictly for your use. Make a note of the new network's Network ID.
 
-Next, you'll need to install the ZeroTier client on your machines. Ideally it would be packaged and installed via the official distribution systems like yum and apt, but ZeroTier isn't quite there yet. Instead, there's a downloadable installer for each platform. On Linux installer is a shell script containing an embedded binary, so all you have to do is download it and run it. For OS X they provide a normal DMG containing a normal Mac application.
+Next, you'll need to install the ZeroTier client on your machines. Ideally it would be packaged and installed via the official distribution systems like yum and apt, but ZeroTier isn't quite there yet. Instead, there's a downloadable installer for each platform. On Linux installer is a shell script containing an embedded binary, so all you have to do is download it and run it. For OS X they provide a normal DMG containing a normal Mac application. Similarly, on Windows they provide an MSI installer.
 
 Once you have ZT running on a host, you can see it's automatically generated host ID like this:
 
@@ -48,10 +48,26 @@ Repeat these steps for every host you want to join this network. In my personal 
 
 ## Set up DNS (optional)
 
-One last step you may want to do is set up DNS records for your backhaul network so you don't have to try to remember IP addresses. Putting private IPs in the public DNS isn't really a problem because your hosts are the only ones who will actually be able to connect to each other, but if you want to really lock things down you could run your own private DNS server for your backhaul network.
+One last step you may want to do is set up DNS records for your backplane network so you don't have to try to remember IP addresses. Putting private IPs in the public DNS isn't really a problem because your hosts are the only ones who will actually be able to connect to each other, but if you want to really lock things down you could run your own private DNS server for your backplane network. I have a separate domain specifically for my backplane network, `zrail.net`. 
+
+Once you have DNS set up, connecting to a host on your backplane is just like connecting on the public network:
+
+```bash
+$ ssh host.zrail.net
+```
+
+ZeroTier will ensure that packets destined for a backplane address only go out through the proper interface.
+
+Running servers on this network is also very easy. For example, here's how you would set up a simple Ruby rack server:
+
+```bash
+$ rackup -p 8080 -o 10.123.123.123
+```
+
+The `-o` option tells Rack to only listen on the interface for that IP address (`10.123.123.123` is a placeholder for the ZeroTier IP assigned to your host).
 
 ----
 
-So far I'm just using this backhaul network for SSH and database access. Soon I plan on setting up additional services and moving more stuff over to Docker containers, and having this private network will let me be a lot more flexible with how I set things up.
+So far I'm just using this backplane network for SSH and database access. Soon I plan on setting up additional services and moving more stuff over to Docker containers, and having this private network will let me be a lot more flexible with how I set things up.
 
 That said, ZeroTier is capable of a *lot* more than just being a VPN alternative. Especially with mobile devices, it has the ability to dramatically change how peer-to-peer apps are architected.
