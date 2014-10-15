@@ -6,13 +6,6 @@ if ($http_user_agent ~* NetShelter) {
     return 403;
 }
 
-location /mastering-modern-payments {
-  if ( $scheme != '<%= ENV['APPLICATION_PROTO'] %>' ) {
-    rewrite ^ <%= application_base_url %>$request_uri? permanent;
-  }
-  try_files $uri/index.html $uri.html $uri @app;
-}
-
 location /bits {
   proxy_pass http://bits.petekeen.net;
 }
@@ -37,6 +30,7 @@ rewrite ^/\d\d\d\d-\d\d-\d\d-(.*)\.html <%= application_base_url %>/$1 permanent
 rewrite ^/\d\d\d\d-\d\d-\d\d-(.*) <%= application_base_url %>/$1 permanent;
 rewrite ^/(.*)\.html <%= application_base_url %>/$1 permanent;
 rewrite ^/projects/.* https://code.petekeen.net/public permanent;
+rewrite ^/mastering-modern-payments https://www.masteringmodernpayments.com permanent;
 
 if ( $host != '<%= ENV['APPLICATION_DOMAIN'] %>' ) {
   rewrite ^(.*)$ <%= application_base_url %>$request_uri? permanent;
