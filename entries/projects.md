@@ -14,14 +14,13 @@ I have developed various bits of open source software over the years. I've relea
 * [Ledger Web](https://code.petekeen.net/pete/ledger-web/blob/master/README.md) A web-based reporting system for the Ledger command line accounting program
 * [Marginalia](https://code.petekeen.net/pete/marginalia/blob/master/README.md) This is the app that used to run at https://marginalia.io.
 * [MMP Builder](https://code.petekeen.net/mmp/builder/blob/master/README.md) Project that builds MMP
+* [Payola](http://www.payola.io) Accept credit card payments with Stripe and your Rails application
 * [Sequel Reporter](https://code.petekeen.net/pete/sequel-reporter/blob/master/README.md) A small opinionated framework for writing reporting applications using Sequel
 * [Sites](https://code.petekeen.net/pete/sites/blob/master/README.md) Simple wiki-based site generator.
 * [tracker](https://code.petekeen.net/pete/tracker/blob/master/README.md) Tracks visits to my properties, like Mixpanel or Google Analytics
 * [trading](https://code.petekeen.net/pete/trading/blob/master/README.md) A toy trading engine that only supports BUY and SELL limit orders
 * [Twitter Fiction Reader](https://code.petekeen.net/pete/twitter-fiction-reader/blob/master/README.md) Read twitter feeds from the beginning
 * [uploads](https://code.petekeen.net/pete/uploads/blob/master/README.md) A little application for uploading files to a remote server
-
-*Note: I used to use GitHub to host these. My [legacy GitHub account](https://github.com/peterkeen) probably has a more complete list of projects.*
 
 ---
 
