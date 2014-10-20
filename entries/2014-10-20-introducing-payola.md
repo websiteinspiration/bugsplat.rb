@@ -1,5 +1,6 @@
 ---
 title: Introducing Payola
+id: payola
 topic: Stripe
 tags: Programming, Stripe
 description: A drop-in Rails engine for accepting credit card payments with Stripe
