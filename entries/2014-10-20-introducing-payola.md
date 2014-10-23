@@ -122,5 +122,6 @@ Here's some more links to Payola stuff:
 
 * [Payola GitHub](https://github.com/peterkeen/payola)
 * [Submit an issue for bug reports or feature requests](https://github.com/peterkeen/payola/issues)
+* [Google group for annoucements (very low traffic)](https://groups.google.com/forum/#!forum/payola-payments)
 
 [Send me an email](mailto:hi@petekeen.net?subject=Payola) if you'd like to talk about Payola or Payola Pro.
