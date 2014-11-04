@@ -126,7 +126,19 @@
   <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'test3_charge' %></li>
 </ul>
 
-<h4 id="11">11. Invoice charge attempt fails <%= partial :event_anchor, anchor: '11' %></h4>
+<h4 id="11">11. Invoice charge attempt succeeds <%= partial :event_anchor, anchor: '11' %></h4>
+<p>
+  The normal course of events with a subscription is that the invoice is paid properly and on time. Stripe will send an `invoice.created`
+  event one hour before attempting to pay the invoice, which gives you time to add items to the invoice for balance billing or utility-style
+  billing purposes.
+</p>
+<ul>
+  <li><%= partial :stripe_event, event_name: 'invoice.created', describes: 'Invoice', example: 'test3_invoice' %></li>
+  <li><%= partial :stripe_event, event_name: 'invoice.payment_succeeded', describes: 'Invoice', example: 'test3_invoice_paid' %></li>
+  <li><%= partial :stripe_event, event_name: 'charge.succeeded', describes: 'Charge', example: 'test3_charge' %></li>
+</ul>
+
+<h4 id="12">12. Invoice charge attempt fails <%= partial :event_anchor, anchor: '12' %></h4>
 <p>
   When you run a subscription service eventually you'll have customers who cancel their card without telling you.
   When that happens Stripe will send you a series of events. The key event is <code>invoice.payment_failed</code>, the rest just update
@@ -140,13 +152,13 @@
   <li><%= partial :stripe_event, event_name: 'customer.updated', describes: 'Customer', example: 'test1_invoice_10_customer_updated' %></li>
 </ul>
   
-<h4 id="12">12. Existing customer, adding invoice items <%= partial :event_anchor, anchor: '12' %></h4>
+<h4 id="13">13. Existing customer, adding invoice items <%= partial :event_anchor, anchor: '13' %></h4>
 <p>Adding invoice items for a customer without specifying an invoice will automatically add them to the next month's invoice. Pretty handy for doing usage billing, since you can just roll up the customer's daily usage and build an invoice item for every day.</p>
 <ul>
   <li><%= partial :stripe_event, event_name: 'invoiceitem.created', describes: 'Invoice Item', example: 'invoice_item' %></li>
 </ul>
 
-<h4 id="13">13. Customer modifies existing card <%= partial :event_anchor, anchor: '13' %></h4>
+<h4 id="14">14. Customer modifies existing card <%= partial :event_anchor, anchor: '14' %></h4>
 <p>
   Stripe's Card API lets you update some details about a card without fully adding a new one.
   For example, a customer's address changes or they get a new expiration date.
@@ -155,7 +167,7 @@
   <li><%= partial :stripe_event, event_name: 'customer.card.updated', describes: 'Card', example: 'modify_card' %></li>
 </ul>
 
-<h4 id="14">14. Customer changes to a different card <%= partial :event_anchor, anchor: '14' %></h4>
+<h4 id="15">15. Customer changes to a different card <%= partial :event_anchor, anchor: '15' %></h4>
 <p>
   Of course if a customer wants to change their card entirely they have that option. This is the set of events that happens
   when you assign to the customer's `card` attribute. The sequence of events is essentially the same if you add a card and
