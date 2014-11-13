@@ -21,17 +21,17 @@ I specialize in:
 
 <blockquote>Pete is a wizard. He is the smartest guy I know. If you ever have Rails, DNS, email, or any other questions about anything, Pete knows the answer.
 <br><br>
-<img class="img-circle" src="http://d2s7foagexgnc2.cloudfront.net/files/0c8e53e412919ac7f961/aaronfrancis-2.png" style="width: 2em; margin-right: 1em"><a href="http://aaronfrancis.com">Aaron Francis</a>
+<img class="img-circle" src="https://d2s7foagexgnc2.cloudfront.net/files/0c8e53e412919ac7f961/aaronfrancis-2.png" style="width: 2em; margin-right: 1em"><a href="http://aaronfrancis.com">Aaron Francis</a>
 </blockquote>
 
 <blockquote>Pete is so well rounded and brilliant with systems and networking stuff. Among our bootstrapper collective, I think he is the one who most consistently has the answer for something tricky or technical.
 <br><br>
-<img class="img-circle" src="http://d2s7foagexgnc2.cloudfront.net/files/b1a963fa3b58fe2ed131/andrew_culver.jpg" style="width: 2em; margin-right: 1em">Andrew Culver, <a href="https://www.churnbuster.io">Churn Buster</a>
+<img class="img-circle" src="https://d2s7foagexgnc2.cloudfront.net/files/b1a963fa3b58fe2ed131/andrew_culver.jpg" style="width: 2em; margin-right: 1em">Andrew Culver, <a href="https://www.churnbuster.io">Churn Buster</a>
 </blockquote>
 
 <blockquote>Pete's help was instrumental in getting Docverter up and running to auto-generate PDF gift certificates.  We were able to smoothly sell and instantly deliver via email over $100,000 in GCs during our holiday season.
 <br><br>
-<img class="img-circle" src="http://d2s7foagexgnc2.cloudfront.net/files/3aeaa39db8d39bc0d33a/noah.jpg" style="width: 2em; margin-right: 1em">Noah Lehmann-Haupt, <a href="http://www.gothamdreamcars.com/">Gotham Dream Cars</a>
+<img class="img-circle" src="https://d2s7foagexgnc2.cloudfront.net/files/3aeaa39db8d39bc0d33a/noah.jpg" style="width: 2em; margin-right: 1em">Noah Lehmann-Haupt, <a href="http://www.gothamdreamcars.com/">Gotham Dream Cars</a>
 </blockquote>
 
 <hr>
