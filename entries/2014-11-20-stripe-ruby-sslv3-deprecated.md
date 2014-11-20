@@ -6,9 +6,9 @@ topic: Stripe
 description: "Here are three solutions to fixing 401 errors caused by Stripe removing SSLv3 support."
 ---
 
-On November 15th Stripe deprecated SSLv3 because of the POODLE vulnerability. On the whole, this has been a good and welcome change, because SSLv3 has been terrible for a very long time.
+On November 15th [Stripe deprecated SSLv3](https://stripe.com/blog/poodle) because of the POODLE vulnerability. On the whole, this has been a good and welcome change, because SSLv3 has been terrible for a very long time.
 
-The problem is that on some systems this causes backend API requests to start failing because their systems are unable to auto-negotiate TLSv1.2. There are three ways to fix this:
+The problem is that on some systems this causes backend API requests to start failing because their systems are unable to auto-negotiate TLSv1.2. There are three ways to help fix this:
 
 ## 1. Upgrade Ruby
 
