@@ -14,6 +14,14 @@ The problem is that on some systems this causes backend API requests to start fa
 
 This is the cleanest solution. Upgrade your Ruby to 2.1.4, 2.0.0-p594, or 1.9.3-p550. In those versions, [SSLv3 is disabled](https://www.ruby-lang.org/en/news/2014/10/27/changing-default-settings-of-ext-openssl/), which forces auto-negotiation to pick TLSv1.2.
 
+You can also try upgrading your `rest-client` gem to the latest version in your `Gemfile`:
+
+```ruby
+gem 'rest-client', '>= 1.7.2'
+```
+
+This has worked for some people but it depends on your situation. You might already be running the latest, in which case carry on to the next option.
+
 ## 2. Patch OpenSSL
 
 At the bottom of the link in #1 there's a monkeypatch you can apply that changes OpenSSL to remove SSLv3.
