@@ -22,6 +22,8 @@ gem 'rest-client', '>= 1.7.2'
 
 This has worked for some people but it depends on your situation. You might already be running the latest, in which case carry on to the next option.
 
+Also, if you're using the `rest_client` gem (notice the underscore instead of dash), be aware that this **re-enables SSLv3**. See [this commit](https://github.com/treeder/rest_client/commit/ae72fa75555ae8a20b51402461fb3adeb6bb3f50) from late October 2014.
+
 ## 2. Patch OpenSSL
 
 At the bottom of the link in #1 there's a monkeypatch you can apply that changes OpenSSL to remove SSLv3.
