@@ -1,14 +1,16 @@
 ---
-title: "Stripe removed SSLv3 support. Here's how to fix the 401 errors."
+title: "Stripe removed SSLv3 support. Here's how to fix the HTTP 401 errors."
 id: poodle
 tags: Stripe, Programming
 topic: Stripe
-description: "Here are three solutions to fixing 401 errors caused by Stripe removing SSLv3 support."
+description: "Here are three solutions to fixing HTTP 401 errors caused by Stripe removing SSLv3 support."
 ---
 
 On November 15th [Stripe deprecated SSLv3](https://stripe.com/blog/poodle) because of the POODLE vulnerability. On the whole, this has been a good and welcome change, because SSLv3 has been terrible for a very long time.
 
-The problem is that on some systems this causes backend API requests to start failing because their systems are unable to auto-negotiate TLSv1.2. There are three ways to help fix this:
+The problem is that on some systems this causes backend API requests to start failing with an error message from Stripe because they're unable to auto-negotiate TLSv1.2.
+
+Here are three ways to help fix this:
 
 ## 1. Upgrade Ruby
 
@@ -43,3 +45,5 @@ end
 This is basically the solution that was [proposed to Stripe](https://github.com/stripe/stripe-ruby/pull/107) but they rejected it because when new versions of TLS come out it'll break. So, don't be surprised when it breaks two years down the line, but for now it works.
 
 Of these three options, if you can go with the first one please do. It's the cleanest and least brittle solution.
+
+**P.S.** Want me to solve these kinds of problems for your business, before they become problems? Contact me about [Payola Pro](https://www.payola.io/pro). You'll be glad you did.
