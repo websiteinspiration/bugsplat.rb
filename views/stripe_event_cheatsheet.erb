@@ -6,7 +6,6 @@
   </span>
 </p>
 
-
 <p>
   <%= external_link_tag "Stripe", "https://stripe.com" %> has an amazing set of webhooks for your application to listen for.
   Every event that happens on your Stripe account (or an account your application is connected to) blasts events to your webhook receiver.
@@ -19,6 +18,8 @@
   For more background information on how Stripe processes a charge check out <%= external_link_tag "The Life of a Stripe Charge", "https://www.petekeen.net/life-of-a-stripe-charge" %> and my book <%= external_link_tag "Mastering Modern Payments: Using Stripe with Rails", 'https://www.petekeen.net/mastering-modern-payments' %>.
 </p>
 
+<hr>
+<%= partial :upsell, show_header: false %>
 <hr>
 
 <h2 id="charges">Simple One-off Purchases with Charges <%= partial :event_anchor, anchor: 'charges' %></h2>
@@ -180,5 +181,3 @@
 </ul>
 
 <hr>
-
-<%= partial :upsell, show_header: true %>
