@@ -3,6 +3,7 @@ title: Adventures in Self Publishing
 id: pub
 tags: Books, Stripe
 show_upsell: 'true'
+topic: Stripe
 ---
 
 [mmp]: https://www.petekeen.net/mastering-modern-payments

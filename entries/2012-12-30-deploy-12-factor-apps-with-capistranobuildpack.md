@@ -3,6 +3,7 @@ title: Deploy 12-Factor Apps with Capistrano::Buildpack
 date: '2012-12-30 12:04:31'
 id: 90b36
 tags: Programming, Heroku
+topic: Software
 ---
 
 [prev]: /deploying-a-12-factor-app-with-capistrano

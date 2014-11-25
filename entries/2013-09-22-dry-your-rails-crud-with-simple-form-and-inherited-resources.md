@@ -3,6 +3,7 @@ title: DRY your Rails CRUD with Simple Form and Inherited Resources
 id: crud
 tags: Programming, Rails
 show_upsell: 'true'
+topic: Software
 ---
 
 [simple_form]: https://github.com/plataformatec/simple_form
