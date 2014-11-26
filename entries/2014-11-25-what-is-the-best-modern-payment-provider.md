@@ -167,5 +167,3 @@ You can use this list to help you narrow down the choices for your business.
 **P.S.** Looking for help navigating this list and choosing the provider, or maybe mix of providers, that best fit your business? [Contact me](mailto:hi@petekeen.net) and let's chat.
 
 ---
-
-<%= @app.partial :upsell, show_header: false %>
