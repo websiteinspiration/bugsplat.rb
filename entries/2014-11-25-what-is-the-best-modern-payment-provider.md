@@ -4,6 +4,8 @@ id: pay
 topic: Business
 tags: Stripe, Business
 description: 'A comparision of modern payment providers including Stripe, Braintree, Balanced, and more.'
+show_upsell: true
+show_upsell_header: false
 ---
 
 **Your business has to get paid**, but how that happens is a complicated question, and the modern payment landscape is vast. How do you pick?
