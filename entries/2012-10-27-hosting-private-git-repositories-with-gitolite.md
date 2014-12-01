@@ -3,6 +3,8 @@ title: Private Git Repositories with Gitolite and S3
 date: '2012-10-27 15:59:41'
 id: aa310
 tags: Git, Programming
+topic: Software
+description: How I host my private git repos on my own hardware.
 ---
 
 Earlier this year I bought a new Mac mini for various reasons. One of the big ones was so I would

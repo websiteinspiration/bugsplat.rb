@@ -4,6 +4,7 @@ id: tools
 tags: Programming, Rails
 show_upsell: 'true'
 topic: Software
+description: Gems and other handy tools that make building a Rails app easier.
 ---
 
 Over the past few years I've written a number of Rails applications. It's become my default "scratch an itch" tool for when I need to build an app quickly to do a task. Even though Rails is mostly batteries-included, there are a few tools that make writing new applications so much easier. This is my list of tools that I use for pretty much every new Rails project.

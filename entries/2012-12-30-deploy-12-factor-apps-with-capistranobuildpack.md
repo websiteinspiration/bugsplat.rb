@@ -4,6 +4,7 @@ date: '2012-12-30 12:04:31'
 id: 90b36
 tags: Programming, Heroku
 topic: Software
+description: "Capistrano::Buildpack is a gem for deploying apps originally meant for Heroku onto your own hardware."
 ---
 
 [prev]: /deploying-a-12-factor-app-with-capistrano

@@ -3,6 +3,7 @@ title: Dokuen 0.0.8, Now with Linux Support
 date: '2012-05-29 19:00:02'
 id: 13b92
 tags: Dokuen, Heroku
+topic: Updates
 ---
 
 When I released [Dokuen](https://github.com/peterkeen/dokuen) [last week](/dokuen-update) I had no idea it would get as much press as it did. I'm excited that so many people want to give it a shot. To that end, <strike>v0.0.6</strike> <strike>v0.0.7</strike> v0.0.8 has rudimentary Ubuntu support, along with revised Mac support. See below for the changes.

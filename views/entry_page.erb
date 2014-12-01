@@ -1,14 +1,16 @@
 <div class="entry">
   <% unless @skip_masthead %>
   <h1><a href="<%= @page.html_path %>"><%= @page['title'] %></a></h1>
-  <% end %>
   <% if @page.is_blog_post? %>
   <div class="top-metadata">
-    <p class="date pull-right">
-      <%= render :erb, :share_links, layout: false %>
+    <p class="date pull-right" style="text-align: right">
+      Share: <%= render :erb, :share_links, layout: false %>
     </p>
     <p class="date"><%= @page.reading_time %> min read &mdash; Get free updates of new posts <a href="/newsletter?topic=<%= @page.topic %>">here</a></p>
+    <p class="date">
+    </p>
   </div>
+  <% end %>
   <% end %>
   <%= @page.render(nil, @app) %>
   <% if @page.show_upsell? %>
@@ -17,38 +19,43 @@
   <% if @page.show_byline? %>
     <%= partial :byline, topic: @page.topic %>
   <% end %>
-  <% if @page.is_blog_post? %>
-  <p class="date" style="margin-top: 1em; margin-bottom: 1em;">
-    Share:&nbsp;
-    <%= render :erb, :share_links, layout: false %>
-  </p>
-  <% end %>
   <% unless @skip_masthead || @page.headers['skip_metadata'] %>
-  <div class="well" id="tags-and-formats">
-  <div class="formats pull-right">
-    <span class="date">Other Formats:&nbsp;</span>
-    <a rel="nofollow" href="<%= @page.pdf_path %>"><img alt="Download PDF" src="https://d2s7foagexgnc2.cloudfront.net/files/7d44797a6ac52e7fb898/pdf.png"></img></a>
-    <a rel="nofollow" href="<%= @page.markdown_path %>"><img alt="Download Raw Markdown" src="https://d2s7foagexgnc2.cloudfront.net/files/4fb4d0b0a7a0bb33a2e0/markdown.png"></img></a>
+  <div id="tags-and-formats">
+    <p class="date">
+      <% if @page.date %>
+        <%= @page.short_date %>&nbsp;&nbsp;
+      <% end %>
+      <% if @page.is_blog_post? %>
+        Share:&nbsp;
+        <%= render :erb, :share_links, layout: false %>
+      <% end %>
+      &nbsp;
+    </p>
+    <p class="date">
+      <% if @page.topic %>
+        Posted in: <a href="/topic/<%= @page.topic %>"><%= @page.topic %></a>&nbsp;&nbsp;
+      <% end %>
+    </p>
+    <p class="date">
+      <% if @page.tags.length > 0 %>
+        Tagged: <% @page.tags.each do |tag| %>
+          <a href="/tag/<%= tag %>"><%= tag %></a>
+        <% end %>
+      <% end %>
+    </p>
+    <p class="date formats">
+      Other formats:
+      <a rel="nofollow" href="<%= @page.pdf_path %>"><img alt="Download PDF" src="https://d2s7foagexgnc2.cloudfront.net/files/7d44797a6ac52e7fb898/pdf.png"></img></a>
+      <a rel="nofollow" href="<%= @page.markdown_path %>"><img alt="Download Raw Markdown" src="https://d2s7foagexgnc2.cloudfront.net/files/4fb4d0b0a7a0bb33a2e0/markdown.png"></img></a>
+    </p>
+    <% if @page.is_blog_post? && has_related_posts(@page) %>
+      <h4>Related Posts</h4>
+      <ul class="archive-list">
+        <% related_posts(@page).each do |page| %>
+          <li><span class="date fixed-width"><%= page.date.strftime('%Y-%m-%d') %> &raquo;</span> <a href="<%= page.html_path %>"><%= page['title'] %></a></li>      
+        <% end %>
+      </ul>
+    <% end %>
   </div>
-  <% end %>
-  <p class="date">
-    <% if @page.date %>
-      <%= @page.short_date %>&nbsp;&nbsp;
-    <% end %>
-    <% if @page.tags.length > 0 %>
-      Tagged:
-      <% @page.tags.each do |tag| %>
-        <a href="/tag/<%= tag %>"><%= tag %></a>&nbsp;
-      <% end %>
-    <% end %>
-    &nbsp;
-  </p>
-  <% if @page.is_blog_post? && has_related_posts(@page) %>
-    <h4>Related Posts</h4>
-    <ul class="archive-list">
-      <% related_posts(@page).each do |page| %>
-        <li><span class="date fixed-width"><%= page.date.strftime('%Y-%m-%d') %> &raquo;</span> <a href="<%= page.html_path %>"><%= page['title'] %></a></li>      
-      <% end %>
-    </ul>
   <% end %>
 </div>

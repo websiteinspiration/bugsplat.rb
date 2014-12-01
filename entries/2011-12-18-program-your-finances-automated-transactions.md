@@ -3,7 +3,7 @@ title: ! 'Program Your Finances: Automated Transactions'
 date: '2011-12-18 18:32:27'
 tags: Personal Finance, Ledger
 id: ea00f
-topic: Personal Finance
+topic: Finance
 description: Walks through a simple but very capable and extensible reporting system for ledger written in Ruby. Reports are simple ERB pages with embedded SQL and javascript.
 ---
 

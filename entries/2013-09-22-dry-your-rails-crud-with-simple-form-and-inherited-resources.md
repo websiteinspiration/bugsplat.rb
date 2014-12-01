@@ -4,6 +4,7 @@ id: crud
 tags: Programming, Rails
 show_upsell: 'true'
 topic: Software
+description: Building admin interfaces is a drag. Make it easier with a few handy gems.
 ---
 
 [simple_form]: https://github.com/plataformatec/simple_form

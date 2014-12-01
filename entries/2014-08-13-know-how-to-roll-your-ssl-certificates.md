@@ -11,6 +11,8 @@ A few weeks ago [Stripe's SSL certificate became invalid](https://twitter.com/st
 
 There's not much you can do to protect yourself against a service provider's certificate expiring, but you *can* proactively protect yourself against your own certificate expiring. The biggest thing to do is have a schedule and a process.
 
+--fold--
+
 ## Schedule
 
 This is easy. Just make a monthly recurring entry in your calendar that says "Check SSL certificates". When that calendar entry comes up, go to your website and check your certificate by clicking on the lock icon. The things you're checking for:

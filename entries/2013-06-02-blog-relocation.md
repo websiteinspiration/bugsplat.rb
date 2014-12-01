@@ -2,6 +2,8 @@
 title: Blog Relocation
 id: '79934'
 tags: Meta
+topic: Updates
+description: "I've moved my website to petekeen.net and managed the redirects like a pro."
 ---
 
 [lol]: https://support.leagueoflegends.com/entries/20739888-Bug-Splat-and-Game-Crashes

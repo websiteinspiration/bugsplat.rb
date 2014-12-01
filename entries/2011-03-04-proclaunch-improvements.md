@@ -3,6 +3,7 @@ title: ProcLaunch Improvements and v1.1
 date: '2011-03-04 16:31:23'
 tags: Programming, Proclaunch
 id: 61d35
+topic: Updates
 ---
 
 ProcLaunch has learned a bunch of new things lately. I've fixed a few bugs and implemented a few new features, including:
@@ -13,6 +14,8 @@ ProcLaunch has learned a bunch of new things lately. I've fixed a few bugs and i
  * Instead of always sending `SIGTERM`, the `stop_signal` file can contain the name of a signal to send when proclaunch wants to stop a profile
  * Pid files are properly cleaned up after processes that don't do it themselves
  * You won't get two copies of proclaunch if one is already running as root
+
+--fold--
 
 Get version 1.1 from [github][proclaunch]! Thanks a bunch to Matt, who hunted down the bugs and helped me figure out the features.
 

@@ -3,6 +3,7 @@ title: Introducing FivePad
 date: '2011-11-17 17:17:12'
 tags: Projects, FivePad
 id: '85550'
+topic: Updates
 ---
 
 For over two years I've been ruminating on an idea for a webapp that would help people coordinate apartment searches amongst roommates. Finding a place is pretty tough, and finding the right place for you and one or more other people is even harder. Emails, phone calls, spreadsheets, links, bookmarks. It's a mess. So, I built [FivePad][fivepad]. More details after the fold.

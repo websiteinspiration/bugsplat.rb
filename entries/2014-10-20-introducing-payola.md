@@ -9,6 +9,8 @@ show_upsell: true
 
 I released an open source Rails engine named [Payola](http://www.payola.io) that you can drop into any application to have robust, reliable self-hosted Stripe payments up and running with just a little bit of fuss.
 
+--fold--
+
 When you're setting up Stripe in a Rails application there are a lot of choices you have to make. *What should you use for webhooks? Do you even need webhooks? How much information should you keep in your database? Should you use Checkout or do you need to design your own form?* Amongst all of these choices, you also have to decide what libraries you want to use, and boy howdy are there even *more* options here. [Koudoku](http://koudoku.org), [StripeEvent](https://github.com/integrallis/stripe_event), [Stripe::Rails](https://github.com/thefrontside/stripe-rails), not to mention commercial options like [Gumroad](https://gumroad.com), [Plasso](https://plasso.co), and [Cargo](http://cargocollective.com).
 
 One of the reasons why I wrote my book [Mastering Modern Payments: Using Stripe with Rails](https://www.masteringmodernpayments.com) is to help you narrow down that set of choices to something reasonable, and I think it does a very good job of it. That said, even if you're using my book you still have to actually write the code to implement Stripe. Not that it's a lot of code, but it's basically always the same.

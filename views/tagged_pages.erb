@@ -1,7 +1,7 @@
-<h3>Articles tagged with '<%= @tag_name %>'</h3>
+<h2>Articles tagged with '<%= @tag_name %>'</h2>
 <% @tagged_pages.each do |page| %>
 <div class="entry">
-  <h2><a href="<%= page.html_path %>"><%= page['title'] %></a></h2>
+  <h3><a href="<%= page.html_path %>"><%= page['title'] %></a></h3>
   <p class="date"><%= page.natural_date %></p>
   <%= page.render_before_fold %>  
   <% if page.tags.length > 0 %>

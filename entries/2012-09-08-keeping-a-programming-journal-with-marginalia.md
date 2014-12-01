@@ -3,6 +3,7 @@ title: Keeping a Programming Journal with Marginalia
 date: '2012-09-08 08:06:51'
 id: 0a99d
 tags: Marginalia, Programming
+topic: Software
 ---
 
 In addition to writing on this blog, I've been keeping notes for various

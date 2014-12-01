@@ -4,7 +4,6 @@ id: a
 ---
 
 * [Résumé](/resume)
-* [Press Kit](/press-kit)
 
 ### Contact Me
 

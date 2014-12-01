@@ -47,8 +47,9 @@ class Pages
       @pages_by_page_name[page.name] = page
       @pages_by_page_id[page.page_id] = page
       if page.topic
-        @pages_by_topic[page.topic] ||= []
-        @pages_by_topic[page.topic] << page
+        topic = page.topic.downcase
+        @pages_by_topic[topic] ||= []
+        @pages_by_topic[topic] << page
       end
 
       page.alternate_links.each do |link|

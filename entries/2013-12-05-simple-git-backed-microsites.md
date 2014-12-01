@@ -12,6 +12,8 @@ Something that I've wanted for a very long time is a way to stand up new website
 
 GitHub's Pages are of course one of the best answers, but I'm sticking to my self-hosting, built-at-home guns.
 
+--fold--
+
 ### A Short Code Tour
 
 The code is split up into four distinct parts:

@@ -31,6 +31,10 @@ rewrite ^/\d\d\d\d-\d\d-\d\d-(.*) <%= application_base_url %>/$1 permanent;
 rewrite ^/(.*)\.html <%= application_base_url %>/$1 permanent;
 rewrite ^/projects/.* https://code.petekeen.net/public permanent;
 rewrite ^/mastering-modern-payments https://www.masteringmodernpayments.com permanent;
+rewrite ^/topic/stripe /stripe permanent;
+rewrite ^/topic/dns /dns permanent;
+rewrite ^/topic/finance /finance permanent;
+rewrite ^/essays /articles permanent;
 
 if ( $host != '<%= ENV['APPLICATION_DOMAIN'] %>' ) {
   rewrite ^(.*)$ <%= application_base_url %>$request_uri? permanent;

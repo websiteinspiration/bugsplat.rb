@@ -3,6 +3,8 @@ title: Dokuen, a Personal App Platform
 date: '2012-05-17 16:29:30'
 tags: Heroku, Projects
 id: 76c93
+topic: Software
+description: Deploying apps on your own hardware shouldn't be so hard.
 ---
 
 Dokuen (Japanese for "solo performance") is an amalgamation of open source components that I mashed together so I could run [Heroku](http://heroku.com)-style services on my shiny new Mac mini while retaining the paradigm of `git push` deployments and environment variables for configuration. Effectively, I wanted to be able to seamlessly deploy [12 factor applications](http://12factor.net) in my local environment.

@@ -4,6 +4,8 @@ date: '2013-06-18 12:00:00'
 id: 9b84f
 tags: Docverter
 show_upsell: 'true'
+topic: Software
+description: Building an eBook is not a trivial endeavor but Docverter makes it easier.
 ---
 
 [mmp]: /mastering-modern-payments

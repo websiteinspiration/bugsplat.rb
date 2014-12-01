@@ -187,6 +187,14 @@ class App < Sinatra::Base
     erb :tagged_pages
   end
 
+  get '/topic/:topic' do
+    topic = params[:topic].gsub('.html', '').downcase
+    @pages = pages.for_topic(topic)
+    @description = "Articles about #{topic.capitalize}"
+    @page_title = "#{topic.capitalize} Articles"
+    erb :topic_essays
+  end
+
   get %r{^/([\w\/-]+)(\.)?(\w+)?$} do
     params[:page_name] = params[:captures].first
     params[:format] = params[:captures].last

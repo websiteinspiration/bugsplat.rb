@@ -3,6 +3,8 @@ title: Increasing the Encryption Noise Floor
 date: '2013-01-27 18:06:32'
 id: d9b85
 tags: Programming, Meta
+topic: Networking
+description: HTTPS is incredibly important for the survival of the Internet and installing it is easy.
 ---
 
 Inspired by Tim Bray's [recent post about encrypting his website][tbray], I decided to enable and force HTTPS for bugsplat.info. The process was straightforward and, turns out, completely free. Read on to find out how and why.

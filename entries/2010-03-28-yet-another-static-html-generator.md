@@ -3,7 +3,7 @@ title: Yet Another Static HTML Blog
 date: '2010-03-28 22:15:00'
 tags: Meta
 id: '1'
-topic: Meta
+topic: Updates
 description: The very first post on this blog describing a very out-of-date backend engine.
 ---
 

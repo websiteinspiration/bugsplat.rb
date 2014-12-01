@@ -2,6 +2,8 @@
 title: Mounting a Magic Trackpad on a Kinesis Advantage Keyboard
 id: 8b211
 tags: Hardware
+topic: Hardware
+description: The Kinesis Advantage is a funky keyboard with a blank spot exactly right for mounting a Magic Trackpack. But how to get it to stick there?
 ---
 
 [dashgrip]: http://www.amazon.com/gp/product/B003A8D6YG/

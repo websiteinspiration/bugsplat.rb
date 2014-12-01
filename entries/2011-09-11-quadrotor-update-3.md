@@ -3,9 +3,12 @@ title: ! 'Quadrotor Update 3 '
 date: '2011-09-11 21:06:12'
 id: 8d9db
 tags: Hardware
+topic: Hardware
 ---
 
 Quick update on the quadrotor. I went through all of the motor wiring and found that the motors were hooked up to the wrong terminals! [This diagram][multiwii-diagram] plus watching the orientation of the machine on the configuration software helped me figure out where I had gone wrong. After that, I calibrated the throttle range on all of the speed controllers and then tried flying again.
+
+--fold--
 
 Except, it still doesn't really work. I played around with it for quite awhile but one of the speed controllers is still basically either on or off. No proportional control at all. Also, I relocated the gyro and accelerometer board to dead center of the body, which helped a little.
 

@@ -3,6 +3,7 @@ title: Random Remindlyo Things
 date: '2011-09-25 15:49:33'
 tags: Remindlyo
 id: ccb8f
+topic: Updates
 ---
 
 I think everyone is due for an update on my [remindlyo](http://www.remindlyo.com) progress, but I don't really have an organized post. Here's a bunch of random thoughts instead.

@@ -4,6 +4,7 @@ id: pub
 tags: Books, Stripe
 show_upsell: 'true'
 topic: Stripe
+description: "My journey from an empty text file to a successful book launch, including pretty graphs!"
 ---
 
 [mmp]: https://www.petekeen.net/mastering-modern-payments

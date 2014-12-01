@@ -3,6 +3,8 @@ title: On-the-fly Markdown Conversion to PDF and Docx
 date: '2012-10-20 12:21:33'
 id: 46c44
 tags: Docverter, Programming, Meta
+topic: Software
+description: How to convert markdown content into other formats using Docverter.
 ---
 
 Today I added PDF, Docx, and Markdown download links to the bottom of every post here on Bugsplat.

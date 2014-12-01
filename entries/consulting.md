@@ -1,8 +1,16 @@
 ---
-title: Professional Services for Small Businesses and Startups
+title: Software Consulting
 id: con
 skip_metadata: true
+skip_masthead: true
+body_class: book
 ---
+
+<h1 style="text-align: center">
+  Questions Answered.<br>
+  Projects Finished.<br>
+  Happy clients.<br>
+</h1>
 
 Are you looking to **jumpstart a new project** or clean up an old codebase? Have a **thorny devops problem** you need some help with? I have a vast array of skills and experience to **help your business succeed**, on time and on budget. These are some of my recently completed projects:
 
@@ -17,7 +25,7 @@ I specialize in:
 * Ruby and Rails
 
 
-### Praise from some happy customers
+## Praise from some happy customers
 
 <blockquote>Pete is a wizard. He is the smartest guy I know. If you ever have Rails, DNS, email, or any other questions about anything, Pete knows the answer.
 <br><br>
@@ -36,7 +44,7 @@ I specialize in:
 
 <hr>
 
-### Ready to get started?
+## Ready to get started?
 
 Send an email to [hi@petekeen.net](mailto:hi@petekeen.net) or fill out the form below.
 

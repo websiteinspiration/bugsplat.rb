@@ -3,12 +3,15 @@ title: ProcLaunch v1.2
 date: '2011-04-15 12:58:59'
 id: 061e1
 tags: Programming, Proclaunch
+topic: Updates
 ---
 
 Just a few bug fixes this time:
 
  * When you send proclaunch `SIGHUP`, it will send all of the profiles their respective stop signals and then wait for them to shut down. You can tell proclaunch to stop without waiting by sending `SIGHUP` again.
  * You can pass the `--log-path` command line option to change where proclaunch writes it's log. By default this is `$profile_dir/error.log`
+
+--fold--
  
 Get it from [github][proclaunch]! These changes were generously sponsored by [Zipline Games][zipline], who are using proclaunch to launch lua [mongrel2][] handlers as part of their [Moai Cloud platform](http://getmoai.com).
 

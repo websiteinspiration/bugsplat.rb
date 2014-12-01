@@ -3,6 +3,8 @@ title: Full Text Search with Whistlepig
 date: '2013-01-09 07:51:11'
 id: 6d23b
 tags: Programming, Meta
+topic: Software
+description: Whistlepig is a small in-memory full-text search engine. This is how I embedded it into my blog engine.
 ---
 
 [Whistlepig]: http://masanjin.net/whistlepig/

@@ -10,6 +10,8 @@ When I started [my little side consultancy](/consulting) I had to fax in some fo
 
 Enter [Phaxio](https://www.phaxio.com). They have a whole bunch of fax machines (actually they're probably [banks of modems](http://en.wikipedia.org/wiki/Modem#mediaviewer/File:Modem-bank-1.jpg)) in a data center somewhere and they let you use them with a [simple HTTP API](http://www.phaxio.com/docs/). All you have to do is go sign up and make an initial deposit. They'll provide you with an API key and secret pair that you can then use to send faxes using `curl`.
 
+--fold--
+
 For a time I was actually hand-writing the `curl` commands. That got tedious and annoying so I wrote up this little script:
 
 ```ruby

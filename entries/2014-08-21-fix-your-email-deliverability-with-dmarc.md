@@ -9,6 +9,8 @@ show_upsell: true
 
 If you do anything more advanced with email than hitting "Send" in Gmail then you should care about *deliverability*, which is the likelyhood that your email will end up in your intended recipient's inbox instead of their spam folder.
 
+--fold--
+
 In the last few years three technologies have emerged that help you as a sender work with receiving mail servers to ensure that your mail gets where it needs to be. They are
 
 * Sender Policy Framework (SPF)

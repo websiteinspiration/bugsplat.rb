@@ -16,6 +16,8 @@ This list highlights the biggest modern payment providers in the market, where "
 
 You can use this list to help you narrow down the choices for your business.
 
+--fold--
+
 ## [Stripe](https://stripe.com)
 
 * Credit card payments

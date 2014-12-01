@@ -2,12 +2,15 @@
 title: Let's Begin Again
 id: begin
 tags: Meta
-topic: Meta
+topic: Updates
+description: I am now an independent consultant!
 ---
 
 At the ripe old age of 12 I started messing around with computers. I've been hooked ever since. I've also read everything I could get my hands on about business, hoping to some day be able to start my own. However, I took the well-worn path of college, then into industry where I lucked into a series of great jobs.
 
 Today, I'm finally striking out on my own. Today I'm throwing open the doors to my software development consultancy.
+
+--fold--
 
 I want to thank my former employer Kongregate for putting up with me over the past few years. It's been a hard road for all of us, and they've been amazing. It's definitely not them. (By the way, if you're an amazing Rails developer [they're hiring!](http://www.kongregate.com/pages/jobs)).
 

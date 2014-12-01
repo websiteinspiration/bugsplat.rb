@@ -10,6 +10,8 @@ I've had a GitHub account since 2008. June 16th, to be exact. For almost six yea
 
 I've [run my own private git server](/hosting-private-git-repositories-with-gitolite) on the Mac mini in my living room since 2012. For the last few years, then, my GitHub account has become more of a public portfolio and mirror of a selection of my private repos. As of today, my GitHub account is deprecated. If you want to see what I'm working on now you can go to [my Projects page](/projects). I'll be gradually moving old projects over to this page, and new projects will show up there first.
 
+--fold--
+
 ## Implementation
 
 The projects page has three moving pieces. The git repos themselves, read-only public clone access, and finally displaying the projects on the page.

@@ -3,7 +3,7 @@ title: A Robust Reporting System for Ledger
 date: '2012-01-01 10:01:14'
 tags: Personal Finance, Ledger, Projects, Ruby
 id: 3a32a
-topic: Personal Finance
+topic: Finance
 description: The reporting system I use to manage my financial life. Reports are just HTML and ERB with a smattering of SQL.
 ---
 

@@ -10,6 +10,8 @@ On November 15th [Stripe deprecated SSLv3](https://stripe.com/blog/poodle) becau
 
 The problem is that on some systems this causes backend API requests to start failing with an error message from Stripe because they're unable to auto-negotiate TLSv1.2.
 
+--fold--
+
 Here are three ways to help fix this:
 
 ## 1. Upgrade Ruby

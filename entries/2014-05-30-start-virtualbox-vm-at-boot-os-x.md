@@ -2,12 +2,15 @@
 title: Start a VirtualBox VM at Boot on Mac OS X
 id: vbboot
 topic: Software
+tags: VirtualBox, Programming
 description: Sometimes you have a VirtualBox VM that's critical to your workflow. Start it at system boot with launchd.
 ---
 
 Sometimes you have a VirtualBox VM that's critical to your workflow. For example, the Mac mini in my basement hosts a VM that does things like host all of my private Git repos and provide a staging environment for all of my wacky ideas.
 
 When I have to reboot that Mac mini for any reason, inevitably I find myself trying to push changes to some git repo and forgetting that I have to start up the VM again by hand. And then there's the yelling and the drinking and it's no good for anyone.
+
+--fold--
 
 It turns out you can actually run VirtualBox VMs in a few different ways, including from the command line. Assuming you have a VM named `examplevm`, this command will start it up in the background:
 

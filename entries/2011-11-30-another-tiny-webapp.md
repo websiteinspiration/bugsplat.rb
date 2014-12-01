@@ -3,6 +3,8 @@ title: Another Tiny Webapp
 date: '2011-11-30 11:46:50'
 tags: Projects
 id: fefc4
+topic: Software
+description: A little webapp for managing a painkiller schedule.
 ---
 
 Literally ten minutes after hitting the publish button on my [last post](/concurrency-on-heroku-cedar) I took a little tumble and broke a rather important bone in my back, and now I'm on medical leave from work for awhile.

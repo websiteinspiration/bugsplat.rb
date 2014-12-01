@@ -13,6 +13,8 @@ Today is release day for [Payola v1.2.0](https://www.payola.io) and the big watc
 3. Set up a form
 4. Profit!
 
+--fold--
+
 Let's go through these in a bit more detail.
 
 ## 1. Installation

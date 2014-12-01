@@ -2,6 +2,8 @@
 title: Page Viewer, a Simple Markdown Viewer
 id: faeaa
 tags: Programming
+topic: Software
+description: Page Viewer is a little Sinatra app that just renders a directory full of Markdown files into HTML.
 ---
 
 [mmp]: /mastering-modern-payments

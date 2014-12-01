@@ -10,6 +10,8 @@ A few weeks ago I [introduced Payola](/introducing-payola), a drop-in Rails engi
 
 Payola is more than just a checkout button. It has hooks at various points in the payment flow that let you take action and tie Payola into your application to do things like manipulate the sale object before the charge happens or override the low-level arguments that Payola sends to Stripe. It also has a rich set of notifications when payments complete, fail, or are refunded. In this post, we're going to build a simple extension that sends push notifications when someone buys a product.
 
+--fold--
+
 There are various third party services that provide push notifications but today we're going to use [Pushover](https://pushover.net), an inexpensive cross-platform personal-use notification system. It's not for big broadcast groups or marketing like Urban Airship or Parse. Instad, Pushover is specifically for our use case: letting your application talk to the developer via push notifications.
 
 **Note:** This article assumes that you've set up Payola in your application already. If you haven't, check out [the Payola docs](https://github.com/peterkeen/payola) for getting started instructions.

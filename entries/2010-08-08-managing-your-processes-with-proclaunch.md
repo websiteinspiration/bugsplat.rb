@@ -3,6 +3,8 @@ title: Managing Your Processes with ProcLaunch.
 date: '2010-08-08 12:30:37'
 id: c385f
 tags: Programming, Proclaunch
+topic: Software
+description: Managing user-space processes with ProcLaunch, a Perl user-space init system.
 ---
 
 [proclaunch]:      http://github.com/peterkeen/proclaunch
