@@ -2,9 +2,9 @@ require 'rubygems'
 require 'capistrano-buildpack'
 
 set :application, "bugsplatdotinfo-pkdc"
-set :repository, "git@git.bugsplat.info:peter/bugsplat.git"
+set :repository, "git@git.zrail.net:peter/bugsplat.git"
 set :scm, :git
-set :buildpack_url, "git@git.bugsplat.info:peter/bugsplat-buildpack-ruby-simple"
+set :buildpack_url, "git@git.zrail.net:peter/bugsplat-buildpack-ruby-simple"
 
 set :user, "peter"
 
