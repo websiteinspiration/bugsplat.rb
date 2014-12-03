@@ -24,6 +24,8 @@ I specialize in:
 * Infrastructure and DevOps, including AWS, Heroku, Email, and DNS
 * Ruby and Rails
 
+Need just a little advice? [Schedule a call with me on Clarity](https://clarity.fm/petekeen).
+
 
 ## Praise from some happy customers
 
