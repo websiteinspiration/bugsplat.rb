@@ -4,6 +4,7 @@ id: ext
 topic: Stripe
 tags: Programming, Stripe
 description: How to extend Payola with your own functionality
+canonical_url: 'https://www.payola.io/blog/building-payola-extensions'
 ---
 
 A few weeks ago I [introduced Payola](/introducing-payola), a drop-in Rails engine for setting up Stripe billing. Since that time, it's gained over 400 stars on GitHub and the gem has been downloaded almost 2000 times. The most requested feature, subscripton payments, is well on it's way to being completed.

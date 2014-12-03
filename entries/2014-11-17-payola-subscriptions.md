@@ -4,6 +4,7 @@ id: p12
 tags: Stripe, Programming
 topic: Stripe
 description: 'Payola is a drop-in Rails engine for accepting payments with Stripe, now with Subscription support'
+canonical_url: 'https://www.payola.io/blog/payola-subscriptions'
 ---
 
 Today is release day for [Payola v1.2.0](https://www.payola.io) and the big watch word is **subscriptions**. So now that they're here, how do you use subscriptions with Payola? It's easy:

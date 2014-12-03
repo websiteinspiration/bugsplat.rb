@@ -242,6 +242,10 @@ class App < Sinatra::Base
       @skip_footer = @page['skip_footer']
     end
 
+    if @page['canonical_url']
+      @canonical_url = @page['canonical_url']
+    end
+
     if params[:format] == 'md'
       content_type "text/plain"
       return @page.markdown_content

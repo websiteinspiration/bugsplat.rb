@@ -5,6 +5,7 @@ topic: Stripe
 tags: Programming, Stripe
 description: A drop-in Rails engine for accepting credit card payments with Stripe
 show_upsell: true
+canonical_url: 'https://www.payola.io/blog/introducing-payola'
 ---
 
 I released an open source Rails engine named [Payola](http://www.payola.io) that you can drop into any application to have robust, reliable self-hosted Stripe payments up and running with just a little bit of fuss.
