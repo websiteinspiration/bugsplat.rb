@@ -13,9 +13,6 @@
   <% end %>
   <% end %>
   <%= @page.render(nil, @app) %>
-  <% if @page.show_upsell? %>
-    <%= partial :upsell, show_header: @page.show_upsell_header? %>
-  <% end %>
   <% if @page.show_byline? %>
     <%= partial :byline, topic: @page.topic %>
   <% end %>
