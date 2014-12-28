@@ -1,5 +1,8 @@
 /*
  *= require_self
+ *= require fonts.css
+ *= require font-awesome-inline.css
+ *= require font-awesome.css
  *= require bootstrap.css
  *= require bootstrap-theme.css
  *= require main.css
