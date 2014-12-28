@@ -4,6 +4,7 @@ id: p12
 tags: Stripe, Programming
 topic: Stripe
 description: 'Payola is a drop-in Rails engine for accepting payments with Stripe, now with Subscription support'
+show_upsell: true
 canonical_url: 'https://www.payola.io/blog/payola-subscriptions'
 ---
 
