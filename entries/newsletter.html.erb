@@ -10,16 +10,21 @@ body_class: book
 <h1 class="book big center">The Newsletter</h1>
 <h2 class="center">Get useful tips and news about Stripe, Rails, and Ruby.</h2>
 
-<p class="center">Join over 1,000 people who are interested in becoming better developers.</p>
+<p class="center">Join over 3,000 people who are interested in becoming better developers.</p>
 <p class="center">Just enter your first name and email address below and click "Get updates!"</p>
 
 <div class="center" style="margin-bottom: 3em">
-  <form action="/subscribe" method="POST" class="form form-inline" style="margin-top: 0.5em;">
-    <input type="text" class="sans" style="font-size: 17.5px; height: 36px; width: 8em; line-height: 22px;" name="name" placeholder="First name"></input>
-    <input type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="email" placeholder="you@example.com"></input>
-    <input type="hidden" name="next" value="/newsletter-confirmed"></input>
-    <input type="hidden" name="topic" value="<%= @app.params[:topic] %>"></input>
-    <input class="btn btn-warning btn-large" type="submit" value="Get Updates!" />
+  <form action="https://www.getdrip.com/forms/5347893/submissions" method="POST" role="form" class="form-inline" style="margin-top: 0.5em;" data-drip-embedded-form="3223">
+    <div class="form-group">
+      <label class="sr-only" for="first-name">First Name</label>
+      <input id="first-name" type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[first_name]" placeholder="First Name"></input>
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="email-address">Email Address</label>
+      <input id="email-address" type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[email]" placeholder="you@example.com"></input>
+    </div>
+    <input type="hidden" name="fields[topic]" value="<%= @app.params[:topic] %>"></input>
+    <input class="btn btn-warning btn-large" type="submit" value="Get Updates" />
   </form>
   <small>We won't send you spam. Unsubscribe at any time.</small>
 </div>
