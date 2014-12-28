@@ -53,7 +53,7 @@ Well, it's not free but [it's practically free](https://www.phaxio.com/pricing).
 
 Ah yes. The reason why you'd need to send a fax in the first place instead of emailing things around is because your documents contain sensitive information and probably have to be signed. OS X's Preview application has a super handy feature built in named "Signature Capture". Just open up the PDF you need to sign, then go Tools -> Annotate -> Signature -> Create Signature from FaceTime HD Camera, which will open up a little dialog box like this:
 
-![Signature Capture](http://d2s7foagexgnc2.cloudfront.net/files/484d28b8d0ca571d68ee/signature_capture-2.png)
+![Signature Capture](https://d2s7foagexgnc2.cloudfront.net/files/484d28b8d0ca571d68ee/signature_capture-2.png)
 
 Just sign your name onto a blank sheet of paper, hold it up to your camera, and then hit "Accept". Then your signature will be available within the same "Signature" submenu. Select it, click anywhere in a document, and *poof* you just signed it.
 
