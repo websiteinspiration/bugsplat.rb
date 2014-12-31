@@ -4,8 +4,7 @@ id: email
 topic: Software
 tags: Email, DNS
 show_upsell: true
-description: "There are an awful lot of interesting things happening between hitting Send and your email hitting an inbox. This post is an overview of how your message makes it's way to yn
-our recipient."
+description: "There are an awful lot of interesting things happening between hitting Send and your email hitting an inbox. This post is an overview of how your message makes it's way to your recipient."
 ---
 
 Everybody knows what email is. You click "Compose", fill in the recipient's email address, write your message, maybe give it a pithy subject, and hit "Send". Some time later your recipient opens their email and reads your message. Simple, right?
