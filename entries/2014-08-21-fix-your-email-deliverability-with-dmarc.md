@@ -108,4 +108,4 @@ Eventually you will likely start to see things in your DMARC report that are sus
 
 The most complete guide for how to do that is [the standard](https://datatracker.ietf.org/doc/draft-kucherawy-dmarc-base/), since there are quite a few options. That said, if you want receiving email servers to quarantine suspicious messages you can change the `p=` setting from `none` to `quarantine`, or you can change it to `reject` to flat out bounce the messages.
 
-There are a variety of reasons why you wouldn't want to do that, so I advice people to keep their settings at `none` unless they're absolutely sure of the implications for their own domain.
+There are a variety of reasons why you wouldn't want to do that, so I advise people to keep their settings at `none` unless they're absolutely sure of the implications for their own domain.
