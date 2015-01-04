@@ -17,7 +17,8 @@ require 'time-lord'
 class App < Sinatra::Base
   PAGES = Pages.new
 
-  Docverter.base_url = 'http://c.docverter.com'
+  Docverter.base_url = 'http://docverter.zrail.net'
+  Docverter.api_key = 'pkdc'
 
   set :assets_precompile, %w(application.js gz_test.js application.css print.css *.png *.jpg *.svg *.eot *.ttf *.woff *.ico)
   set :assets_css_compressor, :yui
