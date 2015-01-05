@@ -1,7 +1,7 @@
 ---
 title: "Email: The Good Parts"
 id: email
-topic: Software
+topic: Email
 tags: Email, DNS
 show_upsell: true
 description: "There are an awful lot of interesting things happening between hitting Send and your email hitting an inbox. This post is an overview of how your message makes it's way to your recipient."
