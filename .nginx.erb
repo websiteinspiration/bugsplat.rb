@@ -13,6 +13,9 @@ location /bits {
 <% pages.each do |page| %>
 <% next unless page.page_id %>
 rewrite ^/<%= page.page_id %>$ <%= application_base_url %><%= page.html_path %> permanent;
+<% if page['canonical_url'] %>
+rewirte ^<%= page.html_path %> <%= page['canonical_url'] %> permanent;
+<% end %>
 <% next unless page.alternate_links.length > 0 %>
 <% page.alternate_links.each do |link| %>
 rewrite ^/<%= link %>$ <%= application_base_url %><%= page.html_path %> permanent;

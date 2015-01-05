@@ -100,7 +100,7 @@ namespace :assets do
   end
 end
 
-task :write_nginx_file do
+task :write_nginx_file => :dotenv do
   Dotenv.load('.env')
   File.open(".nginx", "w+") do |f|
     pages = App::PAGES
