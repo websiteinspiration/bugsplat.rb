@@ -1,5 +1,5 @@
 ---
-title: SPF: Sunscreen for your Email
+title: "SPF: Sunscreen for your Email"
 id: spf
 tags: Email, DNS
 topic: Email
