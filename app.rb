@@ -319,6 +319,19 @@ class App < Sinatra::Base
     redirect '/stripe-audit-apply-done'
   end
 
+  post '/mail-auth-signup' do
+    text = params.map do |key, val|
+      "#{key}:\n\n#{val}\n\n"
+    end.join("\n")
+    sendmail(
+      to: 'hi@petekeen.net',
+      from: params[:email],
+      subject: "Mail Auth application",
+      body: text
+    )
+    redirect '/mail-auth-thanks'
+  end
+
   post '/ping' do
     'pong'
   end
