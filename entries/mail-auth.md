@@ -32,9 +32,9 @@ All of these benefits lead to higher deliverabiltiy and more click throughs, whi
 
 1. When you buy the service, you'll tell me everything you know about your email senders. Transactional, newsletters, marketing email, etc. Don't worry if you can't remember, we'll refine the list over time.
 
-2. You'll also give me an API key to your DNS service so I can install a first draft of the email deliverability booster records. Don't worry, I'll send you complete instructions on how to get an API key for your DNS service.
+2. You'll also give me an API key to your DNS service so I can install and maintain your deliverability records. Don't worry, I'll send you complete instructions on how to get your API key.
 
-3. Once a week for the next three weeks, you'll get a report with your delivery stats along with adjusted email deliverability records.
+3. Once a week for the next three weeks, you'll get a report with your delivery stats along with adjusted deliverability records.
 
 4. Optionally, you can subscribe to the monthly **Mail Auth** checkup service. Every month I'll send you a report with all of your stats and suggested adjustments to your email deliverability records.
 
