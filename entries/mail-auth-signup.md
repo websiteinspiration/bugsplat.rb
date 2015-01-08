@@ -15,7 +15,7 @@ Thanks!
 --Pete
 
 <div class="sans">
-<form role="form" method="post" action="/mail-auth-signup">
+<form role="form" method="post" action="/mail-auth-signup-post">
   <div class="form-group">
     <label for="your-name">What's your name?</label>
     <input type="text" class="form-control" id="your-name" name="name" placeholder="Your name">

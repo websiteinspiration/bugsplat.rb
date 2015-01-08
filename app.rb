@@ -319,7 +319,7 @@ class App < Sinatra::Base
     redirect '/stripe-audit-apply-done'
   end
 
-  post '/mail-auth-signup' do
+  post '/mail-auth-signup-post' do
     text = params.map do |key, val|
       "#{key}:\n\n#{val}\n\n"
     end.join("\n")
