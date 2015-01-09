@@ -4,11 +4,15 @@ id: ma
 skip_masthead: true
 skip_footer: true
 body_class: book
+thumbnail: "http://d2s7foagexgnc2.cloudfront.net/files/bb044d621b6f7623bc1f/spam_folder.png"
+description: "Mail Auth is a service that boosts your email deliverability. Move the needle for your business."
 ---
 
 <h1 class="book big center">Mail Auth - Boost Your Email</h1>
 
 <div class="headline">"All of your email ends up in my spam folder."</div>
+
+<img class="thumbnail" style="width: 100%" src="http://d2s7foagexgnc2.cloudfront.net/files/bb044d621b6f7623bc1f/spam_folder.png">
 
 If you run a business on the internet, your heart just *dropped*. When customers can't trust your email, they can't trust you. And when they can't trust you, they won't buy your service.
 
@@ -16,11 +20,11 @@ If you run a business on the internet, your heart just *dropped*. When customers
 
 Implementing **email deliverability boosters** is *extremely important for your business*. With a correct deliverability setup, you'll see instant benefits:
 
-* **Your recipients will be confident that you're the one sending them email**, not some phishing outfit.
-
-* **No more "via" tag on your From address**, further building your credibility.
+* **Better deliverability**, meaning more of your email will hit the inbox instead of the spam folder.
 
 * **Automatic image display**, giving you better stats and better-looking emails.
+
+* **No more "via" tag on your From address**, further building your credibility.
 
 * Most importantly, **higher repuation** with big email providers like GMail and Yahoo.
 
@@ -52,6 +56,12 @@ After you fill out and return the intake form I take over and manage the whole p
 ## What about Mailchimp and Infusionsoft and ...?
 
 Mail Auth works along side your existing mail delivery services to make sure everything is configured correctly so your emails reach your customers' inboxes.
+
+## Who are you?
+
+<img class="thumbnail pull-right" style="width: 100px" src="https://d2s7foagexgnc2.cloudfront.net/files/afe3b485fe17d72e13bd/me.png">
+
+Hi, I'm [Pete Keen](https://www.petekeen.net), a software developer and email deliverability guru from Ann Arbor, Michigan. I've been helping people get their email deliverability woes straightened out for years.
 
 ## How much does this cost?
 
