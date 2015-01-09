@@ -12,9 +12,9 @@ body_class: book
 
 If you run a business on the internet, your heart just *dropped*. When customers can't trust your email, they can't trust you. And when they can't trust you, they won't buy your service.
 
-**There are bad senders out there.** Shady people. Phishers. Spammers. You don't care about the huge stack of technologies that have built up over the last 40 years to combat them. SMTP, RBL, FBL, SPF, SenderID, DMARC, DKIM, all of these are just alphabet soup. All you care about is: **are your emails reaching inboxes?**
+**There are bad senders out there.** Shady people. Phishers. Spammers. You don't care about the huge stack of technologies that have built up over the last 40 years to combat them. RBL, SPF, DMARC, DKIM, all of these are just alphabet soup. All you care about is: **are your emails reaching inboxes?**
 
-Implementing email deliverability boosters is *extremely important for your business*. With a correct deliverability setup, you'll see instant benefits:
+Implementing **email deliverability boosters** is *extremely important for your business*. With a correct deliverability setup, you'll see instant benefits:
 
 * **Your recipients will be confident that you're the one sending them email**, not some phishing outfit.
 
@@ -30,21 +30,20 @@ All of these benefits lead to higher deliverabiltiy and more click throughs, whi
 
 **Mail Auth** is a service that implements your email deliverability records correctly from the start. It consists of just a few steps:
 
-1. When you buy the service, you'll tell me everything you know about your email senders. Transactional, newsletters, marketing email, etc. Don't worry if you can't remember, we'll refine the list over time.
+1. When you buy the service, you'll tell me everything you know about your email senders. Transactional, newsletters, marketing email, etc. Don't worry if you miss some, we'll refine the list over time.
 
-2. You'll also give me an API key to your DNS service so I can install and maintain your deliverability records. Don't worry, I'll send you complete instructions on how to get your API key.
+2. I'll prepare email deliverability records for you or your IT team to install on your DNS servers. I'll also do a quick blacklist audit for any of your self-hosted servers.
 
-3. Once a week for the next three weeks, you'll get a report with your delivery stats along with adjusted deliverability records.
-
-4. Optionally, you can subscribe to the monthly **Mail Auth** checkup service. Every month I'll send you a report with all of your stats and suggested adjustments to your email deliverability records.
+3. After installing the records I'll collect data for a week and then suggest revisions to your deliverability records.
+4. We'll go through one more round of data collection and revisions, just to catch all the stragglers.
 
 ## Who is this for?
 
-Mail Auth is for you if you rely on email to put a roof over your and your employees' heads. Better email deliverability records means more email hitting inboxes which directly leads to more revenue. 
+Mail Auth is for you if you rely on email to put a roof over your and your employees' heads. *Better email deliverability* means more email hitting inboxes which directly leads to *more revenue*. 
 
 ## What DNS services does Mail Auth work with?
 
-Currently I'm only accepting customers that use DNSimple, AWS Route 53, NameCheap, or CloudFlare to host their DNS records. If you use another provider, please [email me](mailto:hi@petekeen.net) who you use and I'll look through the docs to see if it's something I can support.
+Mail Auth works with any DNS service. When we start the process I'll share a spreadsheet with you that has all of the DNS records for you to install and I'll update the spreadsheet as we refine the records every week.
 
 ## How much will I need to be involved?
 
@@ -54,13 +53,9 @@ After you fill out and return the intake form I take over and manage the whole p
 
 Mail Auth works along side your existing mail delivery services to make sure everything is configured correctly so your emails reach your customers' inboxes.
 
-## Tell me more about the monthly checkup service
-
-Optionally, after your first month with Mail Auth you can choose to subscribe to a monthly checkup. It's the same service as the first three weeks of Mail Auth delivered once per month, with fresh, juicy stats and questions about unknown senders. Additionally, if I see a large volume of mail coming from a new sender I'll reach out as soon as possible to make sure nothing bad is happening.
-
 ## How much does this cost?
 
-Glad you asked! Mail Auth is a one-time purchase of $449. The optional monthly checkup service is an additional $49/mo.
+Glad you asked! Mail Auth is a one-time purchase of $1000.
 
 Once you've filled out the intake form I'll spend as much time as it takes setting up your initial deliverability records, and then every week I'll crunch all of the collected data and send you questions about unknown senders.
 

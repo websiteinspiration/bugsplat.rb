@@ -29,11 +29,11 @@ Thanks!
     <textarea class="form-control" rows="2" name="domains" placeholder="example.com"></textarea>
   </div>
   <div class="form-group">
-    <label>Second, what companies send email on your behalf? Try to list them all, but don't worry if you miss one. We'll install a reporting tool to catch stragglers.</label>
+    <label>Second, what companies send email on your behalf? Try to list them all, but don't worry if you miss one. We'll install a reporting tool to catch stragglers. If you host servers yourself that send email, list their hostnames and IPs as well.</label>
     <textarea class="form-control" rows="2" name="senders" placeholder="Mailchimp, Drip, Mandrill, etc"></textarea>
   </div>
     <div class="form-group">
-    <label>Finally, who hosts your DNS? Do you have access to your DNS records or will you need to pass the information on to somone else to install?</label>
+    <label>Finally, do you have access to your DNS records or will you need to pass the information on to somone else to install?</label>
     <textarea class="form-control" rows="2" name="senders" placeholder="DNSimple, Route53, etc"></textarea>
   </div>
   <div style="text-align: center">
