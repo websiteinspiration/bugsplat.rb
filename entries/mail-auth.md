@@ -60,7 +60,7 @@ Optionally, after your first month with Mail Auth you can choose to subscribe to
 
 ## How much does this cost?
 
-Glad you asked! Mail Auth is a one-time purchase of $1,000. The optional monthly checkup service is an additional $100/mo.
+Glad you asked! Mail Auth is a one-time purchase of $449. The optional monthly checkup service is an additional $49/mo.
 
 Once you've filled out the intake form I'll spend as much time as it takes setting up your initial deliverability records, and then every week I'll crunch all of the collected data and send you questions about unknown senders.
 
@@ -72,3 +72,6 @@ At the end of the process, if you're at all unhappy with Mail Auth I will provid
   <a href="/mail-auth-signup" class="btn btn-success btn-lg">Click Here. Let's Get Started.</a>
 </div>
 
+<div class="postscript">
+  <p>Still have questions? Totally understandable. Email me at <a href="mailto:hi@petekeen.net">hi@petekeen.net</a> and let's chat. Or you can hit me up on Twitter <a href="https://twitter.com/zrail">@zrail</a>.</p>
+</div>
