@@ -33,7 +33,7 @@ All of these benefits lead to higher deliverabiltiy and more click throughs, whi
 
 ## How's this work?
 
-**Mail Rep** is a service that implements your email deliverability records correctly from the start. It consists of just a few steps:
+**Mail Rep** is a one-time service that complements your existing email senders, auditing and optimizing your deliverability settings. It consists of just a few steps:
 
 1. When you buy the service, you'll tell me everything you know about your email senders. Transactional, newsletters, marketing email, etc. Don't worry if you miss some, we'll refine the list over time.
 
