@@ -75,7 +75,7 @@ At the end of the process, if you're at all unhappy with Mail Rep I will provide
 **Boost your email deliverability with Mail Rep. Move the needle for your business.**
 
 <div class="center">
-  <a href="/mail-auth-signup" class="btn btn-success btn-lg">Click Here. Let's Get Started.</a>
+  <a href="/mail-rep-signup" class="btn btn-success btn-lg">Click Here. Let's Get Started.</a>
 </div>
 
 <div class="postscript">
