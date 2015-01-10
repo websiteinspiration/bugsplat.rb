@@ -33,7 +33,7 @@ All of these benefits lead to higher deliverabiltiy and more click throughs, whi
 
 ## How's this work?
 
-**Mail Rep** is a one-time service that complements your existing email senders, auditing and optimizing your deliverability settings. It consists of just a few steps:
+**Mail Rep** is a one-time service that complements your existing email senders. We'll take a look at your senders, install some analytics, and recommend DNS changes to boost your deliverability. Here's the whole process:
 
 1. When you buy the service, you'll tell me everything you know about your email senders. Transactional, newsletters, marketing email, etc. Don't worry if you miss some, we'll refine the list over time.
 
@@ -66,7 +66,7 @@ Hi, I'm [Pete Keen](https://www.petekeen.net), a software developer and email de
 
 ## How much does this cost?
 
-Glad you asked! Mail Rep is a one-time purchase of $1000.
+Glad you asked! Mail Rep is a one-time purchase of $1,000.
 
 Once you've filled out the intake form I'll spend as much time as it takes setting up your initial deliverability records, and then every week I'll crunch all of the collected data and send you questions about unknown senders.
 
