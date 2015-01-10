@@ -1,13 +1,13 @@
 ---
-title: Mail Auth - Boost Your Email
-id: ma
+title: Mail Rep - Boost Your Email
+id: math
 skip_masthead: true
 skip_footer: true
 body_class: book
 hide_from_archive: true
 ---
 
-<h1 class="book big center">Mail Auth - Boost Your Email</h1>
+<h1 class="book big center">Mail Rep - Boost Your Email</h1>
 
 Thanks! I'll be in touch shortly.
 

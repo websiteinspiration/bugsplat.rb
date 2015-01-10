@@ -1,5 +1,5 @@
 ---
-title: Sign Up for Mail Auth
+title: Sign Up for Mail Rep
 id: masu
 skip_masthead: true
 skip_footer: true
@@ -7,9 +7,9 @@ body_class: book
 hide_from_archive: true
 ---
 
-<h1 class="book big center">Mail Auth - Boost Your Email</h1>
+<h1 class="book big center">Mail Rep - Boost Your Email</h1>
 
-I just need a little bit of information from you before we can get started with Mail Auth. Could you fill out the form below? I'll get back to you shortly with next steps.
+I just need a little bit of information from you before we can get started with Mail Rep. Could you fill out the form below? I'll get back to you shortly with next steps.
 
 Thanks!  
 --Pete

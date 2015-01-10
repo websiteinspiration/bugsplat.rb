@@ -1,14 +1,15 @@
 ---
-title: Mail Auth - Boost Your Email
+title: Mail Rep - Boost Your Email
 id: ma
 skip_masthead: true
 skip_footer: true
 body_class: book
 thumbnail: "http://d2s7foagexgnc2.cloudfront.net/files/bb044d621b6f7623bc1f/spam_folder.png"
-description: "Mail Auth is a service that boosts your email deliverability. Move the needle for your business."
+description: "Mail Rep is a service that boosts your email deliverability. Move the needle for your business."
+alternate_links: mail-auth
 ---
 
-<h1 class="book big center">Mail Auth - Boost Your Email</h1>
+<h1 class="book big center">Mail Rep - Boost Your Email</h1>
 
 <div class="headline">"All of your email ends up in my spam folder."</div>
 
@@ -32,7 +33,7 @@ All of these benefits lead to higher deliverabiltiy and more click throughs, whi
 
 ## How's this work?
 
-**Mail Auth** is a service that implements your email deliverability records correctly from the start. It consists of just a few steps:
+**Mail Rep** is a service that implements your email deliverability records correctly from the start. It consists of just a few steps:
 
 1. When you buy the service, you'll tell me everything you know about your email senders. Transactional, newsletters, marketing email, etc. Don't worry if you miss some, we'll refine the list over time.
 
@@ -43,19 +44,19 @@ All of these benefits lead to higher deliverabiltiy and more click throughs, whi
 
 ## Who is this for?
 
-Mail Auth is for you if you rely on email to put a roof over your and your employees' heads. *Better email deliverability* means more email hitting inboxes which directly leads to *more revenue*. 
+Mail Rep is for you if you rely on email to put a roof over your and your employees' heads. *Better email deliverability* means more email hitting inboxes which directly leads to *more revenue*. 
 
-## What DNS services does Mail Auth work with?
+## What DNS services does Mail Rep work with?
 
-Mail Auth works with any DNS service. When we start the process I'll share a spreadsheet with you that has all of the DNS records for you to install and I'll update the spreadsheet as we refine the records every week.
+Mail Rep works with any DNS service. When we start the process I'll share a spreadsheet with you that has all of the DNS records for you to install and I'll update the spreadsheet as we refine the records every week.
 
 ## How much will I need to be involved?
 
-After you fill out and return the intake form I take over and manage the whole process for you. Every week I'll send you an email with fresh stats and possibly some questions about unknown email senders. I may also ask you to go to your email senders' website's and fill out some forms. Responding to those questions and filling out the forms promptly is critical to moving forward with the Mail Auth process and refining your deliverability records.
+After you fill out and return the intake form I take over and manage the whole process for you. Every week I'll send you an email with fresh stats and possibly some questions about unknown email senders. I may also ask you to go to your email senders' website's and fill out some forms. Responding to those questions and filling out the forms promptly is critical to moving forward with the Mail Rep process and refining your deliverability records.
 
 ## What about Mailchimp and Infusionsoft and ...?
 
-Mail Auth works along side your existing mail delivery services to make sure everything is configured correctly so your emails reach your customers' inboxes.
+Mail Rep works along side your existing mail delivery services to make sure everything is configured correctly so your emails reach your customers' inboxes.
 
 ## Who are you?
 
@@ -65,13 +66,13 @@ Hi, I'm [Pete Keen](https://www.petekeen.net), a software developer and email de
 
 ## How much does this cost?
 
-Glad you asked! Mail Auth is a one-time purchase of $1000.
+Glad you asked! Mail Rep is a one-time purchase of $1000.
 
 Once you've filled out the intake form I'll spend as much time as it takes setting up your initial deliverability records, and then every week I'll crunch all of the collected data and send you questions about unknown senders.
 
-At the end of the process, if you're at all unhappy with Mail Auth I will provide you with a **full refund**. I stake my business on improving the world and making people happy, and that includes standing behind the work I do.
+At the end of the process, if you're at all unhappy with Mail Rep I will provide you with a **full refund**. I stake my business on improving the world and making people happy, and that includes standing behind the work I do.
 
-**Boost your email deliverability with Mail Auth. Move the needle for your business.**
+**Boost your email deliverability with Mail Rep. Move the needle for your business.**
 
 <div class="center">
   <a href="/mail-auth-signup" class="btn btn-success btn-lg">Click Here. Let's Get Started.</a>
