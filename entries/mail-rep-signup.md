@@ -34,7 +34,7 @@ Thanks!
   </div>
     <div class="form-group">
     <label>Finally, do you have access to your DNS records or will you need to pass the information on to somone else to install?</label>
-    <textarea class="form-control" rows="2" name="senders" placeholder="DNSimple, Route53, etc"></textarea>
+    <textarea class="form-control" rows="2" name="dns" placeholder="yes/no"></textarea>
   </div>
   <div style="text-align: center">
     <button type="submit" class="btn btn-xlarge btn-default" style="width: 100%">Let's get this party started<i style="margin-left: 0.75em" class="fa fa-thumbs-up"></i></button>
