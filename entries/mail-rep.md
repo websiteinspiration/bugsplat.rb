@@ -33,14 +33,14 @@ All of these benefits lead to higher deliverabiltiy and more click throughs, whi
 
 ## How's this work?
 
-**Mail Rep** is a one-time service that complements your existing email senders. We'll take a look at your senders, install some analytics, and recommend DNS changes to boost your deliverability. Here's the whole process:
+**Mail Rep** is a one-time service that complements your existing email senders. We'll take a look at your senders, install some analytics, and recommend DNS changes to boost your deliverability. It consists of four simple steps:
 
-1. When you buy the service, you'll tell me everything you know about your email senders. Transactional, newsletters, marketing email, etc. Don't worry if you miss some, we'll refine the list over time.
+1. **Information Gathering** - When you buy the service, you'll tell me everything you know about your email senders. Transactional, newsletters, marketing email, etc. Don't worry if you miss some, we'll refine the list over time.
 
-2. I'll prepare email deliverability records for you or your IT team to install on your DNS servers. I'll also do a quick blacklist audit for any of your self-hosted servers.
+2. **Setup** - I'll prepare email deliverability records for you or your IT team to install on your DNS servers. I'll also do a quick blacklist audit for any of your self-hosted servers.
 
-3. After installing the records I'll collect data for a week and then suggest revisions to your deliverability records.
-4. We'll go through one more round of data collection and revisions, just to catch all the stragglers.
+3. **Verification** - After installing the records I'll collect data for a week and then suggest revisions to your deliverability records.
+4. **Refinement** - We'll go through one more round of data collection and revisions, just to catch all the stragglers.
 
 ## Who is this for?
 
