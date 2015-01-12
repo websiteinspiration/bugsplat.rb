@@ -13,7 +13,7 @@ alternate_links: mail-auth
 
 <div class="headline">"All of your email ends up in my spam folder."</div>
 
-<img class="thumbnail" style="width: 100%" src="http://d2s7foagexgnc2.cloudfront.net/files/bb044d621b6f7623bc1f/spam_folder.png">
+<img class="thumbnail" style="width: 100%" src="https://d2s7foagexgnc2.cloudfront.net/files/bb044d621b6f7623bc1f/spam_folder.png">
 
 If you run a business on the internet, your heart just *dropped*. When customers can't trust your email, they can't trust you. And when they can't trust you, they won't buy your service.
 
