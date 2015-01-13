@@ -54,7 +54,7 @@ Mail Rep works with any DNS service. When we start the process I'll share a spre
 
 After you fill out and return the intake form I take over and manage the whole process for you. Every week I'll send you an email with fresh stats and possibly some questions about unknown email senders. I may also ask you to go to your email senders' website's and fill out some forms. Responding to those questions and filling out the forms promptly is critical to moving forward with the Mail Rep process and refining your deliverability records.
 
-## What about Mailchimp and Infusionsoft and ...?
+## What about Mailchimp, Infusionsoft, Marketo, HubSpot...?
 
 Mail Rep works along side your existing mail delivery services to make sure everything is configured correctly so your emails reach your customers' inboxes.
 
