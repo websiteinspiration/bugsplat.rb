@@ -11,8 +11,9 @@ location /bits {
 }
 
 <% pages.each do |page| %>
-<% next unless page.page_id %>
+<% if page.page_id %>
 rewrite ^/<%= page.page_id %>$ <%= application_base_url %><%= page.html_path %> permanent;
+<% end %>
 <% if page['canonical_url'] %>
 rewrite ^<%= page.html_path %> <%= page['canonical_url'] %> permanent;
 <% end %>
