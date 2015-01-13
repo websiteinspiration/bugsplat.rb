@@ -19,7 +19,7 @@ If you run a business on the internet, your heart just *dropped*. When customers
 
 **There are bad senders out there.** Shady people. Phishers. Spammers. You don't care about the huge stack of technologies that have built up over the last 40 years to combat them. RBL, SPF, DMARC, DKIM, all of these are just alphabet soup. All you care about is: **are your emails reaching inboxes?**
 
-Implementing **email deliverability boosters** is *extremely important for your business*. With a correct deliverability setup, you'll see instant benefits:
+Implementing **email deliverability boosters** is *extremely important for your business*. In fact, many large businesses dedicate entire full time jobs to managing email deliverability. With a correct deliverability setup, you'll see instant benefits:
 
 * **Better deliverability**, meaning more of your email will hit the inbox instead of the spam folder.
 
