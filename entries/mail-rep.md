@@ -68,7 +68,7 @@ Hi, I'm [Pete Keen](https://www.petekeen.net), a software developer and email de
 
 Glad you asked! Mail Rep is a one-time purchase of $1,000.
 
-Once you've filled out the intake form I'll spend as much time as it takes setting up your initial deliverability records, and then every week I'll crunch all of the collected data and send you questions about unknown senders.
+Once you've filled out the intake form I'll spend as much time as it takes setting up your initial deliverability records, and then I'll crunch all of the collected data and send you questions about unknown senders. We'll refine your setup one more time and make it just right.
 
 At the end of the process, if you're at all unhappy with Mail Rep I will provide you with a **full refund**. I stake my business on improving the world and making people happy, and that includes standing behind the work I do.
 
