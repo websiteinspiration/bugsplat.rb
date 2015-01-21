@@ -51,7 +51,7 @@ There are several things in here that don't really work well for a subscription 
   data-key="pk_test_1MCYLYHQDa4DwnBoKd5CqoaP"
   data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
   data-name="Demo SaaS Site"
-  data-description="Pro Subscription ({{amount}} per month)"
+  data-description="Pro Subscription ($29 per month)"
   data-panel-label="Subscribe"
   data-label="Subscribe"
   data-amount="2900">
@@ -79,7 +79,7 @@ There's one last thing that we can change on here. There's that "Remember Me" ch
   data-key="pk_test_1MCYLYHQDa4DwnBoKd5CqoaP"
   data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
   data-name="Demo SaaS Site"
-  data-description="Pro Subscription ({{amount}} per month)"
+  data-description="Pro Subscription ($29 per month)"
   data-panel-label="Subscribe"
   data-label="Subscribe"
   data-amount="2900"
