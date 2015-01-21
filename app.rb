@@ -328,7 +328,7 @@ class App < Sinatra::Base
     sendmail(
       to: 'hi@petekeen.net',
       bcc: ENV['SECRET_CLOSE_ADDRESS'],
-      from: params[:email],
+      from: "#{params[:name]} <#{params[:email]}>",
       subject: "Mail Rep application",
       body: text
     )
