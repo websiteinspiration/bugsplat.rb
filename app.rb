@@ -299,6 +299,7 @@ class App < Sinatra::Base
     text = params[:description]
     sendmail(
       to: 'Pete Keen <hi@petekeen.net>',
+      bcc: ENV['SECRET_CLOSE_ADDRESS'],
       from: "#{params[:name]} <#{params[:email]}>",
       subject: "Consulting Inquiry",
       body: text
@@ -312,6 +313,7 @@ class App < Sinatra::Base
     end.join("\n")
     sendmail(
       to: 'pete@petekeen.net',
+      bcc: ENV['SECRET_CLOSE_ADDRESS'],
       from: params[:email],
       subject: "Stripe Audit application",
       body: text
@@ -325,6 +327,7 @@ class App < Sinatra::Base
     end.join("\n")
     sendmail(
       to: 'hi@petekeen.net',
+      bcc: ENV['SECRET_CLOSE_ADDRESS'],
       from: params[:email],
       subject: "Mail Rep application",
       body: text
