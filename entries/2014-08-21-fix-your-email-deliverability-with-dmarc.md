@@ -4,7 +4,6 @@ id: dmarc
 topic: DNS
 tags: Programming, Devops
 description: Improve your email deliverability using DMARC, SPF, and DKIM.
-show_upsell: true
 ---
 
 If you do anything more advanced with email than hitting "Send" in Gmail then you should care about *deliverability*, which is the likelyhood that your email will end up in your intended recipient's inbox instead of their spam folder.
@@ -66,24 +65,6 @@ If you look closely at that DMARC record above, you'll see `dmarc.postmarkapp.co
 
 Yep, a whole week, then come back here and we'll talk about how to handle the inevitable errors that show up in your report.
 
-<div class="well center sans">
-<p><strong>Want a reminder to come back in a week?<br> Sign up for the newsletter and I'll send you a note.</strong></p>
-  <form action="/subscribe" role="form" method="POST" class="form form-inline" style="margin-top: 0.5em;">
-    <div class="form-group">
-      <label class="sr-only" for="name">First name</label>
-      <input type="text" class="form-control sans" style="font-size: 17.5px; height: 36px; width: 8em; line-height: 22px;" name="name" placeholder="First name"></input>
-    </div>
-    <div class="form-group">
-      <label class="sr-only" for="email">Email address</label>
-      <input type="email" class="form-control sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="email" placeholder="you@example.com"></input>
-    </div>
-    <input type="hidden" name="topic" value="dmarc"></input>
-    <input type="hidden" name="next" value="/newsletter-dmarc"></input>
-    <input class="btn btn-warning btn-large" type="submit" value="Get Updates!" />
-  </form>
-  <small>We won't send you spam. Unsubscribe at any time.</small>
-</div>
-
 <h2 id="howto">How To Fix The Errors</h2>
 
 So you waited a whole week (or just scrolled down, no big deal) and now you have an email from Postmark telling you about all of the problems it found. Now what?
@@ -109,3 +90,5 @@ Eventually you will likely start to see things in your DMARC report that are sus
 The most complete guide for how to do that is [the standard](https://datatracker.ietf.org/doc/draft-kucherawy-dmarc-base/), since there are quite a few options. That said, if you want receiving email servers to quarantine suspicious messages you can change the `p=` setting from `none` to `quarantine`, or you can change it to `reject` to flat out bounce the messages.
 
 There are a variety of reasons why you wouldn't want to do that, so I advise people to keep their settings at `none` unless they're absolutely sure of the implications for their own domain.
+
+**P.S.** Could your email deliverability use a boost? ***Mail Rep*** will help your business improve your deliverability in just two weeks. [Click here to read about Mail Rep](/mail-rep).

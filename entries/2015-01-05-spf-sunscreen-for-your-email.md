@@ -3,7 +3,6 @@ title: "SPF: Sunscreen for your Email"
 id: spf
 tags: Email, DNS
 topic: Email
-show_upsell: true
 description: "Sender Policy Framework (SPF) is a type of email deliverability record that helps servers that receive email verify the sender. This post is a deep dive into how it works and what it's good for."
 ---
 
@@ -45,3 +44,5 @@ SPF records are limited to 10 total DNS lookups. Every `include` generates a DNS
 SPF also doesn't give much direction on what to actually *do* with a message that fails the checks. Generally your records should be set up to soft-fail, which means receiving servers shouldn't actually take any action other than maybe giving the message a higher spam rating. There's a newer, related standard named DMARC which you can use to actually declare a comprehensive policy. See my article [Fix Your Deliverability with DMARC](/fix-your-email-deliverability-with-dmarc) for more details on how to work it.
 
 If you're interested in more SPF mechanisms the [official SPF webpage](http://www.openspf.org/SPF_Record_Syntax) has all the details. [This HOWTO](http://www.zytrax.com/books/dns/ch9/spf.html) goes into even more depth, along with an explanation of the SPF macro system, if you're so inclined.
+
+**P.S.** Could your email deliverability use a boost? ***Mail Rep*** will help your business improve your deliverability in just two weeks. [Click here to read about Mail Rep](/mail-rep).
