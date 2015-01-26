@@ -11,7 +11,7 @@ hide_from_archive: 'true'
 
 Thanks for signing up.
 
-<a href="/dmarc-the-good-parts#howto">Jump back to the post</a>
+<a href="/email-the-good-parts#howto">Jump back to the post</a>
 
 <div style="padding-bottom: 2em"></div>
 
