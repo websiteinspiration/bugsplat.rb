@@ -5,6 +5,7 @@ tags: Programming, Stripe
 show_upsell: 'true'
 topic: Stripe
 description: How Stripe processes a credit card charge, from soup to nuts.
+canonical_url: 'https://www.masteringmodernpayments.com/blog/life-of-a-stripe-charge'
 ---
 
 One of the most common issues that shows up in the `#stripe` IRC channel is people setting up their front-end [Stripe Checkout](https://stripe.com/docs/checkout) integration and then expecting a charge to show up, which isn't really how Stripe works. In this post I'm going to walk through a one-off Stripe charge and hopefully illustrate how the whole process comes together.
