@@ -5,6 +5,7 @@ tags: Stripe, Programming
 topic: Stripe
 description: "Here are three solutions to fixing HTTP 401 errors caused by Stripe removing SSLv3 support."
 show_upsell: true
+canonical_url: 'https://www.masteringmodernpayments.com/blog/stripe-ruby-sslv3-deprecated'
 ---
 
 On November 15th [Stripe deprecated SSLv3](https://stripe.com/blog/poodle) because of the POODLE vulnerability. On the whole, this has been a good and welcome change, because SSLv3 has been terrible for a very long time.

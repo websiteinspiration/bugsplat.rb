@@ -5,6 +5,7 @@ tags:  Programming, Stripe
 show_upsell: true
 description: Stripe provides a gorgeous pre-built credit card form called Stripe Checkout. Learn how to best use it for subscription applications.
 topic: Stripe
+canonical_url: 'https://www.masteringmodernpayments.com/blog/using-stripe-checkout-for-subscriptions'
 ---
 
 Stripe provides a gorgeous pre-built credit card form called [Stripe Checkout](https://stripe.com/docs/checkout). Checkout is mainly intended for one-off purchses like [Dribbble](http://dribbble.com/) or [my book](/mastering-modern-payments). Many people want to use it for their Stripe-powered subscription sites so in this article I'm going to present a good way of doing that.

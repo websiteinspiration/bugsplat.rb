@@ -5,6 +5,7 @@ tags: Programming, Stripe
 show_upsell: 'true'
 topic: Stripe
 description: Make a thing, sell it with Stripe, ship it with EasyPost. Cruise control for cool.
+canonical_url: 'https://www.masteringmodernpayments.com/blog/shipping-with-stripe-and-easypost'
 ---
 
 [stripe]: https://stripe.com

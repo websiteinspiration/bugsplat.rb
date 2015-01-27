@@ -5,6 +5,7 @@ tags: Programming, Stripe
 show_upsell: 'true'
 topic: Software
 description: Making requests to external services during a web request cycle is a recipie for pain. Learn how to make them in the background.
+canonical_url: 'https://www.masteringmodernpayments.com/blog/design-for-failure-processing-payments-with-a-background-worker'
 ---
 
 [stripe]: https://stripe.com/docs/tutorials/checkout
