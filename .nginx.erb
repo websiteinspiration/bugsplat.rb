@@ -27,7 +27,8 @@ rewrite ^/payment-integration\.html <%= application_base_url%>/mastering-modern-
 rewrite ^/mmp(\?.*)? <%= application_base_url %>/mastering-modern-payments$1 permanent;
 rewrite ^/mmppo <%= application_base_url %>/mastering-modern-payments permanent;
 rewrite ^/mmp-preorders <%= application_base_url %>/mastering-modern-payments permanent;
-rewrite ^/cheat <%= application_base_url %>/stripe-webhook-event-cheatsheet permanent;
+rewrite ^/cheat https://www.masteringmodernpayments.com/stripe-webhook-event-cheatsheet permanent;
+rewrite ^/stripe-webhook-event-cheatsheet https://www.masteringmodernpayments.com/stripe-webhook-event-cheatsheet permanent;
 rewrite ^/list <%= application_base_url %>/the-big-list-of-stripe-resources permanent;
 rewrite ^/events <%= application_base_url %>/stripe-webhook-event-cheatsheet permanent;
 rewrite ^/\d\d\d\d-\d\d-\d\d-(.*)\.html <%= application_base_url %>/$1 permanent;
