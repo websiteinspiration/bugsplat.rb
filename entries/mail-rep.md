@@ -56,7 +56,7 @@ After you fill out and return the intake form I take over and manage the whole p
 
 ## What about Mailchimp, Infusionsoft, Marketo, HubSpot...?
 
-Mail Rep works along side your existing mail delivery services to make sure everything is configured correctly so your emails reach your customers' inboxes.
+Mail Rep works along side your existing mail delivery services to make sure everything is configured correctly. Your emails still leave from from your existing services to reach your customers' inboxes.
 
 ## Who are you?
 
@@ -68,7 +68,7 @@ Hi, I'm [Pete Keen](https://www.petekeen.net), a software developer and email de
 
 Glad you asked! Mail Rep is a one-time purchase of $500.
 
-Once you've filled out the intake form I'll spend as much time as it takes setting up your initial deliverability records, and then I'll crunch all of the collected data and send you questions about unknown senders. We'll refine your setup one more time and make it just right.
+Once you've filled out the intake form I'll spend as much time as it takes setting up your initial deliverability records, we'll collect data for a week, and then I'll crunch all of that down into refinements and questions about senders you might have missed. We'll refine your setup one more time and make it just right.
 
 At the end of the process, if you're at all unhappy with Mail Rep I will provide you with a **full refund**. I stake my business on improving the world and making people happy, and that includes standing behind the work I do.
 
