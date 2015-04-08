@@ -6,6 +6,8 @@ tags: Personal Finance, Ledger
 topic: Finance
 ---
 
+*Note: you can find much more information about ledger on [ledger-cli.org](http://ledger-cli.org), including links to official documentation and other implementations. Also, check out my [intro to accounting with Ledger](/keeping-finances-with-ledger).*
+
 A few years ago I heard about YNAB, or [You Need A Budget](https://www.youneedabudget.com). YNAB is a [set of rules](https://www.youneedabudget.com/method) and associated software that help people to dig themselves out of financial holes and prosper with a budget. The rules are:
 
 1. Give Every Dollar a Job
