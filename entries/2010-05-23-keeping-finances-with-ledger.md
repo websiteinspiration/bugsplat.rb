@@ -13,8 +13,8 @@ About three years ago I was in some serious financial straits. I had just starte
 
 Ledger is almost the most boring, austere accounting program you could think of. There's no pretty graphs, no online interaction, no GUI of any sort. It's basically a command-line driven calculator with a lot of specializations that make it ideal for tracking finances, which is what makes it so ideal for someone who spends a lot of time inside a text editor. It's very easy to script around and it has a very rich query language that lets you get at the data that you want with a minimum of fuss. It's very much the inspiration for [Calorific][].
 
-[ledger]:    http://wiki.github.com/jwiegley/ledger/
-[manual]:    http://github.com/downloads/jwiegley/ledger/ledger.pdf
+[ledger]:    http://ledger-cli.org
+[manual]:    http://ledger-cli.org/3.0/doc/ledger3.html
 [Calorific]: http://github.com/peterkeen/calorific
 
 --fold--
@@ -136,4 +136,4 @@ Income:Salary|2010/05/01|$-1,452.00
 
 With more data, this lets you easily compare month-to-month where you are spending money.
 
-If you want to pull your financial life together but don't want to spend money on something like Quicken or trust Mint with your account credentials, I highly encourage you to try out ledger in addition to the other open source solutions like gnucash.  All of these examples assume you're using version 2.6.2 of ledger, which you can download from the "Downloads" tab in github. Version 3.0 is just around the corner and it adds all kinds of neat things, including better automated transactions and a much more robust query language.
+If you want to pull your financial life together but don't want to spend money on something like Quicken or trust Mint with your account credentials, I highly encourage you to try out ledger in addition to the other open source solutions like gnucash. 
