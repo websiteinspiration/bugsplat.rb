@@ -51,11 +51,13 @@ Awesome! High five! That's how you run a successful business.
 
 Here's what I do:
 
-1. Set aside 30% of every invoice payment into a separate money market account.
+1. Set aside 30-40% of every invoice payment into a separate money market account.
 2. Every quarter, I pay the quarterly payment we figured out above from that money market account.
 3. At the end of the year, I send the IRS a check for whatever we owe on top of the quarterlies.
 
 If you know how much you're going to be making you can do some math to figure it out and send in the extra on the quarterlies, but usually it's not worth it.
+
+The percentage you set aside is going to depend a lot on your situation and location. For your first year it's safer to set aside 40% and then dial in the next year.
 
 ## What if I'll make less?
 
