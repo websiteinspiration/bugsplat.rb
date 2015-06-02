@@ -185,3 +185,6 @@ DEPENDENCIES
   unicorn
   xml-sitemap
   yui-compressor
+
+BUNDLED WITH
+   1.10.1

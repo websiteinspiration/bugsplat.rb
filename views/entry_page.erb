@@ -1,5 +1,21 @@
 <div class="entry">
   <% unless @skip_masthead %>
+  <% if @page.show_upsell? %>
+  <div class="row well" id="upsell">
+    <div class="span3">
+      <div style="float: left; height: 100x; padding-top: 1em; padding-bottom: 1em; text-align: center; margin-right: 1.5em;">
+        <a href="https://www.masteringmodernpayments.com">
+          <img src="https://d2s7foagexgnc2.cloudfront.net/files/1580aa8b7ecc41ab8450/mmp_v2_with_cover-2.png" style="height: 100px" alt="Mastering Modern Payments" />
+        </a>
+      </div>
+    </div>
+    <div class="span4" style="margin-left: 1em; margin-top: 1em">
+      My book <strong><em><a href="https://www.masteringmodernpayments.com">Mastering Modern Payments</a></em></strong> is out now!<br>
+      Integrate Stripe into your Rails app in no time flat. Payments, subscriptions, marketplaces, and
+      more than 100 examples.
+    </div>
+  </div>
+  <% end %>  
   <h1><a href="<%= @page.html_path %>"><%= @page['title'] %></a></h1>
   <% if @page.is_blog_post? %>
   <div class="top-metadata">
@@ -13,9 +29,7 @@
   <% end %>
   <% end %>
   <%= @page.render(nil, @app) %>
-  <% if @page.show_upsell? %>
-    <%= partial :upsell, show_header: true %>
-  <% end %>
+
   <% if @page.show_byline? %>
     <%= partial :byline, topic: @page.topic %>
   <% end %>
