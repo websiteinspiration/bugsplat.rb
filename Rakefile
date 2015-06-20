@@ -86,6 +86,41 @@ namespace :assets do
     FileUtils.mkdir_p(File.join(dirname, "public", "stylesheets"))
     FileUtils.mkdir_p(File.join(dirname, "public", "javascripts"))
 
+    STDERR.puts "Compiling pages"
+    app = App.new
+    request = Rack::MockRequest.new(app)
+
+    dirname = File.dirname(__FILE__)
+    FileUtils.mkdir_p(File.join(dirname, "public", "stylesheets"))
+    FileUtils.mkdir_p(File.join(dirname, "public", "javascripts"))
+
+    tags = {}
+    topics = {}
+
+    App::PAGES.each do |page|
+      page.tags.each do |tag|
+        tags[tag] = true
+      end
+
+      topics[page.topic] = true
+
+      write_page("#{page.name}.html", request)
+      write_page("#{page.name}.pdf", request)
+      write_page("#{page.name}.md", request)
+    end
+
+    ['sitemap.xml', 'index.xml', 'index.html', 'tags.html', 'articles.html', 'archive.html', 'mastering-modern-payments.html'].each do |page|
+      write_page(page, request)
+    end
+
+    tags.keys.each do |tag|
+      write_page("/tag/#{tag}.html", request)
+    end
+
+    topics.keys.each do |tag|
+      write_page("/tag/#{tag}.html", request)
+    end
+
     AssetSync.configure do |config|
       config.fog_provider = 'AWS'
       config.fog_directory = ENV['FOG_DIRECTORY']
