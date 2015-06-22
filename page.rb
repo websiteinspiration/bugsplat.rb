@@ -281,6 +281,10 @@ class Page
     date ? date.strftime("%e %b %Y") : ''
   end
 
+  def mtime
+    File.mtime(filename)
+  end
+
   def topic
     headers['topic']
   end

@@ -3,3 +3,5 @@
 .env.prod
 .env.stage
 .env
+_build
+public/assets

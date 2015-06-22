@@ -6,6 +6,7 @@ require 'set'
 require 'sinatra/asset_pipeline/task.rb'
 require 'asset_sync'
 require 'dotenv/tasks'
+require 'fileutils'
 
 $:.unshift(File.dirname(__FILE__))
 require 'app'
@@ -43,11 +44,11 @@ task :server do
   sh "bundle exec shotgun -I."
 end
 
-task :deploy do
-  sh "git push origin master"
-  sh "cap deploy"
-  Rake::Task["spider"].invoke
-end
+# task :deploy do
+#   sh "git push origin master"
+#   sh "cap deploy"
+#   Rake::Task["spider"].invoke
+# end
 
 task :tags do
   tags = Set.new
@@ -76,6 +77,12 @@ task :tagless do
   end
 end
 
+task :deploy do
+  ENV['RACK_ENV'] = 'production'
+  Rake::Task['assets:precompile'].invoke
+  sh 'cd _build && s3cmd sync . s3://www.petekeen.net --recursive --acl-public --add-header="Cache-Control:max-age=300"'
+end
+
 namespace :assets do
   task :precompile => [:dotenv, :write_nginx_file] do
 
@@ -90,48 +97,37 @@ namespace :assets do
     app = App.new
     request = Rack::MockRequest.new(app)
 
-    dirname = File.dirname(__FILE__)
-    FileUtils.mkdir_p(File.join(dirname, "public", "stylesheets"))
-    FileUtils.mkdir_p(File.join(dirname, "public", "javascripts"))
+    tags = {}
+    topics = {}
 
-    # tags = {}
-    # topics = {}
+    App::PAGES.each do |page|
+      page.tags.each do |tag|
+        tags[tag] = true
+      end
 
-    # App::PAGES.each do |page|
-    #   page.tags.each do |tag|
-    #     tags[tag] = true
-    #   end
+      topics[page.topic] = true
+      html_name = "#{page.name}/index.html"
 
-    #   topics[page.topic] = true
-
-    #   write_page("#{page.name}.html", request)
-    #   write_page("#{page.name}.pdf", request)
-    #   write_page("#{page.name}.md", request)
-    # end
-
-    # ['sitemap.xml', 'index.xml', 'index.html', 'tags.html', 'articles.html', 'archive.html', 'mastering-modern-payments.html'].each do |page|
-    #   write_page(page, request)
-    # end
-
-    # tags.keys.each do |tag|
-    #   write_page("/tag/#{tag}.html", request)
-    # end
-
-    # topics.keys.each do |tag|
-    #   write_page("/tag/#{tag}.html", request)
-    # end
-
-    AssetSync.configure do |config|
-      config.fog_provider = 'AWS'
-      config.fog_directory = ENV['FOG_DIRECTORY']
-      config.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
-      config.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
-      config.prefix = 'assets'
-      config.public_path = Pathname('./public')
-      config.log_silently = false
+      if should_build?(page, html_name)
+        write_page("#{page.name}.html", request, html_name)
+#        write_page("#{page.name}.pdf", request)
+        write_page("#{page.name}.md", request)
+      end
     end
 
-    AssetSync.sync
+    ['sitemap.xml', 'index.xml', 'index.html', 'tags.html', 'articles.html', 'archive.html', 'mastering-modern-payments.html'].each do |page|
+      write_page(page, request)
+    end
+
+    tags.keys.compact.each do |tag|
+      write_page("/tag/#{tag}/index.html", request)
+    end
+
+    topics.keys.compact.each do |topic|
+      write_page("/topic/#{topic}/index.html", request)
+    end
+
+    FileUtils.cp_r(File.join(File.dirname(__FILE__), 'public', 'assets'), File.join(File.dirname(__FILE__), '_build/'))
   end
 end
 
@@ -143,10 +139,20 @@ task :write_nginx_file => :dotenv do
   end
 end
 
+def should_build?(page, html_name)
+  dest = File.join(File.dirname(__FILE__), "_build", html_name)
+  return true unless File.exist?(dest)
 
-def write_page(path, request)
+  dest_mtime = File.mtime(dest)
+  return true if dest_mtime < page.mtime
+  return true if File.mtime(File.join(File.dirname(__FILE__), "views")) > page.mtime
+  return false
+end
+
+def write_page(path, request, output_filename=nil)
+  output_filename ||= path
   STDERR.puts path
-  filename = File.join(File.dirname(__FILE__), "public", path)
+  filename = File.join(File.dirname(__FILE__), "_build", output_filename)
   FileUtils.mkdir_p(File.dirname(filename))
 
   contents = request.get(URI.escape(path)).body.force_encoding('utf-8')
