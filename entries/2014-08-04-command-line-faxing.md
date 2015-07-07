@@ -6,7 +6,7 @@ topic: Software
 description: The fax machine is an archaic technology. Let's mash it up with another one!
 ---
 
-When I started [my little side consultancy](/consulting) I had to fax in some forms to the State of Michigan. The entire system for opening businesses in Michigan, in fact, is basically a [fax driven API](https://www.michigan.gov/lara/0,4601,7-154-35299_61343_35413-135307--,00.html). Being a modern, hip millenial I don't subscribe to a land line phone, nor do I own a fax machine. How was I supposed to fax things?
+When I started [Okapi LLC](https://okapi.io), my little consultancy and publishing house, I had to fax in some forms to the State of Michigan. The entire system for opening businesses in Michigan, in fact, is basically a [fax driven API](https://www.michigan.gov/lara/0,4601,7-154-35299_61343_35413-135307--,00.html). Being a modern, hip millenial I don't subscribe to a land line phone, nor do I own a fax machine. How was I supposed to fax things?
 
 Enter [Phaxio](https://www.phaxio.com). They have a whole bunch of fax machines (actually they're probably [banks of modems](http://en.wikipedia.org/wiki/Modem#mediaviewer/File:Modem-bank-1.jpg)) in a data center somewhere and they let you use them with a [simple HTTP API](http://www.phaxio.com/docs/). All you have to do is go sign up and make an initial deposit. They'll provide you with an API key and secret pair that you can then use to send faxes using `curl`.
 

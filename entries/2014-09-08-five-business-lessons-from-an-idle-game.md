@@ -43,4 +43,4 @@ There are quite a few balls to keep juggling while playing AdCap or running your
 
 ---
 
-By playing a bunch of Adventure Capitalist I probably haven't been focusing on my [own businesses](/consulting) as I should be. I'm going to get back to work soon, right after these next ten newspaper companies.
+By playing a bunch of Adventure Capitalist I probably haven't been focusing on my [own businesses](https://okapi.io) as I should be. I'm going to get back to work soon, right after these next ten newspaper companies.
