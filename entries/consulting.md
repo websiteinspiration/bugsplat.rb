@@ -24,9 +24,6 @@ I specialize in:
 * Infrastructure and DevOps, including AWS, Heroku, Email, and DNS
 * Ruby and Rails
 
-Need just a little advice? [Schedule a call with me on Clarity](https://clarity.fm/petekeen).
-
-
 ## Praise from some happy customers
 
 <blockquote>Pete is a wizard. He is the smartest guy I know. If you ever have Rails, DNS, email, or any other questions about anything, Pete knows the answer.
