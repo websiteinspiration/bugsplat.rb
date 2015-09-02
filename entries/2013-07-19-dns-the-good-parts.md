@@ -11,7 +11,11 @@ Frequently I come across confusion with domain names. *Why doesn't my website wo
 
 --fold--
 
-*You may be interested in my [other articles tagged with DNS](/tag/DNS)*
+---
+
+<a href="https://gumroad.com/l/MbhM">Buy the entire collection of DNS articles as a nicely formatted ebook.</a>
+
+---
 
 ## What is DNS
 

@@ -4,7 +4,7 @@ id: df11a
 tags: DNS, Devops
 topic: DNS
 description: Running a DNS server is not without it's drawbacks. Eventually I decided not to do it.
-show_upsell: true
+show_upsell: false
 ---
 
 [route53]: http://aws.amazon.com/route53/
@@ -16,7 +16,11 @@ A few months ago I posted about [how I run my own DNS servers](/how-i-run-my-own
 
 --fold--
 
-*You may be interested in my [other articles tagged with DNS](/tag/DNS)*
+---
+
+<a href="https://gumroad.com/l/MbhM">Buy the entire collection of DNS articles as a nicely formatted ebook.</a>
+
+---
 
 Second, and really more importantly, this happened:
 

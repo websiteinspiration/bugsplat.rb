@@ -14,7 +14,11 @@ For the longest time I used [zoneedit][] as my DNS provider of choice. All of my
 
 --fold--
 
-*You may be interested in my [other articles tagged with DNS](/tag/DNS)*
+---
+
+<a href="https://gumroad.com/l/MbhM">Buy the entire collection of DNS articles as a nicely formatted ebook.</a>
+
+---
 
 ### Step 0: Why would you ever do that?!
 

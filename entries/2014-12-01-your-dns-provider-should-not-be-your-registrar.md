@@ -10,6 +10,12 @@ Hopefully, by time you're reading this DNSimple will have recovered from their [
 
 --fold--
 
+---
+
+<a href="https://gumroad.com/l/MbhM">Buy the entire collection of DNS articles as a nicely formatted ebook.</a>
+
+---
+
 If you're a DNSimple customer right now or a NameCheap customer several times earlier this year, you know what happens when your DNS service goes out. Your website is inaccessible, emails are probably bouncing, and so are customers and their wallets. It's all around bad news.
 
 **The cheapest insurance you can buy is to host your nameservers and your registrar at different companies.** That way, if your registrar gets attacked it's no big deal because they're not involved with your day-to-day name resolution, and if your nameservers are attacked *you can easily change them*. You can't do that if the web interface you need to use is down at the same time as your nameservers.
