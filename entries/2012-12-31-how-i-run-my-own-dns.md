@@ -20,7 +20,7 @@ For the longest time I used [zoneedit][] as my DNS provider of choice. All of my
     </div>
     <div class="col-sm-4">
       <a href="https://gumroad.com/l/MbhM"><img class="thumbnail" src="http://d2s7foagexgnc2.cloudfront.net/files/75a39af1203263b44494/globe.jpg"></a>
-      <a href="https://gumroad.com/l/MbhM" class="btn btn-success" style="width: 100%">I Want This! ($29)</a>
+      <a href="https://gumroad.com/l/MbhM" class="btn btn-success" style="width: 100%">I Want This! ($9)</a>
     </div>
   </div>
 </div>
