@@ -1,17 +1,18 @@
 ---
-title: 'Business Process Cookbook'
-id: cookbook
+title: 'Handle Your Business - the Succinct Guide to Money and Finance for the Self-Employed'
+id: hyb
 body_class: book
 skip_masthead: true
 skip_footer: true
-description: Small simple processes to help run your tiny consulting business.
+alternate_links: cookbook business-process-cookbook
+description: Everything you need to know to build and run your freelancing business.
 ---
 
 <h1 class="book big center">You booked a client! Hurray!</h1>
 
 <h2 class="book big center">Now what?</h2>
 
-You thought this consulting thing would be great. Just quit your soul-sucking full time job, say goodbye to your micromanaging boss, and run your own business.
+You thought this self-employed thing would be great. Just quit your soul-sucking full time job, say goodbye to your micromanaging boss, and run your own business.
 
 You're going to do everything your way. ***The right way.*** Because that's what a business does, right?
 
@@ -19,7 +20,7 @@ Right?
 
 Except... *what do you do now?*
 
-People want to pay you.
+Your clients want to pay you.
 
 You probably need to pay taxes.
 
@@ -27,11 +28,17 @@ What about retirement? Can you even retire?
 
 Oh, and you probably want to put food on the table too.
 
-<hr>
+<p style="font-size: 1.8em; font-weight: bold; line-height: 1.5em; text-align: center">Handle Your Business will teach you how to set your business up for success so you can help more clients.<p>
 
-My name is <a href="/">Pete Keen</a> and I'm working on a little cookbook that will give you, my newly-forged consultant friend, a smattering of recipes designed to help **move your business forward** and, more importantly, **save you time** so you can **help more clients**.
+**You'll learn how to manage cashflow**, so you can stop hoping and start knowing you can make rent and pay taxes.
 
-Here's a taste of the table of contents (subject to change):
+**You'll learn what questions to ask a lawyer and accountant**, saving their time and your money.
+
+**You'll learn how to set up your business infrastructure for success**, even if you're not starting from scratch.
+
+**There are lots of sharp edges when you're running a business**, and they'll cut you if you don't know about them. In Handle Your Business **you'll learn where those traps are and how to avoid them.**
+
+## Table of Contents
 
 * Organizing
   - Make an LLC, it's as easy as 1-2-there is no 3!
