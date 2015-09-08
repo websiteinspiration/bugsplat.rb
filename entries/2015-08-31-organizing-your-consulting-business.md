@@ -7,7 +7,7 @@ tags: Business, Personal Finance
 ---
 
 <div class="well">
-  This is an excerpt from my upcoming book tentatively titled <strong><a href="/business-process-cookbook">Handle Your Business</a></strong>.
+  This is an excerpt from my upcoming book <strong><a href="/handle-your-business">Handle Your Business - the Succinct Guide to Money and Finance for the Self-Employed</a></strong>.
   Enter your email at the bottom for updates, early access, and a coupon when the book launches.
 </div>
 
