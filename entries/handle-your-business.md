@@ -38,6 +38,22 @@ Oh, and you probably want to put food on the table too.
 
 **There are lots of sharp edges when you're running a business**, and they'll cut you if you don't know about them. In Handle Your Business **you'll learn where those traps are and how to avoid them.**
 
+<div class="well">
+  <div class="row">
+  <div class="col-sm-12">
+      <h3>Buy <em>Handle Your Business</em></h3>
+    </div>
+    <div class="col-sm-8">
+      <p><strong><em>The Contract Package</em></strong> includes PDF, ePub, and MOBI formats of <strong>Handle Your Business</strong>, as well as the exact Word doc templates I use with my own clients. Save thousands by having your lawyer customize these templates instead of starting from scratch.</p>
+      <p><small>Also available: get just the book for <strike>$39</strike> $31</small></p>
+    </div>
+    <div class="col-sm-4">
+      <a href="https://gumroad.com/l/awJE"><img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/ef8a20cb930625daf313/DeathtoStock_NotStock.jpg" width="200"></a>
+      <a href="https://gumroad.com/l/awJE" class="btn btn-success" style="width: 100%">I Want This! (<strike>$139</strike> $110)</a>
+    </div>
+  </div>
+</div>
+
 ## Table of Contents
 
 * Organizing
@@ -68,18 +84,14 @@ Oh, and you probably want to put food on the table too.
   - You definitely need a bank that isn't your personal bank.
   - Business banking isn't free (except it is!).
   - What about rainy day savings?
-* Retiring
+* Tax Planning and Retiring
   - You probably don't want to do this forever.
   - Options for just you.
   - Options if you have employees.
 
-<hr>
-
-<h2 class="center">This book will help your business. Guaranteed.</h2>
-
-Plug your info into the form below and I'll let you know about progress, send sample chapters as they're finished, and you'll get **20% off** on launch day.
-
-<div class="center" style="margin-bottom: 3em">
+<div class="well">
+<div class="center">
+  <p>Plug your info into the form below to get a FREE sample chapter.</p>
   <form action="https://www.getdrip.com/forms/8653666/submissions" method="POST" role="form" class="form-inline" style="margin-top: 0.5em;" data-drip-embedded-form="8653666">
     <div class="form-group">
       <label class="sr-only" for="first-name">First Name</label>
@@ -89,7 +101,28 @@ Plug your info into the form below and I'll let you know about progress, send sa
       <label class="sr-only" for="email-address">Email Address</label>
       <input id="email-address" type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[email]" placeholder="you@example.com"></input>
     </div>
-    <input class="btn btn-warning btn-large" type="submit" value="Send Me Updates" />
+    <input class="btn btn-warning btn-large" type="submit" value="Send Me The Sample" />
   </form>
   <small>We won't send you spam. Unsubscribe at any time.</small>
+</div>
+</div>
+
+<hr>
+
+<h2 class="center">This book will help your business. Guaranteed.</h2>
+
+<div class="well">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Buy <em>Handle Your Business</em></h3>
+    </div>
+    <div class="col-sm-8">
+          <p><strong><em>The Contract Package</em></strong> includes PDF, ePub, and MOBI formats of <strong>Handle Your Business</strong>, as well as the exact Word doc templates I use with my own clients. Save thousands by having your lawyer customize these templates instead of starting from scratch.</p>
+      <p><small>Also available: get just the book for <strike>$39</strike> $31</small></p>
+    </div>
+    <div class="col-sm-4">
+      <a href="https://gumroad.com/l/awJE"><img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/ef8a20cb930625daf313/DeathtoStock_NotStock.jpg" width="200"></a>
+      <a href="https://gumroad.com/l/awJE" class="btn btn-success" style="width: 100%">I Want This! (<strike>$139</strike> $110)</a>
+    </div>
+  </div>
 </div>
