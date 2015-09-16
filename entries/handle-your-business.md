@@ -38,6 +38,14 @@ Oh, and you probably want to put food on the table too.
 
 **There are lots of sharp edges when you're running a business**, and they'll cut you if you don't know about them. In Handle Your Business **you'll learn where those traps are and how to avoid them.**
 
+<div style="margin-left: auto; margin-right: auto; width: 500px; margin-bottom: 2em">
+
+<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">This table of contents sounds like everything I had to learn stumbling through the past 3 years: <a href="https://t.co/DWD2QmBRuM">https://t.co/DWD2QmBRuM</a></p>&mdash; Sammy Larbi (@codeodor) <a href="https://twitter.com/codeodor/status/643870903030390784">September 15, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<hr>
+
 <div class="well">
   <div class="row">
   <div class="col-sm-12">
