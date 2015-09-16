@@ -49,7 +49,7 @@ Oh, and you probably want to put food on the table too.
     </div>
     <div class="col-sm-4">
       <a href="https://gumroad.com/l/awJE"><img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/ef8a20cb930625daf313/DeathtoStock_NotStock.jpg" width="200"></a>
-      <a href="https://gumroad.com/l/awJE" class="btn btn-success" style="width: 100%">I Want This! (<strike>$139</strike> $111)</a>
+      <a href="https://gumroad.com/l/awJE" class="btn btn-success" style="width: 100%">I Want This! (<strike>$139</strike> $110)</a>
     </div>
   </div>
 </div>
@@ -122,9 +122,7 @@ Oh, and you probably want to put food on the table too.
     </div>
     <div class="col-sm-4">
       <a href="https://gumroad.com/l/awJE"><img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/ef8a20cb930625daf313/DeathtoStock_NotStock.jpg" width="200"></a>
-      <a href="https://gumroad.com/l/awJE" class="btn btn-success" style="width: 100%">I Want This! (<strike>$139</strike> $111)</a>
+      <a href="https://gumroad.com/l/awJE" class="btn btn-success" style="width: 100%">I Want This! (<strike>$139</strike> $110)</a>
     </div>
   </div>
 </div>
-
-<script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>
