@@ -46,22 +46,6 @@ Oh, and you probably want to put food on the table too.
 
 <hr>
 
-<div class="well">
-  <div class="row">
-  <div class="col-sm-12">
-      <h3>Buy <em>Handle Your Business</em></h3>
-    </div>
-    <div class="col-sm-8">
-      <p><strong><em>The Contract Package</em></strong> includes PDF, ePub, and MOBI formats of <strong>Handle Your Business</strong>, as well as the exact Word doc templates I use with my own clients. Save thousands by having your lawyer customize these templates instead of starting from scratch.</p>
-      <p><small>Also available: get just the book for <strike>$39</strike> $31</small></p>
-    </div>
-    <div class="col-sm-4">
-      <a href="https://gumroad.com/l/awJE"><img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/ef8a20cb930625daf313/DeathtoStock_NotStock.jpg" width="200"></a>
-      <a href="https://gumroad.com/l/awJE" class="btn btn-success" style="width: 100%">I Want This! (<strike>$139</strike> $111)</a>
-    </div>
-  </div>
-</div>
-
 ## Table of Contents
 
 * Organizing
@@ -126,11 +110,12 @@ Oh, and you probably want to put food on the table too.
     </div>
     <div class="col-sm-8">
           <p><strong><em>The Contract Package</em></strong> includes PDF, ePub, and MOBI formats of <strong>Handle Your Business</strong>, as well as the exact Word doc templates I use with my own clients. Save thousands by having your lawyer customize these templates instead of starting from scratch.</p>
-      <p><small>Also available: get just the book for <strike>$39</strike> $31</small></p>
+      <p><small>Also available: <a href="https://gumroad.com/l/topA?wanted=true">get just the book for <strike>$39</strike> $31</small></a></p>
     </div>
     <div class="col-sm-4">
-      <a href="https://gumroad.com/l/awJE"><img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/ef8a20cb930625daf313/DeathtoStock_NotStock.jpg" width="200"></a>
-      <a href="https://gumroad.com/l/awJE" class="btn btn-success" style="width: 100%">I Want This! (<strike>$139</strike> $111)</a>
+      <a href="https://gumroad.com/l/xqmZ?wanted=true"><img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/ef8a20cb930625daf313/DeathtoStock_NotStock.jpg" width="200"></a>
+      <a href="https://gumroad.com/l/xqmZ?wanted=true" class="btn btn-success" style="width: 100%">I Want This! (<strike>$139</strike> $111)</a>
     </div>
   </div>
 </div>
+
