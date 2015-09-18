@@ -32,7 +32,13 @@ Oh, and you probably want to put food on the table too.
 
 ## Learn What You Don't Know about Running a Business
 
-**Handle Your Business** will teach you the things you don't know you don't know about running a consulting business, so you can ask your trusted advisors the right questions without wasting their time and your money. From first chapter to last, **Handle Your Business** is packed with actionable, useful advice.
+Running a business can get you in trouble quick if you're not paying attention. In Handle Your Business **you'll learn where those traps are and how to avoid them.**
+
+Could you find out all of this on your own? Sure, that's I did. After spending weeks of time reading thousands of blog posts and hundreds of pages of IRS documents, I learned what I needed to know. *You don't need to go through all that pain*.
+
+**Handle Your Business** will teach you the things you don't know you don't know about running a consulting business, so you can ask your trusted advisors the right questions without wasting their time and your money.
+
+## Each chapter is packed with knowledge
 
 **Organizing** gets you off on the right foot, explaining the different types of business entities you can choose, along with their tax implications.
 
@@ -51,10 +57,6 @@ Oh, and you probably want to put food on the table too.
 **Tax Planning and Retiring** goes through an overview of tax planning topics, including how to save money on your taxes by saving for your retirement.
 
 <hr>
-
-## Avoid The Sharp Edges
-
-Running a business can get you in trouble quick if you're not paying attention. In Handle Your Business **you'll learn where those traps are and how to avoid them.**
 
 <div style="margin-left: auto; margin-right: auto; width: 500px; margin-bottom: 2em">
 
@@ -86,7 +88,7 @@ Running a business can get you in trouble quick if you're not paying attention. 
 
 <hr>
 
-## Table of Contents
+## Here's the full Table of Contents
 
 * Organizing
   - Make an LLC, it's as easy as 1-2-there is no 3!
@@ -139,6 +141,10 @@ Yep! Anyone with a small business without much capital needs (i.e. the only equi
 **What if I don't get any value out of the book?**
 
 Before buying, browse around on <a href="https://www.petekeen.net">my website</a> and read some of my work. If you like what you see there, you'll like **Handle Your Business**. That said, I stand behind my work. If you're unsatisified with the book just email me at `pete@petekeen.net` and ask for a refund within 30 days of purchase.
+
+**I have another question!**
+
+Just email me, `pete@petekeen.net`. I reply to almost everything.
 
 <hr>
 
