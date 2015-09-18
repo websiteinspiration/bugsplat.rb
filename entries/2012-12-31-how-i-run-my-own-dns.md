@@ -13,18 +13,6 @@ For the longest time I used [zoneedit][] as my DNS provider of choice. All of my
 
 --fold--
 
-<div class="well">
-  <div class="row">
-    <div class="col-sm-8">
-      <p>Like this article? <strong><em><a href="https://gumroad.com/l/MbhM">DNS: The Good Parts</a></em></strong> is my collection of essays about DNS, packaged up in a beautiful, ready to print PDF. Learn how DNS works, how to run your own DNS server, and why maybe that's not the best idea after all.</p>
-    </div>
-    <div class="col-sm-4">
-      <a href="https://gumroad.com/l/MbhM"><img class="thumbnail" src="http://d2s7foagexgnc2.cloudfront.net/files/75a39af1203263b44494/globe.jpg"></a>
-      <a href="https://gumroad.com/l/MbhM" class="btn btn-success" style="width: 100%">I Want This! ($9)</a>
-    </div>
-  </div>
-</div>
-
 ### Step 0: Why would you ever do that?!
 
 I'm mostly motiviated by curiosity, but also by frustration. When something isn't going my way it just starts to make sense to do it myself. My frustration with zoneedit wasn't anything super specific. Their dynamic DNS system wasn't too terribly dynamic and adding and editing zones through their web interface got to be pretty tedious after awhile. I have a bunch of zones (32 at last count), most of which are very simple setups. `bugsplat.info` is way more complicated, but we'll get into that later.
