@@ -34,7 +34,7 @@ Oh, and you probably want to put food on the table too.
 
 **Handle Your Business** will teach you the things you don't know you don't know about running a consulting business, so you can ask your trusted advisors the right questions without wasting their time and your money. From first chapter to last, **Handle Your Business** is packed with actionable, useful advice.
 
-**Organizing** gets you off on the right foot, explaining the different types of business entites you can choose, along with their tax implications.
+**Organizing** gets you off on the right foot, explaining the different types of business entities you can choose, along with their tax implications.
 
 **Banking** will teach you why you need a separate bank account, what your options are, and guides you into the best choice for you.
 
