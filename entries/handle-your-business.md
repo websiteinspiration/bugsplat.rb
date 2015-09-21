@@ -34,7 +34,7 @@ Oh, and you probably want to put food on the table too.
 
 Running a business can get you in trouble quick if you're not paying attention. In Handle Your Business **you'll learn where those traps are and how to avoid them.**
 
-Could you find out all of this on your own? Sure, that's I did. After spending weeks of time reading thousands of blog posts and hundreds of pages of IRS documents, I learned what I needed to know. *You don't need to go through all that pain*.
+Could you find out all of this on your own? Sure, that's what I did. After spending weeks of time reading thousands of blog posts and hundreds of pages of IRS documents, I learned what I needed to know. *You don't need to go through all that pain*.
 
 **Handle Your Business** will teach you the things you don't know you don't know about running a consulting business, so you can ask your trusted advisors the right questions without wasting their time and your money.
 
