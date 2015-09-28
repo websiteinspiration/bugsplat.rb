@@ -1,7 +1,7 @@
 ---
 title: 'Handle Your Business - the Succinct Guide to Money and Finance for the Self-Employed'
 id: hyb
-body_class: book
+body_class: book hyb
 skip_masthead: true
 skip_footer: true
 alternate_links: cookbook business-process-cookbook
@@ -31,6 +31,11 @@ Oh, and you probably want to put food on the table too.
 <hr>
 
 ## Learn What You Don't Know about Running a Business
+
+<div style="float: right; clear: both; margin-left: 3em; margin-right: 2em; margin-top: 1em">
+  <img src="https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_cover_3d_no_shadow.png" style="width: 10em;"></img>
+</div>
+
 
 Running a business can get you in trouble quick if you're not paying attention. In Handle Your Business **you'll learn where those traps are and how to avoid them.**
 
