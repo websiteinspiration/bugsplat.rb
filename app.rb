@@ -335,6 +335,20 @@ class App < Sinatra::Base
     redirect '/mail-rep-thanks'
   end
 
+  post '/spark-send' do
+    text = params.map do |key, val|
+      "#{key}:\n\n#{val}\n\n"
+    end.join("\n")
+    sendmail(
+      to: 'spark@petekeen.net',
+      bcc: ENV['SECRET_CLOSE_ADDRESS'],
+      from: "pete@petekeen.net",
+      subject: "Spark!",
+      body: text
+    )
+    redirect '/spark-done'
+  end
+
   post '/ping' do
     'pong'
   end
