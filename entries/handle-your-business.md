@@ -6,6 +6,7 @@ skip_masthead: true
 skip_footer: true
 alternate_links: cookbook business-process-cookbook
 description: Everything you need to know to build and run your freelancing business.
+thumbnail: https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_cover_3d_no_shadow.png
 ---
 
 # Sean's tax bill last year was $20,342.
@@ -107,6 +108,8 @@ Yep! Anyone with a small business without much capital needs (i.e. the only equi
 Before buying, browse around on <a href="https://www.petekeen.net">my website</a> and read some of my work. If you like what you see there, you'll like **Handle Your Business**. That said, I stand behind my work. If you're unsatisified with the book just email me at `pete@petekeen.net` and ask for a refund within 30 days of purchase.
 
 **Who are you, anyway?**
+
+<img src="https://d2s7foagexgnc2.cloudfront.net/files/afe3b485fe17d72e13bd/me.png" class="thumbnail" style="width: 5em; float: right; clear: both">
 
 Hi! I'm Pete Keen. I've been writing software since I was ten years old and dreaming up business ideas for almost as long.
 

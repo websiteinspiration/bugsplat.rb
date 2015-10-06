@@ -25,7 +25,6 @@
       <link rel="canonical" href="<%= @canonical_url %>" />
     <% end %>
     <meta name="google-site-verification" content="1d8iB_zhFtV8iyPhFINmZYvlI-f2pBxlJaar6e9U42w" />
-    <meta property="og:image" content="https://d2s7foagexgnc2.cloudfront.net/files/afe3b485fe17d72e13bd/me.png" />
     <meta property="og:url" content="<%= page_url %>" />
     <meta property="og:site_name" content="Pete Keen" />
     <meta property="og:type" content="blog" />
@@ -38,9 +37,13 @@
       <meta name="twitter:description" content="<%= @description %>" />
       <meta name="twitter:site" content="zrail" />
       <meta name="twitter:creator" content="zrail" />
-      <% if @thumbnail %>
-        <meta name="twitter:image" content="<%= @thumbnail %>" />
-      <% end %>
+    <% end %>
+    <% if @thumbnail %>
+      <meta name="twitter:image" content="<%= @thumbnail %>" />
+      <meta property="og:image" content="<%= @thumbnail %>" />      
+    <% else %>
+      <meta name="twitter:image" content="https://d2s7foagexgnc2.cloudfront.net/files/afe3b485fe17d72e13bd/me.png" />      
+      <meta property="og:image" content="https://d2s7foagexgnc2.cloudfront.net/files/afe3b485fe17d72e13bd/me.png" />
     <% end %>
     <% if production? %>
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
