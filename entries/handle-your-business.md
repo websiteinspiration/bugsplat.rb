@@ -24,20 +24,14 @@ There are lots of hidden rules when you run a small freelance or consulting busi
 * You should set aside some money for rainy days and retirement. How? Where?
 * You need a contract. What does that look like? What needs to be in it?
 
-## Improve your business by knowing the rules.
-
-Give yourself a headstart by learning the terminology, so you can waste less time and money with your accountant and attorney.
-
-Craft better, more respectful, higher paying clients by giving them a comprehensive contract.
-
-## Learn What You Don't Know about Running a Business
+## Running a business can get you in trouble quick if you're not paying attention.
 
 <div style="float: right; clear: both; margin-left: 3em; margin-right: 2em; margin-top: 1em">
   <img src="https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_cover_3d_no_shadow.png" style="width: 10em;"></img>
 </div>
 
 
-Running a business can get you in trouble quick if you're not paying attention. In **Handle Your Business** you'll learn where the traps are and how to avoid them.
+In **Handle Your Business** you'll learn where the traps are and how to avoid them. You'll learn what you don't know about running a business.
 
 **Could you find out all of this on your own?** After spending weeks of time reading thousands of blog posts and hundreds of pages of IRS documents, I learned what I needed to know.
 
@@ -45,23 +39,20 @@ Running a business can get you in trouble quick if you're not paying attention. 
 
 **Handle Your Business** will teach you the things you don't know you don't know about running a consulting business, so you can ask your trusted advisors the right questions without wasting their time and your money.
 
-## Every chapter packed with insight
+<div class="well" style="margin-top: 4em;">
 
-**Organizing** gets you off on the right foot, explaining the different types of business entities you can choose, along with their tax implications.
+<h2>Every chapter packed with insight</h2>
 
-**Banking** will teach you why you need a separate bank account, what your options are, and guides you into the best choice for you.
+<p><span class="chapter-title">Organizing</strong></span> gets you off on the right foot, explaining the different types of business entities you can choose, along with their tax implications.
+<p><span class="chapter-title">Banking</strong></span> will teach you why you need a separate bank account, what your options are, and guides you into the best choice for you.
+<p><span class="chapter-title">Contracts</strong></span> shows you what a contract looks like and how to structure yours to save the most money and time.
+<p><span class="chapter-title">Invoicing</strong></span> is all about invoices: what to include and when to send them.
+<p><span class="chapter-title">Bookkeeping</strong></span> walks you through a simple do-it-yourself bookkeeping example and then gives recommendations for services that do it for you.
+<p><span class="chapter-title">Insurance</strong></span> shows you how to protect yourself from lawsuits by buying the right coverage.
+<p><span class="chapter-title">Getting Paid</strong></span> gives a selection of options for how your clients can pay you, the ones you should allow, and the ones you shouldn't.
+<p><span class="chapter-title">Tax Planning and Retiring</strong></span> goes through an overview of tax planning topics, including how to save money on your taxes by saving for your retirement.
 
-**Contracts** shows you what a contract looks like and how to structure yours to save the most money and time.
-
-**Invoicing** is all about invoices: what to include and when to send them.
-
-**Bookkeeping** walks you through a simple do-it-yourself bookkeeping example and then gives recommendations for services that do it for you.
-
-**Insurance** shows you how to protect yourself from lawsuits by buying the right coverage.
-
-**Getting Paid** gives a selection of options for how your clients can pay you, the ones you should allow, and the ones you shouldn't.
-
-**Tax Planning and Retiring** goes through an overview of tax planning topics, including how to save money on your taxes by saving for your retirement.
+</div>
 
 <hr>
 
@@ -77,6 +68,7 @@ Running a business can get you in trouble quick if you're not paying attention. 
 
 This set of templates would cost **over $1,000** if you were to get it written from scratch. By starting with my templates, you'll shave hundreds off of your lawyer bill.
 
+<div class="well" style="margin-top: 4em; margin-bottom: 4em;">
   <div class="row">
     <div class="col-sm-12">
       <h2>Buy <em>Handle Your Business</em></h2>
@@ -90,8 +82,7 @@ This set of templates would cost **over $1,000** if you were to get it written f
       <a href="https://gumroad.com/l/xqmZ?wanted=true"><img src="https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_cover_3d_no_shadow.png" style="width: 8em; margin-bottom: 1em"></img></a>
     </div>
   </div>
-
-<hr>
+</div>
 
 ## Frequently Asked Questions
 
