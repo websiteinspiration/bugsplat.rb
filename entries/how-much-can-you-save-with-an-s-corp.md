@@ -25,7 +25,7 @@ But how much is that?
 ----
 
 Use the sliders below to calculate how much less you would pay by electing S-corp taxation.
-**Net Income** is how much your business makes after business-related expenses. **Salary** is how much you want to pay yourself as a reasonable salary.
+**Net Income** is how much your business makes after business-related expenses. **Salary** is the portion of your net income you'll pay yourself as a reasonable salary.
 
 <label for="net-income">Net Income</label> <span id="net-income-val"></span>
 <input type="range" id="net-income" min="50000" max="250000" step="1000" value="120000"> 
@@ -33,11 +33,24 @@ Use the sliders below to calculate how much less you would pay by electing S-cor
 <label for="salary">Reasonable Salary</label> <span id="salary-val"></span>
 <input type="range" id="salary" min="50000" max="250000" step="1000" value="90000">
 
-Sole Prop: <span id="sole-prop-result"></span>
+<h2 class="center" style="margin-bottom: 0; margin-top: 0">Self-Employment Taxes Due</h2>
 
-S-Corp: <span id="s-corp-result"></span>
-
-Difference: <span id="difference"></span>
+<div class="row center well">
+  <div class="col-sm-6">
+    <div><strong>Sole Prop</strong></div>
+    <div class="calc-result" id="sole-prop-result"></div>
+  </div>
+  <div class="col-sm-6">
+    <div><strong>S-corp</strong></div>
+    <div class="calc-result" id="s-corp-result"></div>
+  </div>
+</div>
+<div class="row center well">
+  <div class="col-sm-12">
+    <div><strong>Difference</strong></div>
+    <div class="calc-result" id="difference"></div>
+  </div>
+</div>
 
 ---
 
@@ -67,9 +80,20 @@ function numberWithCommas(x) {
     return '$' + x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-function recalculate() {
+function recalculate(event) {
+
   var netIncome = parseFloat($('#net-income').val());
   var salary = parseFloat($('#salary').val());
+
+  if (netIncome <= salary) {
+    if (event.target.id == "net-income") {
+      salary = netIncome;
+      $('#salary').val(netIncome);
+    } else {
+      netIncome = salary;
+      $('#net-income').val(salary);
+    }
+  }
 
   $('#net-income-val').text(numberWithCommas(netIncome));
   $('#salary-val').text(numberWithCommas(salary));
@@ -92,6 +116,7 @@ function recalculate() {
 window.onload = function() {
   $('#net-income').on("input", recalculate);
   $('#salary').on("input", recalculate);
+
   recalculate();
 };
 </script>
