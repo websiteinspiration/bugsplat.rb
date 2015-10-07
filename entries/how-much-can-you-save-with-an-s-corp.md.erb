@@ -10,6 +10,8 @@ thumbnail: https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_
 
 # How much can you save by starting an S-Corp?
 
+<div class="well" style="width: 12em; float: right; clear: both">Share this: <%= @app.partial :share_links %></div>
+
 If you have an LLC or a normal corporation, the IRS allows you to elect what they call "Subchapter S" taxation.
 
 When you elect S-corp taxation, you agree to abide by a few rules: one class of stock, only individual owners, etc.
@@ -50,7 +52,7 @@ Use the sliders below to calculate how much less you would pay by electing S-cor
     <div><strong>Difference</strong></div>
     <div class="calc-result" id="difference"></div>
   </div>
-</div>
+  </div>
 
 ---
 
@@ -120,3 +122,21 @@ window.onload = function() {
   recalculate();
 };
 </script>
+
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));</script>
