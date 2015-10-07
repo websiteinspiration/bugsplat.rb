@@ -9,13 +9,13 @@ description: Everything you need to know to build and run your freelancing busin
 thumbnail: https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_cover_3d_no_shadow.png
 ---
 
-# Sean's tax bill last year was $20,342.
+# He could have avoided the huge tax bill, if only he had known the rules.
+
+Sean's tax bill last year was $20,342.
 
 Last April Sean's group of freelancers and consultants were swapping stories and talking about their previous year.
 One thing that many of them shared: huge tax bills. Several of them had bills just as big, if not bigger, than Sean's.
 None of them knew the IRS rules until it was too late.
-
-## He could have avoided it, if only he had known the rules.
 
 There are lots of hidden rules when you run a small freelance or consulting business:
 
@@ -60,6 +60,24 @@ In **Handle Your Business** you'll learn where the traps are and how to avoid th
 
 <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">This table of contents sounds like everything I had to learn stumbling through the past 3 years: <a href="https://t.co/DWD2QmBRuM">https://t.co/DWD2QmBRuM</a></p>&mdash; Sammy Larbi (@codeodor) <a href="https://twitter.com/codeodor/status/643870903030390784">September 15, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div class="well">
+<div class="center">
+  <p>Get a <strong>FREE sample chapter</strong>.</p>
+  <form action="https://www.getdrip.com/forms/8653666/submissions" method="POST" role="form" class="form-inline" style="margin-top: 0.5em;" data-drip-embedded-form="8653666">
+    <div class="form-group">
+      <label class="sr-only" for="first-name">First Name</label>
+      <input id="first-name" type="text" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[name]" placeholder="First Name"></input>
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="email-address">Email Address</label>
+      <input id="email-address" type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[email]" placeholder="you@example.com"></input>
+    </div>
+    <input class="btn btn-warning btn-large" type="submit" value="Send Me The Sample" />
+  </form>
+  <small>We won't send you spam. Unsubscribe at any time.</small>
+</div>
 </div>
 
 ## Want an even bigger jumpstart?
@@ -108,25 +126,18 @@ Hi! I'm Pete Keen. I've been writing software since I was ten years old and drea
 
 Just email me, `pete@petekeen.net`. I reply to almost everything.
 
-<hr>
-
-<div class="well">
-<div class="center">
-  <p>Not ready to buy just yet? Get the <strong>FREE sample chapter</strong>.</p>
-  <form action="https://www.getdrip.com/forms/8653666/submissions" method="POST" role="form" class="form-inline" style="margin-top: 0.5em;" data-drip-embedded-form="8653666">
-    <div class="form-group">
-      <label class="sr-only" for="first-name">First Name</label>
-      <input id="first-name" type="text" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[name]" placeholder="First Name"></input>
+<div class="well" style="margin-top: 4em; margin-bottom: 4em;">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>Buy <em>Handle Your Business</em></h2>
     </div>
-    <div class="form-group">
-      <label class="sr-only" for="email-address">Email Address</label>
-      <input id="email-address" type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[email]" placeholder="you@example.com"></input>
+    <div class="col-sm-8">
+    <p><strong><em>The Contract Package</em></strong> includes PDF, ePub, and MOBI formats of <strong>Handle Your Business</strong>, as well as the exact Word doc templates I use with my own clients.</p>
+      <p><a href="https://gumroad.com/l/xqmZ?wanted=true" class="btn btn-lg btn-success" style="width: 100%">Get Started Today! ($111) </a></p>
+      <p><small>Also available: <a href="https://gumroad.com/l/topA?wanted=true">buy just the book for $31</a></small></p>
     </div>
-    <input class="btn btn-warning btn-large" type="submit" value="Send Me The Sample" />
-  </form>
-  <small>We won't send you spam. Unsubscribe at any time.</small>
+    <div class="col-sm-4 center">
+      <a href="https://gumroad.com/l/xqmZ?wanted=true"><img src="https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_cover_3d_no_shadow.png" style="width: 8em; margin-bottom: 1em"></img></a>
+    </div>
+  </div>
 </div>
-</div>
-
-
-
