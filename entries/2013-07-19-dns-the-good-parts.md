@@ -11,6 +11,12 @@ Frequently I come across confusion with domain names. *Why doesn't my website wo
 
 --fold--
 
+---
+
+<a href="https://gumroad.com/l/MbhM">Buy the entire collection of DNS articles as a nicely formatted ebook.</a>
+
+---
+
 ## What is DNS
 
 First things first. *DNS* stands for *Domain Name System*. Fundamentally it's a globally distributed key value store. Servers around the world can give you the value associated with a key, and if they don't know they'll ask other servers for the answer.
