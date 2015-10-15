@@ -13,10 +13,29 @@ thumbnail: https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_
   @hyb_book_url = "https://gumroad.com/l/topA"
   @hyb_contract_url = "https://gumroad.com/l/xqmZ"
 
-  unless @app.params[:cc].nil?
-    @hyb_book_url = @hyb_book_url + '/' + @app.params[:cc]
-    @hyb_contract_url = @hyb_contract_url + '/' + @app.params[:cc]
+  valid_coupons = {
+    'launchday' => 0.3,
+    'prelaunch' => 0.2
+  }
+
+  default_coupon = 'prelaunch'
+
+  hyb_book_price = 39.0
+  hyb_contract_price = 139.0
+
+  @hyb_book_price = sprintf("$%0d", hyb_book_price)
+  @hyb_contract_price = sprintf("$%0d", hyb_contract_price)
+
+  coupon = @app.params[:cc] || default_coupon
+  if !coupon.nil? && valid_coupons.has_key?(coupon)
+    @hyb_book_url = @hyb_book_url + '/' + coupon
+    @hyb_contract_url = @hyb_contract_url + '/' + coupon
+
+    @hyb_book_price = sprintf("<strike>$%0d</strike> $%0.2f", hyb_book_price, hyb_book_price * (1 - valid_coupons[coupon]))
+    @hyb_contract_price = sprintf("<strike>$%0d</strike> $%0.2f", hyb_contract_price, hyb_contract_price * (1 - valid_coupons[coupon]))
   end
+
+
 %>
 
 # He could have avoided the huge tax bill, if only he had known the rules.
@@ -103,8 +122,8 @@ This set of templates would cost **over $1,000** if you were to get it written f
     </div>
     <div class="col-sm-8">
     <p><strong><em>The Contract Package</em></strong> includes PDF, ePub, and MOBI formats of <strong>Handle Your Business</strong>, as well as the exact Word doc templates I use with my own clients.</p>
-      <p><a href="<%= @hyb_contract_url %>?wanted=true" class="btn btn-lg btn-success" style="width: 100%">Get Started Today! ($111) </a></p>
-      <p><small>Also available: <a href="<%= @hyb_book_url %>?wanted=true">buy just the book for $31</a></small></p>
+      <p><a href="<%= @hyb_contract_url %>?wanted=true" class="btn btn-lg btn-success" style="width: 100%">Get Started Today! (<%= @hyb_contract_price %>) </a></p>
+      <p><small>Also available: <a href="<%= @hyb_book_url %>?wanted=true">buy just the book for <%= @hyb_book_price %></a></small></p>
     </div>
     <div class="col-sm-4 center">
       <a href="https://gumroad.com/l/xqmZ?wanted=true"><img src="https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_cover_3d_no_shadow.png" style="width: 8em; margin-bottom: 1em"></img></a>
@@ -143,8 +162,8 @@ Just email me, `pete@petekeen.net`. I reply to almost everything.
     </div>
     <div class="col-sm-8">
     <p><strong><em>The Contract Package</em></strong> includes PDF, ePub, and MOBI formats of <strong>Handle Your Business</strong>, as well as the exact Word doc templates I use with my own clients.</p>
-      <p><a href="<%= @hyb_contract_url %>?wanted=true" class="btn btn-lg btn-success" style="width: 100%">Get Started Today! ($111) </a></p>
-      <p><small>Also available: <a href="<%= @hyb_book_url %>?wanted=true">buy just the book for $31</a></small></p>
+      <p><a href="<%= @hyb_contract_url %>?wanted=true" class="btn btn-lg btn-success" style="width: 100%">Get Started Today! (<%= @hyb_contract_price %>) </a></p>
+      <p><small>Also available: <a href="<%= @hyb_book_url %>?wanted=true">buy just the book for <%= @hyb_book_price %></a></small></p>
     </div>
     <div class="col-sm-4 center">
       <a href="https://gumroad.com/l/xqmZ?wanted=true"><img src="https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_cover_3d_no_shadow.png" style="width: 8em; margin-bottom: 1em"></img></a>
