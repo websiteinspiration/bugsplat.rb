@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/peterkeen/rack-funky-cache.git
-  revision: c022dfdf0c97b58e8f3965dcc586000bf9de6e14
+  revision: 665fca05be8b04fcf1e573a44f381f5c3bd24558
   specs:
     rack-funky-cache (0.0.6)
 
