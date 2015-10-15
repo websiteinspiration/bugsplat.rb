@@ -9,6 +9,16 @@ description: Everything you need to know to build and run your freelancing busin
 thumbnail: https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_cover_3d_no_shadow.png
 ---
 
+<%
+  @hyb_book_url = "https://gumroad.com/l/topA"
+  @hyb_contract_url = "https://gumroad.com/l/xqmZ"
+
+  unless @app.params[:cc].nil?
+    @hyb_book_url = @hyb_book_url + '/' + @app.params[:cc]
+    @hyb_contract_url = @hyb_contract_url + '/' + @app.params[:cc]
+  end
+%>
+
 # He could have avoided the huge tax bill, if only he had known the rules.
 
 Sean's tax bill last year was $20,342.
@@ -93,8 +103,8 @@ This set of templates would cost **over $1,000** if you were to get it written f
     </div>
     <div class="col-sm-8">
     <p><strong><em>The Contract Package</em></strong> includes PDF, ePub, and MOBI formats of <strong>Handle Your Business</strong>, as well as the exact Word doc templates I use with my own clients.</p>
-      <p><a href="https://gumroad.com/l/xqmZ?wanted=true" class="btn btn-lg btn-success" style="width: 100%">Get Started Today! ($111) </a></p>
-      <p><small>Also available: <a href="https://gumroad.com/l/topA?wanted=true">buy just the book for $31</a></small></p>
+      <p><a href="<%= @hyb_contract_url %>?wanted=true" class="btn btn-lg btn-success" style="width: 100%">Get Started Today! ($111) </a></p>
+      <p><small>Also available: <a href="<%= @hyb_book_url %>?wanted=true">buy just the book for $31</a></small></p>
     </div>
     <div class="col-sm-4 center">
       <a href="https://gumroad.com/l/xqmZ?wanted=true"><img src="https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_cover_3d_no_shadow.png" style="width: 8em; margin-bottom: 1em"></img></a>
@@ -133,8 +143,8 @@ Just email me, `pete@petekeen.net`. I reply to almost everything.
     </div>
     <div class="col-sm-8">
     <p><strong><em>The Contract Package</em></strong> includes PDF, ePub, and MOBI formats of <strong>Handle Your Business</strong>, as well as the exact Word doc templates I use with my own clients.</p>
-      <p><a href="https://gumroad.com/l/xqmZ?wanted=true" class="btn btn-lg btn-success" style="width: 100%">Get Started Today! ($111) </a></p>
-      <p><small>Also available: <a href="https://gumroad.com/l/topA?wanted=true">buy just the book for $31</a></small></p>
+      <p><a href="<%= @hyb_contract_url %>?wanted=true" class="btn btn-lg btn-success" style="width: 100%">Get Started Today! ($111) </a></p>
+      <p><small>Also available: <a href="<%= @hyb_book_url %>?wanted=true">buy just the book for $31</a></small></p>
     </div>
     <div class="col-sm-4 center">
       <a href="https://gumroad.com/l/xqmZ?wanted=true"><img src="https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_cover_3d_no_shadow.png" style="width: 8em; margin-bottom: 1em"></img></a>
