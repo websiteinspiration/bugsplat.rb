@@ -3,12 +3,14 @@ title: Mounting a Magic Trackpad on a Kinesis Advantage Keyboard
 id: 8b211
 tags: Hardware
 topic: Hardware
-description: The Kinesis Advantage is a funky keyboard with a blank spot exactly right for mounting a Magic Trackpack. But how to get it to stick there?
+description: The Kinesis Advantage is a funky keyboard with a blank spot exactly right for mounting a Magic Trackpad. But how to get it to stick there?
 ---
 
 [dashgrip]: http://www.amazon.com/gp/product/B003A8D6YG/
 [kinesis]: http://www.amazon.com/gp/product/B000LVJ9W8/
 [trackpad]: http://www.amazon.com/gp/product/B003XIJ3MW
+
+<em><strong>Update:</strong> The Magic Trackpad 2 fits in the same spot but you might have to use a different sticky material. See <a href="https://twitter.com/floatingbones/status/662336996556296192">these</a> <a href="https://twitter.com/rfabbri/status/661537385939869696">tweets</a> for details.</em>
 
 Way back in early 2009 my wrists started acting up. As a professional software developer only two years into my young career, this was super concerning. I asked around at the office and my coworkers told me I should get a [Kinesis Advantage Pro][kinesis] keyboard, which aside from being super goofy looking, seems to have cured a lot of people of their RSI symptoms. I looked into it and eventually broke down and bought one, and then another one because the first developed some sticky keys but I didn't want to part with it to send it back for service.
 
