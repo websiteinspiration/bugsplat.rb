@@ -5,22 +5,21 @@ id: proj
 
 ### Open Source
 
-I have developed various bits of open source software over the years. I've released them here.
+I have developed various bits of open source software over the years:
 
-* [bugsplat.rb](https://code.petekeen.net/pete/bugsplat-rb/blob/master/README.md) The software that runs petekeen.net
-* [Capistrano::Buildpack](https://code.petekeen.net/pete/capistrano-buildpack/blob/master/README.md) Deploy 12-factor-style applications using Capistrano 2x
-* [Dotfiles](https://code.petekeen.net/pete/dotfiles/blob/master/README.md) My dotfiles for work and home
-* [Foreman::Export::Nginx](https://code.petekeen.net/pete/foreman-export-nginx/blob/master/README.md) Export for Foreman that sets up nginx configurations
-* [Ledger Web](https://code.petekeen.net/pete/ledger-web/blob/master/README.md) A web-based reporting system for the Ledger command line accounting program
-* [Marginalia](https://code.petekeen.net/pete/marginalia/blob/master/README.md) This is the app that used to run at https://marginalia.io.
-* [MMP Builder](https://code.petekeen.net/mmp/builder/blob/master/README.md) Project that builds MMP
+* [bugsplat.rb](https://github.com/peterkeen/bugsplat.rb) The software that runs petekeen.net
+* [Capistrano::Buildpack](https://github.com/peterkeen/capistrano-buildpack) Deploy 12-factor-style applications using Capistrano 2x
+* [Dotfiles](https://github.com/peterkeen/dotfiles) My dotfiles for work and home
+* [Foreman::Export::Nginx](https://github.com/peterkeen/foreman-export-nginx) Export for Foreman that sets up nginx configurations
+* [Ledger Web](https://github.com/peterkeen/ledger-web) A web-based reporting system for the Ledger command line accounting program
+* [Marginalia](https://github.com/peterkeen/marginalia) This is the app that used to run at https://marginalia.io.
+* [MMP Builder](https://github.com/peterkeen/mmp-builder) Project that builds MMP
 * [Payola](http://www.payola.io) Accept credit card payments with Stripe and your Rails application
-* [Sequel Reporter](https://code.petekeen.net/pete/sequel-reporter/blob/master/README.md) A small opinionated framework for writing reporting applications using Sequel
-* [Sites](https://code.petekeen.net/pete/sites/blob/master/README.md) Simple wiki-based site generator.
-* [tracker](https://code.petekeen.net/pete/tracker/blob/master/README.md) Tracks visits to my properties, like Mixpanel or Google Analytics
-* [trading](https://code.petekeen.net/pete/trading/blob/master/README.md) A toy trading engine that only supports BUY and SELL limit orders
-* [Twitter Fiction Reader](https://code.petekeen.net/pete/twitter-fiction-reader/blob/master/README.md) Read twitter feeds from the beginning
-* [uploads](https://code.petekeen.net/pete/uploads/blob/master/README.md) A little application for uploading files to a remote server
+* [Sequel Reporter](https://github.com/peterkeen/sequel-reporter) A small opinionated framework for writing reporting applications using Sequel
+* [Sites](https://github.com/peterkeen/sites) Simple wiki-based site generator.
+* [trading](https://github.com/peterkeen/trading) A toy trading engine that only supports BUY and SELL limit orders
+* [Twitter Fiction Reader](https://github.com/peterkeen/twitter-fiction-reader) Read twitter feeds from the beginning
+* [uploads](https://github.com/peterkeen/uploads) A little application for uploading files to a remote server
 
 ---
 
