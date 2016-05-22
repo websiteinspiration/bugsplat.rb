@@ -1,6 +1,7 @@
 ---
 title: Archiving Websites with Wget
 description: How to capture entire websites so you can view them offline or save content before it disappears
+id: warc
 ---
 
 Let's say you want to archive a website. Maybe they're closing down or changing focus, or maybe you just want to view it offline.
