@@ -279,14 +279,17 @@ There are a few more interesting RFCs as well, including [4034](http://www.ietf.
 
 *This article is featured in [Hacker Monthly issue 42](http://hackermonthly.com/issue-42.html).*
 
-<div class="well">
-  <div class="row">
-    <div class="col-sm-8">
-      <p>Want more stuff like this? <strong><em><a href="https://gumroad.com/l/MbhM">DNS: The Good Parts</a></em></strong> is my collection of essays about DNS, packaged up in a beautiful, ready to print PDF. Learn how DNS works, how to run your own DNS server, and why maybe that's not the best idea after all.</p>
+  <div class="row" id="upsell" style="margin-left: 0.1em;">
+    <div class="span3">
+      <div style="float: left; height: 100x; padding-top: 1em; padding-bottom: 1em; text-align: center; margin-right: 1.5em">
+        <a href="https://www.masteringmodernpayments.com">
+          <img src="https://d2s7foagexgnc2.cloudfront.net/files/1580aa8b7ecc41ab8450/mmp_v2_with_cover-2.png" style="height: 100px" alt="Mastering Modern Payments" />
+        </a>
+      </div>
     </div>
-    <div class="col-sm-4">
-      <a href="https://gumroad.com/l/MbhM"><img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/75a39af1203263b44494/globe.jpg"></a>
-      <a href="https://gumroad.com/l/MbhM" class="btn btn-success" style="width: 100%">I Dig DNS ($9)</a>
+    <div class="span4" style="margin-left: 1em; margin-top: 1em">
+      My book <strong><em><a href="https://www.masteringmodernpayments.com">Mastering Modern Payments</a></em></strong> is out now!<br>
+      Integrate Stripe into your Rails app in no time flat. Payments, subscriptions, marketplaces, and
+      more than 100 examples.
     </div>
   </div>
-</div>
