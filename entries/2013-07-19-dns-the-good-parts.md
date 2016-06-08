@@ -4,7 +4,7 @@ id: dnstgp
 tags: DNS
 topic: DNS
 description: Dig through the DNS and learn how and why it all works.
-show_upsell: false
+show_upsell: true
 ---
 
 Frequently I come across confusion with domain names. *Why doesn't my website work? Why is this stupid thing broken, everything I try fails, I just want it to work!!* Invariably the question asker either doesn't know what DNS is or doesn't understand how something fundamental works. More generally, people think that DNS is scary or complicated. This article is an attempt at quelling that fear. *DNS is easy* once you understand a few basic concepts.
@@ -279,17 +279,3 @@ There are a few more interesting RFCs as well, including [4034](http://www.ietf.
 
 *This article is featured in [Hacker Monthly issue 42](http://hackermonthly.com/issue-42.html).*
 
-  <div class="row" id="upsell" style="margin-left: 0.1em;">
-    <div class="span3">
-      <div style="float: left; height: 100x; padding-top: 1em; padding-bottom: 1em; text-align: center; margin-right: 1.5em">
-        <a href="https://www.masteringmodernpayments.com">
-          <img src="https://d2s7foagexgnc2.cloudfront.net/files/1580aa8b7ecc41ab8450/mmp_v2_with_cover-2.png" style="height: 100px" alt="Mastering Modern Payments" />
-        </a>
-      </div>
-    </div>
-    <div class="span4" style="margin-left: 1em; margin-top: 1em">
-      My book <strong><em><a href="https://www.masteringmodernpayments.com">Mastering Modern Payments</a></em></strong> is out now!<br>
-      Integrate Stripe into your Rails app in no time flat. Payments, subscriptions, marketplaces, and
-      more than 100 examples.
-    </div>
-  </div>
