@@ -4,17 +4,12 @@ id: regis
 topic: DNS
 tags: DNS
 description: By hosting your DNS nameservers at your DNS registrar you are exposing yourself to a large liability.
+show_upsell: true
 ---
+
+*Note: This article references events that happened in December 2014.*
 
 Hopefully, by time you're reading this DNSimple will have recovered from their [DDoS-powered outage](http://dnsimplestatus.com). Today has probably been a terrible day for everybody over there and I'm sure they're ready for a break. While *you* can't do much to directly defend against DDoS attacks, **you *can* insure yourself against DNS outages**.
-
---fold--
-
----
-
-<a href="https://gumroad.com/l/MbhM">Buy the entire collection of DNS articles as a nicely formatted ebook.</a>
-
----
 
 If you're a DNSimple customer right now or a NameCheap customer several times earlier this year, you know what happens when your DNS service goes out. Your website is inaccessible, emails are probably bouncing, and so are customers and their wallets. It's all around bad news.
 
