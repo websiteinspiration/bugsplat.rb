@@ -34,7 +34,7 @@ I don't do guest posts on `petekeen.net`. If you have a code patch, email it to 
 
 ## License
 
-Copyright (c) Okapi, LLC
+Copyright (c) Cora Street Press LLC
 
 Code (everything in a `.rb` file): MIT
 
