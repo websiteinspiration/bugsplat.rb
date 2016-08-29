@@ -48,11 +48,11 @@ As you can see, this follows the same basic format as the SPF record. It contain
 
 ## DMARC
 
-The third technology that helps to ensure delivery is named [*Domain-based Message Authetication, Reporting, and Conformance*](http://www.dmarc.org) (DMARC). DMARC acts as policy statement that declares what to do with emails that fail SPF, DKIM, or both. There are a few different modes that you can use with DMARC, but the most basic one is to receive reports from receiving email servers on pass or fail status. Here's what the DMARC record for `petekeen.net` looks like:
+The third technology that helps to ensure delivery is named [*Domain-based Message Authetication, Reporting, and Conformance*](http://www.dmarc.org) (DMARC). DMARC acts as policy statement that declares what to do with emails that fail SPF, DKIM, or both. There are a few different modes that you can use with DMARC, but the most basic one is to receive reports from receiving email servers on pass or fail status. Here's what the DMARC record for `petekeen.net` looks like (but see the next section on how to get your own):
 
 ```bash
 $ dig +short _dmarc.petekeen.net txt
-"v=DMARC1\; p=none\; pct=100\; rua=mailto:re+eVFEGLQ0Ld8@dmarc.postmarkapp.com\; sp=none\; aspf=r\;"
+"v=DMARC1\; p=none\; pct=100\; rua=mailto:re+POSTMARK_KEY@dmarc.postmarkapp.com\; sp=none\; aspf=r\;"
 ```
 
 The [full standard](https://datatracker.ietf.org/doc/draft-kucherawy-dmarc-base/?include_text=1) goes into what all of these parts mean, but you can interpret this as: report all SPF and DKIM errors to the email address in the `rua` param but continue to accept them.
