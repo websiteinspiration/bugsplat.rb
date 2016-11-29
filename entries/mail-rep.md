@@ -66,11 +66,9 @@ Hi, I'm [Pete Keen](https://www.petekeen.net), a software developer and email de
 
 ## How much does this cost?
 
-Glad you asked! Mail Rep is a one-time purchase of $500.
+Glad you asked! Mail Rep is a one-time purchase of $750.
 
 Once you've filled out the intake form I'll spend as much time as it takes setting up your initial deliverability records, we'll collect data for a week, and then I'll crunch all of that down into refinements and questions about senders you might have missed. We'll refine your setup one more time and make it just right.
-
-At the end of the process, if you're at all unhappy with Mail Rep I will provide you with a **full refund**. I stake my business on improving the world and making people happy, and that includes standing behind the work I do.
 
 **Boost your email deliverability with Mail Rep. Move the needle for your business.**
 
