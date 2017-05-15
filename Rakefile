@@ -94,7 +94,7 @@ namespace :assets do
     FileUtils.mkdir_p(File.join(dirname, "public", "stylesheets"))
     FileUtils.mkdir_p(File.join(dirname, "public", "javascripts"))
 
-    Rake::Task['sitemap_generator:refresh'].invoke
+    Rake::Task['sitemap:refresh'].invoke
   end
 end
 
