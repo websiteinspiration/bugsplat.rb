@@ -39,7 +39,7 @@ It's also a manager-managed LLC, where I'm the manager and my wife is the backup
 Cora functioned well for half of 2016 and into 2017 when book sales started to finally slow down and overhead started becoming a big deal. It doesn't cost
 a lot of money to run an S-corp but it's definitely not free. Those costs quickly became a big portion of Cora's revenue.
 
-## Cora Has a Child
+## Cora Adopts a Child
 
 Cora and Okapi are both S-corps so my initial thought was to just drop Cora's S-corp status to eliminate some overhead, but there are hard deadlines for that set by the IRS. You can't just elect and drop S-corp taxation willy nilly because that would a nifty way to cheat on taxes. It also wouldn't drop much
 overhead because we'd still have to have Cora's taxes prepared as a partnership.
