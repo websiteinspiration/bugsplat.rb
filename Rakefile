@@ -7,6 +7,7 @@ require 'sinatra/asset_pipeline/task.rb'
 require 'asset_sync'
 require 'dotenv/tasks'
 require 'fileutils'
+require 'sitemap_generator/tasks'
 
 $:.unshift(File.dirname(__FILE__))
 require 'app'
@@ -93,41 +94,7 @@ namespace :assets do
     FileUtils.mkdir_p(File.join(dirname, "public", "stylesheets"))
     FileUtils.mkdir_p(File.join(dirname, "public", "javascripts"))
 
-#     STDERR.puts "Compiling pages"
-#     app = App.new
-#     request = Rack::MockRequest.new(app)
-
-#     tags = {}
-#     topics = {}
-
-#     App::PAGES.each do |page|
-#       page.tags.each do |tag|
-#         tags[tag] = true
-#       end
-
-#       topics[page.topic] = true
-#       html_name = "#{page.name}/index.html"
-
-#       if should_build?(page, html_name)
-#         write_page("#{page.name}.html", request, html_name)
-# #        write_page("#{page.name}.pdf", request)
-#         write_page("#{page.name}.md", request)
-#       end
-#     end
-
-#     ['sitemap.xml', 'index.xml', 'index.html', 'tags.html', 'articles.html', 'archive.html', 'mastering-modern-payments.html'].each do |page|
-#       write_page(page, request)
-#     end
-
-#     tags.keys.compact.each do |tag|
-#       write_page("/tag/#{tag}/index.html", request)
-#     end
-
-#     topics.keys.compact.each do |topic|
-#       write_page("/topic/#{topic}/index.html", request)
-#     end
-
-#     FileUtils.cp_r(File.join(File.dirname(__FILE__), 'public', 'assets'), File.join(File.dirname(__FILE__), '_build/'))
+    Rake::Task['sitemap_generator:refresh'].invoke
   end
 end
 
@@ -231,3 +198,4 @@ task :topicless do
     puts "entries/" + page.original_filename
   end
 end
+

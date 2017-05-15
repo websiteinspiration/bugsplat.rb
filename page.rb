@@ -95,6 +95,10 @@ class Pages
     @pages_by_topic.keys.sort
   end
 
+  def tags
+    @pages_by_tag.keys.sort
+  end
+
   def for_topic(topic)
     @pages_by_topic[topic].sort { |a,b| b.date <=> a.date }
   end

@@ -25,6 +25,7 @@ task :prod do
   role :web, "web02.zrail.net"
   set :base_port, 6700
   set :use_ssl, true
+  set :force_ssl, true
   set :ssl_cert_path, '/etc/nginx/certs/www.petekeen.net.crt'
   set :ssl_key_path, '/etc/nginx/certs/www.petekeen.net.key'
 

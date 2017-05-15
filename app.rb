@@ -6,7 +6,6 @@ require './strip_renderer'
 require 'atom/pub'
 require 'docverter'
 require 'sinatra/asset_pipeline'
-require 'xml-sitemap'
 require 'sinatra/cookies'
 require 'gibbon'
 require './cookie_adapter'
@@ -108,16 +107,6 @@ class App < Sinatra::Base
     @index_pages = @pages.blog_posts.sort_by(&:date).reverse[0,4]
     @description = "My name is Pete Keen. I'm a Ruby developer and in my spare time I write books."
     erb :index
-  end
-
-  get '/sitemap.xml' do
-    map = XmlSitemap::Map.new('www.petekeen.net') do |m|
-      @pages.pages.each do |page|
-        m.add page.html_path, :period => :daily
-      end
-    end
-    content_type 'application/xml'
-    map.render
   end
 
   get '/index.html' do
