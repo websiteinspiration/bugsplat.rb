@@ -5,18 +5,9 @@ order: '3'
 alternate_links: ledger
 ---
 
-<div class="well">
-  <div class="row">
-    <div class="col-sm-8">
-      <p>Run a <strong>freelancing</strong> or <strong>consulting</strong> business? My new book <strong><em><a href="/handle-your-business">Handle Your Business</a></em></strong> will show you how to make it better. From banking to invoicing to taxes to retirement options, <strong>learn everything you didn't know you need to know.</strong></p>
-    </div>
-    <div class="col-sm-4">
-      <a href="/handle-your-business"><img style="height: 200px" src="https://d2s7foagexgnc2.cloudfront.net/files/d4de5b4d661c825d65d3/hyb_cover_3d_no_shadow.png"></a>
-    </div>
-  </div>
-</div>
-
 Over the past few years I've written a number of posts about [Ledger](http://www.ledger-cli.org), a command-line accounting system. In a nutshell, when using Ledger you keep your financial records in a plain text file and then run reports using the `ledger` command line program.
+
+<a href="https://track.flexlinkspro.com/a.ashx?foid=1103501.2025983&foc=2&fot=9999&fos=1" rel="nofollow" target="_blank" alt="Leaderboard" title="All your accounts, Benefits-0015" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/2025983/1424472.gif" style="max-width: 100%;" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1103501.2025983&fot=9999&foc=2&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
 
 #### [Program your Finances: Command-line Accounting](/keeping-finances-with-ledger)
 
