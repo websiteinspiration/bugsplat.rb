@@ -17,6 +17,8 @@ Thus, I present [Ledger Web](https://github.com/peterkeen/ledger-web). In Ledger
 
 --fold--
 
+<a href="https://track.flexlinkspro.com/a.ashx?foid=1103501.2025983&foc=2&fot=9999&fos=1" rel="nofollow" target="_blank" alt="Leaderboard" title="All your accounts, Benefits-0015" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/2025983/1424472.gif" style="max-width: 100%;" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1103501.2025983&fot=9999&foc=2&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
+
 ### Installation
 
 Ledger Web installation is pretty simple. First make sure you have PostgreSQL version 9.0 or greater installed on your machine. Then, run these commands:
@@ -107,3 +109,7 @@ The only thing new that this does is use the `expect` helper to ensure that `acc
 Both of these reports, as well as a few others, can be found in [my Ledger Web configuration](https://github.com/peterkeen/ledger-web-config). My config also shows off some of the more advanced customizations you can do.
 
 The [README](https://github.com/peterkeen/ledger-web) goes into much more detail on how the helpers work and the various config settings work. Please, install it and let me know what you think!
+
+---
+
+If you're looking something that does some of this for you automatically, check out <a href="https://track.flexlinkspro.com/a.ashx?foid=1103501.2107475&foc=1&fot=9999&fos=1" rel="nofollow" target="_blank" >Personal Capital</a>. I use it along side my ledger files to help me track investments across all of my accounts, as well as help plan my retirement.
