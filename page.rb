@@ -40,7 +40,9 @@ class Pages
   def parse_all
     @pages = find_all_files.map do |page|
       next if File.basename(page).start_with?('_')
-      Page.new(page, @renderer)
+      pg = Page.new(page, @renderer)
+      next if pg.headers['draft'] && ENV['RACK_ENV'] == 'production'
+      pg
     end.compact
 
     @pages.each do |page|
@@ -100,7 +102,7 @@ class Pages
   end
 
   def for_topic(topic)
-    @pages_by_topic[topic].sort { |a,b| b.date <=> a.date }
+    @pages_by_topic[topic].sort
   end
 
   def tag_frequencies
@@ -270,7 +272,13 @@ class Page
       end
     elsif @headers['date']
       Time.strptime(@headers['date'], SHORT_DATE_FORMAT)
+    else
+      Date.today
     end
+  end
+
+  def <=>(other)
+    self.date <=> other.date
   end
 
   def reading_time
@@ -300,7 +308,7 @@ class Page
   def pdf_path
     "/#{@name}.pdf"
   end
-
+p
   def markdown_path
     "/#{@name}.md"
   end

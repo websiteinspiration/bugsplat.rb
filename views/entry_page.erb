@@ -16,7 +16,14 @@
     </div>
   </div>
   <% end %>  
-  <h1><a href="<%= @page.html_path %>"><%= @page['title'] %></a></h1>
+  <h1>
+    <a href="<%= @page.html_path %>">
+      <% if @page['draft'] %>
+        DRAFT DRAFT DRAFT
+      <% end %>
+      <%= @page['title'] %>
+    </a>
+  </h1>
   <% if @page.is_blog_post? %>
   <div class="top-metadata">
     <p class="date pull-right" style="text-align: right">
