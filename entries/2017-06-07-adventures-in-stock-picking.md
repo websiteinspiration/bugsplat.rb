@@ -81,7 +81,7 @@ sleep deprivation. It's just a thing. I made some bad sleep-deprived calls and i
 were actually terrible. My one saving grace was that I was smart enough to not risk much in these little 
 jaunts but it still stung.
 
-After getting burned I froze up and didn't know what to do I stopped investing new money at all. Cash just built
+After getting burned I froze up and didn't know what to do. I stopped investing new money at all. Cash just built
 up in my brokerage account not earning anything.
 
 ## Until finally
