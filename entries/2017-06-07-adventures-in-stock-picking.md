@@ -111,4 +111,7 @@ read more about the company in the link above and [this article](https://www.jos
 
 I did pretty well. When I sold off my individual holdings I realized about 13% profit, including several
 positions that did over 40%. For a period of time I was beating the S&P 500 by several percentage points but I ended up only about 
-a half point better. Definitely not worth the effort, anxiety, and analysis paralysis, at least to me.
+a half point better. Definitely not worth the effort and anxiety, at least to me. My time is better spent
+with my daughter or working on or in my business. Selling your own products will almost always have a better
+return than the market anyway.
+
