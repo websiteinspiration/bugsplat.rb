@@ -15,6 +15,8 @@ experiment.
 
 --fold--
 
+<a href="https://d2s7foagexgnc2.cloudfront.net/files/f8ca9831fc1be3388c09/register.png"><img class="thumbnail" src="https://d2s7foagexgnc2.cloudfront.net/files/c33219c7fa541dda453e/register_small.png"></a>
+
 ## Once upon a time
 
 Way back in middle school my Scoutmaster was a stock broker. He ran his brokerage out of a small office
@@ -115,3 +117,6 @@ a half point better. Definitely not worth the effort and anxiety, at least to me
 with my daughter or working on or in my business. Selling your own products will almost always have a better
 return than the market anyway.
 
+---
+
+If you're looking for something to help you track your investments, check out <a href="https://track.flexlinkspro.com/a.ashx?foid=1103501.2107475&foc=1&fot=9999&fos=1" rel="nofollow" target="_blank" >Personal Capital</a>. It lets you see all of your accounts in one place and plan for your retirement.
