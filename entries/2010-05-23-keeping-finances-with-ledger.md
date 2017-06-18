@@ -21,8 +21,6 @@ Ledger is almost the most boring, austere accounting program you could think of.
 
 --fold--
 
-<a href="https://track.flexlinkspro.com/a.ashx?foid=1103501.2025983&foc=2&fot=9999&fos=1" rel="nofollow" target="_blank" alt="Leaderboard" title="All your accounts, Benefits-0015" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/2025983/1424472.gif" style="max-width: 100%;" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1103501.2025983&fot=9999&foc=2&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
-
 The basic idea is that you write down all of your financial transactions in a text file with an easy-to-master syntax and then run the `ledger` command on them to generate reports. Here's a simplified extract from my ledger file:
 
 ```text
@@ -142,3 +140,4 @@ With more data, this lets you easily compare month-to-month where you are spendi
 
 If you want to pull your financial life together but don't want to spend money on something like Quicken or trust Mint with your account credentials, I highly encourage you to try out ledger in addition to the other open source solutions like gnucash. On the other hand, if you're looking something that does all this for you automatically, check out <a href="https://track.flexlinkspro.com/a.ashx?foid=1103501.2107475&foc=1&fot=9999&fos=1" rel="nofollow" target="_blank" >Personal Capital</a>. I use it along side my ledger files to help me track investments across all of my accounts, as well as help plan my retirement.
 
+<img src="https://track.flexlinkspro.com/i.ashx?foid=1103501.2107475&fot=9999&foc=1&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>

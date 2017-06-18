@@ -110,6 +110,6 @@ Both of these reports, as well as a few others, can be found in [my Ledger Web c
 
 The [README](https://github.com/peterkeen/ledger-web) goes into much more detail on how the helpers work and the various config settings work. Please, install it and let me know what you think!
 
----
-
 If you're looking something that does some of this for you automatically, check out <a href="https://track.flexlinkspro.com/a.ashx?foid=1103501.2107475&foc=1&fot=9999&fos=1" rel="nofollow" target="_blank" >Personal Capital</a>. I use it along side my ledger files to help me track investments across all of my accounts, as well as help plan my retirement.
+
+<img src="https://track.flexlinkspro.com/i.ashx?foid=1103501.2107475&fot=9999&foc=1&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>

@@ -32,8 +32,6 @@ Last year I wrote what ended up being the most popular article on this blog ever
 
 --fold--
 
-<a href="https://track.flexlinkspro.com/a.ashx?foid=1103501.2025983&foc=2&fot=9999&fos=1" rel="nofollow" target="_blank" alt="Leaderboard" title="All your accounts, Benefits-0015" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/2025983/1424472.gif" style="max-width: 100%;" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1103501.2025983&fot=9999&foc=2&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
-
 ### Stan the Example Man
 
 Talking about personal finances is kind of a tricky thing. If you want to give anything more than a cursory treatment of the subject you have to have some data but the closest source of data to hand is always your own. [Some][getrichslowly] [people][consumerismcommentary] have decided to talk publicly about their data but I'm not quite ready to to that. Instead, I've written a [little python tool][ledger-tools-generate] to generate a plausible but random history when given a simple json config file. Here's a super simple example: 
@@ -150,3 +148,8 @@ The only drawback right now is that the postgres/python setup can't handle diffe
 With this setup, I'm able to keep my financial data in a simple, easy to use format and retain the ability to do quick checks on it using `ledger`. In addition, I can do compilcated queries that would get extremely nasty in straight ledger. It's really the best of both worlds. I've put the tools on [GitHub][ledger-tools] if you want to check them out and maybe install them and try them out.
 
 
+---
+
+If you're looking something that does some of this for you automatically, check out <a href="https://track.flexlinkspro.com/a.ashx?foid=1103501.2107475&foc=1&fot=9999&fos=1" rel="nofollow" target="_blank" >Personal Capital</a>. I use it along side my ledger files to help me track investments across all of my accounts, as well as help plan my retirement.
+
+<img src="https://track.flexlinkspro.com/i.ashx?foid=1103501.2107475&fot=9999&foc=1&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
