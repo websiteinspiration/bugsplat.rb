@@ -120,5 +120,3 @@ return than the market anyway.
 ---
 
 If you're looking for something to help you track your investments, check out <a href="https://track.flexlinkspro.com/a.ashx?foid=1103501.2107475&foc=1&fot=9999&fos=1" rel="nofollow" target="_blank" >Personal Capital</a>. It lets you see all of your accounts in one place and plan for your retirement.
-
-<img src="https://track.flexlinkspro.com/i.ashx?foid=1103501.2107475&fot=9999&foc=1&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
