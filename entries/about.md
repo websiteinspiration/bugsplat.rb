@@ -11,7 +11,7 @@ id: a
 * <i class="fa fa-twitter"></i> Twitter: [@zrail](http://twitter.com/zrail)
 * <i class="fa fa-github"></i> Github: [peterkeen](https://github.com/peterkeen)
 * <i class="fa fa-linkedin"></i> LinkedIn: [peterkeen](http://www.linkedin.com/in/peterkeen)
-* <i class="fa fa-phone"></i> Phone: (503) 766-5711
+* <i class="fa fa-phone"></i> Phone: (734) 357-8193 
 
 ### Colophon
 
