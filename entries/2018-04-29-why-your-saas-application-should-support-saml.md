@@ -3,6 +3,7 @@ title: Why your SaaS application should support SAML
 id:    eb452
 tags:  Business, Programming
 topic: Software
+description: Because large enterprise customers will pay you more for it
 ---
 
 Your SaaS application should support SAML (Security Assertion Markup Language) if you're at all interested in big fat contracts from large enterprise customers. And why is that?
