@@ -1,6 +1,7 @@
 ---
 title: ASCAP for Open Source Software
 id: ascap
+description: 'What if open source software had an organization like ASCAP for distributing royalties?'
 ---
 
 Mike Perham tweeted earlier today:
