@@ -34,7 +34,7 @@ I don't do guest posts on `petekeen.net`. If you have a code patch, email it to 
 
 ## License
 
-Copyright (c) Cora Street Press LLC
+Copyright (c) Pete Keen
 
 Code (everything in a `.rb` file): MIT
 
@@ -44,5 +44,3 @@ Content (everything else):  All rights reserved
 [Capistrano::Buildpack]: https://www.petekeen.net/projects/capistrano-buildpack
 [Docverter]: http://www.docverter.com
 
-
-Test issue linking #1
