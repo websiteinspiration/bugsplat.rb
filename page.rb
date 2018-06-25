@@ -278,7 +278,11 @@ class Page
   end
 
   def <=>(other)
-    self.date <=> other.date
+    if self.date && other.date
+      self.date <=> other.date
+    else
+      self.title <=> other.title
+    end
   end
 
   def reading_time

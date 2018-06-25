@@ -11,15 +11,15 @@
 <h2>Recent Articles</h2>
 <ul class="article-list">
 <% @index_pages.each do |page| %>
-  <li><a href="<%= page.html_path %>"><%= page['title'] %></a> <small><%= page.short_date %></small></li>
+  <li><a href="<%= page.html_path %>"><%= page['title'] %></a></small></li>
 <% end %>
 </ul>
 
 <h2>Featured Articles</h2>
 <ul class="article-list">
-  <li><a href="/dns-the-good-parts">DNS: The Good Parts</a> <small>19 July 2013</small></li>
-  <li><a href="/keeping-finances-with-ledger">Program your Finances: Command Line Accounting</a> <small>23 May 2010</small></li>
-  <li><a href="/how-i-run-my-own-dns">How I run my own DNS servers</a> (<a href="/how-and-why-im-not-running-my-own-dns">Updated</a>) <small>31 December 2012</small></li>
-  <li><a href="/introduction-to-heroku-buildpacks">Run Anything on Heroku with Custom Buildpacks</a> <small>5 November 2012</small></li>
-  <li><a href="/git-backed-personal-markdown-wiki">Distributed Personal Wiki</a> <small>10 May 2013</small></li>
+  <li><a href="/dns-the-good-parts">DNS: The Good Parts</a></li>
+  <li><a href="/keeping-finances-with-ledger">Program your Finances: Command Line Accounting</a></li>
+  <li><a href="/how-i-run-my-own-dns">How I run my own DNS servers</a> (<a href="/how-and-why-im-not-running-my-own-dns">Updated</a>)</li>
+  <li><a href="/introduction-to-heroku-buildpacks">Run Anything on Heroku with Custom Buildpacks</a></li>
+  <li><a href="/git-backed-personal-markdown-wiki">Distributed Personal Wiki</a></li>
 </ul>

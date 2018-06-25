@@ -43,9 +43,6 @@
   <% unless @skip_masthead || @page.headers['skip_metadata'] %>
   <div id="tags-and-formats">
     <p class="date">
-      <% if @page.date %>
-        <%= @page.short_date %>&nbsp;&nbsp;
-      <% end %>
       <% if @page.is_blog_post? %>
         Share:&nbsp;
         <%= render :erb, :share_links, layout: false %>
@@ -68,7 +65,7 @@
       <h4>Related Posts</h4>
       <ul class="archive-list">
         <% related_posts(@page).each do |page| %>
-          <li><span class="date fixed-width"><%= page.date.strftime('%Y-%m-%d') %> &raquo;</span> <a href="<%= page.html_path %>"><%= page['title'] %></a></li>      
+          <li><span class="date fixed-width"><a href="<%= page.html_path %>"><%= page['title'] %></a></li>      
         <% end %>
       </ul>
     <% end %>
