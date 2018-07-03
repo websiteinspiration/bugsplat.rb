@@ -8,11 +8,20 @@ pdf_template: resume_pdf
 
 ### Experience
 
+#### Software Developer, 2014 - Current ####
+
+[egghead.io](https://egghead.io/)
+
+* In charge of the Rails backend application
+* Built and maintain the payments integration that processes millions of dollars a year for egghead
+* Integrated SAML for our enterprise customers
+* Work with a small team of junior developers on building and maintaining the backend application
+
 #### Software Consultant, 2014 - Current ####
 
 [Okapi](http://www.okapi.io), Ann Arbor, MI
 
-* Wrote an extensive test suite for a large Stripe / Rails integration
+* Part-time CTO for a small software development shop specializing in government training software
 * Consulted on a Docker deployment project
 * Assisted getting a PHP application up and running on three different PaaS hosts
 
