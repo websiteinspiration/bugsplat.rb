@@ -6,7 +6,7 @@ description: "I made VMSave in 2015 to help people process their grief. Yesterda
 
 [VMSave](https://vmsave.petekeen.net) has made over 10,000 total calls as of yesterday.
 That's an astounding number to me.
-Originally VMSave was a tiny ruby script that I made to save my wife's mom's outgoing voicemail message. With her encouragement I made it into a full-fledged service. I never thought it woudl get this big, and yet here we are.
+Originally VMSave was a tiny ruby script that I made to save my wife's mom's outgoing voicemail message. With her encouragement I made it into a full-fledged service. I never thought it would get this big, and yet here we are.
 
 Here's some stats:
 
