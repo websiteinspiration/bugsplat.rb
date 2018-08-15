@@ -26,10 +26,7 @@
   </h1>
   <% if @page.is_blog_post? %>
   <div class="top-metadata">
-    <p class="date pull-right" style="text-align: right">
-      Share: <%= render :erb, :share_links, layout: false %>
-    </p>
-    <p class="date"><%= @page.reading_time %> min read &mdash; Get free updates of new posts <a href="/newsletter?topic=<%= @page.topic %>">here</a></p>
+    <p class="date"><%= @page.reading_time %> min read</p>
     <p class="date">
     </p>
   </div>
@@ -37,18 +34,8 @@
   <% end %>
   <%= @page.render(nil, @app) %>
 
-  <% if @page.show_byline? %>
-    <%= partial :byline, topic: @page.topic %>
-  <% end %>
   <% unless @skip_masthead || @page.headers['skip_metadata'] %>
   <div id="tags-and-formats">
-    <p class="date">
-      <% if @page.is_blog_post? %>
-        Share:&nbsp;
-        <%= render :erb, :share_links, layout: false %>
-      <% end %>
-      &nbsp;
-    </p>
     <p class="date">
       <% if @page.topic %>
         Posted in: <a href="/topic/<%= @page.topic %>"><%= @page.topic %></a>&nbsp;&nbsp;
