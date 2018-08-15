@@ -1,7 +1,7 @@
 ---
 title: VMSave has made over 10,000 calls
 id: vm10k
-description: 'I made VMSave in 2015 to help people process their grief. Yesterday it made it's 10,000th call.'
+description: "I made VMSave in 2015 to help people process their grief. Yesterday it made it's 10,000th call."
 ---
 
 [VMSave](https://vmsave.petekeen.net) has made over 10,000 total calls as of yesterday.
