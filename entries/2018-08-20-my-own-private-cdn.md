@@ -1,5 +1,5 @@
 ---
-subject: My Own Private CDN
+title: My Own Private CDN
 id: cdn1
 tags: Programming
 topic: Software
