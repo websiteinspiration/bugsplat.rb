@@ -13,12 +13,15 @@ set :concurrency, "web=1"
 load 'deploy'
 
 task :stage do
-  role :web, 'subspace.zrail.net'
-  set :base_port, 8300
+  role :web, 'kodos.zrail.net'
+  set :base_port, 6700
   set :additional_domains, %w(
     stage.petekeen.net
   )
   read_env 'stage'
+
+  set :foreman_export_path, "/lib/systemd/system"
+  set :foreman_export_type, "systemd"  
 end
 
 task :prod do
