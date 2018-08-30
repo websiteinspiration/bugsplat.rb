@@ -43,3 +43,7 @@ If I write my own management system I can actually learn how the guts work.
 
 If you'd like to follow along I put the project up on [GitHub](https://github.com/peterkeen/diycdn).
 I'll also be posting updates here as I go.
+
+<hr>
+
+Want more stuff like this? [Sign up for my mailing list](https://www.petekeen.net/newsletter). I post everything there a week before I post it here.

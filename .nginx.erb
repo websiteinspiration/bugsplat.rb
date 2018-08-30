@@ -43,6 +43,7 @@ rewrite ^/essays /articles permanent;
 rewrite ^/invoice https://www.dwolla.com/hub/okapi;
 rewrite ^/smllc-agreement http://www.northwestregisteredagent.com/single-member-llc-operating-agreement.html;
 rewrite ^/ppass https://d2s7foagexgnc2.cloudfront.net/files/f878ae3de431385265ca/ParkingPass.pdf;
+rewrite ^/newsletter https://www.getdrip.com/forms/5347893/submissions/new;
 
 if ( $host != '<%= ENV['APPLICATION_DOMAIN'] %>' ) {
   rewrite ^(.*)$ <%= application_base_url %>$request_uri? permanent;
