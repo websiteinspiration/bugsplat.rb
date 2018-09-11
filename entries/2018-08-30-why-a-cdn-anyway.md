@@ -3,7 +3,6 @@ title: What is a CDN and why do I need one?
 id: cdn2
 tags: Programming
 topic: Software
-draft: true
 description: A content delivery networks (CDN) speeds up your content delivery over the network. Simple!
 ---
 
