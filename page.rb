@@ -4,12 +4,12 @@ require 'rubygems'
 require 'redcarpet'
 require 'date'
 require 'redcarpet'
-require 'pygments'
+require 'rouge'
+require 'rouge/plugins/redcarpet'
 
-class HTMLwithPygments < Redcarpet::Render::HTML
-  def block_code(code, language)
-    Pygments.highlight(code, :lexer => language)
-  end
+
+class HTMLwithRouge < Redcarpet::Render::HTML
+  include Rouge::Plugins::Redcarpet # yep, that's it.
 
   def postprocess(document)
     document.gsub('&#39;', "'")
@@ -34,7 +34,7 @@ class Pages
 
   def setup_renderer
     @renderer = Redcarpet::Markdown.new(
-      HTMLwithPygments, :fenced_code_blocks => true)
+      HTMLwithRouge, :fenced_code_blocks => true)
   end
 
   def parse_all

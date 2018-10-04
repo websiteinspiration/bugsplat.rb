@@ -12,39 +12,29 @@ set :concurrency, "web=1"
 
 load 'deploy'
 
-task :stage do
-  role :web, 'kodos.zrail.net'
-  set :base_port, 6700
-  set :additional_domains, %w(
-    stage.petekeen.net
-  )
-  read_env 'stage'
+role :web, "kodos.zrail.net"
+set :base_port, 6700
+set :use_ssl, true
+set :force_ssl, true
 
-  set :foreman_export_path, "/lib/systemd/system"
-  set :foreman_export_type, "systemd"  
-end
+set :ssl_cert_path, '/etc/nginx/certificates/site-6/fullchain.pem'
+set :ssl_key_path, '/etc/nginx/certificates/site-6/privkey.pem'
 
-task :prod do
-  role :web, "web02.zrail.net"
-  set :base_port, 6700
-  set :use_ssl, true
-  set :force_ssl, true
-  set :ssl_cert_path, '/etc/nginx/certs/www.petekeen.net.crt'
-  set :ssl_key_path, '/etc/nginx/certs/www.petekeen.net.key'
+set :foreman_export_path, "/lib/systemd/system"
+set :foreman_export_type, "systemd"  
 
-  set :additional_domains, %w(
-    www.petekeen.net
-    petekeen.net
-    bugsplat.info
-    www.bugsplat.info
-    www.petekeen.com
-    petekeen.com
-    peterkeen.com
-    www.peterkeen.com
-    petekeen.org
-    www.petekeen.org
-    pkn.me
-  )
+set :additional_domains, %w(
+  www.petekeen.net
+  petekeen.net
+  bugsplat.info
+  www.bugsplat.info
+  www.petekeen.com
+  petekeen.com
+  peterkeen.com
+  www.peterkeen.com
+  petekeen.org
+  www.petekeen.org
+  pkn.me
+)
 
-  read_env 'prod'
-end
+read_env 'prod'

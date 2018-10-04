@@ -3,15 +3,14 @@ require 'rubygems'
 require 'sinatra/base'
 require './page'
 require './strip_renderer'
-require 'atom/pub'
 require 'docverter'
 require 'sinatra/asset_pipeline'
 require 'sinatra/cookies'
-require 'gibbon'
 require './cookie_adapter'
 require 'pony'
 require 'lru_redux'
 require 'time-lord'
+require 'rss'
 
 class App < Sinatra::Base
   PAGES = Pages.new
@@ -117,24 +116,25 @@ class App < Sinatra::Base
 
   get '/index.xml' do
     @archive_pages = @pages.blog_posts.sort_by(&:date).reverse
-    feed = Atom::Feed.new do |f|
-      f.title = 'Pete Keen'
-      f.links << Atom::Link.new(:href => 'http://www.petekeen.net')
-      f.updated = @archive_pages[0].date.to_time
-      f.authors << Atom::Person.new(:name => 'Pete Keen', :email => 'pete@bugsplat.info')
+    feed = RSS::Maker.make('atom') do |maker|
+      maker.channel.title = 'Pete Keen'
+      maker.channel.about = 'http://www.petekeen.net'
+      maker.channel.updated = @archive_pages[0].date.to_time
+      maker.channel.author = 'Pete Keen'
+      maker.channel.id = 'abc'
   
       @archive_pages.each do |p|
-        f.entries << Atom::Entry.new do |e|
-          e.title = p['title']
-          e.links << Atom::Link.new(:href => "http://www.petekeen.net#{ p.html_path }")
-          e.id = p['id']
-          e.updated = p.date.to_time
-          e.content = Atom::Content::Html.new(p.render)
+        maker.items.new_item do |item|
+          item.title = p['title']
+          item.link = "http://www.petekeen.net#{ p.html_path }"
+          item.id = p['id']
+          item.updated = p.date.to_time
+          item.content.content = p.render
         end
       end
     end
     content_type 'application/atom+xml'
-    feed.to_xml
+    feed.to_s
   end
 
   get %r{^/archive(\.html)?$} do
@@ -261,27 +261,6 @@ class App < Sinatra::Base
 
     content_type 'application/pdf'
     res
-  end
-
-  post '/subscribe' do
-    email = params[:email]
-    gb = Gibbon::API.new
-    begin
-      gb.lists.subscribe({
-        id:           params[:list_id] || ENV['MAILCHIMP_LIST_ID'],
-        email:        {:email => email},
-        double_optin: false,
-        merge_vars: {
-          FNAME:  params[:name],
-          COURSE: params[:course],
-          TOPIC:  params[:topic],
-          TWNAME: params[:screenname]
-        }
-      })
-    rescue StandardError => e
-      return e.message
-    end
-    redirect params[:next]
   end
 
   post '/consulting-form' do

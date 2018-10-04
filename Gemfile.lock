@@ -16,7 +16,7 @@ GEM
     asset_sync (1.0.0)
       activemodel
       fog (>= 1.8.0)
-    backports (3.3.3)
+    backports (3.11.4)
     builder (3.0.4)
     capistrano (2.12.0)
       highline
@@ -32,7 +32,6 @@ GEM
     docverter (0.0.7)
       rest-client (~> 1.6.7)
     dotenv (0.9.0)
-    eventmachine (1.0.3)
     excon (0.28.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -50,26 +49,17 @@ GEM
       term-ansicolor (~> 1.0.5)
       thor (>= 0.13.6)
     formatador (0.2.4)
-    gibbon (1.1.1)
-      httparty
-      multi_json (>= 1.3.4)
     highline (1.6.20)
     hike (1.2.3)
-    httparty (0.12.0)
-      json (~> 1.8)
-      multi_xml (>= 0.5.2)
     i18n (0.6.5)
-    json (1.8.1)
-    kgio (2.7.4)
-    libv8 (3.16.14.7)
-    libxml-ruby (2.6.0)
+    libv8 (3.16.14.19)
     lru_redux (0.8.1)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.19)
+    mini_portile2 (2.3.0)
     multi_json (1.8.2)
-    multi_xml (0.5.5)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -77,36 +67,32 @@ GEM
     net-ssh (2.7.0)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
-    nokogiri (1.5.6)
+    nokogiri (1.8.4)
+      mini_portile2 (~> 2.3.0)
     polyglot (0.3.4)
     pony (1.8)
       mail (>= 2.0)
-    posix-spawn (0.3.6)
-    pygments.rb (0.4.2)
-      posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.1.0)
-    rack (1.5.2)
-    rack-protection (1.1.4)
+    puma (3.12.0)
+    rack (1.6.10)
+    rack-protection (1.5.5)
       rack
-    rack-test (0.6.2)
-      rack (>= 1.0)
-    raindrops (0.10.0)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
     rake (0.9.2.2)
-    ratom (0.8.2)
-      libxml-ruby (~> 2.6.0)
     redcarpet (2.0.1)
-    ref (1.0.5)
+    ref (2.0.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
+    rouge (3.3.0)
     ruby-hmac (0.4.0)
     rugged (0.19.0)
     sass (3.2.12)
     shotgun (0.9)
       rack (>= 1.0)
-    sinatra (1.3.1)
-      rack (~> 1.3, >= 1.3.4)
-      rack-protection (~> 1.1, >= 1.1.2)
-      tilt (~> 1.3, >= 1.3.3)
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
     sinatra-asset-pipeline (0.3.2)
       coffee-script
       rake
@@ -115,13 +101,13 @@ GEM
       sprockets
       sprockets-helpers
       sprockets-sass
-    sinatra-contrib (1.3.2)
+    sinatra-contrib (1.4.7)
       backports (>= 2.0)
-      eventmachine
+      multi_json
       rack-protection
       rack-test
-      sinatra (~> 1.3.0)
-      tilt (~> 1.3)
+      sinatra (~> 1.4.0)
+      tilt (>= 1.3, < 3)
     sitemap_generator (5.0.5)
       builder
     sprockets (2.10.0)
@@ -135,11 +121,11 @@ GEM
       sprockets (~> 2.0)
       tilt (~> 1.1)
     term-ansicolor (1.0.7)
-    therubyracer (0.12.2)
-      libv8 (~> 3.16.14.0)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
       ref
     thor (0.14.6)
-    tilt (1.3.3)
+    tilt (1.4.1)
     time-lord (1.0.1)
     treetop (1.4.15)
       polyglot
@@ -147,11 +133,6 @@ GEM
     uglifier (1.2.7)
       execjs (>= 0.3.0)
       multi_json (~> 1.3)
-    unicorn (4.5.0)
-      kgio (~> 2.6)
-      rack
-      raindrops (~> 0.7)
-    yajl-ruby (1.1.0)
     yui-compressor (0.12.0)
 
 PLATFORMS
@@ -165,15 +146,14 @@ DEPENDENCIES
   docverter (>= 0.0.7)
   dotenv
   foreman
-  gibbon (~> 1.1)
   lru_redux
   pony (~> 1.8)
-  pygments.rb
+  puma
   rack (>= 1.3.10)
   rack-funky-cache!
   rake
-  ratom
   redcarpet
+  rouge
   rugged (~> 0.19.0)
   shotgun
   sinatra
@@ -183,8 +163,7 @@ DEPENDENCIES
   therubyracer (>= 0.12.2)
   time-lord (~> 1.0)
   uglifier
-  unicorn
   yui-compressor
 
 BUNDLED WITH
-   1.13.7
+   1.16.1
