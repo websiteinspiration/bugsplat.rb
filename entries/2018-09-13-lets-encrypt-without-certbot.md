@@ -41,6 +41,11 @@ I can easily drive the API from the central management node and copy the certifi
 
 ## Driving the API with Ruby
 
+I use a gem called [`acme-client`](https://github.com/unixcharles/acme-client) to drive Let's Encrypt `ACMEv2` API.
+It's fairly easy to use if you know ACME's terminology.
+
+* an `order` is the initial request to 
+
 ## Getting a Certificate, End to End
 
 ## Wildcard Wrinkles

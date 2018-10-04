@@ -16,6 +16,7 @@ role :web, "kodos.zrail.net"
 set :base_port, 6700
 set :use_ssl, true
 set :force_ssl, true
+set :listen_address, '10.248.9.84'
 
 set :ssl_cert_path, '/etc/nginx/certificates/site-6/fullchain.pem'
 set :ssl_key_path, '/etc/nginx/certificates/site-6/privkey.pem'
