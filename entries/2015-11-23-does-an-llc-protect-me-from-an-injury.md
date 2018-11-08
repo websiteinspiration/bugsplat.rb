@@ -51,20 +51,3 @@ You should talk to an insurance broker so they can guide you to the coverage you
 
 My book <strong><a href="/handle-your-business">Handle Your Business</a></strong> will teach you everything you need to know about running your small professional business. From insurance to incorporation to taxes to contracts, this short guide helps you run your business better.
 
-<div class="well">
-<div class="center">
-  <p>Get a <strong>FREE sample chapter</strong>.</p>
-  <form action="https://www.getdrip.com/forms/8653666/submissions" method="POST" role="form" class="form-inline" style="margin-top: 0.5em;" data-drip-embedded-form="8653666">
-    <div class="form-group">
-      <label class="sr-only" for="first-name">First Name</label>
-      <input id="first-name" type="text" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[name]" placeholder="First Name"></input>
-    </div>
-    <div class="form-group">
-      <label class="sr-only" for="email-address">Email Address</label>
-      <input id="email-address" type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[email]" placeholder="you@example.com"></input>
-    </div>
-    <input class="btn btn-warning btn-large" type="submit" value="Send Me The Sample" />
-  </form>
-  <small>We won't send you spam. Unsubscribe at any time.</small>
-</div>
-</div>

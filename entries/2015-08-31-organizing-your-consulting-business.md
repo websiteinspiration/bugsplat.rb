@@ -266,23 +266,3 @@ In sum, here's how you should organize your business:
 
 In later chapters we're going to talk about the other things you should do to maintain the separation between you and your business, including contracts, banking, and insurance.
 
-<hr>
-
-<h2 class="center">This book will help your business. Guaranteed.</h2>
-
-Plug your info into the form below and I'll let you know about progress, send sample chapters as they're finished, and you'll get **20% off** on launch day.
-
-<div class="center" style="margin-bottom: 3em">
-  <form action="https://www.getdrip.com/forms/8653666/submissions" method="POST" role="form" class="form-inline" style="margin-top: 0.5em;" data-drip-embedded-form="8653666">
-    <div class="form-group">
-      <label class="sr-only" for="first-name">First Name</label>
-      <input id="first-name" type="text" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[name]" placeholder="First Name"></input>
-    </div>
-    <div class="form-group">
-      <label class="sr-only" for="email-address">Email Address</label>
-      <input id="email-address" type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[email]" placeholder="you@example.com"></input>
-    </div>
-    <input class="btn btn-warning btn-large" type="submit" value="Send Me Updates" />
-  </form>
-  <small>We won't send you spam. Unsubscribe at any time.</small>
-</div>

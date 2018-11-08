@@ -25,22 +25,4 @@ Learn everything you need:
 * The insurance coverage you need, and what you don't
 * ...and more!
 
-**Handle Your Business** is available today. To get a sample chapter, just fill out the form below.
-
-
-<h2 class="center">This book will help your business. Guaranteed.</h2>
-
-<div class="center" style="margin-bottom: 3em">
-  <form action="https://www.getdrip.com/forms/8653666/submissions" method="POST" role="form" class="form-inline" style="margin-top: 0.5em;" data-drip-embedded-form="8653666">
-    <div class="form-group">
-      <label class="sr-only" for="first-name">First Name</label>
-      <input id="first-name" type="text" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[name]" placeholder="First Name"></input>
-    </div>
-    <div class="form-group">
-      <label class="sr-only" for="email-address">Email Address</label>
-      <input id="email-address" type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[email]" placeholder="you@example.com"></input>
-    </div>
-    <input class="btn btn-warning btn-large" type="submit" value="Send Me Updates" />
-  </form>
-  <small>We won't send you spam. Unsubscribe at any time.</small>
-</div>
+**Handle Your Business** is available today.

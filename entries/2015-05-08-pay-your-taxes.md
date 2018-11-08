@@ -69,22 +69,3 @@ There there. It's ok. Taxes are complicated.
 
 You still have to pay them.
 
-<div class="well">
-  <div class="center" style="margin-bottom: 3em">
-    <h2>Like this? Sign up!</h2>
-    <p>Get occasional articles about running a freelance business.</p>
-    <form action="https://www.getdrip.com/forms/8545828/submissions" method="POST" role="form" class="form-inline" style="margin-top: 0.5em;" data-drip-embedded-form="8545828">
-      <div class="form-group">
-        <label class="sr-only" for="first-name">First Name</label>
-        <input id="first-name" type="text" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[first_name]" placeholder="First Name"></input>
-      </div>
-      <div class="form-group">
-        <label class="sr-only" for="email-address">Email Address</label>
-        <input id="email-address" type="email" class="sans" style="font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="fields[email]" placeholder="you@example.com"></input>
-      </div>
-      <input type="hidden" name="fields[topic]" value="Business"></input>
-      <input class="btn btn-warning btn-large" type="submit" value="Get Updates" />
-    </form>
-    <small>We won't send you spam. Unsubscribe at any time.</small>
-  </div>
-</div>
