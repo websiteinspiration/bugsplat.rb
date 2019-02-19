@@ -12,8 +12,8 @@ id: autofin2
 
 ## The Setup
 
-* One Fidelity Brokerage Account ("brokerage")
-* One Fidelity Cash Management Account ("CMA")
+* One [Fidelity Brokerage Account](https://www.fidelity.com/trading/the-fidelity-account) ("brokerage")
+* One [Fidelity Cash Management Account](https://www.fidelity.com/cash-management/fidelity-cash-management-account/overview) ("CMA")
 
 ## How Money Flows
 
@@ -25,7 +25,7 @@ id: autofin2
 
 We use a brokerage account because it lets us keep cash and investments in the same account.
 All of our cash, including working capital and reserves, sits in the brokerage's **core position**.
-Our core position is FZFXX, a Federal money market fund that pays ~2% interest.
+Our core position is [FZFXX](https://fundresearch.fidelity.com/mutual-funds/summary/316341304), a Federal money market fund that pays ~2% interest.
 
 We have the CMA so we don't expose the brokerage account number every time we write a paper check.
 This is probably overly paranoid and is the only significant complication in the entire system.

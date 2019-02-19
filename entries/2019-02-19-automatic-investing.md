@@ -15,7 +15,7 @@ topic: Finance
 * Fidelity Brokerage Account ("brokerage") with margin enabled
 * Fidelity Roth IRAs
 * Fidelity Solo 401K
-* Fidelity Four-In-One Index Fund (FFNOX)
+* [Fidelity Four-In-One Index Fund (FFNOX)](https://fundresearch.fidelity.com/mutual-funds/summary/31634R109)
 
 ## How Money Flows
 
