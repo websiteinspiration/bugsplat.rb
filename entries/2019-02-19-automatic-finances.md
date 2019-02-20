@@ -5,7 +5,7 @@ tags: Personal Finance
 id: autofin1
 ---
 
-My friend Amy Hoy recently tweeted about how financial planning and personal finance.
+My friend Amy Hoy recently tweeted about financial planning and personal finance.
 This particular tweet stuck out to me:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">you&#39;d probably think given my love of money that i&#39;d be all over financial planning, but truly i only enjoy earning it and spending it. saving it feels like… freezing cake. i guess you could do it, but why, you have cake</p>&mdash; Amy Hoy ✨ (@amyhoy) <a href="https://twitter.com/amyhoy/status/1097662568645214208?ref_src=twsrc%5Etfw">February 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

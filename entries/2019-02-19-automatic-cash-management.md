@@ -14,10 +14,12 @@ id: autofin2
 
 * One [Fidelity Brokerage Account](https://www.fidelity.com/trading/the-fidelity-account) ("brokerage")
 * One [Fidelity Cash Management Account](https://www.fidelity.com/cash-management/fidelity-cash-management-account/overview) ("CMA")
+* One [Fidelity 2% Cash Back Credit Card](https://www.fidelity.com/cash-management/visa-signature-card)
 
 ## How Money Flows
 
 * Payroll direct deposited into brokerage
+* All non-mortgage, non-Amazon expenses are paid with the Fidelity credit card
 * Bills autopay from brokerage (credit cards, insurance, billpay to household vendors)
 * Debit cards and live paper checks written against CMA
 
@@ -26,6 +28,13 @@ id: autofin2
 We use a brokerage account because it lets us keep cash and investments in the same account.
 All of our cash, including working capital and reserves, sits in the brokerage's **core position**.
 Our core position is [FZFXX](https://fundresearch.fidelity.com/mutual-funds/summary/316341304), a Federal money market fund that pays ~2% interest.
+
+
+We use the Fidelity credit card because it pays 2% cash back when it's set up to depsit rewards into a Fidelity account.
+It is also one of the only cards I've seen that can be set to automatically cash out deposits.
+Ours is set to deposit into the brokerage account.
+
+We use the Amazon Prime credit card for all Amazon expenses. This pays 5% back on Amazon purchases which makes it worth it for us. Your milage may vary.
 
 We have the CMA so we don't expose the brokerage account number every time we write a paper check.
 This is probably overly paranoid and is the only significant complication in the entire system.

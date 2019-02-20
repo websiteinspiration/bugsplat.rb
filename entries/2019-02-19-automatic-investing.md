@@ -21,6 +21,7 @@ topic: Finance
 
 * Every investable dollar is in FFNOX across all account types
 * Automatically purchase a fixed amount of FFNOX in the brokerage account every pay period
+* Automatically contribute to my employer's 401K plan every pay period
 * Once per year fund our Roth IRAs
 * Once per year fund our Solo 401K (if possible/advantageous)
 
@@ -42,6 +43,9 @@ We can login to Fidelity and sell some FFNOX when it's convenient rather than ha
 
 We have **automatic investing** turned on so that I don't have to make a decision to purchase twice a month.
 I'm frequently tempted to mess with the program but my own lived experience and that of countless others suggests that the more hands off I can be the better off I'll end up.
+
+Contributing to my employer's 401K plan is an automatic tax break and also means I get my employer's matching contribution.
+I have it set up to max out my contribution space ($19,000 for 2019) by dividing that by the number of pay checks in the year and setting a fixed dollar contribution.
 
 We fund the IRAs and Solo 401Ks once a year just for practicality.
 
