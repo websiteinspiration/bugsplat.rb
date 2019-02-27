@@ -13,7 +13,8 @@ pdf_template: resume_pdf
 [egghead.io](https://egghead.io/)
 
 * In charge of the Rails backend application
-* Built and maintain the payments integration that processes millions of dollars a year for egghead
+* Built and maintain the Stripe payments integration that processes millions of dollars a year for egghead
+* Built a revenue sharing system that has paid out millions of dollars to open source developers
 * Integrated SAML for our enterprise customers
 * Work with a small team of junior developers on building and maintaining the backend application
 
@@ -25,19 +26,19 @@ pdf_template: resume_pdf
 * Consulted on a Docker deployment project
 * Assisted getting a PHP application up and running on three different PaaS hosts
 
-#### Software Developer, 2012 - Current ####
+#### Software Developer, 2012 - 2015 ####
 
 [Kongregate](http://www.kongregate.com), Portland OR
 
-* Maintain and optimize one of the largest and oldest Ruby on Rails applications in existence. Kongregate receives over 10 million visits per month across more than 60,000 free-to-play single- and multiplayer games.
+* Maintained one of the largest and oldest Ruby on Rails applications in existence.
 
-* Work across the entire stack, from MySQL query optimization to Ruby and Node.js background jobs to front-end HTML, Javascript and CSS.
+* Worked across the entire stack, from MySQL query optimization to Ruby and Node.js background jobs to front-end HTML, Javascript and CSS.
 
 * Implemented a lapsed-gamer mailer with customized messages for every user which increased retention by ~5%.
 
 * Debugged and fixed some thorny EC2 / SSH bugs
 
-* Daily work on tasks using Pivotal Tracker, GitHub, and the Jenkins continuous integration server.
+* Daily worked on tasks using Pivotal Tracker, GitHub, and Jenkins.
 
 #### Platform Developer, 2011 - 2012 ###
 
@@ -54,7 +55,7 @@ pdf_template: resume_pdf
 
 [Rentrak](http://www.rentrak.com), Portland OR
 
-* Designed, developed, and deployed two different demographics systems for linear television that have set the direction of all future demographics systems at Rentrak. These systems overlay postal- and household-level segmentation on top of hundreds of billions of television view transactions.
+* Designed, developed, and deployed two different demographics systems for linear television that set the direction of all future demographics systems at Rentrak. These systems overlay postal- and household-level segmentation on top of hundreds of billions of television view transactions.
 
 * Developed a SQL-like language that compiles to C++ using Perl and [Parse::RecDescent](http://search.cpan.org/dist/Parse-RecDescent) to enable internal users to query the view repository.
 
@@ -64,10 +65,11 @@ pdf_template: resume_pdf
 
 ### Side Projects
 
-* [Mastering Modern Payments](https://www.petekeen.net/mastering-modern-payments), a book about integrating Stripe payments with Rails.
-* [Twitter Fiction Reader](http://twitter-fiction-reader.herokuapp.com), a curated archive of fictional twitter accounts. Simple Sinatra application.
+* [Mastering Modern Payments](https://www.petekeen.net/mastering-modern-payments), the first book about integrating Stripe payments with Rails.
+* [Handle Your Business](https://www.petekeen.net/handle-your-business), a book about what the nuts and bolts backend of a single person consultancy can look like.
+* [Twitter Fiction Reader](http://twitter-fiction-reader.herokuapp.com), a curated archive of fictional twitter accounts.
 * [Docverter](http://www.docverter.com), an open source document conversion web service.
-* [petekeen.net](https://www.petekeen.net), my personal programming and tech related blog. Recently converted to a simple Sinatra application.
+* [petekeen.net](https://www.petekeen.net), my personal programming and tech related blog.
 
 ### Education
 
@@ -92,5 +94,5 @@ Graduated December 2006
 * Twitter: [@zrail](http://twitter.com/zrail)
 * Github: [peterkeen](https://github.com/peterkeen)
 * LinkedIn: [peterkeen](http://www.linkedin.com/in/peterkeen)
-* Phone: (503) 766-5711
+* Phone: (734) 887-6229
 
