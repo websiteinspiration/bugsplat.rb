@@ -10,7 +10,7 @@ pdf_template: resume_pdf
 
 #### Software Developer, 2014 - Current ####
 
-[egghead.io](https://egghead.io/)
+[egghead.io](https://egghead.io/), fully remote
 
 * In charge of the Rails backend application
 * Built and maintain the Stripe payments integration that processes millions of dollars a year for egghead
