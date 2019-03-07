@@ -69,6 +69,23 @@
         <%= yield %>
 	  </div>
       <% unless @skip_footer %>
+<h2>Want more? Get emails from me about coding, computers, finance, and business.</h2>
+
+<p>I will never send you spam. You can unsubscribe at any time.</p>
+
+<form action="https://marketing.petekeen.net/forms/newsletter" method="POST" role="form" class="form-inline" style="margin-top: 0.5em;">
+  <div class="form-group">
+    <label class="sr-only" for="first-name">First Name</label>
+    <input id="first-name" type="text" class="sans" style="padding: 5px; font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="first_name" placeholder="First Name"></input>
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="email-address">Email Address</label>
+    <input id="email-address" type="email" class="sans" style="padding: 5px; font-size: 17.5px; height: 36px; width: 12em; line-height: 22px;" name="email" placeholder="you@example.com"></input>
+  </div>
+  <input type="hidden" name="topic" value="<%= @app.params[:topic] %>"></input>
+  <input class="btn btn-large" type="submit" value="Subscribe" />
+</form>
+
       <footer>
         <ul class="nav-links">
 		  <li class="footer-byline">Made in Michigan by <a href="/">Pete Keen</a> &copy; 2010-<%= Date.today.year %>
