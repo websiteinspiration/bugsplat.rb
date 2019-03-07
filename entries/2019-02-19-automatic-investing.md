@@ -30,7 +30,7 @@ topic: Finance
 I don't want anyone to have to think about where to pull money from at any time.
 I want me or my wife to be able to login to Fidelity and sell enough to cover cash needs with a very small number of clicks.
 
-FFNOX is an **fund of funds** consisting of four inexpensive Fidelity index funds.
+FFNOX is a **fund of funds** consisting of four inexpensive Fidelity index funds.
 It invests in 60% US total stock market, 25% international developed total stock market, and 15% US total bond market.
 This fits our family's desired asset allocation.
 

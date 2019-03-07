@@ -26,7 +26,7 @@ Due to my [health history](/cancer) my wife is likely going to be around longer 
 I want to make our finances as simple as possible so she doesn't have to worry about them when the inevitable happens.
 
 In 2016 my wife and I welcomed our first child into the world and in late 2018 we welcomed our second.
-They are two more very important reasons why I want thinks to be simple. 
+They are two more very important reasons why I want things to be simple. 
 If something happens to both my wife and me, I want our intentions with regards to our finances as plain as possible.
 
 This system got a trial run in late 2018.
@@ -36,3 +36,4 @@ My daugther was born at 34 weeks and spent the next five weeks in NICU.
 **I didn't have to touch this system at all.** Not once. I logged in a handful of times to check up on it, but everything just hummed along.
 
 **[>>> Next post: Cash Management](/automatic-cash-management)**
+
