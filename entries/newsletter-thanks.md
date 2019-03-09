@@ -7,15 +7,8 @@ skip_title_suffix: 'true'
 hide_from_archive: 'true'
 ---
 
-# You're all set!
+# One more step...
 
-Thanks for signing up. You'll start getting updates soon.
-
-<a href="/essays">Explore Essays</a>
+Thanks! Click the link I just sent to your email address to finish your signup.
 
 <div style="padding-bottom: 2em"></div>
-
-<script type="text/javascript">
-  window._pq = window._pq || [];
-  _pq.push(['track', 'newsletter_signup']);
-</script>
