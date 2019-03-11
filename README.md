@@ -1,13 +1,12 @@
 # bugsplat.rb
 
-This is the software, as well as the content, that resides on [petekeen.net][]. It's a Sinatra application that renders Markdown into HTML and PDF.
+This is the software, as well as the content, that resides on [petekeen.net][].
 
 ## Features
 
 * Easy to hack on
 * Easy to deploy
 * Flexible content
-* (mostly) static with the ability to add dyanmic routes
 
 ## Deploying
 
@@ -15,32 +14,21 @@ This is the software, as well as the content, that resides on [petekeen.net][]. 
 $ bundle exec cap deploy deploy:cleanup
 ```
 
-[petekeen.net][] runs on a virtual machine at Digital Ocean named `web01.bugsplat.info`. The deploy process uses [Capistrano::Buildpack][] and exports most pages as HTML, PDF (using [Docverter][], as well as a slightly-simplified form of Markdown. These files are then served up by Nginx.
+[petekeen.net][] runs on a server in my basement and is served to the public using my [private CDN](https://www.petekeen.net/my-own-private-cdn). The deploy process uses `Capistrano` and `Capistrano::Buildpack`.
 
-## Dynamic Routes
-
-`bugsplat.rb` provides several dynamic routes as well:
-
-* `/projects` lists my [open source projects](https://www.petekeen.net/projects) and various side projects that I've worked on
-* `/projects/:project_name` renders the `README.md` file from each project.
-* `/source` is an instance of [Grack](https://github.com/schacon/grack) that actually serves up my open source projects
-* `/subscribe` signs people up to my mailing lists
-* `/checkup-apply-form` handles the application form for [Stripe Checkup](https://www.petekeen.net/checkup)
-* `/ping` is a simple active health check
+The application itself uses `Rack::FunkyCache` to dynamically render pages once. Thereafter they're served by `nginx` from disk. This gives most of the benefits of static rendering without actually having to render at deploy time.
 
 ## Contributing
 
 I don't do guest posts on `petekeen.net`. If you have a code patch, email it to [bugsplat-rb-patch@petekeen.net](mailto:bugsplat-rb-patch@petekeen.net).
 
+## Why the name?
+
+Back in the day my blog ran on the domain name `bugsplat.info`. The original version of this software was a janky Perl script. This software is a ruby port/rewrite of that original script, thus `bugsplat.rb`.
+
 ## License
 
-Copyright (c) Pete Keen
-
-Code (everything in a `.rb` file): MIT
-
-Content (everything else):  All rights reserved
+Copyright (c) 2010-2019 Pete Keen
 
 [petekeen.net]: https://www.petekeen.net
-[Capistrano::Buildpack]: https://www.petekeen.net/projects/capistrano-buildpack
-[Docverter]: http://www.docverter.com
 
