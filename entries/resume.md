@@ -67,10 +67,11 @@ pdf_template: resume_pdf
 
 * [Mastering Modern Payments](https://www.petekeen.net/mastering-modern-payments), the first book about integrating Stripe payments with Rails.
 * [Handle Your Business](https://www.petekeen.net/handle-your-business), a book about what the nuts and bolts backend of a single person consultancy can look like.
-* [Twitter Fiction Reader](http://twitter-fiction-reader.herokuapp.com), a curated archive of fictional twitter accounts.
 * [Docverter](http://www.docverter.com), an open source document conversion web service.
 * [petekeen.net](https://www.petekeen.net), my personal programming and tech related blog.
 * [VMSave](https://vmsave.petekeen.net), a small Rails app for saving voicemail greetings as MP3s. Uses Twilio for telephony services.
+* [Payola](https://www.payola.io), a Rails engine for Stripe. Retired.
+* [Twitter Fiction Reader](http://twitter-fiction-reader.herokuapp.com), a curated archive of fictional twitter accounts.
 
 ### Education
 
