@@ -77,7 +77,7 @@ Graduated December 2006
 
 * Ruby, Rails, Python, HTML/CSS, Javascript, Perl, Java, Shell scripting
 * Agile / Test-driven Development, Pair Programming, RSpec
-* Git, SVN, CVS
+* Git, SVN
 * Linux, Mac OS X
 * PostgreSQL, MySQL, Redis
 
