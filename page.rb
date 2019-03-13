@@ -47,6 +47,7 @@ class Pages
 
     @pages.each do |page|
       @pages_by_page_name[page.name] = page
+      @pages_by_page_name[page.original_name] = page
       @pages_by_page_id[page.page_id] = page
       if page.topic
         topic = page.topic.downcase
@@ -153,11 +154,12 @@ class Page
   DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 
   attr_accessor :docid
-  attr_reader :name, :body, :original_filename, :original_body, :headers
+  attr_reader :name, :original_name, :body, :original_filename, :original_body, :headers
 
   def initialize(filename, renderer)
     @file = filename
     @original_filename = filename
+    @original_name = self.class.normalize_name(filename, false)
     @name = self.class.normalize_name(filename)
     @renderer = renderer
     parse_page
@@ -176,8 +178,12 @@ class Page
     @body = body_text.sub("--fold--", '')
   end
 
-  def self.normalize_name(page)
-    return page.downcase.strip.sub(/\.(html|md|pdf)(\.erb)?$/,'').sub(/\d{4}-\d{2}-\d{2}-/, '')
+  def self.normalize_name(page, strip_date=false)
+    name = page.downcase.strip.sub(/\.(html|md|pdf)(\.erb)?$/,'')
+    if strip_date
+      name = name.sub(/\d{4}-\d{2}-\d{2}-/, '')
+    end
+    name
   end
 
   def is_blog_post?

@@ -137,6 +137,13 @@ class App < Sinatra::Base
     feed.to_s
   end
 
+  get '/_evergreen.json' do
+    @evergreen_pages = @pages.tagged('_evergreen')
+
+    content_type 'application/json'
+    @evergreen_pages.map { |p| p.original_filename.gsub(/\.md$/, '') }.to_json
+  end
+
   get %r{^/archive(\.html)?$} do
     @archive_pages = @pages.blog_posts.reverse
     @page_title = "Archive"
@@ -150,7 +157,7 @@ class App < Sinatra::Base
         tags[tag] = true
       end
     end
-    @tags = tags.keys.sort
+    @tags = tags.keys.sort.reject { |t| t.start_with?('_') }
     @page_title = "All Tags"
     erb :tags
   end
@@ -238,7 +245,7 @@ class App < Sinatra::Base
 
     if params[:format] == 'md'
       content_type "text/plain"
-      return @page.markdown_content
+      return @page.contents
     end
 
     view = @page.view || :entry_page
