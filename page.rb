@@ -178,7 +178,7 @@ class Page
     @body = body_text.sub("--fold--", '')
   end
 
-  def self.normalize_name(page, strip_date=false)
+  def self.normalize_name(page, strip_date=true)
     name = page.downcase.strip.sub(/\.(html|md|pdf)(\.erb)?$/,'')
     if strip_date
       name = name.sub(/\d{4}-\d{2}-\d{2}-/, '')
