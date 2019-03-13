@@ -3,7 +3,7 @@ title: Using Que instead of Sidekiq
 id:    f17ad
 tags:  programming
 topic: Programming
-description: Sidekiq is awesome, but sometimes alternatives make more sense.
+description: "Sidekiq is awesome but sometimes alternatives make more sense."
 ---
 
 A project I've had on the back burner for quite awhile is my own little marketing automation tool.
