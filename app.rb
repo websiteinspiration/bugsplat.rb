@@ -19,8 +19,8 @@ class App < Sinatra::Base
   Docverter.api_key = 'pkdc'
 
   set :assets_precompile, %w(application.js gz_test.js application.css print.css *.png *.jpg *.svg *.eot *.ttf *.woff *.ico)
-  set :assets_css_compressor, :yui
-  set :assets_js_compressor, :uglifier
+  # set :assets_css_compressor, :yui
+  # set :assets_js_compressor, :uglifier
   set :assets_protocol, :https
 
   register Sinatra::AssetPipeline
