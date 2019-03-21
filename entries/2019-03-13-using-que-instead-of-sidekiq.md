@@ -36,7 +36,7 @@ end
 ```
 
 The `find_in_batches` call is a built-in ActiveRecord method that will give you all of the records in the scope in batches, which is just an array of ActiveRecord objects.
-`Sidekiq::Client.push_bulk` eliminates the vast majority of Redis round trips that the naive version does because it pushes the whole batch in one Redis call.
+`Sidekiq::Client.push_bulk` eliminates the vast majority of Redis round trips that the simple version does because it pushes the whole batch in one Redis call.
 
 We can still do better, though. Instead of using Sidekiq we can use [Que](https://github.com/chanks/que).
 Que is a background processing system like Sidekiq that keeps jobs in a PostgreSQL table instead of in a Redis list.
@@ -71,7 +71,7 @@ Benchmarks (local Redis and local PostgreSQL, 5000 records):
 Wait... that's... slower?
 
 I'm as surprised as you are, but there turns out to be a pretty good reason.
-Que performs a bunch of check constrants on the incoming data to make sure it's coherent and ready to run. Here's all the things it checks:
+Que performs a bunch of check constraints on the incoming data to make sure it's coherent and ready to run. Here's all the things it checks:
 
 ```
 Check constraints:
@@ -87,4 +87,4 @@ Check constraints:
 So I guess the lesson here is to always validate your assumptions.
 I assumed that eliminating round trips would make things faster but because of other constraints and validations it's actually slower.
 
-Still, it's considerably faster than the naive version (which is still no slouch, let's be honest), my marketing system gets all those in-database queue benefits, and I find it aesthetically pleasing. I think I'll keep it.
+Still, it's considerably faster than the simple version (which is still no slouch, let's be honest), my marketing system gets all those in-database queue benefits, and I find it aesthetically pleasing. I think I'll keep it.
