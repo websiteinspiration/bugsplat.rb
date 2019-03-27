@@ -7,3 +7,9 @@
 //= require cheatsheet.js
 //= require jquery.scrolldepth.min.js
 //= require riveted.min.js
+
+
+$(document).ready(function() {
+  $('#lbhp').hide();    
+});
+
