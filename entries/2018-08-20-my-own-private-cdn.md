@@ -1,7 +1,7 @@
 ---
 title: My Own Private CDN
 id: cdn1
-tags: Programming
+tags: Programming, _evergreen
 topic: Software
 description: Yet another edition of Why Would You Ever Want To Do That
 ---

@@ -2,7 +2,7 @@
 id: stocks
 title: Adventures in Stock Picking
 topic: Business
-tags: Business, Investing
+tags: Business, Investing, _evergreen
 ---
 
 About a year and a half ago I started buying shares in individual public companies rather than buying

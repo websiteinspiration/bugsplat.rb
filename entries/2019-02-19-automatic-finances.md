@@ -1,7 +1,7 @@
 ---
 title: Automatic Finances
 topic: Finance
-tags: Personal Finance
+tags: Personal Finance, _evergreen
 id: autofin1
 ---
 
