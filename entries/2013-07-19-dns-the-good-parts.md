@@ -1,7 +1,7 @@
 ---
 title: ! 'DNS: The Good Parts'
 id: dnstgp
-tags: DNS
+tags: DNS, _evergreen
 topic: DNS
 description: Dig through the DNS and learn how and why it all works.
 show_upsell: true

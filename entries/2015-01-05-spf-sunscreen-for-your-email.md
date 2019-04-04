@@ -1,7 +1,7 @@
 ---
 title: "SPF: Sunscreen for your Email"
 id: spf
-tags: Email, DNS
+tags: Email, DNS, _evergreen
 topic: Email
 description: "Sender Policy Framework (SPF) is a type of email deliverability record that helps servers that receive email verify the sender. This post is a deep dive into how it works and what it's good for."
 ---

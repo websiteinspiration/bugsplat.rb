@@ -245,7 +245,7 @@ class App < Sinatra::Base
 
     if params[:format] == 'md'
       content_type "text/plain"
-      return @page.contents
+      return @page.contents.gsub(/--fold--/, '')
     end
 
     view = @page.view || :entry_page

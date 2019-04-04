@@ -1,7 +1,7 @@
 ---
 title: The Life of a Stripe Charge
 id: charge
-tags: Programming, Stripe
+tags: Programming, Stripe, _evergreen
 show_upsell: 'true'
 topic: Stripe
 description: How Stripe processes a credit card charge, from soup to nuts.

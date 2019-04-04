@@ -2,7 +2,7 @@
 title: "Email: The Good Parts"
 id: email
 topic: Email
-tags: Email, DNS
+tags: Email, DNS, _evergreen
 description: "There are an awful lot of interesting things happening between hitting Send and your email hitting an inbox. This post is an overview of how your message makes it's way to your recipient."
 ---
 
@@ -120,4 +120,3 @@ Over the years, technologies have come around that help to prevent forgery and h
 
 I went into these somewhat in [Fix Your Email Deliverability with DMARC](https://www.petekeen.net/fix-your-email-deliverability-with-dmarc). In future posts I'll be taking a deep dive into each one, talking about its history, what its good for, and how to best deploy it.
 
-**P.S.** Could your email deliverability use a boost? ***Mail Rep*** will help your business improve your deliverability in just two weeks. [Click here to read about Mail Rep](/mail-rep).

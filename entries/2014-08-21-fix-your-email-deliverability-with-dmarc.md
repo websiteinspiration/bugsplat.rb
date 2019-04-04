@@ -2,7 +2,7 @@
 title: 'Fix Your Email Deliverability with DMARC'
 id: dmarc
 topic: DNS
-tags: Programming, Devops
+tags: Programming, Devops, _dmarc
 description: Improve your email deliverability using DMARC, SPF, and DKIM.
 ---
 
@@ -91,4 +91,3 @@ The most complete guide for how to do that is [the standard](https://datatracker
 
 There are a variety of reasons why you wouldn't want to do that, so I advise people to keep their settings at `none` unless they're absolutely sure of the implications for their own domain.
 
-**P.S.** Could your email deliverability use a boost? ***Mail Rep*** will help your business improve your deliverability in just two weeks. [Click here to read about Mail Rep](/mail-rep).

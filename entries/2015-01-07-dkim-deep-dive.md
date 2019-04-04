@@ -1,7 +1,7 @@
 ---
 title: DKIM Deep Dive
 id: dkim
-tags: Email, DNS
+tags: Email, DNS, _evergreen
 topic: Email
 description: "DKIM (DomainKeys Identified Mail) is another type of email deliverability record that helps recipient servers be confident that you authorized any given email. This post is a deep dive into how it works and what it's good for."
 ---
@@ -72,4 +72,3 @@ Unlike SPF, DKIM doesn't have a built-in specification for how to handle failing
 
 DKIM also explicitly doesn't handle what to do when a message has no signature at all. For that, we need another email deliverability record named `DMARC`. See my article [Fix Your Email Deliverability with DMARC](/fix-your-email-deliverability-with-dmarc) for more details on how to handle it.
 
-**P.S.** Could your email deliverability use a boost? ***Mail Rep*** will help your business improve your deliverability in just two weeks. [Click here to read about Mail Rep](/mail-rep).

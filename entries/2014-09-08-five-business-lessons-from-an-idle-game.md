@@ -1,7 +1,7 @@
 ---
 title: Five business lessons from an idle game
 id: idle
-tags: Business
+tags: Business, _evergreen
 topic: Business
 description: What a simple idle game can teach bootstrappers about their businesses.
 show_upsell: true
