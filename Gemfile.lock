@@ -69,7 +69,6 @@ GEM
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rouge (3.3.0)
-    rugged (0.19.0)
     sass (3.7.3)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -138,7 +137,6 @@ DEPENDENCIES
   rake
   redcarpet
   rouge
-  rugged (~> 0.19.0)
   shotgun
   sinatra
   sinatra-asset-pipeline
@@ -150,7 +148,7 @@ DEPENDENCIES
   yui-compressor
 
 RUBY VERSION
-   ruby 2.6.2p47
+   ruby 2.6.4p104
 
 BUNDLED WITH
    1.17.2

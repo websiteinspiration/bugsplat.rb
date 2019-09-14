@@ -1,7 +1,3 @@
 #!/bin/bash
 
-if [[ $RACK_ENV == "production" ]]; then
-    bin/start-nginx bundle exec puma -C config/puma.rb
-else
-    bundle exec puma -C config/puma.rb
-fi
+exec bundle exec puma -C config/puma.rb

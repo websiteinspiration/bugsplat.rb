@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '2.6.2'
+ruby '2.6.4'
 
 gem 'puma'
 gem 'sinatra'
@@ -21,7 +21,6 @@ gem 'yui-compressor'
 gem 'activemodel', '~> 3.2.15'
 gem 'dotenv'
 gem 'pony', '~> 1.8'
-gem 'rugged', '~> 0.19.0'
 gem 'lru_redux'
 gem 'time-lord', '~> 1.0'
 gem 'rack-funky-cache', git: 'https://github.com/peterkeen/rack-funky-cache.git'
