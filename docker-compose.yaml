@@ -1,0 +1,20 @@
+version: "2"
+
+networks:
+  traefik:
+    external:
+      name: traefik_default
+      
+services:
+  bugsplat-server:
+    image: 192.168.1.163:5000/bugsplat-rb:latest
+    restart: always
+    ports:
+      - 3000
+    networks:
+      - traefik
+    labels:
+      - "traefik.frontend.rule=Host:bugsplat.dockertest.zrail.net"
+      - "traefik.port=3000"
+      - "traefik.docker.network=traefik_default"
+ 
