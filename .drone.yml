@@ -5,6 +5,3 @@ steps:
   - name: docker
     image: plugins/docker
     settings:
-      repo: 192.168.1.163:5000/bugsplat-rb
-      tags: latest
-      registry: 192.168.1.163:5000
