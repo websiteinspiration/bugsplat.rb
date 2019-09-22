@@ -10,7 +10,7 @@ steps:
   - name: deploy
     image: maniack/drone-portainer:1.0.0-rc.1
     settings:
-      portainer: http://portainer:5000
+      portainer: https://portainer.zrail.net
       username:
         from_secret: portainer_username
       password:
