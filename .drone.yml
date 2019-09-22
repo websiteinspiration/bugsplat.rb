@@ -8,7 +8,7 @@ steps:
       repo: registry.dockerpod1.zrail.net/bugsplat-rb
       registry: registry.dockerpod1.zrail.net
   - name: deploy
-    image: maniack/drone-portainer:1.0.0-rc.1
+    image: maniack/drone-portainer:0.8
     settings:
       portainer: https://portainer.zrail.net
       username:
