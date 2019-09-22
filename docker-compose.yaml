@@ -7,14 +7,14 @@ networks:
       
 services:
   bugsplat-server:
-    image: 192.168.1.163:5000/bugsplat-rb:latest
+    image: registry.dockerpod1.zrail.net/bugsplat-rb:latest
     restart: always
     ports:
       - 3000
     networks:
       - traefik
     labels:
-      - "traefik.frontend.rule=Host:bugsplat.dockertest.zrail.net"
+      - "traefik.frontend.rule=Host:bugsplat.dockerpod1.zrail.net"
       - "traefik.port=3000"
       - "traefik.docker.network=traefik_default"
  
