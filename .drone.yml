@@ -7,3 +7,14 @@ steps:
     settings:
       repo: registry.dockerpod1.zrail.net/bugsplat-rb
       registry: registry.dockerpod1.zrail.net
+  - name: deploy
+    image: registry.dockerpod1.zrail.net/drone-portainer
+    settings:
+      url: https://portainer.zrail.net
+      stack: bugsplat
+      endpoint: dockerpod1
+      stackfile: docker-compose.yaml
+      username:
+        from_secret: portainer_username
+      password:
+        from_secret: portainer_password
