@@ -10,7 +10,7 @@ steps:
   - name: deploy
     image: maniack/drone-portainer:0.8
     portainer: 
-      address: https://portainer.zrail.net
+      address: "https://portainer.zrail.net"
       endpoint: dockerpod1
     stack:
       name: bugsplat-rb
