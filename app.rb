@@ -100,6 +100,10 @@ class App < Sinatra::Base
   before do
     @pages = PAGES
     @app = self
+    if ENV['RACK_ENV'] == 'production'
+      expires 5*60, :public, :must_revalidate, :proxy_revalidate
+      headers 'Pragma' => 'public'
+    end
   end
 
   get '/' do
