@@ -14,7 +14,7 @@ steps:
       username: root
       key:
         from_secret: ssh_key
-      target: /tmp/bugsplat-rb
+      target: /root/stacks/bugsplat-rb
       source: docker-compose.yaml
   - name: deploy
     image: appleboy/drone-ssh
@@ -24,7 +24,7 @@ steps:
       key:
         from_secret: ssh_key
       script:
-        - cd /tmp/bugsplat-rb
+        - cd /root/stacks/bugsplat-rb
         - docker-compose --project-name=bugsplat-rb pull
         - docker-compose --project-name=bugsplat-rb up --no-start
         - docker-compose --project-name=bugsplat-rb restart
