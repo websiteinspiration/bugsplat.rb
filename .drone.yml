@@ -7,14 +7,22 @@ steps:
     settings:
       repo: registry.dockerpod1.zrail.net/bugsplat-rb
       registry: registry.dockerpod1.zrail.net
-  - name: deploy
-    image: registry.dockerpod1.zrail.net/drone-portainer
+  - name: push_compose
+    image: appleboy/drone-scp
     settings:
-      url: https://portainer.zrail.net
-      stack: bugsplat
-      endpoint: dockerpod1
-      stackfile: docker-compose.yaml
-      username:
-        from_secret: portainer_username
-      password:
-        from_secret: portainer_password
+      host: dockerpod1.zrail.net
+      username: root
+      key:
+        from_secret: ssh_key
+      target: /tmp/bugsplat-rb-docker-compose.yaml
+      source: docker-compose.yaml
+  - name: deploy
+    image: appleboy/drone-ssh
+    settings:
+      host: dockerpod1.zrail.net
+      username: root
+      key:
+        from_secret: ssh_key
+      script:
+        - docker-compose pull /tmp/bugsplat-rb-docker-compose.yaml
+        - docker-compose up /tmp/bugsplat-rb-docker-compose.yaml
