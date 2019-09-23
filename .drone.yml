@@ -26,4 +26,5 @@ steps:
       script:
         - cd /tmp/bugsplat-rb
         - docker-compose --project-name=bugsplat-rb pull
-        - docker-compose --project-name=bugsplat.rb up
+        - docker-compose --project-name=bugsplat-rb up --no-start
+        - docker-compose --project-name=bugsplat-rb restart
