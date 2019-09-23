@@ -24,5 +24,6 @@ steps:
       key:
         from_secret: ssh_key
       script:
-        - docker-compose pull /tmp/bugsplat-rb
-        - docker-compose up /tmp/bugsplat-rb
+        - cd /tmp/bugsplat-rb
+        - docker-compose --project-name=bugsplat-rb pull
+        - docker-compose --project-name=bugsplat.rb up
