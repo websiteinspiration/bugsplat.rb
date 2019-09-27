@@ -25,6 +25,4 @@ steps:
         from_secret: ssh_key
       script:
         - cd /root/stacks/bugsplat-rb
-        - docker-compose --project-name=bugsplat-rb pull
-        - docker-compose --project-name=bugsplat-rb up --no-start
-        - docker-compose --project-name=bugsplat-rb restart
+        - docker stack deploy -c docker-compose.yaml bugsplat-rb

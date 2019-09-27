@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 
 networks:
   traefik:
@@ -8,7 +8,9 @@ networks:
 services:
   bugsplat-server:
     image: registry.dockerpod1.zrail.net/bugsplat-rb:latest
-    restart: always
+    deploy:
+      restart_policy:
+        condition: on-failure
     ports:
       - 3000
     networks:
