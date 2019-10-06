@@ -40,5 +40,4 @@ ENV PATH=$APP_ROOT/bin:/usr/local/bin:/usr/bin:/bin
 
 COPY --from=build-env $APP_ROOT $APP_ROOT
 COPY --from=build-env /usr/local/bundle /usr/local/bundle
-EXPOSE 3000
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
