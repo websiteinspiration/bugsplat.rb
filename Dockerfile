@@ -2,7 +2,7 @@ FROM ruby:2.6.4-alpine3.10 as build-env
 
 ARG APP_ROOT=/app
 ARG BUILD_PACKAGES="build-base curl-dev git"
-ARG DEV_PACKAGES="postgresql-dev yaml-dev zlib-dev nodejs"
+ARG DEV_PACKAGES="yaml-dev zlib-dev nodejs"
 ARG RUBY_PACKAGES="tzdata"
 ENV RACK_ENV=production
 WORKDIR $APP_ROOT
@@ -27,7 +27,7 @@ RUN bundle exec rake assets:precompile
 
 FROM ruby:2.6.4-alpine3.10
 ARG APP_ROOT=/app
-ARG PACKAGES="tzdata postgresql-client nodejs bash"
+ARG PACKAGES="tzdata bash"
 ENV RACK_ENV=production
 
 WORKDIR $APP_ROOT
