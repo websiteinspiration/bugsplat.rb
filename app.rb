@@ -247,6 +247,10 @@ class App < Sinatra::Base
       @canonical_url = @page['canonical_url']
     end
 
+    if @page['redirect_to']
+      redirect @page['redirect_to']
+    end
+
     if params[:format] == 'md'
       content_type "text/plain"
       return @page.contents.gsub(/--fold--/, '')
