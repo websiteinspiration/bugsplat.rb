@@ -148,13 +148,13 @@ class App < Sinatra::Base
     @evergreen_pages.map { |p| p.original_filename.gsub(/\.md$/, '') }.to_json
   end
 
-  get %r{^/archive(\.html)?$} do
+  get %r{/archive(\.html)?} do
     @archive_pages = @pages.blog_posts.reverse
     @page_title = "Archive"
     erb :archive
   end
 
-  get %r{^/tags(\.html)?$} do
+  get %r{/tags(\.html)?} do
     tags = {}
     @pages.pages.each do |page|
       page.tags.each do |tag|
@@ -170,7 +170,7 @@ class App < Sinatra::Base
     redirect '/stripe-webhook-event-cheatsheet'
   end
 
-  get %r{^/stripe-webhook-event-cheatsheet(\.html)?$} do
+  get %r{/stripe-webhook-event-cheatsheet(\.html)?} do
     @title = @page_title = 'The Stripe Webhook Event Cheatsheet'
     @full_path = '/stripe-webhook-event-cheatsheet'
     @description = "Fourteen common scenarios and the hooks that Stripe fires for them, including full JSON samples."
@@ -196,7 +196,7 @@ class App < Sinatra::Base
     erb :topic_essays
   end
 
-  get %r{^/([\w\/-]+)(\.)?(\w+)?$} do
+  get %r{/([\w\/-]+)(\.)?(\w+)?} do
     params[:page_name] = params[:captures].first
     params[:format] = params[:captures].last
     @hide_discussion = true
